@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:layout_gravity="center" android:id="@id/scanner_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.console.items.qrcode.view.ViewfinderView android:id="@id/viewfinder_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerColor="@color/color_337CC4" app:frameColor="@color/color_90FFFFFF" app:labelText="" app:labelTextColor="@color/color_333333" app:laserColor="@color/color_337CC4" app:maskColor="@color/color_60000000" app:resultColor="@color/color_000000" app:resultPointColor="@color/color_60000000" />
+</FrameLayout>

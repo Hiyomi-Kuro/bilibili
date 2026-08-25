@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/normal_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/tab_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+            <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/tab_svg" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="45.0dp" android:scaleType="fitCenter" app:clearsAfterStop="false" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_supplementary" android:ellipsize="end" android:gravity="center" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon_layout" app:layout_constraintVertical_chainStyle="packed" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/tab_icon_cover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/bubble_icon" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="34.0dp" />
+    <com.bilibili.lib.homepage.widget.HomeTabPublishView android:layout_gravity="center" android:id="@id/home_publish_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

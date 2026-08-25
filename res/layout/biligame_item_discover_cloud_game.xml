@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="5.0dp" android:layout_width="68.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:layout_gravity="center_horizontal" android:id="@id/iv_game_icon" android:layout_width="60.0dp" android:layout_height="60.0dp" app:roundedCornerRadius="12.0dp" style="@style/Biligame.App.StaticImageView.Thumb.Icon60" />
+    <TextView android:textSize="12.0dp" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_game_name" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_marginTop="13.0dp" android:minHeight="40.0dp" android:lines="2" style="@style/Biligame.TextView.12SP.BLACK33" />
+    <com.bilibili.biligame.widget.CloudGameTextView android:textSize="12.0dp" android:textColor="@color/Lb5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/cloud_game_play" android:background="@drawable/biligame_background_corner_stroke_blue" android:paddingBottom="2.0dp" android:layout_width="50.0dp" android:layout_height="26.0dp" android:layout_marginTop="3.0dp" app:iconSize="15.0dp" />
+</LinearLayout>

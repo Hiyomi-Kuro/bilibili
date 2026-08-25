@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_ad_new_panel_bottom_buttons" />
+    <View android:id="@id/line" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/bg_im_notify_message" android:padding="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/ticket_card_text_size" android:textStyle="bold" android:ellipsize="end" android:id="@id/type_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/ticket_card_text_size" android:ellipsize="end" android:id="@id/service_defined_hint" android:paddingTop="@dimen/margin_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintTop_toBottomOf="@id/type_title" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/dynamic_option_ll" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/service_defined_hint" />
+    <View android:id="@id/divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/margin_6" app:layout_constraintTop_toBottomOf="@id/dynamic_option_ll" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_all" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:layout_marginBottom="@dimen/margin_6" app:layout_constraintTop_toBottomOf="@id/divider">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/ticket_card_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_notify_msg_go_detail" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:paddingRight="@dimen/margin_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_arrow_right" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

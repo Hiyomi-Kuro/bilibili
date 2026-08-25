@@ -1,0 +1,522 @@
+.class public final Lcom/bilibili/biligame/ui/category/findgame/d;
+.super Lbq/b;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/biligame/ui/category/findgame/d$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0008\u0008\u0008\u0007\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001cB\u0007\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0016J \u0010\r\u001a\u00020\u000c2\u0006\u0010\u0008\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0016J\u0010\u0010\u0010\u001a\u00020\u000c2\u0006\u0010\u000f\u001a\u00020\u000eH\u0014J\u0014\u0010\u0014\u001a\u00020\u000c2\u000c\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011R\u001c\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u00158\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010\u0017\u00a8\u0006\u001d"
+    }
+    d2 = {
+        "Lcom/bilibili/biligame/ui/category/findgame/d;",
+        "Lbq/b;",
+        "Landroid/view/ViewGroup;",
+        "parent",
+        "",
+        "viewType",
+        "Lot3/a;",
+        "T0",
+        "holder",
+        "position",
+        "Landroid/view/View;",
+        "itemView",
+        "Lgf3/s;",
+        "S0",
+        "Lnt3/b$b;",
+        "sectionManager",
+        "Z0",
+        "",
+        "Lcom/bilibili/biligame/bean/SiftCategory;",
+        "list",
+        "A0",
+        "",
+        "f",
+        "Ljava/util/List;",
+        "mList",
+        "<init>",
+        "()V",
+        "g",
+        "a",
+        "gamecenter_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final g:Lcom/bilibili/biligame/ui/category/findgame/d$a;
+
+.field public static final h:I
+
+
+# instance fields
+.field private f:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/bilibili/biligame/bean/SiftCategory;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bilibili/biligame/ui/category/findgame/d$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/bilibili/biligame/ui/category/findgame/d$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/bilibili/biligame/ui/category/findgame/d;->g:Lcom/bilibili/biligame/ui/category/findgame/d$a;
+
+    .line 8
+    .line 9
+    const/16 v0, 0x8
+
+    .line 10
+    .line 11
+    sput v0, Lcom/bilibili/biligame/ui/category/findgame/d;->h:I
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lbq/b;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A0(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/bilibili/biligame/bean/SiftCategory;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 7
+    .line 8
+    check-cast p1, Ljava/util/Collection;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lnt3/b;->d1()V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public S0(Lot3/a;ILandroid/view/View;)V
+    .locals 0
+
+    .line 1
+    iget-object p3, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-interface {p3}, Ljava/util/List;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p3
+
+    .line 7
+    if-lt p2, p3, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    instance-of p3, p1, Lcom/bilibili/biligame/ui/category/viewholder/l;
+
+    .line 11
+    .line 12
+    if-eqz p3, :cond_1
+
+    .line 13
+    .line 14
+    check-cast p1, Lcom/bilibili/biligame/ui/category/viewholder/l;
+
+    .line 15
+    .line 16
+    iget-object p3, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 17
+    .line 18
+    invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p2
+
+    .line 22
+    check-cast p2, Lcom/bilibili/biligame/bean/SiftCategory;
+
+    .line 23
+    .line 24
+    invoke-virtual {p1, p2}, Lcom/bilibili/biligame/ui/category/viewholder/l;->d4(Lcom/bilibili/biligame/bean/SiftCategory;)V
+
+    .line 25
+    .line 26
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_1
+    instance-of p3, p1, Lcom/bilibili/biligame/ui/category/viewholder/e;
+
+    .line 29
+    .line 30
+    if-eqz p3, :cond_3
+
+    .line 31
+    .line 32
+    iget-object p3, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 33
+    .line 34
+    invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p2
+
+    .line 38
+    check-cast p2, Lcom/bilibili/biligame/bean/SiftCategory;
+
+    .line 39
+    .line 40
+    invoke-virtual {p2}, Lcom/bilibili/biligame/bean/SiftCategory;->getList()Ljava/util/List;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p2
+
+    .line 44
+    sget-object p3, Lcom/bilibili/app/comm/list/widget/FlowLayoutManager;->o:Lcom/bilibili/app/comm/list/widget/FlowLayoutManager$a;
+
+    .line 45
+    .line 46
+    move-object p3, p2
+
+    .line 47
+    check-cast p3, Ljava/util/Collection;
+
+    .line 48
+    .line 49
+    if-eqz p3, :cond_3
+
+    .line 50
+    .line 51
+    invoke-interface {p3}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p3
+
+    .line 55
+    if-eqz p3, :cond_2
+
+    .line 56
+    .line 57
+    goto :goto_0
+
+    .line 58
+    :cond_2
+    check-cast p1, Lcom/bilibili/biligame/ui/category/viewholder/e;
+
+    .line 59
+    .line 60
+    const/4 p3, 0x0
+
+    .line 61
+    invoke-interface {p2, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p2
+
+    .line 65
+    check-cast p2, Lcom/bilibili/biligame/bean/GameCategoryItem;
+
+    .line 66
+    .line 67
+    invoke-virtual {p2}, Lcom/bilibili/biligame/bean/GameCategoryItem;->getName()Ljava/lang/String;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p2
+
+    .line 71
+    invoke-virtual {p1, p2}, Lcom/bilibili/biligame/ui/category/viewholder/e;->d4(Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public T0(Landroid/view/ViewGroup;I)Lot3/a;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-eq p2, v0, :cond_1
+
+    .line 3
+    .line 4
+    const/4 v0, 0x2
+
+    .line 5
+    if-eq p2, v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object p2, Lds/a$c;->c:Lds/a$c$a;
+
+    .line 8
+    .line 9
+    invoke-virtual {p2, p1, p0}, Lds/a$c$a;->a(Landroid/view/ViewGroup;Lnt3/a;)Lds/a$c;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    sget-object p2, Lcom/bilibili/biligame/ui/category/viewholder/e;->m:Lcom/bilibili/biligame/ui/category/viewholder/e$a;
+
+    .line 15
+    .line 16
+    const-string v0, "type_popup_sift_tag"
+
+    .line 17
+    .line 18
+    invoke-virtual {p2, p1, p0, v0}, Lcom/bilibili/biligame/ui/category/viewholder/e$a;->a(Landroid/view/ViewGroup;Lnt3/a;Ljava/lang/String;)Lcom/bilibili/biligame/ui/category/viewholder/e;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_1
+    sget-object p2, Lcom/bilibili/biligame/ui/category/viewholder/l;->p:Lcom/bilibili/biligame/ui/category/viewholder/l$a;
+
+    .line 24
+    .line 25
+    invoke-virtual {p2, p1, p0}, Lcom/bilibili/biligame/ui/category/viewholder/l$a;->a(Landroid/view/ViewGroup;Lnt3/a;)Lcom/bilibili/biligame/ui/category/viewholder/l;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    :goto_0
+    return-object p1
+.end method
+
+.method protected Z0(Lnt3/b$b;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/category/findgame/d;->f:Ljava/util/List;
+
+    .line 11
+    .line 12
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 13
+    .line 14
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-eqz v1, :cond_2
+
+    .line 23
+    .line 24
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    check-cast v1, Lcom/bilibili/biligame/bean/SiftCategory;
+
+    .line 29
+    .line 30
+    invoke-virtual {v1}, Lcom/bilibili/biligame/bean/SiftCategory;->getType()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    const-string v2, "more_sift_tag"
+
+    .line 35
+    .line 36
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v1
+
+    .line 40
+    const/4 v2, 0x1
+
+    .line 41
+    if-eqz v1, :cond_1
+
+    .line 42
+    .line 43
+    const/4 v1, 0x2
+
+    .line 44
+    invoke-virtual {p1, v2, v1}, Lnt3/b$b;->f(II)V
+
+    .line 45
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_1
+    invoke-virtual {p1, v2, v2}, Lnt3/b$b;->f(II)V
+
+    .line 49
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_2
+    return-void
+.end method

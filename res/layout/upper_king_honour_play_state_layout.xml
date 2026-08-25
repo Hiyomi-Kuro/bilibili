@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/upper_king_honour_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upper_template_detail_play" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/king_honour_play_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="32.0dp" android:layout_height="32.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/upper_time_albums_loading" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/king_honour_loading_failed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/upper_king_honour_media_play_failed" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upper_load_failed" />
+            <TextView android:textSize="14.0sp" android:textColor="#9499a0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="6.5dp" android:text="@string/upper_king_honour_loading_failed" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/king_honour_retry_load" android:background="@drawable/bg_upper_ff6699_4_round" android:layout_width="66.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:text="@string/retry" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

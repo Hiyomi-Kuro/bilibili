@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="为了你的账号安全\n设置前请绑定手机或邮箱" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text1" android:gravity="center" android:id="@id/id_bind_phone" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="绑定手机" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text1" android:gravity="center" android:id="@id/id_bind_email" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="绑定邮箱" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <TextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Text1" android:gravity="center" android:id="@id/id_bind_cancel" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/cancel" />
+</LinearLayout>

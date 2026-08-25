@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/uatCheckBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="切换环境" />
+    <EditText android:id="@id/et_uat_env" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:inputType="text" android:imeOptions="actionDone" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/tv_uat_header_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/uat_header_name" app:layout_constraintTop_toBottomOf="@id/et_uat_env" />
+    <AutoCompleteTextView android:id="@id/et_uat_headers" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:imeOptions="actionDone" app:layout_constraintTop_toBottomOf="@id/tv_uat_header_name" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="200.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

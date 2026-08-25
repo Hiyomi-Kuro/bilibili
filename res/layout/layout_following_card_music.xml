@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/music_wrapper" android:background="@drawable/bg_card_selector_with_border" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/music_cover_wrapper" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.bilibili.bplus.followingcard.widget.AllDayImageView android:id="@id/music_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:roundBottomLeft="true" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="false" app:roundedCornerRadius="2.0dp" app:viewAspectRatio="1.0" />
+        <ImageView android:layout_gravity="center" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_following_music_play" android:scaleType="centerCrop" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/main_Ga10" android:ellipsize="end" android:id="@id/music_info" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="4.0" android:lineSpacingMultiplier="@dimen/card_text_extra_space" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

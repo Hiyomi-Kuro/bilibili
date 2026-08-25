@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/dy_app_bar" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.bilibili.bplus.followinglist.home.mediator.MediatorTabLayout android:id="@id/dy_tab_layout" android:background="@null" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="42.0dp" app:layout_scrollFlags="scroll" app:tabGravity="fill" app:tabIndicatorHeight="0.0dp" app:tabMinWidth="65.0dp" app:tabMode="fixed" app:tabPaddingEnd="4.0dp" app:tabPaddingStart="4.0dp" app:tabRippleColor="@android:color/transparent" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+        <androidx.fragment.app.FragmentContainerView android:id="@id/dy_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

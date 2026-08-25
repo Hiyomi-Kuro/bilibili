@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/Wh0" android:paddingTop="120.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/error_image" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/bili_2233_fail" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/bi_ad_load_failed" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_inline_round_rect_pink" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="@string/bi_ad_refresh" />
+</LinearLayout>

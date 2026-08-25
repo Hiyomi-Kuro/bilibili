@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#212121" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/switch_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Switch android:layout_gravity="end|center" android:id="@id/settings_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/small_app_switch_thumb" android:track="@drawable/small_app_switch_track" android:switchMinWidth="44.0dp" />
+</FrameLayout>

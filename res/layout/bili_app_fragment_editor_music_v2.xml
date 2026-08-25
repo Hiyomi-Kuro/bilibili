@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/music_main_parent" android:visibility="gone" layout="@layout/bili_app_include_editor_music_main" />
+    <include android:id="@id/music_download_parent" android:visibility="gone" layout="@layout/bili_app_include_editor_music_download" />
+    <include android:id="@id/music_edit_parent" android:visibility="gone" layout="@layout/bili_app_include_editor_music_edit" />
+    <include android:id="@id/music_list_parent" layout="@layout/bili_app_include_editor_music_list" />
+    <include android:id="@id/music_bottom_parent" android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_titlebar_rootlayout" android:background="@drawable/imax_topbar_transition" android:layout_width="match_parent" android:layout_height="@dimen/ad_imax_tool_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:gravity="center_vertical" android:id="@id/close" android:visibility="visible" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_imax_close" />
+    <ImageView android:gravity="center_vertical" android:id="@id/web_back" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_left_arrow" />
+    <ImageView android:gravity="center_vertical" android:id="@id/web_close" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_imax_close" />
+    <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/overflow" android:background="?android:selectableItemBackground" android:padding="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:src="@drawable/ic_overflow" app:imageTint="@color/Wh0_u" />
+</LinearLayout>

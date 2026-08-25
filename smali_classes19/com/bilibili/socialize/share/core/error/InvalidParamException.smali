@@ -1,0 +1,26 @@
+.class public Lcom/bilibili/socialize/share/core/error/InvalidParamException;
+.super Lcom/bilibili/socialize/share/core/error/ShareException;
+.source "BL"
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bilibili/socialize/share/core/error/ShareException;-><init>(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/16 p1, -0xeb
+
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Lcom/bilibili/socialize/share/core/error/ShareException;->setCode(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

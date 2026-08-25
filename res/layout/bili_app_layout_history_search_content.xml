@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga5" android:gravity="center|top" android:layout_gravity="center_horizontal" android:id="@id/content_page_state_init_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="156.0dp" android:layout_marginRight="40.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/content_page_state_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/content_page_state_img" android:layout_width="280.0dp" android:layout_height="158.0dp" app:actualImageScaleType="fitCenter" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga5" android:layout_gravity="center_horizontal" android:id="@id/content_page_state_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="40.0dp" />
+        <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_size_xlarge" android:textColor="@color/Wh0_u" android:layout_gravity="center_horizontal" android:id="@id/content_page_state_button" android:background="@drawable/shape_roundrect_theme_color_secondary" android:layout_width="141.0dp" android:layout_height="44.0dp" android:layout_marginTop="27.0dp" android:text="@string/history_search_retry_text" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/content_list" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+</FrameLayout>

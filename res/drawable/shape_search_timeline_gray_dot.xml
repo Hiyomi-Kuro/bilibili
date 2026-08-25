@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="2.0dp" android:insetRight="2.0dp" android:insetTop="2.0dp" android:insetBottom="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@color/Graph_weak" />
+        <size android:height="8.0dp" android:width="8.0dp" />
+        <corners android:radius="4.0dp" />
+    </shape>
+</inset>

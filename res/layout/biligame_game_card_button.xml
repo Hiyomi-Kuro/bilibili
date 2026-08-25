@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:padding="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0dp" android:gravity="center" android:id="@id/btn_action" android:padding="0.0dp" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:includeFontPadding="false" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vs_pay_button" android:layout="@layout/biligame_view_pay_btn_vs" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.biligame.widget.gamecard.GameCardDownloadButton android:layout_gravity="center" android:id="@id/btn_download" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/biligame_Re_Lb5" android:id="@id/tv_test" android:padding="0.0dp" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="o" android:includeFontPadding="false" />
+</merge>

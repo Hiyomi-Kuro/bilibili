@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg_floating" android:background="@drawable/bg_bottom_snackbar_shadow" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_marginTop="4.0dp" app:layout_constraintBottom_toBottomOf="@id/floating_title" app:layout_constraintEnd_toEndOf="@id/floating_title" app:layout_constraintStart_toStartOf="@id/floating_title" app:layout_constraintTop_toTopOf="@id/floating_title" />
+    <FrameLayout android:id="@id/floating_title" android:background="@drawable/shape_cheese_season_background" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:backgroundTint="@color/Bg1_float" android:layout_marginHorizontal="12.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <include android:id="@id/title_layout" layout="@layout/theseus_cheese_season_floating_title" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

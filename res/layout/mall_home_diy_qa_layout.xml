@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/home_diy_block_1_bg" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" layout="@layout/mall_home_diy_block_top_layout" />
+    <include android:id="@id/mall_home_diy_qa1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" layout="@layout/mall_home_diy_qustion_line_layout" />
+    <include android:id="@id/mall_home_diy_qa2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" layout="@layout/mall_home_diy_qustion_line_layout" />
+    <include android:id="@id/mall_home_diy_qa3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" layout="@layout/mall_home_diy_qustion_line_layout" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

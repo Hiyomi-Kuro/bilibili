@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_bgm_music_track" android:layout_width="match_parent" android:layout_height="108.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+        <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/gray_dark" android:id="@id/track_crop_music_tip_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_editor_music_panel_drag_edit" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/gray_dark" android:layout_gravity="right|center" android:id="@id/track_crop_music_duration_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="12.0dp">
+        <com.bilibili.studio.videoeditor.widgets.MusicCropView android:id="@id/track_crop_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="-8.0dp" />
+        <View android:background="@drawable/editor_crop_music_header_gradient" android:layout_width="42.0dp" android:layout_height="match_parent" />
+        <View android:background="@color/white" android:layout_width="2.0dp" android:layout_height="match_parent" android:layout_marginLeft="42.0dp" />
+        <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/white" android:gravity="center" android:layout_gravity="left|center" android:id="@id/tv_crop_music_play_time_text_view" android:layout_width="50.0dp" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <View android:layout_gravity="right" android:background="@drawable/editor_crop_music_tail_gradient" android:layout_width="30.0dp" android:layout_height="40.0dp" />
+    </FrameLayout>
+</LinearLayout>

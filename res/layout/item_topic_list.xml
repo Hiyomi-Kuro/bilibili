@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topic_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/topic_activity">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/topic_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:layout_gravity="center_vertical" android:id="@id/new_topic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/following_new_topic" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/topic_activity" android:background="@drawable/shape_topic_search_bg" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="18.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="12.0dp" android:text="@string/following_activity" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

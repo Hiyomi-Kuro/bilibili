@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@drawable/upper_publish_tag_pink_corner" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/select_tag_hot_icon" android:visibility="gone" android:layout_width="17.0dp" android:layout_height="17.0dp" android:src="@drawable/upper_selector_topic" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_small" android:textColor="@color/upper_text_selected" android:id="@id/content" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="许愿春日之旅" android:layout_centerVertical="true" android:paddingStart="4.0dp" android:layout_toEndOf="@id/select_tag_hot_icon" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_selected_tag_delete" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/upper_pub_tag_close" android:layout_centerVertical="true" android:layout_toEndOf="@id/content" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

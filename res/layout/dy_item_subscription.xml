@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/dy_cover_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="12.0dp" app:cornerRadius="@dimen/following_cover_round_radius">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:viewAspectRatio="3.4" />
+        <com.bilibili.app.comm.list.widget.tag.TagView android:layout_gravity="end|top" android:id="@id/dy_cover_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" app:tag_horizontal_padding="4.0dp" app:tag_maxLength="5" app:tag_needEllipsis="false" app:tag_night_alpha="1.0" app:tag_textSize="10.0sp" app:tag_vertical_padding="1.0dp" style="@style/Widget.App.Tag.Small.Fill" />
+        <View android:layout_gravity="bottom" android:id="@id/dy_cover_text_shadow" android:background="@drawable/shape_rect_grad_black_alpha_0_to_40" android:layout_width="match_parent" android:layout_height="48.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/dy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    </tv.danmaku.bili.widget.RoundRectFrameLayout>
+</FrameLayout>

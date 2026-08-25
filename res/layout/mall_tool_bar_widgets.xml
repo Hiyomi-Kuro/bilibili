@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="start|center" android:id="@id/mBackImageView" android:background="@android:color/transparent" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitCenter" android:layout_marginStart="12.0dp" app:srcCompat="@drawable/mall_icon_back_black" />
+    <ImageButton android:layout_gravity="start|center" android:id="@id/mLeftIcon" android:background="@android:color/transparent" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitCenter" android:layout_marginStart="54.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/mTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/mRightMenuLayout" android:layout_width="wrap_content" android:layout_height="22.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

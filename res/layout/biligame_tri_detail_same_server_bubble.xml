@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/tri_iv_arrow" android:layout_width="14.0dp" android:layout_height="6.0dp" android:layout_marginLeft="0.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/biligame_vector_ic_bubble_arrow" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@id/tri_container" android:background="#2f3238" android:layout_width="wrap_content" android:layout_height="34.0dp" android:layout_marginTop="8.0dp" android:paddingStart="46.0dp">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tri_tv_same_server_tips" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12.0dp" android:maxLines="1" android:layout_marginStart="4.0dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tri_iv_close" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/tri_iv_close" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/biligame_close" android:tint="@color/Ga2_u" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_tips_icon" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_marginStart="4.0dp" />
+</FrameLayout>

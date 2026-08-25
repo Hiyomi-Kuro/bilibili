@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/iv_float_layer" android:layout_width="match_parent" android:layout_height="96.0dp" android:layout_centerHorizontal="true" />
+    <com.bilibili.bililive.biz.uicommon.widget.LiveNightOverlayView android:id="@id/iv_hero" android:layout_width="46.0dp" android:layout_height="46.0dp" android:layout_marginTop="10.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/live_hero_tag_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_hero_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" android:maxEms="6" android:layout_below="@id/iv_hero" android:layout_centerHorizontal="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/theme_color_live_text_assist_dark" android:ellipsize="end" android:gravity="center" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginBottom="7.0dp" android:maxLines="1" android:maxEms="5" android:layout_below="@id/tv_hero_name" android:layout_centerHorizontal="true" />
+</RelativeLayout>

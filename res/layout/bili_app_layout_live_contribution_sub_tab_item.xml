@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/selector_contribution_sub_tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_contribution_sub_tab_item" android:background="@drawable/selector_contribution_sub_tab_bg" android:layout_width="wrap_content" android:layout_height="21.0dp" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

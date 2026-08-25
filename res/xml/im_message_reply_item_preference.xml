@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_title_group_reply" android:key="@string/pref_key_message_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="true" android:entries="@array/pref_messages_notify_style_entries" android:key="@string/im_pref_key_group_comment" android:defaultValue="0" android:entryValues="@array/pref_messages_notify_style_entryValues" app:radioDefaultValue="0" app:radioEntries="@array/pref_messages_reply_entres" app:radioEntryValues="@array/pref_messages_reply_entryValues" />
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/live_daynigt_voice_join_list_fragment_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_primary" android:id="@id/tv_multi_voice_title" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_voice_connect" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/iv_close" android:padding="7.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_close" android:tint="@color/theme_color_live_horizontal_card_gray_text" android:layout_marginEnd="8.0dp" />
+        </FrameLayout>
+        <View android:background="@color/live_daynigt_voice_join_list_line" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/color_9499A0" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_room_multi_voice_tip" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_join_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/live_multi_voice_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="82.0dp" android:src="@drawable/img_holder_empty_style2" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/live_room_multi_voice_no_audience" />
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/apply_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/live_daynigt_voice_join_list_line" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <com.bilibili.magicasakura.widgets.TintButton android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/apply_button" android:background="@drawable/live_selector_follow_card_follow_btn_corner_4_day" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_margin="12.0dp" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</LinearLayout>

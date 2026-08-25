@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/following_up_avatar_container_size" android:layout_height="wrap_content" android:minHeight="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dy_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dy_avatar_background" android:background="@drawable/bg_up_see_more" android:padding="15.0dp" android:layout_width="@dimen/following_avatar_size" android:layout_height="@dimen/following_avatar_size" app:imageTint="@color/Ga5" app:roundAsCircle="true" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_avatar" android:padding="15.0dp" android:layout_width="@dimen/following_avatar_size" android:layout_height="@dimen/following_avatar_size" app:imageTint="@color/Ga5" app:placeholderImage="@drawable/list_default_image_holder" app:roundAsCircle="true" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_11sp" android:textColor="@color/Ga7" android:ellipsize="end" android:gravity="center|top" android:id="@id/dy_name" android:layout_width="@dimen/following_mix_up_text_width_static" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" android:maxLines="2" android:includeFontPadding="false" android:fallbackLineSpacing="false" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/dy_avatar_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_root" android:layout_width="68.0dp" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:layout_gravity="center_horizontal" android:id="@id/share_img" android:layout_width="44.0dp" android:layout_height="44.0dp" app:actualImageScaleType="fitCenter" app:aspectRadioHeight="1" app:aspectRadioWidth="1" app:placeholderImage="@android:color/transparent" app:placeholderImageScaleType="fitCenter" app:scaleViewType="fitWidth" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/color_gray" android:gravity="center" android:id="@id/share_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+</LinearLayout>

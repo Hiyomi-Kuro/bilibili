@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/select_indicator" android:background="#33fb7299" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="center|bottom" android:id="@id/indicator_bar" android:background="@drawable/live_shape_corner_2_secondary_theme" android:layout_width="45.0dp" android:layout_height="2.0dp" />
+    </FrameLayout>
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="9.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_avatar" app:roundAsCircle="true" app:thumbHeight="40.0dp" app:thumbWidth="40.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/frame" android:layout_width="46.0dp" android:layout_height="46.0dp" app:layout_constraintBottom_toBottomOf="@id/avatar" app:layout_constraintLeft_toLeftOf="@id/avatar" app:layout_constraintRight_toRightOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/theme_color_text_major" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/user_name" android:layout_width="90.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/avatar" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/tag" android:layout_width="39.0dp" android:layout_height="14.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="1.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feedback_bar_layout" android:background="#4d2f3238" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="36.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/feedback_bar_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:singleLine="true" android:shadowColor="#1a000000" android:shadowDy="1.0" android:layout_weight="1.0" android:layout_marginEnd="8.0dp" />
+    <FrameLayout android:id="@id/feedback_bar_item1" android:background="@drawable/ad_story_feedback_bar_bg" android:layout_width="82.0dp" android:layout_height="24.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/feedback_bar_icon1" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" app:scaleViewType="fitWidth" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/feedback_bar_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:maxLength="4" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/feedback_bar_item2" android:background="@drawable/ad_story_feedback_bar_bg" android:layout_width="82.0dp" android:layout_height="24.0dp" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/feedback_bar_icon2" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="2.0dp" android:layout_marginEnd="2.0dp" app:scaleViewType="fitWidth" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/feedback_bar_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:maxLength="4" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

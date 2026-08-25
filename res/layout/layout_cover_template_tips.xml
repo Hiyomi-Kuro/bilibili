@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="60.0dp">
+        <RelativeLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="41.0dp" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/tvContentLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="41.0dp">
+                <androidx.cardview.widget.CardView android:id="@id/tvContentCard" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="34.0dp" android:layout_marginLeft="5.0dp" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/transparent_white" app:cardCornerRadius="17.0dp" app:cardElevation="8.0dp" app:cardMaxElevation="8.0dp">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvContent" android:background="@drawable/upper_multi_cover_tips_bg" android:paddingLeft="13.0dp" android:paddingRight="50.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <ImageView android:layout_width="6.0dp" android:layout_height="14.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/upper_multi_cover_tips_left_icon" android:layout_alignParentBottom="true" />
+            <ImageView android:layout_width="41.0dp" android:layout_height="41.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/upper_multi_cover_tips_right_icon" android:layout_alignRight="@id/tvContentLayout" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

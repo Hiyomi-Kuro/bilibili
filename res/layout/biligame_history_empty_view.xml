@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tips_empty" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_empty_message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/biligame_dip_20" android:text="@string/biligame_history_empty_tips" />
+    <Button android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:id="@id/btn_empty_action" android:background="@drawable/biligame_pink_btn" android:layout_width="140.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:text="@string/biligame_history_empty_action" />
+</LinearLayout>

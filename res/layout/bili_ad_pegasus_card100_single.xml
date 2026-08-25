@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintConstraintLayout android:id="@id/root_container" android:background="@drawable/ad_pegasus_card_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/pegasus_item_background"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/box" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" app:layout_constraintDimensionRatio="16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/cover_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/extra_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.ad.adview.pegasus.holders.inline.player.widget.AdInlinePlayerContainerLayout android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="@dimen/ad_cover_round_radius" app:roundType="round_top" />
+        <com.bilibili.adcommon.biz.tag.moveup.tag.view.AdFeedTagStrategyView android:layout_gravity="right|top" android:id="@id/cover_tag_hit_strategy_view" android:visibility="gone" android:layout_width="@dimen/ad_feed_card_cover_tag_bg_width" android:layout_height="@dimen/ad_feed_card_cover_tag_bg_width" />
+    </FrameLayout>
+    <com.bilibili.app.comm.list.common.inline.view.InlineGestureSeekBarContainer android:id="@id/inline_progress" android:layout_width="0.0dp" android:layout_height="25.0dp" app:layout_constraintBottom_toTopOf="@id/tool_container" app:layout_constraintEnd_toEndOf="@id/box" app:layout_constraintStart_toStartOf="@id/box" app:layout_constraintTop_toTopOf="@id/tool_container" />
+    <FrameLayout android:id="@id/tool_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/box" />
+    <com.bilibili.adcommon.player.alphaplayer.AdIpAlphaPlayer android:id="@id/alpha_video_view" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.adcommon.widget.AdTintConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="40.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/multi_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interact_danmaku_panel_multi_func_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:overScrollMode="never" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/multi_title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/multi_cell_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/single_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/interact_danmaku_panel_single_func_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:overScrollMode="never" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/single_title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/single_cell_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

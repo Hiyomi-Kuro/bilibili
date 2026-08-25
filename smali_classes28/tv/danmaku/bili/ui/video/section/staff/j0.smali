@@ -1,0 +1,76 @@
+.class public final synthetic Ltv/danmaku/bili/ui/video/section/staff/j0;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ltv/danmaku/bili/ui/video/section/staff/d;
+
+.field public final synthetic c:Ltv/danmaku/bili/videopage/data/view/model/BiliVideoDetail$Staff;
+
+.field public final synthetic d:Landroid/view/View;
+
+
+# direct methods
+.method public synthetic constructor <init>(ILtv/danmaku/bili/ui/video/section/staff/d;Ltv/danmaku/bili/videopage/data/view/model/BiliVideoDetail$Staff;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->a:I
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->b:Ltv/danmaku/bili/ui/video/section/staff/d;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->c:Ltv/danmaku/bili/videopage/data/view/model/BiliVideoDetail$Staff;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->d:Landroid/view/View;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 4
+
+    .line 1
+    iget v0, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->a:I
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->b:Ltv/danmaku/bili/ui/video/section/staff/d;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->c:Ltv/danmaku/bili/videopage/data/view/model/BiliVideoDetail$Staff;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Ltv/danmaku/bili/ui/video/section/staff/j0;->d:Landroid/view/View;
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1, v2, v3, p1}, Ltv/danmaku/bili/ui/video/section/staff/UgcStaffViewHolder$ScrollerAdapter;->S0(ILtv/danmaku/bili/ui/video/section/staff/d;Ltv/danmaku/bili/videopage/data/view/model/BiliVideoDetail$Staff;Landroid/view/View;Landroid/view/View;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method

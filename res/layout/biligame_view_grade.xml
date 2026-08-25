@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_star" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/biligame_vector_star_fill" app:tint="@color/Or5" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Or5" android:id="@id/tv_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.6dp" />
+</merge>

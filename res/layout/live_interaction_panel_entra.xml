@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/live_interaction_panel_enter" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_panel_entrance" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" app:autoPlay="true" app:loopCount="1" />
+</FrameLayout>

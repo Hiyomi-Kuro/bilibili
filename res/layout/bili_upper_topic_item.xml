@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/topic_container" android:background="@color/Bg1" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:id="@id/tag_bg" android:background="@drawable/upper_topic_tag_selector" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="28.0dp">
+        <ImageView android:id="@id/iv_tag_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upper_selector_topic_pink" android:layout_marginEnd="4.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_small" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_tag_topic_close" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_topic_close_pink" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/llDescContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginStart="8.0dp">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/tag_creator_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/upper_theme_operate_orange" android:id="@id/tag_creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/upper_theme_operate_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_topic_creator_hint" android:layout_marginStart="4.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_theme_operate_orange" android:id="@id/tag_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_topic_award" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:id="@id/tag_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

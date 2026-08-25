@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/nav_top_bar" android:background="@color/mall_color_media_viewpager_bg" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:titleTextColor="@color/white">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right|center" android:id="@id/select" android:background="@drawable/mall_selector_image_picker" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="16.0dp" android:text="" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:background="@color/mall_color_media_viewpager_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/nav_top_bar" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/view_bottom" android:background="@color/black_alpha55" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0dp" android:textColor="@color/mall_color_publish_text" android:gravity="center" android:id="@id/send_text" android:background="@drawable/mall_shape_roundrect_theme_gallery_corner" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</RelativeLayout>

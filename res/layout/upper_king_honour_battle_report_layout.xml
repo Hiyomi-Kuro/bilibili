@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/upper_king_honour_battle_report_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/king_honour_battle_header" android:layout_width="match_parent" android:layout_height="44.0dp" layout="@layout/upper_king_honour_header_layout" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/upper_king_honour_tab_layout" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/king_honour_battle_header" app:tabIndicator="@drawable/bg_upper_king_honour_tab_indicator" app:tabIndicatorColor="@color/tab_indicator" app:tabIndicatorHeight="3.0dp" app:tabMode="scrollable" app:tabSelectedTextColor="#ffffff" app:tabTextColor="#9499a0" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/upper_king_honour_view_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/upper_king_honour_tab_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dp" android:minHeight="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tri_fl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.biligame.ui.image.GameImageViewV2 android:layout_gravity="bottom" android:id="@id/tri_iv_enter" android:layout_width="26.0dp" android:layout_height="26.0dp" android:scaleType="centerInside" app:placeholderImage="@drawable/biligame_default_image_tv" app:placeholderImageScaleType="centerInside" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="start" android:id="@id/tri_tv_enter_unread" android:background="@drawable/biligame_background_corner_re5" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginBottom="18.0dp" android:minWidth="15.0dp" android:includeFontPadding="false" android:layout_marginStart="12.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:gravity="center" android:id="@id/tri_tv_enter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" app:layout_constraintEnd_toEndOf="@id/tri_fl_icon" app:layout_constraintStart_toStartOf="@id/tri_fl_icon" app:layout_constraintTop_toBottomOf="@id/tri_fl_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

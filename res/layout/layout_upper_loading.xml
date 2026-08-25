@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="24.0dp" android:layout_height="24.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text3" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/upper_try_hard_loading" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/more_update" android:paddingTop="10.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_more_wonderful_update_text" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/image_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/more_wonderful_refresh" app:imageTint="@color/Ga5" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga8" android:ellipsize="end" android:gravity="start" android:id="@id/head" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="6.0dp" android:lines="1" android:layout_toLeftOf="@id/more_update" android:layout_alignParentLeft="true" />
+</RelativeLayout>

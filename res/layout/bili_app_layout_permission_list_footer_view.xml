@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ad_container" layout="@layout/bili_app_layout_permission_ad_item" />
+    <include android:id="@id/splash_sensor_info" layout="@layout/bili_app_layout_permission_switch_item_v2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/switcher_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/rcmd_to_known_info" layout="@layout/bili_app_layout_permission_switch_item_v2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rcmd_info" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <TextView android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rcmd_info_text" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/preference_regulable_wrap_height_default" android:singleLine="true" android:layout_weight="1.0" style="@style/T16" />
+        <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" app:srcCompat="@drawable/ic_vector_arrow_right" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/account_destroy" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <TextView android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center_vertical" android:paddingLeft="12.0dp" android:paddingRight="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="@dimen/preference_regulable_wrap_height_default" android:text="@string/pref_title_account_destroy" android:singleLine="true" android:layout_weight="1.0" style="@style/T16" />
+        <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" app:srcCompat="@drawable/ic_vector_arrow_right" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/edit_filter_list_tab_Item_width" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/tv_filter_tab_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    <View android:id="@id/filter_tab_underline" android:background="@drawable/filter_subtab_underline_background" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="2.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

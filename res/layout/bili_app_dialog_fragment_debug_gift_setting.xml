@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.console.ui.widget.titlebar.HomeTitleBar android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="60.0dp" app:icon="@drawable/close_icon_big" app:title="@string/live_debug_gift_config" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Switch android:textSize="18.0sp" android:id="@id/switch_gift_logic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换送礼模块" />
+                <TextView android:textSize="18.0sp" android:id="@id/textViewStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="老送礼逻辑已开启" android:layout_toRightOf="@id/switch_gift_logic" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注意：只有进房切换才生效，中途送礼后再切换无法生效" android:layout_below="@id/switch_gift_logic" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

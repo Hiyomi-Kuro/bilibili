@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/mall_home_feeds_common_bg_v3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.RoundFrameLayoutNew android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:radius="7.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="1.33846" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.mall.ui.widget.MallImageView2 android:id="@id/mall_home_promotion_block_feed_item_image1" android:layout_width="0.0dp" android:layout_height="match_parent" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="fitXY" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/mall_home_promotion_block_feed_item_image2" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/mall_good_info_default_cover" />
+                <com.mall.ui.widget.MallImageView2 android:id="@id/mall_home_promotion_block_feed_item_image2" android:layout_width="0.0dp" android:layout_height="match_parent" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="fitXY" app:layout_constraintLeft_toRightOf="@id/mall_home_promotion_block_feed_item_image1" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/mall_good_info_default_cover" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.mall.ui.widget.RoundFrameLayoutNew>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

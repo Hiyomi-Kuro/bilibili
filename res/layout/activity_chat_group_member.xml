@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:popupTheme="@style/Im_ChatGroup_sandian" style="?toolbarStyle">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_bigger" android:textColor="@color/theme_color_primary_tr_title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_middle" android:textColor="@color/theme_color_primary_tr_title" android:gravity="right|center" android:id="@id/delete_member" android:background="@drawable/selectable_item_fg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/size_40" android:layout_marginRight="@dimen/margin_20" android:text="@string/title_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <RelativeLayout android:background="@color/Ga0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/size_48">
+        <EditText android:textSize="@dimen/text_small" android:id="@id/search" android:background="@drawable/shape_roundrect_white_corner_6" android:paddingLeft="6.0dp" android:nextFocusUp="@id/group_member" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="10.0dp" android:hint="@string/title_search" android:maxLines="1" android:singleLine="true" android:drawableLeft="@drawable/ic_search_bar" android:imeOptions="actionDone" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/group_member" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga9" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:text="@string/br_prompt_nothing" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" android:layout_above="@id/text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

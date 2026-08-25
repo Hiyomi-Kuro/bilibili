@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/biligame_background_corner_6_gray_f4f4f4" android:paddingLeft="9.0dp" android:paddingRight="9.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="9.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga9" android:gravity="center_vertical" android:id="@id/biligame_filter_name" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_all" android:paddingVertical="6.0dp" />
+    <ImageView android:id="@id/biligame_filter_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biligame_arrow_down" android:layout_marginStart="6.0dp" />
+</LinearLayout>

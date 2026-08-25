@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@color/theme_color_window_background" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="24.0dp" style="@style/Live.Video.Player.Widget.App.SlidingTab" />
+        <View android:background="@drawable/shadow_top_dig" android:layout_width="match_parent" android:layout_height="2.0dp" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/live_bili_app_layout_view_pager" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dp" android:scaleType="centerInside" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeLinerLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/smallapp_bg_modal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/small_app_color_text_body_primary" android:ellipsize="end" android:gravity="center" android:id="@id/modal_title" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="是否关注该UP主" />
+    <ScrollView android:scrollbarSize="2.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="16.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center" android:id="@id/iv_avatar" android:layout_width="44.0dp" android:layout_height="44.0dp" app:placeholderImage="@drawable/small_app_bg_default_logo" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/small_app_color_text_subtitle" android:ellipsize="end" android:gravity="center" android:id="@id/modal_subtitle" android:paddingLeft="37.0dp" android:paddingRight="37.0dp" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="8.0dp" android:maxLines="2" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/small_app_color_divider_line_for_white" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/small_app_pink" android:gravity="center" android:id="@id/left_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/small_app_cancel" android:lines="1" android:layout_weight="1.0" />
+        <View android:id="@id/btn_gap" android:background="@color/small_app_color_divider_line_for_white" android:layout_width="0.5dp" android:layout_height="match_parent" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/small_app_pink" android:gravity="center" android:id="@id/right_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/small_app_confirm" android:lines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeLinerLayout>

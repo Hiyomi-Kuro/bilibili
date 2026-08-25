@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckBox android:textSize="14.0sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/cb_hide_game" android:paddingLeft="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:button="@drawable/biligame_selector_check_hide_game" android:text="@string/biligame_other" android:includeFontPadding="false" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

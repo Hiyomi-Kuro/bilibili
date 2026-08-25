@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_navigation_top_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/agree_wrapper" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="0.5dp" />
+        <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/create_group" android:layout_width="328.0dp" android:layout_height="47.0dp" android:layout_marginBottom="9.0dp" android:outlineProvider="none" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottom_wrapper" android:layout_below="@id/nav_top_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/bg_name" android:background="@color/Ga0" android:paddingTop="@dimen/margin_32" android:paddingBottom="@dimen/margin_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/avatar_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_32">
+                    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="88.0dp" android:layout_height="88.0dp" android:src="@color/black" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+                    <FrameLayout android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_alignRight="@id/avatar" android:layout_alignParentBottom="true">
+                        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar_icon_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_circle" />
+                        <ImageView android:layout_gravity="center" android:id="@id/avatar_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_camera_blue" />
+                    </FrameLayout>
+                </RelativeLayout>
+                <com.bilibili.magicasakura.widgets.TintEditText android:textSize="14.0sp" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/name_input" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_group_name" android:maxLines="1" android:maxLength="30" android:drawableRight="@drawable/ic_pen" android:inputType="text" android:imeOptions="actionNext" android:textCursorDrawable="@null" android:layout_marginStart="64.0dp" android:layout_marginEnd="64.0dp" />
+                <View android:background="@color/gray_alpha7A" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/margin_8" android:layout_marginStart="64.0dp" android:layout_marginEnd="64.0dp" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/bg_info" android:background="@color/Ga0" android:paddingBottom="@dimen/margin_30" android:layout_width="match_parent" android:layout_height="198.0dp" android:layout_marginTop="@dimen/margin_15">
+                <com.bilibili.magicasakura.widgets.TintEditText android:textSize="14.0sp" android:textColor="@color/Ga9" android:gravity="top" android:id="@id/info_input" android:background="@drawable/bg_edittext_border" android:padding="@dimen/padding_10" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_16" android:hint="@string/hint_group_info" android:maxLength="65" android:imeOptions="actionDone" android:imeActionLabel="@string/done" android:textCursorDrawable="@null" android:layout_marginStart="@dimen/margin_30" android:layout_marginEnd="@dimen/margin_30" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

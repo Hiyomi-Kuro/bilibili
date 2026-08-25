@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="60.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:layout_gravity="center_horizontal" android:id="@id/iv_game_icon" android:layout_width="60.0dp" android:layout_height="60.0dp" app:roundedCornerRadius="12.0dp" style="@style/Biligame.App.StaticImageView.Thumb.Icon60" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga9" android:ellipsize="none" android:gravity="center_horizontal" android:id="@id/tv_game_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:minHeight="42.0dp" android:lines="2" />
+    <com.bilibili.biligame.widget.GameActionButtonV2 android:layout_gravity="center_horizontal" android:id="@id/btn_game_action" android:layout_width="56.0dp" android:layout_height="30.0dp" android:layout_marginTop="3.0dp" app:gameActionButtonStyle="pink" />
+</LinearLayout>

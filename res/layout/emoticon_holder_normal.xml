@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/emoji_img_layout" android:background="@drawable/emoticon_shape_holder_emoji_bg" android:padding="9.0dp" android:layout_width="78.0dp" android:layout_height="78.0dp" app:layout_constraintBottom_toTopOf="@id/emoji_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/emoji_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/emoticon_search_clear" app:placeholderImage="@drawable/bili_default_image_tv" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/emoji_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxWidth="78.0dp" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/emoji_img_layout" style="@style/T12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

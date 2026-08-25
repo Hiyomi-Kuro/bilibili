@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_auto_play_setting" android:key="@string/pref_key_auto_play_setting">
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/pref_title_mobile_data_auto_play" android:key="@string/pref_key_mobile_data_auto_play" android:defaultValue="false" app:isPreferenceVisible="false" />
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_auto_play" android:key="@string/pref_key_auto_play" android:summary="@string/pref_summary_auto_play" android:defaultValue="false" app:migration_settings_type="play" />
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_auto_full" android:key="@string/pref_key_auto_full" android:summary="@string/pref_summary_auto_full" android:defaultValue="false" app:migration_settings_type="play" />
+        <androidx.preference.Preference android:persistent="true" android:title="@string/pref_dynamic_video_auto_play" android:key="@string/pref_key_dynamic_video_auto_play" android:fragment="com.bilibili.app.preferences.PreferenceTools$DynamicSettingFragment" />
+        <androidx.preference.Preference android:persistent="true" android:title="@string/pref_title_key_pegasus_v2_inline_auto_play" android:key="@string/pref_key_pegasus_v2_inline_auto_play" android:fragment="com.bilibili.app.preferences.fragment.PegasusInlineSettingFragment" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintToolbar android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@null" app:navigationIcon="@drawable/adgame_back_white" app:titleTintColor="@null" style="?toolbarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

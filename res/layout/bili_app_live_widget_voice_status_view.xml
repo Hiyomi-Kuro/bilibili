@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/theme_color_bg_white" android:layout_width="match_parent" android:layout_height="91.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/live_bg_voice_head_small_tv" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="91.0dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="44.0dp" android:layout_height="44.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/anchor_avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_margin="4.0dp" android:layout_centerInParent="true" app:placeholderImage="@drawable/bili_default_avatar" app:thumbHeight="36.0dp" app:thumbWidth="36.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/anchor_avatar_frame" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerInParent="true" app:placeholderImageScaleType="centerInside" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/anchor_avatar_title" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_alignRight="@id/anchor_avatar" android:layout_alignBottom="@id/anchor_avatar" app:actualImageScaleType="centerInside" app:thumbHeight="12.0dp" app:thumbWidth="12.0dp" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@color/theme_color_text_white" android:background="@drawable/live_bg_shape_voice_theme_radius" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anchor" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_major" android:ellipsize="end" android:id="@id/anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:lines="1" android:layout_marginStart="2.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:background="@drawable/live_bg_voice_statue_shape_radius_12" android:paddingLeft="15.0dp" android:paddingTop="1.5dp" android:paddingRight="15.0dp" android:paddingBottom="1.5dp" android:layout_width="85.0dp" android:layout_height="26.0dp" android:text="@string/live_voice_wait_tips" android:drawableLeft="@drawable/ic_live_voice_statue_calling" android:drawablePadding="2.0dp" app:drawableLeftTint="@color/theme_color_secondary" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/theme_color_text_assist_dark" android:id="@id/voice_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="44.0dp" android:layout_height="44.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/user_avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_margin="4.0dp" android:layout_centerInParent="true" app:placeholderImage="@drawable/bili_default_avatar" app:thumbHeight="36.0dp" app:thumbWidth="36.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/user_avatar_frame" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerInParent="true" app:placeholderImageScaleType="centerInside" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_major" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

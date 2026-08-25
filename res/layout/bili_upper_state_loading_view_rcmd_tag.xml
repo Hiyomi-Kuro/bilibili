@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/upper_at_user_page_gray_dark_2" android:gravity="center" android:id="@id/custom_tag" android:background="@drawable/bg_upper_pub_custom_tag_corner" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/upper_partiton_custom_tag" android:drawableLeft="@drawable/ic_pub_custom_rcmd" android:drawablePadding="2.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="12.0dp" android:paddingEnd="14.0dp" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/custom_tag" android:layout_centerHorizontal="true" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleSmall" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

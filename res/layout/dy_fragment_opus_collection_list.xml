@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dy_bg_bottom_sheet_collection_list" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/Graph_bg_thick" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <tv.danmaku.bili.widget.PriorityLinearLayout android:orientation="horizontal" android:id="@id/temp_pll" android:layout_width="283.0dp" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="17.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/dy_collection_list_tv_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_priority="1" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/Text1" android:id="@id/dy_collection_list_tv_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_priority="23" />
+        </tv.danmaku.bili.widget.PriorityLinearLayout>
+        <tv.danmaku.bili.widget.PriorityLinearLayout android:id="@id/dy_collection_list_ll_intro" android:layout_width="283.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="16.0dp" android:layout_marginStart="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/temp_pll">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/dy_collection_list_tv_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_priority="1" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_arrow_right_gray" app:layout_priority="2" />
+        </tv.danmaku.bili.widget.PriorityLinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/dy_collection_list_ll_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/dy_collection_list_img_sort" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/dy_vc_sort_asc" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/Text2" android:id="@id/dy_collection_list_tv_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/Line_regular" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/dy_collection_list_compose" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

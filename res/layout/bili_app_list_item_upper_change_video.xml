@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_layout" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/upper_theme_text_two_one" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="6" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/upper_theme_text_two_one" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="为什么我的照片没有层次感？为什么我的照片没有层次感？" android:maxLines="1" android:layout_toLeftOf="@id/btn_change" android:layout_toRightOf="@id/tv_num" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/upper_theme_text_pink" android:id="@id/btn_change" android:paddingLeft="13.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_video_change_item_change" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/upper_data_gray" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

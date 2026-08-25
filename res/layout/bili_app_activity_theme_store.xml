@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?navigationTopBarSize" />
+    <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_primary_tr_icon" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/dark_mode" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/theme_dark_mode" android:layout_marginEnd="12.0dp" />
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

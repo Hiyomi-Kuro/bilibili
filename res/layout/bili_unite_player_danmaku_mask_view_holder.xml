@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/gray_dark" android:layout_gravity="center_vertical" android:id="@id/player_options_danmaku_mask_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/danmaku_mask" style="@style/BPlayer_PlayerOptionsPannelItemTitle" />
+    <com.bilibili.playerbizcommon.features.danmaku.view.PlayerDanmakuOperationSwitchView android:id="@id/player_options_danmaku_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" app:tips="@string/danmaku_mask_tip" app:tipsColor="@color/gray_dark" />
+    <com.bilibili.playerbizcommon.features.danmaku.view.PlayerDanmakuOperationSwitchView android:id="@id/player_options_danmaku_fold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" app:tips="@string/danmaku_fold_tip" app:tipsColor="@color/gray_dark" />
+    <View android:id="@id/line" style="@style/BPlayer_CommonUnderline" />
+</LinearLayout>

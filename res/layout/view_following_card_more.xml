@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_wrapper" android:background="@drawable/bg_card_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/main_Ga2" android:layout_width="match_parent" android:layout_height="2.0px" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/avatar_0_c" android:background="@drawable/round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dp" android:layout_toRightOf="@id/avatar_1_c" android:layout_centerVertical="true" android:layout_marginStart="-4.0dp" android:layout_toEndOf="@id/avatar_1_c" app:layout_constraintRight_toRightOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_0" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="2.0dp" app:roundAsCircle="true" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/avatar_1_c" android:background="@drawable/round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dp" android:layout_toRightOf="@id/avatar_2_c" android:layout_centerVertical="true" android:layout_marginStart="-4.0dp" android:layout_toEndOf="@id/avatar_2_c" app:layout_constraintRight_toRightOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_1" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="2.0dp" app:roundAsCircle="true" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/avatar_2_c" android:background="@drawable/round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dp" android:layout_toRightOf="@id/avatar_3_c" android:layout_centerVertical="true" android:layout_marginStart="-4.0dp" android:layout_toEndOf="@id/avatar_3_c">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_2" android:visibility="visible" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="2.0dp" app:roundAsCircle="true" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/avatar_3_c" android:background="@drawable/round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_3" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="2.0dp" app:roundAsCircle="true" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/main_Ga5" android:gravity="center" android:id="@id/more_text" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@id/avatar_0_c" android:layout_toEndOf="@id/avatar_0_c" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_pull_down_more" android:layout_toRightOf="@id/more_text" android:layout_centerVertical="true" android:layout_toEndOf="@id/more_text" app:imageTint="@color/main_Ga5" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

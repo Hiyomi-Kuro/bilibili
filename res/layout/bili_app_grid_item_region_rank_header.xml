@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:layout_gravity="start|center" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comprehension_dynamic" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/theme_color_secondary" android:gravity="center" android:layout_gravity="end|center" android:id="@id/rank" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pegasus_head_title_rank" android:drawableLeft="@drawable/ic_index_rank" android:drawablePadding="10.0dp" app:drawableLeftTint="@color/theme_color_secondary" />
+</FrameLayout>

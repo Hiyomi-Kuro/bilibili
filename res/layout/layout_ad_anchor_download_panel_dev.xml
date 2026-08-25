@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintRelativeLayout android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:id="@id/dev_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/dev_tv">
+        <com.bilibili.ad.adview.widget.TextLinearLayout android:id="@id/dev_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/horizontal_divider" android:background="@color/Ga13" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="15.5dp" android:layout_below="@id/detail_layout" />
+</com.bilibili.adcommon.widget.AdTintRelativeLayout>

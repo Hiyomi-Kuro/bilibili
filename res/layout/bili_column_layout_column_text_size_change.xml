@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/column_change_text_size_small" android:layout_weight="0.0" />
+        <com.bilibili.column.ui.widget.SectionedSeekBar android:layout_gravity="center_vertical" android:id="@id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:progressDrawable="@color/Ga7" android:layout_weight="1.0" app:defaultSection="1" app:sectionCount="4" app:sectionPointColor="@color/Ga7" app:sectionPointSize="6.0dp" app:seekBarHeight="2.0dp" app:selectedTextColor="@color/section_seek_bar_text" app:space="8.0dp" app:textColor="@color/Ga7" app:textSize="14.0sp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="20.0sp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/column_change_text_size_large" android:layout_weight="0.0" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/close" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="@string/close" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/notice_layout" android:background="@color/Ye1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ye5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/notice_text" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_medium_spacing" android:layout_marginRight="@dimen/item_medium_spacing" android:minHeight="40.0dp" android:maxLines="1" android:drawableLeft="@drawable/ic_notice_brown" android:drawablePadding="6.0dp" android:layout_weight="1.0" android:drawableStart="@drawable/ic_notice_brown" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleview" android:paddingBottom="30.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

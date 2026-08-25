@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/traffic_play" android:background="@color/black_alpha60" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center_horizontal" android:id="@id/tips_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:text="@string/title_tip_use_traffic_play_clip" android:layout_above="@id/play_in_traffic" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/play_in_traffic" android:background="@drawable/shape_roundrect_white_alpha20" android:layout_width="142.0dp" android:layout_height="30.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/tips_continue_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_play_in_traffic" android:drawableLeft="@drawable/bili_player_play_can_play" android:drawablePadding="6.0dp" android:layout_centerInParent="true" android:drawableStart="@drawable/bili_player_play_can_play" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/tips_unicom" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:text="@string/dialog_open_unicom_service" android:layout_below="@id/play_in_traffic" android:layout_centerInParent="true" />
+</RelativeLayout>

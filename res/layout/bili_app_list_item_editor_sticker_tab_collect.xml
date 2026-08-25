@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lv_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/selector_sticker_tab_white" android:id="@id/tv_collect" android:layout_width="wrap_content" android:layout_height="22.0dp" android:text="@string/bili_editor_bgm_list_tab_favorite" />
+    <View android:id="@id/v_diver" android:background="@drawable/capture_shape_sticker_tab_bottom" android:layout_width="15.0dp" android:layout_height="3.0dp" android:layout_marginTop="5.0dp" />
+</LinearLayout>

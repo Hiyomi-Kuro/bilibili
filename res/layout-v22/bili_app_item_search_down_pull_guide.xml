@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text_white" android:gravity="center" android:id="@id/guide_content" android:background="@drawable/shape_rect_solid_gray_8dp" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginBottom="40.0dp" android:text="@string/search_down_pull_tips_text" android:maxLines="1" android:backgroundTint="#e62f3238" android:paddingHorizontal="12.0dp" android:paddingVertical="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

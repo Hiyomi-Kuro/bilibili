@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_review_item_container" android:tag="page_rendered" android:background="@drawable/mall_home_feeds_common_bg_v3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.RoundFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:radius="7.0dp" app:roundBottomLeft="false" app:roundBottomRight="false">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/home_review_card_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:aspectRadioHeight="9" app:aspectRadioWidth="16" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" app:placeholderImageScaleType="centerInside" style="@style/mallHomeReviewItem" />
+    </com.mall.ui.widget.RoundFrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0dp" android:textColor="@color/Ga10" android:id="@id/home_review_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:maxLines="2" android:lineSpacingExtra="3.0dp" />
+        <com.mall.ui.page.home.HomeGoodsTagLayoutV2 android:id="@id/home_review_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mall_article_content_layout_padding_v3" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/mall_article_content_layout_padding_v3" android:layout_marginBottom="10.0dp" android:layout_below="@id/home_review_title" android:layout_alignParentLeft="true" />
+        <LinearLayout android:id="@id/home_review_like_layout" android:paddingTop="10.0dp" android:paddingRight="8.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/home_review_title" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:id="@id/home_review_like_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_ic_like" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/Ga5" android:ellipsize="end" android:layout_gravity="center" android:id="@id/home_review_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

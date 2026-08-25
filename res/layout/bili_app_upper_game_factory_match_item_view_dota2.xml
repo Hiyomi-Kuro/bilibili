@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp" app:cardCornerRadius="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#1b1b1b" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="113.0dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="97.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/sdv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp" app:fadeDuration="0" app:failureImage="@drawable/ic_editor_placeholder_default" app:placeholderImage="@drawable/ic_editor_placeholder_default" app:placeholderImageScaleType="centerCrop" />
+                <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="right" android:id="@id/fl_single_container" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="2.0dp">
+                    <View android:background="@drawable/editor_circle_with_border" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_single" android:background="@drawable/ic_upper_choose" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </com.bilibili.magicasakura.widgets.TintFrameLayout>
+                <TextView android:textSize="@dimen/upper_text_10" android:textColor="@color/white" android:layout_gravity="end|bottom" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_marginEnd="6.0dp" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="left" android:id="@id/tv_tag" android:background="@drawable/bg_upper_game_factory_highlight_tag_text_view" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:maxWidth="55.0dp" android:maxLines="1" />
+            </FrameLayout>
+            <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="8.0dp" app:cardCornerRadius="100.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_avatar" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#9499a0" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#fad493" android:layout_gravity="end" android:id="@id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="8.0dp" android:singleLine="true" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:id="@id/tv_kda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#61666d" android:layout_gravity="end" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="12.0dp" android:singleLine="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/view_overlay" android:background="@color/black_alpha60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_selected_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <com.bilibili.upper.feat.gamefactory.views.ArcProgressView android:layout_gravity="bottom" android:id="@id/pv_progress" android:background="@drawable/bg_upper_game_factory_progress_ring_shape" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="8.0dp" android:layout_marginBottom="8.0dp" app:arc_radius="6.0dp" app:progress_color="@color/Brand_pink" />
+    <com.bilibili.upper.feat.gamefactory.views.DownloadFailedView android:id="@id/v_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="right" android:id="@id/iv_add" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="8.0dp" android:src="@drawable/ic_upper_album_add" />
+</androidx.cardview.widget.CardView>

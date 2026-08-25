@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/live_share_content" android:background="@drawable/bg_card_selector_with_border" android:padding="0.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <com.bilibili.bplus.followingcard.widget.AllDayImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:roundBottomLeft="true" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="false" app:roundedCornerRadius="2.0dp" app:viewAspectRatio="1.61" />
+        <ImageView android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_following_video_play" android:layout_alignBottom="@id/cover" android:layout_alignParentRight="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="4.0">
+        <com.bilibili.bplus.followingcard.widget.FollowingNightTextView android:id="@id/living_status" android:layout_marginTop="2.0dp" android:layout_alignParentRight="true" app:bTint="@color/Pi5_u" style="@style/Following_CardType" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/main_Ga10" android:ellipsize="end" android:id="@id/living_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:maxLines="2" android:layout_toLeftOf="@id/living_status" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:gravity="fill_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/living_title">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/main_Ga5" android:id="@id/living_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/main_Ga5" android:ellipsize="end" android:id="@id/living_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:maxLines="1" android:layout_toLeftOf="@id/living_online" />
+        </RelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

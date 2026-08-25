@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="11.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:id="@id/related_channel" android:background="@drawable/shape_roundract_channel_detail_related_bg" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="26.0dp" android:maxWidth="134.0dp" android:lines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/MallCommonDialog" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/addr_outside_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/addr_container" />
+    <com.mall.ui.widget.CommonMaxHeightLineLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/addr_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_submit_item_padding_left" android:layout_marginRight="@dimen/order_submit_item_padding_right" android:layout_marginBottom="@dimen/order_submit_item_padding_bottom" android:layout_alignParentBottom="true" app:HeightRatio="1.0">
+        <RelativeLayout android:id="@id/addr_head" android:layout_width="match_parent" android:layout_height="70.0dp">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/mall_edit_text_selector_color" android:gravity="center" android:id="@id/addr_title" android:background="@drawable/mall_common_dialog_top_bg" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="@string/mall_submit_address_title" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/addr_circle_button" android:background="@drawable/mall_ic_general_exit" android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_marginRight="18.0dp" android:layout_marginBottom="8.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/addr_arrow" android:background="@drawable/mall_icon_back_night" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="18.0dp" android:layout_marginBottom="14.0dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="18.0dp" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/addr_content" android:background="@drawable/mall_shape_rect_bottom_corner_circle" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/addr_list_area_stub" android:layout="@layout/mall_order_list_addr_stub_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/addr_edit_layout_stub" android:layout="@layout/mall_submit_addr_edit_layout" android:inflatedId="@id/submit_addr_edit_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_submit_item_padding_left" android:layout_marginRight="@dimen/order_submit_item_padding_right" />
+        </LinearLayout>
+    </com.mall.ui.widget.CommonMaxHeightLineLayout>
+    <FrameLayout android:id="@id/addr_loading_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/addr_loading_progress" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</RelativeLayout>

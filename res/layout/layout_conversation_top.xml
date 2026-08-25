@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_relation" android:layout="@layout/lay_black_focuson" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_tips_blackuser" android:layout="@layout/lay_blackuser_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_tips_limituser" android:layout="@layout/lay_limituser_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

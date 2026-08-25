@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/combo_view" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="52.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.combo.LiveComboBgView android:layout_gravity="bottom" android:id="@id/background" android:layout_width="280.0dp" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="12.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_content" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="52.0dp" android:alpha="0.0">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/click_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_avatar" android:background="@android:color/transparent" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginLeft="10.0dp" android:layout_marginStart="10.0dp">
+                <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/avatar" android:background="@android:color/transparent" android:layout_width="36.0dp" android:layout_height="36.0dp" android:scaleType="centerInside" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/live_transparent_img_placeholder" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" app:thumbHeight="36.0dp" app:thumbWidth="36.0dp" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_frame" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_name" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="3.0dp" android:layout_marginBottom="2.0dp" android:minWidth="104.0dp" android:layout_marginStart="3.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/bim_mystery_icon" android:background="@android:color/transparent" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="2.0dp" />
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@android:color/darker_gray" android:id="@id/gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/gift_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/gift_gif" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="5.0dp" android:layout_marginBottom="2.0dp" android:layout_marginStart="5.0dp" app:placeholderImage="@drawable/live_transparent_img_placeholder" />
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center|bottom" android:id="@id/tag" android:layout_width="40.0dp" android:layout_height="11.0dp" android:layout_marginBottom="5.0dp" app:actualImageScaleType="centerInside" app:placeholderImage="@drawable/live_transparent_img_placeholder" />
+            <FrameLayout android:layout_gravity="center|bottom" android:id="@id/fr_naming_gift" android:visibility="gone" android:layout_width="71.0dp" android:layout_height="18.0dp" android:layout_marginBottom="2.0dp">
+                <com.bilibili.bililive.biz.uicommon.combo.LiveComboBgView android:layout_gravity="bottom" android:id="@id/bg_naming_gift" android:layout_width="71.0dp" android:layout_height="18.0dp" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_naming_gift_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="9.0dp" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:layout_gravity="bottom" android:id="@id/count" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp" />
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/layout_batch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp">
+            <TextView android:textColor="@color/theme_color_pink" android:id="@id/gift_num" android:paddingTop="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            <ImageView android:id="@id/image_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:layout_alignParentBottom="true" />
+            <TextView android:id="@id/batch_count" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/image_tag" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:id="@id/crit" android:paddingLeft="120.0dp" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="50.0dp" android:layout_marginTop="28.0dp" android:paddingStart="120.0dp" />
+</FrameLayout>

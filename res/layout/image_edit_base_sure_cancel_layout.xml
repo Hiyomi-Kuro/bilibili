@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/base_btn_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/Ga9_u" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_interval_line_extent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_base_bottom_btn_height">
+        <Button android:textColor="@color/image_edit_cancel_color" android:id="@id/base_cancel" android:background="@android:color/transparent" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/image_edit_cancel_string" android:layout_weight="1.0" />
+        <View android:background="@color/Ga9_u" android:layout_width="@dimen/image_edit_interval_line_extent" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" />
+        <Button android:textColor="@color/Pi5_u" android:id="@id/base_sure" android:background="@android:color/transparent" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/image_edit_sure_string" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

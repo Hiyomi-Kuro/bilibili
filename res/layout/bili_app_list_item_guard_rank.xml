@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.infra.widget.view.MeasurableMinWidthTextView android:textAppearance="@style/TextAppearance.App.Small" android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_secondary_light" android:gravity="center" android:id="@id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="8.0dp" android:layout_alignParentStart="true" app:staffText="9999" />
+    <FrameLayout android:id="@id/fr_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_toRightOf="@id/rank" android:layout_toEndOf="@id/rank">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/avatar" android:layout_width="25.0dp" android:layout_height="25.0dp" fresco:placeholderImage="@drawable/bili_default_avatar" fresco:roundAsCircle="true" fresco:thumbHeight="25.0dp" fresco:thumbWidth="25.0dp"
+          xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/frame_avatar" android:visibility="invisible" android:layout_width="30.0dp" android:layout_height="30.0dp" fresco:thumbHeight="30.0dp" fresco:thumbWidth="30.0dp"
+          xmlns:fresco="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:minHeight="18.0dp" android:layout_toRightOf="@id/fr_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:id="@id/medalInfo" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="9.0dp" android:layout_marginEnd="6.0dp" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/live_guard_order_color" android:id="@id/order_num" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginRight="14.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

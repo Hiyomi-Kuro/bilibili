@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/voice_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/live_bg_voice_status_player_shape" android:layout_width="36.0dp" android:layout_height="62.0dp">
+        <FrameLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_centerHorizontal="true">
+            <com.bilibili.bililive.biz.uicommon.chatroom.widget.micpos.LiveVolumeAnimator android:id="@id/volume_animator" android:visibility="visible" android:clipChildren="false" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/avatar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" app:constLen="32.0dp" app:constLenLess="6.0dp" app:dpValue="1.0dp" app:placeholderImage="@drawable/bili_default_avatar" app:roundAsCircle="true" />
+        </FrameLayout>
+        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="2.0dp" android:lines="1" android:layout_below="@id/avatar_layout" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:id="@id/voice_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_below="@id/user_name" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

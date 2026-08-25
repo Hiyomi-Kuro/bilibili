@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@color/Pay_yellow_thin" android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/notice_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginStart="9.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text_notice" android:ellipsize="end" android:id="@id/notice_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/notice_close" app:layout_constraintStart_toEndOf="@id/notice_icon" app:layout_constraintTop_toTopOf="parent" style="@style/T14" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/notice_close" android:padding="12.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_vector_general_close" app:tint="@color/Text_notice" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

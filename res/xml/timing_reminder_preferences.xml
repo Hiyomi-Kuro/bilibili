@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_timing_reminder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RadioGroupPreference android:persistent="false" android:entries="@array/TimingReminderEntries" android:layout="@layout/bili_app_layout_preference_category_title" android:title="@string/pref_title_timing_reminder_detail" android:key="@string/pref_key_timing_reminderPref" android:defaultValue="0" android:entryValues="@array/TimingReminderValues" app:radioDefaultValue="0" app:radioEntries="@array/TimingReminderEntries" app:radioEntryValues="@array/TimingReminderValues" />
+</androidx.preference.PreferenceScreen>

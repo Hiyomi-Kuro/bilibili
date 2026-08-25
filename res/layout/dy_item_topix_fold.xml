@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dy_topix_fold_root" android:paddingLeft="12.0dp" android:paddingTop="11.0dp" android:paddingRight="12.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/Text2" android:id="@id/dy_fold_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:priority="1" style="@style/T13" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dy_fold_icon" android:padding="1.3299866dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" android:scaleType="centerCrop" android:tint="@color/Graph_medium" app:priority="5" app:srcCompat="@drawable/ic_question_mark_tips" />
+    <Space android:id="@id/dy_fold_space" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:priority="0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dy_fold_entrance" android:layout_width="12.0dp" android:layout_height="12.0dp" app:priority="3" app:srcCompat="@drawable/ic_vector_arrow_right" />
+</tv.danmaku.bili.widget.PriorityLinearLayout>

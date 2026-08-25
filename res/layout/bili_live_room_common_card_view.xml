@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/live_play_together_motion_layout" android:visibility="invisible" android:layout_width="252.0dp" android:layout_height="80.0dp" android:layout_marginBottom="67.0dp" android:layout_marginStart="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.infra.web.widget.RoundRectView android:id="@id/live_play_round_rect" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/live_common_card_WebViewContainer" android:background="@drawable/bg_live_play_together_card" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.bilibili.bililive.infra.web.widget.RoundRectView>
+</androidx.constraintlayout.widget.ConstraintLayout>

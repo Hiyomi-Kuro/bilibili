@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.infra.widget.view.BubbleLayout android:id="@id/tab_icon_guide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" app:bl_arrowDirection="bottom" app:bl_arrowHeight="5.0dp" app:bl_arrowPosition="332.0dp" app:bl_arrowWidth="10.0dp" app:bl_bubbleColor="@color/Pi5" app:bl_cornersRadius="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/white" android:id="@id/tv_guide_text" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.bilibili.bililive.infra.widget.view.BubbleLayout>

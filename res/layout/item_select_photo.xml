@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/Ga1_s" android:layout_width="@dimen/size_118" android:layout_height="@dimen/size_160" android:layout_marginRight="@dimen/margin_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/photo" android:background="@color/white_light_bg2" android:layout_width="@dimen/size_118" android:layout_height="@dimen/size_160" app:actualImageScaleType="centerCrop" app:fadeDuration="0" />
+    <ImageView android:id="@id/camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_photo" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/select" android:background="@drawable/selector_bplusbase_image_picker" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_alignParentRight="true" />
+</RelativeLayout>

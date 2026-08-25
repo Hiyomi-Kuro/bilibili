@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/layout_root" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/fans_medal_component" android:visibility="gone" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_weight="1.0">
+        <com.bilibili.bilibili.giftPanel.biz.fansmedal.view.LiveGiftMedalExperienceBar android:id="@id/fans_medal_bar" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="4.0dp" android:layout_marginTop="6.0dp" android:maxHeight="4.0dp" android:minHeight="4.0dp" android:thumb="@drawable/bg_live_seekbar_transparent_thumb" />
+        <FrameLayout android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.bilibili.giftPanel.biz.fansmedal.view.LiveGiftTextSwitcher android:textSize="@dimen/text_size_medium" android:id="@id/fans_medal_switcher" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/v_disable_tip" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/bili_live_layout_selected_gift_top_tip" />
+    <include android:id="@id/v_wealth_info" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/bili_live_layout_wealth_level_info" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="38.0dp">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/guard_component" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/guard_icon" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="26.0dp" android:scaleType="fitCenter" app:thumbHeight="26.0dp" app:thumbWidth="80.0dp" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/live_medal_alert_btn_text" android:gravity="center_vertical" android:id="@id/guard_btn_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/live_app_guard_buy_now" android:layout_marginStart="27.0dp" />
+        </FrameLayout>
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/guard_benefits_anim" android:visibility="gone" android:layout_width="97.0dp" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" />
+    </FrameLayout>
+</LinearLayout>

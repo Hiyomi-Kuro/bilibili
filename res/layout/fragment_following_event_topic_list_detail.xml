@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout android:id="@id/refresh" android:fitsSystemWindows="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followingcard.widget.TintSvgaContainerFrameLayout android:id="@id/fl_root" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/webViewFL" android:visibility="visible" android:layout_width="100.0dp" android:layout_height="100.0dp" android:alpha="0.0" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fail_wrapper" android:paddingBottom="52.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/error_image" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/bili_2233_fail" android:scaleType="centerInside" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:layout_marginBottom="42.0dp" android:text="@string/following_event_load_failed" />
+            <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_middle" android:textColor="@color/Wh0_u" android:id="@id/try_again" android:background="@drawable/bg_button_round_corner" android:layout_width="141.0dp" android:layout_height="44.0dp" android:text="@string/home_try_again" style="?android:borderlessButtonStyle" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading" android:background="@color/Ga1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/empty_image" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@anim/following_animationlist_loading" android:scaleType="centerInside" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/following_event_loading" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <include layout="@layout/following_error_no_content" />
+        <include layout="@layout/view_share_reminder" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|bottom" android:id="@id/join_topic" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="5.0dp" android:scaleType="centerCrop" />
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_tags" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.bilibili.bplus.followingcard.widget.TintSvgaContainerFrameLayout>
+</com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/divider_top" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="2.0px" />
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="@dimen/text_size_xlarge" android:textColor="@color/Ga8" android:id="@id/select_all" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:button="@drawable/mall_history_edit_select_checkbox_round" android:text="全选" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:compoundButtonTint="@drawable/selector_tint_checkbox" style="@style/Widget.App.CheckBox.Native" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/mall_history_edit_delete_btn_selector" android:gravity="center" android:id="@id/text_delete_history" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="删除" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_skip_button_height">36.0dp</dimen>
+    <dimen name="splash_skip_button_radius">18.0dp</dimen>
+    <dimen name="splash_skip_button_width">72.0dp</dimen>
+    <dimen name="splash_skip_click_top_bottom">6.0dp</dimen>
+</resources>

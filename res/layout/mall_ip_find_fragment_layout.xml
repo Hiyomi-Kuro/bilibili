@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mall_ip_find_rec" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="7.0dp" android:layout_marginEnd="7.0dp" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" />
+    <include android:layout_gravity="center" android:id="@id/feed_click_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/mall_home_feed_click_tips_layout" />
+    <include android:id="@id/mall_ip_find_tips_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_tips_view" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="54.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buried_env_host" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:gravity="right" android:id="@id/tv_host" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buried_env_ip" />
+        <EditText android:textSize="16.0sp" android:textColor="#333333" android:textColorHint="@android:color/darker_gray" android:gravity="right" android:id="@id/et_ip" android:background="@android:color/transparent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="100.0dp" android:hint="@string/buried_env_edit_text" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#333333" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/buried_env_uuid_title" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:id="@id/tv_uuid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" />
+    <RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buried_env_desc" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/switcher" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" />
+    <RelativeLayout android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#333333" android:id="@id/tv_debug_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buried_debug_mode" />
+        <TextView android:textSize="12.0sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/buried_debug_mode_desc" android:layout_below="@id/tv_debug_mode" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/switcher_debug_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

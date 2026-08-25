@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/party_season_content" android:layout_width="match_parent" android:layout_height="18.0dp" android:layout_marginTop="14.0dp" android:layout_marginBottom="12.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/party_season_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="24.0dp" android:maxLines="1" android:layout_toLeftOf="@id/party_season_more" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/party_season_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:layout_centerVertical="true" android:layout_marginEnd="18.0dp" android:layout_alignParentEnd="true" />
+        <ImageView android:gravity="center_vertical" android:id="@id/party_season_arrow" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_vector_video_detail_arrow_right" />
+    </RelativeLayout>
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/party_season_video" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" />
+    <View android:id="@id/party_season_divide" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+</LinearLayout>

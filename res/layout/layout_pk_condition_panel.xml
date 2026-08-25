@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_condition_panel" android:background="@drawable/bg_live_pk_condition_dialog" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_first_tab" android:background="@drawable/bg_live_pk_condition_dialog" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_second_tab" android:background="@drawable/bg_live_pk_condition_second" android:layout_width="243.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

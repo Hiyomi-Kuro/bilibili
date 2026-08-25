@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.biz.uicommon.widget.LiveResBiliImageView android:layout_width="212.0dp" android:layout_height="194.0dp" app:image_url_suffix="live_ic_go_to_live.webp" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/live_center_no_live_room" android:lineSpacingExtra="1.5dp" android:lineSpacingMultiplier="1.0" />
+    </LinearLayout>
+</LinearLayout>

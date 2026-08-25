@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right|center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/menu_icon_count" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/menu_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/menu_count_view" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="14.0dp" android:layout_marginLeft="17.0dp" android:layout_marginRight="1.0dp" android:layout_marginBottom="18.0dp" android:minWidth="14.0dp" android:text="@string/mall_item_tab_default_text" android:layout_above="@id/menu_icon" android:layout_alignLeft="@id/menu_icon" android:layout_alignBottom="@id/menu_icon" />
+        <ImageView android:gravity="center" android:id="@id/menu_red_dot_view" android:background="@drawable/mall_home_entry_menu_item_red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:layout_marginBottom="21.5dp" android:layout_above="@id/menu_icon" android:layout_alignLeft="@id/menu_icon" android:layout_alignBottom="@id/menu_icon" />
+    </RelativeLayout>
+</FrameLayout>

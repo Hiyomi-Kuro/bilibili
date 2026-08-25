@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/homepage_pager_sliding_tab_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/category_click_area" android:layout_width="54.0dp" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="end|center" android:id="@id/category_image" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="center" android:contentDescription="@string/main_core_content_description_category" android:layout_marginEnd="12.0dp" app:actualImageScaleType="center" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/search_click_area" android:layout_width="38.0dp" android:layout_height="match_parent" android:paddingStart="6.0dp" android:paddingEnd="10.0dp" android:layout_marginEnd="-38.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/search_image" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="center" android:contentDescription="@string/main_core_content_description_search" />
+    </FrameLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

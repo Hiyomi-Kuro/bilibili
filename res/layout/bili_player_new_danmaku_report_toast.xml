@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_roundrect_player_black_alpha30" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/video_play_control_video_title_text" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="154.0dp" android:maxLines="1" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/recommend" android:paddingLeft="12.0dp" android:paddingTop="11.0dp" android:paddingRight="12.0dp" android:paddingBottom="11.0dp" android:layout_width="54.0dp" android:layout_height="match_parent" android:src="@drawable/biliplayer_selector_topbar_like" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/report" android:paddingLeft="12.0dp" android:paddingTop="11.0dp" android:paddingRight="12.0dp" android:paddingBottom="11.0dp" android:layout_width="54.0dp" android:layout_height="match_parent" android:src="@drawable/ic_toast_danmaku_report_flag" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:drawableTint="@color/white" />
+</LinearLayout>

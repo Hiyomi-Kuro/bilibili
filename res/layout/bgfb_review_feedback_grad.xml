@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.ogv.feedback.ConstraintRadioGroup android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/theme_color_text_hint" android:id="@id/title1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bgfb_choose_problem_type" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ReviewTextAppearance.App.Medium" />
+    <com.bilibili.magicasakura.widgets.TintRadioButton android:textColor="@color/Ga10" android:id="@id/radio_11" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:text="@string/bgfb_suggests" app:compoundButtonTint="@color/selector_compoundbutton_normal" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title1" />
+</com.bilibili.ogv.feedback.ConstraintRadioGroup>

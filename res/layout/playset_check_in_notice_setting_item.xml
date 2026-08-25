@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/preference_regulable_wrap_height_default" app:fc_foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ll_time_arrow" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:ellipsize="marquee" android:id="@id/tv_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_time_arrow" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_marginEnd="23.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:id="@id/tv_check_in_push_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:cropToPadding="true" android:layout_marginStart="4.0dp" app:imageTint="@color/Ga5" app:srcCompat="@drawable/ic_vector_arrow_right" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

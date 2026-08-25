@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/loading_view" android:paddingTop="@dimen/item_ex_large_spacing" android:paddingBottom="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/collection_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleSmall" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/gray_dark" android:id="@id/collection_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/loading" android:layout_toRightOf="@id/loading" android:layout_centerVertical="true" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/collection_right_arrow" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" android:src="@drawable/collection_right_arrow_dark" android:layout_toRightOf="@id/collection_text" android:layout_centerVertical="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

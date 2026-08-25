@@ -1,0 +1,409 @@
+.class public final Lfr2/e;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0005\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0006\u0010\u0003\u001a\u00020\u0002J\u001a\u0010\u0008\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00042\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0004J\u000e\u0010\u000b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\t\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lfr2/e;",
+        "",
+        "",
+        "b",
+        "",
+        "textures",
+        "frameBuffers",
+        "Lgf3/s;",
+        "c",
+        "",
+        "op",
+        "a",
+        "<init>",
+        "()V",
+        "upper_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lfr2/e;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lfr2/e;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lfr2/e;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lfr2/e;->a:Lfr2/e;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic d(Lfr2/e;[I[IILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    and-int/lit8 p3, p3, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p3, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p2, 0x0
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lfr2/e;->c([I[I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final b()I
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    new-array v1, v0, [I
+
+    .line 3
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-static {v0, v1, v2}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
+
+    .line 6
+    .line 7
+    .line 8
+    aget v0, v1, v2
+
+    .line 9
+    .line 10
+    const v3, 0x8d65
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {v3, v0}, Landroid/opengl/GLES20;->glBindTexture(II)V
+
+    .line 14
+    .line 15
+    .line 16
+    const/16 v0, 0x2801
+
+    .line 17
+    .line 18
+    const v4, 0x46180400    # 9729.0f
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    .line 22
+    .line 23
+    .line 24
+    const/16 v0, 0x2800
+
+    .line 25
+    .line 26
+    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/16 v0, 0x2802
+
+    .line 30
+    .line 31
+    const v4, 0x812f
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameteri(III)V
+
+    .line 35
+    .line 36
+    .line 37
+    const/16 v0, 0x2803
+
+    .line 38
+    .line 39
+    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glTexParameteri(III)V
+
+    .line 40
+    .line 41
+    .line 42
+    aget v0, v1, v2
+
+    .line 43
+    .line 44
+    return v0
+.end method
+
+.method public final c([I[I)V
+    .locals 5
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    array-length v1, p1
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    .line 10
+    .line 11
+    aget v4, p1, v3
+
+    .line 12
+    .line 13
+    if-lez v4, :cond_0
+
+    .line 14
+    .line 15
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v4
+
+    .line 19
+    invoke-interface {v0, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    .line 23
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_1
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p1
+
+    .line 29
+    xor-int/lit8 p1, p1, 0x1
+
+    .line 30
+    .line 31
+    const/4 v1, 0x0
+
+    .line 32
+    if-eqz p1, :cond_2
+
+    .line 33
+    .line 34
+    goto :goto_1
+
+    .line 35
+    :cond_2
+    move-object v0, v1
+
+    .line 36
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 37
+    .line 38
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result p1
+
+    .line 42
+    invoke-static {v0}, Lkotlin/collections/p;->A1(Ljava/util/Collection;)[I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    invoke-static {p1, v0, v2}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_3
+    if-eqz p2, :cond_7
+
+    .line 50
+    .line 51
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 52
+    .line 53
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 54
+    .line 55
+    .line 56
+    array-length v0, p2
+
+    .line 57
+    const/4 v3, 0x0
+
+    .line 58
+    :goto_2
+    if-ge v3, v0, :cond_5
+
+    .line 59
+    .line 60
+    aget v4, p2, v3
+
+    .line 61
+    .line 62
+    if-lez v4, :cond_4
+
+    .line 63
+    .line 64
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v4
+
+    .line 68
+    invoke-interface {p1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    .line 69
+    .line 70
+    .line 71
+    :cond_4
+    add-int/lit8 v3, v3, 0x1
+
+    .line 72
+    .line 73
+    goto :goto_2
+
+    .line 74
+    :cond_5
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result p2
+
+    .line 78
+    xor-int/lit8 p2, p2, 0x1
+
+    .line 79
+    .line 80
+    if-eqz p2, :cond_6
+
+    .line 81
+    .line 82
+    move-object v1, p1
+
+    .line 83
+    :cond_6
+    if-eqz v1, :cond_7
+
+    .line 84
+    .line 85
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result p1
+
+    .line 89
+    invoke-static {v1}, Lkotlin/collections/p;->A1(Ljava/util/Collection;)[I
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p2
+
+    .line 93
+    invoke-static {p1, p2, v2}, Landroid/opengl/GLES20;->glDeleteFramebuffers(I[II)V
+
+    .line 94
+    .line 95
+    .line 96
+    :cond_7
+    const-string p1, "releaseGl done"
+
+    .line 97
+    .line 98
+    invoke-virtual {p0, p1}, Lfr2/e;->a(Ljava/lang/String;)V
+
+    .line 99
+    .line 100
+    .line 101
+    return-void
+.end method

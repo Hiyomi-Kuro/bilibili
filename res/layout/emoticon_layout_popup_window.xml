@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/emoticon_layout_popup_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emoticon_layout_popup_content" android:padding="@dimen/emoticon_layout_popup_window_shadow_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:background="@color/Wh0" android:padding="10.0dp" android:layout_width="130.0dp" android:layout_height="130.0dp" android:scaleType="centerInside" app:placeholderImage="@drawable/bili_default_image_tv" />
+        <View android:id="@id/arrow" android:layout_width="10.0dp" android:layout_height="6.0dp" android:translationY="-0.5dp" />
+    </LinearLayout>
+</FrameLayout>

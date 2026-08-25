@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="38.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/editor_bgm_search_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/edit_bgm_search_hot_word_item_margin_horizontal" android:layout_marginTop="@dimen/edit_bgm_search_hot_word_item_margin_vertical" android:layout_marginRight="@dimen/edit_bgm_search_hot_word_item_margin_horizontal" android:layout_marginBottom="@dimen/edit_bgm_search_hot_word_item_margin_vertical">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_icon" android:layout_width="11.0dp" android:layout_height="14.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_bgm_search_recommend_item" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_hot_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:maxEms="@integer/edit_bgm_search_hot_word_max_size" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

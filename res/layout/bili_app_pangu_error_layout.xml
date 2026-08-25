@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/item_spacing" android:paddingBottom="@dimen/item_spacing" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50.0dp">
+        <ImageView android:layout_gravity="center" android:layout_width="280.0dp" android:layout_height="154.0dp" android:src="@drawable/bili_2233_fail" app:actualImageScaleType="fitCenter" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/pangu_error_network_hint" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_pangu_round_rect_pink" android:paddingLeft="28.0dp" android:paddingTop="11.0dp" android:paddingRight="28.0dp" android:paddingBottom="11.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/pangu_try_again" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

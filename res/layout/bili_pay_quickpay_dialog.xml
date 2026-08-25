@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog" android:background="@drawable/bili_pay_quickpay_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:gravity="center" android:id="@id/dialog_msg" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:minWidth="400.0dp" android:text="确定使用数字钱包账户支付吗?" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="20.0dp">
+        <FrameLayout android:gravity="center" android:id="@id/dialog_btn_cancel_layout" android:background="@drawable/bili_pay_quickpay_dialog_cancle_btn_bg" android:layout_width="145.0dp" android:layout_height="44.0dp" android:layout_marginLeft="3.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/bili_pay_daynight_color_text_title" android:layout_gravity="center" android:id="@id/dialog_btn_cancel" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_pay_quickpay_cancel" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/dialog_btn_ok_layout" android:background="@drawable/bili_pay_quickpay_dialog_confirm_btn_bg" android:layout_width="145.0dp" android:layout_height="44.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="3.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/bili_pay_white" android:layout_gravity="center" android:id="@id/dialog_btn_ok" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_pay_quickpay_ok" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

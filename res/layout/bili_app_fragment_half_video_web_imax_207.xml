@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/app_bar_scroll_behavior_sticky">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+            <FrameLayout android:id="@id/player_content" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/shadow" android:background="@drawable/player_new_shape_shadow_top" android:clickable="false" android:layout_width="match_parent" android:layout_height="65.0dp" app:layout_collapseMode="pin" />
+            <com.bilibili.ad.adview.imax.impl.widget.ImaxToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/navigation_top_bar_size" app:iconTintColor="@null" app:layout_collapseMode="pin" app:titleTintColor="@null" style="?toolbarStyle" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.bilibili.ad.adview.web.layout.NestedWebContainer android:id="@id/nested_web_view_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fr_button_container" android:background="@color/Bg1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ad_web_bottom_button_container_height">
+        <com.bilibili.adcommon.widget.button.AdDownloadButton android:id="@id/ad_download_button" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="14.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="14.0dp" android:layout_marginBottom="13.0dp" app:download_btn_cornerRadius="18.0dp" app:download_btn_progress_backgroundColor="@color/Lb5" app:download_btn_textSize="14.0sp" style="@style/AdButton_Compat_Game_Fill_Blue" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

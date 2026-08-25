@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/controller_root" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/buffering_group" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/buffering_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/live_sdk_video_play_control_video_title_text" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/buffering_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/live_sdk_VideoView_buffering" android:singleLine="true" android:shadowColor="@color/live_sdk_black_light_2" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:marqueeRepeatLimit="0" style="@style/BPlayer_PlayerControlBarButton" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/controller_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

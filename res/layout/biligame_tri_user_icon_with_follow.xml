@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/tri_iv_user_icon" android:layout_width="36.0dp" android:layout_height="36.0dp" app:actualImageScaleType="centerCrop" app:failureImageScaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/ic_default_avatar" app:placeholderImageScaleType="centerCrop" app:retryImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <ImageView android:id="@id/tri_iv_follow" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/biligame_vector_ic_add_follow" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</merge>

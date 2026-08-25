@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/buyer_edit_name" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <include android:id="@id/buyer_phone_edit_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <include android:id="@id/buyer_idnum_edit_id" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <RelativeLayout android:id="@id/buyer_photo_edit_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+        <View android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga5" android:id="@id/buyer_photo_edit_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/mall_buyer_edit_photo_label" />
+        <include android:id="@id/submit_customer_id_front" android:layout_width="@dimen/submit_id_photo_area_width" android:layout_height="@dimen/submit_id_photo_area_height" android:layout_marginTop="16.0dp" android:layout_below="@id/buyer_photo_edit_label" android:layout_alignParentLeft="true" layout="@layout/mall_submit_customer_idcard_photo" />
+        <include android:id="@id/submit_customer_id_behind" android:layout_width="@dimen/submit_id_photo_area_width" android:layout_height="@dimen/submit_id_photo_area_height" android:layout_marginTop="16.0dp" android:layout_toRightOf="@id/submit_customer_id_front" android:layout_below="@id/buyer_photo_edit_label" layout="@layout/mall_submit_customer_idcard_photo" />
+    </RelativeLayout>
+    <View android:layout_gravity="top" android:id="@id/buyer_phone_edit_bottom_line" android:background="@color/Ga2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <FrameLayout android:orientation="vertical" android:id="@id/buyer_edit_default_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="51.0dp" android:layout_marginTop="10.0dp">
+        <CheckBox android:textSize="14.0dp" android:textColor="@color/Ga10" android:layout_gravity="left|center" android:id="@id/buyer_edit_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/mall_addr_edit_default_checkbox_icon" android:text="@string/mall_mine_buyer_set_default_title" android:drawablePadding="5.0dp" />
+    </FrameLayout>
+    <include android:visibility="gone" layout="@layout/mall_submit_provide_buyer_layout" />
+    <include android:id="@id/submit_customer_edit_next" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_next_btn_height" android:layout_marginTop="16.0dp" layout="@layout/mall_next_btn_layout" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/selector_interest_chose_dialog_bg_i" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_margin="7.0dp" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/age_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/check_box" android:background="@drawable/ic_pegasus_interest_selected" android:visibility="invisible" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_margin="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

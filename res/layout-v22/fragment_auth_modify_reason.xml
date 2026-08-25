@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/drawable_info_real" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="@dimen/item_title_modify_person_height" android:layout_marginTop="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textStyle="bold" android:textColor="@color/text_title_kit" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auth_modify_info_title2" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/group_reason" android:background="@color/Wh0" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/text_title_kit" android:id="@id/radio_reason1" android:layout_width="match_parent" android:layout_height="@dimen/item_modify_person_height" android:text="@string/auth_modify_person_radiotext1" style="@style/AuthCustomRadioButton" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/text_title_kit" android:id="@id/radio_reason2" android:layout_width="match_parent" android:layout_height="@dimen/item_modify_person_height" android:text="@string/auth_modify_person_radiotext2" style="@style/AuthCustomRadioButton" />
+    </RadioGroup>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintButton android:enabled="false" android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Wh0" android:layout_gravity="bottom" android:id="@id/btn_modify_next" android:background="@drawable/auth_selector_button" android:layout_width="match_parent" android:layout_height="@dimen/modify_button_height" android:layout_marginLeft="@dimen/passed_test_margin_left" android:layout_marginRight="@dimen/passed_test_margin_left" android:layout_marginBottom="@dimen/auth_margin_top" android:text="@string/btn_modify_text" android:layout_marginHorizontal="@dimen/passed_test_margin_left" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

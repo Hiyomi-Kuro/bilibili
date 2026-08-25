@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/root_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2.0dp" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginRight="10.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:id="@id/recent_use_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:text="最近使用" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recent_use_recycle" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:fadeScrollbars="false" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+            <RelativeLayout android:id="@id/rl_desc_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/desc_left_icon" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="4.0dp" app:actualImageScaleType="fitCenter" />
+                <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:id="@id/emotion_desc_text_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:text="全部表情" android:layout_toRightOf="@id/desc_left_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="#9499a0" android:id="@id/emotion_desc_text_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:fadeScrollbars="false" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

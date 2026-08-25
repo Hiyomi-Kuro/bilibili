@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_float_background_setting" android:key="@string/pref_key_float_background_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="@string/pref_key_float_background_setting" app:categoryTitle="@string/pref_title_float_window_setting">
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/pref_title_float_video_auto_play" android:key="@string/pref_key_float_video_auto_play" android:summary="@string/pref_summary_float_video_auto_play" android:defaultValue="false" />
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/pref_title_float_video_auto_play_internal" android:key="@string/pref_key_float_video_auto_play_internal" android:summary="@string/pref_summary_float_video_auto_play_internal" android:defaultValue="true" />
+        <com.bilibili.app.preferences.custom.CustomPreference android:title="@string/pref_title_float_window_size" android:key="@string/pref_key_float_window_size" android:summary="@string/pref_summary_float_window_size" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/pref_title_background_auto_play_setting" app:key="@string/pref_key_background_play_setting">
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_background_play" android:key="@string/pref_player_background_play" android:summary="@string/pref_summary_background_play" android:defaultValue="false" app:migration_settings_type="play" />
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/pref_title_background_auto_play_ai" android:key="@string/pref_player_background_auto_play_ai" android:defaultValue="true" app:isPreferenceVisible="false" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+</androidx.preference.PreferenceScreen>

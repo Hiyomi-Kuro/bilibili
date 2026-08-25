@@ -1,0 +1,96 @@
+.class public Lcom/bilibili/lib/httpdns/impl/ImplVersion;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# static fields
+.field private static final API_LEVEL:I = 0xc
+
+.field private static final HTTPDNS_VERSION:Ljava/lang/String; = "88.0.4324.188"
+
+.field private static final LAST_CHANGE:Ljava/lang/String; = "fb9b6e8119b67bb8742f6072ba8f53d370c944ce-refs/branch-heads/4324@{#2217}"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static getApiLevel()I
+    .locals 1
+
+    .line 1
+    const/16 v0, 0xc
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public static getHttpDnsVersion()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "88.0.4324.188"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static getHttpDnsVersionWithLastChange()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "88.0.4324.188@"
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v1, "fb9b6e81"
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    return-object v0
+.end method
+
+.method public static getLastChange()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "fb9b6e8119b67bb8742f6072ba8f53d370c944ce-refs/branch-heads/4324@{#2217}"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

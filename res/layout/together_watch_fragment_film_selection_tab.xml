@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/bangumi_pinned_bottom_scrolling_behavior" />
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:contentInsetStart="0.0dp" app:elevation="0.0dp" style="?toolbarStyle">
+                <com.bilibili.magicasakura.widgets.TintImageView android:textAppearance="@style/BangumiTextAppearance.App.XLarge" android:layout_gravity="right" android:id="@id/search" android:paddingLeft="@dimen/item_medium_spacing" android:paddingRight="@dimen/item_medium_spacing" android:layout_width="wrap_content" android:layout_height="match_parent" app:imageTint="@color/theme_color_primary_tr_icon" app:srcCompat="@drawable/tgwt_search" />
+            </com.bilibili.magicasakura.widgets.TintToolbar>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="40.0dp" app:elevation="0.0dp" app:tabIndicator="@drawable/tgwt_film_selection_tab_indicator" app:tabMode="scrollable" app:tabPaddingEnd="14.0dp" app:tabPaddingStart="14.0dp" app:tabTextAppearance="@style/TextAppearance.App.SubTab.BangumiOperation" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.bilibili.ogvcommon.deprecated.EmptyStateView android:id="@id/empty_state_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

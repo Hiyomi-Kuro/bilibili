@@ -1,0 +1,29 @@
+{
+  "record_fx": [
+    {
+      "name": "男声",
+      "builtin_fx_name": "Male Voice",
+      "rank": 0
+    },
+    {
+      "name": "女声",
+      "builtin_fx_name": "Female Voice",
+      "rank": 1
+    },
+    {
+      "name": "卡通",
+      "builtin_fx_name": "Cartoon Voice",
+      "rank": 2
+    },
+    {
+      "name": "混响",
+      "builtin_fx_name": "Audio Reverb",
+      "rank": 3
+    },
+    {
+      "name": "加速",
+      "builtin_fx_name": "Fast Cartoon Voice",
+      "rank": 4
+    }
+  ]
+}

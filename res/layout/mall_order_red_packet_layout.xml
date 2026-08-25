@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mall_order_red_packet_container" android:background="@color/Wh0" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="68.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/mall_order_red_packet_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableRight="@drawable/mall_ic_rule" android:drawablePadding="4.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/mall_ic_rule" android:layout_alignParentStart="true" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/mall_order_red_packet_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

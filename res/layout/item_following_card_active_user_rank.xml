@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_root" android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_rank" android:layout_width="24.0dp" android:layout_height="21.0dp" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_rank_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:id="@id/tv_rank_num" android:paddingTop="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:includeFontPadding="false" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <tv.danmaku.bili.widget.PendantAvatarFrameLayout android:id="@id/card_user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/rl_rank" android:layout_centerVertical="true" app:avatarSquareSide="30.0dp" app:badgeMargin="0.0dp" app:badgeSquareSide="9.0dp" app:frameSquareSide="30.0dp" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/user_name_warpper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/recommend_text" android:layout_toRightOf="@id/card_user_avatar" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:maxLines="1" android:layout_weight="1.0" />
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/following_vip_label" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginRight="6.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_13sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/recommend_text" android:paddingLeft="7.0dp" android:paddingTop="5.0dp" android:paddingRight="7.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:includeFontPadding="false" android:drawablePadding="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:drawableLeftTint="@color/theme_color_secondary" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

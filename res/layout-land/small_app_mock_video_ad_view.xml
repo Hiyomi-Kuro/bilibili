@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="20.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_close" android:background="@drawable/small_app_shape_roundrect_gray_ad" android:layout_width="80.0dp" android:layout_height="32.0dp" android:text="关闭广告" />
+        <Space android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.bilibili.lib.fasthybrid.ability.ui.game.AdCountDownView android:id="@id/ad_count_down_view" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <include android:layout_gravity="end|bottom" android:layout_width="355.0dp" android:layout_height="131.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="20.0dp" layout="@layout/small_app_mock_banner_ad_view" />
+</FrameLayout>

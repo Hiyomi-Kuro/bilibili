@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bangumi.ui.widget.BangumiPlayerCompletionPayLayout android:gravity="center" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/bplayer_floating_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:minWidth="260.0dp" android:text="@string/PlayerChargeTips_preview_finish" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/group_buy" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/pay_movie" android:background="@drawable/shape_roundrect_white_alpha20" android:layout_width="142.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:minWidth="112.0dp" android:text="@string/PlayerChargeTips_pay_now" />
+                    <Button android:textSize="10.0sp" android:textColor="@color/bangumi_player_vip_badge_text_color" android:ellipsize="end" android:layout_gravity="end|top" android:id="@id/left_vip_badge" android:background="@drawable/bangumi_shape_player_vip_badge" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="20.0dp" android:lines="1" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/be_vip" android:background="@drawable/shape_roundrect_pink_4" android:visibility="gone" android:layout_width="142.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:minWidth="112.0dp" android:text="@string/PlayerChargeTips_pay_now_vip" android:layout_marginStart="12.0dp" />
+                    <Button android:textSize="10.0sp" android:textColor="@color/bangumi_player_vip_badge_text_color" android:ellipsize="end" android:layout_gravity="end|top" android:id="@id/right_vip_badge" android:background="@drawable/bangumi_shape_player_vip_badge" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="20.0dp" android:lines="1" />
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="12.0sp" android:textColor="@color/pink" android:gravity="center" android:layout_gravity="center" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_marginBottom="6.0dp" android:text="@string/PlayerChargeTips_what_is_vip" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.bilibili.bangumi.ui.widget.BangumiPlayerCompletionPayLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/header_info_vip_label" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="16.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/header_info_vip_entrance" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_name" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Ga7" android:ellipsize="none" android:gravity="end" android:id="@id/header_info_open_vip_guide" android:background="@drawable/shape_roundrect_gray_vip_guide" android:paddingLeft="3.0dp" android:paddingTop="1.0dp" android:paddingRight="3.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_name" android:singleLine="true" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/vip_nameplate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/vip_expired_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" app:lottie_loop="false" />
+</FrameLayout>

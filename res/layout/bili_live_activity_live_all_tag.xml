@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle" />
+    <FrameLayout android:id="@id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar" android:background="@color/theme_color_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways|snap">
+                <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_live_text_major" android:gravity="center_vertical" android:id="@id/num" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" />
+                <FrameLayout android:layout_width="match_parent" android:layout_height="76.0dp">
+                    <include android:id="@id/edit_holder" android:visibility="invisible" layout="@layout/bili_live_place_holder_tag_bg" />
+                    <include android:id="@id/empty_holder" android:visibility="invisible" layout="@layout/bili_live_place_holder_tag_empty" />
+                    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <com.bilibili.magicasakura.widgets.TintView android:background="@color/theme_color_common_bg" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginTop="8.0dp" />
+            </LinearLayout>
+            <com.bilibili.bililive.infra.widget.view.MsgCountPagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="40.0dp" app:pstsTabPaddingLeftRight="16.0dp" style="@style/Widget.App.SlidingTab.LiveArea" />
+            <include layout="@layout/bili_live_layout_home_divider" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:background="@color/theme_color_bg_white" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/live_pinned_bottom_scrolling_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

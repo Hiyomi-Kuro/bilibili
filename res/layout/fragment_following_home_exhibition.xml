@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false" />
+    <RelativeLayout android:id="@id/top_tab_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/fo_main_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/fo_main_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/tabs_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/fo_main_top_layout" />
+    </RelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/fo_app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0.0dp" app:elevation="0.0dp" app:layout_behavior="@string/fo_appbar_fix_bounce_behavior">
+        <androidx.appcompat.widget.Toolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" android:elevation="0.0dp" app:elevation="0.0dp" app:layout_scrollFlags="noScroll" style="@style/Widget.App.Toolbar.Home">
+            <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.bplus.following.widget.DynamicTabStrip android:layout_gravity="center|top" android:id="@id/toolbar_tabs" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:pstsIndicatorBottomMargin="4.0dp" app:pstsIndicatorHeight="3.0dp" app:pstsTabCenterScreen="true" app:pstsTabSelectedTitleSize="18.0sp" app:pstsTabSparseCount="2" app:pstsTextDynamicUpdate="true" style="@style/Widget.App.SubTab.MainHome" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/selector_subtab_title" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/T17b" />
+                <com.bilibili.bplus.following.home.ui.menu.PublishMenuItemView android:id="@id/fo_publish_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

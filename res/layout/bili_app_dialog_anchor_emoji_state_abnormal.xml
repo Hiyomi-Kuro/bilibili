@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/state_icon" android:layout_width="22.0dp" android:layout_height="20.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/live_anchor_emoji_mission_name_color" android:id="@id/state_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+</LinearLayout>

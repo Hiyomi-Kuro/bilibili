@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/match_item_root" android:background="@drawable/live_bg_match_card_a" android:layout_width="252.0dp" android:layout_height="86.0dp" android:layout_marginBottom="62.0dp" android:layout_marginStart="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_team" android:background="@drawable/live_room_shape_bg_match_card_btn_white" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="7.5">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_home_team" android:layout_width="50.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/match_home_icon" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="fitCenter" />
+            <TextView android:textSize="12.0sp" android:textColor="#18191c" android:ellipsize="end" android:gravity="center" android:id="@id/match_home_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_match_pre" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="#632b1a" android:gravity="center|top" android:id="@id/match_start_time" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="23.0dp" android:layout_height="20.0dp" android:src="@drawable/live_room_match_card_vs" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_match_end" android:layout_width="80.0dp" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="24.0sp" android:textColor="#cd9340" android:gravity="center|top" android:id="@id/match_score" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0:0" />
+            <TextView android:textSize="12.0sp" android:textColor="#632b1a" android:gravity="center|top" android:id="@id/match_end_time" android:paddingTop="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_away_team" android:layout_width="50.0dp" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:layout_alignParentRight="true">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/match_away_icon" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="fitCenter" />
+            <TextView android:textSize="12.0sp" android:textColor="#18191c" android:ellipsize="end" android:gravity="center" android:id="@id/match_away_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="2.5">
+        <ImageView android:id="@id/match_close" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/live_bg_match_card_close" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="13.0sp" android:textColor="#632b1a" android:gravity="center" android:id="@id/match_action_up" android:background="@drawable/live_room_shape_bg_match_card_btn_yellow" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="5.0dp" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffd67c" android:gravity="center" android:id="@id/match_action_down" android:background="@drawable/live_room_shape_bg_match_card_btn1_yellow" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="5.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

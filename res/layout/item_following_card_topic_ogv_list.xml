@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_12sp" android:textColor="@color/Ga5" android:gravity="left|center" android:id="@id/title" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/following_topic_ogv_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+    <include layout="@layout/layout_following_card_divider_thick" />
+</LinearLayout>

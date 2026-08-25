@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_roundrect_bg2_corner_6" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_comment_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/comment_message" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/tv_title_label" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/tv_more_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:src="@drawable/ad_panel_right_icon" android:scaleType="centerInside" />
+    </LinearLayout>
+    <com.bilibili.ad.adview.widget.ClickableSpanTextView android:textSize="14.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:id="@id/comment_message" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="3" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_comment_header" />
+</androidx.constraintlayout.widget.ConstraintLayout>

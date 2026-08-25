@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_vote_two" />
+    <include layout="@layout/item_following_card_vote_attached" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:id="@id/ll_vote_lost" android:paddingLeft="13.0dp" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="13.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_warning" android:tint="@color/main_Ga5" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_15sp" android:textColor="@color/main_Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/following_vote_lost" android:layout_marginStart="8.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</merge>

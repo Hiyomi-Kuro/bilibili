@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="horizontal" android:background="@color/Ga1" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:id="@id/dy_tv_section_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/following_vertical_topic" android:maxLines="1" android:layout_toLeftOf="@id/dy_more_container" android:layout_alignParentStart="true" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/dy_more_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:gravity="bottom" android:id="@id/dy_tv_more_topic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_more_relative_topic" android:layout_alignParentRight="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|center" android:layout_width="5.5dp" android:layout_height="10.0dp" android:src="@drawable/ic_arrow_right" android:maxLines="1" android:layout_marginStart="4.0dp" android:layout_marginEnd="15.0dp" app:imageTint="@color/Ga5" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

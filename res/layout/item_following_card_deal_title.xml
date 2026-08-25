@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:background="@color/Ga1" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="37.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga5" android:id="@id/total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga5" android:id="@id/sort_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_sort_by_time" android:drawableRight="@drawable/ic_following_sorting" android:drawablePadding="4.0dp" android:layout_alignParentRight="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

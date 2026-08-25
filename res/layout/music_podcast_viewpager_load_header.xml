@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="@dimen/music_podcast_viewpager_head_view_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="false" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Wh0" android:layout_gravity="center" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_podcast_load_view_full_down" />
+</FrameLayout>

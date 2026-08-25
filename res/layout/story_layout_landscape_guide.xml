@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/black_alpha60" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginEnd="24.0dp">
+        <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_up_and_down_slide_left_view" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_landscape_up_and_down_slide_left.json" app:lottie_repeatCount="2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u_alpha60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="左侧上下滑" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="调亮度" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginEnd="24.0dp">
+        <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_landscape_long_press_view" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_landscape_long_press.json" app:lottie_repeatCount="2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u_alpha60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="长按" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="倍速播" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginEnd="24.0dp">
+        <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_landscape_left_and_right_slide_view" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_landscape_left_and_right_slide.json" app:lottie_repeatCount="2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u_alpha60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="左右滑动" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="调进度" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120.0dp" android:layout_height="wrap_content">
+        <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_landscape_up_and_down_slide_view" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_landscape_up_and_down_slide_right.json" app:lottie_repeatCount="2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u_alpha60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="右侧上下滑" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="调音量" />
+    </LinearLayout>
+</LinearLayout>

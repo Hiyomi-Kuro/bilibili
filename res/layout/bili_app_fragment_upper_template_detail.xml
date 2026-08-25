@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#0d0d0e" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="vertical" android:id="@id/vpViewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tvTemplateDetailMake" android:background="@drawable/upper_shape_rect_r4_pink_fill" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="10.0dp" android:text="@string/upper_template_make" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    </FrameLayout>
+    <androidx.appcompat.widget.Toolbar android:background="@color/upper_transparent" android:layout_width="match_parent" android:layout_height="?android:actionBarSize">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivTemplateDetailBack" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_arrow_back_left" android:layout_marginStart="12.0dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <include android:id="@id/lError" android:visibility="gone" layout="@layout/bili_app_upper_layout_net_error" />
+</FrameLayout>

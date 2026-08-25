@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:paddingTop="@dimen/margin_8" android:paddingBottom="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/customer_message_text_size" android:textStyle="bold" android:id="@id/invite_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_10" android:text="@string/invite_evaluate" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/invite_satisfy" android:background="@drawable/bg_evaluate_btn" android:layout_width="@dimen/size_90" android:layout_height="@dimen/size_35" android:layout_marginLeft="@dimen/margin_12" android:layout_below="@id/invite_title">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/satisfy_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_5" android:src="@drawable/ic_evaluate_like" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/satisfy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_satisfy" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/invite_dissatisfy" android:background="@drawable/bg_evaluate_btn" android:layout_width="@dimen/size_90" android:layout_height="@dimen/size_35" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_toRightOf="@id/invite_satisfy" android:layout_below="@id/invite_title">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dissatisfy_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:src="@drawable/ic_evaluate_dislike" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/dissatisfy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_dissatisfy" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

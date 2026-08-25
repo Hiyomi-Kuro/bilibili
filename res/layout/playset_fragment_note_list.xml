@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constrainedHeight="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_edit_foot" android:background="@color/theme_color_primary_tr_background" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="45.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/checkbox" android:background="@drawable/playset_note_checkbox_selector" android:focusable="false" android:layout_width="22.0dp" android:layout_height="22.0dp" android:button="@null" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga8" android:id="@id/tv_select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playset_select_all" android:layout_centerVertical="true" android:layout_toEndOf="@id/checkbox" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0" android:gravity="center" android:id="@id/tv_delete" android:background="@drawable/playset_note_delete_selector" android:layout_width="110.0dp" android:layout_height="match_parent" android:text="@string/playset_list_bottom_delete" android:layout_alignParentEnd="true" />
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga5_u" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

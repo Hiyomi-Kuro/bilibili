@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="46.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_more" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/competition_color" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="10.0dp" android:layout_centerInParent="true" android:drawableEnd="@drawable/ic_arrow_right" app:drawableRightTint="@color/competition_color" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</FrameLayout>

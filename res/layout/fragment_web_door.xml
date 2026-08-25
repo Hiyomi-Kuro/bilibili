@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.console.ui.widget.titlebar.HomeTitleBar android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="89.0dp" app:icon="@drawable/close_icon_big" app:title="@string/live_console_hybrid_door" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="top" android:id="@id/web_address_input" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="5.0dp" android:hint="@string/live_console_hybrid_door_hint" android:layout_weight="1.0" android:inputType="textUri" style="@style/Console.Input" />
+        <ImageView android:id="@id/qr_code" android:layout_width="50.0dp" android:layout_height="match_parent" android:src="@drawable/web_door_history_qrcode" android:layout_weight="1.0" android:layout_marginEnd="15.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dp">
+        <CheckBox android:theme="@style/Console.CheckBox" android:textColor="@color/black" android:id="@id/half_show_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/live_console_hybrid_half_show" />
+        <CheckBox android:theme="@style/Console.CheckBox" android:textColor="@color/black" android:id="@id/full_show_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_console_hybrid_full_show" />
+    </LinearLayout>
+    <View style="@style/Console.Divider" />
+    <TextView android:enabled="false" android:id="@id/url_explore" android:layout_marginLeft="15.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="15.0dp" android:text="@string/live_console_hybrid_door_explore" style="@style/Console.ConfirmButton.Positive" />
+    <TextView android:id="@id/url_explore_debug" android:layout_marginLeft="15.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="15.0dp" android:text="@string/live_console_hybrid_door_explore_debug" style="@style/Console.ConfirmButton.Positive" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/history_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" />
+            <TextView android:layout_gravity="center" android:id="@id/clear" android:layout_height="30.0dp" android:layout_marginTop="16.0dp" android:text="@string/live_console_hybrid_remove_history" style="@style/Console.Text.Gray" />
+            <TextView android:layout_gravity="center" android:layout_height="30.0dp" android:layout_marginTop="16.0dp" android:text="@string/live_console_bridge_information" style="@style/Console.Text.Gray" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:id="@id/text_view_bridge" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="false" android:textAlignment="textStart" style="@style/Console.Text.Gray" />
+            <TextView android:layout_gravity="center" android:layout_height="30.0dp" android:layout_marginTop="16.0dp" android:text="@string/live_console_html_information" style="@style/Console.Text.Gray" />
+            <TextView android:gravity="start" android:layout_gravity="start" android:id="@id/text_view_html" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="false" android:textAlignment="textStart" style="@style/Console.Text.Gray" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/daynight_event_topic_tag_text_white" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:background="@drawable/shape_event_daynight_solid_white_r4" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="12.0dp" android:lines="1" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

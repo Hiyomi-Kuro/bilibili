@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/bg_card_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_card_user_avatar" android:layout_width="match_parent" android:layout_height="110.0dp">
+        <ImageView android:id="@id/iv_hint" android:layout_width="130.0dp" android:layout_height="72.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/ic_no_follow_up" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_15sp" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="34.0dp" android:text="@string/br_prompt_no_dynamic" android:layout_toRightOf="@id/iv_hint" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_12sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="61.0dp" android:text="@string/hint_no_follow_second" android:layout_toRightOf="@id/iv_hint" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_16sp" android:textStyle="bold" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="27.0dp" android:text="@string/following_recommend_user" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

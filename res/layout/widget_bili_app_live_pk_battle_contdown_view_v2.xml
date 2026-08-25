@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pk_battle_countdown_layout" android:background="@drawable/bg_live_pk_timer" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ic_pk_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_pk_tag" android:scaleType="center" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/pk_battle_countdown_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.bililive.biz.uicommon.pkwidget.widget.BibiCountdownView android:id="@id/pk_battle_countdown_view" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:isConvertHoursToMinutes="true" app:isShowHour="false" app:isShowMinute="true" app:isShowSecond="true" app:suffixTextColor="@color/white" app:suffixTextSize="9.0sp" app:timeTextColor="@color/white" app:timeTextSize="9.0sp" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_pk_more" android:background="@drawable/ic_live_pk_count_down_right" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:alpha="0.7" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/time" app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

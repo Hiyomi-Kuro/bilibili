@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="43.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/live_room_pannel_danmu_setting_text_color" android:id="@id/tv_domain_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/LivePlayerOptionsPannelItemText.Description" />
+    <com.bilibili.bililive.room.ui.widget.LiveDanmuDomainTicksSeekBar android:orientation="horizontal" android:id="@id/domain_seek_bar" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:minHeight="2.0dp" android:layout_weight="1.0" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:tickCount="3" app:tickRadiuo="3.0dp" app:tickSectionColor="@color/theme_color_live_text_minor_light" style="@style/Live_SeekBarabcp_Tint_pink_" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_current_value" android:layout_width="32.0dp" android:layout_height="wrap_content" />
+</LinearLayout>

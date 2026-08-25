@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/input" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewSwitcher android:id="@id/watched_like_switcher" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/live_room_double_click_slide_right_in" android:outAnimation="@anim/live_room_double_click_slide_left_out">
+        <com.bilibili.bililive.biz.uicommon.watched.LiveWatchedView android:orientation="horizontal" android:id="@id/online_num" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textColor="@color/live_daynight_text_color_white" app:textSize="10.0sp" />
+        <com.bilibili.bililive.biz.uicommon.watched.LiveMarqueeTintTextView android:textSize="10.0sp" android:textColor="@color/live_daynight_text_color_white" android:ellipsize="none" android:id="@id/double_click_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </ViewSwitcher>
+</LinearLayout>

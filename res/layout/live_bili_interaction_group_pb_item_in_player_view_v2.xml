@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="8.0dp" android:paddingTop="1.5dp" android:paddingRight="4.0dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_live_danmu_vertical_full_v2" android:paddingLeft="6.0dp" android:paddingTop="3.5dp" android:paddingRight="1.5dp" android:paddingBottom="3.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="1.5dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_group_pv_icon" android:background="@drawable/bg_live_danmaku_vertical_full_v2_icon" android:layout_width="12.0dp" android:layout_height="15.0dp" android:layout_marginRight="3.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:textColorHighlight="@color/tranparent" android:id="@id/live_group_pb_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/live_group_pv_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold|italic" android:textColor="@color/white" android:textColorHighlight="@color/tranparent" android:gravity="center_vertical" android:id="@id/live_group_pb_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:maxLines="1" android:layout_toRightOf="@id/live_group_pb_tv" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

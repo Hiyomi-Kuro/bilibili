@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="3.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="106.0dp" android:layout_height="69.0dp">
+        <View android:id="@id/vSelected" android:background="@drawable/upper_selector_album_operation" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/ivPic" android:layout_width="98.0dp" android:layout_height="61.0dp" app:roundedCornerRadius="6.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/ivText" android:layout_width="98.0dp" android:layout_height="61.0dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/review_app_top_bar_share_more_web" />
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

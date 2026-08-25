@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:paddingTop="16.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/tp_container_inline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:cornerRadius="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Ga10" android:id="@id/tp_inline_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.adcommon.basic.marker.v2.AdMarkLayoutV2 android:layout_gravity="center_vertical" android:id="@id/ad_tag" app:height_strategy="top_bottom" style="@style/Marker" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Text3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ad_dot_view" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="match_parent" android:text="·" android:includeFontPadding="false" />
+</merge>

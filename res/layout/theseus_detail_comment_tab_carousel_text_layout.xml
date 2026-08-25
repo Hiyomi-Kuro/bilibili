@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/tab_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@drawable/selector_tab_text_pink2" android:ellipsize="end" android:gravity="center" android:id="@id/tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tab_sub_title" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@drawable/selector_tab_text_pink2" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tab_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/tab_title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tab_badge_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <RelativeLayout android:padding="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintEditText android:textColorHint="@color/gray" android:gravity="center_vertical" android:id="@id/danmu_edit" android:background="@drawable/abc_edit_text_material" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginRight="20.0dp" android:hint="@string/live_rhythm_indentify_danmu_hint" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone" style="@style/Widget.App.EditText.Default" />
+        <ImageView android:id="@id/clear_danmu" android:visibility="visible" android:layout_width="20.0dp" android:layout_height="8.0dp" android:layout_marginTop="18.0dp" android:src="@drawable/ic_edittext_clear" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

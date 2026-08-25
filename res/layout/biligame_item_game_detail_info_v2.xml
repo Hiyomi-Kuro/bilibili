@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="left|center" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/biligame_game_detail_info" android:paddingStart="12.0dp" />
+    <include android:id="@id/layout_follow" android:visibility="gone" layout="@layout/biligame_item_game_detail_follow_v2" />
+</LinearLayout>

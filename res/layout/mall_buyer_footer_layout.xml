@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_bottom" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/Wh0" android:gravity="center" android:layout_gravity="center" android:id="@id/next_btn" android:background="@drawable/mall_submit_pay_btn_bg" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="10.0dp" android:text="@string/mall_mine_buyer_list_add_buyer" />
+    <ImageView android:layout_gravity="center" android:id="@id/add_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="46.0dp" android:src="@drawable/mall_buyer_list_add_icon" />
+</FrameLayout>

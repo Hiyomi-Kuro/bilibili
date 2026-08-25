@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.TintInterceptReativeLayout android:background="@color/Wh0" android:paddingLeft="@dimen/following_card_margin" android:paddingTop="14.0dp" android:paddingRight="@dimen/following_card_margin" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_topic_new_more_dynamic" android:includeFontPadding="false" android:layout_centerVertical="true" />
+    <ImageView android:gravity="center" android:layout_width="8.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</com.bilibili.bplus.followingcard.widget.TintInterceptReativeLayout>

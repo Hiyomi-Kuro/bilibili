@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_roundrect_solid_white" android:paddingTop="116.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:lines="1" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="20.0dp" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/cancel" android:background="@drawable/emoticon_shape_roundrect_stroke_gray" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/br_cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/jump" android:background="@drawable/shape_roundrect_pink" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="12.0dp" android:text="@string/emoticon_goto_activity" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/emoticon_ic_guide_dialog_header" android:layout_width="280.0dp" android:layout_height="158.0dp" />
+</FrameLayout>

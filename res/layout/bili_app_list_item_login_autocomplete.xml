@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="@dimen/login_auto_complate_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5_u" android:layout_gravity="center_vertical" android:id="@id/text" android:background="?selectableItemBackground" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/clear" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_account_tp_clear" />
+</LinearLayout>

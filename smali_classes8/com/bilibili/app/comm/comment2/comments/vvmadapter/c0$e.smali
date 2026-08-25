@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/bilibili/app/comm/comment2/comments/vvmadapter/c0$e;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/app/comm/comment2/comments/vvmadapter/c0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "e"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lcom/bilibili/app/comm/comment2/comments/viewmodel/t0;)V
+.end method

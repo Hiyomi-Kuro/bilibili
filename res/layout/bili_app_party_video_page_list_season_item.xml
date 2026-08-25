@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="117.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="73.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/party_detail_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:aspectRadioHeight="10" app:aspectRadioWidth="16" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="2.0dp" app:scaleViewType="fitWidth" style="@style/Widget.App.StaticImageView.Thumb.VideoCover" />
+        <View android:id="@id/party_detail_shade" android:background="@drawable/bili_party_season_item_selected_shade" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/party_detail_play" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_bili_party_season_status_playing" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/daynight_color_text_body_secondary_dark" android:ellipsize="end" android:id="@id/party_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+</LinearLayout>

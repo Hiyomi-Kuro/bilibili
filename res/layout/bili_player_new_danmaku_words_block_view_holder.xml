@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/player_block_basic" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <TextView android:enabled="false" android:textSize="14.0sp" android:id="@id/player_options_title_block_key_words" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/block_list_trigger" android:layout_weight="1.0" style="@style/BPlayer_PlayerOptionsPannelItemTitle" />
+        <com.bilibili.magicasakura.widgets.TintCheckBox android:gravity="center_vertical" android:id="@id/block_list_trigger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/ic_btn_player_options_switch_233" android:contentDescription="bbplayer_dmsetting_filterswitch" app:compoundButtonTint="@color/selector_bplayer_compoundbutton_normal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/keywords_options_entrance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:baselineAligned="false">
+        <FrameLayout android:id="@id/add_layout" android:background="@drawable/shape_roundrect_white_alpha20" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="10.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_video_play_control_video_title_text" android:layout_gravity="center" android:id="@id/add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Player_danmaku_keywords_block_manager" android:drawableLeft="@drawable/selector_player_pencil" android:drawablePadding="5.0dp" android:contentDescription="bbplayer_dmsetting_filtermanager" android:drawableStart="@drawable/selector_player_pencil" />
+        </FrameLayout>
+        <tv.danmaku.biliplayerv2.widget.function.danmaku.filter.PlayerKeywordsSyncView android:gravity="center" android:orientation="horizontal" android:id="@id/sync" android:background="@drawable/shape_player_roundrect_white_20" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:layout_weight="10.0" android:contentDescription="bbplayer_dmsetting_filtersync" android:layout_marginStart="16.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="16.0dp" android:src="@drawable/selector_player_refresh_white" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_video_play_control_video_title_text" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/sync" android:layout_marginStart="5.0dp" />
+        </tv.danmaku.biliplayerv2.widget.function.danmaku.filter.PlayerKeywordsSyncView>
+    </LinearLayout>
+    <View android:id="@id/line" android:layout_marginTop="16.0dp" style="@style/BPlayer_CommonUnderline" />
+</LinearLayout>

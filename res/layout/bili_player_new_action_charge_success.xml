@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:background="@drawable/shape_roundrect_black_light_1" android:layout_width="220.0dp" android:layout_height="55.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" fresco:placeholderImage="@drawable/bili_default_avatar" style="@style/Widget.App.ImageView.Circle.Avatar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="55.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Pi5_u" android:gravity="center" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginRight="8.0dp" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Pi5_u" android:gravity="center" android:id="@id/elec_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="9.0dp" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

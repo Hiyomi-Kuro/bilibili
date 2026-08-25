@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_input_parent" android:background="@color/Ga10_u" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68.0dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_cancel" android:padding="10.0dp" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_template_caption_cancel" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="center_vertical" android:background="@drawable/bg_template_caption_input" android:layout_width="match_parent" android:layout_height="44.0dp" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/white_alpha60" android:textColorHint="#ff555966" android:id="@id/edit_input_caption" android:background="@null" android:paddingTop="24.0dp" android:paddingBottom="24.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="点击输入文字" android:maxLines="1" android:textCursorDrawable="@drawable/template_shape_caption_pink_cursor" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_done" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dp" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_template_caption_ok" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_caption_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffabb1cc" android:gravity="center" android:id="@id/tv_empty_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/bili_template_no_caption" />
+</LinearLayout>

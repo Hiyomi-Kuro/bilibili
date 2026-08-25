@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/event_offline_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/offline_image" android:layout_width="160.0dp" android:layout_height="140.0dp" android:src="@drawable/bili_default_image_tv" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/daynight_event_topic_text_supplementary_dark" android:gravity="center" android:id="@id/offline_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/following_event_offline" />
+    <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_middle" android:textColor="@color/Wh0_u" android:id="@id/more_event" android:background="@drawable/shape_event_daynight_solid_pink_r4" android:layout_width="141.0dp" android:layout_height="44.0dp" android:layout_marginTop="26.0dp" android:text="@string/following_event_more_event" style="?android:borderlessButtonStyle" />
+</merge>

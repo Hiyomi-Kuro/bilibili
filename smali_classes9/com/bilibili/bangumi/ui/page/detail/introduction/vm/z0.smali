@@ -1,0 +1,1409 @@
+.class public final Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;
+.super Ltt1/d;
+.source "BL"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010$\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0010\u000b\n\u0002\u0008\u0011\u0018\u00002\u00020\u0001BO\u0012\u0006\u0010\r\u001a\u00020\u000c\u0012\u0006\u0010\u0017\u001a\u00020\u0014\u0012\u0006\u0010\u001b\u001a\u00020\u0018\u0012\u0006\u0010\u001f\u001a\u00020\u001c\u0012\u0006\u0010%\u001a\u00020 \u0012\u0006\u0010*\u001a\u00020\u0008\u0012\u0016\u0008\u0002\u0010.\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0004\u0018\u00010+\u00a2\u0006\u0004\u0008g\u0010hJ\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002J!\u0010\n\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u0008\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u001e\u0010\u0011\u001a\u00020\u00102\u0006\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000e\u001a\u00020\u00082\u0006\u0010\u000f\u001a\u00020\u0008R\u0014\u0010\r\u001a\u00020\u000c8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0012\u0010\u0013R\u0014\u0010\u0017\u001a\u00020\u00148\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0015\u0010\u0016R\u0014\u0010\u001b\u001a\u00020\u00188\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0019\u0010\u001aR\u0014\u0010\u001f\u001a\u00020\u001c8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u001d\u0010\u001eR\u0017\u0010%\u001a\u00020 8\u0006\u00a2\u0006\u000c\n\u0004\u0008!\u0010\"\u001a\u0004\u0008#\u0010$R\u0017\u0010*\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008&\u0010\'\u001a\u0004\u0008(\u0010)R\"\u0010.\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0004\u0018\u00010+8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008,\u0010-R\u001a\u00104\u001a\u00020/8\u0016X\u0096D\u00a2\u0006\u000c\n\u0004\u00080\u00101\u001a\u0004\u00082\u00103R&\u0010:\u001a\u000e\u0012\u0004\u0012\u00020/\u0012\u0004\u0012\u00020/058\u0016X\u0096\u0004\u00a2\u0006\u000c\n\u0004\u00086\u00107\u001a\u0004\u00088\u00109R\"\u0010?\u001a\u00020/8G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008;\u00101\u001a\u0004\u0008<\u00103\"\u0004\u0008=\u0010>R\"\u0010D\u001a\u00020\u00088G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008@\u0010\'\u001a\u0004\u0008A\u0010)\"\u0004\u0008B\u0010CR\"\u0010L\u001a\u00020E8G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008F\u0010G\u001a\u0004\u0008H\u0010I\"\u0004\u0008J\u0010KR$\u0010S\u001a\u0004\u0018\u00010\u00108G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008M\u0010N\u001a\u0004\u0008O\u0010P\"\u0004\u0008Q\u0010RR$\u0010W\u001a\u0004\u0018\u00010\u00108G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008T\u0010N\u001a\u0004\u0008U\u0010P\"\u0004\u0008V\u0010RR\"\u0010^\u001a\u00020X8G@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008Y\u0010\u0011\u001a\u0004\u0008Z\u0010[\"\u0004\u0008\\\u0010]R\u0014\u0010`\u001a\u00020\u00088VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008_\u0010)R\u0011\u0010c\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008a\u0010bR$\u0010f\u001a\u00020X2\u0006\u0010d\u001a\u00020X8V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\'\u0010[\"\u0004\u0008e\u0010]\u00a8\u0006i"
+    }
+    d2 = {
+        "Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;",
+        "Ltt1/d;",
+        "Landroid/view/View;",
+        "v",
+        "Lgf3/s;",
+        "X",
+        "",
+        "currentSelectedSeasonId",
+        "",
+        "outlineDrawableRes",
+        "l0",
+        "(JLjava/lang/Integer;)V",
+        "Landroid/content/Context;",
+        "context",
+        "drawableId",
+        "colorId",
+        "Landroid/graphics/drawable/Drawable;",
+        "Z",
+        "d",
+        "Landroid/content/Context;",
+        "Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;",
+        "e",
+        "Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;",
+        "season",
+        "Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;",
+        "f",
+        "Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;",
+        "playControlService",
+        "Lcom/bilibili/bangumi/logic/page/detail/report/d;",
+        "g",
+        "Lcom/bilibili/bangumi/logic/page/detail/report/d;",
+        "pageReportService",
+        "Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;",
+        "h",
+        "Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;",
+        "getSectionService",
+        "()Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;",
+        "sectionService",
+        "i",
+        "I",
+        "getPosition",
+        "()I",
+        "position",
+        "Lkotlin/Function1;",
+        "j",
+        "Lsf3/l;",
+        "onClickSeason",
+        "",
+        "k",
+        "Ljava/lang/String;",
+        "G",
+        "()Ljava/lang/String;",
+        "eventId",
+        "",
+        "l",
+        "Ljava/util/Map;",
+        "J",
+        "()Ljava/util/Map;",
+        "extension",
+        "m",
+        "getTitle",
+        "x0",
+        "(Ljava/lang/String;)V",
+        "title",
+        "n",
+        "g0",
+        "z0",
+        "(I)V",
+        "titleColor",
+        "Lbu1/b;",
+        "o",
+        "Lbu1/b;",
+        "h0",
+        "()Lbu1/b;",
+        "C0",
+        "(Lbu1/b;)V",
+        "titleSize",
+        "p",
+        "Landroid/graphics/drawable/Drawable;",
+        "getIndicatorBackDrawable",
+        "()Landroid/graphics/drawable/Drawable;",
+        "p0",
+        "(Landroid/graphics/drawable/Drawable;)V",
+        "indicatorBackDrawable",
+        "q",
+        "getForeDrawable",
+        "o0",
+        "foreDrawable",
+        "",
+        "r",
+        "getNewBadgeVisible",
+        "()Z",
+        "r0",
+        "(Z)V",
+        "newBadgeVisible",
+        "L",
+        "layoutResId",
+        "f0",
+        "()J",
+        "seasonId",
+        "value",
+        "R",
+        "exposureReported",
+        "<init>",
+        "(Landroid/content/Context;Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;Lcom/bilibili/bangumi/logic/page/detail/report/d;Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;ILsf3/l;)V",
+        "bangumi_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final d:Landroid/content/Context;
+
+.field private final e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+.field private final f:Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;
+
+.field private final g:Lcom/bilibili/bangumi/logic/page/detail/report/d;
+
+.field private final h:Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;
+
+.field private final i:I
+
+.field private final j:Lsf3/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lsf3/l<",
+            "Ljava/lang/Long;",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final k:Ljava/lang/String;
+
+.field private final l:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private m:Ljava/lang/String;
+
+.field private n:I
+
+.field private o:Lbu1/b;
+
+.field private p:Landroid/graphics/drawable/Drawable;
+
+.field private q:Landroid/graphics/drawable/Drawable;
+
+.field private r:Z
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;Lcom/bilibili/bangumi/logic/page/detail/report/d;Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;ILsf3/l;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;",
+            "Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;",
+            "Lcom/bilibili/bangumi/logic/page/detail/report/d;",
+            "Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;",
+            "I",
+            "Lsf3/l<",
+            "-",
+            "Ljava/lang/Long;",
+            "Lgf3/s;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 2
+    invoke-direct {p0}, Ltt1/d;-><init>()V
+
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    iput-object p2, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    iput-object p3, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->f:Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;
+
+    iput-object p4, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->g:Lcom/bilibili/bangumi/logic/page/detail/report/d;
+
+    iput-object p5, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->h:Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;
+
+    iput p6, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->i:I
+
+    iput-object p7, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->j:Lsf3/l;
+
+    const-string p1, "pgc.pgc-video-detail.series.0.show"
+
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->k:Ljava/lang/String;
+
+    const/4 p1, 0x2
+
+    new-array p1, p1, [Lkotlin/Pair;
+
+    const/4 p3, 0x1
+
+    add-int/2addr p6, p3
+
+    .line 3
+    invoke-static {p6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p4
+
+    const-string p5, "index"
+
+    invoke-static {p5, p4}, Lgf3/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p4
+
+    const/4 p5, 0x0
+
+    aput-object p4, p1, p5
+
+    if-nez p7, :cond_0
+
+    const-string p4, "1"
+
+    goto :goto_0
+
+    :cond_0
+    const-string p4, "2"
+
+    :goto_0
+    const-string p5, "which_page"
+
+    .line 4
+    invoke-static {p5, p4}, Lgf3/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p4
+
+    aput-object p4, p1, p3
+
+    .line 5
+    invoke-static {p1}, Landroidx/collection/b;->a([Lkotlin/Pair;)Landroidx/collection/a;
+
+    move-result-object p1
+
+    .line 6
+    iget-object p2, p2, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->Z:Ljava/util/Map;
+
+    if-eqz p2, :cond_1
+
+    .line 7
+    invoke-virtual {p1, p2}, Landroidx/collection/a;->putAll(Ljava/util/Map;)V
+
+    :cond_1
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->l:Ljava/util/Map;
+
+    const-string p1, ""
+
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->m:Ljava/lang/String;
+
+    const/16 p1, 0xe
+
+    .line 8
+    invoke-static {p1}, Lbu1/c;->k(I)Lbu1/b;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->o:Lbu1/b;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/content/Context;Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;Lcom/bilibili/bangumi/logic/page/detail/report/d;Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;ILsf3/l;ILkotlin/jvm/internal/i;)V
+    .locals 9
+
+    and-int/lit8 v0, p8, 0x40
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
+
+    move-object v8, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object/from16 v8, p7
+
+    :goto_0
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    move v7, p6
+
+    .line 1
+    invoke-direct/range {v1 .. v8}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;-><init>(Landroid/content/Context;Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;Lcom/bilibili/bangumi/logic/page/detail/report/d;Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;ILsf3/l;)V
+
+    return-void
+.end method
+
+.method public static synthetic n0(Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;JLjava/lang/Integer;ILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    and-int/lit8 p4, p4, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p4, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p3, 0x0
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->l0(JLjava/lang/Integer;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final C0(Lbu1/b;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->o:Lbu1/b;
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->o:Lbu1/b;
+
+    .line 11
+    .line 12
+    sget p1, Lcom/bilibili/bangumi/a;->L6:I
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public G()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->k:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public I()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 2
+    .line 3
+    iget-boolean v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->h0:Z
+
+    .line 4
+    .line 5
+    return v0
+.end method
+
+.method public J()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->l:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public L()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/bilibili/bangumi/m;->C:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public R(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 2
+    .line 3
+    iput-boolean p1, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->h0:Z
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public final X(Landroid/view/View;)V
+    .locals 13
+
+    .line 1
+    iget-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->h:Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 4
+    .line 5
+    iget-wide v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    invoke-virtual {p1, v0, v1, v2}, Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;->m0(JZ)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->f:Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;->y()Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformEpisode;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    if-eqz p1, :cond_0
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformEpisode;->i()J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v0
+
+    .line 23
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 29
+    :goto_0
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    const-string v1, "pgc.pgc-video-detail.series."
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    iget v1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->i:I
+
+    .line 44
+    .line 45
+    const/4 v3, 0x1
+
+    .line 46
+    add-int/2addr v1, v3
+
+    .line 47
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v7
+
+    .line 54
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->j:Lsf3/l;
+
+    .line 55
+    .line 56
+    if-eqz v0, :cond_1
+
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->f0()J
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-wide v4
+
+    .line 62
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    invoke-interface {v0, v1}, Lsf3/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    .line 69
+    goto :goto_1
+
+    .line 70
+    :cond_1
+    iget-object v4, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->f:Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;
+
+    .line 71
+    .line 72
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 73
+    .line 74
+    iget-wide v5, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 75
+    .line 76
+    const/4 v8, 0x0
+
+    .line 77
+    const/4 v9, 0x0
+
+    .line 78
+    const/4 v10, 0x0
+
+    .line 79
+    const/16 v11, 0x18
+
+    .line 80
+    .line 81
+    const/4 v12, 0x0
+
+    .line 82
+    invoke-static/range {v4 .. v12}, Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;->y0(Lcom/bilibili/bangumi/logic/page/detail/service/PlayControlService;JLjava/lang/String;IILjava/lang/Long;ILjava/lang/Object;)V
+
+    .line 83
+    .line 84
+    .line 85
+    :goto_1
+    const/4 v0, 0x3
+
+    .line 86
+    new-array v0, v0, [Lkotlin/Pair;
+
+    .line 87
+    .line 88
+    const-string v1, "from_epid"
+
+    .line 89
+    .line 90
+    invoke-static {v1, p1}, Lgf3/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object p1
+
+    .line 94
+    aput-object p1, v0, v2
+
+    .line 95
+    .line 96
+    iget p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->i:I
+
+    .line 97
+    .line 98
+    add-int/2addr p1, v3
+
+    .line 99
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object p1
+
+    .line 103
+    const-string v1, "index"
+
+    .line 104
+    .line 105
+    invoke-static {v1, p1}, Lgf3/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object p1
+
+    .line 109
+    aput-object p1, v0, v3
+
+    .line 110
+    .line 111
+    iget-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->j:Lsf3/l;
+
+    .line 112
+    .line 113
+    if-nez p1, :cond_2
+
+    .line 114
+    .line 115
+    const-string p1, "1"
+
+    .line 116
+    .line 117
+    goto :goto_2
+
+    .line 118
+    :cond_2
+    const-string p1, "2"
+
+    .line 119
+    .line 120
+    :goto_2
+    const-string v1, "which_page"
+
+    .line 121
+    .line 122
+    invoke-static {v1, p1}, Lgf3/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object p1
+
+    .line 126
+    const/4 v1, 0x2
+
+    .line 127
+    aput-object p1, v0, v1
+
+    .line 128
+    .line 129
+    invoke-static {v0}, Landroidx/collection/b;->a([Lkotlin/Pair;)Landroidx/collection/a;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object p1
+
+    .line 133
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 134
+    .line 135
+    iget-object v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->Z:Ljava/util/Map;
+
+    .line 136
+    .line 137
+    if-nez v0, :cond_3
+
+    .line 138
+    .line 139
+    invoke-static {}, Lkotlin/collections/h0;->j()Ljava/util/Map;
+
+    .line 140
+    .line 141
+    .line 142
+    move-result-object v0
+
+    .line 143
+    :cond_3
+    invoke-virtual {p1, v0}, Landroidx/collection/a;->putAll(Ljava/util/Map;)V
+
+    .line 144
+    .line 145
+    .line 146
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->g:Lcom/bilibili/bangumi/logic/page/detail/report/d;
+
+    .line 147
+    .line 148
+    const-string v1, "pgc.pgc-video-detail.series.0.click"
+
+    .line 149
+    .line 150
+    invoke-virtual {v0, v1, p1}, Lcom/bilibili/bangumi/logic/page/detail/report/d;->n(Ljava/lang/String;Ljava/util/Map;)V
+
+    .line 151
+    .line 152
+    .line 153
+    return-void
+.end method
+
+.method public final Z(Landroid/content/Context;II)Landroid/graphics/drawable/Drawable;
+    .locals 4
+
+    .line 1
+    new-instance v0, Landroid/graphics/drawable/StateListDrawable;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Landroid/graphics/drawable/GradientDrawable;
+
+    .line 7
+    .line 8
+    invoke-direct {v1}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v2, Lcom/bilibili/bangumi/ui/page/detail/p0;->a:Lcom/bilibili/bangumi/ui/page/detail/p0;
+
+    .line 12
+    .line 13
+    sget v3, Lcom/bilibili/bangumi/i;->c:I
+
+    .line 14
+    .line 15
+    invoke-virtual {v2, p1, v3}, Lcom/bilibili/bangumi/ui/page/detail/p0;->d(Landroid/content/Context;I)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v3
+
+    .line 19
+    invoke-virtual {v1, v3}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {p1, p2}, Lv/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    if-eqz p2, :cond_0
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, p1, p3}, Lcom/bilibili/bangumi/ui/page/detail/p0;->d(Landroid/content/Context;I)I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    invoke-static {p2, p1}, Landroidx/core/graphics/drawable/a;->o(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
+
+    .line 37
+    .line 38
+    .line 39
+    :cond_0
+    const p1, 0x10100a7
+
+    .line 40
+    .line 41
+    .line 42
+    filled-new-array {p1}, [I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    invoke-virtual {v0, p1, v1}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
+
+    .line 47
+    .line 48
+    .line 49
+    const/4 p1, 0x0
+
+    .line 50
+    new-array p1, p1, [I
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-object v0
+.end method
+
+.method public final f0()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 2
+    .line 3
+    iget-wide v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 4
+    .line 5
+    return-wide v0
+.end method
+
+.method public final g0()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->n:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getTitle()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->m:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final h0()Lbu1/b;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->o:Lbu1/b;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final l0(JLjava/lang/Integer;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 2
+    .line 3
+    iget-wide v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    cmp-long v3, v0, p1
+
+    .line 7
+    .line 8
+    if-nez v3, :cond_0
+
+    .line 9
+    .line 10
+    const/4 p1, 0x1
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 13
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, v2}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->r0(Z)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object p2, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->h:Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;
+
+    .line 19
+    .line 20
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 21
+    .line 22
+    iget-wide v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 23
+    .line 24
+    invoke-virtual {p2, v0, v1, v2}, Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;->m0(JZ)V
+
+    .line 25
+    .line 26
+    .line 27
+    sget-object p2, Lcom/bilibili/bangumi/ui/page/detail/p0;->a:Lcom/bilibili/bangumi/ui/page/detail/p0;
+
+    .line 28
+    .line 29
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    .line 30
+    .line 31
+    sget v1, Lod/b;->s0:I
+
+    .line 32
+    .line 33
+    invoke-virtual {p2, v0, v1}, Lcom/bilibili/bangumi/ui/page/detail/p0;->d(Landroid/content/Context;I)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p2
+
+    .line 37
+    invoke-virtual {p0, p2}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->z0(I)V
+
+    .line 38
+    .line 39
+    .line 40
+    goto :goto_1
+
+    .line 41
+    :cond_1
+    sget-object p2, Lcom/bilibili/bangumi/ui/page/detail/p0;->a:Lcom/bilibili/bangumi/ui/page/detail/p0;
+
+    .line 42
+    .line 43
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    .line 44
+    .line 45
+    sget v1, Lcom/bilibili/lib/theme/R$color;->Ga10:I
+
+    .line 46
+    .line 47
+    invoke-virtual {p2, v0, v1}, Lcom/bilibili/bangumi/ui/page/detail/p0;->d(Landroid/content/Context;I)I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p2
+
+    .line 51
+    invoke-virtual {p0, p2}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->z0(I)V
+
+    .line 52
+    .line 53
+    .line 54
+    iget-object p2, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->h:Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;
+
+    .line 55
+    .line 56
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->e:Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;
+
+    .line 57
+    .line 58
+    iget-wide v0, v0, Lcom/bilibili/bangumi/data/page/detail/entity/BangumiUniformSeason;->a:J
+
+    .line 59
+    .line 60
+    invoke-virtual {p2, v0, v1}, Lcom/bilibili/bangumi/logic/page/detail/service/refactor/NewSectionService;->j0(J)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result p2
+
+    .line 64
+    invoke-virtual {p0, p2}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->r0(Z)V
+
+    .line 65
+    .line 66
+    .line 67
+    :goto_1
+    if-eqz p3, :cond_3
+
+    .line 68
+    .line 69
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    .line 70
+    .line 71
+    .line 72
+    move-result p2
+
+    .line 73
+    if-eqz p1, :cond_2
+
+    .line 74
+    .line 75
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    .line 76
+    .line 77
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    .line 78
+    .line 79
+    .line 80
+    move-result p3
+
+    .line 81
+    sget v1, Lod/b;->s0:I
+
+    .line 82
+    .line 83
+    invoke-virtual {p0, v0, p3, v1}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->Z(Landroid/content/Context;II)Landroid/graphics/drawable/Drawable;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p3
+
+    .line 87
+    goto :goto_2
+
+    .line 88
+    :cond_2
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    .line 89
+    .line 90
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    .line 91
+    .line 92
+    .line 93
+    move-result p3
+
+    .line 94
+    sget v1, Lod/b;->A:I
+
+    .line 95
+    .line 96
+    invoke-virtual {p0, v0, p3, v1}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->Z(Landroid/content/Context;II)Landroid/graphics/drawable/Drawable;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p3
+
+    .line 100
+    :goto_2
+    invoke-virtual {p0, p3}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->o0(Landroid/graphics/drawable/Drawable;)V
+
+    .line 101
+    .line 102
+    .line 103
+    sget-object p3, Lcom/bilibili/bangumi/ui/page/detail/p0;->a:Lcom/bilibili/bangumi/ui/page/detail/p0;
+
+    .line 104
+    .line 105
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->d:Landroid/content/Context;
+
+    .line 106
+    .line 107
+    sget v1, Lod/b;->W:I
+
+    .line 108
+    .line 109
+    invoke-virtual {p3, v0, p2, v1}, Lcom/bilibili/bangumi/ui/page/detail/p0;->f(Landroid/content/Context;II)Landroid/graphics/drawable/Drawable;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object p2
+
+    .line 113
+    invoke-virtual {p0, p2}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->p0(Landroid/graphics/drawable/Drawable;)V
+
+    .line 114
+    .line 115
+    .line 116
+    :cond_3
+    if-eqz p1, :cond_4
+
+    .line 117
+    .line 118
+    const/16 p1, 0xf
+
+    .line 119
+    .line 120
+    :goto_3
+    invoke-static {p1}, Lbu1/c;->k(I)Lbu1/b;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object p1
+
+    .line 124
+    goto :goto_4
+
+    .line 125
+    :cond_4
+    const/16 p1, 0xe
+
+    .line 126
+    .line 127
+    goto :goto_3
+
+    .line 128
+    :goto_4
+    invoke-virtual {p0, p1}, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->C0(Lbu1/b;)V
+
+    .line 129
+    .line 130
+    .line 131
+    return-void
+.end method
+
+.method public final o0(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->q:Landroid/graphics/drawable/Drawable;
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->q:Landroid/graphics/drawable/Drawable;
+
+    .line 11
+    .line 12
+    sget p1, Lcom/bilibili/bangumi/a;->T1:I
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public final p0(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->p:Landroid/graphics/drawable/Drawable;
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->p:Landroid/graphics/drawable/Drawable;
+
+    .line 11
+    .line 12
+    sget p1, Lcom/bilibili/bangumi/a;->t2:I
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public final r0(Z)V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->r:Z
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    iput-boolean p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->r:Z
+
+    .line 7
+    .line 8
+    sget p1, Lcom/bilibili/bangumi/a;->y3:I
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final x0(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->m:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iput-object p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->m:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    sget p1, Lcom/bilibili/bangumi/a;->F6:I
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public final z0(I)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->n:I
+
+    .line 2
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    iput p1, p0, Lcom/bilibili/bangumi/ui/page/detail/introduction/vm/z0;->n:I
+
+    .line 7
+    .line 8
+    sget p1, Lcom/bilibili/bangumi/a;->G6:I
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Landroidx/databinding/a;->notifyPropertyChanged(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_invite_pk_function_entrance" android:background="@drawable/bg_live_common_pk_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_invite_list_head" layout="@layout/layout_pk_invite_item_header" />
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/swp_invite_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_invite_list_head">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_pk_invite" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

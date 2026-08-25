@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" />
+    <include layout="@layout/kfc_layout_navigation_top_bar_mweb" />
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginTop="-3.0dp" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.App.ProgressBar.Horizontal" />
+        <FrameLayout android:id="@id/view_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kfc_tipsview_loading_anim" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/kfc_tips_loading_text_color" android:layout_gravity="center_horizontal" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/kfc_loading_text_margin_top" android:text="@string/kfc_tips_loading" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

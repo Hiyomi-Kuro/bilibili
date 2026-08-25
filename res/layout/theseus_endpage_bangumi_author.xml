@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="25.0dp" android:layout_marginStart="25.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="fitCenter" app:roundedCornerRadius="4.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/author_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="20" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/follow_ll" android:background="@drawable/theseus_bangumi_button_solid_pink" android:layout_width="88.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:minWidth="88.0dp" android:minHeight="30.0dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/follow_iv" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/theseus_ogv_icon_community_watch" />
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:layout_gravity="start" android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/title_follow_bangumi" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha60" android:gravity="center" android:id="@id/play_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="41.0dp" android:text="@string/bangumi_end_page_next_episode" android:drawablePadding="14.0dp" app:drawableTint="@color/bangumi_player_action_tint" app:drawableTopCompat="@drawable/bili_player_ctrl_play_next" />
+        <RelativeLayout android:id="@id/replay" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="@id/recommend_divider" app:layout_constraintRight_toLeftOf="@id/endpage_landscape_split_line" app:layout_constraintTop_toTopOf="@id/charge_divider">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.playerbizcommon.view.FixedDrawableTextView android:layout_gravity="center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_replay_bold" app:drawableTopHeight="22.0dp" app:drawableTopWidth="22.0dp" app:from="endpage_landscape" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_replay" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/frame_like" android:layout_width="54.0dp" android:layout_height="54.0dp" app:layout_constraintBottom_toBottomOf="@id/recommend_divider" app:layout_constraintRight_toLeftOf="@id/endpage_landscape_dislike_layout" app:layout_constraintTop_toTopOf="@id/charge_divider">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.player.widget.like.GeminiPlayerLikeWidget android:layout_gravity="center" android:id="@id/gemini_like_widget" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_like_bold" app:drawableTopHeight="22.0dp" app:drawableTopWidth="22.0dp" app:from="endpage_landscape" app:hideLikeCount="true" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_recommend" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/endpage_landscape_coin_layout" android:layout_width="54.0dp" android:layout_height="54.0dp" app:layout_constraintBottom_toBottomOf="@id/recommend_divider" app:layout_constraintRight_toLeftOf="@id/endpage_landscape_favorite_layout" app:layout_constraintTop_toTopOf="@id/charge_divider">
+            <FrameLayout android:id="@id/frame_coin" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.player.widget.coin.GeminiPlayerCoinWidget android:gravity="bottom" android:layout_gravity="center_horizontal" android:id="@id/coin_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="4.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_coin_bold" app:drawableTopHeight="22.0dp" app:drawableTopWidth="22.0dp" app:from="endpage_landscape" />
+                <com.bilibili.playerbizcommon.view.RingProgressBar android:layout_gravity="center_horizontal" android:id="@id/coin_progress" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_pay_coin" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/share" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginEnd="55.0dp" app:layout_constraintBottom_toBottomOf="@id/recommend_divider" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/charge_divider">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.playerbizcommon.view.FixedDrawableTextView android:layout_gravity="center" android:id="@id/share_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_ic_topbar_share_bold" app:drawableTopHeight="22.0dp" app:drawableTopWidth="22.0dp" app:from="endpage_landscape" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

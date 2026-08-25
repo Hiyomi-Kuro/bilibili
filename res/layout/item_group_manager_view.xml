@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout android:id="@id/root_view" android:background="@color/Ga0" android:paddingLeft="14.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" app:foreground="@drawable/selectable_item_fg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/delete_btn" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="14.0dp" android:src="@drawable/ic_group_manager_delete" android:layout_centerVertical="true" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_im_avator_default" android:layout_toRightOf="@id/delete" android:layout_centerVertical="true" app:roundAsCircle="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga9" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" />
+    <View android:background="@color/gray_alpha7A" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dp" android:layout_alignParentBottom="true" />
+</com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout>

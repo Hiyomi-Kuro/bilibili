@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="@dimen/image_edit_tips_triangle_height" android:layout_marginTop="18.0dp" android:src="@drawable/ic_menu_arrow" android:tint="@color/Pi5" android:rotation="-90.0" />
+    <RelativeLayout android:id="@id/container" android:background="@drawable/shape_bg_tips_popup" android:paddingLeft="@dimen/image_edit_tips_container_padding_left" android:paddingRight="@dimen/image_edit_tips_container_padding_right" android:layout_width="wrap_content" android:layout_height="@dimen/image_edit_tips_container_height" android:layout_marginLeft="@dimen/image_edit_tips_triangle_width">
+        <TextView android:textSize="@dimen/image_edit_tips_text_size" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_edit_tips_on_publishing_page" android:maxLines="1" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/close" android:layout_width="@dimen/image_edit_tips_close_icon_width" android:layout_height="match_parent" android:layout_marginLeft="@dimen/image_edit_tips_close_icon_margin_left" android:src="@drawable/img_painting_media_cancel" android:layout_toRightOf="@id/message" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

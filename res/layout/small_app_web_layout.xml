@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toolbar" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/small_app_tool_bar_height" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@id/back_icon" android:layout_width="32.0dp" android:layout_height="@dimen/small_app_tool_bar_height">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:layout_width="23.0dp" android:layout_height="22.0dp" android:src="@drawable/smallapp_toolbar_back" android:scaleType="centerInside" app:imageTint="@color/daynight_color_text_body_primary" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/close_icon" android:layout_width="32.0dp" android:layout_height="@dimen/small_app_tool_bar_height" android:layout_marginLeft="16.0dp" android:layout_marginStart="16.0dp">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:layout_width="17.0dp" android:layout_height="17.0dp" android:src="@drawable/kfc_vector_mweb_close" android:scaleType="centerInside" app:imageTint="@color/daynight_color_text_body_primary" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/daynight_color_text_body_primary" android:ellipsize="end" android:id="@id/toolbar_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:maxWidth="150.0dp" android:lines="1" android:layout_weight="1.0" android:layout_marginStart="20.0dp" />
+        <Button android:id="@id/refresh" android:background="@drawable/tag_center_refresh_icon" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="16.0dp" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <View android:id="@id/toolbar_divider" android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/toolbar" />
+    <FrameLayout android:id="@id/web_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbar_divider">
+        <include android:id="@id/webView_progress" layout="@layout/small_app_widget_progressbar_webview" />
+    </FrameLayout>
+</RelativeLayout>

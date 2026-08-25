@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/actionSheetRoot" android:background="@color/small_app_bg_com" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/actionSheetHeader" android:background="@color/small_app_model_bg_second" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/headIcon" android:layout_width="55.0dp" android:layout_height="55.0dp" app:placeholderImage="@drawable/small_app_bg_default_logo" app:placeholderImageScaleType="centerCrop" app:roundAsCircle="true" app:thumbHeight="55.0dp" app:thumbWidth="55.0dp" />
+            <TextView android:textSize="14.0sp" android:id="@id/headTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/small_app_bg_com" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/actionSheetDivider" android:background="#4ccdcdd1" android:layout_width="match_parent" android:layout_height="6.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/small_app_color_text_body_primary" android:gravity="center" android:id="@id/cancel" android:background="@color/small_app_bg_com" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="@string/small_app_cancel" />
+    </LinearLayout>
+</FrameLayout>

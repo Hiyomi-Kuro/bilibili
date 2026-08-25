@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_icon" android:visibility="visible" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="10.0dp" app:layout_constraintLeft_toLeftOf="parent" />
+    <com.bilibili.bplus.followingcard.widget.RevealedCommentsTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga8" android:id="@id/dy_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/following_card_revealed_comments_drawable_padding" style="@style/DynamicRevealedCommentsView_CommentText" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/tv_cancel" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

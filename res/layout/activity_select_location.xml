@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga7" android:gravity="center" android:layout_gravity="right" android:id="@id/hide_location_tv" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/lbs_hide_location" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_bar_content" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="@string/search_layout">
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:background="@drawable/shape_roundrect_search_bar2" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_weight="1.0" android:transitionName="@string/search_bar">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_topic_search" />
+                <tv.danmaku.bili.widget.MaxContentSearchView android:id="@id/search_bar" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="6.0dp" app:closeIcon="@drawable/ic_search_close" app:queryHint="@string/lbs_search_near_location" />
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/cancel_tv" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <FrameLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

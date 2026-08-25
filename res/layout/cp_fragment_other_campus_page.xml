@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_constraintTop_toTopOf="parent" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle" />
+    <com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout android:id="@id/cp_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.campus.widget.nestedscroll.NestedScrollLinearLayout android:id="@id/nested_scroll" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/campus_head_compose" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.fragment.app.FragmentContainerView android:id="@id/index_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_childScrollView="true" />
+        </com.bilibili.campus.widget.nestedscroll.NestedScrollLinearLayout>
+    </com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout>
+</LinearLayout>

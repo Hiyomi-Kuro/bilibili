@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dy_place_holder_wrapper" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/dy_place_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dy_list" android:visibility="visible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dy_sticky_group" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

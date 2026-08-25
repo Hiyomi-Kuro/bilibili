@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.rank.highenergy.LiveHighEnergyEntranceRankRecyclerView android:layout_gravity="end|center" android:id="@id/high_energy_entrance_recycler" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:layout_marginEnd="35.0dp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end|center" android:id="@id/rank_count_ll" android:background="@drawable/bg_live_room_new" android:layout_width="44.0dp" android:layout_height="30.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/rank_sum_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

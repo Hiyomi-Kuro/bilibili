@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="40.0dp" android:minWidth="43.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/opt_ic_img" android:layout_width="26.0dp" android:layout_height="26.0dp" android:src="@drawable/dy_ic_bubble_comment_line_24" app:layout_constraintBottom_toTopOf="@id/opt_text" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/dy_option_normal_text_color" android:id="@id/opt_text" android:layout_width="wrap_content" android:layout_height="14.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/opt_ic_img" style="@style/T10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

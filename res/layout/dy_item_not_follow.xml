@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="94.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/dy_title" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_marginTop="24.0dp" android:text="@string/dy_no_follow" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/dy_desc" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="4.0dp" android:text="@string/dy_no_follow_hint" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dy_title" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="0.0dp" android:layout_height="0.5dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

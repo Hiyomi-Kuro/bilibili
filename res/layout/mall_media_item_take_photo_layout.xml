@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.SquareRelativeLayout android:gravity="center" android:id="@id/media_layout" android:background="@color/mall_layout_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="100.0dp" android:minHeight="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/media_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_ic_inner_empty_camera" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/mall_home_title_tag_text_color" android:gravity="center" android:id="@id/media_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/mall_media_take_photo" android:layout_below="@id/media_icon" android:layout_centerInParent="true" />
+</com.mall.ui.widget.SquareRelativeLayout>

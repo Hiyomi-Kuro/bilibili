@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="13.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_upper_video_hand_edge_left" android:scaleType="fitXY" />
+</RelativeLayout>

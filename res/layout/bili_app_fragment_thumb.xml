@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@color/upper_thumb_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.upper.widget.thumb.HScrollView android:id="@id/scroll_view" android:background="@color/upper_thumb_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="58.0dp" android:layout_centerVertical="true">
+            <com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@id/v_left" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="match_parent" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@id/v_left" />
+                <View android:id="@id/v_right" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_toRightOf="@id/recycler" />
+            </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        </com.bilibili.upper.widget.thumb.HScrollView>
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/small_cover" android:layout_width="58.0dp" android:layout_height="58.0dp" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/diver" android:layout_width="62.0dp" android:layout_height="62.0dp" android:src="@drawable/ic_thumb_select_bg" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fv_thumb" android:background="#1b1b1b" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rv_list">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/thumb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

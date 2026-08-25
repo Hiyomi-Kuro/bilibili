@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Pi5" android:id="@id/tv_tab_one" android:background="@drawable/biligame_background_corner_4_pi1" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_marginStart="12.0dp" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:id="@id/tv_tab_two" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_marginStart="8.0dp" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:id="@id/tv_tab_three" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_marginStart="8.0dp" />
+</LinearLayout>

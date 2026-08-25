@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/danmaku_input_options" android:background="#0c0c0c" android:paddingTop="12.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/danmaku_options_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/input_options_textsize" android:layout_width="match_parent" android:layout_height="52.0dp">
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionTitleView android:text="@string/Player_danmaku_options_pannel_title_danmaku_textsize" style="@style/BPlayer_DanmakuOptionTextStyleV2" />
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout android:id="@id/input_options_group_textsize" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:childML="20.0dp" app:oneLineHeight="52.0dp">
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionDrawableView android:id="@id/input_options_medium_textsize" app:defaultColor="@color/Ga7" app:isChoosedv2="true" app:showDrawable="@drawable/biliplayer_ic_danmaku_text_big" app:tag="medium" app:tintColor="@color/pink" app:tipsText="@string/Player_danmaku_options_pannel_title_danmaku_textsize_tip_default" style="@style/BPlayer_DanmakuDrawableOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionDrawableView android:id="@id/input_options_small_textsize" app:defaultColor="@color/Ga7" app:lockDrawable="@drawable/biliplayer_ic_danmaku_text_small_lock" app:showDrawable="@drawable/biliplayer_ic_danmaku_text_small" app:tag="small" app:tintColor="@color/pink" app:tipsText="@string/Player_danmaku_options_pannel_title_danmaku_textsize_tip_smaller" style="@style/BPlayer_DanmakuDrawableOptionV2" />
+            </com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/input_options_type" android:layout_width="match_parent" android:layout_height="52.0dp">
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionTitleView android:text="@string/Player_danmaku_options_pannel_title_danmaku_position" style="@style/BPlayer_DanmakuOptionTextStyleV2" />
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout android:id="@id/input_options_group_type" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:childML="20.0dp" app:oneLineHeight="52.0dp">
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionDrawableView android:id="@id/input_options_rl_type" app:defaultColor="@color/Ga7" app:isChoosedv2="true" app:showDrawable="@drawable/biliplayer_ic_danmaku_mode_move" app:tag="rl" app:tintColor="@color/pink" app:tipsText="@string/Player_danmaku_options_pannel_title_danmaku_location_tip_scroll" style="@style/BPlayer_DanmakuDrawableOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionDrawableView android:id="@id/input_options_top_type" app:defaultColor="@color/Ga7" app:lockDrawable="@drawable/biliplayer_ic_danmaku_mode_top_lock" app:showDrawable="@drawable/biliplayer_ic_danmaku_mode_top" app:tag="top" app:tintColor="@color/pink" app:tipsText="@string/Player_danmaku_options_pannel_title_danmaku_location_tip_top" style="@style/BPlayer_DanmakuDrawableOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionDrawableView android:id="@id/input_options_bottom_type" app:defaultColor="@color/Ga7" app:lockDrawable="@drawable/biliplayer_ic_danmaku_mode_bottom_lock" app:showDrawable="@drawable/biliplayer_ic_danmaku_mode_bottom" app:tag="bottom" app:tintColor="@color/pink" app:tipsText="@string/Player_danmaku_options_pannel_title_danmaku_location_tip_bottom" style="@style/BPlayer_DanmakuDrawableOptionV2" />
+            </com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/input_options_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionTitleView android:text="@string/Player_danmaku_options_pannel_title_danmaku_color" style="@style/BPlayer_DanmakuOptionTextStyleV2" />
+            <com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout android:id="@id/input_options_color_group" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:childML="@dimen/player_danmaku_color_option_ml" app:oneLineHeight="@dimen/player_danmaku_color_option_one_line_height">
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_white" app:isChoosed="true" app:showColor="#ffffff" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_red" app:showColor="#e70012" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_yellow" app:showColor="#fef102" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_green" app:showColor="#009843" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_blue" app:showColor="#00a0ea" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_pink" app:showColor="#e2027f" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_light_green" app:showColor="#90c320" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_drak_blue" app:showColor="#002e72" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_orange" app:showColor="#f0ab2a" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_purple" app:showColor="#683a7b" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_lite_blue" app:showColor="#84c0cb" style="@style/BPlayer_DanmakuColorOptionV2" />
+                <com.bilibili.playerbizcommonv2.danmaku.view.PlayerOptionColorView android:id="@id/input_options_color_brown" app:showColor="#927939" style="@style/BPlayer_DanmakuColorOptionV2" />
+            </com.bilibili.playerbizcommonv2.danmaku.view.PlayerAutoLineLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

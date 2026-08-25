@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/device_switch" android:background="@drawable/projection_bg_button_thumb_left" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/device_switch_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/player_projection_screen_connecting" android:layout_centerVertical="true" />
+</RelativeLayout>

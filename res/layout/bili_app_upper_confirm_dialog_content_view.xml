@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/upper_shape_game_factory_reward_dialog" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_txt_color_one" android:layout_gravity="center_horizontal" android:id="@id/dialog_title_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_txt_color_one" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_message_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="#ff18191c" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_negative_text_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/upper_pink" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_positive_text_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

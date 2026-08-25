@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_bgm_list_sheet" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/handle" android:background="@drawable/bg_bgm_list_sheet_handle" android:layout_width="48.0dp" android:layout_height="4.0dp" />
+    <FrameLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

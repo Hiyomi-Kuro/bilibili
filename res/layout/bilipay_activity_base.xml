@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bilipay_default_toolbar" />
+    <include android:id="@id/base_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbar_view" layout="@layout/bilipay_base_layout" />
+    <com.bilibili.lib.bilipay.ui.widget.PageTipsView android:id="@id/tips_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbar_view" />
+</RelativeLayout>

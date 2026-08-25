@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:background="@color/Wh0" android:paddingLeft="22.0dp" android:layout_width="0.0dp" android:layout_height="40.0dp" android:maxLines="1" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:background="@color/Wh0" android:paddingRight="18.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_br_arrow_down" app:imageTint="@color/Ga5" />
+    <View android:id="@id/tricky" android:layout_width="12.0dp" android:layout_height="match_parent" />
+</LinearLayout>

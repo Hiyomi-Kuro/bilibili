@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/smallapp_bg_modal" android:paddingTop="30.0dp" android:paddingBottom="20.0dp" android:layout_width="340.0dp" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginRight="18.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/small_app_color_text_body_primary" android:ellipsize="end" android:gravity="center" android:id="@id/modal_title" android:paddingLeft="32.0dp" android:paddingRight="32.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp" android:maxLines="2" />
+        <ScrollView android:scrollbarSize="2.0dp" android:paddingLeft="28.0dp" android:paddingRight="28.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/small_app_color_text_decs" android:ellipsize="end" android:gravity="center" android:id="@id/modal_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" />
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/left_btn" android:background="@drawable/smallapp_frame_modal_btn" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1.0" />
+            <Space android:id="@id/btn_gap" android:layout_width="16.0dp" android:layout_height="match_parent" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/right_btn" android:background="@drawable/smallapp_frame_modal_btn" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeFrameLayout>

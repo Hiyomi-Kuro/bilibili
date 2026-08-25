@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/publishSaveLoadingLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_publish_saving_bg" android:layout_width="90.0dp" android:layout_height="90.0dp" android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/publish_video_lav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:lottie_cacheStrategy="weak" app:lottie_colorFilter="@color/theme_color_secondary" app:lottie_fileName="live_loading.json" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/publish_video_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_editor_saving" />
+    </LinearLayout>
+</RelativeLayout>

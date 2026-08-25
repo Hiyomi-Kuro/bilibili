@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_root" android:background="#0c0c0c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/vpMaterialPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/flBottomContainer" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/flBottomContainer">
+        <TextureView android:layout_gravity="center" android:id="@id/svPreview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/ivPlay" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_upper_video_play" />
+        <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/rlProgressContainer" android:background="@drawable/upper_shape_label_seekbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <com.bilibili.studio.videoeditor.widgets.PlayerSeekBar android:id="@id/sbBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="10.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/bplayer_seek_pink__scrubber_horizontal" android:minHeight="2.0dp" android:layout_toLeftOf="@id/tvTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/upper_preview_default_time" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rlTitleBar" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <ImageView android:id="@id/uper_material_preview_back" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_arrow_back_left" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llAddContainer" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dp">
+                <ImageView android:id="@id/ivAdd" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_editor_album_add" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tvAdd" android:background="@drawable/upper_album_preview_chosen_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+            </FrameLayout>
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_choose" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="right" android:id="@id/flSingleContainer" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <View android:background="@drawable/editor_circle_with_border" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvSingle" android:background="@drawable/ic_upper_choose" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <FrameLayout android:id="@id/flBottomContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/emptyPanel" android:layout_width="match_parent" android:layout_height="60.0dp" layout="@layout/bili_app_activity_material_preview_plus_panel_empty" />
+        <RelativeLayout android:id="@id/media_picker_chosen_container" android:background="@drawable/bg_upper_material_bottom_shape" android:paddingTop="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/upper_video_picker_bottom_panel_height_new">
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/media_picker_chosen_publish_publish" android:background="@drawable/upper_album_publish_btn_shape" android:layout_width="62.0dp" android:layout_height="64.0dp" android:layout_marginTop="1.0dp" android:layout_marginStart="66.0dp">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="11.0dp" android:layout_marginRight="12.0dp" app:srcCompat="@drawable/ic_upper_arrow_upload_line_album" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/Brand_pink" android:gravity="center" android:layout_width="26.0dp" android:layout_height="14.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="11.0dp" android:text="@string/upper_publish" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/media_picker_chosen_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" />
+            <View android:id="@id/media_picker_chosen_publish_click_area" android:layout_width="48.0dp" android:layout_height="64.0dp" android:layout_marginStart="80.0dp" />
+            <include android:id="@id/media_picker_panel" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="80.0dp" layout="@layout/bili_upper_album_current_fragment_panel" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp">
+        <RelativeLayout android:id="@id/mall_dialog_wrap_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/mall_dialog_bottom_frame">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/mall_dialog_title_bar_frame" android:layout_width="match_parent" android:layout_height="76.0dp">
+                <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/mall_dialog_title" android:background="@drawable/mall_common_dialog_top_bg" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/mall_dialog_window_fold" android:padding="9.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="15.0dp" android:src="@drawable/mall_ic_general_fold" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/mall_dialog_window_opt" android:background="@drawable/mall_ic_close_solid_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/mall_dialog_content_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mall_dialog_title_bar_frame" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/mall_dialog_bottom_frame" android:background="@drawable/mall_common_dialog_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Wh0" android:gravity="center" android:id="@id/mall_dialog_bottom_button" android:background="@drawable/mall_comment_report_button" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="10.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/pink" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</FrameLayout>

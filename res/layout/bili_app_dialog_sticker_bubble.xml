@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="71.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/sticker_bubble_rv" android:background="@drawable/editor_shape_sticker_bubble" android:paddingLeft="5.0dp" android:paddingTop="1.0dp" android:paddingRight="5.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="61.0dp" />
+    <ImageView android:id="@id/sticker_bubble_triangle_iv" android:background="@drawable/ic_editor_sticker_bubble_triangle" android:layout_width="20.0dp" android:layout_height="10.0dp" />
+</LinearLayout>

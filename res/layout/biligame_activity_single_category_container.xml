@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/nav_top_bar" layout="@layout/biligame_layout_toolbar_category" />
+    <com.bilibili.biligame.widget.TabLayout android:id="@id/biligame_single_tablayout" android:layout_width="match_parent" android:layout_height="@dimen/biligame_dip_40" app:tabIndicatorColor="@color/biligame_Re_Ga10" app:tabIndicatorHeight="2.0dp" app:tabMode="scrollable" app:tabSelectedTextColor="@color/biligame_Re_Ga10" app:tabTextColor="@color/Ga5" style="@style/BiligameSinglerCategoryTabLayout" />
+    <View android:background="@color/Ga1_s" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/biligame_single_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

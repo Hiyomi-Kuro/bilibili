@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/Ba0_u_alpha60" android:paddingBottom="61.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/transform_guide_lottie" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_transform_guide.json" app:lottie_loop="true" app:lottie_repeatCount="3" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:id="@id/transform_guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_finger_adjust_canvas_size" />
+</LinearLayout>

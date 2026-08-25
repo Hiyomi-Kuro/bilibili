@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/fr_gift_banner" android:layout_width="126.0dp" android:layout_height="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

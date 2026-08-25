@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/biliplayer_selector_edit_textcolor" android:gravity="center" android:layout_gravity="start|bottom" android:id="@id/select_view_text" android:background="@drawable/selector_round_rect_gray_lightgray_dotted_4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:singleLine="true" android:layout_marginEnd="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:gravity="center" android:layout_gravity="start|bottom" android:id="@id/select_view_image" android:background="@drawable/selector_round_rect_gray_lightgray_dotted_4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginEnd="4.0dp" />
+    <com.bilibili.playerbizcommon.cloudconfig.SelectorIcon android:layout_gravity="end|top" android:id="@id/select_view_icon" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_player_panel_switch_selected" app:imageTint="@color/pink" />
+</merge>

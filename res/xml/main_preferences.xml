@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_preferences" android:key="@string/pref_key_preferences" android:summary="@string/pref_summary_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:danmaku="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.BLPreferenceCategory android:title="@string/pref_title_account_and_security" android:key="@string/pref_key_account_and_security">
+        <androidx.preference.Preference android:persistent="false" android:title="@string/person_info_title" android:key="@string/pref_key_person_info" android:defaultValue="@null" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_security_privacy" android:key="@string/pref_key_security_privacy" android:fragment="com.bilibili.app.preferences.PreferenceSecurityPrivacy$SecurityPrivacySettingFragment" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_shopping_info" android:key="@string/pref_key_shopping_info" android:fragment="com.bilibili.app.preferences.PreferenceSecurityPrivacy$ShoppingInfoSettingFragment" />
+    </tv.danmaku.bili.widget.preference.BLPreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_tools_setting" android:key="@string/pref_key_tools_setting">
+        <com.bilibili.app.preferences.SplashSettingPreference android:title="@string/pref_key_splash_setting_default_title" android:key="@string/pref_key_splash_setting" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_screen_title_recommend_setting" android:key="@string/pref_screen_key_recommend_setting" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_side_center" android:key="@string/pref_key_side_center" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_play_setting" android:key="@string/pref_key_play_setting" android:fragment="com.bilibili.app.preferences.fragment.PlaySettingPrefFragment" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_screen_downloadPref" android:key="@string/pref_key_screen_downloadPref" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_bangumi" android:key="@string/pref_key_screen_bangumi" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_category_advanced" android:key="@string/pref_key_category_advanced">
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_push_setting" android:key="@string/pref_key_push_setting" android:fragment="com.bilibili.app.preferences.fragment.PushSettingFragment" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_push" android:key="@string/pref_key_screen_pushPref" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_screen_title_ad_download_manager" android:key="@string/pref_screen_key_ad_download_manager" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_clear_storage" android:key="@string/pref_key_clear_storage" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_advanced_other" android:key="@string/pref_key_advanced_other" android:fragment="com.bilibili.app.preferences.PreferenceAdvancedSetting$AdvancedOtherPrefFragment" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_timing_reminder_category" android:key="@string/pref_key_timing_reminder_category">
+        <com.bilibili.app.preferences.custom.BLPreference_TimingReminder android:title="@string/pref_title_timing_reminder" android:fragment="com.bilibili.app.preferences.PreferenceTools$TimingReminderPrefFragment" />
+        <com.bilibili.app.preferences.custom.BLPreference_SleepReminder android:title="@string/pref_title_sleep_reminder" android:key="@string/pref_key_sleep_remind_category" android:fragment="com.bilibili.app.preferences.fragment.SleepRemindFragment" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_day_night_setting_category" android:key="@string/pref_key_day_night_setting_category">
+        <tv.danmaku.bili.widget.preference.BLPreference android:persistent="false" android:title="@string/pref_title_day_night_setting" android:key="@string/pref_key_day_night_setting" android:defaultValue="@null" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_about_us" android:key="@string/pref_key_about_us">
+        <com.bilibili.app.preferences.custom.BLPreference_UserFeedback android:persistent="false" android:title="@string/pref_title_feed_back" android:key="@string/pref_key_feed_back" android:defaultValue="@null" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_help_preferences" android:key="@string/pref_key_help_preferences" android:fragment="com.bilibili.app.preferences.fragment.HelpFragment" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_business_cooperation" android:key="@string/pref_key_business_cooperation" android:fragment="com.bilibili.app.preferences.fragment.BusinessCooperationFragment" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_privacy_group" android:key="@string/pref_key_privacy_group">
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_user_agreement" android:key="user_agreement" android:defaultValue="@null" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_privacy" android:key="privacy" android:defaultValue="@null" />
+        <androidx.preference.PreferenceScreen android:title="@string/pref_title_permission" android:fragment="com.bilibili.app.preferences.fragment.PermissionSettingFragment" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_app_permissions" android:key="@string/pref_key_user_permissions" android:defaultValue="@null" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_app_third_party_sdk" android:key="@string/pref_key_third_party_sdk" android:defaultValue="@null" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_base_function_privacy" android:key="@string/pref_key_base_function_privacy" android:defaultValue="@null" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_account_switch_category" android:key="@string/pref_key_account_switch_category">
+        <tv.danmaku.bili.widget.preference.BLPreference android:persistent="false" android:layout="@layout/bili_app_layout_preference_account_switch" android:key="@string/pref_key_account_switch" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_logout_category" android:key="@string/pref_key_logout_category">
+        <tv.danmaku.bili.widget.preference.BLPreference android:persistent="false" android:layout="@layout/bili_app_layout_preference_logout" android:key="@string/pref_key_logout" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

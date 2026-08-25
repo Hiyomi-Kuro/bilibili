@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/live_home_feed_padding" android:layout_marginRight="6.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/live_daynight_text_color_black" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/refresh_group" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/theme_color_live_text_assist_dark" android:gravity="center_vertical" android:id="@id/text_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/live_home_view_more_tips" android:drawableRight="@drawable/live_more_ico" android:drawablePadding="2.0dp" app:drawableRightTint="@color/theme_color_live_text_assist_dark" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

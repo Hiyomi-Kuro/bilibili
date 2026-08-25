@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:id="@id/cover_text_shadow" android:background="@drawable/shape_rect_bottom_rc_grad_black_alpha_0_to_40" android:layout_width="match_parent" android:layout_height="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

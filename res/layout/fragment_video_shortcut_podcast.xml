@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_top_car" android:paddingLeft="24.0dp" android:paddingRight="16.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/music_podcast_top_car_layout_height" android:paddingStart="24.0dp" android:paddingEnd="16.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/cover_ground_layout" android:background="@drawable/video_shortcut_podcast_back" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover_ground" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:overlayImage="@color/black_alpha60" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/music_podcast_play_item_message_margin_left_right" android:layout_marginRight="@dimen/music_podcast_play_item_message_margin_left_right" android:layout_marginStart="@dimen/music_podcast_play_item_message_margin_left_right" android:layout_marginEnd="@dimen/music_podcast_play_item_message_margin_left_right" app:actualImageScaleType="centerCrop" app:layout_constraintDimensionRatio="w,9:16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_playing" android:layout_width="32.0dp" android:layout_height="32.0dp" app:layout_constraintBottom_toBottomOf="@id/cover" app:layout_constraintEnd_toEndOf="@id/cover" app:layout_constraintStart_toStartOf="@id/cover" app:layout_constraintTop_toTopOf="@id/cover" app:lottie_autoPlay="false" app:lottie_fileName="music_podcast_animation_playing.json" app:lottie_loop="true" />
+        <include layout="@layout/music_podcast_include_play_desc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

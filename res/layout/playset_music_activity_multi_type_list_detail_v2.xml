@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:orientation="vertical" android:id="@id/playlist_app_bar" android:background="@null" android:paddingTop="56.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.playset.playlist.ui.FixAppBarLayoutBehavior">
+        <include app:layout_scrollFlags="scroll" layout="@layout/playset_music_layout_playlist_detail_header_v2" />
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.bilibili.playset.playlist.ui.PinnedBottomBehavior">
+        <tv.danmaku.bili.widget.RecyclerView android:id="@id/rv_playlist" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/load_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.25" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/playset_music_layout_playlist_detail_toolbar_v2" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

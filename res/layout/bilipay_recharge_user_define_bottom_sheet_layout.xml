@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="end|bottom" android:id="@id/rl_root" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_root" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/daynight_color_background_card" android:paddingLeft="12.0dp" android:paddingTop="7.0dp" android:paddingRight="12.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="46.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/amount_container" android:background="@drawable/bilipay_user_define_bottom_sheet_user_define_bg" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0" />
+            <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/daynight_color_theme_pink" android:gravity="center" android:id="@id/confirm" android:paddingLeft="16.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pay_confirm" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24.0dp" android:paddingRight="24.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:textSize="13.0sp" android:textColor="@color/bilipay_user_define_sheet_edittext_text_color" android:textColorHint="@color/bilipay_user_define_sheet_input_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/amount_input" android:background="@null" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="250.0dp" android:layout_height="match_parent" android:hint="@string/recharge_custom_amount_hint" android:maxLines="1" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

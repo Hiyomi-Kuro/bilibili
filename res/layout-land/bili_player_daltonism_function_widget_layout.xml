@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ba0_u_alpha88" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="208.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/daltonism_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/daltonism_title_text" android:layout_marginStart="25.0dp" android:layout_marginEnd="15.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:gravity="start" android:id="@id/daltonism_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxWidth="160.0dp" android:text="@string/daltonism_desc_text" android:layout_marginEnd="35.0dp" app:layout_constraintStart_toStartOf="@id/daltonism_title" app:layout_constraintTop_toBottomOf="@id/daltonism_title" />
+    <View android:id="@id/daltonism_title_divider" android:background="@color/Ga7_u" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dp" app:layout_constraintTop_toBottomOf="@id/daltonism_desc" />
+    <Space android:id="@id/daltonism_blank_space" android:layout_width="match_parent" android:layout_height="25.0dp" app:layout_constraintTop_toBottomOf="@id/daltonism_title_divider" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/daltonism_blank_space">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/daltonism_none_layout" layout="@layout/bili_player_daltonism_none_layout" />
+            <include android:id="@id/daltonism_red_blindness_layout" layout="@layout/bili_player_daltonism_red_blindness_layout" />
+            <include android:id="@id/daltonism_green_blindness_layout" layout="@layout/bili_player_daltonism_green_blindness_layout" />
+            <include android:id="@id/daltonism_blue_blindness_layout" layout="@layout/bili_player_daltonism_blue_blindness_layout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

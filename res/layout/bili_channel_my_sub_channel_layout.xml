@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" app:placeholderImage="@drawable/ic_channel_default_icon" app:placeholderImageScaleType="centerInside" app:priority="3" app:roundedCornerRadius="4.0dp" style="@style/Widget.App.StaticImageView.Thumb.ChannelHome" />
+    <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:lines="1" app:priority="2" style="@style/TextAppearance.App.Title" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/ic_channel_official_channel" app:onCollapse="hide" app:priority="1" />
+    <View android:layout_width="match_parent" android:layout_height="wrap_content" app:priority="0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/pin_button" android:padding="8.0dp" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/ic_channel_mysub_pin" app:imageTint="@color/Ga4" app:priority="5" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/action_anchor" android:padding="8.0dp" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/ic_more_gray_v2" android:scaleType="center" app:imageTint="@color/Ga4" app:priority="4" />
+</tv.danmaku.bili.widget.PriorityLinearLayout>

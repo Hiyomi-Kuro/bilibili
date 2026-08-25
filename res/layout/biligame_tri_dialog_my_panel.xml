@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/biligame_background_dialog_my_info_v2" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/tri_v_line" android:background="@drawable/biligame_background_line_ga2_2" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/tri_cdl_my_recent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_v_line">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/tri_app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.biligame.ui.gamedetail.widget.BounceAppBarBehavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/tri_rv_enter_gift" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+            <FrameLayout android:id="@id/tri_fl_tab_layout" android:background="@drawable/biligame_background_white_top_tr12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+                <com.google.android.material.tabs.TabLayout android:id="@id/tri_tab_info" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="6.0dp" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" app:tabIndicator="@drawable/biligame_tab_pink_indicator_bg" app:tabIndicatorColor="@color/Pi5" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2.0dp" app:tabMode="fixed" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" app:tabSelectedTextColor="@color/Pi5" app:tabTextAppearance="@style/BiligameMineGameTabTextAppearance" app:tabTextColor="@color/Ga7" />
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/tri_vp2" android:background="@drawable/biligame_background_white_bottom_tr12" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View android:id="@id/tri_v_bottom" android:layout_width="match_parent" android:layout_height="23.0dp" app:layout_constraintTop_toBottomOf="@id/tri_cdl_my_recent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

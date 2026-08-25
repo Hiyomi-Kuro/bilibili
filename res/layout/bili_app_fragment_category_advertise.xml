@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+        <FrameLayout android:id="@id/tags_frame" android:background="@color/black_alpha50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <tv.danmaku.bili.widget.MaxHeightScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="320.0dp">
+                    <tv.danmaku.bili.widget.TagsView android:id="@id/tags_vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:spacing="@dimen/item_spacing" app:tagBackground="@drawable/selector_tag_oval_pink" app:tagCollapseIcon="@drawable/ic_shrink" app:tagTextAppearance="@style/TextAppearance.App.Tagview.Pink.PegasusTitle" />
+                </tv.danmaku.bili.widget.MaxHeightScrollView>
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        </FrameLayout>
+        <tv.danmaku.bili.widget.LoadingImageView android:gravity="center" android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

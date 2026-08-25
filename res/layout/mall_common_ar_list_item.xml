@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ar_item_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ar_item_iv" android:layout_width="106.0dp" android:layout_height="106.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="11.0dp" />
+        <TextView android:textSize="13.0dp" android:gravity="center" android:layout_gravity="center" android:id="@id/ar_item_tv" android:layout_width="106.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" android:layout_below="@id/ar_item_iv" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/ar_item_tag" android:background="@drawable/mall_common_ar_item_tag_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginLeft="7.0dp" android:layout_marginTop="7.0dp" android:layout_alignLeft="@id/ar_item_iv" android:layout_alignTop="@id/ar_item_iv" />
+    </RelativeLayout>
+</FrameLayout>

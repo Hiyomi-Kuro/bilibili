@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:tag="layout/bili_app_list_item_comment2_primary_comment_hot_insert_card_0" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" bind:fc_foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hot_insert_notice" android:background="@drawable/shape_roundrect_comment_hot_insert_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+            <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="6.0dp" android:src="@drawable/ic_comment2_hot_insert_head" android:layout_marginStart="8.0dp" android:layout_marginEnd="5.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Brand_pink" android:ellipsize="end" android:gravity="center" android:id="@id/hot_insert_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dp" android:singleLine="true" android:contentDescription="@string/comment_content_description_insertion" android:layout_marginEnd="17.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <FrameLayout android:tag="binding_2" android:layout_width="25.0dp" android:layout_height="match_parent" android:layout_marginStart="24.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/close_img" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/ic_comment2_hot_insert_close" android:contentDescription="@string/comment_content_description_close_button" android:layout_marginEnd="13.0dp" />
+    </FrameLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

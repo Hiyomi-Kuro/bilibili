@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.view.progressbar.LivePKProgressBar android:layout_gravity="center|top" android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="14.0dp" android:layout_marginTop="5.0dp" />
+    <com.bilibili.bililive.biz.view.LivePKCountDownViewV2 android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/pk_countdown_layout" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_centerHorizontal="true" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="top" android:id="@id/iv_pk_face" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="24.0dp" android:scaleType="fitXY" />
+</merge>

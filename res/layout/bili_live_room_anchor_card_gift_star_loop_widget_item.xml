@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="46.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_gift_star_icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginStart="10.0dp" app:failureImage="@drawable/bili_default_image_tv" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" app:thumbHeight="30.0dp" app:thumbWidth="30.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/fl_gift_star_desc" android:layout_width="0.0dp" android:layout_height="46.0dp" android:layout_marginStart="12.0dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/iv_gift_star_icon" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_min="120.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_anchor_card_anchor_honor_text_desc_color" android:gravity="center" android:id="@id/tv_gift_star_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_anchor_card_anchor_honor_text_desc_color" android:ellipsize="end" android:id="@id/tv_gift_star_process" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

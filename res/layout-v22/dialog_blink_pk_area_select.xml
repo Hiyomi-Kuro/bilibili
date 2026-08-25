@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fr_pk_area_select" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_empty_area" android:background="#bf000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_pk_area_select" android:background="@drawable/shape_bg_blink_end_multi_pk_dialog_top" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dp" />
+        <View android:layout_width="match_parent" android:layout_height="8.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#e7e9eb" android:ellipsize="end" android:gravity="center" android:id="@id/tv_cancel_pk_area_select" android:background="#242628" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="80.0dp" android:text="@string/cancel" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

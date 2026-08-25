@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/controller_root" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/live_sdk_ACD_VideoRoot" app:allowScalePivot="true" app:maxScale="5.0" app:minScale="0.2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ResizableLayout="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.room.ui.roomv3.player.container.LiveRoomPlayerChronosView android:id="@id/player_chronos_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/fake_background" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="fitXY" />
+    <FrameLayout android:id="@id/fl_play_controller" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.blps.xplayer.view.GestureView android:id="@id/controller_underlay" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/live_sdk_ACD_Underlay" />
+        <com.bilibili.bililive.room.ui.roomv3.player.container.LiveRoomPlayerBaseControlView android:id="@id/player_base_control_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.bililive.room.ui.roomv3.player.container.LiveRoomPlayerGestureControlView android:id="@id/player_gesture_control_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ViewStub android:layout_gravity="left|top" android:id="@id/reset_resize" android:visibility="gone" android:layout="@layout/xplayer_reset_player_resize" android:inflatedId="@id/stub_id_reset_resize" android:layout_width="wrap_content" android:layout_height="44.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="86.0dp" />
+    </FrameLayout>
+</merge>

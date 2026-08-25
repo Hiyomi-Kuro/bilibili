@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followinglist.widget.span.DescTextView android:id="@id/dy_card_text" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:span_color="@color/Text_link" style="@style/dy_appearance_desc" />
+</FrameLayout>

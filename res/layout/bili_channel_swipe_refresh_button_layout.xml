@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/swipe" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/status_img" app:actualImageScaleType="centerInside" style="@style/ImageViewStateStyle_Small" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/status_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="48.0dp" android:text="@string/index_feed_empty_hint" android:maxLines="2" />
+        <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/error_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dp" android:text="@string/tips_no_data" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/error_retry_button" android:background="@drawable/shape_inline_round_rect_pink" android:visibility="gone" android:layout_width="88.0dp" android:layout_height="30.0dp" android:layout_marginTop="20.0dp" android:text="@string/pegasus_login" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

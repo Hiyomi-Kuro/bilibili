@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="matrix" />
+    <ScrollView android:id="@id/root_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container" android:background="@drawable/shape_roundrect_solid_white_radius_8" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="280.0dp" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/daynight_color_text_body_primary" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/pangu_user_protocol_dialog_title" />
+            <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/content" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxHeight="240.0dp" android:lineSpacingMultiplier="1.2" android:fadeScrollbars="false" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/daynight_color_text_supplementary_dark" android:id="@id/privacy_info" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+            <View android:id="@id/space" android:visibility="gone" android:layout_width="match_parent" android:layout_height="16.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/daynight_color_text_supplementary_dark" android:layout_gravity="center" android:id="@id/disagree" android:paddingTop="8.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pangu_user_protocol_dialog_disagree" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/text_white_kit" android:gravity="center" android:id="@id/agree" android:background="@drawable/shape_pink_corners_4" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/pangu_user_protocol_dialog_agree_and_continue" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

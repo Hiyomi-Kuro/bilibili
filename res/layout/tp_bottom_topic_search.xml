@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.list.widget.MaxHeightLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/top_layout" android:background="@drawable/shape_roundrect_8_wh0_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="center_horizontal" android:id="@id/top_bar_view" android:background="@drawable/shape_roundrect_2_ga2" android:layout_width="48.0dp" android:layout_height="4.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="match_parent" android:layout_height="44.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <TextView android:textColor="@color/Text1" android:gravity="start|center" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/tp_search_page_title" android:layout_weight="1.0" style="@style/H2" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/delimiter" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <FrameLayout android:id="@id/container" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.app.comm.list.widget.MaxHeightLinearLayout>

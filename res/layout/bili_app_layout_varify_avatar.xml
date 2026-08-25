@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.App.StaticImageView.Thumb.Custom.Avatar.Circle" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/verify_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

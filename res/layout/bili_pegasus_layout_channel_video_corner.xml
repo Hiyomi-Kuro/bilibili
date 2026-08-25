@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left" android:id="@id/img_corner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dp" android:scaleType="fitXY" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0dp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/text_corner" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dp" android:maxLines="1" />
+</merge>

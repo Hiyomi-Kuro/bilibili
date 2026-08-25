@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="49.0dp" android:width="375.0dp" android:viewportWidth="375.0" android:viewportHeight="49.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$biligame_feed_seek_background__0" android:pathData="M0,11.519C0,11.519 83.218,0.519 186.5,0.519C289.782,0.519 375,11.519 375,11.519V49H0V11.519Z" />
+</vector>

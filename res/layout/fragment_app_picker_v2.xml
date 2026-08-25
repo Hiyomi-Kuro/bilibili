@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/bottom_layout" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/content_layout" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <tv.danmaku.bili.widget.RecyclerView android:id="@id/media_recycleview" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recycleview_album" android:background="@color/Wh0" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </FrameLayout>
+                <RelativeLayout android:id="@id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/text_middle" android:textColor="@color/Ga8" android:gravity="center_vertical" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_media" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="end|bottom" android:id="@id/ll_origin_image_v2" android:background="@drawable/following_story_shape_roundrect_white" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginBottom="35.0dp" android:layout_marginEnd="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Wh0_u" android:layout_gravity="center_vertical" android:id="@id/media_item_check_v2" android:background="@drawable/selector_origin_image_checker_v2" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+            <TextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga10_u" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/origin_image_text_v2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/origin_image" android:layout_marginEnd="14.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/bottom_layout" android:background="@color/main_Wh0" android:layout_width="match_parent" android:layout_height="36.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ll_pick_album_txt" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_album_hold" android:layout_width="14.0dp" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:src="@drawable/icon_all_photos" android:layout_marginStart="14.0dp" />
+            <TextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga8" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pick_album_txt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:layout_marginRight="6.0dp" android:maxWidth="150.0dp" android:text="@string/group_all_v2" android:lines="1" android:layout_marginStart="7.0dp" android:layout_marginEnd="6.0dp" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_album" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_pull_down_more" android:rotation="180.0" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/ll_origin_image" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/origin_image_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6.0dp" android:text="@string/origin_image" android:layout_marginEnd="6.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Wh0_u" android:layout_gravity="center_vertical" android:id="@id/media_item_check" android:background="@drawable/selector_origin_image_checker_v2" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="16.0dp" android:layout_marginEnd="16.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/main_Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</LinearLayout>

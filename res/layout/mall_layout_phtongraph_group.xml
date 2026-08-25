@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/btn_rollback" android:background="@drawable/mall_shape_circle_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="56.0dp" android:layout_height="56.0dp" android:scaleType="centerInside" app:srcCompat="@drawable/mall_ic_record_back_20dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/btn_submit" android:background="@drawable/mall_shape_circle_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="56.0dp" android:layout_height="56.0dp" android:scaleType="centerInside" app:srcCompat="@drawable/mall_ic_record_submit_pink_24dp" />
+    <com.mall.ui.widget.comment.media.camera.RecorderButton android:id="@id/btn_record" android:layout_width="110.0dp" android:layout_height="110.0dp" />
+</merge>

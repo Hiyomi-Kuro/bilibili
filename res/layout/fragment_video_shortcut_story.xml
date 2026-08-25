@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_container" android:layout_width="match_parent" android:layout_height="match_parent" android:translationY="@dimen/video_shortcut_story_max_translation_y"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.video.story.view.StoryVideoFrameLayout android:id="@id/shortcut_video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="8.0dp" android:layout_height="8.0dp" android:rotation="270.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/bili_story_black_corner" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:layout_width="8.0dp" android:layout_height="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/bili_story_black_corner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

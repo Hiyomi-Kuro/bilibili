@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/error_view" android:layout_width="match_parent" android:layout_height="106.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_post_tag_load_fail" android:layout_marginEnd="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_gray_dark_2" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络信号异常，" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/video_editor_theme_pink" android:id="@id/error_retry_view" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请重试" android:paddingVertical="10.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

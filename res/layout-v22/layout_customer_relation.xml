@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverLinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_12" android:paddingRight="@dimen/margin_12" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/margin_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Text2" android:id="@id/relation_title" android:paddingTop="@dimen/margin_8" android:paddingBottom="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/margin_8" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/relation_question" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/relation_view_all" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/answer_view_all" />
+</com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverLinearLayout>

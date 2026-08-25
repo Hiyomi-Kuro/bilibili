@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/live_card_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/danmu" android:paddingLeft="20.0dp" android:layout_width="wrap_content" android:layout_height="66.0dp" android:maxWidth="280.0dp" android:lines="2" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/emoticon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="3.0dp" android:scaleType="centerCrop" android:layout_toRightOf="@id/danmu" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/live_sdk_white_alpha15" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" />
+    <View android:background="@color/live_sdk_white_alpha15" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/cancel" android:background="@color/transparent_white" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/live_dialog_negative" />
+</LinearLayout>

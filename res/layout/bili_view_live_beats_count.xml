@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/storm_icon" android:background="@android:color/transparent" android:layout_width="40.0dp" android:layout_height="40.0dp" app:actualImageScaleType="fitCenter" app:aspectRadioHeight="1" app:aspectRadioWidth="1" app:backgroundImage="@null" app:overlayImage="@null" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/storm_time" android:background="@drawable/bg_round_background_shape_beats" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="25.0dp" android:maxLines="1" />
+</FrameLayout>

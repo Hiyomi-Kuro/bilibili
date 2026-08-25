@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/biligame_Re_Ga5" android:id="@id/tv_gift_foot" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_load_more" android:drawableRight="@drawable/biligame_arrow_down_inline" android:drawablePadding="6.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Biligame.TextView.Re.11SP.1_0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

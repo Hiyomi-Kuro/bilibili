@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black_light_alpha90" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.playerbizcommon.widget.control.PlayerBackWidget android:id="@id/back" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="21.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_player_back_button" style="@style/BPlayer_PlayerControlBarButton.Compat" />
+        <tv.danmaku.bili.videopage.player.features.endpage.EndPageChargeScrollWidget android:layout_gravity="center_vertical" android:id="@id/charge_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <tv.danmaku.bili.videopage.player.features.endpage.EndPageChargeDividerWidget android:id="@id/charge_divider" android:background="@color/white_alpha20" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <tv.danmaku.bili.videopage.player.features.endpage.EndPageNestedView android:orientation="vertical" android:id="@id/nested_end_page" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/author_layout" layout="@layout/bili_player_new_endpage_vertical_top" />
+        <View android:background="@color/white_alpha10" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="-12.0dp" android:layout_marginRight="-12.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textColor="@color/Wh0_u" android:gravity="bottom" android:id="@id/recommend_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dp" android:text="@string/endpage_recommend_videos" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/related_countdown_cancel" android:background="@drawable/shape_roundrect_white_alpha20" android:visibility="gone" android:layout_width="78.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:text="@string/endpage_play_auto_cancel" />
+        </LinearLayout>
+        <tv.danmaku.bili.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/recycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    </tv.danmaku.bili.videopage.player.features.endpage.EndPageNestedView>
+</LinearLayout>

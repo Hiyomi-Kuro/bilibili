@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+    <FrameLayout android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loadingView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

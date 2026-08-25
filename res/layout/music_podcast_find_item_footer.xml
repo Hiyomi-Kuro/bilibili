@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/music_podcast_find_playlist_bg_end" android:paddingTop="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/find_footer_left_img" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:scaleType="centerInside" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Text3" android:gravity="center" android:id="@id/find_footer_text" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:text="@string/music_podcast_find_more" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/find_footer_right_img" android:layout_width="12.0dp" android:layout_height="12.0dp" app:actualImageScaleType="centerInside" />
+</LinearLayout>

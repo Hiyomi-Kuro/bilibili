@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ad_story_card_53" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/basic_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <FrameLayout android:id="@id/reinforced_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

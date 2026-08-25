@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/toast_container" android:background="@drawable/shape_roundrect_player_black" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginLeft="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffa500" android:layout_gravity="center" android:id="@id/yellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/image" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="10.0dp" android:scaleType="centerInside" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffa500" android:layout_gravity="center" android:id="@id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

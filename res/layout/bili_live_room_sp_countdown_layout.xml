@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sp_countdown_container" android:background="@drawable/bg_round_coner3_white" android:padding="1.0dp" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/sp_countdown_layout" android:background="@drawable/bg_round_coner3_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sp_countdown_imageview" android:layout_width="match_parent" android:layout_height="72.0dp" android:scaleType="centerInside" />
+        <View android:id="@id/sp_countdown_mask" android:background="@drawable/bg_round_coner3_alpha50_black" android:layout_width="match_parent" android:layout_height="72.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/sp_countdown_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="#5f2b20" android:gravity="center" android:layout_gravity="bottom" android:id="@id/sp_countdown_btn" android:background="@drawable/bili_live_room_sp_countdown_bg" android:layout_width="match_parent" android:layout_height="25.0dp" android:text="@string/live_sp_countdown_btn" />
+</FrameLayout>

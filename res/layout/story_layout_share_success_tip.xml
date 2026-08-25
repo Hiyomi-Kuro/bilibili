@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dp" android:textColor="@color/Wh0_u" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/story_share_success" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/theme_color_secondary" android:gravity="center_vertical" android:id="@id/detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/story_share_for_detail" android:drawableRight="@drawable/ic_br_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:drawableRightTint="@color/theme_color_secondary" />
+</merge>

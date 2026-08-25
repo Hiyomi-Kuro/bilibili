@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.playerbizcommon.view.BubbleContainer android:id="@id/bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:anchorViewHeight="3.0dp" app:color="@color/black_alpha80" app:radius="4.0dp" app:showAnchorView="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_high_energetic_container" android:paddingLeft="12.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/tv_energetic_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <ImageView android:id="@id/iv_play" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" android:src="@drawable/bili_player_play_can_play" />
+    </LinearLayout>
+</com.bilibili.playerbizcommon.view.BubbleContainer>

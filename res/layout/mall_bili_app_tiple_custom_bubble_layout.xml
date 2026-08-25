@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/fireworks_icon" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" android:scaleType="fitEnd" app:loopCount="1" app:source="bili_app_triple_custom_success.svga" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/suc_icon" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginTop="2.0dp" android:layout_marginStart="2.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/pre_icon" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginTop="2.0dp" android:layout_marginStart="2.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:id="@id/content_msg" android:background="@drawable/bili_app_triple_custom_bubble_layout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:maxLines="1" android:paddingStart="19.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="100.0dp" android:layout_marginEnd="2.0dp" />
+</FrameLayout>

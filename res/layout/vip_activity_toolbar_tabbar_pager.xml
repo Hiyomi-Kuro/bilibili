@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/pinned_bottom_scrolling_behavior" />
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" android:elevation="0.0dp" app:elevation="0.0dp" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_scrollFlags="scroll|enterAlways|snap" app:titleTextColor="@color/theme_color_primary_tr_title" style="@style/Widget.App.Toolbar" />
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:textAppearance="@style/TextAppearance.Vip.TopTab.Title" android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorColor="@android:color/white" app:pstsIndicatorHeight="2.0dp" app:pstsShouldExpand="true" app:pstsTabBackground="?selectableItemBackground" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Widget.App.SlidingTab.Top.NoBackground" />
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

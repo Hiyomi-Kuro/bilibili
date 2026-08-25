@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/touch_outside" android:background="@color/upper_bottom_sheet_activity_mask_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:soundEffectsEnabled="false" android:importantForAccessibility="no" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="center|bottom" android:id="@id/dialog_container" android:background="@drawable/upper_shape_dialog_bottom_r8_bg2" android:layout_width="match_parent" android:layout_height="wrap_content" style="?bottomSheetStyle" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/Wh0" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

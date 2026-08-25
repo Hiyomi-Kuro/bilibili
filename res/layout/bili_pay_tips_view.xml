@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bili_pay_daynight_color_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:src="@drawable/img_holder_error_style1" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:layout_gravity="center_horizontal" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/bili_pay_server_error" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/bili_pay_daynight_color_text_supplementary_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tips_btn" android:background="@drawable/bili_pay_tips__btn_bg" android:layout_width="150.0dp" android:layout_height="40.0dp" android:layout_marginTop="40.0dp" android:text="@string/bili_pay_tipsview_retry" />
+</LinearLayout>

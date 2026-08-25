@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/danmaku_sender_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/danmaku_divide_line" android:background="#333333" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/danmaku_input_view" android:background="#0c0c0c" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="36.0dp">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/show_option" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_bili_player_danmaku_input_option_show" android:scaleType="fitCenter" />
+                <View android:layout_gravity="right|top" android:id="@id/show_option_tip" android:background="@drawable/bili_player_danmaku_option_red_radius_tip" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="2.0dp" />
+            </FrameLayout>
+            <com.bilibili.playerbizcommonv2.danmaku.input.widget.PlayerDanmakuEditText android:textSize="13.0sp" android:textColor="#212121" android:textColorHint="#999999" android:gravity="center_vertical" android:id="@id/input" android:background="@drawable/bili_player_danmaku_edit_bg_v2" android:paddingLeft="12.0dp" android:paddingTop="3.0dp" android:paddingRight="12.0dp" android:paddingBottom="3.0dp" android:layout_width="0.0dp" android:layout_height="30.0dp" android:hint="@string/VideoView_danmaku_input_hint" android:maxEms="101" android:singleLine="true" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:windowSoftInputMode="stateVisible" android:imeOptions="actionSend" android:imeActionLabel="@string/send" style="@style/BPlayer_LoginInput" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/send" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_danmaku_send" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <include layout="@layout/bili_unite_player_danmaku_input_option" />
+    </LinearLayout>
+</RelativeLayout>

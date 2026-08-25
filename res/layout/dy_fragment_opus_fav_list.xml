@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <tv.danmaku.bili.widget.LoadingImageView android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_search_loading" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_following_no_exist" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="42.0dp" />
+            <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:id="@id/retry_button" android:background="@drawable/bg_button_round_corner" android:layout_width="141.0dp" android:layout_height="44.0dp" android:text="@string/home_try_again" style="?android:borderlessButtonStyle" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/nav_top_bar" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/biligame_layout_toolbar_common" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_tab_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="@dimen/biligame_rank_top_tablayout_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar">
+        <com.bilibili.biligame.widget.TabLayout android:id="@id/tab_layout" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5" app:tabIndicatorColor="@color/biligame_Re_Ga10" app:tabIndicatorHeight="2.0dp" app:tabSelectedTextColor="@color/biligame_Re_Ga10" app:tabTextColor="@color/Ga5" style="@style/BiligameRankTabLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/view" android:background="@drawable/biligame_bottom_shadom" android:layout_width="match_parent" android:layout_height="2.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_tab_layout" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

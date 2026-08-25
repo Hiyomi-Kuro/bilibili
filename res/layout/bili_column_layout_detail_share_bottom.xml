@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/content" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/bottom_linear" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/column_detail_cancel_attention_tips" />
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/share_sure_tv" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/column_detail_cancel_attention_sure" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <View android:id="@id/view" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="5.0dp" android:layout_below="@id/bottom_linear" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/share_cancel" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="@string/column_mananger_bottom_cancle" android:layout_below="@id/view" android:layout_centerHorizontal="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

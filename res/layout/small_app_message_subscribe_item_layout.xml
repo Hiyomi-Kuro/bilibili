@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="21.0dp" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/small_app_color_text_body_primary" android:ellipsize="end" android:id="@id/tvTemplateName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/small_app_pink" android:gravity="center" android:id="@id/tvCancelSubscribe" android:background="@drawable/smallapp_bg_solid_rectangle_gray" android:layout_width="64.0dp" android:layout_height="26.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="20.0dp" android:text="@string/small_app_more_view_cancel_follow" />
+</LinearLayout>

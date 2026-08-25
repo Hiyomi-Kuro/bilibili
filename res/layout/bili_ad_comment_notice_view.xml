@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ad_tint_frame" android:background="@color/Ye1" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ad_comment_notice" android:scaleType="centerInside" android:maxWidth="24.0dp" android:maxHeight="24.0dp" android:importantForAccessibility="no" app:imageTint="@color/Ye5" />
+    <TextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ye5" android:ellipsize="end" android:id="@id/content" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_half_spacing" android:maxLines="1" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/close" android:padding="6.0dp" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="@dimen/item_half_spacing" android:src="@drawable/ic_ad_comment_notice_close" android:scaleType="centerInside" android:contentDescription="@string/ad_accessibility_close_btn" app:imageTint="@color/Ye5" />
+</com.bilibili.adcommon.widget.AdTintLinearLayout>

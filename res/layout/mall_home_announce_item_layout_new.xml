@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mall_home_notice_item_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:ellipsize="end" android:gravity="left" android:id="@id/notice_text" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:freezesText="true" android:drawableRight="@drawable/mall_home_icon_arrow_right_pink" android:drawablePadding="2.0dp" android:marqueeRepeatLimit="marquee_forever" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

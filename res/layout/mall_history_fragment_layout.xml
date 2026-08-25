@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/history_search_total_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toTopOf="@id/history_edit_view" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/history_search_total_tip" app:layout_goneMarginTop="0.0dp" />
+        <com.mall.ui.widget.history.MallHistoryEditView android:id="@id/history_edit_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        <include android:layout_gravity="center" android:id="@id/history_tips_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_tips_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

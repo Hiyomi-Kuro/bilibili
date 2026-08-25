@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/background_pale_kit" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/bili_app_layout_login_top_garden" />
+                    <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/daynight_color_text_headline" android:gravity="start|center" android:id="@id/selected_country_name" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginRight="@dimen/item_spacing" android:drawableRight="@drawable/ic_arrow_right_gray" />
+                    <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+                    <include layout="@layout/bili_app_layout_login_phone_num" />
+                    <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" android:layout_marginLeft="12.0dp" />
+                    <include layout="@layout/bili_app_layout_login_verfy_code" />
+                    <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+                </LinearLayout>
+                <ViewStub android:layout_gravity="end" android:id="@id/login_tips" android:layout="@layout/bili_app_layout_login_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="81.0dp" android:layout_marginRight="30.0dp" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintButton android:enabled="false" android:textSize="@dimen/text_size_headline" android:textColor="@color/daynight_color_text_button_white" android:layout_gravity="center_horizontal" android:id="@id/submit" android:background="@drawable/selector_button_ac_solid_pink" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/item_medium_spacing" android:layout_marginTop="12.0dp" android:layout_marginRight="@dimen/item_medium_spacing" android:text="@string/login_btn_content" />
+            <include layout="@layout/bili_app_layout_login_sms_intro" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

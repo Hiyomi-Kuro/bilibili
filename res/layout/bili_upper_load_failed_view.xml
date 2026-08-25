@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="#ff9499a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_load_failed_and_retry" android:drawablePadding="4.0dp" app:drawableTopCompat="@drawable/ic_upper_load_failed" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/retry_view" android:background="@drawable/upper_shape_rect_r100_pink_fill" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/upper_retry" />
+</LinearLayout>

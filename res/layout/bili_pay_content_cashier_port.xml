@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@drawable/bili_pay_pay_view_bg" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp">
+        <com.bilibili.bilipay.ui.widget.TipView android:gravity="center" android:id="@id/tipview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_payview" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:layout_gravity="center" android:id="@id/tv_expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_channel_list" android:focusable="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" />
+        </LinearLayout>
+        <RelativeLayout android:textAppearance="@style/TextAppearance.Pay.XLarge" android:id="@id/btn_payment" android:background="@drawable/bili_pay_btn_comm_bg" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="10.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/bili_pay_white" android:id="@id/tv_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/btn_left_loading" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="@dimen/bili_pay_item_spacing" android:layout_marginRight="@dimen/bili_pay_item_spacing" android:indeterminate="true" android:indeterminateDrawable="@anim/bili_pay_progress_loading_small" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_toLeftOf="@id/tv_channel" android:layout_centerInParent="true" android:layout_toStartOf="@id/tv_channel" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-23.0dp" android:layout_marginRight="19.0dp" android:src="@drawable/bili_pay_popup_close" android:layout_alignParentRight="true" android:layout_marginEnd="19.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

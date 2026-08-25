@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginBottom="20.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="left" android:id="@id/counter" android:background="@drawable/shape_roundrect_corner16_semitrans_black" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginLeft="14.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/view_origin" android:background="@drawable/shape_roundrect_corner16_semitrans_black" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp" android:minWidth="129.0dp" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="right" android:id="@id/save_image" android:background="@drawable/shape_roundrect_corner16_semitrans_black" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="13.0dp" android:src="@drawable/ic_download_white_style1" />
+    </FrameLayout>
+</FrameLayout>

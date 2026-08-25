@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dy_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dy_card_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bplus.followinglist.page.browser.painting.PaintingGalleryView android:id="@id/dy_painting_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_browser_buffer" />
+    </FrameLayout>
+    <ViewStub android:id="@id/dy_not_exist_stub" android:layout="@layout/layout_stub_browser_not_exist" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/dy_retry_stub" android:layout="@layout/layout_stub_browser_retry" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:tag="@string/light_browser_desc_all_tag" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/dy_desc_controller" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/dy_desc_shadow" android:background="@drawable/bg_browser_controller" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/dy_desc_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/dy_avatar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="2.0dp">
+                    <tv.danmaku.bili.widget.PendantAvatarFrameLayout android:id="@id/dy_header" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/PendantAvatarStyle_LightBrowser" />
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/dy_right_layout" android:layout_toRightOf="@id/dy_header" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/dy_header">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/dy_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black_alpha10" android:shadowDy="1.0" android:shadowRadius="1.0" app:layout_constraintBottom_toTopOf="@id/dy_date" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white_alpha60" android:id="@id/dy_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:shadowColor="@color/black_alpha10" android:shadowDy="1.0" android:shadowRadius="1.0" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/dy_fans_only" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dy_username" />
+                        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dy_fans_only" android:background="@drawable/shape_roundrect_trans_stroke_half" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="6.0dp" android:backgroundTint="@color/Pi5_u" app:layout_constraintBottom_toBottomOf="@id/dy_date" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/dy_date" app:layout_constraintTop_toTopOf="@id/dy_date">
+                            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_only_fans_icon" android:layout_width="12.0dp" android:layout_height="12.0dp" app:tint="@color/Pi5_u" />
+                            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Pi5_u" android:id="@id/dy_only_fans_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/T10" />
+                        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/dy_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                        <com.bilibili.relation.widget.FollowButton android:id="@id/dy_attention" android:layout_width="66.0dp" android:layout_height="24.0dp" app:fbGroup="false" app:fbStyle="fill" style="@style/FollowButton" />
+                        <ImageView android:layout_gravity="center" android:id="@id/dy_desc_switcher_close" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="2.0dp" android:src="@drawable/light_browser_arrow_down" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.bilibili.bplus.followinglist.widget.span.BrowserTextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:id="@id/dy_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="2.0dp" android:shadowColor="@color/black_alpha10" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:expand_max_lines="14" />
+                <com.bilibili.bplus.followingcard.widget.FollowingTagsLayout android:id="@id/dy_tags_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FollowingTagsLayout_Browser" />
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="8.0dp" layout="@layout/layout_painting_browser_bottom" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/dy_desc_switcher_outer_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:layout_marginBottom="17.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/dy_desc_switcher_open" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:src="@drawable/light_browser_arrow_up" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/dy_comment_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/dy_comment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

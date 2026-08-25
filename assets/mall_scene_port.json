@@ -1,0 +1,40 @@
+{
+  "FilterID": "SceneSource",
+  "FilterName": "MallSceneSource",
+  "FilterConfig": {
+    "SceneWidth": 720,
+    "SceneHeight": 1280,
+    "SceneItems": [
+      {
+        "ItemLeft": 0,
+        "ItemTop": 0,
+        "ItemWidth": 720,
+        "ItemHeight": 1280,
+        "FitMode": "FitInner",
+        "IsShow": false,
+        "Filter": {
+          "FilterID": "CommonSource",
+          "FilterName": "cameraSource",
+          "FilterConfig": {
+            "source_id": 0
+          }
+        }
+      },
+      {
+        "ItemLeft": 0,
+        "ItemTop": 0,
+        "ItemWidth": 720,
+        "ItemHeight": 1280,
+        "FitMode": "FitInner",
+        "IsShow": false,
+        "Filter": {
+          "FilterID": "CommonSource",
+          "FilterName": "imageSource",
+          "FilterConfig": {
+            "source_id": 1
+          }
+        }
+      }
+    ]
+  }
+}

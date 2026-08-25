@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover_right_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginEnd="3.0dp" />
+    <com.bilibili.adcommon.basic.marker.v2.AdMarkLayoutV2 android:layout_gravity="center_vertical" android:id="@id/ad_tag" app:mode="double_row" style="@style/Marker" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.0sp" android:textColor="@color/Ga7" android:id="@id/tv_sort_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:minWidth="44.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biligame_radio_icon_checked" android:layout_marginStart="16.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_sort_tag" app:layout_constraintStart_toEndOf="@id/tv_sort_tag" app:layout_constraintTop_toTopOf="@id/tv_sort_tag" app:tint="@color/Pi5" />
+    <View android:id="@id/v_bottom_line" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="7.0dp" app:layout_constraintEnd_toEndOf="@id/iv_choice" app:layout_constraintTop_toBottomOf="@id/tv_sort_tag" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/tri_back" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/biligame_vector_ic_back" android:scaleType="center" app:tint="@color/Wh0_u" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:id="@id/tri_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0sp" />
+</merge>

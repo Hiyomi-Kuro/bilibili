@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="250.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/upper_picture_full_screen" android:layout_width="50.0dp" android:layout_height="55.0dp" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/upper_picture_full_screen_image" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="2.0dp" android:src="@drawable/ic_upper_fill_mode_fill" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/selector_scene" android:layout_gravity="center|bottom" android:id="@id/upper_picture_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_editor_fill_mode_fill" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/upper_picture_full_screen" android:layout_centerVertical="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

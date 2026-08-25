@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rating_bar" android:layout_width="9.699982dp" android:layout_height="9.699982dp" android:src="@drawable/ic_filled_star" />
+    <TextView android:textColor="@color/Text3" android:id="@id/grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="@string/author_space_game_no_score" style="@style/T12" />
+</merge>

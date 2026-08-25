@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingPosterPreviewView android:layout_gravity="center" android:orientation="vertical" android:id="@id/poster_container" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/poster_logo" android:layout_width="67.0dp" android:layout_height="28.0dp" android:layout_marginTop="41.0dp" android:layout_marginBottom="30.0dp" android:src="@drawable/ic_poster_logo" android:contentDescription="@null" />
+    <include layout="@layout/layout_following_poster_header_share" />
+    <com.bilibili.bplus.followingcard.widget.EllipsizingTextView android:textSize="@dimen/following_card_content_text_size" android:textColor="@color/Ga10" android:id="@id/card_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_s" android:layout_marginRight="12.0dp" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:max_lines="4" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/poster_footer_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_poster_following_qr" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/poster_footer_bg" android:layout_alignBottom="@id/poster_footer_bg">
+            <ImageView android:layout_width="44.0dp" android:layout_height="20.0dp" android:layout_marginLeft="16.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_poster_logo" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Re10_u" android:id="@id/poster_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="4.0dp" android:text="@string/following_poster_tip_text" />
+            <TextView android:textSize="@dimen/text_size_supplementary" android:textColor="@color/Re10_u_alpha60" android:id="@id/poster_generate_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="12.0dp" />
+        </LinearLayout>
+        <ImageView android:id="@id/poster_qr_code" android:background="@color/Ba0_u" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="11.0dp" android:layout_alignRight="@id/poster_footer_bg" android:layout_alignBottom="@id/poster_footer_bg" android:contentDescription="@null" />
+    </RelativeLayout>
+</com.bilibili.bplus.followingcard.widget.FollowingPosterPreviewView>

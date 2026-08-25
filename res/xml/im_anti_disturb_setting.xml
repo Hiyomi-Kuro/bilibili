@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:key="imAntiDisturb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="@string/im_setting_anti_disturb_title" android:key="anti_disturb_switch" android:summary="@string/im_setting_anti_disturb_summary" />
+    <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="false" android:key="anti_disturb_option" />
+    <com.bilibili.bplus.im.setting.AntiDisturbTimePreference android:persistent="false" android:key="anti_disturb_time" />
+</androidx.preference.PreferenceScreen>

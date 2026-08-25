@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/item_icon" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_app_list_interest_choose_default_icon" app:placeholderImageScaleType="centerCrop" />
+        <View android:id="@id/spacer" android:visibility="gone" android:layout_width="5.0dp" android:layout_height="1.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

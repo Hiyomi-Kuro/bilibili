@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@drawable/bili_upper_post_16_white_corner" android:layout_width="175.0dp" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/upper_archive_entrance_new_icon" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_post_bcut" android:layout_marginEnd="6.0dp" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0dp" android:textColor="@color/upper_at_user_page_title_text_color" android:id="@id/upper_archive_entrance_new_icons_name" android:layout_width="wrap_content" android:layout_height="22.0dp" android:text="必剪APP" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0dp" android:textColor="@color/upper_at_user_page_gray_dark" android:id="@id/upper_archive_entrance_desp" android:layout_width="wrap_content" android:layout_height="14.0dp" android:layout_marginTop="2.0dp" android:text="官方剪辑工具" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="9.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/upper_archive_entrance_tip" android:background="@drawable/bili_archive_bcut_update_tip" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dp" android:layout_marginTop="22.0dp" android:text="" android:layout_alignParentTop="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

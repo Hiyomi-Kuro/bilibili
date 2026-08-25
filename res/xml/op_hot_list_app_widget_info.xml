@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<card-provider app:groupImage="@drawable/op_card_group_image" app:groupTitle="@string/main_bilibili" app:oplus_card_name="@string/widget_hot_list_op_card_name" app:oplus_card_protocol="JSON" app:oplus_card_size="two2four" app:oplus_card_type="222220111" app:previewImage="@drawable/op_card_preview_image"
+  xmlns:app="http://schemas.android.com/apk/res-auto" />

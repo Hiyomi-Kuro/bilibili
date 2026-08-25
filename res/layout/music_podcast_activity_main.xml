@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.music.podcast.view.MusicTopCarLayout android:id="@id/music_navigation_tab_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="@dimen/music_podcast_main_toolbar_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/top_close" android:layout_width="54.0dp" android:layout_height="@dimen/music_podcast_main_toolbar_height" android:src="@drawable/music_podcast_close" android:scaleType="centerInside" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/top_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <TextView android:textSize="17.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/music_podcast_main_title" android:singleLine="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/top_title_arrow" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:src="@drawable/music_podcast_title_arrow" android:scaleType="centerInside" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <ImageView android:id="@id/more_menu" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/music_podcast_main_toolbar_height" android:src="@drawable/music_podcast_more" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

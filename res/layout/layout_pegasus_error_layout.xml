@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/empty_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.4" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline">
+                <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/error_image" android:layout_width="140.0dp" android:layout_height="140.0dp" android:src="@drawable/img_page_net_error" app:actualImageScaleType="centerInside" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/load_error_hint1" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_roundrect_pink_r_15" android:paddingLeft="34.0dp" android:paddingTop="5.0dp" android:paddingRight="34.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/br_retry" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

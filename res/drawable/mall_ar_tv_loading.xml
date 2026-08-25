@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="125" android:drawable="@drawable/mall_asyn_loading_anim_img01" />
+    <item android:duration="125" android:drawable="@drawable/mall_asyn_loading_anim_img02" />
+    <item android:duration="125" android:drawable="@drawable/mall_asyn_loading_anim_img03" />
+    <item android:duration="125" android:drawable="@drawable/mall_asyn_loading_anim_img04" />
+</animation-list>

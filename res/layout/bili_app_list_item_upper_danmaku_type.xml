@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/upper_shape_danmaku_item_selector" android:padding="2.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/danmaku_type_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" />
+        <ImageView android:id="@id/danmaku_type_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:focusable="true" android:clickable="true" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ProgressBar android:id="@id/download_danmaku_progressbar" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_10" android:textColor="@color/upper_white" android:id="@id/tv_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="直播预约" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

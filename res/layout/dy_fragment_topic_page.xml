@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/dy_topic_page" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/gradientView" android:background="@drawable/dy_bg_topic_gradient" android:layout_width="match_parent" android:layout_height="200.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dy_list" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <androidx.core.widget.NestedScrollView android:id="@id/dy_state_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/dy_topic_place_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.bilibili.bplus.followinglist.page.topix.widget.TopixDynamicBubble android:layout_gravity="center_horizontal" android:id="@id/dynamicBubble" android:background="@drawable/dy_pink_solid_radius_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="-32.0dp" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="page_rendered" android:background="@drawable/mall_home_feeds_common_bg_v3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.RoundFrameLayout android:id="@id/img_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:radius="7.0dp">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/feed_venue" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRadioHeight="4" app:aspectRadioWidth="3" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" app:roundedCornerRadius="4.0dp" style="@style/mallHomeFeedBanner" />
+    </com.mall.ui.widget.RoundFrameLayout>
+</FrameLayout>

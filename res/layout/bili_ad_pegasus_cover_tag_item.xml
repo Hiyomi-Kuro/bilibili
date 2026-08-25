@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:id="@id/corner_hint_container" android:visibility="gone" android:layout_width="@dimen/ad_feed_card_cover_tag_bg_width" android:layout_height="@dimen/ad_feed_card_cover_tag_bg_width"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/corner_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_ad_feed_cover_tag_new_bg" />
+    <com.bilibili.adcommon.basic.marker.AdMarkLayout android:layout_gravity="right" android:id="@id/corner_hint" android:visibility="gone" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" app:mode="double_row" style="@style/Marker" />
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/bg_upper_rounded_bg3_corner_8" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_selection" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="8.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_selection_open" android:background="@drawable/bg_upper_rounded_selection_up" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="54.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/tvOpenTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_menu_edit_delete_visible_close" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/tvOpenDes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_menu_edit_delete_visible_close_des" android:alpha="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_selection_delete" android:background="@drawable/bg_upper_rounded_selection_down" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp" android:layout_marginTop="0.5dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/tvDeleteTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_menu_delete_edit_visible_close" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/tvDeleteDes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_menu_edit_delete_visible_delete_des" android:alpha="0.5" />
+                </LinearLayout>
+                <ImageView android:id="@id/ivCloseMark" android:background="@drawable/ic_upper_checkmark" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="12.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_title" android:textColor="@color/daynight_color_text_body_secondary_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_cancel" android:background="@color/upper_white_bg" android:paddingRight="14.0dp" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/upper_cancel" android:layout_below="@id/layout_selection" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

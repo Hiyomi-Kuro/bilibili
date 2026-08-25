@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:focusable="true" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.biz.uicommon.widget.dialog.LiveSettingDialogMaskView android:id="@id/panel_mask_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_panel_root" android:background="@color/live_room_pannel_setting_back" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_interaction" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="112.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/interaction_text" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interact_function" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_interaction" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <View android:id="@id/v_line" android:background="#ff333333" android:layout_width="match_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_setting" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/share_title" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_share_title" />
+                <com.bilibili.app.comm.supermenu.core.MenuView android:id="@id/live_share_menu" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuView_firstLineMarginTop="0.0dp" app:menuView_itemWidth="64.0dp" app:menuView_lastLineMarginBottom="0.0dp" />
+                <View android:id="@id/divider" android:background="#333333" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="18.0dp" android:layout_marginBottom="18.0dp" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/setting_text" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_setting" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="200.0dp" android:layout_height="113.0dp" android:src="@drawable/live_bg_no_interaction_data" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/color_9499A0" android:layout_gravity="center_horizontal" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_interaction_panel_error" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

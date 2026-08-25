@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="bottom" android:id="@id/id_ll_root" android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.bilipay.ui.widget.CommonMaxHeightLineLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/id_content_root" android:background="@drawable/bilipay_half_recharge_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:HeightRatio="0.75">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/id_layout_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bilipay_half_recharge_layout_title_bar" />
+            <include android:id="@id/id_layout_bcoin_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/id_layout_title_bar" layout="@layout/bilipay_half_recharge_layout_bcoin_info" />
+            <com.bilibili.lib.bilipay.ui.widget.CommonMaxHeightLineLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/id_max_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/id_layout_bcoin_info" app:HeightRatio="0.45">
+                <androidx.core.widget.NestedScrollView android:id="@id/id_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/id_include_denomination" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" layout="@layout/bilipay_half_recharge_layout_denomination" />
+                        <include android:id="@id/id_include_pay_channel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="4.0dp" layout="@layout/bilipay_half_recharge_layout_pay_channel" />
+                    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </com.bilibili.lib.bilipay.ui.widget.CommonMaxHeightLineLayout>
+            <include android:layout_width="match_parent" android:layout_height="92.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/id_max_layout" layout="@layout/bilipay_half_recharge_layout_bottom_recharge" />
+            <com.bilibili.lib.bilipay.ui.widget.PageTipsView android:id="@id/id_tips_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.lib.bilipay.ui.widget.CommonMaxHeightLineLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

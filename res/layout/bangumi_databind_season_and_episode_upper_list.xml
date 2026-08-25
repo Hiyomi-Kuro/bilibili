@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:tag="layout/bangumi_databind_season_and_episode_upper_list_0" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/co_products_header_layout" android:tag="binding_1" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="46.0dp" android:paddingStart="12.0dp" android:paddingEnd="10.0dp">
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/co_products_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/season_eps_size" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_marginEnd="30.0dp" android:layout_alignParentStart="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/season_eps_size" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dp" android:layout_toStartOf="@id/arrow" />
+        <ImageView android:id="@id/arrow" android:layout_width="16.0dp" android:layout_height="17.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/bangumi_detail_vector_more" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_co_products" android:tag="binding_4" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

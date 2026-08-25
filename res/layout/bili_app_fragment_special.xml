@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/upper_material_main_divider" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/material_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/divider" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/material_status_page" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

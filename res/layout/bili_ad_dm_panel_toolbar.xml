@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_ad_panel_back" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_ad_panel_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/iv_ad_panel_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:singleLine="true" android:layout_toLeftOf="@id/iv_ad_panel_close" android:layout_toRightOf="@id/iv_ad_panel_back" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_ad_panel_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_ad_panel_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

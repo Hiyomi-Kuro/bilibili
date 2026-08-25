@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/Text1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:singleLine="true" style="@style/T14" />
+    <TextView android:textColor="@color/Text3" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:singleLine="true" style="@style/T14" />
+    <TextView android:textColor="@color/Text3" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:singleLine="true" style="@style/T14" />
+    <Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <TextView android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dp" android:text="@string/br_view_more" android:drawablePadding="4.0dp" style="@style/T13" />
+</merge>

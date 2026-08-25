@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.console.ui.ConsoleDraggingView android:layout_gravity="end" android:id="@id/console_dragging_view" android:background="@drawable/bg_console_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="280.0dp" android:layout_marginEnd="15.0dp">
+        <FrameLayout android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/eye" />
+                <ImageButton android:id="@id/hide_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/full_screen" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textStart" />
+        </FrameLayout>
+    </com.bilibili.bililive.console.ui.ConsoleDraggingView>
+</merge>

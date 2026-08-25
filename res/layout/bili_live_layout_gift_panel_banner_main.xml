@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/first_banner_stub" android:visibility="gone" android:layout="@layout/bili_live_layout_gift_panel_banner_template_one" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/second_banner_stub" android:visibility="gone" android:layout="@layout/bili_live_layout_gift_panel_banner_template_two" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/third_banner_stub" android:visibility="gone" android:layout="@layout/bili_live_layout_gift_panel_banner_template_three" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

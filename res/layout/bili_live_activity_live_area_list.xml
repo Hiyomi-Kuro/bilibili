@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/live_pinned_bottom_scrolling_behavior" />
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:contentInsetStart="0.0dp" app:layout_scrollFlags="scroll|enterAlways|snap" style="?toolbarStyle" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="40.0dp">
+                <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@color/live_sort_tag_gb" android:paddingLeft="12.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:pstsTabPaddingLeftRight="16.0dp" style="@style/Widget.App.SlidingTab.LiveArea" />
+                <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/menu_all_tag" android:background="@color/live_sort_tag_gb" android:padding="12.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/live_video_list_menu" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:id="@id/shadow" android:background="@drawable/live_video_list_menu_shadow" android:layout_width="6.0dp" android:layout_height="40.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/menu_all_tag" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include layout="@layout/bili_live_layout_home_divider" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/live_area_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

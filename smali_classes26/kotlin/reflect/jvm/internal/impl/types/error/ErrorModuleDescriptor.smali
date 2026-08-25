@@ -1,0 +1,359 @@
+.class public final Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;
+
+
+# static fields
+.field public static final INSTANCE:Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;
+
+.field private static final allDependencyModules:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final allExpectedByModules:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final builtIns$delegate:Lgf3/h;
+
+.field private static final expectedByModules:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final stableName:Lkotlin/reflect/jvm/internal/impl/name/Name;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->INSTANCE:Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;
+
+    .line 7
+    .line 8
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorEntity;->ERROR_MODULE:Lkotlin/reflect/jvm/internal/impl/types/error/ErrorEntity;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorEntity;->getDebugText()Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-static {v0}, Lkotlin/reflect/jvm/internal/impl/name/Name;->special(Ljava/lang/String;)Lkotlin/reflect/jvm/internal/impl/name/Name;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->stableName:Lkotlin/reflect/jvm/internal/impl/name/Name;
+
+    .line 19
+    .line 20
+    invoke-static {}, Lkotlin/collections/p;->n()Ljava/util/List;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->allDependencyModules:Ljava/util/List;
+
+    .line 25
+    .line 26
+    invoke-static {}, Lkotlin/collections/p;->n()Ljava/util/List;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->expectedByModules:Ljava/util/List;
+
+    .line 31
+    .line 32
+    invoke-static {}, Lkotlin/collections/r0;->f()Ljava/util/Set;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->allExpectedByModules:Ljava/util/Set;
+
+    .line 37
+    .line 38
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor$builtIns$2;->INSTANCE:Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor$builtIns$2;
+
+    .line 39
+    .line 40
+    invoke-static {v0}, Lkotlin/c;->c(Lsf3/a;)Lgf3/h;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->builtIns$delegate:Lgf3/h;
+
+    .line 45
+    .line 46
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public accept(Lkotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            "D:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor<",
+            "TR;TD;>;TD;)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public getAnnotations()Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotations;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotations;->Companion:Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotations$Companion;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotations$Companion;->getEMPTY()Lkotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotations;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getBuiltIns()Lkotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->builtIns$delegate:Lgf3/h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lgf3/h;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lkotlin/reflect/jvm/internal/impl/builtins/KotlinBuiltIns;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public getCapability(Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleCapability;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleCapability<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public getContainingDeclaration()Lkotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public getExpectedByModules()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->expectedByModules:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getName()Lkotlin/reflect/jvm/internal/impl/name/Name;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->getStableName()Lkotlin/reflect/jvm/internal/impl/name/Name;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public getOriginal()Lkotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor;
+    .locals 0
+
+    .line 1
+    return-object p0
+.end method
+
+.method public getPackage(Lkotlin/reflect/jvm/internal/impl/name/FqName;)Lkotlin/reflect/jvm/internal/impl/descriptors/PackageViewDescriptor;
+    .locals 1
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "Should not be called!"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public getStableName()Lkotlin/reflect/jvm/internal/impl/name/Name;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lkotlin/reflect/jvm/internal/impl/types/error/ErrorModuleDescriptor;->stableName:Lkotlin/reflect/jvm/internal/impl/name/Name;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSubPackagesOf(Lkotlin/reflect/jvm/internal/impl/name/FqName;Lsf3/l;)Ljava/util/Collection;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/reflect/jvm/internal/impl/name/FqName;",
+            "Lsf3/l<",
+            "-",
+            "Lkotlin/reflect/jvm/internal/impl/name/Name;",
+            "Ljava/lang/Boolean;",
+            ">;)",
+            "Ljava/util/Collection<",
+            "Lkotlin/reflect/jvm/internal/impl/name/FqName;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lkotlin/collections/p;->n()Ljava/util/List;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p1, Ljava/util/Collection;
+
+    .line 6
+    .line 7
+    return-object p1
+.end method
+
+.method public shouldSeeInternalsOf(Lkotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor;)Z
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method

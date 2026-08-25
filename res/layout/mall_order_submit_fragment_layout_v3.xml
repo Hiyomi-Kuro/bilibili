@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mall_order_submit_top_nav_layout" android:background="@color/Ga1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/mall_order_submit_toolbar_bg" android:layout_width="0.0dp" android:layout_height="?navigationTopBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/mall_order_submit_toolbar_bg_cover" android:background="@color/Wh0" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="?navigationTopBarSize" android:alpha="0.2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Space android:id="@id/mall_order_submit_statusbar_bottom_anchor" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/mall_order_submit_bar_back" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="12.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/mall_order_submit_toolbar_bg" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_order_submit_statusbar_bottom_anchor" app:srcCompat="@drawable/mall_ic_top_back_gray" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/Ga10" android:layout_gravity="center" android:id="@id/mall_order_submit_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_cart_title_bar_title_name_default" app:layout_constraintBottom_toBottomOf="@id/mall_order_submit_toolbar_bg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_order_submit_statusbar_bottom_anchor" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/mall_order_submit_main_view" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/protocol_view" android:layout_below="@id/mall_order_submit_top_nav_layout">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/id_mall_order_submit_top_notice" android:background="@drawable/mall_notice_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureAllChildren="false" />
+            <include android:visibility="gone" layout="@layout/mall_order_submit_normal_notice" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_presale_notice" />
+            <include layout="@layout/mall_order_submit_addr_layout_v2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mall_order_game_container" android:background="@drawable/mall_submit_game_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/mall_submit_game_divider_bg" android:showDividers="middle" />
+            <include layout="@layout/mall_order_submit_customer_layout_v2" />
+            <View android:id="@id/order_submit_margin_view1" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/mall_order_submit_goods_list" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <include android:layout_width="match_parent" android:layout_height="@dimen/mall_presale_module_height" layout="@layout/mall_presale_count" />
+            <View android:id="@id/order_submit_margin_view2" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <include android:layout_width="match_parent" android:layout_height="50.0dp" layout="@layout/mall_order_submit_ship_layout" />
+            <include android:orientation="vertical" android:paddingTop="17.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_coupon_v2" />
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_discounts_layout" />
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_new_people_share_layout" />
+            <include android:layout_width="match_parent" android:layout_height="50.0dp" layout="@layout/mall_order_red_packet_layout" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_express_v2" />
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_arrive_time_layout" />
+            <include android:layout_width="match_parent" android:layout_height="45.0dp" layout="@layout/mall_order_submit_freight_insurance_layout" />
+            <include android:id="@id/order_submit_leave_msg" android:visibility="gone" layout="@layout/mall_order_submit_leave_msg_layout" />
+            <include android:layout_width="match_parent" android:layout_height="@dimen/mall_presale_module_height" layout="@layout/mall_presale_remain_money" />
+            <include android:id="@id/cl_vip_buy_entry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_vip_buy_entry_layout" />
+            <View android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="10.0dp" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_presale_right_layout" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_submit_payment_v3" />
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/mall_submit_shop_notice" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@id/mall_order_submit_float_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/mall_order_submit_bottom_container">
+        <View android:id="@id/mall_order_submit_price_list_outside" android:background="@color/black_alpha30" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mall_order_submit_price_list_container" android:background="@drawable/mall_shape_rect_head_corner_circle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/color_gray" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/mall_order_submit_price_expand_title" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/mall_order_submit_price_detail_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" layout="@layout/mall_submit_payinfo_tax_info" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/mall_order_submit_bottom_container" layout="@layout/mall_submit_bottom_protocol_layout" />
+    <FrameLayout android:id="@id/mall_order_submit_bottom_container" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/loading_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</RelativeLayout>

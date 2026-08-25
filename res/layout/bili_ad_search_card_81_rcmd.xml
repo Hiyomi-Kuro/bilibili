@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.list.widget.tag.TagView android:id="@id/rcmd" android:layout_width="wrap_content" android:layout_height="14.0dp" style="@style/AdRcmd_Tag"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

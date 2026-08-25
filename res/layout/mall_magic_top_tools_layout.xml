@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/close" android:padding="4.0dp" android:layout_width="28.0dp" android:layout_height="28.0dp" app:actualImageScaleType="centerInside" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/camera_switch" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="36.0dp" app:actualImageScaleType="centerInside" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/camera_beauty" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="36.0dp" android:layout_marginRight="30.0dp" app:actualImageScaleType="centerInside" app:layout_constraintRight_toLeftOf="@id/camera_switch" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginRight="0.0dp" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/camera_flash" android:padding="4.0dp" android:layout_width="34.0dp" android:layout_height="36.0dp" android:layout_marginRight="30.0dp" app:actualImageScaleType="centerInside" app:layout_constraintRight_toLeftOf="@id/camera_beauty" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

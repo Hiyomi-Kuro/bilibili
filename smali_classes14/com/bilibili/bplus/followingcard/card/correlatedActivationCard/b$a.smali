@@ -1,0 +1,179 @@
+.class public final Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;
+.super Ltq0/o;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0015\u001a\u00020\u0014\u0012\u0006\u0010\u0017\u001a\u00020\u0016\u00a2\u0006\u0004\u0008\u0018\u0010\u0019R\u0017\u0010\u0007\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\r\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\u000b\u0010\u000cR\u0017\u0010\u0013\u001a\u00020\u000e8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u001a"
+    }
+    d2 = {
+        "Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;",
+        "Ltq0/o;",
+        "Lcom/bilibili/magicasakura/widgets/TintImageView;",
+        "c",
+        "Lcom/bilibili/magicasakura/widgets/TintImageView;",
+        "f4",
+        "()Lcom/bilibili/magicasakura/widgets/TintImageView;",
+        "imgCover",
+        "Lcom/bilibili/magicasakura/widgets/TintTextView;",
+        "d",
+        "Lcom/bilibili/magicasakura/widgets/TintTextView;",
+        "h4",
+        "()Lcom/bilibili/magicasakura/widgets/TintTextView;",
+        "titleTv",
+        "Lcom/bilibili/magicasakura/widgets/TintLinearLayout;",
+        "e",
+        "Lcom/bilibili/magicasakura/widgets/TintLinearLayout;",
+        "e4",
+        "()Lcom/bilibili/magicasakura/widgets/TintLinearLayout;",
+        "backgroundCover",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/view/View;",
+        "itemView",
+        "<init>",
+        "(Landroid/content/Context;Landroid/view/View;)V",
+        "followingCard_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final c:Lcom/bilibili/magicasakura/widgets/TintImageView;
+
+.field private final d:Lcom/bilibili/magicasakura/widgets/TintTextView;
+
+.field private final e:Lcom/bilibili/magicasakura/widgets/TintLinearLayout;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ltq0/o;-><init>(Landroid/content/Context;Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget p1, Lcom/bilibili/bplus/followingcard/k;->c0:I
+
+    .line 5
+    .line 6
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    check-cast p1, Lcom/bilibili/magicasakura/widgets/TintImageView;
+
+    .line 11
+    .line 12
+    iput-object p1, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->c:Lcom/bilibili/magicasakura/widgets/TintImageView;
+
+    .line 13
+    .line 14
+    sget p1, Lcom/bilibili/bplus/followingcard/k;->e0:I
+
+    .line 15
+    .line 16
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    check-cast p1, Lcom/bilibili/magicasakura/widgets/TintTextView;
+
+    .line 21
+    .line 22
+    iput-object p1, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->d:Lcom/bilibili/magicasakura/widgets/TintTextView;
+
+    .line 23
+    .line 24
+    sget p1, Lcom/bilibili/bplus/followingcard/k;->b0:I
+
+    .line 25
+    .line 26
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/bilibili/magicasakura/widgets/TintLinearLayout;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->e:Lcom/bilibili/magicasakura/widgets/TintLinearLayout;
+
+    .line 33
+    .line 34
+    return-void
+.end method
+
+
+# virtual methods
+.method public final e4()Lcom/bilibili/magicasakura/widgets/TintLinearLayout;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->e:Lcom/bilibili/magicasakura/widgets/TintLinearLayout;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final f4()Lcom/bilibili/magicasakura/widgets/TintImageView;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->c:Lcom/bilibili/magicasakura/widgets/TintImageView;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final h4()Lcom/bilibili/magicasakura/widgets/TintTextView;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followingcard/card/correlatedActivationCard/b$a;->d:Lcom/bilibili/magicasakura/widgets/TintTextView;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

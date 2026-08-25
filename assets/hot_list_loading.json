@@ -1,0 +1,14 @@
+{
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "package": "tv.danmaku.bili",
+  "background": "@color/bili_oppo_card_background",
+  "id": "container",
+  "type": "constraint",
+  "child": [{
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "background": "@drawable/op_hot_list_loading",
+    "type": "image"
+  }]
+}

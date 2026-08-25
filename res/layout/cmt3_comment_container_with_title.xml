@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cmt3_page_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/cmt3_swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/cmt3_fake_input_bar_container" android:layout_below="@id/cmt3_page_title_container">
+        <com.bilibili.app.comment.ext.widgets.CmtRecycleView android:id="@id/cmt3_recycler" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.app.comment3.ui.widget.CommentErrorAndEmptyView android:id="@id/cmt3_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+    <FrameLayout android:id="@id/cmt3_fake_input_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperPinchImageView android:id="@id/fragment_material_preview_image" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="fitCenter" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/fragment_material_preview_video" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="fitCenter" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/fragment_material_preview_time_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/fragment_material_preview_location_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginBottom="10.0dp" android:layout_toRightOf="@id/fragment_material_preview_time_tv" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/fragment_material_preview_name_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginBottom="5.0dp" android:layout_above="@id/fragment_material_preview_time_tv" />
+</RelativeLayout>

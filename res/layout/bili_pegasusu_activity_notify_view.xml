@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:id="@id/notify_parent" android:background="@color/Ye1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ye5" android:ellipsize="end" android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_notify_margin_distance" android:layout_marginBottom="@dimen/channel_notify_margin_distance" android:maxLines="1" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

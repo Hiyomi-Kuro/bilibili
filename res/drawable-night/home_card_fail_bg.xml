@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#ff101011" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/bili_default_image_tv" />
+</layer-list>

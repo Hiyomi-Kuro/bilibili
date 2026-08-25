@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:tag="layout/album_dir_pop_list_item_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_img" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="17.0dp" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_dir_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:maxWidth="200.0dp" android:singleLine="true" android:layout_toRightOf="@id/iv_img" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff46494d" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_toRightOf="@id/tv_dir_name" android:layout_centerVertical="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

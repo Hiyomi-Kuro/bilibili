@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/box" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginRight="2.0dp" />
+        <com.bilibili.adcommon.widget.NakedSingleTextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_download_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_download_arrow" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_ad_download_arrow" />
+    </LinearLayout>
+</merge>

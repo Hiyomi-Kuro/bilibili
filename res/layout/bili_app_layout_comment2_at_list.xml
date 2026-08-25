@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="47.5dp">
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/at_search_background" android:background="@drawable/shape_comment_at_search_background" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/at_search_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/ic_search_action" app:layout_constraintBottom_toBottomOf="@id/at_search_background" app:layout_constraintLeft_toLeftOf="@id/at_search_background" app:layout_constraintTop_toTopOf="@id/at_search_background" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/at_edit_text" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="12.0dp" android:text="@string/comment_input_your_at" android:singleLine="true" app:layout_constraintBottom_toBottomOf="@id/at_search_background" app:layout_constraintLeft_toRightOf="@id/at_search_icon" app:layout_constraintRight_toRightOf="@id/at_search_background" app:layout_constraintTop_toTopOf="@id/at_search_background" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/at_list_root" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/at_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

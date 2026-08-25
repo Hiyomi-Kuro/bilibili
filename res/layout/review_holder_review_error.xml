@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_load_fail" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="80.0dp" android:src="@drawable/review_recommend_ic_load_fail" android:scaleType="centerInside" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_hot_recommend_load_fail" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/tv_reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_hot_recommend_load_fail_retry" />
+    </LinearLayout>
+</LinearLayout>

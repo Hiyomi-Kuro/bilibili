@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.column.ui.widget.ColumnLoadErrorPage android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/column_error_back" android:padding="25.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back_pink" android:scaleType="centerInside" />
+    <LinearLayout android:orientation="vertical" android:id="@id/column_error_page_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/column_error_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_error_style1" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:layout_gravity="center" android:id="@id/column_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:text="@string/column_page_loading_no_network" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:id="@id/column_error_page_button" android:background="@drawable/shape_corner_error_button" android:paddingLeft="39.0dp" android:paddingTop="13.0dp" android:paddingRight="38.0dp" android:paddingBottom="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/column_refresh_once" android:layout_below="@id/column_error_page_content" android:layout_centerHorizontal="true" />
+</com.bilibili.column.ui.widget.ColumnLoadErrorPage>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.pkv2.ui.LivePkAssistTopRankWidget android:layout_gravity="start|center" android:id="@id/host_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.bililive.biz.pkv2.ui.LivePkAssistTopRankWidget android:layout_gravity="end|center" android:id="@id/guest_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

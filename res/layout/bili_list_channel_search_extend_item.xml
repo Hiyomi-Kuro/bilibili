@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" app:actualImageScaleType="centerCrop" app:failureImage="@drawable/ic_channel_default_icon" app:placeholderImage="@drawable/ic_channel_default_icon" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="4.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_toLeftOf="@id/btn_subscribe" android:layout_toRightOf="@id/cover" android:layout_centerVertical="true">
+        <tv.danmaku.bili.widget.PriorityLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:priority="1" />
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/channel_search_result_tag" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" app:priority="2" />
+        </tv.danmaku.bili.widget.PriorityLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <tv.danmaku.bili.widget.statefulbutton.StatefulButton android:id="@id/btn_subscribe" android:layout_width="96.0dp" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_below="@id/desc" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:negativeIcon="@null" app:positiveText="@string/channel_button_add_already_favorite" style="@style/StatefulButton.ChannelSubscribeButton.Stroke" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

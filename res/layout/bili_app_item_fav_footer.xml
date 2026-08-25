@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/footer_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text3" android:id="@id/hint_reason" android:paddingTop="30.0dp" android:paddingBottom="100.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clean_invalid_reason" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/clean_btn" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Brand_pink" android:id="@id/clean_btn" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clean_invalid_keyword" app:layout_constraintBaseline_toBaselineOf="@id/hint_reason" app:layout_constraintLeft_toRightOf="@id/hint_reason" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

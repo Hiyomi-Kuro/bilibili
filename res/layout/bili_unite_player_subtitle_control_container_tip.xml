@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.playerbizcommonv2.widget.BubbleContainer android:id="@id/subtitle_tip_bubble" android:layout_width="0.0dp" android:layout_height="28.0dp" app:anchorViewHeight="7.0dp" app:color="@color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:radius="20.0dp" app:showAnchorView="true" />
+    <ImageView android:id="@id/subtitle_tip_img" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginBottom="7.0dp" android:src="@drawable/ic_popup_left" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/subtitle_tip_text" android:layout_width="wrap_content" android:layout_height="41.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="21.0dp" android:layout_marginBottom="7.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/subtitle_tip_img" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

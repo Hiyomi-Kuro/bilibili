@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="38.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/guard_component" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/guard_icon" android:visibility="visible" android:layout_width="80.0dp" android:layout_height="26.0dp" android:scaleType="fitCenter" app:thumbHeight="26.0dp" app:thumbWidth="80.0dp" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/live_medal_alert_btn_text" android:gravity="center_vertical" android:id="@id/guard_btn_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/live_app_guard_buy_now" android:layout_marginStart="27.0dp" />
+    </FrameLayout>
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/guard_benefits_anim" android:paddingLeft="15.0dp" android:visibility="gone" android:layout_width="97.0dp" android:layout_height="match_parent" />
+</FrameLayout>

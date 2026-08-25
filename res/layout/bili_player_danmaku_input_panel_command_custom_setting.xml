@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/custom_setting_checkbox" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:button="@drawable/selector_checkbox_14dp" android:maxWidth="126.0dp" android:maxLines="1" app:compoundButtonTint="@drawable/selector_tint_checkbox" style="@style/Widget.App.CheckBox.Native" />
+</LinearLayout>

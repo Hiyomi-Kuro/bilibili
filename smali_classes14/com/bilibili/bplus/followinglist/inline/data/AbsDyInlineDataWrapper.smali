@@ -1,0 +1,566 @@
+.class public abstract Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/bilibili/inline/card/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Lcom/bilibili/bplus/followinglist/model/ModuleVideo;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/bilibili/inline/card/e;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u000e\u0008\'\u0018\u0000*\u0008\u0008\u0000\u0010\u0002*\u00020\u00012\u00020\u0003B\u001b\u0012\u0008\u0010!\u001a\u0004\u0018\u00018\u0000\u0012\u0008\u0010%\u001a\u0004\u0018\u00010\"\u00a2\u0006\u0004\u0008.\u0010/J\u0008\u0010\u0005\u001a\u00020\u0004H\u0016J\u0008\u0010\u0007\u001a\u00020\u0006H\u0016J\u0008\u0010\t\u001a\u00020\u0008H\u0016J\u0008\u0010\u000b\u001a\u00020\nH\u0016J\u0014\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\u0008\u0010\r\u001a\u0004\u0018\u00010\u000cH&J\u0010\u0010\u0012\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0010H\u0016J\u0013\u0010\u0015\u001a\u00020\u00102\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0013H\u0096\u0002J\u0008\u0010\u0017\u001a\u00020\u0016H\u0016J\u0010\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0018H\u0004R$\u0010!\u001a\u0004\u0018\u00018\u00008\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001b\u0010\u001c\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R\u0016\u0010%\u001a\u0004\u0018\u00010\"8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008#\u0010$R\u001b\u0010*\u001a\u00020\u00088BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008&\u0010\'\u001a\u0004\u0008(\u0010)R\u001b\u0010-\u001a\u00020\u00068BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008+\u0010\'\u001a\u0004\u0008&\u0010,\u00a8\u00060"
+    }
+    d2 = {
+        "Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;",
+        "Lcom/bilibili/bplus/followinglist/model/ModuleVideo;",
+        "T",
+        "Lcom/bilibili/inline/card/e;",
+        "Lcom/bilibili/inline/card/g;",
+        "getCardPlayProperty",
+        "Lcom/bilibili/inline/card/f;",
+        "getInlinePlayerItem",
+        "Lcom/bilibili/inline/card/b;",
+        "getInlineBehavior",
+        "",
+        "getInternalInlineLogDescription",
+        "Lcom/bilibili/bplus/followinglist/base/StatEnvironment;",
+        "playEnv",
+        "Ltv/danmaku/biliplayerv2/service/Video$f;",
+        "f",
+        "",
+        "pageState",
+        "getInternalCardPlayable",
+        "",
+        "other",
+        "equals",
+        "",
+        "hashCode",
+        "",
+        "url",
+        "i",
+        "a",
+        "Lcom/bilibili/bplus/followinglist/model/ModuleVideo;",
+        "h",
+        "()Lcom/bilibili/bplus/followinglist/model/ModuleVideo;",
+        "setModule",
+        "(Lcom/bilibili/bplus/followinglist/model/ModuleVideo;)V",
+        "module",
+        "Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;",
+        "b",
+        "Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;",
+        "servicesManager",
+        "c",
+        "Lgf3/h;",
+        "e",
+        "()Lcom/bilibili/inline/card/b;",
+        "internalInlineBehavior",
+        "d",
+        "()Lcom/bilibili/inline/card/f;",
+        "inlinePlayItem",
+        "<init>",
+        "(Lcom/bilibili/bplus/followinglist/model/ModuleVideo;Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;)V",
+        "followingList_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field private final b:Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+.field private final c:Lgf3/h;
+
+.field private final d:Lgf3/h;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/bilibili/bplus/followinglist/model/ModuleVideo;Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->b:Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+    .line 7
+    .line 8
+    new-instance p1, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper$internalInlineBehavior$2;
+
+    .line 9
+    .line 10
+    invoke-direct {p1, p0}, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper$internalInlineBehavior$2;-><init>(Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {p1}, Lcom/bilibili/app/comm/list/widget/utils/ListExtentionsKt;->a0(Lsf3/a;)Lgf3/h;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    iput-object p1, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->c:Lgf3/h;
+
+    .line 18
+    .line 19
+    new-instance p1, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper$inlinePlayItem$2;
+
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper$inlinePlayItem$2;-><init>(Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;)V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-static {p1}, Lcom/bilibili/app/comm/list/widget/utils/ListExtentionsKt;->a0(Lsf3/a;)Lgf3/h;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    iput-object p1, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->d:Lgf3/h;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+.method public static final synthetic b(Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;)Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->b:Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method private final c()Lcom/bilibili/inline/card/f;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->d:Lgf3/h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lgf3/h;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/bilibili/inline/card/f;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method private final e()Lcom/bilibili/inline/card/b;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->c:Lgf3/h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lgf3/h;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/bilibili/inline/card/b;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    if-eqz p1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 17
+    :goto_0
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-nez v0, :cond_2
+
+    .line 22
+    .line 23
+    const/4 p1, 0x0
+
+    .line 24
+    return p1
+
+    .line 25
+    :cond_2
+    check-cast p1, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;
+
+    .line 26
+    .line 27
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 28
+    .line 29
+    iget-object p1, p1, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 30
+    .line 31
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p1
+
+    .line 35
+    return p1
+.end method
+
+.method public abstract f(Lcom/bilibili/bplus/followinglist/base/StatEnvironment;)Ltv/danmaku/biliplayerv2/service/Video$f;
+.end method
+
+.method public getCardPlayProperty()Lcom/bilibili/inline/card/g;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bilibili/bplus/followinglist/model/ModuleVideo;->z0()Lcom/bilibili/inline/card/g;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    if-nez v0, :cond_1
+
+    .line 10
+    .line 11
+    :cond_0
+    new-instance v0, Lcom/bilibili/inline/card/DefaultInlineProperty;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Lcom/bilibili/inline/card/DefaultInlineProperty;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_1
+    return-object v0
+.end method
+
+.method public getInlineBehavior()Lcom/bilibili/inline/card/b;
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->e()Lcom/bilibili/inline/card/b;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public getInlinePlayerItem()Lcom/bilibili/inline/card/f;
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->c()Lcom/bilibili/inline/card/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public getInternalCardPlayable(Z)Z
+    .locals 0
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    iget-object p1, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Lcom/bilibili/bplus/followinglist/model/ModuleVideo;->r0()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    if-eqz p1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 p1, 0x1
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 16
+    :goto_0
+    return p1
+.end method
+
+.method public getInternalInlineLogDescription()Ljava/lang/CharSequence;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bilibili/bplus/followinglist/model/ModuleVideo;->m0()Ljava/lang/CharSequence;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    if-nez v0, :cond_1
+
+    .line 10
+    .line 11
+    :cond_0
+    const-string v0, "NULL MODULE"
+
+    .line 12
+    .line 13
+    :cond_1
+    return-object v0
+.end method
+
+.method public final h()Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/inline/data/AbsDyInlineDataWrapper;->a:Lcom/bilibili/bplus/followinglist/model/ModuleVideo;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    :goto_0
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    add-int/2addr v0, v1
+
+    .line 24
+    return v0
+.end method
+
+.method protected final i(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    const-string v0, "player_preload"
+
+    .line 6
+    .line 7
+    invoke-static {p1, v0}, Lcom/bilibili/app/comm/list/common/utils/w;->e(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method

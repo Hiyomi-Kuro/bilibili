@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black_alpha50" android:paddingBottom="71.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_horizontal_scroll_view" android:layout_width="120.0dp" android:layout_height="120.0dp" app:lottie_autoPlay="true" app:lottie_fileName="story_horizontal_scroll.json" app:lottie_repeatCount="2" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="@string/story_horizontal_scroll_guide_text" />
+</LinearLayout>

@@ -1,0 +1,181 @@
+.class public final Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "SpineAnimation"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002R \u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0087\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\"\u0010\t\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u000f\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR\"\u0010\u0010\u001a\u0004\u0018\u00010\u00118\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0016\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015\u00a8\u0006\u0017"
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;",
+        "",
+        "()V",
+        "animationName",
+        "",
+        "getAnimationName",
+        "()Ljava/lang/String;",
+        "setAnimationName",
+        "(Ljava/lang/String;)V",
+        "loop",
+        "",
+        "getLoop",
+        "()Ljava/lang/Boolean;",
+        "setLoop",
+        "(Ljava/lang/Boolean;)V",
+        "Ljava/lang/Boolean;",
+        "trackIndex",
+        "",
+        "getTrackIndex",
+        "()Ljava/lang/Integer;",
+        "setTrackIndex",
+        "(Ljava/lang/Integer;)V",
+        "Ljava/lang/Integer;",
+        "bean_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private animationName:Ljava/lang/String;
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "animation_name"
+    .end annotation
+.end field
+
+.field private loop:Ljava/lang/Boolean;
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "loop"
+    .end annotation
+.end field
+
+.field private trackIndex:Ljava/lang/Integer;
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "track_index"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->loop:Ljava/lang/Boolean;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->trackIndex:Ljava/lang/Integer;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getAnimationName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->animationName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getLoop()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->loop:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getTrackIndex()Ljava/lang/Integer;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->trackIndex:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final setAnimationName(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->animationName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setLoop(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->loop:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setTrackIndex(Ljava/lang/Integer;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/videoliveplayer/net/beans/spine/LiveSpineInfo$SpineAnimation;->trackIndex:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-void
+.end method

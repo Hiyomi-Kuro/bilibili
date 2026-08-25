@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header" layout="@layout/tp_layout_timeline_header" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/timelineRv" android:paddingTop="20.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginTop="45.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/loadingBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tipsTv" android:layout_centerHorizontal="true" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyle" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/tipsIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" android:layout_above="@id/tipsTv" android:layout_centerHorizontal="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/tipsTv" android:padding="15.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

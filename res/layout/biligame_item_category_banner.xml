@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.coverflow.CoverFlowView android:id="@id/bili_game_category_coverFlowView" android:background="@color/Wh0" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:coverflowGravity="center_vertical" app:coverflowLayoutMode="wrap_content" app:loopMode="true" app:visibleViews="3" />
+</LinearLayout>

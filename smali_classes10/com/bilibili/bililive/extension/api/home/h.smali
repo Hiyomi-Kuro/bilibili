@@ -1,0 +1,345 @@
+.class public Lcom/bilibili/bililive/extension/api/home/h;
+.super Lcom/bilibili/bililive/extension/api/home/j;
+.source "BL"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0012\n\u0002\u0010\u000e\n\u0002\u0008\u000f\u0008\u0016\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008&\u0010\'J\u000e\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002R\"\u0010\u0007\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0007\u0010\u0008\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\"\u0010\r\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\r\u0010\u0008\u001a\u0004\u0008\u000e\u0010\n\"\u0004\u0008\u000f\u0010\u000cR\"\u0010\u0010\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0010\u0010\u0008\u001a\u0004\u0008\u0011\u0010\n\"\u0004\u0008\u0012\u0010\u000cR\"\u0010\u0013\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010\u0008\u001a\u0004\u0008\u0014\u0010\n\"\u0004\u0008\u0015\u0010\u000cR\"\u0010\u0016\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0016\u0010\u0008\u001a\u0004\u0008\u0017\u0010\n\"\u0004\u0008\u0018\u0010\u000cR\"\u0010\u001a\u001a\u00020\u00198\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001a\u0010\u001b\u001a\u0004\u0008\u001c\u0010\u001d\"\u0004\u0008\u001e\u0010\u001fR\"\u0010 \u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u0008\u001a\u0004\u0008!\u0010\n\"\u0004\u0008\"\u0010\u000cR\"\u0010#\u001a\u00020\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008#\u0010\u0008\u001a\u0004\u0008$\u0010\n\"\u0004\u0008%\u0010\u000c\u00a8\u0006("
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/extension/api/home/h;",
+        "Lcom/bilibili/bililive/extension/api/home/j;",
+        "Lcom/bilibili/bililive/extension/api/home/BiliLiveHomePage$ModuleInfo;",
+        "moduleInfo",
+        "Lgf3/s;",
+        "injectModule",
+        "",
+        "pageIndex",
+        "I",
+        "getPageIndex",
+        "()I",
+        "setPageIndex",
+        "(I)V",
+        "reportPosition",
+        "getReportPosition",
+        "setReportPosition",
+        "positionInSource",
+        "getPositionInSource",
+        "setPositionInSource",
+        "moduleId",
+        "getModuleId",
+        "setModuleId",
+        "moduleType",
+        "getModuleType",
+        "setModuleType",
+        "",
+        "moduleName",
+        "Ljava/lang/String;",
+        "getModuleName",
+        "()Ljava/lang/String;",
+        "setModuleName",
+        "(Ljava/lang/String;)V",
+        "playState",
+        "getPlayState",
+        "setPlayState",
+        "pageInSource",
+        "getPageInSource",
+        "setPageInSource",
+        "<init>",
+        "()V",
+        "api_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private moduleId:I
+
+.field private moduleName:Ljava/lang/String;
+
+.field private moduleType:I
+
+.field private pageInSource:I
+
+.field private pageIndex:I
+
+.field private playState:I
+
+.field private positionInSource:I
+
+.field private reportPosition:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/bililive/extension/api/home/j;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x1
+
+    .line 5
+    iput v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->pageIndex:I
+
+    .line 6
+    .line 7
+    iput v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->reportPosition:I
+
+    .line 8
+    .line 9
+    iput v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->positionInSource:I
+
+    .line 10
+    .line 11
+    const-string v0, ""
+
+    .line 12
+    .line 13
+    iput-object v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleName:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getModuleId()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleId:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getModuleName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getModuleType()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleType:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPageInSource()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->pageInSource:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPageIndex()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->pageIndex:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPlayState()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->playState:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getPositionInSource()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->positionInSource:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getReportPosition()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->reportPosition:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final injectModule(Lcom/bilibili/bililive/extension/api/home/BiliLiveHomePage$ModuleInfo;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Lcom/bilibili/bililive/extension/api/home/BiliLiveHomePage$ModuleInfo;->getId()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iput v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleId:I
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Lcom/bilibili/bililive/extension/api/home/BiliLiveHomePage$ModuleInfo;->getType()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    iput v0, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleType:I
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Lcom/bilibili/bililive/extension/api/home/BiliLiveHomePage$ModuleInfo;->getTitle()Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    if-nez p1, :cond_0
+
+    .line 18
+    .line 19
+    const-string p1, ""
+
+    .line 20
+    .line 21
+    :cond_0
+    iput-object p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleName:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    return-void
+.end method
+
+.method public final setModuleId(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleId:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setModuleName(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setModuleType(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->moduleType:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPageInSource(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->pageInSource:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPageIndex(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->pageIndex:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPlayState(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->playState:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setPositionInSource(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->positionInSource:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setReportPosition(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bilibili/bililive/extension/api/home/h;->reportPosition:I
+
+    .line 2
+    .line 3
+    return-void
+.end method

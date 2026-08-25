@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/daynight_color_text_supplementary_dark" android:ellipsize="end" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/drop_title" android:layout_width="50.0dp" android:layout_height="wrap_content" android:text="图标" android:maxLines="1" app:layout_constraintBottom_toBottomOf="@id/drop_rv" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/drop_rv" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/drop_rv" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/drop_title" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

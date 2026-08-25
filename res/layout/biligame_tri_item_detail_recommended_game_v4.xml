@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="144.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tri_single_recent_new_game1" android:layout_width="0.0dp" android:layout_height="60.0dp" android:layout_marginLeft="0.0dp" android:layout_marginTop="16.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/biligame_tri_item_detail_recommended_game_single_v2" />
+    <include android:id="@id/tri_single_recent_new_game2" android:layout_width="0.0dp" android:layout_height="60.0dp" android:layout_marginLeft="0.0dp" android:layout_marginTop="20.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_single_recent_new_game1" layout="@layout/biligame_tri_item_detail_recommended_game_single_v2" />
+    <include android:id="@id/tri_single_recent_new_game3" android:layout_width="0.0dp" android:layout_height="60.0dp" android:layout_marginLeft="0.0dp" android:layout_marginTop="20.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_single_recent_new_game2" layout="@layout/biligame_tri_item_detail_recommended_game_single_v2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

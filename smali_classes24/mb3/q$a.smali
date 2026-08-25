@@ -1,0 +1,106 @@
+.class public final Lmb3/q$a;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lmb3/q;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0010\u0010\u0011JJ\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0003\u001a\u00020\u00022\u001c\u0010\u0008\u001a\u0018\u0012\u0004\u0012\u00020\u0005\u0012\u000e\u0012\u000c\u0012\u0008\u0012\u0006\u0012\u0002\u0008\u00030\u00070\u00060\u00042\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\n0\t2\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\tH\u0007\u00a8\u0006\u0012"
+    }
+    d2 = {
+        "Lmb3/q$a;",
+        "",
+        "Lcom/bilibili/lib/gripper/api/internal/e;",
+        "settings",
+        "",
+        "",
+        "Lkd3/a;",
+        "Lcom/bilibili/lib/gripper/api/m;",
+        "ids",
+        "",
+        "Lcom/bilibili/lib/gripper/api/internal/l;",
+        "triggers",
+        "Lcom/bilibili/lib/gripper/api/internal/g;",
+        "named",
+        "Lcom/bilibili/lib/gripper/api/internal/c;",
+        "a",
+        "<init>",
+        "()V",
+        "core_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/i;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lmb3/q$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/bilibili/lib/gripper/api/internal/e;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)Lcom/bilibili/lib/gripper/api/internal/c;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bilibili/lib/gripper/api/internal/e;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "+",
+            "Lkd3/a<",
+            "Lcom/bilibili/lib/gripper/api/m<",
+            "*>;>;>;",
+            "Ljava/util/Set<",
+            "Lcom/bilibili/lib/gripper/api/internal/l;",
+            ">;",
+            "Ljava/util/Set<",
+            "Lcom/bilibili/lib/gripper/api/internal/g;",
+            ">;)",
+            "Lcom/bilibili/lib/gripper/api/internal/c;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lmb3/p;->a:Lmb3/p$a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Lmb3/p$a;->a(Lcom/bilibili/lib/gripper/api/internal/e;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)Lcom/bilibili/lib/gripper/api/internal/c;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

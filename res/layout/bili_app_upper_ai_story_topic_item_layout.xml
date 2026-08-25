@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_upper_ai_story_edit" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="26.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/topic_tag" android:background="@drawable/ic_upper_ai_story_topic_tag" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="#af9af6" android:gravity="center" android:id="@id/topic_name" android:layout_width="wrap_content" android:layout_height="14.0dp" android:layout_marginLeft="5.0dp" />
+</LinearLayout>

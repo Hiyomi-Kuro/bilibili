@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.feed.widget.UserIconWithFollowWidget android:id="@id/tri_user_icon" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tri_layout_comment" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biligame_vector_ic_comment_fill" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_horizontal" android:id="@id/tri_tv_comment" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bilibili.biligame.ui.feed.widget.GiftWidget android:id="@id/tri_layout_gift" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:paddingStart="6.0dp" />
+</merge>

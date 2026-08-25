@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable android:label="CrashReport" android:hint="搜索房间或主播" android:searchSuggestAuthority="tv.danmaku.bili.live.provider.SearchSuggestionsProvider" android:searchSuggestSelection=" ?"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

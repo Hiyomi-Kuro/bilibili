@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/image_edit_background_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/image_show" android:paddingTop="@dimen/image_edit_base_top" android:paddingBottom="@dimen/image_edit_base_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bplus.imageeditor.view.BiliCropView android:id="@id/image_edit_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/image_edit_reback_layout" android:background="@drawable/image_edit_editor_reback_shape_bg" android:layout_width="@dimen/image_edit_edit_reback_width" android:layout_height="@dimen/image_edit_edit_reback_height" android:layout_marginLeft="@dimen/image_edit_edit_reback_margin_left" android:layout_marginTop="@dimen/image_edit_edit_reback_margin_top" android:layout_marginBottom="@dimen/image_edit_edit_reback_margin_bottom">
+        <ImageView android:id="@id/image_edit_reback_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_edit_reback_img_margin_left" android:layout_marginTop="@dimen/image_edit_reback_img_margin_top" android:src="@drawable/image_edit_reback" android:scaleType="center" />
+        <TextView android:textSize="@dimen/image_edit_reback_text_size" android:textColor="@color/Wh0_u" android:id="@id/image_edit_reback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_edit_reback_text_margin_top" android:layout_marginRight="@dimen/image_edit_reback_text_margin_right" android:text="@string/image_edit_editor_reback_string" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/image_ctrl" android:background="@color/image_edit_upper_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/image_edit_rotate_layout" android:layout_width="wrap_content" android:layout_height="@dimen/image_edit_clip_upper_height" android:layout_marginLeft="@dimen/image_edit_clip_rv_item_horizontal_space" android:layout_marginRight="@dimen/image_edit_clip_rv_item_horizontal_space">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_edit_rotate_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_edit_clip_rv_item_margin_top" android:layout_marginBottom="@dimen/image_edit_clip_rv_item_vertical_space" android:src="@drawable/image_edit_item_rotate" />
+                <TextView android:textSize="@dimen/image_edit_clip_rv_item_text_size" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/image_edit_rotate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_edit_editor_ratio_rotate" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/image_edit_size_type" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_clip_upper_height" android:layout_marginLeft="@dimen/image_edit_clip_rv_item_horizontal_space" android:overScrollMode="never" />
+        </LinearLayout>
+        <include layout="@layout/image_edit_base_sure_cancel_layout" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/biligame_guess_like" android:layout_marginEnd="12.0dp" app:layout_constraintEnd_toStartOf="@id/tv_change" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/tv_change" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/biligame_change_it" android:drawablePadding="@dimen/biligame_dip_4" app:drawableRightCompat="@drawable/biligame_refresh" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

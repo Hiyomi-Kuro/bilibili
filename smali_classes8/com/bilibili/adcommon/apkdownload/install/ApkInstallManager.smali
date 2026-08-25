@@ -1,0 +1,2320 @@
+.class public final Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/bilibili/adcommon/apkdownload/install/b$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;,
+        Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$b;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0000\u0018\u00002\u00020\u0001:\u0001\u0015B\u000f\u0012\u0006\u0010\"\u001a\u00020 \u00a2\u0006\u0004\u0008<\u0010=J \u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0082@\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0010\u0010\t\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\n\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u000b\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002H\u0002J\u001c\u0010\u000c\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004H\u0002J&\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00042\u0008\u0008\u0002\u0010\u000e\u001a\u00020\rH\u0002J\u000e\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002J\u0006\u0010\u0011\u001a\u00020\u0006J\u0006\u0010\u0012\u001a\u00020\u0006J\u0006\u0010\u0013\u001a\u00020\u0006J\u0010\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u0004H\u0016J\u0010\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u0004H\u0016J\u000e\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u0004J\u0016\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u0018J\u000e\u0010\u001d\u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u001bJ\u000e\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u001bJ\u000e\u0010\u001f\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u0002R\u0014\u0010\"\u001a\u00020 8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0015\u0010!R\u0014\u0010%\u001a\u00020#8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010$R\u0014\u0010)\u001a\u00020&8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\'\u0010(R \u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00020*8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008+\u0010,R\u001a\u00101\u001a\u0008\u0012\u0004\u0012\u00020\u001b0.8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008/\u00100R\u001b\u00107\u001a\u0002028BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u00083\u00104\u001a\u0004\u00085\u00106R\u0014\u0010;\u001a\u0002088\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u00089\u0010:\u00a8\u0006>"
+    }
+    d2 = {
+        "Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;",
+        "Lcom/bilibili/adcommon/apkdownload/install/b$a;",
+        "Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;",
+        "installInfo",
+        "",
+        "where",
+        "Lgf3/s;",
+        "z",
+        "(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;",
+        "m",
+        "s",
+        "v",
+        "t",
+        "",
+        "needReport",
+        "q",
+        "x",
+        "w",
+        "A",
+        "k",
+        "pkgName",
+        "a",
+        "b",
+        "p",
+        "Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;",
+        "status",
+        "o",
+        "Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;",
+        "listener",
+        "j",
+        "y",
+        "n",
+        "Landroid/content/Context;",
+        "Landroid/content/Context;",
+        "context",
+        "Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;",
+        "Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;",
+        "installer",
+        "Lcom/bilibili/adcommon/apkdownload/install/b;",
+        "c",
+        "Lcom/bilibili/adcommon/apkdownload/install/b;",
+        "receiver",
+        "j$/util/concurrent/ConcurrentHashMap",
+        "d",
+        "Lj$/util/concurrent/ConcurrentHashMap;",
+        "currentInstalls",
+        "Ljava/util/concurrent/CopyOnWriteArrayList;",
+        "e",
+        "Ljava/util/concurrent/CopyOnWriteArrayList;",
+        "resultListener",
+        "",
+        "f",
+        "Lgf3/h;",
+        "l",
+        "()J",
+        "sevenDays",
+        "Ljava/util/concurrent/atomic/AtomicBoolean;",
+        "g",
+        "Ljava/util/concurrent/atomic/AtomicBoolean;",
+        "hasReportedInstalled",
+        "<init>",
+        "(Landroid/content/Context;)V",
+        "adcommon_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Landroid/content/Context;
+
+.field private final b:Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;
+
+.field private final c:Lcom/bilibili/adcommon/apkdownload/install/b;
+
+.field private final d:Lj$/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj$/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/String;",
+            "Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final e:Ljava/util/concurrent/CopyOnWriteArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/CopyOnWriteArrayList<",
+            "Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final f:Lgf3/h;
+
+.field private final g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 6
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 5
+    .line 6
+    new-instance v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;-><init>(Landroid/content/Context;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->b:Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;
+
+    .line 12
+    .line 13
+    new-instance p1, Lcom/bilibili/adcommon/apkdownload/install/b;
+
+    .line 14
+    .line 15
+    invoke-direct {p1, p0}, Lcom/bilibili/adcommon/apkdownload/install/b;-><init>(Lcom/bilibili/adcommon/apkdownload/install/b$a;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->c:Lcom/bilibili/adcommon/apkdownload/install/b;
+
+    .line 19
+    .line 20
+    new-instance p1, Lj$/util/concurrent/ConcurrentHashMap;
+
+    .line 21
+    .line 22
+    invoke-direct {p1}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->d:Lj$/util/concurrent/ConcurrentHashMap;
+
+    .line 26
+    .line 27
+    new-instance p1, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 28
+    .line 29
+    invoke-direct {p1}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 33
+    .line 34
+    sget-object p1, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$sevenDays$2;->INSTANCE:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$sevenDays$2;
+
+    .line 35
+    .line 36
+    invoke-static {p1}, Lkotlin/c;->c(Lsf3/a;)Lgf3/h;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->f:Lgf3/h;
+
+    .line 41
+    .line 42
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    const/4 v1, 0x0
+
+    .line 47
+    const/4 v2, 0x0
+
+    .line 48
+    new-instance v3, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$1;
+
+    .line 49
+    .line 50
+    const/4 p1, 0x0
+
+    .line 51
+    invoke-direct {v3, p0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lkotlin/coroutines/c;)V
+
+    .line 52
+    .line 53
+    .line 54
+    const/4 v4, 0x3
+
+    .line 55
+    const/4 v5, 0x0
+
+    .line 56
+    invoke-static/range {v0 .. v5}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 57
+    .line 58
+    .line 59
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 60
+    .line 61
+    const/4 v0, 0x0
+
+    .line 62
+    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 63
+    .line 64
+    .line 65
+    iput-object p1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 66
+    .line 67
+    return-void
+.end method
+
+.method public static final synthetic c(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;)Landroid/content/Context;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic d(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;)Lj$/util/concurrent/ConcurrentHashMap;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->d:Lj$/util/concurrent/ConcurrentHashMap;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic e(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;)Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->b:Lcom/bilibili/adcommon/apkdownload/install/ApkInstaller;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic f(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->m(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic g(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->q(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic h(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->t(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic i(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->z(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private final l()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->f:Lgf3/h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lgf3/h;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Number;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    return-wide v0
+.end method
+
+.method private final m(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 8
+
+    .line 1
+    iget-object v0, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->status:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, -0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    sget-object v1, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$b;->a:[I
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    aget v0, v1, v0
+
+    .line 14
+    .line 15
+    :goto_0
+    const/4 v1, 0x1
+
+    .line 16
+    if-eq v0, v1, :cond_4
+
+    .line 17
+    .line 18
+    const/4 v1, 0x2
+
+    .line 19
+    if-eq v0, v1, :cond_3
+
+    .line 20
+    .line 21
+    const/4 v2, 0x3
+
+    .line 22
+    if-eq v0, v2, :cond_2
+
+    .line 23
+    .line 24
+    const/4 v1, 0x4
+
+    .line 25
+    if-eq v0, v1, :cond_1
+
+    .line 26
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :cond_1
+    const/4 v4, 0x0
+
+    .line 29
+    const/4 v5, 0x0
+
+    .line 30
+    const/4 v6, 0x6
+
+    .line 31
+    const/4 v7, 0x0
+
+    .line 32
+    move-object v2, p0
+
+    .line 33
+    move-object v3, p1
+
+    .line 34
+    invoke-static/range {v2 .. v7}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->r(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;ZILjava/lang/Object;)V
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-static {p0, p1, v0, v1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->u(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;ILjava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_3
+    invoke-direct {p0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->v(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_1
+
+    .line 47
+    :cond_4
+    invoke-direct {p0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->s(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 48
+    .line 49
+    .line 50
+    :goto_1
+    return-void
+.end method
+
+.method private final q(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Z)V
+    .locals 6
+
+    .line 1
+    if-eqz p3, :cond_0
+
+    .line 2
+    .line 3
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    const-string v0, "onInstallFailed -> "
+
+    .line 9
+    .line 10
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p3
+
+    .line 20
+    const-string v0, "ad_installer"
+
+    .line 21
+    .line 22
+    invoke-static {v0, p3}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object p3, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->a:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;
+
+    .line 26
+    .line 27
+    invoke-virtual {p3, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->b(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const/4 v1, 0x0
+
+    .line 35
+    const/4 v2, 0x0
+
+    .line 36
+    new-instance v3, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstallFailed$1;
+
+    .line 37
+    .line 38
+    const/4 p3, 0x0
+
+    .line 39
+    invoke-direct {v3, p1, p3}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstallFailed$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lkotlin/coroutines/c;)V
+
+    .line 40
+    .line 41
+    .line 42
+    const/4 v4, 0x3
+
+    .line 43
+    const/4 v5, 0x0
+
+    .line 44
+    invoke-static/range {v0 .. v5}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 45
+    .line 46
+    .line 47
+    :cond_0
+    iget-object p3, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 48
+    .line 49
+    invoke-interface {p3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p3
+
+    .line 53
+    :goto_0
+    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v0
+
+    .line 57
+    if-eqz v0, :cond_1
+
+    .line 58
+    .line 59
+    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v0
+
+    .line 63
+    check-cast v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;
+
+    .line 64
+    .line 65
+    invoke-interface {v0, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;->c(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    goto :goto_0
+
+    .line 69
+    :cond_1
+    invoke-virtual {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->A()V
+
+    .line 70
+    .line 71
+    .line 72
+    return-void
+.end method
+
+.method static synthetic r(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;ZILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    and-int/lit8 p5, p4, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p5, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p2, 0x0
+
+    .line 6
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    .line 7
+    .line 8
+    if-eqz p4, :cond_1
+
+    .line 9
+    .line 10
+    const/4 p3, 0x1
+
+    .line 11
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->q(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Z)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method private final s(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 7
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "onInstallStart -> "
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const-string v1, "ad_installer"
+
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->a:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->c(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    const/4 v2, 0x0
+
+    .line 33
+    const/4 v3, 0x0
+
+    .line 34
+    new-instance v4, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstallStart$1;
+
+    .line 35
+    .line 36
+    const/4 v0, 0x0
+
+    .line 37
+    invoke-direct {v4, p1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstallStart$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lkotlin/coroutines/c;)V
+
+    .line 38
+    .line 39
+    .line 40
+    const/4 v5, 0x3
+
+    .line 41
+    const/4 v6, 0x0
+
+    .line 42
+    invoke-static/range {v1 .. v6}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 43
+    .line 44
+    .line 45
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 46
+    .line 47
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v1
+
+    .line 55
+    if-eqz v1, :cond_0
+
+    .line 56
+    .line 57
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v1
+
+    .line 61
+    check-cast v1, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;
+
+    .line 62
+    .line 63
+    invoke-interface {v1, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;->a(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 64
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
+    :cond_0
+    return-void
+.end method
+
+.method private final t(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v1, "onInstalled -> "
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    const-string v1, "ad_installer"
+
+    .line 29
+    .line 30
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    const-string v2, "-------------> installer="
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    iget-object v2, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 44
+    .line 45
+    iget-object v3, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->pkgName:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    invoke-static {v2, v3}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v2
+
+    .line 51
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 52
+    .line 53
+    .line 54
+    const-string v2, ", install_by_bili="
+
+    .line 55
+    .line 56
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 57
+    .line 58
+    .line 59
+    iget-object v2, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 60
+    .line 61
+    iget-object v3, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->pkgName:Ljava/lang/String;
+
+    .line 62
+    .line 63
+    invoke-static {v2, v3}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->e(Landroid/content/Context;Ljava/lang/String;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v2
+
+    .line 67
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 68
+    .line 69
+    .line 70
+    const-string v2, ", compensated_from="
+
+    .line 71
+    .line 72
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 83
+    .line 84
+    .line 85
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->a:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;
+
+    .line 86
+    .line 87
+    invoke-virtual {v0, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v1
+
+    .line 94
+    const/4 v2, 0x0
+
+    .line 95
+    const/4 v3, 0x0
+
+    .line 96
+    new-instance v4, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstalled$1;
+
+    .line 97
+    .line 98
+    const/4 v0, 0x0
+
+    .line 99
+    invoke-direct {v4, p1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstalled$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lkotlin/coroutines/c;)V
+
+    .line 100
+    .line 101
+    .line 102
+    const/4 v5, 0x3
+
+    .line 103
+    const/4 v6, 0x0
+
+    .line 104
+    invoke-static/range {v1 .. v6}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 105
+    .line 106
+    .line 107
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 108
+    .line 109
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v0
+
+    .line 113
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v1
+
+    .line 117
+    if-eqz v1, :cond_1
+
+    .line 118
+    .line 119
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v1
+
+    .line 123
+    check-cast v1, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;
+
+    .line 124
+    .line 125
+    invoke-interface {v1, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;->b(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 126
+    .line 127
+    .line 128
+    goto :goto_0
+
+    .line 129
+    :cond_1
+    invoke-virtual {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->A()V
+
+    .line 130
+    .line 131
+    .line 132
+    return-void
+.end method
+
+.method static synthetic u(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;ILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    and-int/lit8 p3, p3, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p3, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p2, 0x0
+
+    .line 6
+    :cond_0
+    invoke-direct {p0, p1, p2}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->t(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method private final v(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 7
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "onInstalling -> "
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const-string v1, "ad_installer"
+
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->a:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallReport;->e(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    const/4 v2, 0x0
+
+    .line 33
+    const/4 v3, 0x0
+
+    .line 34
+    new-instance v4, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstalling$1;
+
+    .line 35
+    .line 36
+    const/4 v0, 0x0
+
+    .line 37
+    invoke-direct {v4, p1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onInstalling$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lkotlin/coroutines/c;)V
+
+    .line 38
+    .line 39
+    .line 40
+    const/4 v5, 0x3
+
+    .line 41
+    const/4 v6, 0x0
+
+    .line 42
+    invoke-static/range {v1 .. v6}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 43
+    .line 44
+    .line 45
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 46
+    .line 47
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v1
+
+    .line 55
+    if-eqz v1, :cond_0
+
+    .line 56
+    .line 57
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v1
+
+    .line 61
+    check-cast v1, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;
+
+    .line 62
+    .line 63
+    invoke-interface {v1, p1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 64
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
+    :cond_0
+    return-void
+.end method
+
+.method private final z(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;",
+            "Ljava/lang/String;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lgf3/s;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "reportIfNeedOrDelete -> "
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const-string v1, "ad_installer"
+
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;->Idle:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 24
+    .line 25
+    iget-object v1, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->status:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 26
+    .line 27
+    if-ne v0, v1, :cond_0
+
+    .line 28
+    .line 29
+    sget-object p2, Lea/a;->a:Lea/a;
+
+    .line 30
+    .line 31
+    invoke-virtual {p2, p1}, Lea/a;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 32
+    .line 33
+    .line 34
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 35
+    .line 36
+    return-object p1
+
+    .line 37
+    :cond_0
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;->Installed:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 38
+    .line 39
+    if-ne v0, v1, :cond_1
+
+    .line 40
+    .line 41
+    sget-object p2, Lea/a;->a:Lea/a;
+
+    .line 42
+    .line 43
+    invoke-virtual {p2, p1}, Lea/a;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 44
+    .line 45
+    .line 46
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 47
+    .line 48
+    return-object p1
+
+    .line 49
+    :cond_1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 50
+    .line 51
+    iget-object v1, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->pkgName:Ljava/lang/String;
+
+    .line 52
+    .line 53
+    invoke-static {v0, v1}, Lcom/bilibili/cm/core/utils/d;->b(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    const/4 v1, 0x0
+
+    .line 58
+    if-eqz v0, :cond_9
+
+    .line 59
+    .line 60
+    iget-wide v2, v0, Landroid/content/pm/PackageInfo;->firstInstallTime:J
+
+    .line 61
+    .line 62
+    iget-wide v4, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->ts:J
+
+    .line 63
+    .line 64
+    sub-long/2addr v2, v4
+
+    .line 65
+    invoke-direct {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->l()J
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-wide v4
+
+    .line 69
+    cmp-long v6, v2, v4
+
+    .line 70
+    .line 71
+    if-lez v6, :cond_3
+
+    .line 72
+    .line 73
+    iget-wide v2, v0, Landroid/content/pm/PackageInfo;->lastUpdateTime:J
+
+    .line 74
+    .line 75
+    iget-wide v4, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->ts:J
+
+    .line 76
+    .line 77
+    sub-long/2addr v2, v4
+
+    .line 78
+    invoke-direct {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->l()J
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-wide v4
+
+    .line 82
+    cmp-long v6, v2, v4
+
+    .line 83
+    .line 84
+    if-gtz v6, :cond_2
+
+    .line 85
+    .line 86
+    goto :goto_0
+
+    .line 87
+    :cond_2
+    sget-object p2, Lea/a;->a:Lea/a;
+
+    .line 88
+    .line 89
+    invoke-virtual {p2, p1}, Lea/a;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 90
+    .line 91
+    .line 92
+    goto/16 :goto_2
+
+    .line 93
+    .line 94
+    :cond_3
+    :goto_0
+    iget-object v2, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 95
+    .line 96
+    iget-object v0, v0, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    .line 97
+    .line 98
+    invoke-static {v2, v0}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->e(Landroid/content/Context;Ljava/lang/String;)Z
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v0
+
+    .line 102
+    if-eqz v0, :cond_5
+
+    .line 103
+    .line 104
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v0
+
+    .line 108
+    new-instance v2, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$2;
+
+    .line 109
+    .line 110
+    invoke-direct {v2, p0, p1, p2, v1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$2;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 111
+    .line 112
+    .line 113
+    invoke-static {v0, v2, p3}, Lkotlinx/coroutines/h;->g(Lkotlin/coroutines/CoroutineContext;Lsf3/p;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p1
+
+    .line 117
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object p2
+
+    .line 121
+    if-ne p1, p2, :cond_4
+
+    .line 122
+    .line 123
+    return-object p1
+
+    .line 124
+    :cond_4
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 125
+    .line 126
+    return-object p1
+
+    .line 127
+    :cond_5
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;->Error:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 128
+    .line 129
+    iget-object v2, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->status:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 130
+    .line 131
+    if-ne v0, v2, :cond_7
+
+    .line 132
+    .line 133
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 134
+    .line 135
+    .line 136
+    move-result-object v0
+
+    .line 137
+    new-instance v2, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$3;
+
+    .line 138
+    .line 139
+    invoke-direct {v2, p0, p1, p2, v1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$3;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 140
+    .line 141
+    .line 142
+    invoke-static {v0, v2, p3}, Lkotlinx/coroutines/h;->g(Lkotlin/coroutines/CoroutineContext;Lsf3/p;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object p1
+
+    .line 146
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object p2
+
+    .line 150
+    if-ne p1, p2, :cond_6
+
+    .line 151
+    .line 152
+    return-object p1
+
+    .line 153
+    :cond_6
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 154
+    .line 155
+    return-object p1
+
+    .line 156
+    :cond_7
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object v0
+
+    .line 160
+    new-instance v2, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$4;
+
+    .line 161
+    .line 162
+    invoke-direct {v2, p0, p1, p2, v1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$4;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 163
+    .line 164
+    .line 165
+    invoke-static {v0, v2, p3}, Lkotlinx/coroutines/h;->g(Lkotlin/coroutines/CoroutineContext;Lsf3/p;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object p1
+
+    .line 169
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 170
+    .line 171
+    .line 172
+    move-result-object p2
+
+    .line 173
+    if-ne p1, p2, :cond_8
+
+    .line 174
+    .line 175
+    return-object p1
+
+    .line 176
+    :cond_8
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 177
+    .line 178
+    return-object p1
+
+    .line 179
+    :cond_9
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-wide v2
+
+    .line 183
+    iget-wide v4, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->ts:J
+
+    .line 184
+    .line 185
+    sub-long v4, v2, v4
+
+    .line 186
+    .line 187
+    invoke-direct {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->l()J
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-wide v6
+
+    .line 191
+    cmp-long v0, v4, v6
+
+    .line 192
+    .line 193
+    if-gtz v0, :cond_e
+
+    .line 194
+    .line 195
+    iget-wide v4, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->ts:J
+
+    .line 196
+    .line 197
+    sub-long/2addr v2, v4
+
+    .line 198
+    invoke-direct {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->l()J
+
+    .line 199
+    .line 200
+    .line 201
+    move-result-wide v4
+
+    .line 202
+    cmp-long v0, v2, v4
+
+    .line 203
+    .line 204
+    if-lez v0, :cond_a
+
+    .line 205
+    .line 206
+    goto :goto_1
+
+    .line 207
+    :cond_a
+    sget-object v0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;->Error:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 208
+    .line 209
+    iget-object v2, p1, Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;->status:Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;
+
+    .line 210
+    .line 211
+    if-ne v0, v2, :cond_c
+
+    .line 212
+    .line 213
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v0
+
+    .line 217
+    new-instance v2, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$5;
+
+    .line 218
+    .line 219
+    invoke-direct {v2, p0, p1, p2, v1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$5;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 220
+    .line 221
+    .line 222
+    invoke-static {v0, v2, p3}, Lkotlinx/coroutines/h;->g(Lkotlin/coroutines/CoroutineContext;Lsf3/p;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 223
+    .line 224
+    .line 225
+    move-result-object p1
+
+    .line 226
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 227
+    .line 228
+    .line 229
+    move-result-object p2
+
+    .line 230
+    if-ne p1, p2, :cond_b
+
+    .line 231
+    .line 232
+    return-object p1
+
+    .line 233
+    :cond_b
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 234
+    .line 235
+    return-object p1
+
+    .line 236
+    :cond_c
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 237
+    .line 238
+    .line 239
+    move-result-object v0
+
+    .line 240
+    new-instance v2, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$6;
+
+    .line 241
+    .line 242
+    invoke-direct {v2, p0, p1, p2, v1}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$reportIfNeedOrDelete$6;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 243
+    .line 244
+    .line 245
+    invoke-static {v0, v2, p3}, Lkotlinx/coroutines/h;->g(Lkotlin/coroutines/CoroutineContext;Lsf3/p;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 246
+    .line 247
+    .line 248
+    move-result-object p1
+
+    .line 249
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object p2
+
+    .line 253
+    if-ne p1, p2, :cond_d
+
+    .line 254
+    .line 255
+    return-object p1
+
+    .line 256
+    :cond_d
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 257
+    .line 258
+    return-object p1
+
+    .line 259
+    :cond_e
+    :goto_1
+    sget-object p2, Lea/a;->a:Lea/a;
+
+    .line 260
+    .line 261
+    invoke-virtual {p2, p1}, Lea/a;->d(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+
+    .line 262
+    .line 263
+    .line 264
+    :goto_2
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    .line 265
+    .line 266
+    return-object p1
+.end method
+
+
+# virtual methods
+.method public final A()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->c:Lcom/bilibili/adcommon/apkdownload/install/b;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Lcom/bilibili/adcommon/apkdownload/install/b;->d(Landroid/content/Context;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public a(Ljava/lang/String;)V
+    .locals 8
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "onReceiveInstalled -> "
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const-string v1, "ad_installer"
+
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    invoke-virtual {v0}, Lkotlinx/coroutines/y1;->s0()Lkotlinx/coroutines/y1;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v3
+
+    .line 35
+    const/4 v4, 0x0
+
+    .line 36
+    new-instance v5, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onReceiveInstalled$1;
+
+    .line 37
+    .line 38
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-direct {v5, p0, p1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onReceiveInstalled$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 40
+    .line 41
+    .line 42
+    const/4 v6, 0x2
+
+    .line 43
+    const/4 v7, 0x0
+
+    .line 44
+    invoke-static/range {v2 .. v7}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 45
+    .line 46
+    .line 47
+    return-void
+.end method
+
+.method public b(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final j(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final k()V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->A()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->d:Lj$/util/concurrent/ConcurrentHashMap;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Lj$/util/concurrent/ConcurrentHashMap;->clear()V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->clear()V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const/4 v1, 0x0
+
+    .line 19
+    const/4 v2, 0x1
+
+    .line 20
+    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/i0;->e(Lkotlinx/coroutines/h0;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+.method public final n(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v0}, Lkotlinx/coroutines/y1;->s0()Lkotlinx/coroutines/y1;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v3
+
+    .line 19
+    const/4 v4, 0x0
+
+    .line 20
+    new-instance v5, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$install$1;
+
+    .line 21
+    .line 22
+    const/4 v0, 0x0
+
+    .line 23
+    invoke-direct {v5, p1, p0, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$install$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Lkotlin/coroutines/c;)V
+
+    .line 24
+    .line 25
+    .line 26
+    const/4 v6, 0x2
+
+    .line 27
+    const/4 v7, 0x0
+
+    .line 28
+    invoke-static/range {v2 .. v7}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method
+
+.method public final o(Ljava/lang/String;Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;)V
+    .locals 6
+
+    .line 1
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-virtual {v1}, Lkotlinx/coroutines/y1;->s0()Lkotlinx/coroutines/y1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    const/4 v2, 0x0
+
+    .line 14
+    new-instance v3, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onActivityCreate$1;
+
+    .line 15
+    .line 16
+    const/4 v4, 0x0
+
+    .line 17
+    invoke-direct {v3, p0, p1, p2, v4}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onActivityCreate$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Ljava/lang/String;Lcom/bilibili/adcommon/apkdownload/install/ApkInstallStatus;Lkotlin/coroutines/c;)V
+
+    .line 18
+    .line 19
+    .line 20
+    const/4 v4, 0x2
+
+    .line 21
+    const/4 v5, 0x0
+
+    .line 22
+    invoke-static/range {v0 .. v5}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+.end method
+
+.method public final p(Ljava/lang/String;)V
+    .locals 8
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "onActivityResult -> "
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const-string v1, "ad_installer"
+
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Ltv/danmaku/android/log/BLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    invoke-static {}, Lkotlinx/coroutines/u0;->c()Lkotlinx/coroutines/y1;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    invoke-virtual {v0}, Lkotlinx/coroutines/y1;->s0()Lkotlinx/coroutines/y1;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v3
+
+    .line 35
+    const/4 v4, 0x0
+
+    .line 36
+    new-instance v5, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onActivityResult$1;
+
+    .line 37
+    .line 38
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-direct {v5, p0, p1, v0}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$onActivityResult$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;Ljava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 40
+    .line 41
+    .line 42
+    const/4 v6, 0x2
+
+    .line 43
+    const/4 v7, 0x0
+
+    .line 44
+    invoke-static/range {v2 .. v7}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 45
+    .line 46
+    .line 47
+    return-void
+.end method
+
+.method public final w()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->c:Lcom/bilibili/adcommon/apkdownload/install/b;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->a:Landroid/content/Context;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Lcom/bilibili/adcommon/apkdownload/install/b;->c(Landroid/content/Context;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final x(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;)V
+    .locals 6
+
+    .line 1
+    invoke-static {}, Lcom/bilibili/adcommon/apkdownload/install/UtilsKt;->c()Lkotlinx/coroutines/h0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    new-instance v3, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$remove$1;
+
+    .line 8
+    .line 9
+    const/4 v4, 0x0
+
+    .line 10
+    invoke-direct {v3, p1, v4}, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$remove$1;-><init>(Lcom/bilibili/adcommon/apkdownload/install/db/ApkInstallInfo;Lkotlin/coroutines/c;)V
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 v4, 0x3
+
+    .line 14
+    const/4 v5, 0x0
+
+    .line 15
+    invoke-static/range {v0 .. v5}, Lcom/bilibili/cm/core/utils/CoroutinesExtKt;->e(Lkotlinx/coroutines/h0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lsf3/p;ILjava/lang/Object;)Lkotlinx/coroutines/p1;
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public final y(Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager$a;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/adcommon/apkdownload/install/ApkInstallManager;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

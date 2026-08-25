@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_toast_container" android:background="@drawable/upper_shape_circle_toast" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dp" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/upper_theme_brand_pink" android:id="@id/tv_toast_operation" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_upper_arrow_right_pink_small" android:drawablePadding="2.0dp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bililive_history_theme_color_bg_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/desc_layout" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/bililive_history_theme_color_text_minor_light" android:textColorLink="@color/theme_color_secondary" android:gravity="center" android:linksClickable="true" android:id="@id/desc" android:paddingLeft="@dimen/item_half_spacing" android:paddingTop="2.0dp" android:paddingRight="@dimen/item_half_spacing" android:paddingBottom="2.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28.0dp" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_star" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="6.0dp" android:indeterminateDrawable="@drawable/bili_live_history_shape_live_progress_star" android:layout_toRightOf="@id/desc" android:layout_centerVertical="true" style="?android:progressBarStyle" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/icon_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:src="@drawable/tag_center_refresh_icon" android:layout_toRightOf="@id/desc" android:layout_centerVertical="true" app:imageTint="@color/theme_color_secondary" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/item_spacing" />
+    </FrameLayout>
+</RelativeLayout>

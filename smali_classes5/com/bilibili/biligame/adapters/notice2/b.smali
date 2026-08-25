@@ -1,0 +1,17 @@
+.class public final synthetic Lcom/bilibili/biligame/adapters/notice2/b;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/widget/TextView;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setBreakStrategy(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

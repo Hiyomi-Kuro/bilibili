@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/projection_how_to_prj_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/projection_search_list_sub_title" />
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <include layout="@layout/bili_projection_search_how_to_projection" />
+</LinearLayout>

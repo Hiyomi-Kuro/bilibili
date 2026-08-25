@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="vertical" android:id="@id/favorite_layout" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="56.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/favorite_icon" android:layout_width="match_parent" android:layout_height="46.0dp" android:src="@drawable/bili_story_favorite_selector" android:alpha="0.9" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/favorite_lottie" android:layout_width="match_parent" android:layout_height="46.0dp" android:alpha="0.9" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="false" app:lottie_fileName="story_favorite_lottie_v1.json" app:lottie_loop="false" />
+    <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/favorite_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dp" android:singleLine="true" android:shadowColor="@color/Ba0_u_alpha20" android:shadowDy="2.0" android:shadowRadius="3.0" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.playerbizcommon.view.RingProgressBar android:id="@id/favorite_progress" android:layout_width="42.0dp" android:layout_height="42.0dp" app:layout_constraintBottom_toBottomOf="@id/favorite_icon" app:layout_constraintLeft_toLeftOf="@id/favorite_icon" app:layout_constraintRight_toRightOf="@id/favorite_icon" app:layout_constraintTop_toTopOf="@id/favorite_icon" />
+</merge>

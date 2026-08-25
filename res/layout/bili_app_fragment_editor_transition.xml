@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/upper_bgm_tab_bg" android:layout_width="match_parent" android:layout_height="58.0dp">
+        <TextView android:textSize="@dimen/upper_text_middle" android:textColor="@drawable/upper_selector_edit_function_text" android:gravity="center" android:layout_gravity="right|center" android:id="@id/tv_all_apply" android:background="@drawable/editor_shape_gray_bg_two_radius" android:layout_width="66.0dp" android:layout_height="34.0dp" android:layout_marginRight="12.0dp" android:text="@string/video_editor_all_apply" android:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="63.0dp" android:layout_marginTop="10.0dp">
+        <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverTransition android:id="@id/track_transition" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="5.0dp" />
+        <include layout="@layout/bili_app_item_editor_play_switch" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_select" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_margin="5.0dp" />
+    <include layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

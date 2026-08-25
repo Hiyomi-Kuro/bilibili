@@ -1,0 +1,25 @@
+{
+  "FilterID": "SceneSource",
+  "FilterName": "Christmas",
+  "FilterConfig": {
+    "SceneWidth": 720,
+    "SceneHeight": 1280,
+    "SceneItems": [
+      {
+        "ItemLeft": 0,
+        "ItemTop": 0,
+        "ItemWidth": 720,
+        "ItemHeight": 1280,
+        "FitMode": "FitInner",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "CommonSource",
+          "FilterName": "commonSource1",
+          "FilterConfig": {
+            "source_id": 0
+          }
+        }
+      }
+    ]
+  }
+}

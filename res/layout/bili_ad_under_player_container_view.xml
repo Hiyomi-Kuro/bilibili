@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/container" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/ad_bottom_sheet_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="40.0dp" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ba0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:maxLines="1" android:layout_weight="1.0" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/close" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/close" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/ic_close_gray_16" android:scaleType="centerInside" android:tint="@color/Ga7_u" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2_u" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@id/ad_fragment_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title_layout" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

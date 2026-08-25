@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/player_controller_parent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.room.ui.roomv3.player.controller.LiveResidentController android:id="@id/player_resident_controller" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.room.ui.roomv3.player.controller.LiveController android:id="@id/player_controller" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.room.ui.roomv3.player.controller.LiveHidingController android:id="@id/player_controller_hiding" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

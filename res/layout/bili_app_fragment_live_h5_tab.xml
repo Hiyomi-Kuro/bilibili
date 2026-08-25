@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.infra.web.ui.view.WebViewContainer android:id="@id/browser" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/errorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/live_layout_error_common" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+</FrameLayout>

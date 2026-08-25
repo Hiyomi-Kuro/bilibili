@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/fr_gift_banner" android:layout_width="126.0dp" android:layout_height="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_banner_bg" android:layout_width="126.0dp" android:layout_height="54.0dp" android:scaleType="fitCenter" app:roundedCornerRadius="2.0dp" app:thumbHeight="54.0dp" app:thumbWidth="126.0dp" />
+</FrameLayout>

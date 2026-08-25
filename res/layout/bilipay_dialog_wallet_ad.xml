@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/imageIv" android:layout_width="280.0dp" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/close_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:src="@drawable/bilipay_icon_close_alpha" />
+</LinearLayout>

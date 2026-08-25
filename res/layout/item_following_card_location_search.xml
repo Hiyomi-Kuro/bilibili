@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/container" android:background="@color/Wh0" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="65.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_primary" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/content_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:layout_gravity="center_vertical" android:id="@id/user_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="center_vertical" android:id="@id/circle_tv" android:background="@drawable/shape_divider_circle" android:layout_width="2.0dp" android:layout_height="2.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/address_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

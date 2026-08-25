@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_pegasus_refresh_guidance_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/Pi5" android:id="@id/refresh_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pegasus_refresh_guidance_content" android:lines="1" />
+    <ImageView android:id="@id/refresh_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_pegasus_double_arrow_down" />
+</LinearLayout>

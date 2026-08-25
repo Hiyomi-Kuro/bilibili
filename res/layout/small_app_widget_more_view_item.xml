@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/llItem" android:layout_width="69.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sivLogo" android:layout_width="44.0dp" android:layout_height="44.0dp" app:placeholderImage="@drawable/small_app_bg_default_logo" app:placeholderImageScaleType="fitCenter" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/small_app_gray_dark" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:singleLine="true" />
+</LinearLayout>

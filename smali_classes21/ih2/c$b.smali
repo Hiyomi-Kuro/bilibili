@@ -1,0 +1,222 @@
+.class Lih2/c$b;
+.super Landroidx/recyclerview/widget/RecyclerView$s;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lih2/c;->h()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lih2/c;
+
+
+# direct methods
+.method constructor <init>(Lih2/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lih2/c$b;->a:Lih2/c;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$s;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 3
+    .param p1    # Landroidx/recyclerview/widget/RecyclerView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$s;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    if-eqz v0, :cond_2
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-eqz v0, :cond_2
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    instance-of v0, v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+
+    .line 21
+    .line 22
+    if-nez v0, :cond_0
+
+    .line 23
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_0
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    check-cast v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    check-cast p1, Lgh2/a;
+
+    .line 36
+    .line 37
+    const/4 v1, 0x0
+
+    .line 38
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->findLastVisibleItemPositions([I)[I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v1
+
+    .line 42
+    array-length v2, v1
+
+    .line 43
+    if-nez v2, :cond_1
+
+    .line 44
+    .line 45
+    return-void
+
+    .line 46
+    :cond_1
+    invoke-virtual {p1}, Lgh2/a;->a1()Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v2
+
+    .line 50
+    if-eqz v2, :cond_2
+
+    .line 51
+    .line 52
+    if-nez p2, :cond_2
+
+    .line 53
+    .line 54
+    const/4 p2, 0x0
+
+    .line 55
+    aget p2, v1, p2
+
+    .line 56
+    .line 57
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->getSpanCount()I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v0
+
+    .line 61
+    add-int/2addr p2, v0
+
+    .line 62
+    invoke-virtual {p1}, Lgh2/a;->getItemCount()I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v0
+
+    .line 66
+    if-lt p2, v0, :cond_2
+
+    .line 67
+    .line 68
+    invoke-virtual {p1}, Lgh2/a;->e1()V
+
+    .line 69
+    .line 70
+    .line 71
+    iget-object p1, p0, Lih2/c$b;->a:Lih2/c;
+
+    .line 72
+    .line 73
+    invoke-static {p1}, Lih2/c;->c(Lih2/c;)Lih2/c$c;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object p1
+
+    .line 77
+    invoke-static {p1}, Lih2/c$c;->f(Lih2/c$c;)Ljh2/f;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    invoke-interface {p1}, Ljh2/f;->onLoadMore()V
+
+    .line 82
+    .line 83
+    .line 84
+    :cond_2
+    :goto_0
+    return-void
+.end method

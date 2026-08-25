@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/publish_emoji_loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/publish_emoji_loading_failed" android:padding="7.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_following_emoji_failed" android:layout_centerHorizontal="true" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/publish_emoji_lav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerHorizontal="true" app:lottie_cacheStrategy="weak" app:lottie_colorFilter="@color/theme_color_secondary" app:lottie_fileName="live_loading.json" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:id="@id/publish_emoji_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/publish_emoji_loading_failed" />
+</RelativeLayout>

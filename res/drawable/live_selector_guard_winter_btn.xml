@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/live_follow_card_followed_bg_color_day" />
+            <corners android:radius="23.0dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <gradient android:startColor="@color/live_guard_winter_btn_bg_start_color" android:endColor="@color/live_guard_winter_btn_bg_end_color" android:angle="0.0" />
+            <corners android:radius="23.0dp" />
+        </shape>
+    </item>
+</selector>

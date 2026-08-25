@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/video_1" android:tag="@integer/index_0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" class="com.bilibili.ad.adview.search.widget.AdSearchVideoContainerLayout$AdSearchVideoItemLayout" />
+    <view android:id="@id/video_2" android:tag="@integer/index_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" class="com.bilibili.ad.adview.search.widget.AdSearchVideoContainerLayout$AdSearchVideoItemLayout" />
+    <view android:id="@id/video_3" android:tag="@integer/index_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" class="com.bilibili.ad.adview.search.widget.AdSearchVideoContainerLayout$AdSearchVideoItemLayout" />
+</merge>

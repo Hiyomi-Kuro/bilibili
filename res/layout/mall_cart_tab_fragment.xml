@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/id_mall_cart_goods_tab_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/mall_cart_tips_view" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_tips_view" />
+    <com.mall.ui.widget.MallImageView2 android:layout_gravity="right|bottom" android:id="@id/mall_cart_back_to_top" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="82.0dp" android:scaleType="fitCenter" android:alpha="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

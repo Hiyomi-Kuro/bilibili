@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mall_ip_layout_hint_unlogin" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/mall_ip_triangle_tips" android:background="@drawable/mall_ip_svg_gray_triangle" android:layout_width="12.0dp" android:layout_height="8.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="2.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/mall_ip_shape_bubble" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="#212121" android:gravity="center_vertical" android:id="@id/mall_ip_hint_tv_login" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginLeft="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.mall.ui.widget.MallImageView2 android:id="@id/mall_ip_hint_iv_login" android:layout_width="64.0dp" android:layout_height="24.0dp" android:layout_marginRight="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame" android:background="@color/live_daynight_bg_color_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="top" android:id="@id/tags_container" android:background="@color/theme_color_live_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/tags_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:minHeight="40.0dp">
+            <tv.danmaku.bili.widget.RecyclerView android:id="@id/tags" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingRight="36.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:nestedScrollingEnabled="false" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/more" android:background="?selectableItemBackground" android:layout_width="36.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_live_arrow_down" android:scaleType="centerInside" />
+        </FrameLayout>
+        <View android:layout_gravity="bottom" android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="0.6dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_live_home_layout_recyclerview" />
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

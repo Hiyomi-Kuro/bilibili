@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvData" android:background="@drawable/bg_widget_data_center" android:layout_width="match_parent" android:layout_height="131.0dp" />
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:id="@id/rlTipsLayout" android:background="@drawable/bg_widget_data_center" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="8.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:gravity="center" android:id="@id/tvFlowState" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:text="@string/upper_creation_helper_flow_state" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/tvFlowStateIcon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="3.0dp" android:layout_toRightOf="@id/tvFlowState" android:layout_centerVertical="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Gr5" android:ellipsize="end" android:gravity="center" android:id="@id/tvFlowStateText" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:text="@string/upper_creation_helper_flow_state_normal" android:layout_toRightOf="@id/tvFlowStateIcon" />
+            <View android:layout_gravity="end|center" android:id="@id/v_limit_line" android:background="@color/upper_data_center_line" android:layout_width="0.5dp" android:layout_height="11.0dp" android:layout_marginLeft="4.0dp" android:layout_toRightOf="@id/tvFlowStateText" android:layout_centerVertical="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Ga4_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6.0dp" android:layout_marginRight="21.0dp" android:maxLines="1" android:layout_toRightOf="@id/v_limit_line" />
+            <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/widget_data_center_tips_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llFlexibilityContainer" android:background="@drawable/bg_widget_data_center" android:layout_width="93.0dp" android:layout_height="match_parent" android:layout_marginStart="7.0dp">
+        <FrameLayout android:layout_width="76.0dp" android:layout_height="20.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ivFlexibilityModuleTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_upper_data_center_module" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/upper_data_center_flexibility_module_title" android:layout_gravity="center" android:id="@id/tvFlexibilityModuleTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="14.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/ivFlexibilityIcon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" app:placeholderImage="@drawable/bg_upper_data_center_icon" />
+            <com.bilibili.upper.module.uppercenter.datacenter.BiliCircleView android:layout_gravity="center" android:id="@id/cvFlexibilityIcon" android:layout_width="match_parent" android:layout_height="match_parent" app:barColor="@color/upper_data_center_flexibility_bar" app:barFilledColor="@color/upper_data_center_flexibility_bar_filled" app:barWidth="4.0dp" />
+            <TextView android:textSize="11.0sp" android:layout_gravity="center" android:id="@id/tvFlexibilityIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/upper_data_center_flexibility_main_title" android:id="@id/tvFlexibilityMainTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/upper_data_center_flexibility_sub_title" android:id="@id/tvFlexibilitySubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dp" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff6699" android:gravity="center" android:id="@id/tvFlexibilityButton" android:layout_width="52.0dp" android:layout_height="20.0dp" android:layout_marginTop="20.0dp" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0dp" android:textColor="@color/Wh0_u_alpha90" android:gravity="center" android:id="@id/story_live_reservation_layout_time" android:layout_width="wrap_content" android:layout_height="34.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="0.0dp" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/Pi5_u_alpha90" android:gravity="right|center" android:id="@id/story_live_reservation_layout_reservation" android:layout_width="60.0dp" android:layout_height="match_parent" android:text="@string/story_live_reserve" android:singleLine="true" android:paddingStart="0.0dp" android:paddingEnd="12.0dp" />
+    <View android:layout_gravity="center_vertical" android:background="@color/Ga2_u" android:layout_width="0.5dp" android:layout_height="16.0dp" android:alpha="0.3" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/story_live_reservation_layout_close" android:padding="12.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" app:srcCompat="@drawable/ic_close" app:tint="@color/Wh0_u_alpha30" />
+</merge>

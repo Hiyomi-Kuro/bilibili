@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/following_bg_publish_add_layout_item" android:layout_width="@dimen/bili_publish_add_layout_image_size_c" android:layout_height="@dimen/bili_publish_add_layout_image_size_c">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/add_layout_item_image" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/ic_lottery" />
+        <ImageView android:layout_gravity="end" android:id="@id/add_item_red_dot" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="23.0dp" android:layout_marginRight="23.0dp" android:src="@drawable/ic_circle_white" android:tint="@color/Re6" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:ellipsize="end" android:layout_gravity="center" android:id="@id/add_layout_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/following_publish_lottery_c" android:maxLines="1" />
+</LinearLayout>

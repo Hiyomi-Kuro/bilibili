@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Wh0" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/shape_round" android:scaleType="centerInside" android:layout_alignParentTop="true" />
+    <com.bilibili.column.ui.widget.articlelist.ArticleListTitleView android:textSize="15.0sp" android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dp" android:layout_marginRight="50.0dp" android:maxLines="2" android:lineSpacingExtra="5.0dp" />
+</RelativeLayout>

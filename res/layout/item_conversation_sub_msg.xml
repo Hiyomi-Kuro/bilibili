@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text_sub_msg" android:paddingLeft="24.0dp" android:paddingTop="6.0dp" android:paddingRight="24.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="我为什么会收到此类消息我为什么会收到此类消息类消息我为什么会收到此类消息我为什么会收到此类消息"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

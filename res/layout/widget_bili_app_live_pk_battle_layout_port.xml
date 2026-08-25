@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fr_pk_layout_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.bilibili.bililive.biz.view.progressbar.LivePKProgressBar android:layout_gravity="center_horizontal" android:id="@id/pk_battle_progress_bar" android:layout_width="match_parent" android:layout_height="14.0dp" android:layout_marginTop="5.0dp" app:isLand="false" />
+        <com.bilibili.bililive.biz.view.LivePKCountDownViewV2 android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pk_battle_info_view" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginTop="18.0dp" app:isLand="false" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="top" android:id="@id/pk_battle_progress_bar_precede_icon" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="24.0dp" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fr_pk_result_icon" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22.0dp">
+        <com.bilibili.bililive.biz.view.result.LiveCommonPkResultItemView android:layout_gravity="start" android:id="@id/iv_left_result_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+        <com.bilibili.bililive.biz.view.result.LiveCommonPkResultItemView android:layout_gravity="end" android:id="@id/iv_right_result_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+    </FrameLayout>
+    <com.bilibili.bililive.biz.view.LiveCommonPKAnchorBarV2 android:id="@id/match_anchor_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <com.bilibili.bililive.uam.view.UAMView android:id="@id/pk_anim_view" android:visibility="gone" android:layout_width="335.0dp" android:layout_height="248.0dp" android:layout_centerHorizontal="true" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/pk_score_multiple_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

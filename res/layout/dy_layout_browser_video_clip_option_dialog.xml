@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="204.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/dy_layout_share" android:layout_width="match_parent" android:layout_height="49.0dp">
+            <ImageView android:id="@id/dy_img_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_following_detail_share" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:id="@id/dy_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/share" android:layout_toRightOf="@id/dy_img_share" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/dy_layout_copy" android:layout_width="match_parent" android:layout_height="49.0dp">
+            <ImageView android:id="@id/dy_img_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_video_copy_id" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:id="@id/dy_copyNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:layout_toRightOf="@id/dy_img_copy" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:id="@id/dy_vcNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_toRightOf="@id/dy_copyNumber" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/dy_layout_collect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49.0dp">
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" />
+            <ImageView android:id="@id/dy_img_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_light_browser_clip_collect" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:id="@id/dy_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/collection" android:layout_toRightOf="@id/dy_img_collect" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/dy_layout_report" android:layout_width="match_parent" android:layout_height="49.0dp">
+            <ImageView android:id="@id/dy_img_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_video_report" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:id="@id/dy_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/report" android:layout_toRightOf="@id/dy_img_report" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/dy_dismiss" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginTop="5.0dp" android:text="@android:string/cancel" />
+</LinearLayout>

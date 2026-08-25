@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/theme_color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</LinearLayout>

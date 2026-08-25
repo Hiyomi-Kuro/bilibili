@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/wealth_layout" android:background="@drawable/bg_live_user_card_wealth" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/wealth_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_live_user_wealth" android:layout_alignParentRight="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="#61666d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_user_card_wealth_level" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/wealth_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_room_area_tag_arrow_right" android:layout_marginStart="4.0dp" app:tint="#61666d" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fans_layout" android:background="@drawable/bg_live_user_card_fans" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/user_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="9.0dp" android:layout_marginEnd="2.0dp" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/fans_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#61666d" android:ellipsize="end" android:gravity="right|center" android:id="@id/fans_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_user_card_fans" android:maxLines="1" android:layout_toLeftOf="@id/fans_arrow" android:layout_centerVertical="true" android:layout_marginStart="2.0dp" android:layout_toEndOf="@id/user_tag" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/fans_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dp" android:src="@drawable/ic_live_room_area_tag_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="4.0dp" app:tint="#61666d" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_gift_star" android:background="@drawable/bg_live_user_card_gift_star" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="11.0dp" android:layout_weight="1.0">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_gift_star_icon" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" app:roundAsCircle="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_user_card_gift_star_logo" android:layout_alignParentRight="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="#61666d" android:id="@id/tv_gift_star_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_room_area_tag_arrow_right" android:layout_marginStart="4.0dp" app:tint="#61666d" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

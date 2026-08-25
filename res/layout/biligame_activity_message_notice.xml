@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/nav_top_bar" layout="@layout/biligame_layout_toolbar_common" />
+    <LinearLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_notice" android:background="@drawable/biligame_background_corner_yellow_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="@dimen/biligame_dip_12" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/biligame_dip_12">
+            <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/biligame_dip_12" android:layout_marginRight="30.0dp" android:singleLine="true" android:drawablePadding="10.0dp" android:layout_centerVertical="true" app:drawableLeftCompat="@drawable/biligame_detail_notice" style="@style/Biligame.TextView.14SP.BLACK33" />
+            <com.bilibili.biligame.iconfont.IconFontTextView android:textColor="@color/Ye4" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/ic_gc_arrow_right_light" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.bilibili.biligame.widget.TabLayout android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="44.0dp" app:tabTextAppearance="@style/TabBoldAndSize_14" style="@style/BiligameTabLayout_Two" />
+    <View android:background="@color/Ga1_s" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

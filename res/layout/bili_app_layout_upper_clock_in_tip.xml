@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/upper_clock_in_notice_text" android:gravity="center_vertical" android:id="@id/tv_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/iv_close" android:padding="12.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_upper_tip_close" android:scaleType="fitXY" app:imageTint="@color/upper_text_gray" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/iv_next" android:padding="12.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_upper_tip_next" android:scaleType="fitXY" app:imageTint="@color/upper_text_gray" />
+</merge>

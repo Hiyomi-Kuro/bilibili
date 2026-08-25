@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/theseus_ogv_fragment_intro_info_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_intro_header" android:tag="binding_1" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Text2" android:id="@id/tv_intro" android:tag="binding_2" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4" />
+</LinearLayout>

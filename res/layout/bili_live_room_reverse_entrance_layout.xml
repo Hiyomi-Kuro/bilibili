@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/container_reverse_entrance" android:background="@drawable/bg_live_room_reserve_entrance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_live_room_reserve_bell" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="6.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_room_reverse_text" android:layout_marginStart="1.0dp" android:layout_marginEnd="8.0dp" />
+</LinearLayout>

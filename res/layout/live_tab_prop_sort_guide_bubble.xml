@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_content" android:background="@drawable/live_prop_guide_bubble_bg" android:layout_width="wrap_content" android:layout_height="34.0dp" android:layout_marginTop="8.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:text="@string/live_prop_sort_guide_bubble" android:paddingStart="0.0dp" android:paddingEnd="60.0dp" android:layout_marginStart="14.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView android:id="@id/iv_image" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_live_guide_bubble" android:contentDescription="@null" android:layout_marginEnd="5.0dp" app:layout_constraintEnd_toEndOf="@id/cl_content" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="14.0dp" android:layout_height="6.0dp" android:layout_marginTop="34.0dp" android:src="@drawable/ic_live_prop_sort_arrow" android:contentDescription="@null" android:layout_marginStart="0.0dp" app:layout_constraintStart_toStartOf="@id/cl_content" app:layout_constraintTop_toTopOf="@id/cl_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

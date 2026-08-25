@@ -1,0 +1,29 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "tv.danmaku.bili",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "tv.danmaku.bili.MainActivityV2",
+            "to": "*"
+          },
+          {
+            "from": "com.bilibili.search.main.BiliMainSearchActivity",
+            "to": "*"
+          }
+        ],
+        "UX": {
+          "supportRotationUxCompat": "false",
+          "isDraggable": "false"
+        }
+      }
+    }
+  ]
+}

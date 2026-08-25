@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.biz.revenuePlay.starKnight.view.LiveStarKnightPendantView android:id="@id/ll_star_knight_pendant_view" android:layout_width="80.0dp" android:layout_height="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

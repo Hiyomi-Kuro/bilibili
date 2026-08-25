@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/half_window_bar" android:background="@drawable/bg_top_rounded_corner" android:paddingTop="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="46.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Text1" android:id="@id/half_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginHorizontal="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/ic_chat_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" android:src="@drawable/ic_chat_close" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/ic_chat_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:src="@drawable/ic_chat_expand" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/ic_chat_close" app:layout_constraintTop_toTopOf="parent" />
+    </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+</merge>

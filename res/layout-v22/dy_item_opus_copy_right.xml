@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text3" android:ellipsize="end" android:id="@id/dy_opus_copy_right_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" style="@style/T12_cozy" />
+</FrameLayout>

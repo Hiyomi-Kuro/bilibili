@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5" android:id="@id/title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="@string/pegasus_pref_title_card_style_category" android:layout_marginStart="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/style_content" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+        <include android:id="@id/double_style" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/single_style" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/bili_pegasus_pref_card_style_item" />
+        <include android:id="@id/single_style" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/double_style" app:layout_constraintTop_toTopOf="parent" layout="@layout/bili_pegasus_pref_card_style_item" />
+    </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+</merge>

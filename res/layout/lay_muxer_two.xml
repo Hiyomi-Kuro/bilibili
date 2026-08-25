@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="160.0dp" android:layout_height="90.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/img_cover_first" android:layout_width="79.0dp" android:layout_height="90.0dp" fresco:actualImageScaleType="centerCrop" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/ic_default_view_vertical" fresco:roundBottomLeft="true" fresco:roundBottomRight="false" fresco:roundTopLeft="true" fresco:roundTopRight="false" fresco:roundedCornerRadius="3.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/img_cover_second" android:layout_width="79.0dp" android:layout_height="90.0dp" android:layout_marginLeft="2.0dp" android:layout_toRightOf="@id/img_cover_first" fresco:actualImageScaleType="centerCrop" fresco:fadeDuration="0" fresco:placeholderImage="@drawable/ic_default_view_vertical" fresco:roundBottomLeft="false" fresco:roundBottomRight="true" fresco:roundTopLeft="false" fresco:roundTopRight="true" fresco:roundedCornerRadius="3.0dp" />
+</RelativeLayout>

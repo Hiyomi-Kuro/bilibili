@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="100.0dp" android:layout_height="86.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/iv_upload_pic" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="6.0dp" app:actualImageScaleType="centerCrop" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" />
+    <FrameLayout android:id="@id/iv_delete_pic_bg" android:background="@drawable/mall_comment_delete_bg" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginEnd="14.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/iv_delete_pic" android:padding="4.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginEnd="14.0dp" app:actualImageResource="@drawable/ic_close" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundAsCircle="true" />
+    <ImageView android:id="@id/iv_edit" android:layout_width="30.0dp" android:layout_height="20.0dp" android:src="@drawable/mall_ic_comment_edit" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <ImageView android:id="@id/iv_gif" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="20.0dp" android:src="@drawable/mall_ic_comment_gif" app:layout_constraintBottom_toBottomOf="@id/iv_upload_pic" app:layout_constraintRight_toRightOf="@id/iv_upload_pic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

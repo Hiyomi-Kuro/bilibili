@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/honor_light" android:layout_width="290.0dp" android:layout_height="250.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" app:actualImageScaleType="fitCenter" />
+    <ImageView android:id="@id/honor_light_down" android:layout_width="match_parent" android:layout_height="250.0dp" android:src="@drawable/live_room_honor_light_down" android:alpha="0.0" android:scaleX="0.33" android:scaleY="0.33" android:rotation="20.0" />
+    <ImageView android:id="@id/honor_light_up" android:layout_width="match_parent" android:layout_height="250.0dp" android:src="@drawable/live_room_honor_light_up" android:alpha="0.0" android:scaleX="0.33" android:scaleY="0.33" android:rotation="-10.0" />
+    <com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout android:id="@id/honor_shimmer_layout" android:layout_width="209.0dp" android:layout_height="83.0dp" android:layout_marginTop="84.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" app:shimmer_angle="15" app:shimmer_animation_duration="3000" app:shimmer_color="#a0ffffff" app:shimmer_gradient_center_color_width="0.5">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/honor_title" android:layout_width="209.0dp" android:layout_height="83.0dp" app:actualImageScaleType="fitCenter" />
+    </com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/honor_title_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:layout_below="@id/honor_shimmer_layout" android:alpha="0.0" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/honor_particle" android:layout_width="290.0dp" android:layout_height="250.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" />
+</RelativeLayout>

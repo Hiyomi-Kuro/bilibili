@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background_color" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_background_color_2x2_1" />
+    <FrameLayout android:id="@id/image_container" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image_anim" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/image_shadow" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_texture" />
+    </FrameLayout>
+    <FrameLayout android:padding="13.0dp" android:layoutAnimation="@anim/shadow_rotate_anim" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image_anim_light" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_highlight" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/image_state_notice" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/image_state_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_widget_circle_mask" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/image_state_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

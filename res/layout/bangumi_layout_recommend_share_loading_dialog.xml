@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bangumi_shape_share_loading_bg" android:layout_width="90.0dp" android:layout_height="90.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/share_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:scaleType="centerInside" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/bangumi_generating_picture" />
+    <tv.danmaku.bili.widget.LoadingImageView android:id="@id/v_generate_loading" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" app:layout_constraintBottom_toBottomOf="@id/layout_poster" app:layout_constraintLeft_toLeftOf="@id/layout_poster" app:layout_constraintRight_toRightOf="@id/layout_poster" app:layout_constraintTop_toTopOf="@id/layout_poster" />
+</LinearLayout>

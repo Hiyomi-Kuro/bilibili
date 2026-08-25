@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="1.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.interaction.widgets.LiveEmoticonLinearLayout android:id="@id/emotion_layout" android:paddingTop="7.0dp" android:paddingRight="8.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="8.0dp">
+        <com.bilibili.bililive.infra.widget.view.AnimatedImageSpannableTextView android:textSize="13.0sp" android:layout_gravity="center_vertical" android:id="@id/text" android:paddingLeft="@dimen/live_home_danmu_item_left_padding" android:paddingTop="4.0dp" android:paddingRight="7.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="3.0dp" android:paddingStart="@dimen/live_home_danmu_item_left_padding" android:paddingEnd="7.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|center" android:id="@id/iv_emotion" android:visibility="gone" android:layout_width="45.0dp" android:layout_height="45.0dp" app:roundedCornerRadius="4.0dp" />
+    </com.bilibili.bililive.biz.uicommon.interaction.widgets.LiveEmoticonLinearLayout>
+    <ImageView android:gravity="center" android:id="@id/reply_icon" android:visibility="gone" android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_marginLeft="-11.0dp" android:layout_marginTop="-5.5dp" android:src="@drawable/live_danmaku_reply_icon" android:layout_toRightOf="@id/emotion_layout" />
+</RelativeLayout>

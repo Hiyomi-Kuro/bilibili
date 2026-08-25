@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bplus.privateletter.notice.danmu.IMDanmuReplyInputBar android:layout_gravity="bottom" android:id="@id/comment_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:emoticon_type="text_image" app:layout_behavior="com.bilibili.app.comm.comment2.input.view.EmoticonPanelScrollBehavior" app:show_sync_following="false" />
+    <com.bilibili.app.comm.comment2.input.view.EmoticonPanelView android:orientation="vertical" android:id="@id/emoticon_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.bilibili.app.comm.comment2.input.view.EmoticonPanelBehavior">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:id="@id/bottom_handle_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/bottom_handle_view" android:layout_width="48.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/shape_roundrect_comment_emoticon_drag_handler" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/theme_color_text_primary" android:gravity="center_vertical" android:id="@id/bottom_container_title" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="表情" android:paddingStart="12.0dp" />
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/bottom_handle_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.0dp" />
+        <FrameLayout android:id="@id/bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="284.0dp" />
+    </com.bilibili.app.comm.comment2.input.view.EmoticonPanelView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

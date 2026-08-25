@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="vertical" android:id="@id/like_layout" android:layout_width="wrap_content" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/like_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/bili_story_landscape_like_selector" android:scaleType="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="9.0dp" android:textColor="@color/white" android:gravity="right" android:id="@id/like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginTop="6.0dp" android:singleLine="true" android:shadowColor="@color/black_alpha20" android:shadowDy="2.0" android:shadowRadius="3.0" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

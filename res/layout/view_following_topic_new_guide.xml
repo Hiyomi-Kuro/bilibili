@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="47.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_hide" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:paddingEnd="8.0dp" android:layout_alignParentEnd="true" app:elevation="3.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="172.0dp" android:src="@drawable/ic_following_triangle" android:layout_marginStart="172.0dp" app:imageTint="@color/Pi5" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/guide" android:background="@drawable/following_bg_round_button_topic_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_below="@id/triangle" android:layout_marginEnd="8.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Wh0_u" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_guide_topic_new" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

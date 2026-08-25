@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/fl_tabs_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.bililive.infra.widget.view.WrapPagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@id/tabs" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorWrapOffset="21.0dp" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Widget.App.SlidingTab.LiveLandDialog" />
+        </FrameLayout>
+        <View android:id="@id/tabs_devider" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+        <com.bilibili.bililive.room.ui.roomv3.base.view.LiveRoomBaseViewPager android:id="@id/pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

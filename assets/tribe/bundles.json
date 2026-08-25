@@ -1,0 +1,22 @@
+[
+  {
+    "name": "host",
+    "versionCode": 18269297,
+    "versionName": "3.20.4",
+    "priority": 0,
+    "builtIn": false,
+    "forceDependencyVersion": true,
+    "modules": [],
+    "components": [],
+    "dataBindingPackages": [],
+    "dependencies": [],
+    "packageId": 126,
+    "features": [
+      {
+        "featureName": "default",
+        "compatibleVersions": []
+      }
+    ],
+    "activator": "host.internal.Activator"
+  }
+]

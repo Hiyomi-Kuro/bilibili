@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/player_options_title_block_key_words" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/block_list_trigger" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:gravity="center_vertical" android:id="@id/block_list_trigger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:checked="true" android:button="@drawable/ic_btn_player_options_switch_233" android:contentDescription="bbplayer_dmsetting_filterswitch" app:compoundButtonTint="@color/selector_bplayer_compoundbutton_normal" />
+</LinearLayout>

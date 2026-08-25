@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bili_upper_cover_multi_caption_bg_remind_dialog" android:layout_width="302.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:text="@string/upper_multi_guide_title" />
+        <ImageView android:layout_gravity="right" android:id="@id/ivClose" android:padding="12.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_close" />
+    </FrameLayout>
+    <ScrollView android:layout_width="302.0dp" android:layout_height="354.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="302.0dp" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llImageContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tvCancel" android:background="@drawable/multi_cover_guide_dialog_cancel_bg" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="226.0dp" android:layout_height="44.0dp" android:layout_marginLeft="38.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="38.0dp" android:layout_marginBottom="24.0dp" android:text="@string/multi_cover_guide_dialog_cancel" />
+    </LinearLayout>
+</LinearLayout>

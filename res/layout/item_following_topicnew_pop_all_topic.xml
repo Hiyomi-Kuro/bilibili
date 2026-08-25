@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.TintConsumeReativeLayout android:id="@id/rl_all_topic_pop" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_bg" android:background="@color/black_alpha40" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bplus.followingcard.widget.TintConsumeLinearLayout android:orientation="vertical" android:id="@id/ll_menu" android:background="@color/Wh0" android:paddingTop="19.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_16sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/following_card_margin" android:text="@string/following_hometab_topic_new_title_pop" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="@dimen/following_card_margin" />
+            <FrameLayout android:id="@id/cancel" android:paddingLeft="@dimen/following_card_margin" android:paddingRight="@dimen/following_card_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_close_interest_user" />
+            </FrameLayout>
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/following_card_margin" android:layout_marginTop="24.0dp" android:layout_marginRight="@dimen/following_card_margin" android:layout_marginStart="@dimen/following_card_margin" />
+        <com.bilibili.bplus.followingcard.widget.TintInterceptLinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/tv_all_topic" android:paddingLeft="@dimen/following_card_margin" android:paddingTop="18.0dp" android:paddingRight="@dimen/following_card_margin" android:paddingBottom="18.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_hometab_topic_new_title_pop_look_all_topics" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <ImageView android:gravity="center" android:layout_width="8.0dp" android:layout_height="12.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_arrow_right" android:layout_marginStart="8.0dp" />
+        </com.bilibili.bplus.followingcard.widget.TintInterceptLinearLayout>
+    </com.bilibili.bplus.followingcard.widget.TintConsumeLinearLayout>
+</com.bilibili.bplus.followingcard.widget.TintConsumeReativeLayout>

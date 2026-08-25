@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cp_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cp_search_bar_content" android:background="@color/Wh0" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" app:elevation="2.0dp">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/cp_bg_campus_search_bar" android:layout_width="0.0dp" android:layout_height="32.0dp" android:layout_marginLeft="12.0dp" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/cp_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_search_action" android:tint="@color/Ga4" />
+            <tv.danmaku.bili.widget.MaxContentSearchView android:id="@id/cp_search_bar" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:textCursorDrawable="@drawable/cp_drawable_search_cursor" app:closeIcon="@drawable/ic_search_close" app:queryHint="@string/cp_hint_search" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/cp_cancel" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/cp_container_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

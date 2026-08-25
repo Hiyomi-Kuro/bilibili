@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/show_popup" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <FrameLayout android:id="@id/web_view_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.column.ui.detail.WebViewPager android:id="@id/view_page" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <ViewStub android:id="@id/column_detail_guide" android:layout="@layout/bili_column_layout_detai_guide" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="bottom" android:id="@id/page_load_progress" android:background="@color/column_page_loading_bar_background" android:layout_width="match_parent" android:layout_height="2.0dp" android:progress="@color/theme_color_secondary" style="@style/ColumnProressBarHorizontal" />
+        <include android:id="@id/page_load_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bili_column_view_page_error" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</FrameLayout>

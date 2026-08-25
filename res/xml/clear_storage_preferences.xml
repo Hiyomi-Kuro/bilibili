@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_clear_storage" android:key="@string/pref_key_clear_storage" android:summary="@string/pref_summary_clear_storage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.preferences.custom.BLPreference_ClearImage android:persistent="false" android:title="@string/pref_title_clearImage" android:widgetLayout="@null" />
+    <com.bilibili.app.preferences.custom.BLPreference_ClearCommunicationRecord android:persistent="false" android:title="@string/pref_title_clearIM" android:key="clearIM" android:widgetLayout="@null" />
+</androidx.preference.PreferenceScreen>

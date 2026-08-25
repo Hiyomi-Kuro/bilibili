@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/left_icon_img" android:layout_width="16.0dp" android:layout_height="16.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/right_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" />
+</LinearLayout>

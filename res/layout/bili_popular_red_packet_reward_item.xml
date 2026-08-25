@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="36.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_reward" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/bili_default_image_tv" android:scaleType="fitCenter" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/live_pop_red_packet_second_text_color" android:gravity="center" android:id="@id/tv_reward_count" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

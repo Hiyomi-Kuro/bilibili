@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.room.ui.roomv3.errorstrategy.LiveRoomErrorStrategyView android:background="@color/daynight_color_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/toolbar_error" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" style="?toolbarStyle" />
+    <ScrollView android:id="@id/sv_error_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbar_error">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.bililive.biz.uicommon.widget.LiveResBiliImageView android:id="@id/root_error_image" android:layout_width="159.0dp" android:layout_height="110.0dp" android:layout_marginTop="70.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/gray_dark_2" android:gravity="center" android:id="@id/error_tips" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:lineSpacingExtra="4.0dp" />
+            <LinearLayout android:id="@id/ll_room_pwd" android:background="@drawable/bili_live_bg_room_pwd_input" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="30.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="20.0dp">
+                <com.bilibili.magicasakura.widgets.TintEditText android:textSize="13.0sp" android:textColor="@color/Ga10" android:textColorHint="@color/hint_text_color" android:id="@id/et_pwd" android:background="@null" android:paddingLeft="18.0dp" android:paddingTop="4.0dp" android:paddingRight="18.0dp" android:paddingBottom="4.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="@string/live_room_encryption_edit_hint" android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" android:layout_weight="1.0" android:inputType="textPassword" android:imeOptions="actionDone" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_clear_room_pwd" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_clear_input" />
+            </LinearLayout>
+            <com.bilibili.magicasakura.widgets.TintButton android:enabled="false" android:textSize="14.0sp" android:textColor="@color/live_player_feedback_submit_text_color" android:id="@id/bt_enter_room" android:background="@drawable/live_shape_round_rect_enter_room_bt_pink_corner_4" android:visibility="gone" android:layout_width="129.0dp" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:minHeight="34.0dp" android:text="@string/live_room_encryption_enter_room" style="?buttonBarPositiveButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</com.bilibili.bililive.room.ui.roomv3.errorstrategy.LiveRoomErrorStrategyView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="102.0dp" android:layout_height="64.0dp" android:layout_marginRight="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followingcard.widget.AllDayImageView android:id="@id/folllowing_topic_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:roundBottomLeft="true" app:roundBottomRight="true" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="@dimen/cover_round_radius_big" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/folllowing_tv_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="10.0dp" android:text="" android:maxLines="2" android:shadowColor="@color/white_alpha20" android:shadowDy="1.0" android:shadowRadius="2.0" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

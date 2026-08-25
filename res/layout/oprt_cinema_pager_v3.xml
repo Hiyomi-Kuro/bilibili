@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/bangumi_cinema_tab_height">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/btn_back" android:paddingLeft="15.0dp" android:paddingTop="20.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bangumi_ic_default_back_v3" />
+            <com.bilibili.ogv.operation.entrance.cinema.BangumiPagerSlidingTabStrip android:layout_gravity="center_vertical" android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" android:overScrollMode="never" app:pstsIndicatorBottomMargin="4.0dp" app:pstsIndicatorHeight="3.0dp" app:pstsTabBackground="@null" app:pstsTabSelectedTitleSize="18.0sp" app:pstsTextDynamicUpdate="true" style="@style/Widget.App.SubTab.BangumiCinema" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

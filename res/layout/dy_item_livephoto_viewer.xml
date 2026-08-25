@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:backgroundImage="@android:color/transparent" app:failureImage="@drawable/following_default_image_holder" app:placeholderImage="@drawable/following_default_image_holder" />
+    <tv.danmaku.gifplayer.PlayerImageView android:layout_gravity="center" android:id="@id/player" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:fillType="fixXY" app:urlType="typeNet" />
+</FrameLayout>

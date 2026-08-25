@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/userresearch_score_item_root" android:background="@drawable/live_room_shape_bg_user_research_card" android:layout_width="266.0dp" android:layout_height="76.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout" android:layout_width="228.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="10.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/avatar" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/live_room_user_research_card_icon" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/text" android:layout_width="210.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="@id/avatar" app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+    </LinearLayout>
+    <com.bilibili.bililive.biz.uicommon.widget.LiveRoomRatingBar android:id="@id/rating" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="10.0dp" app:emptyDrawable="@drawable/live_room_user_research_card_star" app:filledDrawable="@drawable/live_room_user_research_card_star_checked" app:layout_constraintTop_toBottomOf="@id/layout" app:size="30.0dp" app:starNumber="5" app:starPadding="15.0dp" />
+    <ImageView android:id="@id/iv_close" android:background="@drawable/bg_live_follow_card_close_corner_8" android:padding="4.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_live_match_card_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

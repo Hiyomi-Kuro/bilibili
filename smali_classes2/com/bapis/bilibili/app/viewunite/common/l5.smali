@@ -1,0 +1,26 @@
+.class public interface abstract Lcom/bapis/bilibili/app/viewunite/common/l5;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getLabelTheme()Ljava/lang/String;
+.end method
+
+.method public abstract getLabelThemeBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getPath()Ljava/lang/String;
+.end method
+
+.method public abstract getPathBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getText()Ljava/lang/String;
+.end method
+
+.method public abstract getTextBytes()Lcom/google/protobuf/ByteString;
+.end method

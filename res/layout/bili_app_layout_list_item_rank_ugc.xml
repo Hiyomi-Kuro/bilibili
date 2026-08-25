@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_list_item_rank_sub_video" />
+    <include layout="@layout/bili_app_layout_list_item_rank_sub_more_list" />
+    <include layout="@layout/bili_app_layout_list_item_rank_more_btn" />
+</LinearLayout>

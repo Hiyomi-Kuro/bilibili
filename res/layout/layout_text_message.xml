@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverTextView android:textSize="16.0sp" android:gravity="bottom" android:id="@id/text" android:paddingLeft="14.0dp" android:paddingTop="7.0dp" android:paddingRight="14.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

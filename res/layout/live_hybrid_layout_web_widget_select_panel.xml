@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_primary" android:gravity="center" android:id="@id/title" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </FrameLayout>
+    <com.bililive.bililive.infra.hybrid.widget.LiveNumberPicker android:id="@id/wheel_picker" android:layout_width="match_parent" android:layout_height="wrap_content" app:mnpEditable="false" app:mnpSeparatorColor="@color/theme_color_bg_gray_2" app:mnpTextColor="@color/theme_color_text_primary" app:mnpTextSize="16.0sp" app:mnpTextStyle="bold" app:mnpWrapped="false" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/theme_color_secondary" android:layout_gravity="center|bottom" android:id="@id/confirm" android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="8.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="@string/live_hybrid_confirm" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+    </FrameLayout>
+</LinearLayout>

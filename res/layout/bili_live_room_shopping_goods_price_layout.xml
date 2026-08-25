@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="22.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_goods_price" android:layout_width="wrap_content" android:layout_height="22.0dp">
+        <TextView android:textColor="@color/pink" android:ellipsize="end" android:id="@id/tv_goods_price" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/pink" android:ellipsize="end" android:id="@id/tv_price_unit" android:paddingTop="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" />
+    </LinearLayout>
+    <com.bilibili.bililive.room.biz.shopping.view.LiveShoppingPriceTextView android:id="@id/tv_price" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22.0dp" />
+</FrameLayout>

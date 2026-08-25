@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12.0dp" android:textColor="@color/white" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="130.0dp" android:text="@string/bili_editor_create_live_reserve" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14.0sp" android:textColor="@color/upper_white" android:id="@id/et_title" android:background="@drawable/editor_selector_input_text" android:paddingLeft="16.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="32.0dp" android:minHeight="40.0dp" android:hint="@string/bili_editor_danmaku_defalut_reverse_title" android:maxLines="1" android:singleLine="true" android:maxLength="10" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/upper_gray_dark" android:gravity="end|center" android:id="@id/word_count_text_view" android:layout_width="40.0dp" android:layout_height="wrap_content" android:layout_marginRight="17.0dp" android:layout_marginBottom="14.0dp" android:text="@string/upper_l_60_60" android:layout_alignRight="@id/et_title" android:layout_alignBottom="@id/et_title" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/upper_white" android:gravity="center_vertical" android:id="@id/et_subtitle" android:background="@drawable/editor_selector_input_text" android:paddingLeft="16.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="32.0dp" android:hint="@string/bili_editor_time_default_title" android:maxLines="1" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+            <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_white" android:id="@id/btn_cancel" android:background="@drawable/editor_shape_editor_dialog_cancel" android:layout_width="120.0dp" android:layout_height="32.0dp" android:text="@string/upper_cancel" />
+            <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_white" android:id="@id/btn_confirm" android:background="@drawable/editor_shape_editor_dialog_confirm" android:layout_width="120.0dp" android:layout_height="32.0dp" android:layout_marginLeft="24.0dp" android:text="@string/upper_sure" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/container_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/cp_app_bar" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0.0dp" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+                <androidx.compose.ui.platform.ComposeView android:id="@id/campus_head_compose" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/cp_index_tab_top_bar_height" android:elevation="0.0dp" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_collapseMode="pin" app:layout_constraintTop_toTopOf="parent" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+        <com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout android:id="@id/cp_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar" app:refreshStyle="equip_style">
+            <androidx.fragment.app.FragmentContainerView android:id="@id/cp_container_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.bilibili.campus.widget.loading.LoadingView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_gravity="bottom" android:id="@id/bottom_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/cp_layout_index_bottom_bar" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_im_setting" android:id="@id/message_setting" android:title="@string/im_message_setting" />
+    <item android:icon="@drawable/ic_im_auto_reply" android:id="@id/auto_reply" android:visible="false" android:title="@string/im_auto_reply" />
+    <item android:icon="@drawable/ic_upper_helper" android:id="@id/upper_helpr" android:visible="false" android:title="@string/im_upper_helper" />
+    <item android:icon="@drawable/ic_anchor_helper" android:id="@id/anchor_helper" android:visible="false" android:title="@string/im_anchor_conversation" />
+    <item android:icon="@drawable/ic_group_message_helper" android:id="@id/group_message_helper" android:title="@string/im_group_message_helper" />
+    <item android:icon="@drawable/ic_svg_contact" android:id="@id/contact_home" android:visible="true" android:title="@string/title_contacts_list" />
+    <item android:icon="@drawable/ic_contribute_enter" android:id="@id/contribute_enter" android:visible="false" android:title="@string/im_contribute_enter" />
+</menu>

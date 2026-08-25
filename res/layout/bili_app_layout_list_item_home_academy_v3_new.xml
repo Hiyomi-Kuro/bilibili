@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="140.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/academy_cover" android:layout_width="140.0dp" android:layout_height="88.0dp" app:placeholderImage="@drawable/ic_upper_default_video" app:placeholderImageScaleType="fitCenter" app:roundedCornerRadius="8.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/upper_txt_color_one" android:ellipsize="end" android:id="@id/academy_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" android:layout_below="@id/academy_cover" android:lineSpacingExtra="1.0dp" android:layout_marginEnd="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_10" android:textColor="@color/upper_white_no_trans" android:gravity="center" android:id="@id/academy_ugc_pay" android:background="@drawable/upper_archive_ugc_pay_label_bg" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="14.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:text="@string/upper_ugc_pay_label" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

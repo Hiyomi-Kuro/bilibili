@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/icon" android:background="?actionBarItemBackground" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_margin="12.0dp" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_icon" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/svga_iv" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/animator_icon" android:visibility="visible" android:layout_width="30.0dp" android:layout_height="30.0dp" style="@style/Widget.App.StaticImageView.Thumb.GameMenu30dp" />
+</merge>

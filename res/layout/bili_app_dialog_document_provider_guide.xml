@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.Title" android:id="@id/guide_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="@dimen/item_large_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:text="@string/storage_authorization_guide_content" />
+    <ImageView android:layout_width="220.0dp" android:layout_height="154.0dp" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="@dimen/item_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:layout_marginBottom="@dimen/item_half_spacing" android:src="@drawable/ic_document_provider_guide" android:scaleType="centerCrop" android:layout_below="@id/guide_txt" android:layout_centerHorizontal="true" />
+</RelativeLayout>

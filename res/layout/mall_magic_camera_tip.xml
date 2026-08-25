@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mall_magic_camera_tip_bg" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/iv_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:actualImageScaleType="centerInside" />
+        <TextView android:textSize="16.0dp" android:textColor="#fff" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_magic_partner_tips" />
+    </LinearLayout>
+</LinearLayout>

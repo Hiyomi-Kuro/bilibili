@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootLl" android:tag="layout/bangumi_include_layout_actors_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center_vertical" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bangumi_info_span_actors" android:lines="1" android:paddingStart="12.0dp" />
+    <com.bilibili.bangumi.ui.widget.FixedHorizontalSlidingConflictRecyclerview android:orientation="horizontal" android:id="@id/recycler_view_actors" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

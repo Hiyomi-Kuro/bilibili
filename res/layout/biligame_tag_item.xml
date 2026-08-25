@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga9" android:id="@id/biligame_tag" android:background="@drawable/biligame_tag_item_background" android:paddingLeft="14.0dp" android:paddingTop="6.0dp" android:paddingRight="14.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    <com.bilibili.biligame.iconfont.IconFontTextView android:textSize="22.0sp" android:textColor="#889197" android:id="@id/biligame_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-14.0dp" android:layout_marginTop="2.0dp" android:text="@string/ic_gc_close_circle_full" android:layout_toRightOf="@id/biligame_tag" />
+</RelativeLayout>

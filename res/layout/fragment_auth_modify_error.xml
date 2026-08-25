@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_bg" android:layout_width="140.0dp" android:layout_height="140.0dp" android:src="@drawable/auth_check_error" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_unsupport_modify" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/auth_check_tips" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:layout_gravity="center|bottom" android:id="@id/tv_modify_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/modify_padding_bootom" android:text="@string/auth_modify_agreement" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

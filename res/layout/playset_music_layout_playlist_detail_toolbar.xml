@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconTintColor="@color/Ga7" app:layout_collapseMode="pin" style="@style/PlaySetToolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga8" android:ellipsize="end" android:id="@id/tv_playlist_toolbar_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/playset_folder" android:maxLines="1" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_playlist_search" android:background="?android:selectableItemBackground" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/playset_ic_search" android:scaleType="center" android:tint="@color/Ga7" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_playlist_overflow" android:background="?android:selectableItemBackground" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/ic_overflow" android:scaleType="center" android:tint="@color/Ga7" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintToolbar>

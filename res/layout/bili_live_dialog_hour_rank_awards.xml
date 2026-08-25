@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/content" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp">
+        <com.opensource.svgaplayer.SVGAImageView android:id="@id/svgaBg" android:layout_width="280.0dp" android:layout_height="280.0dp" android:scaleType="fitXY" android:layout_centerInParent="true" app:autoPlay="false" app:loopCount="-1" />
+        <com.bilibili.bililive.biz.uicommon.widget.LiveResBiliImageView android:background="@null" android:layout_width="288.0dp" android:layout_height="208.0dp" android:layout_marginTop="64.0dp" android:layout_centerHorizontal="true" app:image_url_suffix="live_dialog_hour_rank_awards_bg.webp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/imgFace" android:layout_width="62.0dp" android:layout_height="62.0dp" android:layout_marginTop="51.0dp" android:layout_centerHorizontal="true" app:placeholderImage="@drawable/bili_default_avatar" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" />
+        <ImageView android:layout_width="104.0dp" android:layout_height="104.0dp" android:layout_marginTop="30.0dp" android:src="@drawable/bili_live_dialog_hour_rank_awards_user_crown" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/live_room_hour_rank_awards_name_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/textUserName" android:layout_width="144.0dp" android:layout_height="wrap_content" android:layout_marginTop="126.0dp" android:lines="1" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_room_hour_rank_awards_name_text_color" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/textContent" android:layout_width="144.0dp" android:layout_height="wrap_content" android:layout_marginTop="166.0dp" android:lines="2" android:layout_centerHorizontal="true" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/rankImg" android:layout_width="106.0dp" android:layout_height="20.0dp" android:layout_marginTop="220.0dp" android:layout_centerHorizontal="true" app:actualImageScaleType="centerInside" />
+        <ImageView android:id="@id/close" android:padding="6.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ic_live_close_circle_transparent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

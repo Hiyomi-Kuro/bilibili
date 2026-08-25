@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/upper_editor_gray" android:layout_width="match_parent" android:layout_height="@dimen/bili_editor_text_panel_height_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tab_strip" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_alignParentTop="true" style="@style/Uper_Editor_slidingTab.Category.NoIndicator" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/top" />
+</RelativeLayout>

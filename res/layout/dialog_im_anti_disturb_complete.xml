@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_roundrect_dialog_bg" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:maxWidth="240.0dp" android:text="@string/im_anti_disturb_setting_complete" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" />
+        <CheckBox android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="left" android:id="@id/cb_clear" android:paddingLeft="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="16.0dp" android:button="@drawable/selector_checkbox" android:text="@string/im_anti_disturb_setting_clear" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_button_text_color_white_grey_enable" android:gravity="center" android:id="@id/btn_confirm" android:background="@drawable/selector_button_solid_pink_gray_enable" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="34.0dp" android:text="@string/ok" />
+            <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" app:progressIndeterminateTint="@color/Wh0_u" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="left" android:id="@id/rank_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/rank_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shape_search_discover_defalut_icon" app:placeholderImage="@drawable/shape_search_discover_defalut_icon" />
+</merge>

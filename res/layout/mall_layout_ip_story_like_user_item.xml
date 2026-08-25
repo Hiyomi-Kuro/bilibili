@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="26.0dp" android:layout_height="26.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/iv_avatar" android:layout_width="26.0dp" android:layout_height="26.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/default_avater" app:roundAsCircle="true" app:roundingBorderColor="#ffffff" app:roundingBorderWidth="1.0dp" style="@style/mallSponsorAvatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

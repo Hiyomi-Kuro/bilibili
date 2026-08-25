@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/persistent_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_blank" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

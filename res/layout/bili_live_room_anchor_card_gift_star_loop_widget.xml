@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="46.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_gift_star_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:roundedCornerRadius="4.0dp" />
+        <ViewSwitcher android:layout_gravity="center_vertical" android:id="@id/vs_anchor_card_gift_star" android:layout_width="wrap_content" android:layout_height="46.0dp" android:inAnimation="@anim/live_gift_pendant_task_anim_in" android:outAnimation="@anim/live_gift_pendant_task_anim_out" android:flipInterval="5000" android:autoStart="false" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|center" android:id="@id/iv_gift_star_logo" android:layout_width="44.0dp" android:layout_height="44.0dp" app:roundedCornerRadius="4.0dp" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+    </FrameLayout>
+</merge>

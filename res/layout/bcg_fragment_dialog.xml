@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/bcg_view_stub_wait" android:layout="@layout/bcg_layout_inline" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    <ViewStub android:id="@id/bcg_view_stub_exit" android:layout="@layout/bcg_layout_exit" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/bcg_view_stub_end" android:layout="@layout/bcg_layout_end" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/bcg_view_stub_confirm" android:layout="@layout/bcg_layout_confirm" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/bcg_view_stub_general_image" android:layout="@layout/biligame_dialog_cloudgame_general_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/bcg_view_stub_gif_loading" android:layout="@layout/biligame_dialog_gif" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

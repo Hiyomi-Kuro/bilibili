@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/shape_pegasus_rect_round_4_daynight_window" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_margin="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dynamic_item_one" layout="@layout/bili_channel_home_item_channel_dynamic_item" />
+    <include android:id="@id/dynamic_item_another" layout="@layout/bili_channel_home_item_channel_dynamic_item" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

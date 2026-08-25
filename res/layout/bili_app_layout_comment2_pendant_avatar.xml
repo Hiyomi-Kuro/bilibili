@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/bili_default_avatar" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" style="@style/Widget.App.StaticImageView.Thumb.Avatar" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/pendant" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="fitXY" app:aspectRadioHeight="1" app:aspectRadioWidth="1" style="@style/Widget.App.StaticImageView.Thumb.Avatar" />
+    <ImageView android:id="@id/verify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" />
+</merge>

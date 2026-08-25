@@ -1,0 +1,114 @@
+.class final Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$p1Data$2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/a<",
+        "Lmf0/e;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
+    }
+    d2 = {
+        "Lmf0/e;",
+        "invoke",
+        "()Lmf0/e;",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$p1Data$2;->this$0:Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$p1Data$2;->invoke()Lmf0/e;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invoke()Lmf0/e;
+    .locals 3
+
+    .line 2
+    new-instance v0, Lmf0/e;
+
+    iget-object v1, p0, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$p1Data$2;->this$0:Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;
+
+    invoke-virtual {v1}, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;->e()Lmf0/d;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$p1Data$2;->this$0:Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;
+
+    invoke-static {v2}, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;->a(Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore;)Lcom/bilibili/bililive/videoliveplayer/net/beans/gateway/roominfo/BiliLiveRoomInfo;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    .line 3
+    new-instance v2, Lcom/bilibili/bililive/videoliveplayer/net/beans/gateway/roominfo/BiliLiveRoomInfo;
+
+    invoke-direct {v2}, Lcom/bilibili/bililive/videoliveplayer/net/beans/gateway/roominfo/BiliLiveRoomInfo;-><init>()V
+
+    .line 4
+    :cond_0
+    invoke-direct {v0, v1, v2}, Lmf0/e;-><init>(Lmf0/a;Lcom/bilibili/bililive/videoliveplayer/net/beans/gateway/roominfo/BiliLiveRoomInfo;)V
+
+    return-object v0
+.end method

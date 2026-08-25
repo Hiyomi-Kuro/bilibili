@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/txy_protocol_show_back" android:layout_width="25.0dp" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:layout_marginStart="@dimen/txy_protocol_margin_size" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/txy_huiyan_icon_back" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/txy_black" android:id="@id/txy_protocol_title_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/txy_protocol_details" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/txy_wait_cancel_margin_top" android:layout_marginTop="@dimen/txy_protocol_margin_size" android:layout_marginRight="@dimen/txy_wait_cancel_margin_top" android:layout_marginBottom="@dimen/txy_protocol_margin_size" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txy_protocol_title_show">
+        <TextView android:textColor="@color/txy_black" android:id="@id/txy_protocol_context_text1" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingMultiplier="1.7" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.imageeditor.view.widget.RoundColorView android:id="@id/captionColor" android:layout_width="@dimen/image_edit_editor_item_color_select_width" android:layout_height="@dimen/image_edit_editor_item_color_select_height" app:image_edit_round_radius_1="22.0dp" app:image_edit_round_radius_2="2.0dp" app:image_edit_round_radius_3="1.0dp" app:image_edit_round_select_color="#333333"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/theme_color_text_primary" android:layout_gravity="center_vertical" android:id="@id/live_apply_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dp" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/live_apply_avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_apply_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_apply_avatar_frame" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/theme_color_text_primary" android:layout_gravity="center_vertical" android:id="@id/live_apply_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+</LinearLayout>

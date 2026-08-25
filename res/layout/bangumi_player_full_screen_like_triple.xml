@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="210.0dp" android:layout_height="150.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_like_triple" android:layout_width="210.0dp" android:layout_height="150.0dp" app:lottie_autoPlay="false" app:lottie_fileName="bangumi_full_screen_like_triple.json" app:lottie_loop="false" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_vertical" android:id="@id/indicator_red_icon" android:background="@drawable/bg_circle_red" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginEnd="7.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/indicator" android:layout_width="16.0dp" android:layout_height="16.0dp" android:cropToPadding="true" app:imageTint="@color/Ga5" app:srcCompat="@drawable/ic_vector_arrow_right" />
+</LinearLayout>

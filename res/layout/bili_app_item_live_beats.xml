@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/select_btn" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:compoundButtonTint="@color/selector_live_room_compoundbutton_normal" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/theme_color_live_horizontal_card_gray_text" android:gravity="center_vertical" android:id="@id/beats_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" />
+</LinearLayout>

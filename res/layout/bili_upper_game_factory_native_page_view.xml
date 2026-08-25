@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/game_material_tab_layout" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginLeft="12.0dp" android:layout_marginBottom="20.0dp" app:tabBackground="@drawable/upper_shape_game_factory_tag_background" app:tabIndicator="@null" app:tabMode="auto" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/white" app:tabTextColor="#ff9499a0" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/game_material_view_pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

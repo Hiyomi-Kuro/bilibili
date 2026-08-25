@@ -1,0 +1,12 @@
+{
+  "qq": {
+    "appId": "100951776"
+  },
+  "sina": {
+    "appKey": "660369000",
+    "redirectUrl": "http://sns.whalecloud.com/sina2/callback"
+  },
+  "wechat": {
+    "appId": "wxd54bd75ad89d33a0"
+  }
+}

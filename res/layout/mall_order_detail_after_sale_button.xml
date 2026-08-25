@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mall_after_sale_btn_bg" android:layout_width="80.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center" android:id="@id/detail_after_sale_btn_tv" android:layout_width="60.0dp" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+</FrameLayout>

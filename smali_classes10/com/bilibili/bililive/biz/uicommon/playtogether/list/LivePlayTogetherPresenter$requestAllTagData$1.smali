@@ -1,0 +1,361 @@
+.class final Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;->e(ZLcom/bilibili/bililive/biz/uicommon/playtogether/list/e;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lsf3/p<",
+        "Lkotlinx/coroutines/h0;",
+        "Lkotlin/coroutines/c<",
+        "-",
+        "Lgf3/s;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/h0;",
+        "Lgf3/s;",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.bilibili.bililive.biz.uicommon.playtogether.list.LivePlayTogetherPresenter$requestAllTagData$1"
+    f = "LivePlayTogetherPresenter.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $isRefresh:Z
+
+.field final synthetic $param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+.field label:I
+
+.field final synthetic this$0:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;
+
+
+# direct methods
+.method constructor <init>(ZLcom/bilibili/bililive/biz/uicommon/playtogether/list/e;Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;Lkotlin/coroutines/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;",
+            "Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$isRefresh:Z
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->this$0:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;
+
+    .line 6
+    .line 7
+    const/4 p1, 0x2
+
+    .line 8
+    invoke-direct {p0, p1, p4}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/c;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/c<",
+            "*>;)",
+            "Lkotlin/coroutines/c<",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p1, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;
+
+    .line 2
+    .line 3
+    iget-boolean v0, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$isRefresh:Z
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->this$0:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;
+
+    .line 8
+    .line 9
+    invoke-direct {p1, v0, v1, v2, p2}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;-><init>(ZLcom/bilibili/bililive/biz/uicommon/playtogether/list/e;Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;Lkotlin/coroutines/c;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/h0;
+
+    check-cast p2, Lkotlin/coroutines/c;
+
+    invoke-virtual {p0, p1, p2}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->invoke(Lkotlinx/coroutines/h0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/h0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/h0;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lgf3/s;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;
+
+    sget-object p2, Lgf3/s;->a:Lgf3/s;
+
+    invoke-virtual {p1, p2}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 16
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    iget v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->label:I
+
+    .line 7
+    .line 8
+    if-nez v1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-static/range {p1 .. p1}, Lkotlin/f;->b(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {}, Lcom/bilibili/base/BiliContext;->e()Landroid/app/Application;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-static {v1}, Lq20/b;->f(Landroid/content/Context;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v12
+
+    .line 21
+    sget-object v1, Lcom/bilibili/bililive/extension/api/ApiClient;->a:Lcom/bilibili/bililive/extension/api/ApiClient;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1}, Lcom/bilibili/bililive/extension/api/ApiClient;->c()Lcom/bilibili/bililive/extension/api/home/n;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    iget-boolean v3, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$isRefresh:Z
+
+    .line 28
+    .line 29
+    iget-object v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;->b()J
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-wide v4
+
+    .line 35
+    iget-object v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;->a()J
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-wide v6
+
+    .line 41
+    iget-object v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$param:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;
+
+    .line 42
+    .line 43
+    invoke-virtual {v1}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/e;->c()Ljava/lang/String;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v8
+
+    .line 47
+    iget-object v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->this$0:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;
+
+    .line 48
+    .line 49
+    invoke-static {v1}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;->b(Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;)I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v9
+
+    .line 53
+    const/16 v10, 0x14
+
+    .line 54
+    .line 55
+    const-string v13, ""
+
+    .line 56
+    .line 57
+    const-string v14, ""
+
+    .line 58
+    .line 59
+    new-instance v15, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1$a;
+
+    .line 60
+    .line 61
+    iget-object v1, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->this$0:Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;
+
+    .line 62
+    .line 63
+    iget-boolean v11, v0, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1;->$isRefresh:Z
+
+    .line 64
+    .line 65
+    invoke-direct {v15, v1, v11}, Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter$requestAllTagData$1$a;-><init>(Lcom/bilibili/bililive/biz/uicommon/playtogether/list/LivePlayTogetherPresenter;Z)V
+
+    .line 66
+    .line 67
+    .line 68
+    const/4 v1, 0x0
+
+    .line 69
+    move v11, v1
+
+    .line 70
+    invoke-virtual/range {v2 .. v15}, Lcom/bilibili/bililive/extension/api/home/n;->j(IJJLjava/lang/String;IIIILjava/lang/String;Ljava/lang/String;Lqx1/b;)V
+
+    .line 71
+    .line 72
+    .line 73
+    sget-object v1, Lgf3/s;->a:Lgf3/s;
+
+    .line 74
+    .line 75
+    return-object v1
+
+    .line 76
+    :cond_0
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    .line 77
+    .line 78
+    const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 79
+    .line 80
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 81
+    .line 82
+    .line 83
+    throw v1
+.end method

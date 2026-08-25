@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/upper_open_screen_padding_left" android:paddingRight="@dimen/upper_open_screen_padding_left" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/static_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:actualImageScaleType="fitCenter" app:roundedCornerRadius="8.0dp" />
+    <ImageView android:id="@id/iv_close" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/ic_uper_open_screen_close" android:layout_below="@id/static_image" android:layout_centerHorizontal="true" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_image" android:layout_width="match_parent" android:layout_height="500.0dp" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    <com.bilibili.upper.module.uppercenter.openscreen.CountDownView android:id="@id/count_down_view" android:background="@drawable/upper_bg_count_down" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginBottom="12.0dp" android:layout_above="@id/svga_image" android:layout_alignRight="@id/svga_image" />
+</RelativeLayout>

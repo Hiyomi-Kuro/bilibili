@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/bangumi_controller_card_item_0" android:background="@drawable/bangumi_bg_controller_card" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:tag="binding_1" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginStart="10.0dp" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dp" android:singleLine="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="12.0dp" />
+</LinearLayout>

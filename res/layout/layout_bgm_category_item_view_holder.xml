@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:layout_width="match_parent" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/sdv_cover" android:layout_width="30.0dp" android:layout_height="30.0dp" fresco:placeholderImage="@drawable/ic_editor_placeholder_default" />
+    <TextView android:textSize="10.0dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+</LinearLayout>

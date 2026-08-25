@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/customer_photo_view" android:background="@drawable/mall_submit_customer_id_photo_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/customer_photo_review" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:aspectRadioHeight="0" app:aspectRadioWidth="0" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/customer_photo_add_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/customer_photo_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_customer_id_photo_add" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga4" android:id="@id/customer_photo_add_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/customer_photo_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:progressIndeterminateTint="@color/Pi5" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="right|top" android:id="@id/customer_photo_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_customer_id_photo_delete" />
+</FrameLayout>

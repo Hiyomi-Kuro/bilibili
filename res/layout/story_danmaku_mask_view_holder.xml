@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.playerbizcommonv2.danmaku.view.PlayerDanmakuOperationSwitchView android:id="@id/story_options_danmaku_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" app:tips="@string/danmaku_mask_tip_short" app:tipsColor="@color/Text2" app:title="@string/danmaku_mask_title" />
+    <com.bilibili.playerbizcommonv2.danmaku.view.PlayerDanmakuOperationSwitchView android:id="@id/story_options_danmaku_fold" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" app:tips="@string/danmaku_fold_tip_short" app:tipsColor="@color/Text2" app:title="@string/danmaku_fold_title" />
+    <View android:id="@id/line" style="@style/BPlayer_CommonUnderline" />
+</LinearLayout>

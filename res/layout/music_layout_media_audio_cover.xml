@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/audio_cover_view" android:layout_width="72.0dp" android:layout_height="72.0dp" android:scaleType="centerInside" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="2.0dp" app:thumbHeight="200.0dp" app:thumbRatio="ratio_1_1" app:thumbWidth="200.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

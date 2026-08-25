@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<storyboard sceneWidth="720" sceneHeight="1280">
+	<track source=":1" clipStart="0" clipDuration="dynamicLength">
+		<effect name="transform">
+			<animation paramName="scaleX">
+				<key time="0" value="1"/>
+				<key time="dynamicLength" value="1.33"/>
+			</animation>
+			<animation paramName="scaleY">
+				<key time="0" value="1"/>
+				<key time="dynamicLength" value="1.33"/>
+			</animation>
+		</effect>
+	</track>
+</storyboard>

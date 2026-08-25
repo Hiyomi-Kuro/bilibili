@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/home_tab_painting_card_icon_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="18.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mall_home_tab_painting_video_icon" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/mall_home_tab_painting_video_text" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textColor="#ffffff" android:id="@id/mall_home_tab_painting_video_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/mall_home_tab_painting_video_icon" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.ad.adview.story.card.widget.AdStoryQPriceWidget android:layout_gravity="bottom" android:id="@id/story_subcard_q_second" android:background="@drawable/ad_story_q_price_card_bg" android:visibility="gone" android:layout_width="260.0dp" android:layout_height="142.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="12.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/story_subcard_q_first" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.ad.adview.story.card.widget.AdStoryQTopWidget android:id="@id/story_subcard_q_top" android:layout_width="260.0dp" android:layout_height="52.0dp" android:layout_marginBottom="16.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="18.0dp" />
+        <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_ad_layout_story_subcard_first" />
+    </LinearLayout>
+</FrameLayout>

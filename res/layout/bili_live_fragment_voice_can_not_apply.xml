@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_round_corner_15_color_theme_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/daynight_color_text_title" android:gravity="center" android:id="@id/reason_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/line_1" android:background="@color/live_new_medal_all_experience" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10.0dp" />
+        <com.bilibili.magicasakura.widgets.TintView android:id="@id/line_2" android:background="@color/live_new_medal_all_experience" android:layout_width="0.5dp" android:layout_height="44.0dp" android:layout_below="@id/line_1" android:layout_centerHorizontal="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="17.0sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/cancel" android:layout_width="135.0dp" android:layout_height="44.0dp" android:text="@string/live_voice_cancel" android:layout_toLeftOf="@id/line_2" android:layout_below="@id/line_1" android:layout_toStartOf="@id/line_2" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="17.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/confirm" android:layout_width="135.0dp" android:layout_height="44.0dp" android:text="@string/live_voice_follow_and_join_voice" android:layout_toRightOf="@id/line_2" android:layout_below="@id/line_1" android:layout_toEndOf="@id/line_2" />
+    </RelativeLayout>
+</LinearLayout>

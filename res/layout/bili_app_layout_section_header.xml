@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="centerInside" android:layout_centerVertical="true" app:actualImageScaleType="centerInside" app:aspectRadioHeight="1" app:aspectRadioWidth="1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:id="@id/title" android:padding="@dimen/item_half_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Wh0_u" android:textColorLink="@color/theme_color_secondary" android:gravity="center_vertical" android:id="@id/indicator" android:background="@drawable/selector_textview_gray_round" android:paddingLeft="@dimen/item_half_spacing" android:paddingRight="@dimen/item_half_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dp" android:drawablePadding="4.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

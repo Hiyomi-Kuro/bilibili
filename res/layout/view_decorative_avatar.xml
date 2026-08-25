@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/live_root" android:layout_width="60.0dp" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerInParent="true" app:roundAsCircle="true" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/decorate" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/mark_space" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerInParent="true">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|bottom" android:id="@id/mark" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+    </FrameLayout>
+</RelativeLayout>

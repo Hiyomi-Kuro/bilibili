@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="128.0dp" android:layout_height="45.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mall_ip_iv_item_menu" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/mall_mine_portrait_default" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/mall_mine_portrait_default" />
+    <TextView android:textSize="14.0dp" android:textColor="#212121" android:ellipsize="end" android:id="@id/mall_ip_tv_item_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/mall_ip_iv_item_menu" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/mall_ip_divider_item_menu" android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:layout_marginHorizontal="8.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

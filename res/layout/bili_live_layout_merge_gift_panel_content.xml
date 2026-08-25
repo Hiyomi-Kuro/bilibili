@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_content" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="match_parent" android:layout_height="36.0dp">
+        <com.bilibili.bililive.infra.widget.view.WrapPagerSlidingTabStrip android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="2.0dp" android:layout_alignParentStart="true" app:pstsFirstTabHidePadding="true" app:pstsIndicatorHeight="0.0dp" app:pstsTabPaddingLeftRight="16.0dp" style="@style/Widget.App.SlidingTab.LiveGiftTab" />
+        <FrameLayout android:id="@id/ll_balance" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fr_pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.bilibili.bililive.infra.widget.view.DisableScrollWrapHeightViewpager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:layout_gravity="bottom" android:id="@id/v_bottom_gradient" android:background="@drawable/bg_live_gift_panel_bottom_translucence_bg" android:layout_width="match_parent" android:layout_height="62.0dp" />
+    </FrameLayout>
+</LinearLayout>

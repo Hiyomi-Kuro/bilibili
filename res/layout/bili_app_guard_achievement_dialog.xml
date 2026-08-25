@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="318.0dp" android:layout_height="127.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/siv_dialog_bg" android:layout_width="318.0dp" android:layout_height="127.0dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="127.0dp">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dp">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/siv_avatar" android:layout_width="57.0dp" android:layout_height="57.0dp" android:layout_margin="4.0dp" app:placeholderImage="@drawable/bili_default_avatar" app:thumbHeight="57.0dp" app:thumbWidth="57.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/siv_avatar_frame" android:layout_width="70.0dp" android:layout_height="70.0dp" app:placeholderImageScaleType="centerInside" app:thumbHeight="70.0dp" app:thumbWidth="70.0dp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="174.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="34.0dp">
+            <TextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/tv_first_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <TextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/tv_second_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

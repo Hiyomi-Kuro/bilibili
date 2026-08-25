@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_track_panel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.bilibili.studio.videoeditor.help.widget.GestureScrollView android:id="@id/gest_scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:overScrollMode="never">
+                    <com.bilibili.studio.videoeditor.widgets.BiliEditorCutHeadLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_danmaku" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_speed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_music" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxCaptionTrackView android:id="@id/track_caption" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_sticker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_filter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                        <com.bilibili.studio.videoeditor.widgets.track.fx.BiliEditorFxTrackView android:id="@id/track_record" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="16.0dp" />
+                    </com.bilibili.studio.videoeditor.widgets.BiliEditorCutHeadLinearLayout>
+                </com.bilibili.studio.videoeditor.help.widget.GestureScrollView>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="80.0dp" android:layout_below="@id/gest_scroll_view">
+                    <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverTransition android:id="@id/track_video_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_centerVertical="true" />
+                    <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverClipView android:id="@id/track_clip_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="48.0dp" android:layout_marginRight="20.0dp" android:layout_centerVertical="true" />
+                    <FrameLayout android:id="@id/new_add_material" android:background="@drawable/editor_shape_pink_bg_four_radius" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_gravity="center" android:background="@drawable/ic_editor_ob_add" android:layout_width="20.0dp" android:layout_height="20.0dp" />
+                    </FrameLayout>
+                    <include android:layout_width="48.0dp" android:layout_height="51.0dp" android:layout_centerVertical="true" layout="@layout/bili_app_item_editor_play_switch" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/v_middle_line" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_centerHorizontal="true" android:translationZ="5.0dp">
+                <View android:background="@drawable/upper_shape_white_label" android:visibility="visible" android:layout_width="2.0dp" android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/upper_editor_gary_33" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/rv_preview_bottom_tab" android:layout_width="match_parent" android:layout_height="@dimen/edit_func_tab_item_height" />
+    </LinearLayout>
+</RelativeLayout>

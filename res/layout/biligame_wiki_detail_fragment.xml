@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/wiki_detail_nav_drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/biligame_wiki_detail_appbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <com.bilibili.biligame.ui.wikidetail.widget.WikiDetailHeaderView android:id="@id/biligame_wiki_detail_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax" />
+                <com.bilibili.biligame.ui.wikidetail.widget.WikiDetailToolbar android:id="@id/biligame_wiki_detail_toolbar" android:layout_width="match_parent" app:layout_collapseMode="pin" app:navigationIcon="@null" style="@style/BiligameToolbar" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="48.0dp">
+                <com.bilibili.biligame.iconfont.IconFontTextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/biligame_iv_menu" android:layout_width="@dimen/biligame_dip_40" android:layout_height="@dimen/biligame_dip_40" android:layout_marginLeft="@dimen/biligame_dip_6" android:text="@string/ic_gc_more" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.bilibili.biligame.ui.wikidetail.widget.WikiDetailTabLayout android:id="@id/biligame_wiki_detail_tab" android:layout_width="0.0dp" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/biligame_iv_menu" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/BiligameWikiDetailTabLayout" />
+                <View android:background="@color/Ga3" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <tv.danmaku.bili.widget.RecyclerView android:id="@id/biligame_wiki_detail_recycler_view" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.bilibili.biligame.ui.wikidetail.drawer.NavigationDrawer android:layout_gravity="start" android:id="@id/wiki_detail_nav_drawer_view" android:layout_width="wrap_content" android:layout_height="match_parent" />
+</androidx.drawerlayout.widget.DrawerLayout>

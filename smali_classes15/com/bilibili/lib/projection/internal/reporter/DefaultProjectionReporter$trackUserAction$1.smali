@@ -1,0 +1,434 @@
+.class final Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter;->S0(Lcom/bilibili/lib/projection/internal/projectionitem/base/IProjectionItem;Lcom/bilibili/lib/projection/internal/device/ProjectionDeviceInternal;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/l<",
+        "Ljava/util/Map<",
+        "Ljava/lang/String;",
+        "Ljava/lang/String;",
+        ">;",
+        "Lgf3/s;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0012\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u00032\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+    }
+    d2 = {
+        "",
+        "",
+        "it",
+        "Lgf3/s;",
+        "invoke",
+        "(Ljava/util/Map;)V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $action:Ljava/lang/String;
+
+.field final synthetic $actionContent:Ljava/lang/String;
+
+.field final synthetic $device:Lcom/bilibili/lib/projection/internal/device/ProjectionDeviceInternal;
+
+.field final synthetic $errorCode:Ljava/lang/String;
+
+.field final synthetic $errorMsg:Ljava/lang/String;
+
+.field final synthetic $params:Ljava/lang/String;
+
+.field final synthetic $responseContent:Ljava/lang/String;
+
+.field final synthetic $result:I
+
+.field final synthetic $time:J
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/bilibili/lib/projection/internal/device/ProjectionDeviceInternal;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$action:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    iput p2, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$result:I
+
+    .line 4
+    .line 5
+    iput-wide p3, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$time:J
+
+    .line 6
+    .line 7
+    iput-object p5, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$actionContent:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object p6, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$errorCode:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p7, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$errorMsg:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-object p8, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$responseContent:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object p9, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput-object p10, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$device:Lcom/bilibili/lib/projection/internal/device/ProjectionDeviceInternal;
+
+    .line 18
+    .line 19
+    const/4 p1, 0x1
+
+    .line 20
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/util/Map;
+
+    invoke-virtual {p0, p1}, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->invoke(Ljava/util/Map;)V
+
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/util/Map;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "action"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$action:Ljava/lang/String;
+
+    .line 2
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$result:I
+
+    .line 3
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "result"
+
+    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-wide v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$time:J
+
+    .line 4
+    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "time"
+
+    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    sget-object v0, Lcom/bilibili/lib/projection/internal/ProjectionManager;->a:Lcom/bilibili/lib/projection/internal/ProjectionManager;
+
+    invoke-virtual {v0}, Lcom/bilibili/lib/projection/internal/ProjectionManager;->U()Lcom/bilibili/lib/projection/internal/engine/DefaultProjectionEngineManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/bilibili/lib/projection/internal/engine/DefaultProjectionEngineManager;->O0()Lio/reactivex/rxjava3/subjects/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/a;->c1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/bilibili/lib/projection/internal/device/a;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lcom/bilibili/lib/projection/internal/device/a;->getClient()Lcom/bilibili/lib/projection/internal/client/f;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lcom/bilibili/lib/projection/internal/client/f;->d()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    const-string v0, "2"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "1"
+
+    :goto_0
+    const-string v1, "panel"
+
+    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "content"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$actionContent:Ljava/lang/String;
+
+    .line 6
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "errorCode"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$errorCode:Ljava/lang/String;
+
+    .line 7
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "errorMsg"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$errorMsg:Ljava/lang/String;
+
+    .line 8
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "response"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$responseContent:Ljava/lang/String;
+
+    .line 9
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$action:Ljava/lang/String;
+
+    .line 10
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    const-string v2, "url"
+
+    sparse-switch v1, :sswitch_data_0
+
+    goto/16 :goto_1
+
+    :sswitch_0
+    const-string v1, "switchquality"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    goto/16 :goto_1
+
+    :cond_1
+    const-string v0, "quality"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 11
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto/16 :goto_1
+
+    :sswitch_1
+    const-string v1, "play"
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    iget-object v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$device:Lcom/bilibili/lib/projection/internal/device/ProjectionDeviceInternal;
+
+    .line 13
+    instance-of v0, v0, Lcom/bilibili/lib/projection/internal/link/DefaultLinkDevice;
+
+    if-eqz v0, :cond_8
+
+    iget-object v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 14
+    invoke-interface {p1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :sswitch_2
+    const-string v1, "flip"
+
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    iget-object v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 16
+    invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :sswitch_3
+    const-string v1, "volume"
+
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    goto :goto_1
+
+    :cond_4
+    const-string v0, "systemvolume"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 18
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :sswitch_4
+    const-string v1, "seturi"
+
+    .line 19
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    goto :goto_1
+
+    :cond_5
+    iget-object v0, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 20
+    invoke-interface {p1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :sswitch_5
+    const-string v1, "danmakutoggle"
+
+    .line 21
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    goto :goto_1
+
+    :cond_6
+    const-string v0, "danmaku"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 22
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :sswitch_6
+    const-string v1, "playspeed"
+
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    goto :goto_1
+
+    :cond_7
+    const-string v0, "speed"
+
+    iget-object v1, p0, Lcom/bilibili/lib/projection/internal/reporter/DefaultProjectionReporter$trackUserAction$1;->$params:Ljava/lang/String;
+
+    .line 24
+    invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_8
+    :goto_1
+    return-void
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x6ed0aa6d -> :sswitch_6
+        -0x5a7432dd -> :sswitch_5
+        -0x35fcea36 -> :sswitch_4
+        -0x305518e6 -> :sswitch_3
+        0x30006d -> :sswitch_2
+        0x348b34 -> :sswitch_1
+        0x2c46474b -> :sswitch_0
+    .end sparse-switch
+.end method

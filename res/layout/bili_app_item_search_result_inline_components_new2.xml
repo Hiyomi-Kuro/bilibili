@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/coverLl" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/cover_right_text" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include layout="@layout/bili_list_inline_cover_stats" />
+        </LinearLayout>
+        <tv.danmaku.bili.widget.VectorTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="right|center" android:id="@id/cover_right_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" app:drawableLeftTint="@color/Wh0_u" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="2.0" app:layout_constraintStart_toEndOf="@id/coverLl" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bilibili.search2.widget.SearchPlayerContainerLayout android:tag="@string/list_play_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:layout_constrainedHeight="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundType="round_top" />
+</FrameLayout>

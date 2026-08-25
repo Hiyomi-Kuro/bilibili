@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/score_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" layout="@layout/bili_ad_search_card_81_score" />
+    <include android:id="@id/rank_layout" layout="@layout/bili_ad_search_card_81_rank" />
+</LinearLayout>

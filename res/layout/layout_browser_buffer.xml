@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.bilibili.app.comm.list.widget.DelayShowRelativeLayout android:layout_gravity="center" android:id="@id/buffer_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:delay="0.3"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/live_animation" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true" app:lottie_cacheStrategy="weak" app:lottie_colorFilter="@color/theme_color_secondary" app:lottie_fileName="live_loading.json" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bplus_view_buffering" android:layout_below="@id/live_animation" />
+    </com.bilibili.app.comm.list.widget.DelayShowRelativeLayout>
+</merge>

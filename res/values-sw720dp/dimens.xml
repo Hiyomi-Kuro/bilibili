@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cover_width">160.0dp</dimen>
+    <dimen name="pegasus_cover_width">160.0dp</dimen>
+</resources>

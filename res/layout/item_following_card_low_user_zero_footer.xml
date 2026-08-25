@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/bg_card_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_refresh" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.bilibili.bplus.followingcard.widget.RotatableImageView android:id="@id/riv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5999756dp" android:src="@drawable/ic_change_part" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_16sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_part" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="1.0dp" android:layout_height="18.0dp" />
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_follow_all" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_16sp" android:textColor="@color/Pi5_u" android:id="@id/tv_follow_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_all" android:layout_centerInParent="true" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

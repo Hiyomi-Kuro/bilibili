@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mall_search_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/mall_search_top_bg" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/mall_search_history_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:text="@string/mall_search_history_name" />
+        <ImageView android:id="@id/mall_search_history_clear_iv" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:layout_width="40.0dp" android:layout_height="28.0dp" android:src="@drawable/mall_buyer_edit_delete" android:tint="@color/Ga5" android:layout_alignParentRight="true" />
+        <com.mall.ui.widget.FlowLayout android:id="@id/mall_search_history_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:layout_below="@id/mall_search_history_txt" app:lineSpacing="6.0dp" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/mall_search_hot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:text="@string/mall_search_hot" android:layout_below="@id/mall_search_history_container" />
+        <com.mall.ui.widget.FlowLayout android:id="@id/mall_search_hot_container" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/mall_search_hot" app:lineSpacing="12.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mall_search_hot_ip_container" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="4.0dp" android:layout_toLeftOf="@id/mall_search_bottom_anchor" android:layout_below="@id/mall_search_hot_container">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="12.0dp">
+                <com.mall.ui.widget.MallImageView android:id="@id/mall_search_hot_ip_ic" android:background="@drawable/mall_search_hot_tag" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+                <TextView android:textSize="14.0dp" android:textStyle="bold" android:id="@id/mall_search_hot_ip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门IP" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/mall_search_bottom_anchor" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_below="@id/mall_search_hot_container" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mall_search_hot_role_container" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" android:layout_toRightOf="@id/mall_search_bottom_anchor" android:layout_below="@id/mall_search_hot_container">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="12.0dp">
+                <com.mall.ui.widget.MallImageView android:id="@id/mall_search_hot_role_ic" android:background="@drawable/mall_search_hot_tag" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+                <TextView android:textSize="14.0dp" android:textStyle="bold" android:id="@id/mall_search_hot_role_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门角色" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.mall.ui.widget.MallHorizontalScrollView android:id="@id/search_hot_recommend_scroll_view" android:paddingBottom="24.0dp" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/mall_search_hot_container" app:layout_scrollFlags="scroll">
+            <LinearLayout android:orientation="horizontal" android:id="@id/search_hot_recommend_scroll_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.mall.ui.widget.MallHorizontalScrollView>
+    </RelativeLayout>
+</ScrollView>

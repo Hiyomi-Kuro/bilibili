@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_live_anchor_card_rank" android:paddingTop="1.0dp" android:paddingRight="5.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/recycler" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/live_room_rank_count_gray" android:ellipsize="end" android:gravity="left" android:id="@id/rank_sum_tv" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/ic_live_room_user_card_arrow_right" android:layout_weight="1.0" />
+</LinearLayout>

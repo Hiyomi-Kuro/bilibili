@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#ff293642" android:endColor="#ff3a5266" android:angle="90.0" />
+    <corners android:radius="@dimen/bili_upper_album_stick_top_round_corner_radius" />
+</shape>

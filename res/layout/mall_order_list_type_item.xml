@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dp" android:textColor="@color/mall_order_list_order_type_text" android:gravity="center" android:id="@id/btn_order_type" android:background="@drawable/mall_order_list_order_type_bg" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginEnd="8.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

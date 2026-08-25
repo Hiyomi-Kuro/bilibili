@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_webview_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/error_container" android:background="@color/black_alpha80" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_2233_fail" />
+        <TextView android:layout_gravity="center|bottom" android:id="@id/retryTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/bangumi_maill_webview_retry_text" />
+    </LinearLayout>
+</FrameLayout>

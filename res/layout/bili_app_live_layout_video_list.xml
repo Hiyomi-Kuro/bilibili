@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/swipe_layout" android:background="@color/live_sort_tag_gb" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.videoliveplayer.ui.widget.PreDetectedRecyclerView android:orientation="vertical" android:id="@id/recycler" android:background="@color/theme_color_bg_white" android:paddingBottom="@dimen/homepage_bottom_navigation_garb_height" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/live_pinned_bottom_scrolling_behavior" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tab_float" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:id="@id/hsv_category" android:background="@color/live_sort_tag_gb" android:paddingTop="9.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_category" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <HorizontalScrollView android:id="@id/hsv_sort2" android:background="@color/live_sort_tag_gb" android:paddingTop="10.0dp" android:paddingBottom="11.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_sort" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <HorizontalScrollView android:id="@id/hsv_sub" android:background="@color/live_partition_sub_tag" android:paddingTop="9.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio_sub_tag" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ll_hero" android:background="@color/live_sort_tag_gb" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="14.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/v_hero_shadow" android:background="@drawable/bili_live_hero_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6.0dp" />
+    </LinearLayout>
+</FrameLayout>

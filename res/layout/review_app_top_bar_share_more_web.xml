@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@id/share" android:paddingLeft="13.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_ic_nav_share" />
+            <ImageView android:id="@id/menu" android:paddingLeft="6.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" app:srcCompat="@drawable/review_ic_menu_moreoverflow_material" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+</merge>

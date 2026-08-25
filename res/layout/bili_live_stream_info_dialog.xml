@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#951b1b1b" android:layout_width="300.0dp" android:layout_height="300.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list_stream_info" android:layout_width="300.0dp" android:layout_height="300.0dp" />
+    <Button android:textColor="@android:color/white" android:id="@id/list_stream_copy" android:background="@android:color/transparent" android:layout_width="60.0dp" android:layout_height="38.0dp" android:layout_marginLeft="220.0dp" android:layout_marginTop="250.0dp" android:text="复制" />
+</FrameLayout>

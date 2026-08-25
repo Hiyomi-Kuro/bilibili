@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/Ga3" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/biligame_dip_40" />
+    <com.bilibili.biligame.widget.TabLayout android:id="@id/biligame_beta_game_tablayout" android:layout_width="match_parent" android:layout_height="@dimen/biligame_dip_40" app:tabIndicatorHeight="0.0dp" style="@style/BiliGameBetaGameListTabLayout" />
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/biligame_beta_game_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/biligame_beta_game_tablayout" />
+</RelativeLayout>

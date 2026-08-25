@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@drawable/live_emoticon_shape_soild_white_corner_4_bg" android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="32.0dp" android:layout_height="32.0dp" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/ic_live_default_avatar_emoticon" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:layout_gravity="right|top" android:id="@id/tag_view" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

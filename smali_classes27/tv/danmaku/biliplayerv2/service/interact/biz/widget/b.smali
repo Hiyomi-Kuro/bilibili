@@ -1,0 +1,1625 @@
+.class public final Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;
+.super Lov3/a;
+.source "BL"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+.implements Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup$d;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0011\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0001\\B\u000f\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0004\u0008Z\u0010[J\u0012\u0010\u0008\u001a\u00020\u00072\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005H\u0002J\u0008\u0010\t\u001a\u00020\u0007H\u0002J\u0008\u0010\u000b\u001a\u00020\nH\u0002J\u0010\u0010\r\u001a\u00020\u000c2\u0006\u0010\u0006\u001a\u00020\u0005H\u0014J\u0008\u0010\u000e\u001a\u00020\u0007H\u0016J\u0008\u0010\u000f\u001a\u00020\u0007H\u0016J\u0010\u0010\u0012\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u0010H\u0016J\u0008\u0010\u0013\u001a\u00020\u0007H\u0016J\u0010\u0010\u0016\u001a\u00020\u00072\u0006\u0010\u0015\u001a\u00020\u0014H\u0016J\u0012\u0010\u0018\u001a\u00020\u00072\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u000cH\u0016J\u001a\u0010\u001c\u001a\u00020\u00072\u0008\u0010\u001a\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u001b\u001a\u00020\nH\u0016J\u0018\u0010 \u001a\u00020\u00072\u0006\u0010\u001e\u001a\u00020\u001d2\u0006\u0010\u001f\u001a\u00020\u001dH\u0016R\u0016\u0010#\u001a\u00020\u00148\u0002@\u0002X\u0082.\u00a2\u0006\u0006\n\u0004\u0008!\u0010\"R\u0018\u0010\'\u001a\u0004\u0018\u00010$8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008%\u0010&R\u0018\u0010)\u001a\u0004\u0018\u00010$8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008(\u0010&R\u0018\u0010+\u001a\u0004\u0018\u00010$8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008*\u0010&R\u0018\u0010/\u001a\u0004\u0018\u00010,8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008-\u0010.R\u0018\u00103\u001a\u0004\u0018\u0001008\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u00081\u00102R\u0018\u00107\u001a\u0004\u0018\u0001048\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u00085\u00106R\u0018\u0010;\u001a\u0004\u0018\u0001088\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u00089\u0010:R\u0018\u0010=\u001a\u0004\u0018\u0001088\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008<\u0010:R\u0016\u0010A\u001a\u00020>8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008?\u0010@R\u0016\u0010C\u001a\u00020>8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008B\u0010@R\u0018\u0010E\u001a\u0004\u0018\u0001088\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008D\u0010:R\u0018\u0010F\u001a\u0004\u0018\u0001088\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010:R,\u0010J\u001a\u0018\u0012\u0004\u0012\u00020\u001d\u0012\u0006\u0012\u0004\u0018\u00010\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010G8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008H\u0010IR\u0016\u0010M\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008K\u0010LR\u001e\u0010Q\u001a\n\u0012\u0004\u0012\u000208\u0018\u00010N8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008O\u0010PR\u0016\u0010S\u001a\u00020\u001d8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008R\u0010LR\u0014\u0010V\u001a\u0002088VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008T\u0010UR\u0014\u0010Y\u001a\u00020W8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008@\u0010X\u00a8\u0006]"
+    }
+    d2 = {
+        "Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;",
+        "Lov3/a;",
+        "Landroid/view/View$OnClickListener;",
+        "Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup$d;",
+        "Landroid/widget/CompoundButton$OnCheckedChangeListener;",
+        "Landroid/content/Context;",
+        "context",
+        "Lgf3/s;",
+        "c0",
+        "d0",
+        "",
+        "b0",
+        "Landroid/view/View;",
+        "H",
+        "V",
+        "U",
+        "Lov3/a$a;",
+        "configuration",
+        "Q",
+        "T",
+        "Ltv/danmaku/biliplayerv2/h;",
+        "playerContainer",
+        "q",
+        "v",
+        "onClick",
+        "Landroid/widget/CompoundButton;",
+        "buttonView",
+        "isChecked",
+        "onCheckedChanged",
+        "",
+        "oldChecked",
+        "newChecked",
+        "G",
+        "e",
+        "Ltv/danmaku/biliplayerv2/h;",
+        "mPlayerContainer",
+        "Landroid/widget/TextView;",
+        "f",
+        "Landroid/widget/TextView;",
+        "mConfirm",
+        "g",
+        "mTitle",
+        "h",
+        "mReportDanmakuText",
+        "Landroidx/core/widget/NestedScrollView;",
+        "i",
+        "Landroidx/core/widget/NestedScrollView;",
+        "mNestedScrollView",
+        "Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;",
+        "j",
+        "Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;",
+        "mReportContentView",
+        "Landroid/widget/CheckBox;",
+        "k",
+        "Landroid/widget/CheckBox;",
+        "mShieldDmCheckBox",
+        "",
+        "l",
+        "Ljava/lang/String;",
+        "mDanmakuId",
+        "m",
+        "mDanmakuText",
+        "",
+        "n",
+        "J",
+        "mAppearanceTime",
+        "o",
+        "mDuration",
+        "p",
+        "mDanmakuUserId",
+        "mOid",
+        "Lkotlin/Function2;",
+        "r",
+        "Lsf3/p;",
+        "mDismissCallback",
+        "s",
+        "I",
+        "mCloseReason",
+        "",
+        "t",
+        "[Ljava/lang/String;",
+        "mReportIndexArray",
+        "u",
+        "mCheckedPos",
+        "L",
+        "()Ljava/lang/String;",
+        "tag",
+        "Ltv/danmaku/biliplayerv2/service/k;",
+        "()Ltv/danmaku/biliplayerv2/service/k;",
+        "functionWidgetConfig",
+        "<init>",
+        "(Landroid/content/Context;)V",
+        "a",
+        "biliplayerv2_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private e:Ltv/danmaku/biliplayerv2/h;
+
+.field private f:Landroid/widget/TextView;
+
+.field private g:Landroid/widget/TextView;
+
+.field private h:Landroid/widget/TextView;
+
+.field private i:Landroidx/core/widget/NestedScrollView;
+
+.field private j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+.field private k:Landroid/widget/CheckBox;
+
+.field private l:Ljava/lang/String;
+
+.field private m:Ljava/lang/String;
+
+.field private n:J
+
+.field private o:J
+
+.field private p:Ljava/lang/String;
+
+.field private q:Ljava/lang/String;
+
+.field private r:Lsf3/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lsf3/p<",
+            "-",
+            "Ljava/lang/Integer;",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private s:I
+
+.field private t:[Ljava/lang/String;
+
+.field private u:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lov3/a;-><init>(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p1, -0x1
+
+    .line 5
+    iput p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->u:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private final b0()Z
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const-string v0, "mPlayerContainer"
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Lkotlin/jvm/internal/p;->r(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    :cond_0
+    invoke-interface {v0}, Ltv/danmaku/biliplayerv2/e;->e()Ltv/danmaku/biliplayerv2/service/setting/d;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    const-string v1, "key_shield_checked"
+
+    .line 16
+    .line 17
+    const/4 v2, 0x1
+
+    .line 18
+    invoke-interface {v0, v1, v2}, Ltv/danmaku/biliplayerv2/service/setting/d;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    return v0
+.end method
+
+.method private final c0(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    sget v1, Lqt3/b;->f:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    sget v1, Lqt3/b;->e:I
+
+    .line 19
+    .line 20
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    iput-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->t:[Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 27
+    .line 28
+    if-eqz p1, :cond_1
+
+    .line 29
+    .line 30
+    invoke-virtual {p1, v0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;->setData([Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_1
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->g:Landroid/widget/TextView;
+
+    .line 34
+    .line 35
+    if-eqz p1, :cond_2
+
+    .line 36
+    .line 37
+    sget v0, Lqt3/g;->W:I
+
+    .line 38
+    .line 39
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
+
+    .line 40
+    .line 41
+    .line 42
+    :cond_2
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 43
+    .line 44
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    check-cast p1, Landroid/widget/LinearLayout$LayoutParams;
+
+    .line 49
+    .line 50
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    const/high16 v1, 0x40a00000    # 5.0f
+
+    .line 57
+    .line 58
+    invoke-static {v0, v1}, Lmv3/e;->a(Landroid/content/Context;F)F
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v0
+
+    .line 62
+    float-to-int v0, v0
+
+    .line 63
+    neg-int v0, v0
+
+    .line 64
+    iput v0, p1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 65
+    .line 66
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 67
+    .line 68
+    if-nez v0, :cond_3
+
+    .line 69
+    .line 70
+    goto :goto_0
+
+    .line 71
+    :cond_3
+    invoke-virtual {v0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 72
+    .line 73
+    .line 74
+    :goto_0
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 75
+    .line 76
+    if-nez p1, :cond_4
+
+    .line 77
+    .line 78
+    goto :goto_1
+
+    .line 79
+    :cond_4
+    const/4 v0, 0x0
+
+    .line 80
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 81
+    .line 82
+    .line 83
+    :goto_1
+    const/4 p1, -0x1
+
+    .line 84
+    iput p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->u:I
+
+    .line 85
+    .line 86
+    return-void
+.end method
+
+.method private final d0()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;->k()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    const/4 v0, -0x1
+
+    .line 9
+    iput v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->u:I
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    if-eqz v0, :cond_2
+
+    .line 15
+    .line 16
+    if-nez v0, :cond_1
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_1
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    .line 20
+    .line 21
+    .line 22
+    :goto_0
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 23
+    .line 24
+    if-eqz v0, :cond_2
+
+    .line 25
+    .line 26
+    invoke-virtual {p0}, Lov3/a;->K()Landroid/content/Context;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    sget v3, Lod/b;->x0:I
+
+    .line 31
+    .line 32
+    invoke-static {v2, v3}, Landroidx/core/content/c;->e(Landroid/content/Context;I)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 37
+    .line 38
+    .line 39
+    :cond_2
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->h:Landroid/widget/TextView;
+
+    .line 40
+    .line 41
+    if-nez v0, :cond_3
+
+    .line 42
+    .line 43
+    goto :goto_2
+
+    .line 44
+    :cond_3
+    iget-object v2, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->m:Ljava/lang/String;
+
+    .line 45
+    .line 46
+    if-eqz v2, :cond_4
+
+    .line 47
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_4
+    const-string v2, ""
+
+    .line 50
+    .line 51
+    :goto_1
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :goto_2
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->i:Landroidx/core/widget/NestedScrollView;
+
+    .line 55
+    .line 56
+    if-eqz v0, :cond_5
+
+    .line 57
+    .line 58
+    invoke-virtual {v0, v1, v1}, Landroidx/core/widget/NestedScrollView;->scrollTo(II)V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_5
+    invoke-direct {p0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->b0()Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v0
+
+    .line 65
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 66
+    .line 67
+    if-nez v1, :cond_6
+
+    .line 68
+    .line 69
+    goto :goto_3
+
+    .line 70
+    :cond_6
+    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setChecked(Z)V
+
+    .line 71
+    .line 72
+    .line 73
+    :goto_3
+    return-void
+.end method
+
+
+# virtual methods
+.method public G(II)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0}, Lov3/a;->K()Landroid/content/Context;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    sget v1, Lqt3/g;->i8:I
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 17
+    .line 18
+    .line 19
+    :goto_0
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 20
+    .line 21
+    if-nez p1, :cond_1
+
+    .line 22
+    .line 23
+    goto :goto_1
+
+    .line 24
+    :cond_1
+    const/4 v0, 0x1
+
+    .line 25
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    :goto_1
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 29
+    .line 30
+    if-eqz p1, :cond_2
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Lov3/a;->K()Landroid/content/Context;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    const v1, 0x106000b
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {v0, v1}, Landroidx/core/content/c;->e(Landroid/content/Context;I)I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v0
+
+    .line 43
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 44
+    .line 45
+    .line 46
+    :cond_2
+    iput p2, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->u:I
+
+    .line 47
+    .line 48
+    return-void
+.end method
+
+.method protected H(Landroid/content/Context;)Landroid/view/View;
+    .locals 4
+
+    .line 1
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    sget v1, Ltv/danmaku/biliplayerv2/r;->d:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    sget v1, Ltv/danmaku/biliplayerv2/q;->g:I
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 20
+    .line 21
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->h:Landroid/widget/TextView;
+
+    .line 22
+    .line 23
+    sget v1, Ltv/danmaku/biliplayerv2/q;->i:I
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    check-cast v1, Landroidx/core/widget/NestedScrollView;
+
+    .line 30
+    .line 31
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->i:Landroidx/core/widget/NestedScrollView;
+
+    .line 32
+    .line 33
+    sget v1, Ltv/danmaku/biliplayerv2/q;->j:I
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v1
+
+    .line 39
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 40
+    .line 41
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->g:Landroid/widget/TextView;
+
+    .line 42
+    .line 43
+    sget v1, Ltv/danmaku/biliplayerv2/q;->d:I
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v1
+
+    .line 49
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 50
+    .line 51
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 52
+    .line 53
+    if-eqz v1, :cond_0
+
+    .line 54
+    .line 55
+    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_0
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 59
+    .line 60
+    if-nez v1, :cond_1
+
+    .line 61
+    .line 62
+    goto :goto_0
+
+    .line 63
+    :cond_1
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    .line 64
+    .line 65
+    .line 66
+    :goto_0
+    sget v1, Ltv/danmaku/biliplayerv2/q;->k:I
+
+    .line 67
+    .line 68
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v1
+
+    .line 72
+    check-cast v1, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 73
+    .line 74
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 75
+    .line 76
+    const/4 v3, 0x2
+
+    .line 77
+    if-eqz v1, :cond_2
+
+    .line 78
+    .line 79
+    invoke-virtual {v1, v3}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;->setSpanCount(I)V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_2
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 83
+    .line 84
+    if-eqz v1, :cond_3
+
+    .line 85
+    .line 86
+    invoke-virtual {v1, p0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;->setItemCheckedChangeListener(Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup$d;)V
+
+    .line 87
+    .line 88
+    .line 89
+    :cond_3
+    sget v1, Ltv/danmaku/biliplayerv2/q;->f:I
+
+    .line 90
+    .line 91
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v1
+
+    .line 95
+    check-cast v1, Landroid/widget/CheckBox;
+
+    .line 96
+    .line 97
+    iput-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 98
+    .line 99
+    if-eqz v1, :cond_4
+
+    .line 100
+    .line 101
+    invoke-virtual {v1, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 102
+    .line 103
+    .line 104
+    :cond_4
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 105
+    .line 106
+    if-nez v1, :cond_5
+
+    .line 107
+    .line 108
+    const-string v1, "mPlayerContainer"
+
+    .line 109
+    .line 110
+    invoke-static {v1}, Lkotlin/jvm/internal/p;->r(Ljava/lang/String;)V
+
+    .line 111
+    .line 112
+    .line 113
+    goto :goto_1
+
+    .line 114
+    :cond_5
+    move-object v2, v1
+
+    .line 115
+    :goto_1
+    invoke-virtual {v2}, Ltv/danmaku/biliplayerv2/h;->C()Ltv/danmaku/biliplayerv2/l;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v1
+
+    .line 119
+    invoke-virtual {v1}, Ltv/danmaku/biliplayerv2/l;->a()Ltv/danmaku/biliplayerv2/g;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v1
+
+    .line 123
+    invoke-virtual {v1}, Ltv/danmaku/biliplayerv2/g;->m()I
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v1
+
+    .line 127
+    if-ne v1, v3, :cond_6
+
+    .line 128
+    .line 129
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 130
+    .line 131
+    if-eqz v1, :cond_7
+
+    .line 132
+    .line 133
+    sget v2, Lqt3/e;->Y1:I
+
+    .line 134
+    .line 135
+    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setButtonDrawable(I)V
+
+    .line 136
+    .line 137
+    .line 138
+    goto :goto_2
+
+    .line 139
+    :cond_6
+    iget-object v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 140
+    .line 141
+    if-eqz v1, :cond_7
+
+    .line 142
+    .line 143
+    sget v2, Lqt3/e;->X1:I
+
+    .line 144
+    .line 145
+    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setButtonDrawable(I)V
+
+    .line 146
+    .line 147
+    .line 148
+    :cond_7
+    :goto_2
+    invoke-direct {p0, p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->c0(Landroid/content/Context;)V
+
+    .line 149
+    .line 150
+    .line 151
+    return-object v0
+.end method
+
+.method public J()Ltv/danmaku/biliplayerv2/service/k;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ltv/danmaku/biliplayerv2/service/k$a;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    invoke-virtual {v0, v1}, Ltv/danmaku/biliplayerv2/service/k$a;->c(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ltv/danmaku/biliplayerv2/service/k$a;->d(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ltv/danmaku/biliplayerv2/service/k$a;->e(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Ltv/danmaku/biliplayerv2/service/k$a;->f(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 v2, 0x0
+
+    .line 20
+    invoke-virtual {v0, v2}, Ltv/danmaku/biliplayerv2/service/k$a;->h(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Ltv/danmaku/biliplayerv2/service/k$a;->b(Z)Ltv/danmaku/biliplayerv2/service/k$a;
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Ltv/danmaku/biliplayerv2/service/k$a;->a()Ltv/danmaku/biliplayerv2/service/k;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    return-object v0
+.end method
+
+.method public L()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "SubtitleReportFunctionWidget"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public Q(Lov3/a$a;)V
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    check-cast p1, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->b()Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    iput-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->l:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->g()Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    iput-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->m:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->a()J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v0
+
+    .line 23
+    iput-wide v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->n:J
+
+    .line 24
+    .line 25
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->d()J
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-wide v0
+
+    .line 29
+    iput-wide v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->o:J
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->c()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    iput-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->p:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->e()Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    iput-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->q:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    invoke-virtual {p1}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b$a;->f()Lsf3/p;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    iput-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->r:Lsf3/p;
+
+    .line 48
+    .line 49
+    invoke-direct {p0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->d0()V
+
+    .line 50
+    .line 51
+    .line 52
+    :cond_0
+    return-void
+.end method
+
+.method public T()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public U()V
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lov3/a;->U()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->j:Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/PlayerRadioGridGroup;->k()V
+
+    .line 9
+    .line 10
+    .line 11
+    :cond_0
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 12
+    .line 13
+    if-nez v0, :cond_1
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    .line 18
+    .line 19
+    .line 20
+    :goto_0
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->f:Landroid/widget/TextView;
+
+    .line 21
+    .line 22
+    if-eqz v0, :cond_2
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Lov3/a;->K()Landroid/content/Context;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    sget v2, Lod/b;->x0:I
+
+    .line 29
+    .line 30
+    invoke-static {v1, v2}, Landroidx/core/content/c;->e(Landroid/content/Context;I)I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v1
+
+    .line 34
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_2
+    iget-object v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->r:Lsf3/p;
+
+    .line 38
+    .line 39
+    if-eqz v0, :cond_4
+
+    .line 40
+    .line 41
+    iget v1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->s:I
+
+    .line 42
+    .line 43
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v1
+
+    .line 47
+    iget-object v2, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 48
+    .line 49
+    if-eqz v2, :cond_3
+
+    .line 50
+    .line 51
+    invoke-virtual {v2}, Landroid/widget/CompoundButton;->isChecked()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v2
+
+    .line 55
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v2
+
+    .line 59
+    goto :goto_1
+
+    .line 60
+    :cond_3
+    const/4 v2, 0x0
+
+    .line 61
+    :goto_1
+    invoke-interface {v0, v1, v2}, Lsf3/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_4
+    return-void
+.end method
+
+.method public V()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lov3/a;->V()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->s:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_0
+
+    .line 4
+    .line 5
+    const-string p1, "mPlayerContainer"
+
+    .line 6
+    .line 7
+    invoke-static {p1}, Lkotlin/jvm/internal/p;->r(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    :cond_0
+    invoke-interface {p1}, Ltv/danmaku/biliplayerv2/e;->e()Ltv/danmaku/biliplayerv2/service/setting/d;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    const-string v0, "key_shield_checked"
+
+    .line 16
+    .line 17
+    invoke-interface {p1, v0, p2}, Ltv/danmaku/biliplayerv2/service/setting/d;->putBoolean(Ljava/lang/String;Z)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public onClick(Landroid/view/View;)V
+    .locals 9
+
+    .line 1
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->l:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->t:[Ljava/lang/String;
+
+    .line 11
+    .line 12
+    if-nez p1, :cond_1
+
+    .line 13
+    .line 14
+    return-void
+
+    .line 15
+    :cond_1
+    iget v0, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->u:I
+
+    .line 16
+    .line 17
+    if-ltz v0, :cond_7
+
+    .line 18
+    .line 19
+    array-length p1, p1
+
+    .line 20
+    if-lt v0, p1, :cond_2
+
+    .line 21
+    .line 22
+    goto :goto_2
+
+    .line 23
+    :cond_2
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->k:Landroid/widget/CheckBox;
+
+    .line 24
+    .line 25
+    if-eqz p1, :cond_3
+
+    .line 26
+    .line 27
+    invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p1
+
+    .line 31
+    move v4, p1
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_3
+    const/4 p1, 0x0
+
+    .line 34
+    const/4 v4, 0x0
+
+    .line 35
+    :goto_0
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 36
+    .line 37
+    const/4 v7, 0x0
+
+    .line 38
+    const-string v8, "mPlayerContainer"
+
+    .line 39
+    .line 40
+    if-nez p1, :cond_4
+
+    .line 41
+    .line 42
+    invoke-static {v8}, Lkotlin/jvm/internal/p;->r(Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    move-object p1, v7
+
+    .line 46
+    :cond_4
+    invoke-interface {p1}, Ltv/danmaku/biliplayerv2/e;->K0()Ltv/danmaku/biliplayerv2/service/interact/biz/m;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v1
+
+    .line 50
+    iget-object v2, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->l:Ljava/lang/String;
+
+    .line 51
+    .line 52
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->t:[Ljava/lang/String;
+
+    .line 53
+    .line 54
+    aget-object v3, p1, v0
+
+    .line 55
+    .line 56
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->p:Ljava/lang/String;
+
+    .line 57
+    .line 58
+    if-nez p1, :cond_5
+
+    .line 59
+    .line 60
+    const-string p1, ""
+
+    .line 61
+    .line 62
+    :cond_5
+    move-object v5, p1
+
+    .line 63
+    iget-object v6, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->q:Ljava/lang/String;
+
+    .line 64
+    .line 65
+    invoke-interface/range {v1 .. v6}, Ltv/danmaku/biliplayerv2/service/interact/biz/m;->s0(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    const/4 p1, 0x1
+
+    .line 69
+    iput p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->s:I
+
+    .line 70
+    .line 71
+    iget-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 72
+    .line 73
+    if-nez p1, :cond_6
+
+    .line 74
+    .line 75
+    invoke-static {v8}, Lkotlin/jvm/internal/p;->r(Ljava/lang/String;)V
+
+    .line 76
+    .line 77
+    .line 78
+    goto :goto_1
+
+    .line 79
+    :cond_6
+    move-object v7, p1
+
+    .line 80
+    :goto_1
+    invoke-interface {v7}, Ltv/danmaku/biliplayerv2/e;->B1()Ltv/danmaku/biliplayerv2/service/b;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    invoke-virtual {p0}, Lov3/a;->M()Ltv/danmaku/biliplayerv2/service/n;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v0
+
+    .line 88
+    invoke-interface {p1, v0}, Ltv/danmaku/biliplayerv2/service/b;->I2(Ltv/danmaku/biliplayerv2/service/n;)V
+
+    .line 89
+    .line 90
+    .line 91
+    :cond_7
+    :goto_2
+    return-void
+.end method
+
+.method public q(Ltv/danmaku/biliplayerv2/h;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ltv/danmaku/biliplayerv2/service/interact/biz/widget/b;->e:Ltv/danmaku/biliplayerv2/h;
+
+    .line 2
+    .line 3
+    return-void
+.end method

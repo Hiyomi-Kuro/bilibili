@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Ga1" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Ga4" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/br_prompt_to_hot_end" android:maxLines="1" android:includeFontPadding="false" app:priority="1" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ic_title_right" android:layout_width="16.0dp" android:layout_height="16.0dp" app:priority="2" />
+    </tv.danmaku.bili.widget.PriorityLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

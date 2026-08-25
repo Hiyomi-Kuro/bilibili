@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0dp" android:textColor="@color/upper_at_user_page_title_text_color" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="科普知识挑战赛" android:drawableLeft="@drawable/ic_post_hot_fire" android:drawablePadding="8.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/upper_center_task_credit_text" android:gravity="center" android:id="@id/person_num" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="7300" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/upper_at_user_page_gray_dark_2" android:id="@id/person_num_trail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人参与" />
+        <View android:id="@id/dot" android:background="@drawable/bili_post_gray_circle" android:layout_width="3.0dp" android:layout_height="3.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_marginHorizontal="6.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/upper_at_user_page_gray_dark_2" android:ellipsize="end" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

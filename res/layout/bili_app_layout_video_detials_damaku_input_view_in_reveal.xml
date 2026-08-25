@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.ui.video.videodetail.widgets.RevealLinearLayout android:orientation="vertical" android:id="@id/reveal_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/reveal_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/bili_app_layout_video_detials_upper_ad_view" />
+    </LinearLayout>
+</tv.danmaku.bili.ui.video.videodetail.widgets.RevealLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.biz.uicommon.superchat.widgets.MoreBubbleLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="195.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/live_daynight_text_color_black" android:gravity="center_vertical" android:id="@id/delete" android:paddingLeft="20.0dp" android:layout_width="195.0dp" android:layout_height="48.0dp" android:text="@string/widget_live_delete" android:drawableLeft="@drawable/icon_super_chat_delete" android:drawablePadding="16.0dp" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/live_daynight_text_color_black" android:gravity="center_vertical" android:id="@id/report" android:paddingLeft="20.0dp" android:layout_width="195.0dp" android:layout_height="48.0dp" android:text="@string/widget_live_report" android:drawableLeft="@drawable/icon_super_chat_report" android:drawablePadding="16.0dp" />
+    </LinearLayout>
+</com.bilibili.bililive.biz.uicommon.superchat.widgets.MoreBubbleLayout>

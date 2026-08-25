@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/theseus_episode_and_preview_split_item_0" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Text2" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" />
+</LinearLayout>

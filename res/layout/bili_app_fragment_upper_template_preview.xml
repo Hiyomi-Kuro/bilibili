@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ivTemplatePreviewCover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+        <TextureView android:id="@id/tvTemplatePreviewPlayer" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/tvTemplatePreviewPlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upper_template_detail_play" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/llLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_width="32.0dp" android:layout_height="32.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/upper_time_albums_loading" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/upper_shape_template_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ivTDAuthorAvatar" android:layout_width="24.0dp" android:layout_height="24.0dp" app:roundAsCircle="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDAuthorTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <com.bilibili.upper.module.template.view.FolderTextView android:textSize="14.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDDesc" android:layout_width="296.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:foldText="@string/upper_template_text_fold" app:tailTextColor="#9499a0" app:unFoldText="@string/upper_template_text_unfold" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/upper_shape_rect_r12_black50_fill" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:divider="@drawable/upper_divider_template_preview" android:showDividers="middle" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDUsage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDClip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tvTDAiTag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tv3DPlayTag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/pbTDProgress" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="15.0dp" android:max="100" android:progressDrawable="@drawable/upper_layer_video_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

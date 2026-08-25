@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/main_Ga10" android:gravity="center_vertical" android:id="@id/card_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/following_vip_label" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/following_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="6.0dp" />
+    <ViewStub android:id="@id/vs_card_living_view" android:layout="@layout/following_card_living_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

@@ -1,0 +1,124 @@
+{
+  "RulesInfo": {
+    "cu": {
+      "RulesInfo": [
+        {
+          "tf": false,
+          "m": "break",
+          "a": "",
+          "p": "^(POST|PUT)@|.*\\.bilibili\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@((([0-9]{1,3}\\.){3}[0-9]{1,3})|(.*\\.mcdn\\.bilivideo\\.(com|cn|net))):4[0-9]{1,4}/"
+        },
+        {
+          "tf": true,
+          "m": "break",
+          "a": "",
+          "p": "^GET@(([0-9]{1,3}\\.){3}[0-9]{1,3}|((proxy|upcdn|upos|bfs|acache)-tf-|cn-).*\\.(acgvideo|bilivideo)\\.com)/|/live-bvc/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "bfs-tf-all-js.bilivideo.com",
+          "p": "^GET@(i|s)[0-9]\\.hdslb\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "upos-tf-all-js.bilivideo.com",
+          "p": "^GET@upos-.*(u\\.acgvideo|mirror.*\\.bilivideo)\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@(([\\w-]+\\.)*(bilibili|acgvideo|bilivideo|acg|hdslb|biligame|bilibiliyoo|im9|b23|missevan)\\.(com|tv|cn|co|net))/"
+        }
+      ]
+    },
+    "ct": {
+      "RulesInfo": [
+        {
+          "tf": false,
+          "m": "break",
+          "a": "",
+          "p": "^(POST|PUT)@|.*\\.bilibili\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@((([0-9]{1,3}\\.){3}[0-9]{1,3})|(.*\\.mcdn\\.bilivideo\\.(com|cn|net))):4[0-9]{1,4}/"
+        },
+        {
+          "tf": true,
+          "m": "break",
+          "a": "",
+          "p": "^GET@(([0-9]{1,3}\\.){3}[0-9]{1,3}|((proxy|upcdn|upos|bfs|acache)-tf-|cn-).*\\.(acgvideo|bilivideo)\\.com)/|/live-bvc/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "bfs-tf-all-js.bilivideo.com",
+          "p": "^GET@(i|s)[0-9]\\.hdslb\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "upos-tf-all-js.bilivideo.com",
+          "p": "^GET@upos-.*(u\\.acgvideo|mirror.*\\.bilivideo)\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@(([\\w-]+\\.)*(bilibili|acgvideo|bilivideo|acg|hdslb|biligame|bilibiliyoo|im9|b23|missevan)\\.(com|tv|cn|co|net))/"
+        }
+      ]
+    },
+    "cm": {
+      "RulesInfo": [
+        {
+          "tf": false,
+          "m": "break",
+          "a": "",
+          "p": "^(POST|PUT)@|.*\\.bilibili\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@((([0-9]{1,3}\\.){3}[0-9]{1,3})|(.*\\.mcdn\\.bilivideo\\.(com|cn|net))):4[0-9]{1,4}/"
+        },
+        {
+          "tf": true,
+          "m": "break",
+          "a": "",
+          "p": "^GET@(([0-9]{1,3}\\.){3}[0-9]{1,3}|((proxy|upcdn|upos|bfs|acache)-tf-|cn-).*\\.(acgvideo|bilivideo)\\.com)/|/live-bvc/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "bfs-tf-all-js.bilivideo.com",
+          "p": "^GET@(i|s)[0-9]\\.hdslb\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "replace",
+          "a": "upos-tf-all-js.bilivideo.com",
+          "p": "^GET@upos-.*(u\\.acgvideo|mirror.*\\.bilivideo)\\.com/"
+        },
+        {
+          "tf": true,
+          "m": "proxy",
+          "a": "proxy-tf-all-ws.bilivideo.com",
+          "p": "^GET@(([\\w-]+\\.)*(bilibili|acgvideo|bilivideo|acg|hdslb|biligame|bilibiliyoo|im9|b23|missevan)\\.(com|tv|cn|co|net))/"
+        }
+      ]
+    }
+  }
+}

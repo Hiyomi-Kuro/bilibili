@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tri_nav_top_bar" layout="@layout/biligame_layout_toolbar_common" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tri_auto_scroll" android:background="@color/Ba0" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="@string/biligame_transition_parent_string" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <com.bilibili.biligame.widget.GameRoundRectFrameLayout android:id="@id/tri_scrolling_fl" android:background="@drawable/biligame_background_corner_16" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,320:160" app:layout_constraintTop_toTopOf="parent" app:topLeftRadius="16.0dp" app:topRightRadius="16.0dp">
+                    <com.bilibili.biligame.widget.ScrollingImageView android:id="@id/tri_scrolling_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="@string/biligame_transition_scrolling_string" />
+                </com.bilibili.biligame.widget.GameRoundRectFrameLayout>
+                <View android:id="@id/tri_shadow_v" android:background="@drawable/biligame_shape_gradient_transparent_0_100" android:layout_width="match_parent" android:layout_height="61.329987dp" android:transitionName="@string/biligame_transition_shadow_string" app:layout_constraintBottom_toBottomOf="@id/tri_scrolling_fl" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/Ga5_u" android:ellipsize="end" android:id="@id/tri_desc" android:paddingLeft="20.0dp" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/biligame_book_center_desc" android:singleLine="true" android:transitionName="@string/biligame_transition_desc_string" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_scrolling_fl" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.bilibili.biligame.widget.TabLayout android:id="@id/tri_tablayout" android:layout_width="match_parent" android:layout_height="29.0dp" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="5.0dp" app:tabBackground="@drawable/biligame_tri_book_tab_bg" app:tabMode="scrollable" app:tabPaddingEnd="17.0dp" app:tabPaddingStart="17.0dp" app:tabSelectedTextColor="@color/Lb5" app:tabTextAppearance="@style/TextAppearance.Biligame.BookCenter.Tab" app:tabTextColor="@color/Ga7" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/tri_swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/tri_recyclerView" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

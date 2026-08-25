@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BCGSideBar.Settings.Btn" parent="@style/BCGSideBar.Settings">
+        <item name="android:textSize">@dimen/biligame_dip_10</item>
+        <item name="android:textColor">@color/biligame_selector_sidebar_icon</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/biligame_dip_16</item>
+        <item name="android:paddingBottom">@dimen/biligame_dip_16</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/biligame_dip_4</item>
+        <item name="android:drawableTint">@color/biligame_selector_sidebar_icon</item>
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light" />
+    <style name="Base.V22.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat">
+        <item name="actionModeShareDrawable">?android:actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:editTextBackground</item>
+    </style>
+    <style name="Base.V22.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light">
+        <item name="actionModeShareDrawable">?android:actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:editTextBackground</item>
+    </style>
+</resources>

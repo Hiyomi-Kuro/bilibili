@@ -1,0 +1,235 @@
+.class public final Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/bilibili/bplus/followingcard/widget/EllipsizingTextView$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;-><init>(Landroid/view/ViewGroup;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016J\u0008\u0010\u0006\u001a\u00020\u0004H\u0016J\u0008\u0010\u0007\u001a\u00020\u0004H\u0016\u00a8\u0006\u0008"
+    }
+    d2 = {
+        "com/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a",
+        "Lcom/bilibili/bplus/followingcard/widget/EllipsizingTextView$a;",
+        "",
+        "showAll",
+        "Lgf3/s;",
+        "c",
+        "a",
+        "b",
+        "followingList_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->W3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/module/item/desc/d;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 10
+    .line 11
+    invoke-static {v1}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->X3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/model/x3;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    iget-object v2, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 16
+    .line 17
+    invoke-static {v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->Y3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    const/4 v3, 0x1
+
+    .line 22
+    const/4 v4, 0x0
+
+    .line 23
+    invoke-virtual {v0, v1, v3, v4, v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/d;->h(Lcom/bilibili/bplus/followinglist/model/x3;ZZLcom/bilibili/bplus/followinglist/service/DynamicServicesManager;)V
+
+    .line 24
+    .line 25
+    .line 26
+    :cond_0
+    return-void
+.end method
+
+.method public b()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->W3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/module/item/desc/d;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 10
+    .line 11
+    invoke-static {v1}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->X3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/model/x3;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    iget-object v2, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 16
+    .line 17
+    invoke-static {v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->Y3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    const/4 v3, 0x0
+
+    .line 22
+    invoke-virtual {v0, v1, v3, v3, v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/d;->h(Lcom/bilibili/bplus/followinglist/model/x3;ZZLcom/bilibili/bplus/followinglist/service/DynamicServicesManager;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_0
+    return-void
+.end method
+
+.method public c(Z)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->W3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/module/item/desc/d;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 10
+    .line 11
+    invoke-static {v1}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->X3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/model/x3;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    iget-object v2, p0, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder$a;->a:Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;
+
+    .line 16
+    .line 17
+    invoke-static {v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;->Y3(Lcom/bilibili/bplus/followinglist/module/item/desc/DynamicOpusDescHolder;)Lcom/bilibili/bplus/followinglist/service/DynamicServicesManager;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    const/4 v3, 0x1
+
+    .line 22
+    invoke-virtual {v0, v1, v3, p1, v2}, Lcom/bilibili/bplus/followinglist/module/item/desc/d;->h(Lcom/bilibili/bplus/followinglist/model/x3;ZZLcom/bilibili/bplus/followinglist/service/DynamicServicesManager;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_0
+    return-void
+.end method

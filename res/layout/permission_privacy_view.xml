@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/permission_tv" android:paddingRight="8.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="权限" android:lines="1" />
+    <View android:id="@id/divider_view" android:background="@color/Text3" android:layout_width="1.0dp" android:layout_height="10.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/privacy_tv" android:paddingLeft="8.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私" android:lines="1" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/text_container" android:background="@drawable/bg_fav_folder_bubble" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="50.0dp" android:paddingEnd="14.0dp" android:paddingVertical="7.0dp" app:layout_constraintBottom_toBottomOf="@id/icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text_white" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorites_folder_guide_bubble" android:maxLines="1" style="@style/T13" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <ImageView android:id="@id/icon" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/fav_folder_left_icon" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="@id/text_container" app:layout_constraintStart_toStartOf="@id/text_container" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_width="14.0dp" android:layout_height="6.0dp" android:src="@drawable/ic_bottom_arrow" app:layout_constraintEnd_toEndOf="@id/text_container" app:layout_constraintStart_toStartOf="@id/text_container" app:layout_constraintTop_toBottomOf="@id/text_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

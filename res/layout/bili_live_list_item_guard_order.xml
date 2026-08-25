@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/guard_header" android:layout_width="match_parent" android:layout_height="25.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/live_guard_remind_color" android:ellipsize="end" android:id="@id/guard_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_guard_header_hint" android:lines="1" android:drawablePadding="3.0dp" android:layout_marginStart="14.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/live_guard_exchange_rule_color" android:id="@id/guard_change_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_guard_sort_default" android:drawableRight="@drawable/ic_live_guard_arrow_exchange" android:drawablePadding="2.0dp" android:layout_marginEnd="14.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+.class public interface abstract Lcom/bapis/bilibili/dynamic/common/f5;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getHasRedDot()J
+.end method
+
+.method public abstract getIcon()Ljava/lang/String;
+.end method
+
+.method public abstract getIconBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getJumpUrl()Ljava/lang/String;
+.end method
+
+.method public abstract getJumpUrlBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getPermission()I
+.end method
+
+.method public abstract getSubtitle()Ljava/lang/String;
+.end method
+
+.method public abstract getSubtitleBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTitle()Ljava/lang/String;
+.end method
+
+.method public abstract getTitleBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getToast()Ljava/lang/String;
+.end method
+
+.method public abstract getToastBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getType()Lcom/bapis/bilibili/dynamic/common/UpPermissionType;
+.end method
+
+.method public abstract getTypeValue()I
+.end method

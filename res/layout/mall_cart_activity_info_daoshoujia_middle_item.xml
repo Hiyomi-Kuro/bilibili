@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.0dp" android:textColor="@color/Pi5" android:id="@id/mall_cart_activity_info_daoshoujia_mid_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/mall_cart_activity_info_daoshoujia_mid_info_img" android:padding="1.0dp" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/mall_ic_general_inform_grey" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/mall_cart_activity_info_daoshoujia_mid_info_tv" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

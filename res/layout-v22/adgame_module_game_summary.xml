@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="28.0dp" android:paddingRight="28.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="28.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/adgame_quote" android:scaleType="fitCenter" app:layout_constraintLeft_toLeftOf="@id/ag_tv_title" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:id="@id/ag_tv_title" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxLines="1" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

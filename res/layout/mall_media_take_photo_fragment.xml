@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.opd.app.bizcommon.imageselector.media.camera.MallMediaCameraSurfaceView android:id="@id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/photo_container" android:background="#000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="24.0dp">
+        <ImageView android:id="@id/close" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="match_parent" android:src="@drawable/mall_media_ic_camera_close" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/btn_rollback" android:padding="10.0dp" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="match_parent" android:scaleType="centerInside" android:tint="@color/Ga2_u" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/mall_ic_top_back_gray" />
+        <ImageView android:id="@id/switch_camera" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="match_parent" android:src="@drawable/mall_media_ic_camera_reverse" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_take_photo" android:background="@drawable/mall_media_ic_take_photo" android:clickable="true" android:layout_width="75.0dp" android:layout_height="75.0dp" android:layout_marginBottom="60.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/mall_media_submit_text_colors" android:gravity="center" android:id="@id/btn_submit" android:background="@drawable/mall_media_submit_pink_bg" android:visibility="invisible" android:layout_width="84.0dp" android:layout_height="34.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="20.0dp" android:text="完成" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

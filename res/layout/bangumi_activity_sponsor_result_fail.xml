@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/top_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bangumi_sponsor_result_background_fail" android:scaleType="fitXY" />
+        <ImageView android:id="@id/avatar_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_2233_fail" android:layout_alignBottom="@id/top_background" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="22.0dp" android:src="@drawable/bangumi_common_ic_close_white" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24.0sp" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/bangumi_sponsor_result_fail" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_dark" android:gravity="center|bottom" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/bangumi_sponsor_result_contact" android:lineSpacingExtra="7.0sp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/exp_and_point_layout" android:background="@drawable/bangumi_shape_roundract_2_window_gray" android:paddingLeft="12.0dp" android:paddingTop="14.0dp" android:paddingRight="12.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="19.0dp" android:layout_marginRight="12.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:id="@id/uid" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:id="@id/order_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/ok" android:background="@drawable/bangumi_selector_button_solid_yellow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="42.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:minHeight="42.0dp" android:text="@string/bangumi_sponsor_result_ok_btn" />
+    </LinearLayout>
+</LinearLayout>

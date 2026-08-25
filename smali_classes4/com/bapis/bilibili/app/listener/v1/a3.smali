@@ -1,0 +1,23 @@
+.class public interface abstract Lcom/bapis/bilibili/app/listener/v1/a3;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getCoinOk()Z
+.end method
+
+.method public abstract getFavOk()Z
+.end method
+
+.method public abstract getMessage()Ljava/lang/String;
+.end method
+
+.method public abstract getMessageBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getThumbOk()Z
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingLiveViewGroup android:gravity="center" android:orientation="vertical" android:id="@id/following_vp_live" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/following_bg_circle_arc" android:padding="4.0dp" android:layout_width="@dimen/live_frame_width" android:layout_height="@dimen/live_frame_width" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/following_lav" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" app:lottie_cacheStrategy="weak" app:lottie_fileName="live_loading.json" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/following_iv_user_avatar" android:layout_width="match_parent" android:layout_height="match_parent" app:roundAsCircle="true" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center" android:id="@id/following_tv_user_name" android:layout_width="@dimen/live_text_width" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="1" android:includeFontPadding="false" />
+</com.bilibili.bplus.followingcard.widget.FollowingLiveViewGroup>

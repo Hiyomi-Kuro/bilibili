@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:background="@color/bili_editor_bgm_list_sheet_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/loading_image" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="158.0dp" app:actualImageScaleType="centerInside" />
+        <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/gray_dark" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="10.0dp" android:text="@string/footer_loading" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bili_editor_bgm_list_panel_bottom_margin" />
+</FrameLayout>

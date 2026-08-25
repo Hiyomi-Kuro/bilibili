@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dy_list" android:background="@color/Bg3" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    <androidx.core.widget.NestedScrollView android:id="@id/dy_state_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="66.0dp" android:paddingBottom="@dimen/item_spacing" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/dy_status_image" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/bili_2233_fail" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/dy_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/tip_no_following" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right|bottom" android:id="@id/topic_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="54.0dp" android:layout_marginEnd="24.0dp" android:elevation="0.0dp" android:backgroundTint="@color/Bg1_float" app:borderWidth="0.0dp" app:fabCustomSize="48.0dp" app:srcCompat="@drawable/dy_ic_write" app:tint="@color/Graph_icon" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

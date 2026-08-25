@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/fragment_swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fragment_recyclerview" android:paddingBottom="@dimen/music_podcast_bottom_mini_player_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+    <com.bilibili.music.podcast.view.MusicNormalLoadView android:id="@id/load_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

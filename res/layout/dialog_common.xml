@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_FFFFFF" android:layout_width="200.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_marginTop="30.0dp" style="@style/Console.TextBig.Dark" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/desc" android:layout_marginTop="10.0dp" style="@style/Console.Text.Gray" />
+    <View android:layout_marginTop="30.0dp" style="@style/Console.Divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/negative" android:background="@drawable/dialog_button_background" android:layout_height="match_parent" android:text="@string/console_cancel" android:layout_weight="1.0" style="@style/Console.Text" />
+        <View style="@style/Console.Divider.Vertical" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/positive" android:background="@drawable/dialog_button_background" android:layout_height="match_parent" android:text="@string/confirm" android:layout_weight="1.0" style="@style/Console.Text.Blue" />
+    </LinearLayout>
+</LinearLayout>

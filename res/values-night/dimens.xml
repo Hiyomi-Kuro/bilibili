@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bili_dialog_dim_amount">0.8</dimen>
+    <dimen name="day_night_img_alpha">0.94</dimen>
+    <dimen name="im_image_alpha">0.7</dimen>
+</resources>

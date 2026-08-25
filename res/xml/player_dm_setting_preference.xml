@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_key_danmaku_setting" android:key="@string/pref_key_danmaku_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="@string/pref_key_danmaku_setting" app:categoryTitle="@string/pref_title_danmaku_settings">
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/pref_title_danmaku_switch_remember" android:key="@string/pref_key_danmaku_switch_remember" android:summary="@string/pref_title_danmaku_switch_remember_summary" android:defaultValue="false" />
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_danmaku_report_toast_switcher" android:key="@string/pref_key_danmaku_report_toast_switcher" android:summary="@string/pref_title_danmaku_report_toast_switcher_summary" android:defaultValue="true" app:migration_settings_type="play" />
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/pref_title_danmaku_shield_title" android:key="@string/pref_key_danmaku_shield_switch" android:summary="@string/pref_title_danmaku_shield_summary" android:defaultValue="true" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/Player_subtitle_setting">
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/Player_subtitle_switch_title" android:key="@string/Player_subtitle_switch_key" android:summary="@string/Player_subtitle_feedback_mode_tip_off" android:defaultValue="true" app:migration_settings_type="play" />
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/Player_subtitle_drag_mode" android:key="@string/Player_subtitle_drag_key" android:summary="@string/Player_subtitle_drag_mode_tip_off" android:defaultValue="true" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+</androidx.preference.PreferenceScreen>

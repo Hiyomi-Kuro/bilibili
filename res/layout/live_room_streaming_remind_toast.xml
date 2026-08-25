@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="15.5dp" android:layout_marginRight="8.0dp" android:text="@string/live_room_wifi" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/handle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="73.0dp" android:layout_marginTop="9.0dp" android:layout_marginRight="73.0dp" android:layout_marginBottom="14.5dp">
+        <TextView android:textSize="15.0sp" android:textColor="#b3ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_room_free_flow" />
+        <ImageView android:layout_width="12.0dp" android:layout_height="15.0dp" android:layout_marginTop="3.0dp" android:src="@drawable/ic_live_arrow_right_white" app:tint="#b3ffffff" />
+    </LinearLayout>
+</LinearLayout>

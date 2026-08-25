@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/commpk_main_history" android:layout_width="22.0dp" android:layout_height="20.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="22.0dp" android:layout_alignWithParentIfMissing="true" app:layout_constraintRight_toLeftOf="@id/commpk_main_setting" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_live_pk_panel_history" />
+        <View android:layout_gravity="right|top" android:id="@id/v_history_rule_red_point" android:background="@drawable/bg_live_pk_tab_red_point" android:visibility="gone" android:layout_width="5.0dp" android:layout_height="5.0dp" />
+    </FrameLayout>
+    <ImageView android:id="@id/commpk_main_setting" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/ic_live_pk_panel_set" android:layout_alignParentRight="true" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

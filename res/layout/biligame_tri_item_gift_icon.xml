@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/tri_iv_gift_icon" android:layout_width="26.0dp" android:layout_height="26.0dp" app:placeholderImage="@drawable/biligame_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="13.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

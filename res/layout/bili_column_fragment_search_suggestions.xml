@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.column.ui.widget.RevealFrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/shadow" android:background="@color/black_alpha40" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/search_suggestion_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4.0dp">
+        <include layout="@layout/bili_column_layout_search_suggestions_top_layout" />
+        <View android:id="@id/divider" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="1.0dp" android:layout_marginRight="1.0dp" android:layout_marginBottom="-1.0dp" />
+        <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:isScrollContainer="true" />
+    </LinearLayout>
+</com.bilibili.column.ui.widget.RevealFrameLayout>

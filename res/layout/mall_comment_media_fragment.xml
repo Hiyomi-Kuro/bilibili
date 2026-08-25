@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/mall_media_recycler" android:background="@color/mall_comment_input_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="36.0dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/mall_media_album_recycler" android:background="@color/mall_comment_input_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="36.0dp" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@color/mall_comment_input_bg" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ll_pick_album_txt" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_album_hold" android:layout_width="14.0dp" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:src="@drawable/mall_media_icon_all_photos" android:layout_marginStart="14.0dp" />
+            <TextView android:textSize="13.0dp" android:textColor="@color/mall_home_title_tag_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pick_album_txt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="7.0dp" android:layout_marginRight="6.0dp" android:maxWidth="150.0dp" android:text="@string/mall_media_all_pic" android:lines="1" android:layout_marginStart="7.0dp" android:layout_marginEnd="6.0dp" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_album" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/mall_media_icon_pull_down_more" android:rotation="180.0" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/ll_origin_image" android:background="@color/mall_comment_input_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="13.0dp" android:textColor="@color/mall_primary_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/origin_image_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6.0dp" android:text="@string/mall_meida_origin_image_uncheck" android:layout_marginEnd="6.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0dp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/media_item_check" android:background="@drawable/mall_media_selector_origin_image_checker_v2" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginEnd="16.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <View android:background="@color/mall_daynight_color_divider_line_for_white" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+.class public final Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;->Ry()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0006\u001a\u00020\u00032\u000e\u0010\u0002\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+    }
+    d2 = {
+        "Landroid/view/View;",
+        "kotlin.jvm.PlatformType",
+        "it",
+        "Lgf3/s;",
+        "onClick",
+        "(Landroid/view/View;)V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lkotlin/jvm/internal/Ref$LongRef;
+
+.field final synthetic b:I
+
+.field final synthetic c:Landroid/view/View;
+
+.field final synthetic d:Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/internal/Ref$LongRef;ILandroid/view/View;Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->a:Lkotlin/jvm/internal/Ref$LongRef;
+
+    .line 2
+    .line 3
+    iput p2, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->b:I
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->c:Landroid/view/View;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->d:Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 4
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    iget-object p1, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->a:Lkotlin/jvm/internal/Ref$LongRef;
+
+    .line 6
+    .line 7
+    iget-wide v2, p1, Lkotlin/jvm/internal/Ref$LongRef;->element:J
+
+    .line 8
+    .line 9
+    sub-long/2addr v0, v2
+
+    .line 10
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide v2
+
+    .line 14
+    iput-wide v2, p1, Lkotlin/jvm/internal/Ref$LongRef;->element:J
+
+    .line 15
+    .line 16
+    iget p1, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->b:I
+
+    .line 17
+    .line 18
+    int-to-long v2, p1
+
+    .line 19
+    cmp-long p1, v0, v2
+
+    .line 20
+    .line 21
+    if-gez p1, :cond_0
+
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :cond_0
+    iget-object p1, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->d:Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    if-eqz p1, :cond_3
+
+    .line 31
+    .line 32
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 33
+    .line 34
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 35
+    .line 36
+    .line 37
+    iget-object v0, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->d:Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;
+
+    .line 38
+    .line 39
+    invoke-static {v0}, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;->Dy(Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;)Lcom/bilibili/opd/app/bizcommon/imageselector/media/MallMediaAdapter;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    if-eqz v0, :cond_1
+
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Lcom/bilibili/opd/app/bizcommon/imageselector/media/MallMediaAdapter;->e1()Ljava/util/List;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    if-eqz v0, :cond_1
+
+    .line 50
+    .line 51
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 52
+    .line 53
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v1
+
+    .line 61
+    if-eqz v1, :cond_1
+
+    .line 62
+    .line 63
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v1
+
+    .line 67
+    check-cast v1, Lcom/bilibili/boxing/model/entity/BaseMedia;
+
+    .line 68
+    .line 69
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 70
+    .line 71
+    .line 72
+    goto :goto_0
+
+    .line 73
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v0
+
+    .line 77
+    if-eqz v0, :cond_2
+
+    .line 78
+    .line 79
+    goto :goto_1
+
+    .line 80
+    :cond_2
+    iget-object v0, p0, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment$g;->d:Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;
+
+    .line 81
+    .line 82
+    const/4 v1, 0x0
+
+    .line 83
+    invoke-virtual {v0, v1, p1}, Lcom/bilibili/opd/app/bizcommon/imageselector/page/MallMediaFragment;->Oy(Lcom/bilibili/boxing/model/entity/BaseMedia;Ljava/util/ArrayList;)V
+
+    .line 84
+    .line 85
+    .line 86
+    :cond_3
+    :goto_1
+    return-void
+.end method

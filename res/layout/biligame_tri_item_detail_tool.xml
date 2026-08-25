@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="61.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/tri_iv_tools_icon" android:layout_width="56.0dp" android:layout_height="56.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/biligame_default_image_tv" app:placeholderImageScaleType="centerInside" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga3_u" android:ellipsize="end" android:gravity="center" android:id="@id/tri_tv_tools_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="1" />
+</LinearLayout>

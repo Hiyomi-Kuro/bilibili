@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_message_setting" android:key="@string/pref_key_message_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+        <com.bilibili.bplus.im.setting.preference.IMSettingSwitch android:persistent="false" android:title="@string/pref_title_messages_notify" android:key="msg_notify" android:summary="@string/pref_summary_messages_notify" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="@string/pref_key_anti_disturb_category" app:categoryTitle="@string/im_setting_message_receive_title">
+        <com.bilibili.bplus.im.setting.preference.IMSettingSwitch android:persistent="false" android:title="@string/im_setting_ai_intercept_title" android:key="ai_intercept" android:summary="@string/im_setting_ai_intercept_summary" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/im_setting_notify_title" app:key="@string/im_setting_notify_group">
+        <com.bilibili.bplus.im.setting.CommentMessagePreference android:persistent="true" android:title="@string/pref_title_group_reply" android:key="@string/im_pref_key_group_comment" android:summary="@string/pref_tip_group_comment" />
+        <com.bilibili.bplus.im.setting.AtMessagePreference android:persistent="true" android:title="@string/pref_title_group_at" android:key="@string/im_pref_key_group_at" android:summary="@string/pref_tip_group_at" />
+        <com.bilibili.bplus.im.setting.LikeMessagePreference android:persistent="true" android:title="@string/pref_title_group_like" android:key="@string/pref_key_group_like" android:summary="@string/pref_tip_group_like" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/im_setting_notify_title" app:key="@string/im_setting_notify_group_new">
+        <com.bilibili.bplus.im.setting.RecvReplyPreference android:persistent="true" android:title="@string/im_pref_title_reply_new" android:key="@string/im_pref_key_group_comment_new" android:summary="@string/pref_title_recv_reply_summary" />
+        <com.bilibili.bplus.im.setting.RecvLikePreference android:persistent="true" android:title="@string/im_pref_title_like_new" android:key="@string/pref_key_group_like_new" android:summary="@string/pref_title_recv_like_summary" />
+        <com.bilibili.bplus.im.setting.RecvNewFollowPreference android:persistent="true" android:title="@string/im_pref_title_new_follow" android:key="@string/pref_key_group_new_follow" android:summary="@string/pref_title_new_follow_summary" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/im_setting_group_title">
+        <com.bilibili.bplus.im.setting.GroupMessagePreference android:title="@string/im_setting_group_msg" android:key="groupMessageSetting" android:fragment="com.bilibili.bplus.im.setting.fragment.GroupSettingFragment" />
+        <com.bilibili.bplus.im.setting.UnfollowMessagePreference android:title="@string/im_setting_unfollow_msg" android:key="unfollowMessageSetting" android:fragment="com.bilibili.bplus.im.setting.fragment.UnfollowSettingFragment" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle app:categoryTitle="@string/im_setting_contacts_title">
+        <com.bilibili.bplus.im.setting.preference.BLPreference_BlackList android:persistent="false" android:title="@string/im_setting_black" android:key="key_black" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="@string/pref_key_akeyharass_category" app:categoryTitle="@string/im_setting_akeyharass_title">
+        <com.bilibili.bplus.im.setting.AntiDistrubMessagePreference android:persistent="true" android:title="@string/im_anti_disturb_settings" android:key="@string/pref_key_anti_disturb" android:fragment="com.bilibili.bplus.im.setting.fragment.AntiDisturbFragment" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+</androidx.preference.PreferenceScreen>

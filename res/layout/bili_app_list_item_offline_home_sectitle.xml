@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga10" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offline_title_downloaded_video"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

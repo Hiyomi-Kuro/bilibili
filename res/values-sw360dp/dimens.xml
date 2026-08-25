@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bangumi_tab_sparse_spacing">0.0dp</dimen>
+    <dimen name="cover_width">126.0dp</dimen>
+    <dimen name="item_half_quad_spacing">9.0dp</dimen>
+    <dimen name="item_half_spacing">6.0dp</dimen>
+    <dimen name="item_large_spacing">24.0dp</dimen>
+    <dimen name="item_medium_spacing">14.0dp</dimen>
+    <dimen name="item_spacing">12.0dp</dimen>
+    <dimen name="pegasus_cover_width">126.0dp</dimen>
+    <dimen name="text_size_medium">13.0sp</dimen>
+    <dimen name="text_size_small">11.0sp</dimen>
+    <dimen name="update_text_size_small">11.0sp</dimen>
+</resources>

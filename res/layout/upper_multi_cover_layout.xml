@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.studio.editor.timeline.UpperLiveWindowExt android:id="@id/liveWindow" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.upper.module.cover_v2.widgets.MultiCoverCropOverlayView android:id="@id/coverOverlay" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.upper.module.cover_v2.widgets.MultiCaptionRectView android:layout_gravity="center" android:id="@id/captionRect" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

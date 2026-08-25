@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_horizontal" android:id="@id/iv_error" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/ic_upper_failed_2233" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga5_u" android:layout_gravity="center_horizontal" android:id="@id/tv_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/upper_general_load_failed_tips" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_load_retry" android:background="@drawable/upper_general_load_retry_btn_bg" android:layout_width="140.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:text="@string/upper_general_load_failed_retry_again" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

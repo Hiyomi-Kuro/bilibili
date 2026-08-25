@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_margin="12.0dp" app:failureImage="@drawable/column_vector_action_menu_default" app:placeholderImage="@drawable/column_vector_action_menu_default" />
+    <View android:layout_gravity="right|top" android:id="@id/dot" android:background="@drawable/bottom_navigation_badge" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="8.0dp" />
+</merge>

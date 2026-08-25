@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/danmaku_input_options" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_options_basic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@id/input_options_group_textsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/input_options_medium_textsize">
+            <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/input_options_small_textsize" android:background="@drawable/ic_btn_player_danmaku_input_options_small_textsize" android:contentDescription="bbplayer_dminput_ssize" style="@style/BPlayer_DanmakuInputOptionRadioButton" />
+            <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/input_options_medium_textsize" android:background="@drawable/ic_btn_player_danmaku_input_options_medium_textsize" android:contentDescription="bbplayer_dminput_lsize" style="@style/BPlayer_DanmakuInputOptionRadioButton" />
+        </RadioGroup>
+        <RadioGroup android:orientation="horizontal" android:id="@id/input_options_group_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:checkedButton="@id/input_options_rl_type">
+            <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/input_options_top_type" android:background="@drawable/ic_btn_player_danmaku_input_options_top_type" android:contentDescription="bbplayer_dminput_top" style="@style/BPlayer_DanmakuInputOptionRadioButton" />
+            <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/input_options_rl_type" android:background="@drawable/ic_btn_player_danmaku_input_options_rl_type" android:contentDescription="bbplayer_dminput_scroll" style="@style/BPlayer_DanmakuInputOptionRadioButton" />
+            <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/input_options_bottom_type" android:background="@drawable/ic_btn_player_danmaku_input_options_bottom_type" android:contentDescription="bbplayer_dminput_bottom" style="@style/BPlayer_DanmakuInputOptionRadioButton" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_options_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp">
+        <com.bilibili.magicasakura.widgets.TintRadioButton android:gravity="center" android:layout_gravity="center" android:id="@id/input_options_color_current" android:background="@drawable/biliplayer_ic_danmaku_color" android:clickable="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="1.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="9.0dp" android:layout_marginBottom="1.0dp" android:checked="true" android:button="@null" android:contentDescription="bbplayer_dminput_colorselect" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/input_options_color_more_icon" android:background="@drawable/ic_input_options_color_more_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:contentDescription="bbplayer_dminput_colorselect" />
+    </LinearLayout>
+    <com.bilibili.playerbizcommon.view.CheckBoxGroup android:orientation="horizontal" android:id="@id/input_options_color_group" android:layout_width="0.0dp" android:layout_height="wrap_content" android:checkedButton="@id/input_options_color_white">
+        <RadioButton android:id="@id/input_options_color_white" android:tag="ffffff" android:contentDescription="bbplayer_dminput_colorwhite" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_red" android:tag="e70012" android:contentDescription="bbplayer_dminput_colorred" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_yellow" android:tag="fef102" android:contentDescription="bbplayer_dminput_coloryellow" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_green" android:tag="009843" android:contentDescription="bbplayer_dminput_colorgreen" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_blue" android:tag="00a0ea" android:contentDescription="bbplayer_dminput_colorblue" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_pink" android:tag="e2027f" android:contentDescription="bbplayer_dminput_colorpink" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_light_green" android:tag="90c320" android:contentDescription="bbplayer_dminput_colorlgreen" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_drak_blue" android:tag="002e72" android:contentDescription="bbplayer_dminput_colordblue" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_orange" android:tag="f0ab2a" android:contentDescription="bbplayer_dminput_colororange" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_purple" android:tag="683a7b" android:contentDescription="bbplayer_dminput_colorpurple" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_lite_blue" android:tag="84c0cb" android:contentDescription="bbplayer_dminput_colorlblue" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:id="@id/input_options_color_brown" android:tag="927939" android:contentDescription="bbplayer_dminput_colorblown" style="@style/BPlayer_DanmakuInputOptionColorRadioButton" />
+    </com.bilibili.playerbizcommon.view.CheckBoxGroup>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bili_app_projection_loading" android:focusable="true" android:visibility="gone" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/loading_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/projection_loading_indicator" android:layout_width="15.0dp" android:layout_height="15.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/ic_search_loading" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/player_projection_loading_tips" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

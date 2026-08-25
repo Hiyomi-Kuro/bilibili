@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/bili_upper_album_current_fragment_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.widget.BiliTabLayout android:id="@id/choose_tab_layout" android:layout_width="match_parent" android:layout_height="44.0dp" app:maxTitleWidth="100.0dp" app:tabIndicatorHeight="0.0dp" app:titleSelectedTextColor="@color/white" app:titleSelectedTextSize="15.0sp" app:titleTextSelectedBold="true" app:titleTextUnSelectedBold="false" app:titleUnSelectedTextColor="@color/white_alpha60" app:titleUnSelectedTextSize="15.0sp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tip_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/choose_tab_layout">
+        <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:gravity="center_vertical" android:id="@id/tv_part_privilege_tip" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_part_privilege_tip" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_submission_tip" android:background="@drawable/ic_upper_notice_smart_pic_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#a2a7ae" android:gravity="center_vertical" android:id="@id/tv_submission_tip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/upper_submission_tip" android:drawableLeft="@drawable/ic_upper_notice_horn_v3" android:drawablePadding="6.0dp" android:layout_weight="1.0" />
+            <ImageView android:id="@id/imv_close_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_upper_center_guide_close" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_smart_pic_tip" android:background="@drawable/ic_upper_notice_smart_pic_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#a2a7ae" android:gravity="center_vertical" android:id="@id/tv_pv_tip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:drawableLeft="@drawable/ic_upper_notice_smart_pic" android:drawablePadding="4.0dp" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:src="@drawable/ic_upper_arrow_right_white" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/media_picker_bottom_container" android:layout_below="@id/ll_tip_container">
+        <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/choose_viewpager" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/media_picker_bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/media_picker_chosen_container" android:background="@drawable/bg_upper_material_bottom_shape" android:paddingTop="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/upper_video_picker_bottom_panel_height_new">
+            <TextView android:textSize="10.0sp" android:textColor="#a2a7ae" android:id="@id/media_picker_chosen_notice_tv_drag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/upper_album_drag_adjust_order" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_below="@id/media_picker_chosen_notice_tv_drag">
+                <ImageView android:id="@id/iv_time" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="2.0dp" android:src="@drawable/upper_minus_reduce_circle" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/media_picker_chosen_notice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/media_picker_chosen_button_next" android:background="@drawable/upper_album_bottom_next_btn" android:layout_width="88.0dp" android:layout_height="32.0dp" android:text="@string/upper_con_next" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/media_picker_chosen_publish_publish" android:background="@drawable/upper_album_bottom_publish_btn" android:visibility="gone" android:layout_width="88.0dp" android:layout_height="32.0dp" android:layout_marginEnd="116.0dp" android:layout_alignParentEnd="true">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="17.0dp" android:layout_height="17.0dp" app:srcCompat="@drawable/ic_upper_arrow_upload_line" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/Brand_pink" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_publish" android:layout_marginStart="3.0dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/media_picker_chosen_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_alignParentBottom="true" android:paddingStart="16.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/vs_permission_guide" android:layout="@layout/capture_permission_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

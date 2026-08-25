@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root" android:background="#ff444444" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.otaliastudios.cameraview.CameraView android:layout_gravity="center" android:id="@id/camera" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="false" app:cameraAudio="on" app:cameraEngine="camera2" app:cameraExperimental="true" app:cameraFacing="back" app:cameraFlash="auto" app:cameraGestureLongTap="none" app:cameraGesturePinch="zoom" app:cameraGestureScrollHorizontal="filterControl1" app:cameraGestureScrollVertical="exposureCorrection" app:cameraGestureTap="none" app:cameraMode="picture" app:cameraPictureSizeMaxWidth="720" app:cameraPlaySounds="false" app:cameraPreview="glSurface" app:cameraUseDeviceOrientation="false" app:cameraVideoSizeMaxWidth="720" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

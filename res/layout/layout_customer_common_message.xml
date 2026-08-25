@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/default_message_padding_tb" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.PendantAvatarFrameLayout android:layout_gravity="center" android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="4.0dp" style="@style/Im_Conversation_PendantAvatarStyleSpec" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_info_layout" android:paddingRight="@dimen/date_side_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_toRightOf="@id/avatar_layout">
+        <com.bilibili.bplus.im.conversation.widget.FansMedalView android:id="@id/medalView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" />
+        <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga7" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxLines="1" />
+        <com.bilibili.app.comm.list.widget.tag.TagsView android:id="@id/user_tags" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dp" android:layout_marginStart="4.0dp" app:tag_backgroundColor="@color/Graph_bg_thick" app:tag_backgroundStyle="fill" app:tag_cornerRadius="2.0dp" app:tag_horizontal_padding="2.5dp" app:tag_left_spacing="4.0dp" app:tag_maxLength="5" app:tag_needEllipsis="false" app:tag_textColor="@color/Graph_medium" app:tag_textSize="9.0dp" app:tag_vertical_padding="1.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_layout" android:layout_below="@id/user_info_layout">
+        <View android:id="@id/no_user_info_fill" android:layout_width="0.0dp" android:layout_height="8.0dp" />
+        <com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverFrameLayout android:id="@id/message_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginRight="@dimen/date_side_width" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/interaction_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-52.0dp" android:layout_marginBottom="@dimen/margin_8" android:layout_toRightOf="@id/message_content" android:layout_alignBottom="@id/message_content">
+        <FrameLayout android:id="@id/interact_like" android:background="@drawable/bg_circle_white" android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/interact_like_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customer_like" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/interact_dislike" android:background="@drawable/bg_circle_white" android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30" android:layout_marginTop="@dimen/margin_14">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/interact_dislike_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customer_dislike" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/msg_sub_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/message_content" layout="@layout/item_conversation_sub_msg" />
+    <include android:id="@id/customer_sub_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/message_content" layout="@layout/layout_gray_line_card" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/customer_tools_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/message_content" />
+</RelativeLayout>

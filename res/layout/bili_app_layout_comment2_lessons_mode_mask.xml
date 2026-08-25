@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/comment2_window_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/ic_lessons_mode_mask" android:layout_width="240.0dp" android:layout_height="156.0dp" android:layout_marginTop="40.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/comment2_lessons_mode_on_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/comment2_comment_disable_in_lessons_mode" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Lb6" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="40.0dp" android:text="@string/comment2_close_lessons_mode" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</androidx.core.widget.NestedScrollView>

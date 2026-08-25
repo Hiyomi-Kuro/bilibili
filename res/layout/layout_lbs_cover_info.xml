@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="@dimen/text_10sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cover_left_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_info_views" android:drawablePadding="3.0dp" />
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="@dimen/text_10sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cover_left_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_info_danmakus" android:drawablePadding="3.0dp" />
+    <com.bilibili.app.comm.list.widget.tag.tagtinttext.TagTintTextView android:textSize="@dimen/text_10sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="end|center" android:id="@id/cover_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/network_alert_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/network_alert_bg_normal" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/live_back_btn" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/live_ic_player_back_white" />
+    <ImageView android:id="@id/live_menu_more" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/ic_live_menu_moreoverflow" android:layout_alignParentRight="true" android:layout_marginEnd="4.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/alert_tips_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_sdk_unicom_warning_playing_with_metered" />
+        <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/no_more_alert_this_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:checked="false" android:button="@drawable/ic_circle_type_check_box" android:text="@string/no_alert_this_week" />
+        <View android:layout_width="1.0dp" android:layout_height="25.0dp" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/xplayer_shape_roundrect_trans_stroke_4dp_white" android:layout_below="@id/title_container" android:layout_alignLeft="@id/title_container">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tips_unicom" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="98.0dp" android:layout_height="34.0dp" android:minWidth="110.0dp" android:text="@string/dialog_open_freedata_service" android:drawablePadding="6.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tips_continue_play" android:background="@drawable/shape_round_pink_4" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="98.0dp" android:layout_height="34.0dp" android:text="@string/live_sdk_unicom_alert_dialog_positive_button" android:drawablePadding="6.0dp" android:layout_below="@id/title_container" android:layout_alignRight="@id/title_container" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" />
+</RelativeLayout>

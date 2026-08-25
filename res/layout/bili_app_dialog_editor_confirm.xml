@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_upper_rounded_bg1_float_corner_8" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="match_parent" android:layout_height="92.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_text_18191C" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dp" />
+    </LinearLayout>
+    <View android:id="@id/v_divider_line" android:background="#e3e5e7" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintTop_toBottomOf="@id/ll_title" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="44.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/v_divider_line">
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_text_18191C" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/upper_cancel" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tv_confirm" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff6699" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/confirm" app:layout_constraintLeft_toRightOf="@id/tv_cancel" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

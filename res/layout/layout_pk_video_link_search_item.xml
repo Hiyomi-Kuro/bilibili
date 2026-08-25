@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/blink_avatar" android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:singleLine="true" android:layout_toRightOf="@id/blink_avatar" android:layout_alignTop="@id/blink_avatar" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/live_pk_color_9499A0" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/live_fan_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lines="1" android:layout_below="@id/nickname" android:layout_alignLeft="@id/nickname" android:layout_alignBottom="@id/blink_avatar" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff6699" android:gravity="center" android:id="@id/live_invite_pk" android:background="@drawable/bg_live_pk_ff6699_40_stroke_round" android:layout_width="64.0dp" android:layout_height="30.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

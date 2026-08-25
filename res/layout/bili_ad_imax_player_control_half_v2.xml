@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/shape_toolbar_gradient_shadow_reverse" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+            <com.bilibili.playerbizcommon.widget.control.PlayerPlayPauseWidget android:id="@id/bbplayer_halfscreen_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" />
+            <com.bilibili.playerbizcommon.widget.control.PlayerSeekWidget android:id="@id/bbplayer_halfscreen_seekbar" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="2.0dp" android:progressDrawable="@drawable/bplayer_seek_pink__scrubber_horizontal" android:minHeight="2.0dp" android:layout_weight="1.0" app:enableTap="true" />
+            <com.bilibili.playerbizcommon.widget.control.PlayerProgressTextWidget android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.adcommon.player.widget.AdPlayerFullscreenWidget android:id="@id/bbplayer_halfscreen_expand" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

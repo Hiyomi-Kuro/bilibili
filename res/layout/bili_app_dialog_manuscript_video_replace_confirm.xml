@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_upper_rounded_bg1_float_corner_8" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_text_18191C" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tv" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_title">
+        <TextView android:textSize="13.0sp" android:gravity="left" android:layout_gravity="left" android:id="@id/tv_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="20.0dp" android:text="·个性化配置需重新设置\n·新视频的稿件趋势分析次日生效" />
+    </LinearLayout>
+    <View android:id="@id/v_divider_line" android:background="#e3e5e7" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="24.0dp" app:layout_constraintTop_toBottomOf="@id/ll_tv" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="44.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/v_divider_line">
+        <TextView android:textSize="16.0sp" android:textColor="@color/upper_text_18191C" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/upper_cancel" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tv_confirm" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff6699" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/confirm" app:layout_constraintLeft_toRightOf="@id/tv_cancel" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

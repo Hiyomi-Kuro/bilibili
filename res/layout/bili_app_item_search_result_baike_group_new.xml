@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="13.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" app:onCollapse="collapse" app:priority="2" />
+    <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="@color/Ga5_u" android:ellipsize="end" android:gravity="end" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" app:onCollapse="collapse" app:priority="1" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_more" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="28.0dp" android:layout_height="match_parent" android:src="@drawable/ic_arrow_right_gray" android:tint="@color/Ga5_u" android:paddingStart="8.0dp" android:paddingEnd="10.0dp" app:priority="3" />
+</tv.danmaku.bili.widget.PriorityLinearLayout>

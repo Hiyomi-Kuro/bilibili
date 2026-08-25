@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:elevation="0.0dp" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_scrollFlags="scroll|enterAlways|snap" app:titleTextColor="@color/theme_color_primary_tr_title" style="@style/Widget.App.Toolbar">
+            <ImageView android:layout_gravity="end" android:id="@id/iv_create_folder" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_favorite_add" android:tint="@color/theme_color_primary_tr_icon" android:layout_marginEnd="8.0dp" />
+        </com.bilibili.magicasakura.widgets.TintToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Widget.App.SubTab.MainHome" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" />
+        <include android:id="@id/layout_tip" layout="@layout/bili_app_layout_favorite_home_error" />
+    </FrameLayout>
+</LinearLayout>

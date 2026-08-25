@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/container_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/cp_app_bar" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0.0dp" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+                <include android:id="@id/cp_campus_head" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/cp_tab_detail_head_layout" />
+                <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" android:elevation="0.0dp" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_collapseMode="pin" app:layout_constraintTop_toTopOf="parent" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <RelativeLayout android:id="@id/tab_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp">
+                <com.google.android.material.tabs.TabLayout android:id="@id/cp_tab" android:layout_width="match_parent" android:layout_height="40.0dp" app:tabBackground="@android:color/transparent" app:tabGravity="fill" app:tabMode="scrollable" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" app:tabRippleColor="@android:color/transparent" />
+                <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+        <com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout android:id="@id/cp_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/cp_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.bilibili.campus.widget.loading.LoadingView android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

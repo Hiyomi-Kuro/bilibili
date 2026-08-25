@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:background="@drawable/shape_roundrect_search_tag_v2" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Ga10" android:gravity="start|center" android:id="@id/tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:drawablePadding="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/img_delete" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="30.0dp" android:scaleType="center" android:paddingStart="8.0dp" app:srcCompat="@drawable/ref_xmark_close_line_500" app:tint="@color/Graph_medium" app:tintMode="src_atop" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

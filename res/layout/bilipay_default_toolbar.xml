@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintAppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:navigationIcon="@drawable/bilipay_ic_toolbar_back" app:titleTintColor="@color/theme_color_primary_tr_title">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/theme_color_primary_tr_title" android:layout_gravity="center" android:id="@id/nav_top_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="top" android:id="@id/toolbar_bottom_line" android:background="@color/daynight_color_divider_line_for_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" />
+</com.bilibili.magicasakura.widgets.TintAppBarLayout>

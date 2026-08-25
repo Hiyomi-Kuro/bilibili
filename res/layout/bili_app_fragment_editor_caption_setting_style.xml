@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_font" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="7.0dp" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="14.0dp" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/bili_editor_font_size" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
+        <SeekBar android:id="@id/font_size_seekbar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/upper_shape_filter_seekbar_blackandpink" android:thumb="@drawable/upper_shape_filter_seekbar_thumb" android:layout_centerVertical="true" android:layout_marginStart="44.0dp" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_color" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_outline" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="14.0dp" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/bili_editor_stroke" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
+        <SeekBar android:id="@id/outline_size_seekbar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/upper_shape_filter_seekbar_blackandpink" android:thumb="@drawable/upper_shape_filter_seekbar_thumb" android:layout_centerVertical="true" android:layout_marginStart="44.0dp" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_outline" android:layout_width="match_parent" android:layout_height="25.0dp" android:layout_marginTop="20.0dp" />
+</LinearLayout>

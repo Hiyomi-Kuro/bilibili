@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/theme_color_tab_pink" android:id="@id/follow_btn" android:background="@drawable/selector_author_space_follow" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attention" android:drawablePadding="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

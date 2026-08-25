@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_screen_downloadPref" android:key="@string/pref_key_screen_downloadPref" android:summary="@string/pref_summary_screen_downloadPref"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:danmaku="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RadioGroupPreference android:persistent="true" android:entries="@array/DownloadStorageEntries" android:title="@string/pref_title_download_storage" android:key="@string/pref_key_download_storage" android:defaultValue="1" android:entryValues="@array/DownloadStorageValues" danmaku:radioDefaultValue="1" danmaku:radioEntries="@array/DownloadStorageEntries" danmaku:radioEntryValues="@array/DownloadStorageValues" />
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_download_networkOption">
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_download_enable_auto_start" android:key="@string/pref_key_download_enable_auto_start" android:summary="@string/pref_summary_download_enable_auto_start" android:defaultValue="true" danmaku:migration_settings_type="download" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_download_tools">
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_download_offline_diagnose" android:key="@string/pref_key_download_offline_diagnose" android:defaultValue="@null">
+            <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="tv.danmaku.bili.ui.videodownload.diagnosis.VideoDownloadTestActivity" />
+        </androidx.preference.Preference>
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_download_offline_external_storage" android:key="@string/pref_key_download_offline_external_storage" android:defaultValue="@null">
+            <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="tv.danmaku.bili.ui.videodownload.diagnosis.SDExternalStorageTestActivity" />
+        </androidx.preference.Preference>
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

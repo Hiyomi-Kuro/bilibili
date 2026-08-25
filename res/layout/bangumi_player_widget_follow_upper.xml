@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/bangumi_player_widget_follow_upper_0" android:background="@drawable/bangumi_bg_controller_card" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="8.0dp" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:tag="binding_1" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="1.0dp" android:layout_marginEnd="7.0dp" app:placeholderImage="@drawable/bangumi_default_image_tv" app:roundAsCircle="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dp" android:maxEms="15" android:singleLine="true" />
+    <com.bilibili.relation.widget.FollowButton android:id="@id/follow_BTN" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fbFollowFalseBg="@drawable/bangumi_shape_rect_r4_pink_fill" app:fbFollowTrueBg="@drawable/bangumi_shape_rect_r4_gray_fill" app:fbGroup="true" app:fbStyle="fill" />
+</LinearLayout>

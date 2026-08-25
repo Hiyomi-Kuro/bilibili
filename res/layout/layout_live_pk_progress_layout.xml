@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.pkv2.ui.LivePkProgressBarWidget android:layout_gravity="center|top" android:id="@id/pb_widget" android:layout_width="match_parent" android:layout_height="14.0dp" android:layout_marginTop="5.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="top" android:id="@id/iv_face_icon" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="24.0dp" android:scaleType="fitXY" />
+</merge>

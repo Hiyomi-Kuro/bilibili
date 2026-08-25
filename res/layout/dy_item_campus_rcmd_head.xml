@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/dy_campus_alumnae_rcmd_head_text" android:lines="1" android:layout_marginStart="5.5dp" android:layout_marginEnd="5.5dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/T14b" />
+</androidx.constraintlayout.widget.ConstraintLayout>

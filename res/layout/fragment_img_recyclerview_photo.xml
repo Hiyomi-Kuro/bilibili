@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.following.widget.SquareForegroundLayout android:gravity="center" android:id="@id/media_layout" android:background="@color/main_Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minWidth="100.0dp" android:minHeight="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/media_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_camera" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/media_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/camera_v2" android:layout_below="@id/media_icon" android:layout_centerInParent="true" />
+</com.bilibili.bplus.following.widget.SquareForegroundLayout>

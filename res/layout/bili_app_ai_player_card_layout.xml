@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/upper_transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/card_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dp" android:layout_marginStart="60.0dp">
+        <RelativeLayout android:id="@id/name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/description_txt">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dv_header" android:layout_width="24.0dp" android:layout_height="24.0dp" app:placeholderImage="@drawable/default_round_pic" app:placeholderImageScaleType="centerCrop" app:roundAsCircle="true" app:roundingBorderColor="@color/upper_white" app:roundingBorderWidth="1.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/name_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:singleLine="true" android:layout_toRightOf="@id/dv_header" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/description_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" android:layout_above="@id/player_ly" />
+        <FrameLayout android:id="@id/player_ly" android:layout_width="match_parent" android:layout_height="450.0dp" android:layout_marginTop="14.0dp" android:layout_alignParentBottom="true">
+            <com.bilibili.upper.module.aicollection.player.ui.AiPlayerRoundedFrameLayout android:layout_gravity="center_horizontal" android:id="@id/player_container" android:layout_width="253.0dp" android:layout_height="450.0dp" app:roundRadius="12.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:placeholderImage="@drawable/ai_player_cover_default" app:roundedCornerRadius="12.0dp" />
+            </com.bilibili.upper.module.aicollection.player.ui.AiPlayerRoundedFrameLayout>
+            <RelativeLayout android:id="@id/progress_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/seek_rect_ly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="16.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/time_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                        <TextView android:textSize="14.0sp" android:textColor="#b6b6b6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:text="/" />
+                        <TextView android:textSize="14.0sp" android:textColor="#b6b6b6" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/pbTDProgress" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:thumb="@drawable/ai_layer_video_seekbar_thumb" android:thumbOffset="0.0dp" android:paddingStart="5.0dp" android:paddingEnd="0.0dp" android:splitTrack="false" android:progressTint="@color/upper_white" android:progressBackgroundTint="@color/white_alpha20" />
+                </LinearLayout>
+                <ImageView android:id="@id/stop_icon" android:visibility="gone" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/player_stop" android:scaleType="center" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

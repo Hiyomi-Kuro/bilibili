@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/dislike_layout" android:background="@color/Ga1" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tip_msg" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="0.0dp" android:layout_height="45.0dp" android:text="@string/index_feed_dislike_hint" android:maxLines="1" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/undo_dislike" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/index_feed_undo_dislike" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/close_dislike" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/index_feed_close_dislike" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

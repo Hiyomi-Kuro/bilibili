@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.infra.widget.view.InterceptLinearLayout android:orientation="vertical" android:id="@id/sub_sticky_container" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sub_tab_recyclerView" android:paddingLeft="7.0dp" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="36.0dp" android:overScrollMode="never" />
+</com.bilibili.bililive.infra.widget.view.InterceptLinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:background="@color/daynight_color_background_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/constraintlayout" android:background="@color/daynight_color_background_card" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <View android:background="@color/daynight_color_divider_line_for_white" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_medium_spacing" android:text="@string/vip_payment" android:layout_marginStart="@dimen/item_medium_spacing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/pink" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_medium_spacing" android:layout_marginStart="@dimen/item_medium_spacing" app:layout_constraintBaseline_toBaselineOf="@id/text1" app:layout_constraintLeft_toRightOf="@id/text1" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/daynight_color_text_button_white" android:gravity="center" android:id="@id/text3" android:background="@color/pink" android:layout_width="120.0dp" android:layout_height="match_parent" android:text="@string/vip_pay_and_open" app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center_horizontal" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" />
+</FrameLayout>

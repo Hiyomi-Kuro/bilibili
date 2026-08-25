@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:orientation="vertical" android:id="@id/playlist_app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.playset.playlist.ui.FixAppBarLayoutBehavior">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/playlist_collapsingToolbarLayout" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <include layout="@layout/playset_music_layout_playlist_detail_header" />
+            <include layout="@layout/playset_music_layout_playlist_detail_toolbar" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <RelativeLayout android:id="@id/layout_info_header" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/tv_play_all_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/action_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playset_like_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/playset_like_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playset_music_selector_playset_recommend_stroke" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/playset_music_selector_playset_action_text_color" android:id="@id/playset_like_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:includeFontPadding="false" />
+                </LinearLayout>
+                <Space android:layout_width="4.0dp" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playset_favo_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/playset_favo_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playset_music_selector_playset_favo_stroke" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/playset_music_selector_playset_action_text_color" android:id="@id/playset_favo_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:includeFontPadding="false" />
+                </LinearLayout>
+                <Space android:layout_width="4.0dp" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/playset_share_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/playset_share_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playset_music_selector_gray_share_stroke" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/playset_music_selector_playset_action_text_color" android:id="@id/playset_share_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dp" />
+        </RelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.bilibili.playset.playlist.ui.PinnedBottomBehavior">
+        <tv.danmaku.bili.widget.RecyclerView android:id="@id/rv_playlist" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44.0dp" />
+        <com.bilibili.playset.playlist.ui.LoadingErrorEmptyView android:id="@id/load_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/rl_play_all" android:background="@color/Pi5_u" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <ImageView android:id="@id/iv_play_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playset_music_icon_playlist_play_all" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:id="@id/tv_play_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/playset_play_all" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

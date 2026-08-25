@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.topix.widget.TopixSwipeRefreshLayout android:id="@id/tpRefresh" android:fitsSystemWindows="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/headImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitEnd" app:actualImageScaleType="fitEnd" app:viewAspectRadioHeight="220" app:viewAspectRadioWidth="375" />
+        <com.bilibili.topix.detail.NestedScrollCoordinatorLayout android:id="@id/tpNContentCl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/tpAppbar" android:background="@null" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.google.android.material.appbar.ChildScrollObserverBehavior" />
+            <FrameLayout android:id="@id/tpContainer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </com.bilibili.topix.detail.NestedScrollCoordinatorLayout>
+        <ViewStub android:id="@id/tpOutsideOfCoordinateViewStub" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/topixErrorView" android:background="@color/Bg1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/topixErrorBackIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:tint="@color/Ga7" android:layout_marginStart="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/tp_ic_arrow_back_left_line_24" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/Text1" android:id="@id/topixErrorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tp_text_topix_detail" app:layout_constraintBottom_toBottomOf="@id/topixErrorBackIv" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/topixErrorBackIv" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/topix_place_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topixErrorTitle" app:layout_constraintVertical_bias="0.4" />
+        </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.topix.widget.TopixSwipeRefreshLayout>

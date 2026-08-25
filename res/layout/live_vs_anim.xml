@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/svga_vs_anim_cotainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.uam.view.UAMView android:layout_gravity="center" android:id="@id/svga_vs_pk" android:visibility="gone" android:layout_width="335.0dp" android:layout_height="@dimen/live_room_pk_anim_view_height" app:autoPlay="false" app:loopCount="1" />
+    </FrameLayout>
+</FrameLayout>

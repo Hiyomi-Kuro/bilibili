@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="8.0dp" android:paddingTop="4.0dp" android:paddingRight="18.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/quality_switch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原画" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_setting_panel_red_dot" android:contentDescription="@null" app:layout_constraintBottom_toTopOf="@id/quality_switch_tv" app:layout_constraintLeft_toRightOf="@id/quality_switch_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

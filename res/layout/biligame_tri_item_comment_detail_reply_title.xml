@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/Ga12" android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:id="@id/tri_tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" />
+</LinearLayout>

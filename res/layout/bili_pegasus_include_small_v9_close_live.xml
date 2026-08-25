@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.list.common.widget.RoundCircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:cornerTopRadius="4.0dp" app:isNeedAllcorner="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/close_blur_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundedCornerRadius="4.0dp" />
+    <View android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_close" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/bili_ic_inline_live_close" android:layout_marginEnd="3.0dp" app:tint="@color/Wh0_u" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pegasus_small_v9_close_live" />
+    </LinearLayout>
+</com.bilibili.app.comm.list.common.widget.RoundCircleFrameLayout>

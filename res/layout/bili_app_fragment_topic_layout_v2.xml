@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/topic_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/topic_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/topic_error_root" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topic_loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_app_video_detail_topic_loading" />
+                <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/favorite_loading_tip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/topic_retry" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_2233_fail_black_stroke" />
+                <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/favorite_error_tip_2" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/retry" android:background="@drawable/selector_button_solid_pink" android:layout_width="141.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:text="@string/favorite_try_again" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>

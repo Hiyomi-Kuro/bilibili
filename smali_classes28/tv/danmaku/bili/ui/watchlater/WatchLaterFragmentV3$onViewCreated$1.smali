@@ -1,0 +1,430 @@
+.class final Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/p<",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "Lgf3/s;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\u000b\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
+    }
+    d2 = {
+        "Lgf3/s;",
+        "invoke",
+        "(Landroidx/compose/runtime/Composer;I)V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+
+# direct methods
+.method constructor <init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x2
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private static final invoke$lambda$0(Landroidx/compose/runtime/j3;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/j3<",
+            "Ljava/lang/Boolean;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Landroidx/compose/runtime/j3;->getValue()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    return p0
+.end method
+
+.method private static final invoke$lambda$1(Landroidx/compose/runtime/j3;)Lvq3/h;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/j3<",
+            "Lvq3/h;",
+            ">;)",
+            "Lvq3/h;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Landroidx/compose/runtime/j3;->getValue()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    check-cast p0, Lvq3/h;
+
+    .line 6
+    .line 7
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/Composer;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, p2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->invoke(Landroidx/compose/runtime/Composer;I)V
+
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    return-object p1
+.end method
+
+.method public final invoke(Landroidx/compose/runtime/Composer;I)V
+    .locals 29
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, p2
+
+    and-int/lit8 v2, v1, 0xb
+
+    const/4 v3, 0x2
+
+    if-ne v2, v3, :cond_1
+
+    .line 2
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->b()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->e()V
+
+    goto/16 :goto_1
+
+    .line 4
+    :cond_1
+    :goto_0
+    invoke-static {}, Landroidx/compose/runtime/j;->J()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    const/4 v2, -0x1
+
+    const-string v3, "tv.danmaku.bili.ui.watchlater.WatchLaterFragmentV3.onViewCreated.<anonymous> (WatchLaterFragmentV3.kt:66)"
+
+    const v4, 0x1895cd07
+
+    invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/j;->S(IIILjava/lang/String;)V
+
+    :cond_2
+    iget-object v1, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;->Hx()Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;->H3()Lkotlinx/coroutines/flow/d;
+
+    move-result-object v2
+
+    sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    const/4 v4, 0x0
+
+    const/16 v6, 0x38
+
+    const/4 v7, 0x2
+
+    move-object/from16 v5, p1
+
+    invoke-static/range {v2 .. v7}, Landroidx/compose/runtime/a3;->a(Lkotlinx/coroutines/flow/d;Ljava/lang/Object;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/j3;
+
+    move-result-object v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    .line 5
+    invoke-virtual {v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;->Hx()Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterBaseViewModel;->m3()Lkotlinx/coroutines/flow/s;
+
+    move-result-object v2
+
+    const/16 v3, 0x8
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    move-object/from16 v15, p1
+
+    invoke-static {v2, v5, v15, v3, v4}, Landroidx/compose/runtime/a3;->b(Lkotlinx/coroutines/flow/s;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/j3;
+
+    move-result-object v2
+
+    .line 6
+    invoke-static {v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->invoke$lambda$1(Landroidx/compose/runtime/j3;)Lvq3/h;
+
+    move-result-object v6
+
+    .line 7
+    invoke-static {v1}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->invoke$lambda$0(Landroidx/compose/runtime/j3;)Z
+
+    move-result v7
+
+    iget-object v1, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    .line 8
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;->Hx()Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;->I3()Landroidx/compose/foundation/lazy/LazyListState;
+
+    move-result-object v8
+
+    iget-object v1, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    .line 9
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;->Hx()Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/watchlater/viewmodel/WatchLaterViewModel;->J3()Landroidx/compose/foundation/lazy/LazyListState;
+
+    move-result-object v9
+
+    .line 10
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$1;
+
+    move-object v10, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$1;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$2;
+
+    move-object v11, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$2;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$3;
+
+    move-object v12, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$3;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$4;
+
+    move-object v13, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$4;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$5;
+
+    move-object v14, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$5;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$6;
+
+    move-object v15, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$6;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$7;
+
+    move-object/from16 v16, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$7;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$8;
+
+    move-object/from16 v17, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2, v5}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$8;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;Lkotlin/coroutines/c;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$9;
+
+    move-object/from16 v18, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$9;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$10;
+
+    move-object/from16 v19, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$10;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$11;
+
+    move-object/from16 v20, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$11;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$12;
+
+    move-object/from16 v21, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$12;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$13;
+
+    move-object/from16 v22, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$13;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$14;
+
+    move-object/from16 v23, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$14;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$15;
+
+    move-object/from16 v24, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$15;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    new-instance v1, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$16;
+
+    move-object/from16 v25, v1
+
+    iget-object v2, v0, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1;->this$0:Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;
+
+    invoke-direct {v1, v2}, Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3$onViewCreated$1$16;-><init>(Ltv/danmaku/bili/ui/watchlater/WatchLaterFragmentV3;)V
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x40
+
+    move-object/from16 v26, p1
+
+    invoke-static/range {v6 .. v28}, Ltv/danmaku/bili/ui/watchlater/compose/WatchLaterPageComposeKt;->g(Lvq3/h;ZLandroidx/compose/foundation/lazy/LazyListState;Landroidx/compose/foundation/lazy/LazyListState;Lsf3/a;Lsf3/a;Lsf3/a;Lsf3/p;Lsf3/p;Lsf3/a;Lsf3/a;Lsf3/p;Lsf3/l;Lsf3/l;Lsf3/l;Lsf3/l;Lsf3/l;Lsf3/l;Lsf3/a;Lsf3/a;Landroidx/compose/runtime/Composer;II)V
+
+    invoke-static {}, Landroidx/compose/runtime/j;->J()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-static {}, Landroidx/compose/runtime/j;->R()V
+
+    :cond_3
+    :goto_1
+    return-void
+.end method

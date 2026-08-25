@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/battle_container" android:layout="@layout/bili_app_view_pk_battle_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/pk_draw_card_view" android:layout="@layout/bili_app_view_pk_user_draw_card" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</merge>

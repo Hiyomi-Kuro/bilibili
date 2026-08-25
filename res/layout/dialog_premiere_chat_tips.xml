@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bili_player_shape_round_corner_10_wh0_bg" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/Text1" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="20.0dp" android:text="@string/video_detail_premiere_tip_title" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Text2" android:gravity="center" android:id="@id/sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="20.0dp" />
+        <View android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="24.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Brand_pink" android:gravity="center" android:id="@id/ok" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/know" />
+    </LinearLayout>
+</FrameLayout>

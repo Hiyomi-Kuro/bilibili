@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Ga5" android:id="@id/tri_tv_comment_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_tab_comment" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/tri_tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" app:layout_constraintBaseline_toBaselineOf="@id/tri_tv_comment_tab" app:layout_constraintStart_toEndOf="@id/tri_tv_comment_tab" />
+</merge>

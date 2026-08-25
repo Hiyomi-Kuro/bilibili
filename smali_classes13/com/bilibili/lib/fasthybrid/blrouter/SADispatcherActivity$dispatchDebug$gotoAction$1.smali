@@ -1,0 +1,150 @@
+.class final Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;->x6(Landroid/net/Uri;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/a<",
+        "Lgf3/s;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
+    }
+    d2 = {
+        "Lgf3/s;",
+        "invoke",
+        "()V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $debugAppInfo:Lcom/bilibili/lib/fasthybrid/packages/AppInfo;
+
+.field final synthetic $targetParam:Lcom/bilibili/lib/fasthybrid/JumpParam;
+
+.field final synthetic this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/lib/fasthybrid/JumpParam;Lcom/bilibili/lib/fasthybrid/packages/AppInfo;Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$targetParam:Lcom/bilibili/lib/fasthybrid/JumpParam;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$debugAppInfo:Lcom/bilibili/lib/fasthybrid/packages/AppInfo;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+    .line 6
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->invoke()V
+
+    sget-object v0, Lgf3/s;->a:Lgf3/s;
+
+    return-object v0
+.end method
+
+.method public final invoke()V
+    .locals 11
+
+    .line 2
+    sget-object v0, Lcom/bilibili/lib/fasthybrid/packages/config/SAConfigurationService;->a:Lcom/bilibili/lib/fasthybrid/packages/config/SAConfigurationService;
+
+    iget-object v1, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$targetParam:Lcom/bilibili/lib/fasthybrid/JumpParam;
+
+    iget-object v2, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$debugAppInfo:Lcom/bilibili/lib/fasthybrid/packages/AppInfo;
+
+    invoke-virtual {v0, v1, v2}, Lcom/bilibili/lib/fasthybrid/packages/config/SAConfigurationService;->E(Lcom/bilibili/lib/fasthybrid/JumpParam;Lcom/bilibili/lib/fasthybrid/packages/AppInfo;)V
+
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+    iget-object v1, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$targetParam:Lcom/bilibili/lib/fasthybrid/JumpParam;
+
+    .line 3
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v2
+
+    invoke-static {v0, v0, v1, v2}, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;->r6(Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;Landroid/content/Context;Lcom/bilibili/lib/fasthybrid/JumpParam;Landroid/content/Intent;)V
+
+    .line 4
+    sget-object v3, Lcom/bilibili/lib/fasthybrid/SmallAppRouter;->a:Lcom/bilibili/lib/fasthybrid/SmallAppRouter;
+
+    iget-object v4, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->$targetParam:Lcom/bilibili/lib/fasthybrid/JumpParam;
+
+    invoke-virtual {v0}, Lcom/bilibili/lib/fasthybrid/JumpParam;->Z()Ljava/lang/String;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+    invoke-static {v0}, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;->u6(Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;)J
+
+    move-result-wide v7
+
+    const/4 v9, 0x4
+
+    const/4 v10, 0x0
+
+    invoke-static/range {v3 .. v10}, Lcom/bilibili/lib/fasthybrid/SmallAppRouter;->E(Lcom/bilibili/lib/fasthybrid/SmallAppRouter;Landroid/app/Activity;Ljava/lang/String;ZJILjava/lang/Object;)I
+
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity$dispatchDebug$gotoAction$1;->this$0:Lcom/bilibili/lib/fasthybrid/blrouter/SADispatcherActivity;
+
+    .line 5
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+
+    return-void
+.end method

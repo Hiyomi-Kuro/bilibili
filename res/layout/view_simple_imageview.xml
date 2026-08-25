@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followingcard.widget.theme.ThemeBiliImageView android:id="@id/following_image_view" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="2.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/following_tv_flag" android:background="@drawable/video_time_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="6.0dp" android:minWidth="32.0dp" android:maxEms="6" />
+    <com.bilibili.bplus.imageviewer.widget.DelayShowProgressBar android:layout_gravity="center" android:id="@id/loading_progress" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:indeterminate="true" app:delay_seconds="0.5" style="?android:progressBarStyleLarge" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

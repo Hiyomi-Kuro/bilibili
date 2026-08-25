@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/player_content_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/player_content" android:background="@color/black" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+    <View android:id="@id/shadow" android:background="@drawable/player_new_shape_shadow_top" android:clickable="false" android:layout_width="match_parent" android:layout_height="65.0dp" app:layout_collapseMode="pin" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.ad.adview.imax.impl.widget.ImaxToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="0.0dp" android:layout_height="@dimen/navigation_top_bar_size" app:iconTintColor="@null" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleTintColor="@null" style="?toolbarStyle" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/game_detail_container" android:background="@color/white" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/player_content_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

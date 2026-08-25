@@ -1,0 +1,103 @@
+.class final Lcom/bilibili/app/comment3/input/CommentV3Publisher$config$2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/app/comment3/input/CommentV3Publisher;-><init>(Landroid/content/Context;Lti/b;Lsf3/a;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/a<",
+        "Lcom/bilibili/app/comment3/data/model/CommentSubjectDescription;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u0004\u0018\u00010\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Lcom/bilibili/app/comment3/data/model/CommentSubjectDescription;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/bilibili/app/comment3/input/CommentV3Publisher;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/app/comment3/input/CommentV3Publisher;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/comment3/input/CommentV3Publisher$config$2;->this$0:Lcom/bilibili/app/comment3/input/CommentV3Publisher;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Lcom/bilibili/app/comment3/data/model/CommentSubjectDescription;
+    .locals 1
+
+    iget-object v0, p0, Lcom/bilibili/app/comment3/input/CommentV3Publisher$config$2;->this$0:Lcom/bilibili/app/comment3/input/CommentV3Publisher;
+
+    .line 2
+    invoke-static {v0}, Lcom/bilibili/app/comment3/input/CommentV3Publisher;->b(Lcom/bilibili/app/comment3/input/CommentV3Publisher;)Lcom/bilibili/app/comment3/data/state/CommentState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/bilibili/app/comment3/data/state/CommentState;->G()Lcom/bilibili/app/comment3/data/state/l;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/bilibili/app/comment3/data/state/l;->c()Lcom/bilibili/app/comment3/data/model/CommentSubjectDescription;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/app/comment3/input/CommentV3Publisher$config$2;->invoke()Lcom/bilibili/app/comment3/data/model/CommentSubjectDescription;
+
+    move-result-object v0
+
+    return-object v0
+.end method

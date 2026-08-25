@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_goods" android:layout_width="match_parent" android:layout_height="match_parent" app:roundedCornerRadius="4.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/biv_select_goods" android:visibility="gone" android:layout_width="26.0dp" android:layout_height="14.0dp" app:layout_constraintStart_toEndOf="@id/biv_select_goods" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_goods_sell_end" android:background="@drawable/bg_live_shopping_goods_sell_end_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/ic_live_goods_sell_end" app:roundedCornerRadius="4.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/goods_sort" android:background="@drawable/bg_live_shopping_card_sort" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="16.0dp" />
+    <FrameLayout android:id="@id/container_hot_sale" android:background="@drawable/bg_live_shopping_list_goods_hot_sale" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22.0dp">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pic_layout_iv_hot_sale" android:layout_width="wrap_content" android:layout_height="13.0dp" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <com.bilibili.bililive.room.biz.shopping.view.LiveRoomShoppingNumFlipperView android:id="@id/num_flipper_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iv_scaleX="0.8" app:iv_scaleY="0.8" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/ll_explain" android:background="@drawable/bg_live_shopping_explain" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginBottom="5.0dp" android:paddingStart="5.0dp" android:paddingEnd="7.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_goods_explain" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_goods_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_room_shopping_explaining" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

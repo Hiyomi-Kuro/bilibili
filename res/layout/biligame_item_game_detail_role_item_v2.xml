@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/biligame_dip_10" android:layout_width="120.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_role" android:layout_width="match_parent" android:layout_height="124.0dp" app:placeholderImage="@drawable/biligame_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="6.0dp" app:viewAspectRatio="1.5" style="@style/Biligame.App.StaticImageView.Thumb.Icon124" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/tv_role_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" />
+    <TextView android:textSize="11.0dp" android:textColor="@color/Wh0_u_alpha40" android:ellipsize="end" android:id="@id/tv_role_cv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:maxLines="1" />
+</LinearLayout>

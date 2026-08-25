@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_detail_game_recharge_info_container" android:background="@drawable/mall_module_bg" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

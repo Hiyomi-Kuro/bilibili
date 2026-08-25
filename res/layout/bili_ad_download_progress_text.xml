@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" android:background="@drawable/shape_rect_grad_black_alpha_0_to_40" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="end|bottom" android:id="@id/progress" android:layout_width="match_parent" android:layout_height="2.0dp" android:progressDrawable="@drawable/ad_download_progressbar" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_marginBottom="4.0dp" android:minWidth="60.0dp" />
+</merge>

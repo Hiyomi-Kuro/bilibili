@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/mall_module_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:id="@id/market_name" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_market_group_buy_name" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:layout_gravity="right" android:id="@id/market_detail_rule" android:paddingLeft="0.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_market_detail_rule" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <FrameLayout android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_below="@id/market_name">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga8" android:id="@id/market_desc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/discount_money_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mall.ui.widget.MallImageView2 android:layout_gravity="center" android:id="@id/mall_coin_iv" android:layout_width="34.0dp" android:layout_height="34.0dp" app:actualImageScaleType="fitCenter" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dp" android:textColor="@color/Ga8" android:id="@id/mall_order_total_decease_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_discount_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="24.0dp" android:textColor="@color/Ga8" android:id="@id/discount_money" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_order_total_decease_text" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/Ga8" android:id="@id/undiscount_money" android:paddingLeft="6.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/discount_money" app:layout_constraintLeft_toRightOf="@id/discount_money" app:layout_constraintTop_toTopOf="@id/discount_money" />
+                <ImageView android:id="@id/banned_img_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dp" android:src="@drawable/mall_order_general_inform_ic" app:layout_constraintBottom_toBottomOf="@id/discount_money" app:layout_constraintLeft_toRightOf="@id/undiscount_money" app:layout_constraintTop_toTopOf="@id/discount_money" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/no_participate" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_empty_default" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga8" android:layout_gravity="center" android:id="@id/no_participate_desc" android:paddingLeft="10.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

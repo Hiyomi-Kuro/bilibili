@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" android:elevation="0.0dp" app:elevation="0.0dp" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_scrollFlags="noScroll" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle">
+        <include layout="@layout/emoticon_bili_app_search_view" />
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/status_img" android:layout_width="280.0dp" android:layout_height="154.0dp" app:actualImageScaleType="centerInside" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    </LinearLayout>
+    <tv.danmaku.bili.widget.LoadingImageViewWButtonV2 android:gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="150.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/emoticon_search_nothing" style="@style/T16" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

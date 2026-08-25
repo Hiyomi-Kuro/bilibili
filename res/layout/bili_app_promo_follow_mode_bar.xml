@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/follow_mode_bar" android:background="@color/Wh0" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="15.0dp" android:src="@drawable/ic_pegasus_follow_mode" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/follow_mode_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxLines="1" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:padding="2.0dp" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_light_gray_arrow_right" app:imageTint="@color/Ga5" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/top_bar_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

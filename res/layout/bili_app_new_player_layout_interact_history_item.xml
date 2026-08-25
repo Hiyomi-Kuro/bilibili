@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="127.0dp" android:layout_height="86.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_cover" android:background="@drawable/bg_player_interact_history_item_cover_normal" android:padding="1.0dp" android:layout_width="117.0dp" android:layout_height="73.0dp" android:layout_marginLeft="10.0dp" android:contentDescription="@null" android:layout_marginStart="10.0dp" app:placeholderImage="@drawable/bili_default_image_tv" />
+    <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/text_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:background="@drawable/bg_interact_history_title" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="122.0dp" android:layout_height="28.0dp" android:lines="1" android:drawablePadding="2.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

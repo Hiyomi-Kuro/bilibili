@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="50.0dp" android:layout_height="50.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/sdv_image" android:background="@drawable/editor_shape_material_bg_four_radius" android:layout_width="50.0dp" android:layout_height="50.0dp" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" />
+        <View android:id="@id/v_select_rectangle" android:background="@drawable/editor_selector_material_item_bg" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        <ImageView android:layout_gravity="right|bottom" android:id="@id/imv_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:visibility="invisible" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+        <ProgressBar android:layout_gravity="right|bottom" android:id="@id/pb_download" android:visibility="invisible" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" />
+        <ImageView android:id="@id/iv_bgm" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_margin="4.0dp" android:src="@drawable/ic_upper_sticker_bgm" />
+    </FrameLayout>
+</FrameLayout>

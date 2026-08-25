@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:ellipsize="middle" android:gravity="center" android:id="@id/tv_sift_tag" android:background="@drawable/biligame_background_corner_4_ga12" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="79.0dp" android:layout_height="28.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" android:singleLine="true" android:paddingStart="8.0dp" android:paddingEnd="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

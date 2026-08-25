@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="42.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.list.widget.recyclerview.InterceptHorizontalRecyclerView android:id="@id/list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_toLeftOf="@id/btn_expand" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/ic_tag_background" android:layout_width="59.0dp" android:layout_height="42.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/btn_expand" android:paddingLeft="13.0dp" android:paddingRight="13.0dp" android:visibility="gone" android:layout_width="39.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_expand" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:imageTint="@color/Ga7" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+</merge>

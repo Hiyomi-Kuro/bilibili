@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.adcommon.widget.button.AdDownloadButton android:gravity="center_vertical" android:id="@id/ag_button" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="38.0dp" android:layout_marginRight="38.0dp" app:download_btn_backgroundColor="@color/Pi5_u" app:download_btn_cornerRadius="25.0dp" app:download_btn_isFill="true" app:download_btn_progress_backgroundColor="#c9ccd0" app:download_btn_progress_forwardColor="@color/Pi5_u" app:download_btn_strokeColor="@color/Pi5_u" app:download_btn_textColor="@color/Wh0_u" app:download_btn_textSize="14.0sp" />
+</merge>

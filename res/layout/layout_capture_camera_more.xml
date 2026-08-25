@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#0fff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/capture_pop_window_4radius_d6back" android:layout_width="152.0dp" android:layout_height="156.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="78.0dp" android:layout_alignParentTop="true">
+            <TextView android:textColor="@color/gray_dark" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="27.0dp" android:layout_marginTop="12.0dp" android:text="@string/fragment_capture_pop_t_more_flash" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="27.0dp" android:layout_marginBottom="12.0dp">
+                <TextView android:gravity="center_vertical" android:id="@id/capture_more_action_flash_close" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/fragment_capture_pop_t_more_flash_close" android:layout_weight="1.0" />
+                <TextView android:gravity="center_vertical" android:id="@id/capture_more_action_flash_open" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/fragment_capture_pop_t_more_flash_open" android:layout_weight="1.0" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="78.0dp" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/gray_dark" android:gravity="center_vertical" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="27.0dp" android:layout_marginTop="12.0dp" android:text="@string/fragment_capture_pop_t_more_count_down" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="27.0dp" android:layout_marginBottom="12.0dp">
+                <TextView android:textColor="@color/pink" android:gravity="center_vertical" android:id="@id/capture_more_action_count_down_0s" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/fragment_capture_pop_t_more_count_down_0s" android:layout_weight="1.0" />
+                <TextView android:gravity="center_vertical" android:id="@id/capture_more_action_count_down_3s" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/fragment_capture_pop_t_more_count_down_3s" android:layout_weight="1.0" />
+                <TextView android:gravity="center_vertical" android:id="@id/capture_more_action_count_down_10s" android:paddingLeft="16.0dp" android:paddingRight="0.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/fragment_capture_pop_t_more_count_down_10s" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/edit_bgm_search_item_bg_gray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

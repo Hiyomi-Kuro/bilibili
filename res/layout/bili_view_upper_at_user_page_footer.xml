@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/footer_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" app:progressIndeterminateTint="@color/upper_theme_text_pink" style="?android:progressBarStyle" />
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/upper_at_user_page_gray_dark" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:text="@string/upper_at_user_page_empty_text" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

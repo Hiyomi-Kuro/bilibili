@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tab_content" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/cp_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.6" style="@style/CenterPlusTextShadow" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/cp_tab_red_tip" android:background="@drawable/bg_center_plus_tab_tips_shap" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dp" android:layout_marginTop="-8.0dp" android:layout_marginEnd="-18.0dp" />
+    </FrameLayout>
+    <View android:layout_gravity="center" android:id="@id/cp_tab_red_point" android:background="@drawable/cp_shape_red_point" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="-1.5dp" android:layout_alignTop="@id/tab_content" android:layout_marginStart="-1.0dp" android:layout_toEndOf="@id/tab_content" />
+</RelativeLayout>

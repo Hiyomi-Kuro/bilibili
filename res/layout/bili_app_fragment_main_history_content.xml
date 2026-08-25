@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottom_delete_history">
+        <include layout="@layout/bili_app_layout_recyclerview" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+    <tv.danmaku.bili.widget.LoadingImageViewWButton android:gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.app.history.widget.HistoryEditorView android:id="@id/bottom_delete_history" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/navigation_bottom_bar_delete_video" android:layout_alignParentBottom="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

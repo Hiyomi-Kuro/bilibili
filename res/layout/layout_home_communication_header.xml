@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.im.communication.widget.IMTopHint android:id="@id/im_top_hint" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <com.bilibili.bplus.im.communication.widget.IMMainNotificationView android:id="@id/IMMainNotificationView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:layout_width="match_parent" android:layout_height="10.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Ga9" android:id="@id/tv_chat_list" android:background="@color/Wh0" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/line_chat_list" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

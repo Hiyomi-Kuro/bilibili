@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/upper_theme_bg1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/section_inspiration_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="12.0dp" layout="@layout/bili_app_layout_include_upper_center_section_header_v3" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/section_inspiration_tab" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" app:tabIndicator="@drawable/upper_selector_tab_indicator" app:tabRippleColor="@color/upper_transparent" app:tabSelectedTextColor="@color/upper_theme_brand_pink" app:tabTextAppearance="@style/Upper_Center_Tab_TextAppearance" app:tabTextColor="@color/upper_txt_color_two" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/section_inspiration_vp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

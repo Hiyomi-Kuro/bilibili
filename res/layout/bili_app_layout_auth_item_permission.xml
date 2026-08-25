@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:enabled="false" android:id="@id/check_box" android:layout_marginTop="2.0dp" android:checked="true" android:layout_marginStart="24.0dp" style="@style/LoginRegCheckbox" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/permission_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="8.0dp" android:layout_marginEnd="24.0dp" android:layout_toEndOf="@id/check_box" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:id="@id/permission_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="14.0dp" android:layout_below="@id/permission_title" android:layout_alignLeft="@id/permission_title" android:layout_marginEnd="24.0dp" />
+</RelativeLayout>

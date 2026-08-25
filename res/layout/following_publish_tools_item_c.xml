@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/selectable_item_fg" android:layout_width="@dimen/following_publish_tool_layout_item_width_c" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/add_publish_other" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_add_round_gray" android:scaleType="center" />
+    <ImageView android:id="@id/add_publish_other_tip" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_circle_white" android:tint="@color/Re6" android:layout_alignTop="@id/add_publish_other" android:layout_alignRight="@id/add_publish_other" />
+</RelativeLayout>

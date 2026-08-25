@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/upper_king_honour_battle_report_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/upper_king_honour_battle_recent_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_marginBottom="100.0dp" />
+    <ViewStub android:layout_gravity="center" android:id="@id/upper_king_honour_no_content_stub" android:layout="@layout/upper_king_honour_error_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

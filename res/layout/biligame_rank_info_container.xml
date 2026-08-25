@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_rank_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_rank_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="@id/tv_rank_content" app:tint="@color/Br6" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/Br6" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_rank_content" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:maxLines="1" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_rank_icon" app:layout_constraintRight_toLeftOf="@id/iv_rank_arrow" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginRight="0.0dp" />
+    <ImageView android:id="@id/iv_rank_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biligame_vector_arrow_right_inline" app:layout_constraintBottom_toBottomOf="@id/tv_rank_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/tv_rank_content" app:tint="@color/Br6" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/selector_interest_chose_dialog_bg_f" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginStart="7.5dp" android:layout_marginEnd="7.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/check_box" android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_margin="5.0dp" android:src="@drawable/bili_app_list_selector_selected_tag" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

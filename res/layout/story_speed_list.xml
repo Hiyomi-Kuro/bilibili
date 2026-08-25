@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/touch_outside" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <FrameLayout android:layout_gravity="center" android:background="@color/black_alpha88" android:layout_width="204.0dp" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.RecyclerView android:layout_gravity="center" android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

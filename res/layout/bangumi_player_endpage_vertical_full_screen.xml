@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="21.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_player_back_button" style="@style/BPlayer_PlayerControlBarButton.Compat" />
+    </FrameLayout>
+    <com.bilibili.bangumi.ui.page.detail.playerV2.widget.verticalscreen.NestedEndPageView android:orientation="vertical" android:id="@id/nested_end_page" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/bangumi_info_layout" layout="@layout/bangumi_player_endpage_bangumi_info_vertical_full" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/white" android:id="@id/recommend_txt" android:paddingLeft="6.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/bangumi_common_section_header_recommend1" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/recycler" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12.0dp" />
+    </com.bilibili.bangumi.ui.page.detail.playerV2.widget.verticalscreen.NestedEndPageView>
+</LinearLayout>

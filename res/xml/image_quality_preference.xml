@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_title_image_quality"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.preferences.settings2.Settings2RadioGroupPreference android:persistent="true" android:title="@string/pref_title_image_quality" android:key="@string/pref_image_quality_key" app:migration_settings_type="other" app:radioDefaultValue="0" app:radioEntries="@array/pref_image_quality_entries" app:radioEntrySummaries="@array/pref_image_quality_summaries" app:radioEntryValues="@array/pref_image_quality_entryValues" />
+</PreferenceScreen>

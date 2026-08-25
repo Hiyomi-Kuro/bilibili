@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.MaxHeightConstraintLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cl" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/frame" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+    <ViewStub android:id="@id/topImageView" android:layout="@layout/fragment_event_bottom_sheet_dialog_top_image" android:inflatedId="@id/topImageLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <Space android:id="@id/topLine" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/topImageLayout" app:layout_constraintTop_toTopOf="@id/topImageLayout" app:layout_constraintVertical_bias="0.66" />
+    <ViewStub android:id="@id/topTitleView" android:layout="@layout/fragment_event_bottom_sheet_dialog_top_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.bplus.followingcard.widget.MaxHeightConstraintLayout>

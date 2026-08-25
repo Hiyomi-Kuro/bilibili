@@ -1,0 +1,1359 @@
+.class public final Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;
+.super Lbase/LiveBaseGiftFragment;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u000e\n\u0002\u0008\u0008\u0008\u0000\u0018\u0000 -2\u00020\u0001:\u0001.B\u0007\u00a2\u0006\u0004\u0008+\u0010,J\u0008\u0010\u0003\u001a\u00020\u0002H\u0002J\u0010\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0010\u0010\u0008\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\u0004H\u0002J\u0012\u0010\u000b\u001a\u00020\u00022\u0008\u0010\n\u001a\u0004\u0018\u00010\tH\u0016J&\u0010\u0011\u001a\u0004\u0018\u00010\u00102\u0006\u0010\r\u001a\u00020\u000c2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\u0008\u0010\n\u001a\u0004\u0018\u00010\tH\u0016J\u001a\u0010\u0013\u001a\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u00102\u0008\u0010\n\u001a\u0004\u0018\u00010\tH\u0016J\u0010\u0010\u0014\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0014J\u0008\u0010\u0015\u001a\u00020\u0002H\u0016R\u001d\u0010\u001b\u001a\u0004\u0018\u00010\u00168BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0017\u0010\u0018\u001a\u0004\u0008\u0019\u0010\u001aR\u0018\u0010\u001f\u001a\u0004\u0018\u00010\u001c8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u001d\u0010\u001eR\"\u0010&\u001a\u00020\u00048\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010!\u001a\u0004\u0008\"\u0010#\"\u0004\u0008$\u0010%R\u0014\u0010*\u001a\u00020\'8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008(\u0010)\u00a8\u0006/"
+    }
+    d2 = {
+        "Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;",
+        "Lbase/LiveBaseGiftFragment;",
+        "Lgf3/s;",
+        "Lx",
+        "",
+        "isVisible",
+        "Px",
+        "isLandscape",
+        "Ox",
+        "Landroid/os/Bundle;",
+        "savedInstanceState",
+        "onCreate",
+        "Landroid/view/LayoutInflater;",
+        "inflater",
+        "Landroid/view/ViewGroup;",
+        "container",
+        "Landroid/view/View;",
+        "onCreateView",
+        "view",
+        "onViewCreated",
+        "Fx",
+        "onDestroy",
+        "Llb3/a;",
+        "L",
+        "Lgf3/h;",
+        "Jx",
+        "()Llb3/a;",
+        "mGiftOuterService",
+        "Lx70/c;",
+        "M",
+        "Lx70/c;",
+        "mDataCenter",
+        "N",
+        "Z",
+        "Kx",
+        "()Z",
+        "Nx",
+        "(Z)V",
+        "isFragmentAdded",
+        "",
+        "getLogTag",
+        "()Ljava/lang/String;",
+        "logTag",
+        "<init>",
+        "()V",
+        "O",
+        "a",
+        "giftPanel_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final O:Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$a;
+
+
+# instance fields
+.field private final L:Lgf3/h;
+
+.field private M:Lx70/c;
+
+.field private N:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->O:Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Lbase/LiveBaseGiftFragment;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+
+    .line 5
+    .line 6
+    sget-object v1, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$mGiftOuterService$2;->INSTANCE:Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$mGiftOuterService$2;
+
+    .line 7
+    .line 8
+    invoke-static {v0, v1}, Lkotlin/c;->b(Lkotlin/LazyThreadSafetyMode;Lsf3/a;)Lgf3/h;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    iput-object v0, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->L:Lgf3/h;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public static synthetic Hx(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Mx(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;Ljava/lang/Boolean;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic Ix(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Ox(Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private final Jx()Llb3/a;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->L:Lgf3/h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lgf3/h;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Llb3/a;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method private final Lx()V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->j3()Lcom/bilibili/bililive/infra/arch/jetpack/liveData/SafeMutableLiveData;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getViewLifecycleOwner()Landroidx/lifecycle/w;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    new-instance v2, Lcom/bilibili/bilibili/giftPanel/a;
+
+    .line 12
+    .line 13
+    invoke-direct {v2, p0}, Lcom/bilibili/bilibili/giftPanel/a;-><init>(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v3, "LiveGiftPanelFragment_GIFT"
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1, v3, v2}, Lcom/bilibili/bililive/infra/arch/jetpack/liveData/SafeMutableLiveData;->t(Landroidx/lifecycle/w;Ljava/lang/String;Landroidx/lifecycle/h0;)V
+
+    .line 19
+    .line 20
+    .line 21
+    :cond_0
+    return-void
+.end method
+
+.method private static final Mx(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;Ljava/lang/Boolean;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$observerScreen$1$1;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$observerScreen$1$1;-><init>(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;Ljava/lang/Boolean;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-wide/16 v1, 0xc8
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, v0, v1, v2}, Lbase/LiveBaseGiftFragment;->Gx(Lsf3/a;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private final Ox(Z)V
+    .locals 7
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_c
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    if-eqz v0, :cond_c
+
+    .line 12
+    .line 13
+    invoke-static {v0}, Lcom/bilibili/bililive/infra/util/romadpter/LiveDisplayCutout;->hasDisplayCutoutAllSituations(Landroid/view/Window;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    if-eqz v1, :cond_c
+
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    :try_start_0
+    invoke-static {}, Lzz0/d0;->p()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-eqz v2, :cond_0
+
+    .line 25
+    .line 26
+    const-string v2, "PACM00"
+
+    .line 27
+    .line 28
+    sget-object v3, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v2
+
+    .line 34
+    if-eqz v2, :cond_0
+
+    .line 35
+    .line 36
+    return-void
+
+    .line 37
+    :catch_0
+    move-exception p1
+
+    .line 38
+    goto/16 :goto_4
+
+    .line 39
+    .line 40
+    :cond_0
+    const/4 v2, 0x0
+
+    .line 41
+    if-nez p1, :cond_1
+
+    .line 42
+    .line 43
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    if-eqz p1, :cond_c
+
+    .line 48
+    .line 49
+    invoke-virtual {p1, v2, v2, v2, v2}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 50
+    .line 51
+    .line 52
+    goto/16 :goto_6
+
+    .line 53
+    .line 54
+    :cond_1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p1
+
+    .line 58
+    if-nez p1, :cond_2
+
+    .line 59
+    .line 60
+    return-void
+
+    .line 61
+    :cond_2
+    new-instance v3, Lcom/bilibili/bililive/infra/util/romadpter/h;
+
+    .line 62
+    .line 63
+    invoke-direct {v3}, Lcom/bilibili/bililive/infra/util/romadpter/h;-><init>()V
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v3, p1}, Lcom/bilibili/bililive/infra/util/romadpter/h;->b(Landroid/app/Activity;)Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v4
+
+    .line 70
+    if-eqz v4, :cond_3
+
+    .line 71
+    .line 72
+    invoke-virtual {v3, p1}, Lcom/bilibili/bililive/infra/util/romadpter/h;->a(Landroid/app/Activity;)I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result p1
+
+    .line 76
+    goto :goto_0
+
+    .line 77
+    :cond_3
+    const/4 p1, 0x0
+
+    .line 78
+    :goto_0
+    invoke-static {v0}, Lkn1/k;->c(Landroid/view/Window;)Ljava/util/List;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v0
+
+    .line 86
+    check-cast v0, Landroid/graphics/Rect;
+
+    .line 87
+    .line 88
+    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v3
+
+    .line 92
+    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v0
+
+    .line 96
+    invoke-static {v3, v0}, Lxf3/q;->m(II)I
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v0
+
+    .line 100
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v3
+
+    .line 104
+    if-eqz v3, :cond_4
+
+    .line 105
+    .line 106
+    invoke-virtual {v3}, Landroid/app/Activity;->getRequestedOrientation()I
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v3
+
+    .line 110
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v3
+
+    .line 114
+    goto :goto_1
+
+    .line 115
+    :cond_4
+    move-object v3, v1
+
+    .line 116
+    :goto_1
+    if-nez v3, :cond_5
+
+    .line 117
+    .line 118
+    goto :goto_2
+
+    .line 119
+    :cond_5
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v4
+
+    .line 123
+    const/16 v5, 0x8
+
+    .line 124
+    .line 125
+    if-ne v4, v5, :cond_6
+
+    .line 126
+    .line 127
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    .line 128
+    .line 129
+    .line 130
+    move-result-object v3
+
+    .line 131
+    if-eqz v3, :cond_c
+
+    .line 132
+    .line 133
+    invoke-virtual {v3, p1, v2, v0, v2}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 134
+    .line 135
+    .line 136
+    goto :goto_6
+
+    .line 137
+    :cond_6
+    :goto_2
+    if-nez v3, :cond_7
+
+    .line 138
+    .line 139
+    goto :goto_3
+
+    .line 140
+    :cond_7
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
+
+    .line 141
+    .line 142
+    .line 143
+    move-result v3
+
+    .line 144
+    if-nez v3, :cond_8
+
+    .line 145
+    .line 146
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object v3
+
+    .line 150
+    if-eqz v3, :cond_c
+
+    .line 151
+    .line 152
+    invoke-virtual {v3, v0, v2, p1, v2}, Landroid/view/View;->setPadding(IIII)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 153
+    .line 154
+    .line 155
+    goto :goto_6
+
+    .line 156
+    :cond_8
+    :goto_3
+    return-void
+
+    .line 157
+    :goto_4
+    sget-object v0, Ld50/a;->a:Ld50/a$a;
+
+    .line 158
+    .line 159
+    invoke-interface {p0}, Ld50/j;->getLogTag()Ljava/lang/String;
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-object v2
+
+    .line 163
+    const/4 v3, 0x1
+
+    .line 164
+    invoke-virtual {v0, v3}, Ld50/a$a;->i(I)Z
+
+    .line 165
+    .line 166
+    .line 167
+    move-result v4
+
+    .line 168
+    if-nez v4, :cond_9
+
+    .line 169
+    .line 170
+    goto :goto_6
+
+    .line 171
+    :cond_9
+    :try_start_1
+    const-string v1, "DisplayCutout error"
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 172
+    .line 173
+    goto :goto_5
+
+    .line 174
+    :catch_1
+    move-exception v4
+
+    .line 175
+    const-string v5, "LiveLog"
+
+    .line 176
+    .line 177
+    const-string v6, "getLogMessage"
+
+    .line 178
+    .line 179
+    invoke-static {v5, v6, v4}, Ltv/danmaku/android/log/BLog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 180
+    .line 181
+    .line 182
+    :goto_5
+    if-nez v1, :cond_a
+
+    .line 183
+    .line 184
+    const-string v1, ""
+
+    .line 185
+    .line 186
+    :cond_a
+    invoke-virtual {v0}, Ld50/a$a;->e()Ld50/c;
+
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v0
+
+    .line 190
+    if-eqz v0, :cond_b
+
+    .line 191
+    .line 192
+    invoke-interface {v0, v3, v2, v1, p1}, Ld50/c;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 193
+    .line 194
+    .line 195
+    :cond_b
+    invoke-static {v2, v1, p1}, Ltv/danmaku/android/log/BLog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 196
+    .line 197
+    .line 198
+    :cond_c
+    :goto_6
+    return-void
+.end method
+
+.method private final Px(Z)V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lqp/a;->a:Lqp/a;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/bilibili/bilibili/giftPanel/biz/panel/dispatcher/LiveGiftEvent;->ON_VISIBILITY_CHANGED:Lcom/bilibili/bilibili/giftPanel/biz/panel/dispatcher/LiveGiftEvent;
+
+    .line 4
+    .line 5
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v2
+
+    .line 9
+    invoke-virtual {v0, v1, v2}, Lqp/a;->b(Lcom/bilibili/bilibili/giftPanel/biz/panel/dispatcher/LiveGiftEvent;Ljava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {p0}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Jx()Llb3/a;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    if-eqz v0, :cond_0
+
+    .line 17
+    .line 18
+    const-string v1, "ON_VISIBILITY_CHANGED"
+
+    .line 19
+    .line 20
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    invoke-interface {v0, v1, p1}, Lcom/bilibili/bililive/componentbridge/b;->d0(Ljava/lang/String;Ljava/lang/Object;)Lgf3/s;
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method protected Fx(Z)V
+    .locals 10
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/bilibili/bililive/infra/widget/fragment/BaseFragment;->Fx(Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Ld50/a;->a:Ld50/a$a;
+
+    .line 5
+    .line 6
+    invoke-interface {p0}, Ld50/j;->getLogTag()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v8
+
+    .line 10
+    const/4 v1, 0x3
+
+    .line 11
+    invoke-virtual {v0, v1}, Ld50/a$a;->i(I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    if-nez v1, :cond_0
+
+    .line 16
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_0
+    :try_start_0
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v2, "onVisibilityChanged isVisible: "
+
+    .line 24
+    .line 25
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :catch_0
+    move-exception v1
+
+    .line 37
+    const-string v2, "LiveLog"
+
+    .line 38
+    .line 39
+    const-string v3, "getLogMessage"
+
+    .line 40
+    .line 41
+    invoke-static {v2, v3, v1}, Ltv/danmaku/android/log/BLog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 42
+    .line 43
+    .line 44
+    const/4 v1, 0x0
+
+    .line 45
+    :goto_0
+    if-nez v1, :cond_1
+
+    .line 46
+    .line 47
+    const-string v1, ""
+
+    .line 48
+    .line 49
+    :cond_1
+    move-object v9, v1
+
+    .line 50
+    invoke-virtual {v0}, Ld50/a$a;->e()Ld50/c;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    if-eqz v1, :cond_2
+
+    .line 55
+    .line 56
+    const/4 v2, 0x3
+
+    .line 57
+    const/4 v5, 0x0
+
+    .line 58
+    const/16 v6, 0x8
+
+    .line 59
+    .line 60
+    const/4 v7, 0x0
+
+    .line 61
+    move-object v3, v8
+
+    .line 62
+    move-object v4, v9
+
+    .line 63
+    invoke-static/range {v1 .. v7}, Ld50/b;->a(Ld50/c;ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+
+    .line 64
+    .line 65
+    .line 66
+    :cond_2
+    invoke-static {v8, v9}, Ltv/danmaku/android/log/BLog;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    :goto_1
+    if-eqz p1, :cond_3
+
+    .line 70
+    .line 71
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v0
+
+    .line 75
+    if-eqz v0, :cond_3
+
+    .line 76
+    .line 77
+    sget-object v0, Lcom/bilibili/bilibili/giftPanel/reporter/a;->a:Lcom/bilibili/bilibili/giftPanel/reporter/a;
+
+    .line 78
+    .line 79
+    invoke-virtual {v0}, Lcom/bilibili/bilibili/giftPanel/reporter/a;->j()V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_3
+    invoke-direct {p0, p1}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Px(Z)V
+
+    .line 83
+    .line 84
+    .line 85
+    return-void
+.end method
+
+.method public final Kx()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->N:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final Nx(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->N:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public getLogTag()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "LiveGiftPanelFragment_GIFT"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 14
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/bilibili/lib/spy/generated/androidx_fragment_app_Fragment;->onCreate(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p1, Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;->c:Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders$a;
+
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders$a;->a()Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    const-class v2, Lability/g;
+
+    .line 15
+    .line 16
+    new-instance v3, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$b;
+
+    .line 17
+    .line 18
+    invoke-direct {v3, p0}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment$b;-><init>(Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v4, 0x0
+
+    .line 22
+    const/16 v5, 0x8
+
+    .line 23
+    .line 24
+    const/4 v6, 0x0
+
+    .line 25
+    invoke-static/range {v0 .. v6}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v7
+
+    .line 29
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v8
+
+    .line 33
+    const-class v9, Lcom/bilibili/bilibili/giftPanel/biz/panel/service/LiveGiftPanelService;
+
+    .line 34
+    .line 35
+    const/4 v10, 0x0
+
+    .line 36
+    const/4 v11, 0x0
+
+    .line 37
+    const/16 v12, 0xc
+
+    .line 38
+    .line 39
+    const/4 v13, 0x0
+
+    .line 40
+    invoke-static/range {v7 .. v13}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+
+    .line 48
+    const-class v2, Lkx/e;
+
+    .line 49
+    .line 50
+    const/4 v3, 0x0
+
+    .line 51
+    const/16 v5, 0xc
+
+    .line 52
+    .line 53
+    invoke-static/range {v0 .. v6}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v7
+
+    .line 57
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v8
+
+    .line 61
+    const-class v9, Lcom/bilibili/bilibili/giftPanel/biz/fansmedal/service/LiveGiftMedalService;
+
+    .line 62
+    .line 63
+    invoke-static/range {v7 .. v13}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v1
+
+    .line 71
+    const-class v2, Llp/b;
+
+    .line 72
+    .line 73
+    invoke-static/range {v0 .. v6}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v7
+
+    .line 77
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v8
+
+    .line 81
+    const-class v9, Lcom/bilibili/bilibili/giftPanel/biz/batch/f;
+
+    .line 82
+    .line 83
+    invoke-static/range {v7 .. v13}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v0
+
+    .line 87
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v1
+
+    .line 91
+    const-class v2, Lnp/b;
+
+    .line 92
+    .line 93
+    invoke-static/range {v0 .. v6}, Lcom/bilibili/bililive/componentbridge/provider/b;->a(Lcom/bilibili/bililive/componentbridge/provider/c;Ljava/lang/Integer;Ljava/lang/Class;Lcom/bilibili/bililive/componentbridge/factory/a;ZILjava/lang/Object;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 94
+    .line 95
+    .line 96
+    sget-object p1, Lx70/c;->f:Lx70/c$a;
+
+    .line 97
+    .line 98
+    new-instance v0, Landroidx/lifecycle/c1;
+
+    .line 99
+    .line 100
+    invoke-direct {v0, p0}, Landroidx/lifecycle/c1;-><init>(Landroidx/lifecycle/g1;)V
+
+    .line 101
+    .line 102
+    .line 103
+    invoke-virtual {p1, v0, p0}, Lx70/c$a;->a(Landroidx/lifecycle/c1;Landroidx/lifecycle/w;)Lx70/c;
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-object p1
+
+    .line 107
+    iput-object p1, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->M:Lx70/c;
+
+    .line 108
+    .line 109
+    return-void
+.end method
+
+.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    sget p3, Lxx/f;->d:I
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    return-object p1
+.end method
+
+.method public onDestroy()V
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Lcom/bilibili/lib/spy/generated/androidx_fragment_app_Fragment;->onDestroy()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lqp/a;->a:Lqp/a;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Lqp/a;->a()V
+
+    .line 7
+    .line 8
+    .line 9
+    sget-object v0, Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;->c:Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders$a;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders$a;->a()Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->I0()Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    const-class v2, Lability/a;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1, v2}, Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;->h(Ljava/lang/Integer;Ljava/lang/Class;)Lcom/bilibili/bililive/componentbridge/provider/BridgeProviders;
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+.end method
+
+.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lcom/bilibili/bililive/infra/widget/fragment/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lbase/LiveBaseGiftFragment;->H()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p2
+
+    .line 8
+    const/4 v0, 0x1
+
+    .line 9
+    if-eqz p2, :cond_0
+
+    .line 10
+    .line 11
+    invoke-direct {p0, v0}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Ox(Z)V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    sget-object p2, Lcom/bilibili/bililive/lego/LegoWidgetManager;->U:Lcom/bilibili/bililive/lego/LegoWidgetManager$a;
+
+    .line 15
+    .line 16
+    invoke-virtual {p2, p0, p1}, Lcom/bilibili/bililive/lego/LegoWidgetManager$a;->a(Landroidx/fragment/app/Fragment;Landroid/view/View;)Lcom/bilibili/bililive/lego/LegoWidgetManager;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    iget-object p2, p0, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->M:Lx70/c;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, p2}, Lcom/bilibili/bililive/lego/LegoWidgetManager;->ey(Lx70/c;)Lcom/bilibili/bililive/lego/LegoWidgetManager;
+
+    .line 23
+    .line 24
+    .line 25
+    sget p2, Lxx/e;->H:I
+
+    .line 26
+    .line 27
+    new-instance v1, Lcom/bilibili/bilibili/giftPanel/widget/LiveGiftPanelWidgetMerge;
+
+    .line 28
+    .line 29
+    invoke-direct {v1}, Lcom/bilibili/bilibili/giftPanel/widget/LiveGiftPanelWidgetMerge;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p1, p2, v1}, Lcom/bilibili/bililive/lego/LegoWidgetManager;->Px(ILu70/f;)Lcom/bilibili/bililive/lego/LegoWidgetManager;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-direct {p0, v0}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Px(Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-direct {p0}, Lcom/bilibili/bilibili/giftPanel/LiveGiftPanelFragment;->Lx()V
+
+    .line 39
+    .line 40
+    .line 41
+    return-void
+.end method

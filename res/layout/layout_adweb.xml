@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/webview_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/ad_notice_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ad_button_container" android:background="@color/Bg1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ad_web_bottom_button_container_height">
+        <com.bilibili.adcommon.widget.button.AdDownloadButton android:id="@id/ad_button" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="14.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="14.0dp" android:layout_marginBottom="13.0dp" app:download_btn_cornerRadius="6.0dp" app:download_btn_progress_backgroundColor="@color/Lb5" app:download_btn_textSize="14.0sp" style="@style/AdButton_Compat_Game_Fill_Blue" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,294 @@
+.class public final Lso2/s4;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lq3/a;
+
+
+# instance fields
+.field private final a:Landroid/widget/FrameLayout;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final b:Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final c:Landroid/widget/TextView;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+.field public final d:Lso2/x4;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Landroid/widget/FrameLayout;Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;Landroid/widget/TextView;Lso2/x4;)V
+    .locals 0
+    .param p1    # Landroid/widget/FrameLayout;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3    # Landroid/widget/TextView;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4    # Lso2/x4;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lso2/s4;->a:Landroid/widget/FrameLayout;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lso2/s4;->b:Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lso2/s4;->c:Landroid/widget/TextView;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lso2/s4;->d:Lso2/x4;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public static bind(Landroid/view/View;)Lso2/s4;
+    .locals 4
+    .param p0    # Landroid/view/View;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    sget v0, Ldo2/f;->u6:I
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lq3/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    check-cast v1, Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    sget v0, Ldo2/f;->y6:I
+
+    .line 12
+    .line 13
+    invoke-static {p0, v0}, Lq3/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    check-cast v2, Landroid/widget/TextView;
+
+    .line 18
+    .line 19
+    if-eqz v2, :cond_0
+
+    .line 20
+    .line 21
+    sget v0, Ldo2/f;->pe:I
+
+    .line 22
+    .line 23
+    invoke-static {p0, v0}, Lq3/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v3
+
+    .line 27
+    if-eqz v3, :cond_0
+
+    .line 28
+    .line 29
+    invoke-static {v3}, Lso2/x4;->bind(Landroid/view/View;)Lso2/x4;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    new-instance v3, Lso2/s4;
+
+    .line 34
+    .line 35
+    check-cast p0, Landroid/widget/FrameLayout;
+
+    .line 36
+    .line 37
+    invoke-direct {v3, p0, v1, v2, v0}, Lso2/s4;-><init>(Landroid/widget/FrameLayout;Lcom/bilibili/upper/feat/gamefactory/views/ArcProgressView;Landroid/widget/TextView;Lso2/x4;)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-object v3
+
+    .line 41
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p0
+
+    .line 49
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    .line 50
+    .line 51
+    const-string v1, "Missing required view with ID: "
+
+    .line 52
+    .line 53
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object p0
+
+    .line 57
+    invoke-direct {v0, p0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    throw v0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;)Lso2/s4;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-static {p0, v0, v1}, Lso2/s4;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lso2/s4;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lso2/s4;
+    .locals 2
+    .param p0    # Landroid/view/LayoutInflater;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    sget v0, Ldo2/g;->d4:I
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 4
+    :cond_0
+    invoke-static {p0}, Lso2/s4;->bind(Landroid/view/View;)Lso2/s4;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public a()Landroid/widget/FrameLayout;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lso2/s4;->a:Landroid/widget/FrameLayout;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public bridge synthetic getRoot()Landroid/view/View;
+    .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lso2/s4;->a()Landroid/widget/FrameLayout;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

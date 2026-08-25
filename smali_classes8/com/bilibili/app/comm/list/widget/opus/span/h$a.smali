@@ -1,0 +1,277 @@
+.class public final Lcom/bilibili/app/comm/list/widget/opus/span/h$a;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/app/comm/list/widget/opus/span/h;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0004\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0018\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0002J \u0010\t\u001a\u00020\u00052\u0006\u0010\u0003\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0008\u001a\u00020\u0007J\u000e\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0008\u001a\u00020\u0007\u00a8\u0006\u000e"
+    }
+    d2 = {
+        "Lcom/bilibili/app/comm/list/widget/opus/span/h$a;",
+        "",
+        "",
+        "width",
+        "height",
+        "Lcom/bilibili/app/comm/list/widget/opus/span/h$b;",
+        "a",
+        "Landroid/content/Context;",
+        "context",
+        "b",
+        "Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;",
+        "d",
+        "<init>",
+        "()V",
+        "widget_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field static final synthetic a:Lcom/bilibili/app/comm/list/widget/opus/span/h$a;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/bilibili/app/comm/list/widget/opus/span/h$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/bilibili/app/comm/list/widget/opus/span/h$a;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/bilibili/app/comm/list/widget/opus/span/h$a;->a:Lcom/bilibili/app/comm/list/widget/opus/span/h$a;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic c(Lcom/bilibili/app/comm/list/widget/opus/span/h$a;Ljava/lang/Number;Ljava/lang/Number;Landroid/content/Context;ILjava/lang/Object;)Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+    .locals 0
+
+    .line 1
+    and-int/lit8 p4, p4, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p4, :cond_0
+
+    .line 4
+    .line 5
+    move-object p2, p1
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Lcom/bilibili/app/comm/list/widget/opus/span/h$a;->b(Ljava/lang/Number;Ljava/lang/Number;Landroid/content/Context;)Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Number;Ljava/lang/Number;)Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p2
+
+    .line 11
+    new-instance v1, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$a;
+
+    .line 12
+    .line 13
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    if-eqz v2, :cond_0
+
+    .line 22
+    .line 23
+    iget v2, v2, Landroid/util/DisplayMetrics;->density:F
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    const/high16 v2, 0x40000000    # 2.0f
+
+    .line 27
+    .line 28
+    :goto_0
+    invoke-direct {v1, v2}, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$a;-><init>(F)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-direct {v0, p1, p2, v1}, Lcom/bilibili/app/comm/list/widget/opus/span/h$b;-><init>(FFLcom/bilibili/app/comm/list/widget/opus/span/h$c;)V
+
+    .line 32
+    .line 33
+    .line 34
+    return-object v0
+.end method
+
+.method public final b(Ljava/lang/Number;Ljava/lang/Number;Landroid/content/Context;)Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bilibili/app/comm/list/widget/opus/span/h$b;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p2
+
+    .line 11
+    new-instance v1, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;
+
+    .line 12
+    .line 13
+    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p3
+
+    .line 17
+    invoke-virtual {p3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p3
+
+    .line 21
+    iget p3, p3, Landroid/util/DisplayMetrics;->scaledDensity:F
+
+    .line 22
+    .line 23
+    invoke-direct {v1, p3}, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;-><init>(F)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-direct {v0, p1, p2, v1}, Lcom/bilibili/app/comm/list/widget/opus/span/h$b;-><init>(FFLcom/bilibili/app/comm/list/widget/opus/span/h$c;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object v0
+.end method
+
+.method public final d(Landroid/content/Context;)Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    iget p1, p1, Landroid/util/DisplayMetrics;->scaledDensity:F
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p1}, Lcom/bilibili/app/comm/list/widget/opus/span/h$c$c;-><init>(F)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+.end method

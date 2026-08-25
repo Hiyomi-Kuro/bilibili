@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_alpha88" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.comm.bh.BiliWebView android:layout_gravity="center" android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:id="@id/web_progress" android:layout_width="match_parent" android:layout_height="8.0dp" android:max="100" style="@style/Player.Widget.App.ProgressBar.Horizontal" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/bili_2233_fail" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5_u" android:layout_gravity="center_horizontal" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/video_load_failed" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="108.0dp" android:layout_height="141.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/iv_cover" android:layout_width="98.0dp" android:layout_height="131.0dp" app:placeholderImage="@drawable/bg_upper_ai_story_theme_style_item" app:placeholderImageScaleType="centerCrop" app:roundBottomEnd="true" app:roundBottomStart="true" app:roundTopEnd="true" app:roundTopStart="true" app:roundedCornerRadius="8.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/iv_cover_shape" android:layout_width="102.0dp" android:layout_height="135.0dp" app:placeholderImage="@drawable/bg_upper_ai_story_theme_style_item_highlight" app:placeholderImageScaleType="centerCrop" app:roundBottomEnd="true" app:roundBottomStart="true" app:roundTopEnd="true" app:roundTopStart="true" app:roundedCornerRadius="8.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Text_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/tv_name" android:layout_width="76.0dp" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" android:maxLines="2" />
+    </FrameLayout>
+</FrameLayout>

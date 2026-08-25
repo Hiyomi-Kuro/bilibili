@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/theseus_cheese_shape_rect_ga1_corner_4" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_cheese_item_faq_question" android:lineSpacingExtra="3.0dp" style="@style/TheseusCheeseBoldTextStyle" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:gravity="top" android:id="@id/tv_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dp" style="@style/TheseusCheeseBoldTextStyle" />
+        </LinearLayout>
+        <TextView android:background="@drawable/theseus_cheese_h_line_stroke" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginTop="5.0dp" android:layerType="software" />
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_cheese_item_faq_answer" android:lineSpacingExtra="3.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:gravity="top" android:id="@id/tv_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

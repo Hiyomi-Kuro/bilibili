@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#9499a0" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_snapshot_max_tips" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/player_snapshot_combination_preview_max_tip" android:maxLines="1" android:singleLine="true" android:layout_marginVertical="20.0dp" />
+</FrameLayout>

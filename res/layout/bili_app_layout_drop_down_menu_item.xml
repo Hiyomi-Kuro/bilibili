@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/selector_drop_down_menu_text" android:gravity="center" android:id="@id/menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/selector_drop_down_menu_arrow" android:layout_toRightOf="@id/menu" android:layout_centerInParent="true" />
+</RelativeLayout>

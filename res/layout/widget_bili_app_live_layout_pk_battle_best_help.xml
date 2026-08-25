@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_pk_battle_best_help" android:background="@drawable/widget_bg_pk_battle_best_help" android:layout_width="match_parent" android:layout_height="17.0dp" android:layout_marginLeft="83.0dp" android:layout_marginRight="83.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0sp" android:textColor="#ff8e8e8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我方当前最佳助攻：" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/tv_pk_battle_best_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/single_avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <RelativeLayout android:id="@id/two_avatar_container" android:layout_width="40.0dp" android:layout_height="40.0dp">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar_bottom" android:layout_width="30.0dp" android:layout_height="30.0dp" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar_top" android:background="@drawable/shape_notice_oval" android:padding="2.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    </RelativeLayout>
+</FrameLayout>

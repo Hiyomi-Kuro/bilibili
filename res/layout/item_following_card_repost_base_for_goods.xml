@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintFrameLayout android:id="@id/fl_ad_tint" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.bplus.followingcard.widget.FollowingBetterLinearLayout android:orientation="vertical" android:id="@id/following_card_root" android:background="@drawable/bg_card_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/view_following_card_header" />
+            <ViewStub android:id="@id/vs_warn_content" android:layout="@layout/layout_following_warn_content" android:inflatedId="@id/warn_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_s" android:layout_marginRight="12.0dp" />
+            <com.bilibili.bplus.followingcard.widget.EllipsizingTextView android:textSize="@dimen/text_middle" android:textColor="@color/main_Ga10" android:id="@id/card_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:max_lines="4" />
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/content_wrapper" android:background="@drawable/bg_inner_card_selector" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.adcommon.widget.AdTintFrameLayout android:id="@id/ad_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+            <ViewStub android:id="@id/vs_card_no_content" android:layout="@layout/view_following_card_no_content" android:layout_width="match_parent" android:layout_height="37.0dp" />
+            <com.bilibili.bplus.followingcard.widget.DynamicRevealedCommentsView android:id="@id/view_revealed_comments" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DynamicRevealedCommentsView" />
+            <include layout="@layout/view_following_card_footer" />
+            <ViewStub android:id="@id/vs_card_more" android:layout="@layout/view_following_card_more" android:layout_width="match_parent" android:layout_height="36.0dp" />
+            <ViewStub android:id="@id/vs_card_deal" android:layout="@layout/view_following_card_deal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="13.0dp" />
+            <include layout="@layout/layout_following_card_divider_thick" />
+        </com.bilibili.bplus.followingcard.widget.FollowingBetterLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.adcommon.widget.AdTintFrameLayout>

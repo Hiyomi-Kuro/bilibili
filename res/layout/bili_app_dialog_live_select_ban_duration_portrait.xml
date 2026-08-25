@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/live_select_ban_duration_click_area" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/live_select_ban_duration_content_container" android:background="@drawable/shape_live_ban_user_content_bg" android:layout_width="match_parent" android:layout_height="403.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_always" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_always" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_7_days" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_7_days" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_24_h" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_24_hours" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_4_h" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_4_hours" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_2_h" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_2_hours" />
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_current_session" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_current_session" />
+        <View android:background="#e615141c" android:layout_width="match_parent" android:layout_height="10.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_select_ban_duration_action_cancel" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="@string/live_ban_user_duration_action_cancel" />
+    </LinearLayout>
+</FrameLayout>

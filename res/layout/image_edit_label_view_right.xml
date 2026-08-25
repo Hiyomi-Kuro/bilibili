@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/label_icon" android:visibility="visible" android:layout_width="@dimen/image_edit_lv_icon_l" android:layout_height="@dimen/image_edit_lv_icon_l" android:src="@drawable/image_edit_label_shop_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="none" android:id="@id/label_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_edit_lv_text_ml" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/label_icon" android:layout_centerVertical="true" />
+    <View android:id="@id/label_divider" android:background="#80ffffff" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/image_edit_divider_margin" android:layout_marginTop="2.0dp" android:layout_marginRight="@dimen/image_edit_divider_margin" android:layout_marginBottom="2.0dp" android:layout_toRightOf="@id/label_view" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/label_delete" android:layout_width="@dimen/image_edit_lv_delete_l" android:layout_height="@dimen/image_edit_lv_delete_l" android:src="@drawable/image_edit_lab_del" android:scaleType="fitCenter" android:layout_toRightOf="@id/label_divider" android:layout_centerVertical="true" />
+</merge>

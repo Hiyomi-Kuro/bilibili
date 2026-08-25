@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_full" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/container_expand" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.pegasus.verticaltab.widget.MaxHeightNoNestedScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="250.0dp" android:layout_toLeftOf="@id/btn_collapse">
+            <com.bilibili.pegasus.verticaltab.widget.VerticalTabsView android:id="@id/tags_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="8.0dp" />
+        </com.bilibili.pegasus.verticaltab.widget.MaxHeightNoNestedScrollView>
+        <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/ic_tag_background" android:layout_width="59.0dp" android:layout_height="42.0dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/btn_collapse" android:paddingLeft="13.0dp" android:paddingRight="13.0dp" android:layout_width="39.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_shrink" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:imageTint="@color/Ga7" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</FrameLayout>

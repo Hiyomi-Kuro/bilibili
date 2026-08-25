@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/upper_white_bg_2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ai_title_container_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="37.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ai_title_list_view" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/ai_title_more" android:background="@drawable/bg_shape_upper_pink_rounded_color_f6f7f8" android:layout_width="24.0dp" android:layout_height="match_parent" android:layout_marginLeft="4.0dp">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="5.0dp" android:layout_height="10.0dp" android:src="@drawable/upper_ai_title_more" android:layout_centerInParent="true" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ai_title_loading_view" android:background="@drawable/bg_shape_upper_pink_rounded_color_f6f7f8" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="37.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_title_loading_text" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

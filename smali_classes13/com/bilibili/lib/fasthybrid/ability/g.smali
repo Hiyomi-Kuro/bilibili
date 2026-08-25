@@ -1,0 +1,56 @@
+.class public final synthetic Lcom/bilibili/lib/fasthybrid/ability/g;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/bilibili/lib/fasthybrid/runtime/bridge/NAPipeline;
+
+.field public final synthetic b:Lcom/bilibili/lib/fasthybrid/uimodule/bean/WidgetAction;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/bilibili/lib/fasthybrid/runtime/bridge/NAPipeline;Lcom/bilibili/lib/fasthybrid/uimodule/bean/WidgetAction;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/lib/fasthybrid/ability/g;->a:Lcom/bilibili/lib/fasthybrid/runtime/bridge/NAPipeline;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/bilibili/lib/fasthybrid/ability/g;->b:Lcom/bilibili/lib/fasthybrid/uimodule/bean/WidgetAction;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/ability/g;->a:Lcom/bilibili/lib/fasthybrid/runtime/bridge/NAPipeline;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/bilibili/lib/fasthybrid/ability/g;->b:Lcom/bilibili/lib/fasthybrid/uimodule/bean/WidgetAction;
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Lcom/bilibili/lib/fasthybrid/ability/CanvasAbility;->b(Lcom/bilibili/lib/fasthybrid/runtime/bridge/NAPipeline;Lcom/bilibili/lib/fasthybrid/uimodule/bean/WidgetAction;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

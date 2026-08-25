@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/following_llt_second_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/following_bt_origin_follow">
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/following_llt_origin_area" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12.0dp">
+                <com.bilibili.bplus.followingcard.widget.AllDayImageView android:id="@id/following_iv_origin_face" android:layout_width="24.0dp" android:layout_height="24.0dp" fresco:roundAsCircle="true" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Text_link" android:ellipsize="end" android:id="@id/following_tv_origin_name" android:background="@drawable/bg_blue_selector" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" android:layout_weight="1.0" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/main_Ga5" android:id="@id/following_tv_contribute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="@string/following_contribute" android:maxLines="1" />
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.relation.widget.FollowButton android:id="@id/following_bt_origin_follow" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_alignParentRight="true" fresco:fbGroup="false" fresco:fbStyle="naked" style="@style/FollowButton" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <ViewStub android:id="@id/vs_warn_share_content" android:layout="@layout/layout_following_warn_content" android:inflatedId="@id/warn_share_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,44 @@
+.class public interface abstract Lcom/bapis/bilibili/app/viewunite/common/a4;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getFav()Lcom/bapis/bilibili/app/viewunite/common/BizFavParam;
+.end method
+
+.method public abstract getOrderParamCase()Lcom/bapis/bilibili/app/viewunite/common/ReserveButton$OrderParamCase;
+.end method
+
+.method public abstract getOrderType()Lcom/bapis/bilibili/app/viewunite/common/ReserveBizType;
+.end method
+
+.method public abstract getOrderTypeValue()I
+.end method
+
+.method public abstract getReserve()Lcom/bapis/bilibili/app/viewunite/common/BizReserveActivityParam;
+.end method
+
+.method public abstract getSelectedText()Ljava/lang/String;
+.end method
+
+.method public abstract getSelectedTextBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getStatus()Z
+.end method
+
+.method public abstract getText()Ljava/lang/String;
+.end method
+
+.method public abstract getTextBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract hasFav()Z
+.end method
+
+.method public abstract hasReserve()Z
+.end method

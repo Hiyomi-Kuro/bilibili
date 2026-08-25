@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/item_spacing" android:paddingTop="15.0dp" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp">
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/Ga10" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/review_long_review" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/action" android:background="@drawable/review_shape_thin_stroke_secondary" android:layout_width="60.0dp" android:layout_height="24.0dp" android:text="@string/review_write_long_review" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="41.0dp" android:text="@string/review_empty_review_hint1" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="top" android:id="@id/gradient_shadow" android:background="@drawable/xplayer_live_shape_gradient_shadow_horizontal_right" android:visibility="visible" android:layout_width="168.0dp" android:layout_height="match_parent" />
+    <ScrollView android:id="@id/quality_list_panel_sv" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/quality_list_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_enhancement_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_video_enhancement_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_vide_enhancement_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <Switch android:id="@id/switch_video_enhancement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120.0dp" android:thumb="@drawable/video_enhancement_switch_thumb" android:track="@drawable/video_enhancement_switch_track" android:showText="false" app:layout_constraintLeft_toRightOf="@id/tv_video_enhancement_title" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="12.0sp" android:textColor="#999999" android:id="@id/tv_video_enhancement_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/live_vide_enhancement_desc" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_video_enhancement_title" />
+                <View android:id="@id/divider" android:background="#25e3e5e7" android:visibility="visible" android:layout_width="208.0dp" android:layout_height="0.5dp" android:layout_marginTop="16.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_video_enhancement_desc" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#999999" android:id="@id/tv_quality_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/live_quality_title" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list_quality" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+            <com.bilibili.magicasakura.widgets.TintView android:id="@id/divider_theme" android:background="@color/theme_color_live_bg_gray_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="#999999" android:id="@id/tv_line_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/live_line_title" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/tv_line_main" android:layout_marginTop="12.0dp" android:text="@string/live_line_main" style="@style/LivePlayerQualityLineLandscapeTextView" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/tv_line_backup_one" android:text="@string/live_line_backup_one" style="@style/LivePlayerQualityLineLandscapeTextView" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/tv_line_backup_two" android:text="@string/live_line_backup_two" style="@style/LivePlayerQualityLineLandscapeTextView" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/tv_line_backup_three" android:layout_marginBottom="20.0dp" android:text="@string/live_line_backup_three" style="@style/LivePlayerQualityLineLandscapeTextView" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

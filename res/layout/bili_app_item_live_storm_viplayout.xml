@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:orientation="horizontal" android:id="@id/notice_layout" android:background="@color/theme_color_view_background" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+        <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/switcher" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_button_live_switch" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:compoundButtonTint="@color/selector_tint_checkbox" style="@style/Live.Widget.App.CheckBox.Native" />
+        <TextView android:textAppearance="@style/TextAppearance.App.Title" android:gravity="center_vertical" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_center_item_enter_warn" android:drawableLeft="@drawable/ic_live_center_enter_room" android:drawablePadding="@dimen/item_spacing" android:layout_centerVertical="true" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    <Space android:layout_width="match_parent" android:layout_height="15.0dp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/tabhost" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.biligame.widget.TabLayoutWithSelectTabBefore android:id="@id/tabhost" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="@dimen/bottom_tab_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:tabBackground="@null" app:tabGravity="fill" app:tabIndicatorHeight="0.0dp" app:tabMode="fixed" app:tabRippleColor="@null" />
+    <View android:id="@id/tab_divider" android:background="@color/Ga1_s" android:layout_width="match_parent" android:layout_height="@dimen/biligame_toolbar_elevation" app:layout_constraintBottom_toTopOf="@id/tabhost" />
+    <ViewStub android:id="@id/biligame_viewstub_shortcut" android:layout="@layout/biligame_layout_shortcut" android:layout_width="0.0dp" android:layout_height="48.0dp" app:layout_constraintBottom_toTopOf="@id/tabhost" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

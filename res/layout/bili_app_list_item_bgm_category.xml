@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_bili_editor_bgm_list_tab_sep_view_holder" />
+    <com.bilibili.studio.videoeditor.bgm.bgmlist.ui.view.AutoAdaptationViewPager android:id="@id/viewpager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dp" />
+</merge>

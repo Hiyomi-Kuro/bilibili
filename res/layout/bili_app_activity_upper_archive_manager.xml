@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_only_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?navigationTopBarSize" />
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" android:elevation="0.0dp" style="?toolbarStyle" />
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Uper_Widget.App.SlidingTab.HomePage.Top.NoBackground" />
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <View android:id="@id/mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

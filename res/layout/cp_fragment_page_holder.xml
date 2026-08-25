@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle" />
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/cp_refresh" android:background="@color/Bg2" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nav_top_bar" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

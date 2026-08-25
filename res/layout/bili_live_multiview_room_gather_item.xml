@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="96.0dp" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_live_multi_view_gather_card" android:paddingLeft="6.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10.0dp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/live_mv_gather_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.bililive.room.ui.multivoicelink.view.NoConsumeTouchRecyclerView android:id="@id/live_mv_gather_author_face" android:layout_width="wrap_content" android:layout_height="18.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/live_room_multiview_gather_enter" app:layout_constraintBottom_toBottomOf="@id/live_mv_gather_author_face" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/live_mv_gather_author_face" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/live_mv_gather_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="7.0dp" />
+</FrameLayout>

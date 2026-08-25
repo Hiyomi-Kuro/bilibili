@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/publish_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/publish_bg" android:background="@drawable/shape_home_tab_publish" android:layout_width="38.0dp" android:layout_height="38.0dp">
+        <com.opensource.svgaplayer.SVGAImageView android:id="@id/publish_svga" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:autoPlay="false" app:loopCount="1" />
+        <ImageView android:layout_gravity="center" android:id="@id/publish_plus" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_home_tab_publish_x" />
+    </FrameLayout>
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/publish_remote_iv" android:visibility="gone" android:layout_width="38.0dp" android:layout_height="38.0dp" android:scaleType="fitCenter" />
+    <View android:id="@id/night_shadow" android:background="@drawable/shape_home_tab_night_shadow" android:visibility="gone" android:layout_width="38.0dp" android:layout_height="38.0dp" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/publish_garb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/publish_garb_view_2" android:visibility="visible" android:layout_width="60.0dp" android:layout_height="45.0dp" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center" android:id="@id/publish_garb_view_1" android:visibility="visible" android:layout_width="60.0dp" android:layout_height="45.0dp" android:scaleType="fitCenter" />
+    </FrameLayout>
+</FrameLayout>

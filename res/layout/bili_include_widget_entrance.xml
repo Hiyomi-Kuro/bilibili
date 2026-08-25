@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_entrance" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_entrance" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/bg_widget_entrance_icon" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ba0_s" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tv_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" android:singleLine="true" android:alpha="0.6" />
+</LinearLayout>

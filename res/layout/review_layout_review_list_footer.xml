@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/loading_view" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/footer_text" android:layout_centerVertical="true" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleSmall" />
+    <TextView android:textAppearance="@style/ReviewTextAppearance.App.Subtitle" android:textColor="@color/gray_dark" android:id="@id/footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/footer_loading" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fold_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/Ga2" android:layout_width="48.0dp" android:layout_height="0.5dp" android:layout_marginRight="16.0dp" />
+        <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_view_collapsed_long_review" />
+        <View android:background="@color/Ga2" android:layout_width="48.0dp" android:layout_height="0.5dp" android:layout_marginLeft="16.0dp" />
+    </LinearLayout>
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

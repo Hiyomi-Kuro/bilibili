@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_hua_huo_list" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintConstraintLayout android:orientation="vertical" android:id="@id/loading_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_animation_view" android:layout_width="24.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toTopOf="@id/tv_loading_tip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/tv_loading_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/upper_try_hard_loading" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/lottie_animation_view" />
+    </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

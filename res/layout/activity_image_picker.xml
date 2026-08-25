@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/menu_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/theme_color_primary_tr_icon" android:id="@id/tv_menu_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/theme_color_primary_tr_icon" android:id="@id/tv_menu_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <View android:background="@color/gray_dark_trans_25" android:layout_width="match_parent" android:layout_height="2.0px" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/original_send" />
+        <RelativeLayout android:id="@id/original_send" android:background="@color/Ga0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentBottom="true">
+            <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="14.0sp" android:textColor="@color/theme_color_secondary" android:id="@id/original_pic" android:paddingLeft="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:button="@null" android:text="@string/im_original_pic" android:drawableLeft="@drawable/selector_checkbox_like_radiobutton" android:drawablePadding="4.0dp" android:layout_centerVertical="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/theme_color_secondary" android:id="@id/image_send" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dp" android:text="@string/title_chat_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

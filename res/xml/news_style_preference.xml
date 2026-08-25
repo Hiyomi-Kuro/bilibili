@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_tip_news_notify"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="false" android:entries="@array/pref_messages_notify_style_entries" android:title="@string/pref_tip_news_notify" android:key="@string/pref_news_notify_key" android:defaultValue="0" android:entryValues="@array/pref_messages_notify_style_entryValues" app:radioDefaultValue="0" app:radioEntries="@array/pref_messages_notify_style_entries" app:radioEntryValues="@array/pref_messages_notify_style_entryValues" />
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/mall_module_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mIconImageView" android:layout_width="24.0dp" android:layout_height="23.0dp" android:layout_marginTop="7.0dp" app:actualImageScaleType="fitCenter" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mDetailTitle" android:layout_width="52.0dp" android:layout_height="14.0dp" android:layout_marginTop="12.0dp" android:layout_centerVertical="true" android:layout_marginStart="7.0dp" app:actualImageScaleType="fitCenter" app:layout_constraintStart_toEndOf="@id/mIconImageView" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/mLineView" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="1.0dp" app:layout_constraintTop_toBottomOf="@id/mIconImageView" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mDetailLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dp" android:layout_marginBottom="5.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/mLineView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

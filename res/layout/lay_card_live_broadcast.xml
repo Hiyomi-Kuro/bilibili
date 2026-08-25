@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/live_root" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="@dimen/size_126"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout" android:layout_width="@dimen/size_160" android:layout_height="@dimen/size_90" android:layout_marginLeft="@dimen/margin_14" android:layout_centerVertical="true">
+        <com.bilibili.bplus.im.conversation.widget.MuxerImageView android:id="@id/cover" android:layout_width="@dimen/size_160" android:layout_height="@dimen/size_90" android:src="@drawable/ic_default_view" android:scaleType="centerCrop" />
+        <RelativeLayout android:gravity="center" android:id="@id/live_mark_state" android:background="@drawable/shape_roundrect_theme_half_roud" android:layout_width="@dimen/size_38" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_6" android:layout_marginBottom="@dimen/margin_4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/labels_text_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_IM_live_state" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/size_90" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_14" android:layout_toRightOf="@id/layout" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Ga9" android:ellipsize="end" android:id="@id/introduce" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tag_lay" android:layout_below="@id/introduce">
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/view_count" android:layout_width="match_parent" android:drawableLeft="@drawable/ic_view_count_dack" style="@style/TextAppearance.AppCompat.FontVerySmall.ViewCount" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Pi5" android:background="@drawable/corner_border_primary_2dp" android:text="@string/card_live_type" style="@style/TextAppearance.AppCompat.FontVerySmall.PushcardTag" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/tag" android:layout_marginLeft="@dimen/margin_6" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

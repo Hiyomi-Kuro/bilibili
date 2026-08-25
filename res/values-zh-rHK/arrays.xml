@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="following_type">
+        <item>影片</item>
+        <item>綜合</item>
+        <item>熱門</item>
+    </string-array>
+    <string-array name="pref_daltonism_entries">
+        <item>紅/綠濾鏡</item>
+        <item>綠/紅濾鏡</item>
+        <item>藍/黃濾鏡</item>
+    </string-array>
+    <string-array name="pref_daltonism_entrySummaries">
+        <item>紅色盲</item>
+        <item>綠色盲</item>
+        <item>藍色盲</item>
+    </string-array>
+    <string-array name="pref_loud_norm_entries">
+        <item>標準模式</item>
+        <item>高動態模式</item>
+    </string-array>
+    <string-array name="pref_loud_norm_entrySummaries">
+        <item>自動平衡不同視頻間的音量大小</item>
+        <item>保留更多聲音細節，但音量更小</item>
+    </string-array>
+    <string-array name="pref_player_codecMode_entries">
+        <item>自動選擇（推薦）</item>
+        <item>V3硬解優先 (ijkplayer)</item>
+        <item>軟解優先（相容模式）</item>
+    </string-array>
+    <string-array name="pref_player_codecMode_summaries">
+        <item>根據機型和影片智慧適配</item>
+        <item>硬解播放，性能好，相容性強</item>
+        <item>冬季暖手必備，偏重相容性，適用所有手機系統</item>
+    </string-array>
+    <string-array name="search_order_type">
+        <item>預設排序</item>
+        <item>粉絲數由高到低</item>
+        <item>粉絲數由低到高</item>
+        <item>Lv等級由高到低</item>
+        <item>Lv等級由低到高</item>
+    </string-array>
+    <string-array name="search_submenu_duration">
+        <item>不限</item>
+        <item>0–10分鐘</item>
+        <item>10–30分鐘</item>
+        <item>30–60分鐘</item>
+        <item>60分鐘+</item>
+    </string-array>
+    <string-array name="search_submenu_order">
+        <item>預設排序</item>
+        <item>新發佈</item>
+        <item>播放多</item>
+        <item>彈幕多</item>
+    </string-array>
+    <string-array name="search_submenu_pub_time">
+        <item>不限</item>
+        <item>最近一天</item>
+        <item>最近一週</item>
+        <item>最近半年</item>
+        <item>自选</item>
+    </string-array>
+    <string-array name="search_user_type">
+        <item>全部使用者</item>
+        <item>UP主</item>
+        <item>認證使用者</item>
+        <item>普通使用者</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black_alpha84" android:layout_width="320.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="#8d8d8d" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_title" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_videos" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" />
+</LinearLayout>

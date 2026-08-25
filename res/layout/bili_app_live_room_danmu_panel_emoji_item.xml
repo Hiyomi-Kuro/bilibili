@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="13.0sp" android:textColor="@color/live_room_emoji_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_emoji_text" android:layout_width="80.0dp" android:layout_height="20.0dp" android:maxLines="1" android:maxEms="18"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

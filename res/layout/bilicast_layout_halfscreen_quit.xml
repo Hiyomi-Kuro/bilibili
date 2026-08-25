@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/projection_bg_button_thumb_middle" android:layout_width="97.0dp" android:layout_height="67.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/text_white_kit" android:gravity="center" android:id="@id/projection_quit_tv" android:layout_width="97.0dp" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:text="@string/player_projection_screen_exit" />
+</FrameLayout>

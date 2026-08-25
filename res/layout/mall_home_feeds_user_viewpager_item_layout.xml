@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.MallRoundConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:roundRadius="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/home_feeds_user_vp_item_goods_iv" android:layout_width="0.0dp" android:layout_height="0.0dp" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/mall_good_info_default_cover" app:roundedCornerRadius="7.0dp" app:viewAspectRatio="1.0" />
+    <com.mall.ui.widget.RoundFrameLayoutNew android:id="@id/home_feeds_user_vp_item_cover" android:background="#eeeeee" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:radius="7.0dp" />
+</com.mall.ui.widget.MallRoundConstraintLayout>

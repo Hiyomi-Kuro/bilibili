@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="270.0dp" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="7.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rl_avatar" android:layout_width="33.0dp" android:layout_height="33.0dp" android:layout_marginTop="19.5dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="27.0dp" android:layout_height="27.0dp" android:src="@drawable/bili_default_avatar" android:layout_centerInParent="true" app:placeholderImage="@drawable/bili_default_avatar" app:roundAsCircle="true" />
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/frame" android:layout_width="33.0dp" android:layout_height="33.0dp" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/ll_enter_effect_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginStart="2.25dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/iv_wealth_level_medal" android:visibility="gone" android:layout_width="27.0dp" android:layout_height="12.0dp" android:layout_marginRight="2.25dp" />
+            <TextView android:textSize="10.5sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

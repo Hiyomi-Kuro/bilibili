@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/swipe_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_background" android:background="@color/Ba0" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,1.5:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/loading_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_repeatCount="-1" app:lottie_repeatMode="restart" />
+            <TextView android:textColor="@color/Ga5" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/pegasus_fake_detail_loading" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/info_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:src="@drawable/bili_pegasus_fake_detail_info" android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/video_background" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/item_recycler_view" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="36.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/info_view" />
+    <View android:id="@id/intercept_view" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

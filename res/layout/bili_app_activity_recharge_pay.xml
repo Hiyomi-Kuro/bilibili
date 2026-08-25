@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <androidx.core.widget.NestedScrollView android:id="@id/content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/header_precharge" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recharge_pay_tv" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true">
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/selector_text_pressed_pink" android:id="@id/rest_bcoin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/selector_text_pressed_pink" android:id="@id/coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/header_charge" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/recharge_pay_tv" style="@style/Widget.App.ImageView.Circle.Avatar" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/selector_text_pressed_pink" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/gray_dark" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="充值数量：" />
+            <LinearLayout android:orientation="vertical" android:background="@color/daynight_color_view_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/selector_text_pressed_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="需要支付" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="20.0sp" android:textColor="@color/selector_text_pink" android:id="@id/pay_money" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/selector_text_pressed_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/gray_dark" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="充值方式：" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/alipay" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:src="@drawable/recharge_ic_alipay" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:clickable="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="支付宝" android:layout_weight="1.0" />
+                <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/check_alipay" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:compoundButtonTint="@color/selector_compoundbutton_normal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/wechat" android:background="@color/daynight_color_view_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:src="@drawable/recharge_ic_wechat" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:clickable="false" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="微信支付" android:layout_weight="1.0" />
+                <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/check_wechat" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:compoundButtonTint="@color/selector_compoundbutton_normal" />
+            </LinearLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/white" android:gravity="center" android:id="@id/recharge_ensure" android:background="@drawable/selector_button_solid_pink" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_margin="12.0dp" android:text="确认支付" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:id="@id/agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:text="@string/pay_bp_agreement" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <tv.danmaku.bili.widget.LoadingImageView android:gravity="center" android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

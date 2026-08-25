@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_download" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/biligame_download_ic_shadow" android:scaleType="centerInside" app:tint="@color/Si2_u" />
+    <View android:layout_gravity="right|top" android:id="@id/biligame_download_dot" android:background="@drawable/biligame_message_unwarn_bg" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginRight="2.0dp" />
+    <com.bilibili.biligame.widget.CircleProgressBar android:id="@id/download_progress" android:layout_width="match_parent" android:layout_height="match_parent" app:progress_max="100" app:progress_progress_color="@color/Pi5_u" app:progress_stroke_width="2.0dp" />
+</merge>

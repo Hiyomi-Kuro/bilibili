@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="160.0dp" android:layout_height="160.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga9" android:id="@id/biligame_category_game_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga4" android:id="@id/biligame_category_game_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+            <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/biligame_icon_three" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_alignParentBottom="true" app:placeholderImage="@drawable/biligame_default_image_tv" app:roundedCornerRadius="12.0dp" />
+            <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/biligame_icon_tow" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginRight="50.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:placeholderImage="@drawable/biligame_default_image_tv" app:roundedCornerRadius="12.0dp" />
+            <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/biligame_icon_one" android:layout_width="74.0dp" android:layout_height="74.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:placeholderImage="@drawable/biligame_default_image_tv" app:roundedCornerRadius="12.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

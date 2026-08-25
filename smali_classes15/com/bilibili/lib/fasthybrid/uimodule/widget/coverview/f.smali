@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/bilibili/lib/fasthybrid/uimodule/widget/coverview/f;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroid/animation/ObjectAnimator;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/animation/ObjectAnimator;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/lib/fasthybrid/uimodule/widget/coverview/f;->a:Landroid/animation/ObjectAnimator;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/lib/fasthybrid/uimodule/widget/coverview/f;->a:Landroid/animation/ObjectAnimator;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/lib/fasthybrid/uimodule/widget/coverview/AnimationLithoView;->j(Landroid/animation/ObjectAnimator;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

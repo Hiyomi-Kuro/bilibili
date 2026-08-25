@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="#fff" android:id="@id/tv_clip_content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_clip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginTop="22.0dp">
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_video_change" android:layout_width="54.0dp" android:layout_height="80.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:layout_width="48.0dp" android:layout_height="48.0dp" app:backgroundImage="@color/white_alpha12" app:roundAsCircle="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:padding="13.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_template_replace" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/bili_editor_change" android:includeFontPadding="false" android:drawablePadding="4.0dp" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_video_intercept" android:layout_width="54.0dp" android:layout_height="80.0dp" android:layout_marginStart="28.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:layout_width="48.0dp" android:layout_height="48.0dp" app:backgroundImage="@color/white_alpha12" app:roundAsCircle="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:padding="13.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_template_intercept" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/video_editor_image_crop" android:includeFontPadding="false" android:drawablePadding="4.0dp" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_video_volume" android:layout_width="54.0dp" android:layout_height="80.0dp" android:layout_marginStart="28.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:layout_width="48.0dp" android:layout_height="48.0dp" app:backgroundImage="@color/white_alpha12" app:roundAsCircle="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:padding="13.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_template_volume" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/video_editor_volume" android:includeFontPadding="false" android:drawablePadding="4.0dp" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_video_matting" android:layout_width="54.0dp" android:layout_height="80.0dp" android:layout_marginStart="28.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:layout_width="48.0dp" android:layout_height="48.0dp" app:backgroundImage="@color/white_alpha12" app:roundAsCircle="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:padding="13.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_template_matting" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="抠图" android:includeFontPadding="false" android:drawablePadding="4.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

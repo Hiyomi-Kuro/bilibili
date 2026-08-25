@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/cover" android:background="@drawable/bili_bg_r8_ga0_s" android:layout_width="172.0dp" android:layout_height="96.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bili_bg_r4_ga0_s" android:layout_width="0.0dp" android:layout_height="19.0dp" android:layout_marginLeft="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/cover" app:layout_constraintTop_toTopOf="@id/cover" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bili_bg_r4_ga0_s" android:layout_width="102.0dp" android:layout_height="19.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="23.0dp" app:layout_constraintStart_toEndOf="@id/cover" app:layout_constraintTop_toTopOf="@id/cover" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bili_bg_r4_ga0_s" android:layout_width="52.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="62.0dp" app:layout_constraintStart_toEndOf="@id/cover" app:layout_constraintTop_toTopOf="@id/cover" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bili_bg_r4_ga0_s" android:layout_width="112.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" app:layout_constraintBottom_toBottomOf="@id/cover" app:layout_constraintStart_toEndOf="@id/cover" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+.class final Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;
+.super Lkotlin/reflect/jvm/internal/impl/types/DelegatingSimpleTypeImpl;
+.source "BL"
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/DelegatingSimpleTypeImpl;-><init>(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public isMarkedNullable()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    return v0
+.end method
+
+.method public bridge synthetic replaceDelegate(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)Lkotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;->replaceDelegate(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public replaceDelegate(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;
+    .locals 1
+
+    .line 2
+    new-instance v0, Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;
+
+    invoke-direct {v0, p1}, Lkotlin/reflect/jvm/internal/impl/types/NullableSimpleType;-><init>(Lkotlin/reflect/jvm/internal/impl/types/SimpleType;)V
+
+    return-object v0
+.end method

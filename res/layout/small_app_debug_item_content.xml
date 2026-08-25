@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Switch android:id="@id/item_switch" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/black" android:id="@id/item_switch_text" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

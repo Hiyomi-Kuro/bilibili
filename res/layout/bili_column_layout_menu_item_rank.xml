@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageButton android:id="@id/icon" android:background="#0000" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/ic_action_menu_submission"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

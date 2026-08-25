@@ -1,0 +1,682 @@
+.class public final Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# static fields
+.field private static final a:Lcom/alipay/alipaysecuritysdk/api/service/MdapService;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/alipay/alipaysecuritysdk/api/service/ServiceManager;->TYPE_SERVICE_MDAP:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/alipay/alipaysecuritysdk/api/service/ServiceManager;->getService(Ljava/lang/String;)Lcom/alipay/alipaysecuritysdk/api/service/ThirdPartyService;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/alipay/alipaysecuritysdk/api/service/MdapService;
+
+    .line 8
+    .line 9
+    sput-object v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a:Lcom/alipay/alipaysecuritysdk/api/service/MdapService;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public static declared-synchronized a(DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(D",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 18
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_SCP_EVENT_FRAMEWORK_RESULT:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    filled-new-array {p2, p3, p4}, [Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 19
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide p3
+
+    const-wide/high16 v2, 0x4059000000000000L    # 100.0
+
+    div-double/2addr p0, v2
+
+    cmpg-double v2, p3, p0
+
+    if-gez v2, :cond_0
+
+    const/4 p0, 0x1
+
+    .line 20
+    invoke-static {v1, p0, p5, p2}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 21
+    :cond_0
+    monitor-exit v0
+
+    return-void
+
+    .line 22
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+.end method
+
+.method public static declared-synchronized a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;Ljava/lang/String;)V
+    .locals 4
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 28
+    :try_start_0
+    invoke-static {p1}, Lcom/alipay/alipaysecuritysdk/modules/x/az;->b(Ljava/lang/String;)Z
+
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    if-eqz v1, :cond_0
+
+    .line 29
+    monitor-exit v0
+
+    return-void
+
+    :cond_0
+    const/4 v1, 0x2
+
+    :try_start_1
+    new-array v1, v1, [Ljava/lang/String;
+
+    const-string v2, "Info"
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    const/4 v2, 0x1
+
+    aput-object p1, v1, v2
+
+    const/4 p1, 0x0
+
+    .line 30
+    invoke-static {p0, v2, p1, v1}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 31
+    monitor-exit v0
+
+    return-void
+
+    .line 32
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_1
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
+.method private static varargs a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/alipay/alipaysecuritysdk/modules/x/ad;",
+            "Z",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;[",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    sget-object v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a:Lcom/alipay/alipaysecuritysdk/api/service/MdapService;
+
+    const-string v1, ""
+
+    .line 27
+    invoke-virtual {p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->getUseCaseID()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->getSeedID()Ljava/lang/String;
+
+    move-result-object v3
+
+    if-eqz p1, :cond_1
+
+    const-string p0, "securityedgefeature"
+
+    :goto_0
+    move-object v4, p0
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p0, 0x0
+
+    goto :goto_0
+
+    :goto_1
+    move-object v5, p2
+
+    move-object v6, p3
+
+    invoke-interface/range {v0 .. v6}, Lcom/alipay/alipaysecuritysdk/api/service/MdapService;->uploadMdap(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;[Ljava/lang/String;)Z
+
+    return-void
+.end method
+
+.method public static varargs a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;[Ljava/lang/String;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 33
+    invoke-static {p0, v0, v1, p1}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static declared-synchronized a(Ljava/lang/String;)V
+    .locals 4
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 14
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_APDID:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    filled-new-array {p0}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    .line 15
+    invoke-static {v1, v2, v3, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 16
+    monitor-exit v0
+
+    return-void
+
+    .line 17
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 12
+    :try_start_0
+    sget-object v0, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_SC_ERRORS:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    const/4 v1, 0x0
+
+    filled-new-array {p0, p1, v1}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x0
+
+    .line 13
+    invoke-static {v0, p1, v1, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :catchall_0
+    return-void
+.end method
+
+.method public static declared-synchronized a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 4
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 1
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_APDID_LOCAL:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 2
+    :try_start_1
+    invoke-static {p1}, Lcom/alipay/alipaysecuritysdk/modules/x/az;->c(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const-string p1, "Y"
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "N"
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 3
+    invoke-static {p2}, Lcom/alipay/alipaysecuritysdk/modules/x/az;->a(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    const-string p2, "utk_notprint"
+
+    goto :goto_1
+
+    :cond_1
+    const/16 v2, 0x18
+
+    if-eqz p2, :cond_2
+
+    .line 4
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-ne v3, v2, :cond_2
+
+    const-string v3, "000000000000000000000000"
+
+    invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    const-string p2, "utk_24_zeros"
+
+    goto :goto_1
+
+    :cond_2
+    if-eqz p2, :cond_3
+
+    .line 5
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-ne v3, v2, :cond_3
+
+    const-string p2, "utk_utdid"
+
+    goto :goto_1
+
+    :cond_3
+    if-eqz p2, :cond_5
+
+    .line 6
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result p2
+
+    const/16 v2, 0x20
+
+    if-ne p2, v2, :cond_5
+
+    const-string p2, "Y"
+
+    .line 7
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-eqz p2, :cond_4
+
+    .line 8
+    monitor-exit v0
+
+    return-void
+
+    :cond_4
+    :try_start_2
+    const-string p2, "utk_illegal"
+
+    goto :goto_1
+
+    :cond_5
+    const-string p2, "utk_illegal"
+
+    :goto_1
+    filled-new-array {p0, p2, p1}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x0
+
+    const/4 p2, 0x0
+
+    .line 9
+    invoke-static {v1, p1, p2, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 10
+    monitor-exit v0
+
+    return-void
+
+    .line 11
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_1
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
+.method public static declared-synchronized a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    .locals 2
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 23
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_DYNAMIC_DETECT_RESULT:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    filled-new-array {p0, p1, p2}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x1
+
+    .line 24
+    invoke-static {v1, p1, p3, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 25
+    monitor-exit v0
+
+    return-void
+
+    .line 26
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+.end method
+
+.method public static varargs b(Lcom/alipay/alipaysecuritysdk/modules/x/ad;[Ljava/lang/String;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-static {p0, v0, v1, p1}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static declared-synchronized b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 1
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_EDGE_SAFE_STORE:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    filled-new-array {p0, p1, p2}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x0
+
+    const/4 p2, 0x0
+
+    .line 2
+    invoke-static {v1, p1, p2, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 3
+    monitor-exit v0
+
+    return-void
+
+    .line 4
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+
+    :catchall_1
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method
+
+.method public static declared-synchronized b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    monitor-enter v0
+
+    .line 5
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_DEVICE_COLOR_INFO:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    filled-new-array {p0, p1, p2}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 p1, 0x1
+
+    .line 6
+    invoke-static {v1, p1, p3, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    monitor-exit v0
+
+    return-void
+
+    .line 8
+    :catchall_0
+    monitor-exit v0
+
+    return-void
+.end method
+
+.method public static declared-synchronized c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_SCP_EVENT_FRAMEWORK_RESULT:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    .line 5
+    .line 6
+    filled-new-array {p0, p1, p2}, [Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    const/4 p1, 0x1
+
+    .line 11
+    const/4 p2, 0x0
+
+    .line 12
+    invoke-static {v1, p1, p2, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    .line 14
+    .line 15
+    monitor-exit v0
+
+    .line 16
+    return-void
+
+    .line 17
+    :catchall_0
+    monitor-exit v0
+
+    .line 18
+    return-void
+.end method
+
+.method public static declared-synchronized d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    const-class v0, Lcom/alipay/alipaysecuritysdk/modules/x/ag;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    sget-object v1, Lcom/alipay/alipaysecuritysdk/modules/x/ad;->UC_DYNAMIC_TIMER_DETECT:Lcom/alipay/alipaysecuritysdk/modules/x/ad;
+
+    .line 5
+    .line 6
+    filled-new-array {p0, p1, p2}, [Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    const/4 p1, 0x1
+
+    .line 11
+    const/4 p2, 0x0
+
+    .line 12
+    invoke-static {v1, p1, p2, p0}, Lcom/alipay/alipaysecuritysdk/modules/x/ag;->a(Lcom/alipay/alipaysecuritysdk/modules/x/ad;ZLjava/util/Map;[Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    .line 14
+    .line 15
+    monitor-exit v0
+
+    .line 16
+    return-void
+
+    .line 17
+    :catchall_0
+    monitor-exit v0
+
+    .line 18
+    return-void
+.end method

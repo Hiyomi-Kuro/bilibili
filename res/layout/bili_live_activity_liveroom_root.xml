@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/room_root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/roomContainerView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.room.ui.roomv3.vertical.widget.LiveVerticalPagerView android:orientation="vertical" android:id="@id/rv_room_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.bililive.infra.hierarchy.HierarchyViewContainer android:id="@id/room_dialog_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <ViewStub android:id="@id/hdRecommendView" android:layout="@layout/bili_live_activity_liveroom_hd_recommend" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/roomLoadingView" android:visibility="gone" layout="@layout/bili_live_activity_liveroom_loading" />
+    <ViewStub android:id="@id/roomErrorView" android:background="@color/daynight_color_background" android:visibility="visible" android:layout="@layout/bili_live_activity_liveroom_error" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

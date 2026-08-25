@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/bili_app_list_item_comment2_primary_view_manuscript_0" android:paddingLeft="65.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/comment2_high_light_1" android:ellipsize="end" android:id="@id/content" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

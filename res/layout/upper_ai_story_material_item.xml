@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_material_add" android:background="@drawable/bg_upper_ai_story_item_material_add" android:visibility="gone" android:layout_width="match_parent" android:layout_height="88.0dp" android:layout_margin="5.0dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_upper_ai_story_material_add" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Text_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/upper_ai_story_material_add" android:maxLines="1" android:singleLine="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_material_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="56.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/ic_upper_ai_story_material_default" app:placeholderImageScaleType="centerCrop" app:roundBottomEnd="true" app:roundBottomStart="true" app:roundTopEnd="true" app:roundTopStart="true" app:roundedCornerRadius="6.0dp" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/ll_video_frame_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_video_frame_left" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:placeholderImageScaleType="centerCrop" app:roundBottomEnd="false" app:roundBottomStart="true" app:roundTopEnd="false" app:roundTopStart="true" app:roundedCornerRadius="6.0dp" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_video_frame_right" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:placeholderImageScaleType="centerCrop" app:roundBottomEnd="true" app:roundBottomStart="false" app:roundTopEnd="true" app:roundTopStart="false" app:roundedCornerRadius="6.0dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|top" android:id="@id/iv_delete" android:layout_width="18.0dp" android:layout_height="18.0dp" app:placeholderImage="@drawable/ic_upper_ai_story_item_material_delete" app:placeholderImageScaleType="centerInside" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/Text_white" android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginEnd="6.0dp" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_keyword" android:background="@drawable/bg_upper_ai_story_item_material_keyword" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="8.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/upper_selector_text_color_ai_story_item_material_keyword" android:gravity="center" android:id="@id/tv_keyword" android:layout_width="match_parent" android:layout_height="24.0dp" android:maxLines="1" android:paddingStart="6.0dp" android:paddingEnd="0.0dp" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_keyword_loading" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_ai_story_keyword_loading" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

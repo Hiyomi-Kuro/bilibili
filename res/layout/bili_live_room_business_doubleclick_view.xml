@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/double_root_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lianzan_container" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_centerInParent="true">
+        <com.bilibili.bililive.room.ui.doubleclicklike.LiveRoomDoubleClickProgressView android:layout_gravity="center" android:id="@id/doubleclick_processbar" android:visibility="gone" android:layout_width="110.0dp" android:layout_height="110.0dp" />
+        <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_lianzan_done" android:visibility="gone" android:layout_width="200.0dp" android:layout_height="200.0dp" android:scaleType="fitXY" app:autoPlay="false" app:loopCount="1" />
+    </FrameLayout>
+    <com.bilibili.bililive.room.ui.doubleclicklike.LiveRoomLikeProgressBar android:id="@id/live_like_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/live_like_progress_bar_height" android:layout_marginTop="81.0dp" android:layout_centerHorizontal="true" />
+</RelativeLayout>

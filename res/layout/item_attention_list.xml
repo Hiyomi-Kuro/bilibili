@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center_vertical" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_image" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="14.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" fresco:roundAsCircle="true" />
+    <ImageView android:id="@id/official_verify" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_v_personal" android:layout_alignRight="@id/avatar_image" android:layout_alignBottom="@id/avatar_image" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:maxLines="1" android:layout_toRightOf="@id/avatar_image" android:layout_alignTop="@id/avatar_image" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/fans_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/avatar_image" android:layout_alignBottom="@id/avatar_image" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

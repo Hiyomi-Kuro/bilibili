@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/mall_home_block_ranking_profit_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/Ye6" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mall_home_tv_benefit" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:includeFontPadding="false" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

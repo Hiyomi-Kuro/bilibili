@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.ui.splash.widget.SplashRunningBallView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:layout_marginTop="0.0dp" app:ballMarginPercent="0.08" app:bgColor="#5500ffff" app:cornerRadius="32.0dp" app:holeBgColor="#22ff00ff" app:holeStrokeColor="#ffffff" app:holeStrokeWidth="0.5dp" app:strokeColor="#ff00ff" app:strokeWidth="0.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

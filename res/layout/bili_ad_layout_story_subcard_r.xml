@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.ad.adview.story.card.widget.AdStoryAnimationContainerWidget android:layout_gravity="bottom" android:id="@id/story_subcard_r_second" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ad_story_player_height" android:layout_marginBottom="10.0dp" android:layout_marginStart="12.0dp" />
+    <com.bilibili.adcommon.player.alphaplayer.TransIjkPlayerContainer android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/animate_content_container" android:visibility="visible" android:layout_width="270.0dp" android:layout_height="483.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="12.0dp" app:android_gravity="bottom" app:v_corner_radius="@dimen/ad_story_player_corner_radius" />
+    <include android:layout_gravity="bottom" android:id="@id/story_subcard_r_first" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_ad_layout_story_subcard_first" />
+</FrameLayout>

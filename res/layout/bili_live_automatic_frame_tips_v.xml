@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/live_room_launcher_tips_bg_v" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="end" android:paddingLeft="6.0dp" android:paddingTop="3.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/live_automatic_frame_tips_hint1" android:maxLines="1" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/live_automatic_frame_tips_hint2" />
+</LinearLayout>

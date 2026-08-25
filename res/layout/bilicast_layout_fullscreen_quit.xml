@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="100.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/projection_bg_button_fullscreen" android:layout_width="100.0dp" android:layout_height="100.0dp">
+        <ImageView android:layout_gravity="center" android:background="@drawable/ic_remote_search_quit" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="@color/text_white_kit" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_projection_screen_exit" />
+</LinearLayout>

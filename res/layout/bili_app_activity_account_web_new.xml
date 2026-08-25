@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_top_bar_size">
+        <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" app:kernelMode="system_core" />
+        <ProgressBar android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="8.0dp" android:max="100" style="@style/Widget.App.ProgressBar.Horizontal" />
+    </FrameLayout>
+</merge>

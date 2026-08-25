@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/read" android:title="@string/op_unfollow_read" app:showAsAction="never" />
+    <item android:id="@id/clear" android:title="@string/op_unfollow_clear" app:showAsAction="never" />
+    <item android:id="@id/setting" android:title="@string/op_unfollow_setting" app:showAsAction="never" />
+</menu>

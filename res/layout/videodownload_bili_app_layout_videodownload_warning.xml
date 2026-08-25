@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?dialogPreferredPadding" android:layout_marginRight="?dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.App.Title" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?dialogPreferredPadding" />
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/gray_dark" android:id="@id/validity_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dp" android:layout_marginTop="?dialogPreferredPadding" android:checked="true" android:text="@string/downloaded_network_warning_wifi_content_validity" app:compoundButtonTint="@color/selector_compoundbutton_normal" style="@style/VideoDownloader.Widget.App.CheckBox.Native" />
+</LinearLayout>

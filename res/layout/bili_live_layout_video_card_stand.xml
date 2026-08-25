@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_live_layout_video_cover" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/theme_color_live_text_major" android:ellipsize="end" android:id="@id/title" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/theme_color_live_text_assist_dark" android:ellipsize="end" android:gravity="center" android:id="@id/area_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="2.0dp" android:maxLines="1" />
+</merge>

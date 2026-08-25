@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:id="@id/tv_back" android:background="@drawable/ic_upper_back" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/pink" android:ellipsize="end" android:gravity="center" android:layout_gravity="right|center" android:id="@id/tv_action_next" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20.0dp" android:text="@string/video_editor_confirm" android:maxLines="1" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bili_editor_sticker" />
+    </androidx.appcompat.widget.Toolbar>
+    <include android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="48.0dp" layout="@layout/layout_video_edit_sep_line" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_manage_sticker" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="49.0dp" />
+    <include android:id="@id/ll_empty" android:visibility="gone" layout="@layout/layout_editor_res_empty" />
+</FrameLayout>

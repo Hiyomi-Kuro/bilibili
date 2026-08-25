@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginBottom="1.5dp" layout="@layout/bili_ad_imax_extra_layout_short" />
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/web_bar" android:padding="23.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_top_arrow" />
+    </FrameLayout>
+    <com.bilibili.ad.adview.web.layout.AdWebLayout android:id="@id/web_content" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="52.0dp" />
+    <com.bilibili.ad.adview.imax.impl.widget.ImaxToolBarWithClose android:id="@id/imax_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/ad_imax_tool_bar_height" />
+</FrameLayout>

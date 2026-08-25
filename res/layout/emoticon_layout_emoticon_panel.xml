@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.emoticon.ui.widget.ListenVisibilityLayout android:orientation="vertical" android:id="@id/emoticon_text_panel" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.emoticon.ui.widget.OuterPager android:layout_gravity="bottom" android:id="@id/emoticon_panel_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tab_container" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_gravity="left" android:id="@id/emoticon_manger_layout" android:layout_width="50.0dp" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/emoticon_manager" android:background="@drawable/emoticon_ic_emoticon_manage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/emoticon_content_desc_setting" app:imageTint="@color/emoticon_daynight_color_text_supplementary_dark" />
+            <ImageView android:id="@id/emoticon_manager_badge" android:background="@drawable/emoticon_shape_emoticon_badge" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_toRightOf="@id/emoticon_manager" android:layout_above="@id/emoticon_manager" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/emoticon_panel_tab" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" app:tabIndicatorHeight="0.0dp" app:tabMode="scrollable" style="@style/EmoticonTabStyle" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/bottom_delete" android:paddingLeft="14.0dp" android:paddingTop="10.0dp" android:paddingRight="14.0dp" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="match_parent" android:src="@drawable/emoticon_ic_emote_delete" app:imageTint="@color/emoticon_daynight_color_text_supplementary_dark" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <include android:id="@id/loading_layout" android:visibility="gone" layout="@layout/emoticon_layout_emoticon_panel_loading" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="right|bottom" android:id="@id/delete" android:background="@drawable/emoticon_shape_delete_bg" android:visibility="gone" android:layout_width="54.0dp" android:layout_height="34.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="54.0dp" android:foreground="?selectableItemBackground" android:elevation="2.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/emoticon_ic_emote_delete" android:contentDescription="@string/emoticon_content_desc_delete" app:imageTint="@color/emoticon_daynight_color_text_supplementary_dark" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.app.comm.emoticon.ui.widget.ListenVisibilityLayout>

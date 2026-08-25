@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="1.0dp" android:paddingRight="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="#16ffffff" android:layout_width="match_parent" android:layout_height="124.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/tvUpperItemMaterialCover" android:layout_width="match_parent" android:layout_height="124.0dp" android:scaleType="centerInside" app:actualImageScaleType="centerInside" />
+        <View android:id="@id/tvUpperItemMaterialForeground" android:background="@color/upper_black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5" />
+        <ImageView android:layout_gravity="center" android:id="@id/tvUpperItemMaterialDownload" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_upper_material_download" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pbUpperMaterialDownloading" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:indeterminateDrawable="@drawable/bg_upper_material_downloading" />
+        <ImageView android:layout_gravity="right" android:id="@id/ivUpperItemMaterialAdd" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="6.0dp" android:src="@drawable/ic_upper_material_add" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_white" android:layout_gravity="end|bottom" android:id="@id/tvUpperItemMaterialTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dp" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/upper_white" android:layout_gravity="center" android:id="@id/tvUpperItemMaterialCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/tvUpperItemMaterialRect" android:background="@drawable/upper_shape_selected_material_square" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:ellipsize="end" android:id="@id/tvUpperItemMaterial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp" android:maxLines="1" />
+</LinearLayout>

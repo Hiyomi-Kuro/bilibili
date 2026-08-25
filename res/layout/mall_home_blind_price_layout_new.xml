@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:background="@drawable/mall_home_blind_block_price_bg" android:paddingLeft="5.0dp" android:paddingTop="3.0dp" android:paddingRight="5.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/mall_home_tv_prefix_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:textSize="11.0dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/mall_home_tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <com.mall.ui.widget.MallImageView2 android:layout_gravity="center_vertical" android:id="@id/mall_home_iv_price_symbol" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="10.0dp" android:layout_marginLeft="2.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

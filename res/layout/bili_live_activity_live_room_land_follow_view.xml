@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="64.0dp" android:layout_height="26.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:id="@id/follow_button" android:background="@drawable/live_selector_button_follow_corner_20_dark_pink" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:drawablePadding="2.0dp" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/live_daynight_text_color_white" android:layout_gravity="center" android:id="@id/follow_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_follow" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/tick_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/follow_and_guard_view" android:visibility="invisible" android:layout_width="64.0dp" android:layout_height="26.0dp" android:layout_centerVertical="true">
+        <FrameLayout android:id="@id/follow_button_ani" android:background="@drawable/ic_live_room_entry_follow_ani_bg" android:layout_width="34.0dp" android:layout_height="26.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/follow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/live_fans_level_tv" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/guard_button_ani" android:background="@drawable/ic_live_room_entry_guard_ani_bg" android:layout_width="34.0dp" android:layout_height="26.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/guard_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/live_guard_rl" android:background="@drawable/live_selector_button_guard_online" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="26.0dp" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="5.0dp" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+            <ImageView android:background="@drawable/ic_live_room_entry_guard_ani" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <TextView android:textSize="6.0sp" android:textColor="@color/live_guard_fans_text" android:gravity="center" android:id="@id/live_guard_fans_tv" android:background="@drawable/live_selector_button_guard_fans_bg" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="12.0dp" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_guard_guard_level_text" android:gravity="center" android:id="@id/live_guard_level_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:id="@id/fansclub_button" android:background="@drawable/live_selector_button_follow_corner_20_dark_pink" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:drawablePadding="2.0dp" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/live_daynight_text_color_white" android:layout_gravity="center" android:id="@id/fansclub_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_follow" />
+    </FrameLayout>
+</RelativeLayout>

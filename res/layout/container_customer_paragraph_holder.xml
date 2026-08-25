@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.comm.list.widget.opus.OpusView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" />
+    <include android:id="@id/expend" android:layout_width="match_parent" android:layout_height="80.0dp" layout="@layout/container_paragraph_expend" />
+</merge>

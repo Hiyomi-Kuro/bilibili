@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/theseus_cheese_selector_series_item_bg" android:layout_width="94.0dp" android:layout_height="37.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/theseus_cheese_selector_detail_series_date_text_color" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/Text_white" android:gravity="center" android:id="@id/tv_label" android:background="@drawable/theseus_cheese_selector_commencement_date_purchased_bg" android:layout_width="24.0dp" android:layout_height="14.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

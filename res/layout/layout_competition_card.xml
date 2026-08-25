@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_card" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/Ga10_u" android:ellipsize="end" android:gravity="center" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="16.0dp" android:maxLines="1" android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_week" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10_u" android:gravity="center" android:id="@id/tv_week" android:background="@drawable/bg_competition_graph_regular" android:layout_width="42.0dp" android:layout_height="20.0dp" android:layout_toEndOf="@id/tv_date" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_competitions" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+</FrameLayout>

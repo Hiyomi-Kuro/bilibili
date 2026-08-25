@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:id="@id/topic_item_container" android:background="@drawable/bg_selector_topic_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/topic_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/Graph_weak" app:layout_constraintTop_toTopOf="@id/topic_text" app:srcCompat="@drawable/vc_topic_tail" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text3" android:id="@id/topic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" android:text="选择话题" android:layout_marginStart="4.0dp" style="@style/T14" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

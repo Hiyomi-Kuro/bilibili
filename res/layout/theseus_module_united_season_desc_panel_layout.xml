@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:background="@color/Wh0" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/Text1" android:id="@id/text" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/T14_cozy" />
+</androidx.core.widget.NestedScrollView>

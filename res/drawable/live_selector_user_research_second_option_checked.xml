@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/live_user_research_second_option_bg_checked" />
+    <corners android:radius="8.0dp" />
+    <stroke android:width="2.0dp" android:color="@color/live_user_research_second_option_text_checked" />
+</shape>

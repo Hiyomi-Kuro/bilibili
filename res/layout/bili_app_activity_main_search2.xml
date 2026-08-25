@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.search2.result.ogv.weight.OgvRelativeLayout android:orientation="vertical" android:id="@id/ogv_layout" android:background="@color/search_result_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_input_layout" layout="@layout/bili_app_view_main_search_input2" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_input_layout" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/suggest_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_input_layout" />
+</com.bilibili.search2.result.ogv.weight.OgvRelativeLayout>

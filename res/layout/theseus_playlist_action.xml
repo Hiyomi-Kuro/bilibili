@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/playlist_action_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/basic_info_layout" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="29.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/action_layout" android:layout_width="match_parent" android:layout_height="58.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/like_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/like_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:tint="@color/theseus_playlist_selector_action_color" app:srcCompat="@drawable/ic_video_action_like" />
+            <TextView android:textColor="@color/theseus_playlist_selector_action_color" android:id="@id/like_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:includeFontPadding="false" style="@style/T10" />
+        </LinearLayout>
+        <Space android:layout_width="10.0dp" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/favor_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/favor_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" app:srcCompat="@drawable/ref_folder_add_fill" app:tint="@color/theseus_playlist_selector_action_color" />
+            <TextView android:textColor="@color/theseus_playlist_selector_action_color" android:id="@id/favor_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:includeFontPadding="false" style="@style/T10" />
+        </LinearLayout>
+        <Space android:layout_width="10.0dp" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/share_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/share_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:tint="@color/theseus_playlist_selector_action_color" app:srcCompat="@drawable/ic_video_action_share" />
+            <TextView android:textColor="@color/theseus_playlist_selector_action_color" android:id="@id/share_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:includeFontPadding="false" style="@style/T10" />
+        </LinearLayout>
+        <Space android:layout_width="10.0dp" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/report_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/report_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:tint="@color/theseus_playlist_selector_action_color" app:srcCompat="@drawable/ic_player_vector_danmaku_window_report_new" />
+            <TextView android:textColor="@color/theseus_playlist_selector_action_color" android:id="@id/report_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/report" android:includeFontPadding="false" style="@style/T10" />
+        </LinearLayout>
+        <Space android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@id/order_sort_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:srcCompat="@drawable/ref_list_sort_positive_line" app:tint="@color/Text3" />
+            <TextView android:textColor="@color/Text3" android:id="@id/order_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_playlist_default_order" android:layout_marginStart="4.0dp" style="@style/T12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

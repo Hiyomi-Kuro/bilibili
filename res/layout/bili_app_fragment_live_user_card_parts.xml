@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/user_card_avatar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_app_fragment_live_user_card_avatar_view" />
+    <androidx.core.widget.NestedScrollView android:id="@id/user_card_scrollview" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/user_card_scroll_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="1.0dp" layout="@layout/bili_app_fragment_live_user_card_wealth_view" />
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" layout="@layout/bili_app_fragment_live_user_card_title_view" />
+            <include android:id="@id/cl_privilege_center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="28.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" layout="@layout/bili_app_fragment_live_user_card_privilege_view" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/fl_follow_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="2.0dp" layout="@layout/bili_app_fragment_live_user_card_follow_view" />
+    <RelativeLayout android:id="@id/user_card_mystery_setting_layout" android:background="@color/live_card_mystery_theme" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <RelativeLayout android:gravity="center" android:id="@id/user_card_mystery_setting" android:background="@drawable/bg_live_user_card_mystery_more" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/live_room_user_card_mystery_more" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

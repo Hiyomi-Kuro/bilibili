@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/tv_title" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="1" android:paddingHorizontal="12.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="8.0dp" android:nestedScrollingEnabled="false" android:layout_marginHorizontal="8.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/more_up_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/more_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_video" android:lines="1" />
+        <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="1.0dp" android:src="@drawable/ic_search_colletion_more" app:tint="@color/Graph_icon" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/oprt_item_home_index_0" android:paddingLeft="5.0dp" android:paddingTop="12.0dp" android:paddingRight="5.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:gravity="center_vertical" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <ImageView android:id="@id/dislike" android:tag="binding_4" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" app:srcCompat="@drawable/oprt_vec_arrow_right" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <ImageView android:id="@id/arrow" android:tag="binding_7" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="2.0dp" app:srcCompat="@drawable/oprt_vec_arrow_right" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_child_layout1" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/sub_icon" android:tag="binding_10" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="6.0dp" app:actualImageScaleType="fitXY" app:aspectRadioHeight="1" app:aspectRadioWidth="1" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:id="@id/sub_title" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_child_layout2" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/sub_icon2" android:tag="binding_13" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="6.0dp" app:actualImageScaleType="fitXY" app:aspectRadioHeight="1" app:aspectRadioWidth="1" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:id="@id/sub_title2" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

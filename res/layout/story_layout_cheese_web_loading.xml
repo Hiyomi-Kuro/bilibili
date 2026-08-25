@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/content" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_loading" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/bilipay_tv_loading" />
+    <ImageView android:id="@id/iv_error" android:layout_width="140.0dp" android:layout_height="140.0dp" android:src="@drawable/img_page_net_error" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text3" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/br_prompt_busy_loading" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:background="@drawable/bcut_material_shape_theme_tag_bg" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dp" android:paddingEnd="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_tag_icon" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" app:actualImageScaleType="fitXY" />
+    <TextView android:textSize="10.0sp" android:ellipsize="end" android:id="@id/tv_tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

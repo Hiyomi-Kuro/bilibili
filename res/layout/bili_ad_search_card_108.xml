@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintConstraintLayout android:id="@id/ad_tint_frame" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.ad.adview.widget.AdBiliImageView android:id="@id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:viewAspectRadioHeight="128" app:viewAspectRadioWidth="375" />
+    <View android:id="@id/shadow" android:layout_width="match_parent" android:layout_height="28.0dp" />
+    <com.bilibili.adcommon.basic.marker.AdMarkLayout android:id="@id/ad_tag" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Marker" />
+</com.bilibili.adcommon.widget.AdTintConstraintLayout>

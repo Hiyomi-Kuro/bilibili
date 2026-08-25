@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:layout_width="160.0dp" android:layout_height="121.0dp" app:placeholderImage="@drawable/bili_default_image_tv"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

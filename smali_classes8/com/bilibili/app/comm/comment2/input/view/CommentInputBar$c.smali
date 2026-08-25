@@ -1,0 +1,309 @@
+.class final Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "c"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0017\u0008\u0002\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ\u001a\u0010\u0007\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J\u0018\u0010\n\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\t\u001a\u00020\u0008R$\u0010\u0010\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0007\u0010\u000b\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR$\u0010\u0013\u001a\u0004\u0018\u00010\u00048\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u0011\u0010\r\"\u0004\u0008\u0012\u0010\u000fR$\u0010\u0019\u001a\u0004\u0018\u00010\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0011\u0010\u0014\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R$\u0010\u001c\u001a\u0004\u0018\u00010\u00068\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u0014\u001a\u0004\u0008\u001a\u0010\u0016\"\u0004\u0008\u001b\u0010\u0018\u00a8\u0006\u001f"
+    }
+    d2 = {
+        "Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;",
+        "",
+        "Landroid/content/Context;",
+        "context",
+        "Lcom/bilibili/app/comm/comment2/input/view/a;",
+        "comment",
+        "",
+        "a",
+        "",
+        "focused",
+        "b",
+        "Lcom/bilibili/app/comm/comment2/input/view/a;",
+        "getMPrimaryComment",
+        "()Lcom/bilibili/app/comm/comment2/input/view/a;",
+        "e",
+        "(Lcom/bilibili/app/comm/comment2/input/view/a;)V",
+        "mPrimaryComment",
+        "c",
+        "g",
+        "mSecondaryComment",
+        "Ljava/lang/CharSequence;",
+        "getMDefault",
+        "()Ljava/lang/CharSequence;",
+        "d",
+        "(Ljava/lang/CharSequence;)V",
+        "mDefault",
+        "getMReplyDefaultHint",
+        "f",
+        "mReplyDefaultHint",
+        "<init>",
+        "()V",
+        "comment2_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+.field private b:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+.field private c:Ljava/lang/CharSequence;
+
+.field private d:Ljava/lang/CharSequence;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private final a(Landroid/content/Context;Lcom/bilibili/app/comm/comment2/input/view/a;)Ljava/lang/CharSequence;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->d:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lkotlin/text/n;->K(Ljava/lang/CharSequence;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    iget-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->d:Ljava/lang/CharSequence;
+
+    .line 13
+    .line 14
+    goto :goto_1
+
+    .line 15
+    :cond_1
+    :goto_0
+    sget v0, Lri/h;->R:I
+
+    .line 16
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    const/4 v2, 0x0
+
+    .line 21
+    invoke-virtual {p2}, Lcom/bilibili/app/comm/comment2/input/view/a;->b()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p2
+
+    .line 25
+    aput-object p2, v1, v2
+
+    .line 26
+    .line 27
+    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p1
+
+    .line 31
+    :goto_1
+    return-object p1
+.end method
+
+
+# virtual methods
+.method public final b(Landroid/content/Context;Z)Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    if-eqz p2, :cond_1
+
+    .line 2
+    .line 3
+    iget-object p2, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->b:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+    .line 4
+    .line 5
+    if-eqz p2, :cond_0
+
+    .line 6
+    .line 7
+    invoke-direct {p0, p1, p2}, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->a(Landroid/content/Context;Lcom/bilibili/app/comm/comment2/input/view/a;)Ljava/lang/CharSequence;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+
+    .line 12
+    :cond_0
+    iget-object p2, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->a:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+    .line 13
+    .line 14
+    if-eqz p2, :cond_1
+
+    .line 15
+    .line 16
+    invoke-direct {p0, p1, p2}, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->a(Landroid/content/Context;Lcom/bilibili/app/comm/comment2/input/view/a;)Ljava/lang/CharSequence;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    return-object p1
+
+    .line 21
+    :cond_1
+    iget-object p2, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->c:Ljava/lang/CharSequence;
+
+    .line 22
+    .line 23
+    if-eqz p2, :cond_3
+
+    .line 24
+    .line 25
+    invoke-static {p2}, Lkotlin/text/n;->K(Ljava/lang/CharSequence;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p2
+
+    .line 29
+    if-eqz p2, :cond_2
+
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_2
+    iget-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->c:Ljava/lang/CharSequence;
+
+    .line 33
+    .line 34
+    goto :goto_1
+
+    .line 35
+    :cond_3
+    :goto_0
+    sget p2, Lri/h;->z:I
+
+    .line 36
+    .line 37
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    :goto_1
+    return-object p1
+.end method
+
+.method public final c()Lcom/bilibili/app/comm/comment2/input/view/a;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->b:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->c:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final e(Lcom/bilibili/app/comm/comment2/input/view/a;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->a:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final f(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->d:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final g(Lcom/bilibili/app/comm/comment2/input/view/a;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/comm/comment2/input/view/CommentInputBar$c;->b:Lcom/bilibili/app/comm/comment2/input/view/a;
+
+    .line 2
+    .line 3
+    return-void
+.end method

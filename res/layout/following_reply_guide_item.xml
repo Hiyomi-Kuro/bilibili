@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/ll_reply_guide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/reply_guide_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/following_default_image_holder" android:layout_marginStart="12.0dp" android:layout_marginEnd="8.0dp" app:placeholderImage="@drawable/following_default_image_holder" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:gravity="start|center" android:background="@drawable/shape_reply_guide_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/following_reply_guide" android:paddingStart="12.0dp" android:layout_marginEnd="12.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

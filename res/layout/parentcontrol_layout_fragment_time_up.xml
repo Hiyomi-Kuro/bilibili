@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.teenagersmode.ui.ResizeRelativeLayout android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_icon" android:visibility="visible" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginTop="50.0dp" app:srcCompat="@drawable/ic_vc_teen_time_lock" app:tint="@color/Ga3" />
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" android:text="@string/parent_control_time_up_limited" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/Text2" android:gravity="center" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="36.0dp" android:text="@string/parent_control_time_up_limited_intro" style="@style/T14" />
+            <com.bilibili.teenagersmode.ui.PasswordView android:id="@id/passwordView" android:layout_width="199.0dp" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</com.bilibili.teenagersmode.ui.ResizeRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/upper_shape_album_quit_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_editor_clean_storage_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:text="@string/bili_editor_export_needed_storage" />
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="25.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_editor_force_export" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/bili_editor_force_export" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@id/tv_editor_goto_clean_storage" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/bili_editor_goto_clean_storage" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

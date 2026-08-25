@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_live_pk_fight_tips" android:layout_width="match_parent" android:layout_height="25.0dp" android:layout_marginTop="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="#ccff7f24" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_pk_fight_tips_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="10.0dp" android:layout_marginEnd="32.0dp" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/ic_pk_fight_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_pk_fight_tips_close" android:layout_marginEnd="10.0dp" />
+</FrameLayout>

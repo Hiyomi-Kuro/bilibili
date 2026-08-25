@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:textAppearance">@style/TextAppearance.App</item>
+        <item name="android:textColorSecondary">@color/Ga5</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.App.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.App.Medium</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.App.Small</item>
+        <item name="android:buttonStyle">@style/Widget.App.Button</item>
+        <item name="android:windowBackground">@color/Ga1</item>
+        <item name="android:textColorLink">@color/theme_color_secondary</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/item_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.App.Topbar.Menu</item>
+        <item name="actionModeStyle">@style/Widget.App.ActionMode</item>
+        <item name="buttonStyle">@style/Widget.App.Button</item>
+        <item name="colorAccent">@color/theme_color_primary</item>
+        <item name="colorControlActivated">@color/theme_color_primary</item>
+        <item name="colorControlHighlight">@color/gray_dark_alpha26</item>
+        <item name="colorControlNormal">@color/gray_dark</item>
+        <item name="colorPrimary">@color/theme_color_primary_tr_background</item>
+        <item name="colorPrimaryDark">@color/theme_color_primary_dark</item>
+        <item name="navigationTopBarSize">@dimen/navigation_top_bar_size</item>
+        <item name="popupMenuStyle">@style/Widget.App.ListPopupWindow</item>
+        <item name="selectableItemBackground">@drawable/item_background</item>
+        <item name="selectableItemBackgroundBorderless">@drawable/item_background_borderless</item>
+        <item name="themeColorSecondary">@color/theme_color_secondary</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight.BackPlay.Notification.ImageView" parent="">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

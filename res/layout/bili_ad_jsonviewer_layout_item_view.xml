@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:id="@id/tv_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_icon" android:padding="2.0dp" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:src="@drawable/ad_jsonviewer_plus" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/ad_jsonViewer_icon_plus" app:tint="#999999" />
+    <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/tv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dp" android:layout_marginStart="1.0dp" />
+</LinearLayout>

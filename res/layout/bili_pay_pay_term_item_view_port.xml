@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/stage_item_container" android:background="@drawable/bili_pay_pay_term_bg_port" android:layout_width="100.0dp" android:layout_height="50.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@drawable/bili_pay_pay_selector_text_primary_color" android:layout_gravity="center_horizontal" android:id="@id/stage_title" android:paddingTop="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%1$d期(%2$s手续费)" />
+    <TextView android:textSize="12.0sp" android:textColor="@drawable/bili_pay_pay_term_desc_style" android:layout_gravity="center_horizontal" android:id="@id/stage_desc" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥120.02/期" />
+</LinearLayout>

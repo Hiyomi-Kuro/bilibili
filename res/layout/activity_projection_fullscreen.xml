@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="@color/projection_control_panel_bg" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="185.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_bg_player_screen_cast_mask" />
+    <com.bilibili.lib.projection.internal.widget.ProjectionTitleWidget android:id="@id/projection_title_widget" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/top_view" android:layout_width="match_parent" android:layout_height="330.0dp">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="150.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionGlobalLinkModeFullScreenWidget android:layout_gravity="center" android:id="@id/projection_globallink_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+                <View android:id="@id/projection_icon_title_divider" android:background="@drawable/projection_icon_title_divider" android:layout_width="2.0dp" android:layout_height="13.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="10.0dp" android:layout_toRightOf="@id/projection_globallink_mode" />
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionDeviceNameWidget android:textSize="16.0dp" android:textColor="#ff9ca6ab" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:singleLine="true" android:layout_toRightOf="@id/projection_icon_title_divider" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/projection_full_screen_operation_section" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionDeviceSwitchFullScreenWidget android:id="@id/projection_fullscreen_switch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionSpeedFullScreenWidget android:id="@id/projection_fullscreen_speed" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionQualityFullScreenWidget android:id="@id/projection_fullscreen_quality" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/projection_full_screen_bottom_section" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/player_container_bottom" android:layout_width="match_parent" android:layout_height="@dimen/player_bottom_controller_bar_layout_height" android:baselineAligned="false">
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionFlipVideoWidget android:id="@id/player_widget_flip_video" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="48.0dp" android:layout_height="wrap_content" android:layout_marginRight="7.0dp" android:src="@drawable/bplayer_checkbox_selector_background_flip_video" android:contentDescription="@null" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="7.0dp" app:from="controller_vertical" />
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionDanmakuToggleWidget android:id="@id/player_widget_danmaku_toggle" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="48.0dp" android:layout_height="wrap_content" android:layout_marginRight="7.0dp" android:src="@drawable/bili_player_ctrl_toggle_danmaku" android:contentDescription="@null" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="7.0dp" app:from="controller_vertical" />
+                <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionSelectorWidget android:textSize="14.0sp" android:textColor="@color/selector_bplayer_video_play_control_video_title_text" android:gravity="center" android:id="@id/bbplayer_fullscreen_listselector" android:background="@null" android:paddingLeft="11.0dp" android:paddingRight="11.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:singleLine="true" android:paddingStart="11.0dp" android:paddingEnd="11.0dp" android:layout_marginStart="10.0dp" app:from="controller_landscape" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+                <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionFullScreenSeekWidget android:id="@id/projection_full_seek_bar" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2.0dp" android:progressDrawable="@drawable/bplayer_seek_pink__scrubber_horizontal" android:minHeight="2.0dp" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp">
+                    <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionPositionTextWidget android:textSize="12.0dp" android:textStyle="bold" android:textColor="#99ffffff" android:gravity="center" android:layout_gravity="start|center" android:id="@id/projection_position" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+                    <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionDurationTextWidget android:textSize="12.0dp" android:textStyle="bold" android:textColor="#99ffffff" android:gravity="center" android:layout_gravity="end|center" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+                <FrameLayout android:id="@id/projection_play_pause" android:background="@drawable/projection_bg_button_fullscreen" android:layout_width="100.0dp" android:layout_height="100.0dp" android:layout_centerHorizontal="true">
+                    <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionPlayPauseWidget android:layout_gravity="center" android:id="@id/projection_play_pause_widget_full_screen" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/projection_play_pause_replay_fullscreen" />
+                </FrameLayout>
+                <FrameLayout android:background="@drawable/projection_bg_button_fullscreen" android:paddingLeft="3.0dp" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginLeft="28.0dp" android:layout_toRightOf="@id/projection_play_pause" android:layout_centerVertical="true" android:paddingStart="3.0dp">
+                    <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionPlayNextWidget android:layout_gravity="center" android:id="@id/bbplayer_fullscreen_playnext" android:layout_width="26.0dp" android:layout_height="26.0dp" android:src="@drawable/selector_bili_bplayer_ctrl_play_next" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/bili_app_projection_loading" />
+    <include layout="@layout/bili_app_projection_disconnect" />
+</FrameLayout>

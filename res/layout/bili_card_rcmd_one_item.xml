@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/card_header" layout="@layout/bili_card_rcmd_card_header" />
+    <include android:id="@id/rcmd_card" layout="@layout/bili_pegasus_list_item_small_cover_base_v5" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

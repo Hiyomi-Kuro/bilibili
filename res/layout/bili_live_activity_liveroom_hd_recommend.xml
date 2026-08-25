@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/recommendContainer" android:background="@color/daynight_color_background" android:paddingTop="40.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center_vertical" android:id="@id/recommendContainerTitle" android:paddingLeft="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="更多直播" android:maxLines="1" android:layout_alignTop="@id/recommendContainer" android:paddingStart="10.0dp" android:layout_alignStart="@id/recommendContainer" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+.class Landroidx/compose/ui/platform/coreshims/f$c;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1e
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/platform/coreshims/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "c"
+.end annotation
+
+
+# direct methods
+.method static a(Landroid/view/View;I)V
+    .locals 0
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/View;->setImportantForContentCapture(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

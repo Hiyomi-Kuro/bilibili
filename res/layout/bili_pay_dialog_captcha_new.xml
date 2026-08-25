@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bili_pay_shape_roundrect_trans_r12" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

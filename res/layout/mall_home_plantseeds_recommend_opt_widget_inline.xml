@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallRoundConstraintLayout android:id="@id/inline" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="202.0dp" app:layout_scrollFlags="scroll" app:roundRadius="4.0dp">
+        <include android:id="@id/inline_live" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_home_plantseeds_recommend_opt_widget_inline_live" />
+        <include android:id="@id/inline_reserve" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_home_plantseeds_recommend_opt_widget_inline_reserve" />
+        <include android:id="@id/inline_live_end" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_home_plantseeds_recommend_opt_widget_inline_live_end" />
+    </com.mall.ui.widget.MallRoundConstraintLayout>
+</merge>

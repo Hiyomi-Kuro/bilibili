@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.bplus.following.widget.TopicSearchViewV2 android:id="@id/following_topic_search" android:background="@color/Wh0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.bplus.followingcard.widget.TintSvgaContainerFrameLayout android:id="@id/fl_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.bilibili.magicasakura.widgets.TintRelativeLayout android:paddingTop="65.0dp" android:layout_width="match_parent" android:layout_height="200.0dp">
+                <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:progressTint="@color/theme_color_secondary" />
+            </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        </com.bilibili.bplus.followingcard.widget.TintSvgaContainerFrameLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout>

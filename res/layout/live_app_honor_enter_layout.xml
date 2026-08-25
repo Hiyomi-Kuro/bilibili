@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/honor_enter_light" android:layout_width="290.0dp" android:layout_height="250.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" app:actualImageScaleType="fitCenter" />
+    <ImageView android:id="@id/honor_enter_light_down" android:visibility="gone" android:layout_width="match_parent" android:layout_height="250.0dp" android:src="@drawable/live_room_honor_light_down" android:alpha="0.0" android:rotation="20.0" />
+    <ImageView android:id="@id/honor_enter_light_up" android:visibility="gone" android:layout_width="match_parent" android:layout_height="250.0dp" android:src="@drawable/live_room_honor_light_up" android:alpha="0.0" android:rotation="-10.0" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/enter_effect_bg" android:layout_width="290.0dp" android:layout_height="64.0dp" android:layout_marginTop="93.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" app:actualImageScaleType="fitCenter" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/honor_enter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_below="@id/enter_effect_bg" android:layout_centerHorizontal="true" android:alpha="0.0" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/honor_enter_particle" android:visibility="gone" android:layout_width="290.0dp" android:layout_height="250.0dp" android:layout_centerHorizontal="true" android:alpha="0.0" />
+</RelativeLayout>

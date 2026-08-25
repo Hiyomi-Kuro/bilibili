@@ -1,0 +1,78 @@
+.class public final Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment$c$a;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/bilibili/music/podcast/player/provider/o;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment$c;->b()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "com/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment$c$a",
+        "Lcom/bilibili/music/podcast/player/provider/o;",
+        "Lcom/bilibili/music/podcast/player/provider/r;",
+        "stateMessage",
+        "Lgf3/s;",
+        "a",
+        "music-podcast_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment$c$a;->a:Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/bilibili/music/podcast/player/provider/r;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment$c$a;->a:Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;->Kx(Lcom/bilibili/music/podcast/fragment/AbsMusicPodcastRecommendFragment;Lcom/bilibili/music/podcast/player/provider/r;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

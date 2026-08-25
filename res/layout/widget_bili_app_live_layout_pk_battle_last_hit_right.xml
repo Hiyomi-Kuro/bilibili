@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="right|center" android:id="@id/tv_right_crit" android:background="@drawable/widget_bg_pk_battle_crit_right" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="13.0dp" android:shadowColor="@color/widget_pk_battle_resist_crit_color" android:shadowRadius="2.0" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="right|center" android:id="@id/tv_right_last" android:background="@drawable/widget_bg_pk_battle_immune_last_hit_right" android:paddingRight="3.5dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="13.0dp" android:text="@string/widget_live_pk_battle_immune_last_hit" android:shadowColor="#5e3000" android:shadowRadius="2.0" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.page.home.plantseeds.pageview.recommend.operation.inline.MallRecommendInlineWidget android:id="@id/id_recommend_opt_widget_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="5.0dp" />
+    <com.mall.ui.page.home.plantseeds.pageview.recommend.operation.banner.MallRecommendBannerWidget android:id="@id/id_recommend_opt_widget_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="4.0dp" />
+</merge>

@@ -1,0 +1,68 @@
+.class public final synthetic Lcom/bilibili/ad/adview/feed/index/score/a;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/bilibili/adcommon/basic/click/c$b;
+
+
+# instance fields
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Lcom/bilibili/adcommon/basic/model/FeedAdInfo;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;Lcom/bilibili/adcommon/basic/model/FeedAdInfo;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/ad/adview/feed/index/score/a;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/bilibili/ad/adview/feed/index/score/a;->b:Lcom/bilibili/adcommon/basic/model/FeedAdInfo;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final D(Lcom/bilibili/adcommon/commercial/k;Ljava/util/List;Lcom/bilibili/adcommon/commercial/Motion;Lcom/bilibili/adcommon/commercial/h;)V
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/ad/adview/feed/index/score/a;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/bilibili/ad/adview/feed/index/score/a;->b:Lcom/bilibili/adcommon/basic/model/FeedAdInfo;
+
+    .line 4
+    .line 5
+    move-object v2, p1
+
+    .line 6
+    move-object v3, p2
+
+    .line 7
+    move-object v4, p3
+
+    .line 8
+    move-object v5, p4
+
+    .line 9
+    invoke-static/range {v0 .. v5}, Lcom/bilibili/ad/adview/feed/index/score/c;->G2(Ljava/lang/String;Lcom/bilibili/adcommon/basic/model/FeedAdInfo;Lcom/bilibili/adcommon/commercial/k;Ljava/util/List;Lcom/bilibili/adcommon/commercial/Motion;Lcom/bilibili/adcommon/commercial/h;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method

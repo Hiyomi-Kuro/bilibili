@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/party_season_more_header" android:background="@color/Wh0" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/party_season_more_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="44.0dp" android:maxLines="1" />
+        <ImageView android:id="@id/party_season_more_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/bitmap_ic_video_detail_arrow_close" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/party_season_more_rv" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

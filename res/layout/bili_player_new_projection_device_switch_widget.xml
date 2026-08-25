@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/device_switch" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/device_switch_animation_view" android:layout_width="28.0dp" android:layout_height="28.0dp" app:lottie_autoPlay="true" app:lottie_fileName="ic_player_remote_link_check.json" app:lottie_loop="true" />
+    <ImageView android:id="@id/device_connect_failed" android:background="@drawable/ic_bplayer_remote_device_swtich_failed" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/device_switch_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/player_projection_screen_connecting" />
+</LinearLayout>

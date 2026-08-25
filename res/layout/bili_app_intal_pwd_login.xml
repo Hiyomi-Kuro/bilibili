@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.ui.login.ResizeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/login_input_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/bili_app_intal_login_username" />
+                <include layout="@layout/bili_app_intal_login_password" />
+            </LinearLayout>
+            <include android:id="@id/login_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/login_input_container" layout="@layout/bili_app_intal_login_action_button" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5" android:id="@id/tv_login_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/login_agreement_intal_sub_tips" android:layout_below="@id/login_button_container" android:layout_centerInParent="true" android:layout_marginEnd="12.0dp" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5" android:id="@id/tv_check_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/item_spacing" android:text="@string/check_help_tips" android:layout_below="@id/tv_login_agreement" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</tv.danmaku.bili.ui.login.ResizeLayout>

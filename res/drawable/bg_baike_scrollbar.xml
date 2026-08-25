@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:width="12.0dp" />
+        </shape>
+    </item>
+    <item android:right="8.0dp">
+        <shape>
+            <solid android:color="@color/Graph_bg_thick" />
+            <size android:width="4.0dp" />
+            <corners android:radius="2.0dp" />
+        </shape>
+    </item>
+</layer-list>

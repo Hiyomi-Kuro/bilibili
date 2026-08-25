@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:foregroundGravity="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/back" android:paddingLeft="16.0dp" android:paddingTop="11.0dp" android:paddingRight="16.0dp" android:paddingBottom="11.0dp" android:layout_width="54.0dp" android:layout_height="44.0dp" android:src="@drawable/selector_ic_bplayer_back" android:baselineAligned="false" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/tip_layout" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_marginLeft="38.0dp" android:layout_marginRight="38.0dp">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/tip_icon" android:layout_width="93.0dp" android:layout_height="70.0dp" app:placeholderImage="@drawable/bili_default_image_tv" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/white" android:gravity="center" android:id="@id/tip_btn" android:background="@drawable/selector_button_solid_pink" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:minWidth="62.0dp" android:minHeight="28.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_center_user_tools_title" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:failureImage="@drawable/bili_default_image_tv" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="12.0dp" app:viewAspectRatio="3.2" />
+    <ViewStub android:id="@id/error_layout" android:layout="@layout/bili_view_layout_upper_banner_error" android:inflatedId="@id/error_layout_inflate" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

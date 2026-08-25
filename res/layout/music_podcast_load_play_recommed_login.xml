@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text_white" android:id="@id/error_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_podcast_recommend_login_note" app:layout_constraintBottom_toTopOf="@id/login" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text_white" android:gravity="center" android:id="@id/login" android:background="@drawable/music_podcast_load_recommend_login_back" android:layout_width="88.0dp" android:layout_height="30.0dp" android:layout_marginTop="17.0dp" android:text="@string/music_podcast_load_collect_login" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/error_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

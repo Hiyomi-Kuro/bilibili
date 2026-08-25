@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/pendant_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/border_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/badge_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <tv.danmaku.bili.widget.avatar.LivingAvatarAnimationView android:layout_gravity="center" android:id="@id/first_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <tv.danmaku.bili.widget.avatar.LivingAvatarAnimationView android:layout_gravity="center" android:id="@id/second_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/bili_app_view_avatar_living" />
+</merge>

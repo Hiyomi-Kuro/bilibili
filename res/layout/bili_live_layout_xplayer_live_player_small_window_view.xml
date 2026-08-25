@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.room.roomplayer.window.view.WindowRootConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.room.roomplayer.window.LivePlayerWindowView android:id="@id/video_view" android:background="@color/black" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.bililive.room.roomplayer.window.view.FloatWindowVoiceView android:id="@id/float_voice_view" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/video_view" app:layout_constraintEnd_toEndOf="@id/video_view" app:layout_constraintStart_toStartOf="@id/video_view" app:layout_constraintTop_toTopOf="@id/video_view" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/video_rect" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/video_view" app:layout_constraintEnd_toEndOf="@id/video_view" app:layout_constraintStart_toStartOf="@id/video_view" app:layout_constraintTop_toTopOf="@id/video_view">
+        <FrameLayout android:background="@drawable/live_shape_gradient_shadow_60" android:layout_width="match_parent" android:layout_height="40.0dp" />
+        <ImageView android:layout_gravity="center" android:id="@id/pause_play_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_float_window_pause_icon" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/double_tap_hint_layout" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tap_hint" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_small_window_double_tap_hint" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="start|top" android:id="@id/close" android:padding="8.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/bili_small_player_close" />
+        <ImageView android:layout_gravity="right|top" android:id="@id/back" android:padding="8.0dp" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/bili_small_player_back" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="left|bottom" android:id="@id/live_tag" android:background="@drawable/shape_room_round_rect_bg_00_corner_4" android:paddingLeft="6.0dp" android:paddingTop="2.0dp" android:paddingRight="6.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="直播" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.bililive.room.roomplayer.window.view.WindowRootConstraintLayout>

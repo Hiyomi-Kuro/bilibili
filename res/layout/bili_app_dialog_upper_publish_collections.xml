@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:orientation="vertical" android:background="@drawable/bg_upper_rounded_bg2_corner_8" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_two" android:id="@id/collection_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/cancel" android:layout_marginStart="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:text="@string/upper_publish_add_to_collection" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_one" android:id="@id/tvSettingComplete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/upper_confirm_2" android:layout_marginEnd="12.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/ll_setting_partition_tag_edit_type" android:background="@drawable/bg_upper_rounded_bg1_corner_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:divider="@drawable/upper_shape_line_bg2" android:showDividers="middle">
+            <include android:id="@id/upper_ll_partition" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_partition" />
+            <include android:id="@id/layout_setting_edit_type" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_type_v5" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/ll_other_setting" android:background="@drawable/bg_upper_rounded_bg1_corner_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/upper_shape_line_bg2" android:showDividers="middle">
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flTimePublish" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_time_publish" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_three" android:id="@id/tvTimePublishHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/upper_time_publish_hint" />
+                </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scTimePublish" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_time_publish_cover1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_time_publish_time" android:layout_width="match_parent" android:layout_height="46.0dp">
+                <TextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_one" android:gravity="center_vertical" android:id="@id/tvTimePublish" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableRight="@drawable/ic_upper_arrow_right_gray" />
+                <View android:id="@id/disable_time_publish_cover2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flPreorder" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:layout_gravity="center_vertical" android:id="@id/tvPreorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_preorder_start" android:drawableRight="@drawable/ic_upper_hd_question_help" android:drawablePadding="2.0dp" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scPreorder" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_preorder_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flLink" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:id="@id/tvLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_link_subscribe" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_three" android:layout_gravity="bottom" android:id="@id/tvLinkHint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scLink" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_link_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flWatermark" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_add_watermark" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scWatermark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_watermark_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flRecreate" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:layout_gravity="start|center" android:id="@id/tvRecreate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_allow_create_again" android:drawableRight="@drawable/ic_upper_hd_question_help" android:drawablePadding="2.0dp" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scRecreate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_recreate_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/flWonderfulComments" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp">
+                <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_con_comment_filter" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_three" android:id="@id/tvWonderfulCommentsHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_comment_filter_tip" />
+                </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/UpperPublishSwitch" android:layout_gravity="end|center" android:id="@id/scWonderfulComments" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/disable_wonderful_comments_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/setting_part_select_container" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="64.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

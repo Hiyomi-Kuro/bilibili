@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.authorspace.ui.widget.ReducedTopLinearLayout android:orientation="vertical" android:id="@id/reservation_card_popup_root" android:layout_width="match_parent" android:layout_height="wrap_content" app:reduced_top="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="12.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/reservation_card_popup_header" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundImage="@color/Wh0" app:roundBottomEnd="false" app:roundBottomLeft="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="8.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center|bottom" android:layout_width="48.0dp" android:layout_height="4.0dp" app:backgroundImage="@color/Ga2" app:roundedCornerRadius="2.0dp" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/reservation_card_popup_list" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:stackFromEnd="true" />
+</com.bilibili.app.authorspace.ui.widget.ReducedTopLinearLayout>

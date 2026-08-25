@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff1d3" android:layout_width="match_parent" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:src="@drawable/im_new_letter_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ye5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:paddingLeft="12.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/br_prompt_no_connect" android:maxLines="1" android:drawableLeft="@drawable/ic_im_net_error" android:drawablePadding="6.0dp" android:layout_toLeftOf="@id/close" />
+    <com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout android:id="@id/start_im" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:foreground="?selectableItemBackground" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ye5" android:background="@drawable/shape_rect_open_im" android:paddingLeft="10.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_awaken" />
+    </com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout>
+</RelativeLayout>

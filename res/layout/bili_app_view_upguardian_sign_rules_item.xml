@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="18.0dp" android:src="@drawable/bili_app_view_upguardian_rules_detail_compound_img" android:scaleType="center" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/daynight_color_text_title" android:gravity="center_vertical" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginBottom="6.0dp" android:layout_toRightOf="@id/icon" />
+</RelativeLayout>

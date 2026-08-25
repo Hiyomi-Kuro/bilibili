@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.RoundFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:radius="4.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mall.ui.widget.MallImageView2 android:id="@id/mall_express_multi_package_goods_img" android:layout_width="70.0dp" android:layout_height="70.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:thumbHeight="70.0dp" app:thumbWidth="70.0dp" />
+            <TextView android:textSize="13.0dp" android:textColor="@color/Wh0" android:gravity="center" android:id="@id/mall_express_multi_package_goods_count_txt" android:background="#80000000" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/mall_express_multi_package_goods_img" app:layout_constraintLeft_toLeftOf="@id/mall_express_multi_package_goods_img" app:layout_constraintRight_toRightOf="@id/mall_express_multi_package_goods_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.mall.ui.widget.RoundFrameLayout>
+</FrameLayout>

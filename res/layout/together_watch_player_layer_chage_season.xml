@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/top_view" android:layout_width="match_parent" android:layout_height="55.0dp" android:baselineAligned="false">
+        <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/change_season" android:background="@drawable/tgwt_roundrect_stroke_white" android:layout_width="40.0dp" android:layout_height="20.0dp" android:text="@string/together_watch_change_season_text" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</FrameLayout>

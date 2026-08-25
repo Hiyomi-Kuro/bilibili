@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/motion_layout" android:layout_width="wrap_content" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_suggest_card_left_head_icon" android:layout_width="32.0dp" android:layout_height="80.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/suggest_view" android:background="@android:color/transparent" android:layout_width="24.0dp" android:layout_height="80.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.bililive.room.biz.shopping.view.LiveDisInterceptRecyclerView android:id="@id/recommend_card_goods_recycler_view" android:background="@drawable/bg_live_shopping_card" android:layout_width="242.0dp" android:layout_height="80.0dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="2.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/suggest_view" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

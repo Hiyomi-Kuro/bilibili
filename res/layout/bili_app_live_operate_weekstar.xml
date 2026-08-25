@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/group_top" android:visibility="visible" android:layout_width="60.0dp" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center_horizontal" android:id="@id/img_top" android:layout_width="60.0dp" android:layout_height="72.0dp" android:scaleType="centerCrop" app:aspectRadioHeight="19" app:aspectRadioWidth="16" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_rank" android:layout_width="60.0dp" android:layout_height="72.0dp">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center_horizontal" android:id="@id/img_center" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="-3.0dp" android:scaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:scaleViewType="fitWidth" app:thumbHeight="40.0dp" app:thumbWidth="40.0dp" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/text_top_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dp" android:maxWidth="60.0dp" android:maxLines="1" />
+        <Space android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/text_top_rank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp" android:maxWidth="60.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_task" android:layout_width="60.0dp" android:layout_height="72.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/ic_task_first" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="4.0dp" android:scaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:thumbHeight="14.0dp" app:thumbWidth="14.0dp" />
+            <TextView android:textSize="9.0sp" android:id="@id/tv_task_first" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/ic_task_second" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="4.0dp" android:scaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:thumbHeight="14.0dp" app:thumbWidth="14.0dp" />
+            <TextView android:textSize="9.0sp" android:id="@id/tv_task_second" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/ic_task_third" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="4.0dp" android:scaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:thumbHeight="14.0dp" app:thumbWidth="14.0dp" />
+            <TextView android:textSize="9.0sp" android:id="@id/tv_task_third" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_gravity="right" android:id="@id/icon_top_close" android:background="@android:color/transparent" android:layout_width="15.0dp" android:layout_height="15.0dp" />
+</FrameLayout>

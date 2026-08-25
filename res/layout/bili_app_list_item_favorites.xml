@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_card_bg_corner_medium" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.internal.ForegroundLinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/item_background">
+        <com.bilibili.app.authorspace.ui.widget.FavBoxContainer android:background="@drawable/shape_roundrect_top4_e7" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/icon" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="right|bottom" android:background="@drawable/shape_roundrect_2_black_alpha50" android:padding="2.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/playset_ic_playlist" />
+        </com.bilibili.app.authorspace.ui.widget.FavBoxContainer>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginTop="5.0dp" android:layout_marginRight="@dimen/item_spacing" android:maxLines="2" />
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:minHeight="10.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginRight="@dimen/item_spacing" />
+    </com.google.android.material.internal.ForegroundLinearLayout>
+</FrameLayout>

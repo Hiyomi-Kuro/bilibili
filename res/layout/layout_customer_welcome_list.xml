@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:background="@drawable/bg_customer_tablayout_right_radius_14" android:paddingRight="14.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" app:tabGravity="start" app:tabMaxWidth="0.0dp" app:tabMinWidth="0.0dp" app:tabMode="scrollable" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" app:tabRippleColor="@android:color/transparent" />
+    <View android:id="@id/tab_mask_view" android:background="@drawable/bg_customer_tab_mask_gradient" android:layout_width="54.0dp" android:layout_height="40.0dp" android:layout_alignParentRight="true" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_layout" />
+</com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverRelativeLayout>

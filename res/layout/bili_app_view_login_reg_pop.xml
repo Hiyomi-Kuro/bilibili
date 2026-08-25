@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/Wh0" android:id="@id/login_tv_check_first" android:background="@drawable/shape_bg_login_reg_pop" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_checked_first" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/login_check_triangle_down" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/shape_reg_pop_triangle" android:scaleType="fitStart" android:layout_below="@id/login_tv_check_first" android:layout_marginStart="13.0dp" app:imageTint="@color/Ga10" />
+</RelativeLayout>

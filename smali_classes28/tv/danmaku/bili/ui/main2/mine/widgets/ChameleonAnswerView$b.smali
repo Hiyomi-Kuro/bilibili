@@ -1,0 +1,201 @@
+.class final Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;
+.super Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$a;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "b"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u000c\u0008\u0082\u0004\u0018\u00002\u00060\u0001R\u00020\u0002B\u0007\u00a2\u0006\u0004\u0008\r\u0010\u000eR\u0014\u0010\u0006\u001a\u00020\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0004\u0010\u0005R\u0014\u0010\u0008\u001a\u00020\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0005R\u0014\u0010\n\u001a\u00020\u00038PX\u0090\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\u0005R\u0014\u0010\u000c\u001a\u00020\u00038PX\u0090\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u0005\u00a8\u0006\u000f"
+    }
+    d2 = {
+        "Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;",
+        "Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$a;",
+        "Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;",
+        "",
+        "c",
+        "()I",
+        "percentTextColor",
+        "a",
+        "contentTextColor",
+        "d",
+        "leftBackgroundColor",
+        "e",
+        "rightBackgroundColor",
+        "<init>",
+        "(Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;)V",
+        "core_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+
+# direct methods
+.method public constructor <init>(Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;->b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1}, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$a;-><init>(Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;->b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget v1, Lod/b;->g0:I
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1}, Lgp1/m;->d(Landroid/content/Context;I)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public c()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;->b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget v1, Lod/b;->g0:I
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1}, Lgp1/m;->d(Landroid/content/Context;I)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public d()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;->b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget v1, Lod/b;->g0:I
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1}, Lgp1/m;->d(Landroid/content/Context;I)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    const/16 v1, 0x33
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, Landroidx/core/graphics/d;->q(II)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    return v0
+.end method
+
+.method public e()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView$b;->b:Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;
+
+    .line 2
+    .line 3
+    sget v1, Ltv/danmaku/bili/e0;->e:I
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1}, Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;->a(Ltv/danmaku/bili/ui/main2/mine/widgets/ChameleonAnswerView;I)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method

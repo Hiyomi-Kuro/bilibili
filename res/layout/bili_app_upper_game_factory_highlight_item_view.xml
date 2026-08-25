@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/material_album_item_view" layout="@layout/bili_app_upper_item_albumv3" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="left" android:id="@id/game_material_tag_text_view" android:background="@drawable/bg_upper_game_factory_highlight_tag_text_view" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:maxWidth="55.0dp" android:text="5杀集锦" android:maxLines="1" />
+    <com.bilibili.upper.feat.gamefactory.views.ArcProgressView android:layout_gravity="bottom" android:id="@id/game_material_arc_progress_view" android:background="@drawable/bg_upper_game_factory_progress_ring_shape" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="8.0dp" android:layout_marginBottom="8.0dp" app:arc_radius="6.0dp" app:progress_color="@color/Brand_pink" />
+</FrameLayout>

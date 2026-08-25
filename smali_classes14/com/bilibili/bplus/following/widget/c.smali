@@ -1,0 +1,635 @@
+.class public final Lcom/bilibili/bplus/following/widget/c;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0002J \u0010\r\u001a\u00020\u000c2\u0006\u0010\u0008\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\nH\u0002J,\u0010\u0012\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0008\u001a\u00020\u00042\u0008\u0010\u000b\u001a\u0004\u0018\u00010\n2\u0006\u0010\u000f\u001a\u00020\u000e2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0010\u00a8\u0006\u0015"
+    }
+    d2 = {
+        "Lcom/bilibili/bplus/following/widget/c;",
+        "",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/view/View;",
+        "bubbleView",
+        "Lcom/bilibili/bplus/followingcard/widget/d;",
+        "a",
+        "anchor",
+        "bubble",
+        "Landroid/widget/FrameLayout;",
+        "container",
+        "Lgf3/s;",
+        "b",
+        "",
+        "content",
+        "Ljava/lang/Runnable;",
+        "afterRemove",
+        "c",
+        "<init>",
+        "()V",
+        "bplusFollowing_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/bilibili/bplus/following/widget/c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bplus/following/widget/c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/bilibili/bplus/following/widget/c;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/bilibili/bplus/following/widget/c;->a:Lcom/bilibili/bplus/following/widget/c;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private final a(Landroid/content/Context;Landroid/view/View;)Lcom/bilibili/bplus/followingcard/widget/d;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bplus/followingcard/widget/d;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, Lcom/bilibili/bplus/followingcard/widget/d;-><init>(Landroid/content/Context;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/16 v1, 0x8
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    invoke-virtual {v0, v1}, Lcom/bilibili/magicasakura/widgets/TintRelativeLayout;->setBackgroundColor(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/high16 p2, 0x40400000    # 3.0f
+
+    .line 19
+    .line 20
+    invoke-static {p1, p2}, Lcom/bilibili/bplus/baseplus/util/d;->a(Landroid/content/Context;F)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p2
+
+    .line 24
+    const/high16 v1, 0x40c00000    # 6.0f
+
+    .line 25
+    .line 26
+    invoke-static {p1, v1}, Lcom/bilibili/bplus/baseplus/util/d;->a(Landroid/content/Context;F)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v1
+
+    .line 30
+    int-to-float v1, v1
+
+    .line 31
+    invoke-virtual {v0, v1}, Lcom/bilibili/bplus/followingcard/widget/d;->setBubbleSharpLength(F)V
+
+    .line 32
+    .line 33
+    .line 34
+    int-to-float v1, p2
+
+    .line 35
+    invoke-virtual {v0, v1}, Lcom/bilibili/bplus/followingcard/widget/d;->setBubblePadding(F)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0, p2}, Lcom/bilibili/bplus/followingcard/widget/d;->setRadius(I)V
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {v0, p2, p2, p2, p2}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 42
+    .line 43
+    .line 44
+    new-instance p2, Landroid/graphics/Paint;
+
+    .line 45
+    .line 46
+    const/4 v1, 0x4
+
+    .line 47
+    invoke-direct {p2, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    sget v2, Lcom/bilibili/lib/theme/R$color;->Pi5:I
+
+    .line 55
+    .line 56
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v1
+
+    .line 60
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 61
+    .line 62
+    .line 63
+    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    .line 64
+    .line 65
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 66
+    .line 67
+    .line 68
+    sget-object v1, Landroid/graphics/Paint$Cap;->BUTT:Landroid/graphics/Paint$Cap;
+
+    .line 69
+    .line 70
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
+
+    .line 71
+    .line 72
+    .line 73
+    const/4 v1, 0x1
+
+    .line 74
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 75
+    .line 76
+    .line 77
+    const/high16 v1, 0x3f000000    # 0.5f
+
+    .line 78
+    .line 79
+    invoke-static {p1, v1}, Lcom/bilibili/bplus/baseplus/util/d;->a(Landroid/content/Context;F)I
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v1
+
+    .line 83
+    int-to-float v1, v1
+
+    .line 84
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 85
+    .line 86
+    .line 87
+    sget-object v1, Landroid/graphics/Paint$Join;->MITER:Landroid/graphics/Paint$Join;
+
+    .line 88
+    .line 89
+    invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
+
+    .line 90
+    .line 91
+    .line 92
+    new-instance v1, Landroid/graphics/Paint;
+
+    .line 93
+    .line 94
+    invoke-direct {v1, p2}, Landroid/graphics/Paint;-><init>(Landroid/graphics/Paint;)V
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object p1
+
+    .line 101
+    sget v2, Lcom/bilibili/lib/theme/R$color;->Pi5:I
+
+    .line 102
+    .line 103
+    invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 104
+    .line 105
+    .line 106
+    move-result p1
+
+    .line 107
+    invoke-virtual {v1, p1}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-virtual {v0, p2, v1}, Lcom/bilibili/bplus/followingcard/widget/d;->d(Landroid/graphics/Paint;Landroid/graphics/Paint;)V
+
+    .line 111
+    .line 112
+    .line 113
+    return-object v0
+.end method
+
+.method private final b(Landroid/view/View;Lcom/bilibili/bplus/followingcard/widget/d;Landroid/widget/FrameLayout;)V
+    .locals 6
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-nez v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, v1, v1}, Landroid/view/View;->measure(II)V
+
+    .line 9
+    .line 10
+    .line 11
+    :cond_0
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    const/high16 v2, -0x80000000
+
+    .line 16
+    .line 17
+    invoke-static {v0, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    invoke-virtual {p2, v0, v1}, Landroid/view/View;->measure(II)V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    const/4 v2, 0x2
+
+    .line 29
+    div-int/2addr v0, v2
+
+    .line 30
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v3
+
+    .line 34
+    div-int/2addr v3, v2
+
+    .line 35
+    sub-int/2addr v0, v3
+
+    .line 36
+    new-array v3, v2, [I
+
+    .line 37
+    .line 38
+    invoke-virtual {p1, v3}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    .line 39
+    .line 40
+    .line 41
+    aget v4, v3, v1
+
+    .line 42
+    .line 43
+    add-int/2addr v0, v4
+
+    .line 44
+    if-gez v0, :cond_1
+
+    .line 45
+    .line 46
+    const/4 v0, 0x0
+
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_1
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v4
+
+    .line 52
+    add-int/2addr v4, v0
+
+    .line 53
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v5
+
+    .line 57
+    if-le v4, v5, :cond_2
+
+    .line 58
+    .line 59
+    invoke-virtual {p3}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v0
+
+    .line 63
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v4
+
+    .line 67
+    sub-int/2addr v0, v4
+
+    .line 68
+    :cond_2
+    :goto_0
+    aget v3, v3, v1
+
+    .line 69
+    .line 70
+    sub-int/2addr v3, v0
+
+    .line 71
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    .line 72
+    .line 73
+    .line 74
+    move-result p1
+
+    .line 75
+    div-int/2addr p1, v2
+
+    .line 76
+    add-int/2addr v3, p1
+
+    .line 77
+    int-to-float p1, v0
+
+    .line 78
+    invoke-virtual {p2, p1}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-virtual {p2, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {p2, v2}, Lcom/bilibili/bplus/followingcard/widget/d;->setBubbleSharpDirection(I)V
+
+    .line 85
+    .line 86
+    .line 87
+    int-to-float p1, v3
+
+    .line 88
+    invoke-virtual {p2, p1}, Lcom/bilibili/bplus/followingcard/widget/d;->setBubbleSharpOffset(F)V
+
+    .line 89
+    .line 90
+    .line 91
+    new-instance p1, Landroid/widget/FrameLayout$LayoutParams;
+
+    .line 92
+    .line 93
+    const/4 v0, -0x2
+
+    .line 94
+    invoke-direct {p1, v0, v0}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-virtual {p3, p2, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 98
+    .line 99
+    .line 100
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c(Landroid/view/View;Landroid/widget/FrameLayout;Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p2, :cond_0
+
+    .line 3
+    .line 4
+    return-object v0
+
+    .line 5
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    sget v3, Lcom/bilibili/bplus/followingcard/l;->f:I
+
+    .line 14
+    .line 15
+    invoke-virtual {v2, v3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v2
+
+    .line 19
+    invoke-interface {p3}, Ljava/lang/CharSequence;->length()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v3
+
+    .line 23
+    if-nez v3, :cond_1
+
+    .line 24
+    .line 25
+    return-object v0
+
+    .line 26
+    :cond_1
+    sget v0, Lcom/bilibili/bplus/followingcard/k;->t4:I
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-direct {p0, v1, v2}, Lcom/bilibili/bplus/following/widget/c;->a(Landroid/content/Context;Landroid/view/View;)Lcom/bilibili/bplus/followingcard/widget/d;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p3
+
+    .line 41
+    invoke-direct {p0, p1, p3, p2}, Lcom/bilibili/bplus/following/widget/c;->b(Landroid/view/View;Lcom/bilibili/bplus/followingcard/widget/d;Landroid/widget/FrameLayout;)V
+
+    .line 42
+    .line 43
+    .line 44
+    new-instance p2, Ljava/lang/ref/WeakReference;
+
+    .line 45
+    .line 46
+    invoke-direct {p2, p3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    new-instance p3, Lcom/bilibili/bplus/following/widget/c$a;
+
+    .line 50
+    .line 51
+    invoke-direct {p3, p2, p4}, Lcom/bilibili/bplus/following/widget/c$a;-><init>(Ljava/lang/ref/WeakReference;Ljava/lang/Runnable;)V
+
+    .line 52
+    .line 53
+    .line 54
+    const-wide/16 v0, 0x1388
+
+    .line 55
+    .line 56
+    invoke-virtual {p1, p3, v0, v1}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 57
+    .line 58
+    .line 59
+    return-object p3
+.end method

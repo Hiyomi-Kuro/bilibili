@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.bh.BiliWebView android:layout_gravity="center_horizontal" android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/error_group" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/error_loading_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:id="@id/error_loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/player_url_loading_web_view" android:layout_below="@id/error_loading_image" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/error_retry_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_general_load_failed_tv" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:id="@id/error_retry_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/player_url_error_web_view" android:layout_below="@id/error_retry_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

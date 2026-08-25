@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/upper_shape_caption_item_selector3" android:padding="1.5dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="7.0dp" android:layout_marginRight="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/caption_type_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" fresco:roundedCornerRadius="6.0dp" />
+    <ImageView android:id="@id/caption_type_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:focusable="true" android:clickable="true" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <ProgressBar android:id="@id/download_caption_progressbar" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/caption_type_none" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认" android:maxLines="1" android:layout_centerInParent="true" />
+</RelativeLayout>

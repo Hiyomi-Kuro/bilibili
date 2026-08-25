@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.PagerSlidingTabStrip android:id="@id/order_list_tabs" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="@dimen/order_list_tab_item_height" app:pstsIndicatorHeight="2.0dp" app:pstsIndicatorMarginBottom="3.0dp" app:pstsIndicatorRadius="1.0dp" app:pstsIndicatorWidth="32.0dp" app:pstsShouldExpand="true" app:pstsTabLayoutPadding="0.0dp" app:pstsTabPaddingLeftRight="0.0dp" style="@style/MallOrderListSlidingTab" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/order_list_tab_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/mall_pinned_bottom_scrolling_behavior" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_root" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/check_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" app:compoundButtonTint="@color/selector_compoundbutton_normal" />
+    <com.bilibili.bilipay.ui.widget.BilipayImageView android:id="@id/iv_pay" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_toRightOf="@id/check_button" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/textLayout" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_toRightOf="@id/iv_pay">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Pay.Title" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:id="@id/tv_payname" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/bili_pay_theme_color_secondary" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_channel_jump_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dcepRecyclerView" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/textLayout" android:layout_alignStart="@id/textLayout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_stages" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/textLayout" />
+</RelativeLayout>

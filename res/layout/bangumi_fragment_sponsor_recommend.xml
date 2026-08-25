@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <com.bilibili.ogv.misc.sponsor.BangumiFilterLayout android:id="@id/filter_layout" android:background="@color/daynight_color_view_background" android:layout_width="match_parent" android:layout_height="40.0dp" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

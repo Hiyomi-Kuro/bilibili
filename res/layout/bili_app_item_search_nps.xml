@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Bg2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:maxLines="1" android:layout_marginStart="12.0dp" android:layout_marginEnd="8.0dp" app:layout_constraintEnd_toStartOf="@id/fl_close" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/fl_close" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="5.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_vector_general_close" android:tint="@color/Graph_weak" app:tint="@color/Graph_weak" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_item_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="14.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

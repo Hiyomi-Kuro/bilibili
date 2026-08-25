@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_poster" android:background="@drawable/bangumi_shape_poster_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/iv_season_cover" android:background="@drawable/bangumi_role_header_edge_radius_2" android:padding="3.0dp" android:layout_width="154.0dp" android:layout_height="216.0dp" android:layout_marginTop="33.0dp" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="2.0dp" style="@style/Widget.App.StaticImageView.Thumb.BangumiRoleHeader" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dp" android:layout_marginTop="23.0dp" android:layout_marginRight="26.0dp" android:layout_below="@id/iv_season_cover">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="233.0dp" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:maxLines="2" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/bangumi_poster_evaluate_color" android:ellipsize="end" android:id="@id/tv_evaluate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:maxLines="4" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/bangumi_poster_category_color" android:ellipsize="end" android:id="@id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:maxWidth="243.0dp" android:singleLine="true" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/bangumi_poster_score_color" android:id="@id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rv_qr_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="20.0dp" android:layout_above="@id/ll_logo" android:layout_marginEnd="20.0dp">
+        <ImageView android:id="@id/iv_qr_code" android:background="@drawable/bangumi_role_header_edge_radius_2" android:padding="1.0dp" android:layout_width="49.0dp" android:layout_height="49.0dp" android:button="@drawable/bangumi_recommend_show_cb_selector" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/bangumi_poster_qr_color" android:gravity="right" android:id="@id/tv_qr_code" android:layout_width="84.0dp" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="@string/bangumi_build_poster_qr_code_info" android:layout_toLeftOf="@id/iv_qr_code" android:layout_alignBottom="@id/iv_qr_code" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/iv_qr_code" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_logo" android:background="@drawable/bangumi_shape_poster_bottom" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="43.0dp" android:layout_height="19.0dp" android:src="@drawable/ogv_ic_share_logo" />
+    </LinearLayout>
+</RelativeLayout>

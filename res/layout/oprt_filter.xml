@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_rv_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bangumi_category_index_filter_wrapper_margin">
+        <com.bilibili.ogv.operation.entrance.indexpage.InterceptRecyclerView android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_fold_select" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_selected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bangumi_category_index_filter_selected_margin" android:layout_marginRight="@dimen/bangumi_category_index_filter_selected_margin" android:maxLines="1" />
+        <FrameLayout android:id="@id/fl_fold" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Text3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_fold" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bangumi_index_fold" />
+        </FrameLayout>
+    </FrameLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

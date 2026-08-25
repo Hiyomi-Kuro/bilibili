@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/player_options_enable_background_music" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.playerbizcommon.widget.function.setting.TimeTickerTextView android:textSize="12.0dp" android:textColor="@color/selector_bplayer_text_color_compound_button" android:gravity="center" android:layout_gravity="center" android:id="@id/image" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:singleLine="true" android:drawablePadding="4.0dp" app:drawableTopHeight="28.0dp" app:drawableTopWidth="28.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="right|top" android:id="@id/switch_image" android:background="@drawable/selector_player_selector_panel_edit_switch" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="4.0dp" />
+</FrameLayout>

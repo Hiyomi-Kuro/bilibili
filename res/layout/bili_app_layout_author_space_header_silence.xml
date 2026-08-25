@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ga1" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_author_space_ban" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:id="@id/silence_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/icon" app:layout_constraintRight_toLeftOf="@id/go_exam" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/go_exam" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_ban_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

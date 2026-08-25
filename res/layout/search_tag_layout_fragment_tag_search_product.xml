@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15.0dp" android:layout_below="@id/app_bar_layout" />
+    <com.bilibili.bplus.tagsearch.view.NoBgAppBarLayout android:orientation="vertical" android:id="@id/app_bar_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_tags" android:background="@drawable/shape_roundrect_trans_radius_4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="16.0dp" app:layout_scrollFlags="scroll|enterAlways">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_shop_tag" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center_vertical" android:id="@id/create_tag_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/tag_search_create_tag_text_too_long" android:maxLines="1" />
+        </LinearLayout>
+    </com.bilibili.bplus.tagsearch.view.NoBgAppBarLayout>
+    <tv.danmaku.bili.widget.PagerSlidingTabStrip android:textAppearance="@style/tab_search_result_list_tabs_text_style" android:id="@id/tabs" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_centerHorizontal="true" app:pstsIndicatorColor="@color/Wh0_u" app:pstsIndicatorHeight="2.0dp" />
+    <View android:id="@id/divider" android:background="@color/br_white_alpha10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_below="@id/tabs" />
+</RelativeLayout>

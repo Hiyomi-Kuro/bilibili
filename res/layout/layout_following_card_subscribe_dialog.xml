@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/Ga0_s" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/not_interested" android:paddingLeft="20.0dp" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/following_subscribe_dialog_close_current_notification" />
+    <View android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/cancel" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/following_elect_cancel" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

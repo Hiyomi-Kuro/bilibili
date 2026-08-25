@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/story_activity_root" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.video.story.view.StoryVideoFrameLayout android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.video.story.view.StoryViewPager android:id="@id/story_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/story_landscape" android:visibility="gone" layout="@layout/story_list_item_landscape" />
+    <include android:id="@id/story_comment" layout="@layout/story_comment" />
+    <include android:id="@id/story_landscape_comment" layout="@layout/story_landscape_comment" />
+    <com.bilibili.video.story.view.combo.LikeComboLayout android:id="@id/likeCombo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

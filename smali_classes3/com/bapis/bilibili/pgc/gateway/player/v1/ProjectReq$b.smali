@@ -1,0 +1,1292 @@
+.class public final Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/pgc/gateway/player/v1/j;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;",
+        "Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;",
+        ">;",
+        "Lcom/bapis/bilibili/pgc/gateway/player/v1/j;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$000()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearAid()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$3000(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearCid()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$400(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearDeviceType()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2600(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearDownload()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1200(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearEpId()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$200(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearFnval()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1000(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearFnver()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$800(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearForceHost()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1400(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearFourk()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1600(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearFromSpmid()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2100(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearProtocol()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2400(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearQn()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$600(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearSku()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$3200(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearSpmid()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1800(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearUseNewProjectCode()Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2800(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getAid()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getAid()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public getCid()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getCid()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public getDeviceType()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getDeviceType()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getDownload()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getDownload()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getEpId()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getEpId()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public getFnval()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getFnval()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getFnver()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getFnver()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getForceHost()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getForceHost()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getFourk()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getFourk()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getFromSpmid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getFromSpmid()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getFromSpmidBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getFromSpmidBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getProtocol()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getProtocol()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getQn()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getQn()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public getSku()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getSku()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getSkuBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getSkuBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getSpmid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getSpmid()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getSpmidBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getSpmidBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getUseNewProjectCode()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->getUseNewProjectCode()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public setAid(J)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1, p2}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2900(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setCid(J)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1, p2}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$300(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setDeviceType(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2500(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setDownload(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1100(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setEpId(J)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1, p2}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$100(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setFnval(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$900(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setFnver(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$700(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setForceHost(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1300(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setFourk(Z)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1500(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setFromSpmid(Ljava/lang/String;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2000(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setFromSpmidBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2200(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setProtocol(I)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2300(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setQn(J)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1, p2}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$500(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setSku(Ljava/lang/String;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$3100(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setSkuBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$3300(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setSpmid(Ljava/lang/String;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1700(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setSpmidBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$1900(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setUseNewProjectCode(Z)Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;->access$2700(Lcom/bapis/bilibili/pgc/gateway/player/v1/ProjectReq;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

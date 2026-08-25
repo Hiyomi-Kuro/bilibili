@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/Text4" android:gravity="center" android:id="@id/title" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/video_detail_content_end" style="@style/T12"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/Lb1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textStyle="bold" android:gravity="left|center" android:id="@id/tri_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/biligame_dip_12" android:layout_marginTop="@dimen/biligame_dip_14" android:text="@string/biligame_game_comment_bulletin" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Biligame.TextView.14SP.BLACK33" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/biligame_dip_12" android:src="@drawable/biligame_quotation_marks_rotate_blue" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/tri_tv_title" />
+    <com.bilibili.biligame.widget.ExpandableTextLayout android:id="@id/tri_expandable_layout_desc" android:paddingBottom="@dimen/biligame_dip_14" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

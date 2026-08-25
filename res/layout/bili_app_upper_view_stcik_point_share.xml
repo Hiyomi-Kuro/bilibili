@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/upper_theme_text_two_one" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/upper_padding_20" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_small" android:textColor="@color/gray_dark" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/iv_image" android:layout_width="184.0dp" android:layout_height="326.0dp" android:layout_marginTop="10.0dp" fresco:actualImageScaleType="fitCenter" fresco:roundedCornerRadius="4.0dp" />
+    <com.bilibili.app.comm.supermenu.core.MenuView android:id="@id/share_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+</merge>

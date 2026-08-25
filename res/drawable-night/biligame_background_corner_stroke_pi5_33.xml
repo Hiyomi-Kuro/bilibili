@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/biligame_white_button" />
+    <stroke android:width="0.33000004px" android:color="@color/Pi5_u" />
+    <corners android:radius="33.0dp" />
+</shape>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/emoticon_setting_section_background" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/enter" android:background="@drawable/emoticon_shape_enter_suit_center_bg" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="12.0dp" android:text="@string/emoticon_enter_suit_center" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:background="@drawable/emoticon_ic_suit_mall_center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="11.0dp" android:layout_marginBottom="11.0dp" />
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/enter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:lines="1" android:layout_marginStart="4.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

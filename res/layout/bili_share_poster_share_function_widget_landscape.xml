@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/poster_base" android:background="@color/Ba0_u_alpha84" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="20.0dp" />
+    <ImageView android:id="@id/poster_share_cancel" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dp" android:visibility="gone" android:layout_width="56.0dp" android:layout_height="56.0dp" android:scaleType="centerInside" android:layout_marginStart="24.0dp" app:srcCompat="@drawable/ic_share_player_close" />
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center_horizontal" android:id="@id/poster_share_img" android:visibility="gone" android:layout_width="@dimen/poster_show_img_width_landscape" android:layout_height="@dimen/poster_show_img_height_landscape" app:actualImageScaleType="fitCenter" app:placeholderImage="@android:color/transparent" app:placeholderImageScaleType="fitCenter" app:roundedCornerRadius="8.0dp" app:scaleViewType="fitWidth" />
+    <include android:id="@id/poster_share_loading" layout="@layout/bili_share_player_poster_loading" />
+    <com.bilibili.app.comm.supermenu.share.pic.ui.PosterShareContainerView android:layout_gravity="bottom" android:id="@id/poster_share_menu" android:layout_width="match_parent" android:layout_height="112.0dp" />
+</FrameLayout>

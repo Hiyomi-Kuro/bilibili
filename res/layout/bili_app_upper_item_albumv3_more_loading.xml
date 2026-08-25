@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.upper.widget.AutoSquareFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/cp_loading_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <TextView android:textColor="#9499a0" android:gravity="center" android:id="@id/tv_loading_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</com.bilibili.upper.widget.AutoSquareFrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="top" android:id="@id/topixTitleView" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/tp_topix_title_height">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/arrowIv" android:padding="3.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginStart="10.0dp" app:imageTint="@color/Ga7" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/tp_ic_arrow_back_left_line_24" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/title_action_group" app:layout_constraintStart_toEndOf="@id/arrowIv" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/titleLogo" android:layout_width="20.0dp" android:layout_height="20.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center" android:id="@id/alphaTitleView" android:paddingLeft="4.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/tp_topix_title_height" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/title_action_group" android:layout_width="wrap_content" android:layout_height="0.0dp" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/titleShare" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="10.0dp" android:tint="@color/Ga7" app:srcCompat="@drawable/tp_ic_share_line_24" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/titleMore" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="10.0dp" android:tint="@color/Ga7" app:srcCompat="@drawable/tp_ic_more_vertical_fill_24" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

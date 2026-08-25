@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.imageviewer.widget.PinchImageView android:id="@id/image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:actualImageScaleType="fitCenter" />
+    <com.bilibili.app.comm.list.widget.DelayShowRelativeLayout android:layout_gravity="center" android:id="@id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:delay="0.3">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/loading_animatioin_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerHorizontal="true" app:lottie_cacheStrategy="weak" app:lottie_colorFilter="@color/theme_color_secondary" app:lottie_fileName="live_loading.json" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/list_image_viewer_loading" android:layout_below="@id/loading_animatioin_view" />
+    </com.bilibili.app.comm.list.widget.DelayShowRelativeLayout>
+    <FrameLayout android:id="@id/retry" android:background="@color/black_alpha50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_light_browser_retry" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/list_image_viewer_reload" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/view_drag_anim" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/view_origin" android:background="@drawable/shape_roundrect_over_origin_corner5" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="16.0dp" android:text="@string/list_image_viewer_view_origin" android:includeFontPadding="false" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/upper_material_main_divider" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/music_type_rv" android:paddingLeft="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_below="@id/divider" />
+    <com.bilibili.upper.widget.NoScrollViewPager android:id="@id/music_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="11.0dp" android:layout_below="@id/music_type_rv" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/material_status_page" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

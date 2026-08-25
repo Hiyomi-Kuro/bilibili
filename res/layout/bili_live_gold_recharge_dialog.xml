@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:paddingTop="45.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bili_live_round_background_recharge" android:paddingBottom="15.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="312.0dp" android:layout_height="wrap_content">
+            <com.bilibili.bililive.biz.uicommon.widget.LiveResBiliImageView android:layout_gravity="center_horizontal" android:layout_width="162.0dp" android:layout_height="147.0dp" android:layout_marginTop="-45.0dp" app:image_url_suffix="live_ic_wallet_enough.webp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_major" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="8.0dp" android:maxLines="1" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_minor_light" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="18.0dp" />
+            <FrameLayout android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/theme_color_text_assist_dark" android:layout_gravity="left" android:id="@id/btn_cancel" android:background="@drawable/selector_negative_button_bg_white" android:layout_width="132.0dp" android:layout_height="44.0dp" android:text="@string/cancel" style="@style/Widget.App.Dialog.Button" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/selector_text_color_white_disabled_gray" android:layout_gravity="right" android:id="@id/btn_confirm_right" android:background="@drawable/selector_positive_button_bg_themecolor" android:layout_width="132.0dp" android:layout_height="44.0dp" style="@style/Widget.App.Dialog.Button" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/check_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="3.0dp">
+                <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:button="@drawable/selector_checkbox" app:compoundButtonTint="@color/selector_live_room_compoundbutton_normal" style="@style/Live.Widget.App.CheckBox.Native" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_text_assist_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_gold_recharge_check_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

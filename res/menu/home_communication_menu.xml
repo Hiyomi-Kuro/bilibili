@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_im_akeyread" android:id="@id/akeyread" android:title="@string/im_akeyunread" app:showAsAction="always" />
+    <item android:id="@id/menu_add" android:title="@string/im_more" app:actionLayout="@layout/lay_menu_more" app:showAsAction="always" />
+</menu>

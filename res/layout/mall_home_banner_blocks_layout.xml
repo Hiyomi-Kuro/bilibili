@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:orientation="horizontal" android:background="@color/mall_transparent" android:paddingBottom="3.5dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/id_vs_mall_home_banner_v3_container" android:layout="@layout/mall_home_banner_v3" android:inflatedId="@id/mall_home_banner_v3_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.5dp" android:layout_weight="1.0" app:layout_scrollFlags="scroll" />
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="3.5dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0" app:layout_scrollFlags="scroll">
+            <ViewStub android:id="@id/id_vs_blind_block_layout" android:layout="@layout/mall_home_blocks_layout_v3" android:inflatedId="@id/mall_home_blocks_layout_v3_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+            <ViewStub android:id="@id/mall_home_blind_drainage_block_stub" android:layout="@layout/mall_home_blind_drainage_block_layout" android:inflatedId="@id/mall_home_blind_drainage_block_stub_id" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        </FrameLayout>
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

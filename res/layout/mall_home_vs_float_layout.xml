@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left|bottom" android:orientation="vertical" android:id="@id/mall_home_floating_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:layout_gravity="left|bottom" android:id="@id/mall_home_floating_entry_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="56.0dp" android:layout_height="82.0dp" android:layout_marginBottom="7.0dp" app:actualImageScaleType="fitCenter" />
+    <ImageButton android:layout_gravity="left|bottom" android:id="@id/mall_home_floating_entry_close" android:background="@drawable/mall_home_float_close" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="20.0dp" android:layout_marginBottom="75.0dp" />
+</LinearLayout>

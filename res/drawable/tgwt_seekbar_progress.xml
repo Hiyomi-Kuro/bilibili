@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Graph_bg_thick" />
+            <corners android:radius="1.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <selector>
+                <item android:state_enabled="false" android:drawable="@color/Pi5_u" />
+                <item>
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/Pi5_u" />
+                        <corners android:radius="1.0dp" />
+                    </shape>
+                </item>
+            </selector>
+        </scale>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/image_layout" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@null" app:titleTintColor="@color/Ga10" style="?toolbarStyle" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="0.0dp" android:indeterminate="true" android:layout_weight="1.0" style="?android:progressBarStyleLarge" />
+    <com.bilibili.app.imagepicker.image2.ImageGallery android:id="@id/pager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/item_choose_layout" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize">
+        <Button android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Wh0_u" android:layout_gravity="right|center" android:id="@id/image_items_ok" android:background="@drawable/selector_button_solid_pink_disable_gray" android:paddingLeft="@dimen/item_half_spacing" android:paddingRight="@dimen/item_half_spacing" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginRight="@dimen/item_spacing" android:minWidth="60.0dp" android:text="@string/br_ensure" />
+    </FrameLayout>
+</LinearLayout>

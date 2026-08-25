@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/rv_history" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/history_edit_view" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.biligame.history.widget.GameHistoryEditView android:id="@id/history_edit_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/rv_history" />
+    <LinearLayout android:id="@id/layout_ceiling_header" android:background="@color/Wh0" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/tv_time_title_header" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/tv_manager_header" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/biligame_history_manage" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

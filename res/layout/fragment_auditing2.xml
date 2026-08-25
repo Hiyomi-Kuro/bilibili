@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/auth_modify_height" android:layout_height="@dimen/auth_modify_height">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_bg" android:layout_width="@dimen/modify_img_height" android:layout_height="@dimen/modify_img_height" android:layout_marginTop="10.0dp" android:src="@drawable/auth_img_authing" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/success_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passed_card_marge_top" android:text="@string/auth_review_tip" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:layout_gravity="center|bottom" android:id="@id/tv_modify_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/modify_padding_bootom" android:text="@string/auth_modify_agreement" />
+</FrameLayout>

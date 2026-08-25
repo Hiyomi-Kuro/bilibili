@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape>
+            <corners android:radius="15.0dp" />
+            <solid android:color="@color/Graph_bg_thick" />
+        </shape>
+    </item>
+    <item android:state_activated="false">
+        <shape>
+            <corners android:radius="15.0dp" />
+            <stroke android:width="0.5dp" android:color="@color/Brand_pink" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/bili_app_layout_item_comment_preview_reply_more_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/white" android:id="@id/comment_reply_count" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_arrow_more_reply" android:layout_centerVertical="true" android:layout_toEndOf="@id/comment_reply_count" bind:imageTint="@color/white" />
+</RelativeLayout>

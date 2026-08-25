@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/v_root" android:layout_width="90.0dp" android:layout_height="42.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_combo_anim" android:layout_width="90.0dp" android:layout_height="42.0dp" app:autoPlay="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:loopCount="-1" app:releaseAfterStop="false" />
+    <com.bilibili.bililive.biz.view.LiveStrokeTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_combo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_speedy_send_gift" app:layout_constraintBottom_toBottomOf="@id/svga_combo_anim" app:layout_constraintEnd_toEndOf="@id/svga_combo_anim" app:layout_constraintStart_toStartOf="@id/svga_combo_anim" app:layout_constraintTop_toTopOf="@id/svga_combo_anim" app:stroke_color="#ff34a7" app:stroke_width="1.5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

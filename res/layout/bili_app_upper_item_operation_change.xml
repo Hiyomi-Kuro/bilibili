@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llChange" android:background="@drawable/upper_shape_album_operation_change" android:layout_width="56.0dp" android:layout_height="61.0dp" android:layout_marginTop="4.0dp" android:layout_marginStart="3.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upper_album_operation_refresh" />
+    <TextView android:textSize="11.0sp" android:textColor="#e7e9eb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/upper_center_inspiration_card_refresh" />
+</LinearLayout>

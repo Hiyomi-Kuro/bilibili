@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/snapshot_combination_subtitle_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4.0dp" android:paddingEnd="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_snapshot_preview_subtitle" android:background="#f0000000" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/iv_snapshot_preview_selecte_subtitle" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginBottom="12.0dp" android:src="@drawable/bili_player_ic_snapshot_combination_item_selected" android:layout_marginEnd="12.0dp" />
+</FrameLayout>

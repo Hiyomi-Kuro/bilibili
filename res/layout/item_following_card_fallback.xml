@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_card_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" layout="@layout/view_following_card_header" />
+    <com.bilibili.bplus.followingcard.widget.EllipsizingTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/card_text" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:max_lines="4" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:background="@drawable/bg_inner_card_selector" android:layout_width="match_parent" android:layout_height="37.0dp">
+        <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/ic_warning" android:tint="@color/Ga5_u" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga5_u" android:gravity="center_vertical" android:id="@id/no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_not_support" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

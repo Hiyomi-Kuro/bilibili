@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.RoundRectFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="8.0dp" app:roundType="round_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.ad.adview.web.layout.AdWebLayout android:layout_gravity="bottom" android:id="@id/ad_component_web_content" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="540.0dp" />
+</tv.danmaku.bili.widget.RoundRectFrameLayout>

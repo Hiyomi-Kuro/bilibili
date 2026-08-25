@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mLocationImageView" android:background="@drawable/mall_shape_grey_radius_6" android:layout_width="63.0dp" android:layout_height="112.0dp" android:layout_marginEnd="16.0dp" app:aspectRadioHeight="16" app:aspectRadioWidth="9" app:roundedCornerRadius="6.0dp" />
+    <ImageView android:id="@id/mLocationSelectFrame" android:background="@drawable/mall_magic_sticker_location_item_unchecked" android:layout_width="63.0dp" android:layout_height="112.0dp" android:layout_marginEnd="16.0dp" />
+</FrameLayout>

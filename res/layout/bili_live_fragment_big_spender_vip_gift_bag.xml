@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_content" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="375:440" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="375.0dp" />
+    <View android:id="@id/v_confirm" android:layout_width="210.0dp" android:layout_height="40.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_content" app:layout_constraintEnd_toEndOf="@id/iv_content" app:layout_constraintStart_toStartOf="@id/iv_content" app:layout_constraintTop_toTopOf="@id/iv_content" app:layout_constraintVertical_bias="0.7469" />
+    <View android:id="@id/v_close" android:layout_width="52.0dp" android:layout_height="52.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_content" app:layout_constraintEnd_toEndOf="@id/iv_content" app:layout_constraintStart_toStartOf="@id/iv_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

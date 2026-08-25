@@ -1,0 +1,514 @@
+.class public final Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/app/viewunite/v1/m1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;",
+        "Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;",
+        ">;",
+        "Lcom/bapis/bilibili/app/viewunite/v1/m1;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$000()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearArcLandscapeStory()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$700(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearArcPlayStory()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$200(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearLandscapeIcon()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$900(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearPlayStory()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$1200(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearStoryIcon()Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$400(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getArcLandscapeStory()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getArcLandscapeStory()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getArcPlayStory()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getArcPlayStory()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getLandscapeIcon()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getLandscapeIcon()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getLandscapeIconBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getLandscapeIconBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getPlayStory()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getPlayStory()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getStoryIcon()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getStoryIcon()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getStoryIconBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->getStoryIconBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public setArcLandscapeStory(Z)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$600(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setArcPlayStory(Z)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$100(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setLandscapeIcon(Ljava/lang/String;)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$800(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setLandscapeIconBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$1000(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setPlayStory(Z)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$1100(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setStoryIcon(Ljava/lang/String;)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$300(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setStoryIconBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;->access$500(Lcom/bapis/bilibili/app/viewunite/v1/StoryEntrance;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:variablePadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:drawable="@drawable/ic_b_coin_shadow" android:left="-10.0dp" android:top="-10.0dp" android:right="-10.0dp" android:bottom="-10.0dp" />
+            <item android:drawable="@drawable/ic_b_coin4" />
+        </layer-list>
+    </item>
+    <item android:drawable="@drawable/ic_b_coin4" />
+</selector>

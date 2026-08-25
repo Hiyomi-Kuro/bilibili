@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.playerbizcommon.view.FixedDrawableTextView android:id="@id/like_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/biliplayer_selector_topbar_like_bold" app:drawableTopHeight="24.0dp" app:drawableTopWidth="24.0dp" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/like_count_start_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.7" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/like_count_bottom_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.3" />
+    <com.bilibili.playerbizcommonv2.view.FromTextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:ellipsize="none" android:gravity="start|center" android:id="@id/like_count" android:layout_width="44.0dp" android:layout_height="wrap_content" android:singleLine="true" app:from="controller_landscape" app:layout_constraintBottom_toTopOf="@id/like_count_bottom_guideline" app:layout_constraintStart_toStartOf="@id/like_count_start_guideline" />
+</merge>

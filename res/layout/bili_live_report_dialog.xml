@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_report_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/live_sdk_black_light_3" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_report_super_chat" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:minHeight="100.0dp" android:layout_weight="1.0">
+        <com.bilibili.bililive.biz.uicommon.superchat.widgets.SuperChatReportLayout android:id="@id/report_layout" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48.0dp" />
+    </ScrollView>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/buttonPanel" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+        <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0sp" android:textColor="@color/live_player_feedback_cancel" android:id="@id/tv_cancel" android:background="@drawable/live_shape_roundrect_live_player_feedback_cancel_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_half_spacing" android:minHeight="44.0dp" android:text="@string/widget_live_cancel" android:layout_weight="1.0" style="?buttonBarNegativeButtonStyle" />
+        <com.bilibili.magicasakura.widgets.TintButton android:enabled="false" android:textSize="16.0sp" android:textColor="@color/live_player_feedback_submit_text_color" android:id="@id/tv_ok" android:background="@drawable/live_shape_round_rect_feedback_positive_pink_corner_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/widget_live_ensure" android:layout_weight="1.0" android:alpha="1.0" style="?buttonBarPositiveButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

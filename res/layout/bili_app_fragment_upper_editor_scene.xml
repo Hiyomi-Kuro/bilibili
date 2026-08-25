@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="110.0dp">
+        <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverCommonView android:id="@id/track_video_cover" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_centerVertical="true" />
+        <include android:layout_width="48.0dp" android:layout_height="54.0dp" android:layout_centerVertical="true" layout="@layout/bili_app_item_editor_play_switch" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="54.0dp" android:layout_marginRight="54.0dp">
+        <TextView android:textSize="@dimen/upper_text_10" android:textColor="@color/selector_scene" android:gravity="center_horizontal" android:id="@id/tv_scene_none" android:background="?selectableItemBackground" android:layout_width="60.0dp" android:layout_height="wrap_content" android:text="@string/bili_editor_nothing" android:drawableTop="@drawable/editor_selector_scene_null" android:drawablePadding="5.0dp" />
+        <androidx.legacy.widget.Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/upper_text_10" android:textColor="@color/selector_scene" android:gravity="center_horizontal" android:id="@id/tv_scene_push_in" android:background="?selectableItemBackground" android:layout_width="60.0dp" android:layout_height="wrap_content" android:text="@string/video_editor_push_in" android:drawableTop="@drawable/editor_selector_scene_pull_in" android:drawablePadding="5.0dp" />
+        <androidx.legacy.widget.Space android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/upper_text_10" android:textColor="@color/selector_scene" android:gravity="center_horizontal" android:id="@id/tv_scene_pull_out" android:background="?selectableItemBackground" android:layout_width="60.0dp" android:layout_height="wrap_content" android:text="@string/video_editor_pull_out" android:drawableTop="@drawable/editor_selector_scene_pull_out" android:drawablePadding="5.0dp" />
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

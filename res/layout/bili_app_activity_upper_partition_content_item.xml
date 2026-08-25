@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:paddingLeft="@dimen/upper_padding_20" android:paddingTop="@dimen/upper_padding_10" android:paddingRight="5.0dp" android:paddingBottom="@dimen/upper_padding_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img_icon">
+        <TextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_theme_text_two_one" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/upper_gray_dark" android:id="@id/tv_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    </LinearLayout>
+    <View android:background="@color/upper_tag_center_tab_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_below="@id/ll_content" />
+    <ImageView android:id="@id/img_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/ic_tick_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="37.0dp" android:layout_width="match_parent" android:layout_height="110.0dp">
+        <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverCommonView android:id="@id/track_video_cover" android:layout_width="match_parent" android:layout_height="54.0dp" />
+        <include android:layout_width="48.0dp" android:layout_height="54.0dp" layout="@layout/bili_app_item_editor_play_switch" />
+    </RelativeLayout>
+    <com.bilibili.studio.videoeditor.help.widget.SpeedGrillView android:id="@id/speedView" android:layout_width="match_parent" android:layout_height="40.0dp" />
+    <include android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

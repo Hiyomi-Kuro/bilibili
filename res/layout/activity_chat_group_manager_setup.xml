@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/theme_color_primary_tr_title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/theme_color_primary_tr_icon" android:gravity="right|center" android:id="@id/edit" android:background="@drawable/selectable_item_fg" android:paddingLeft="10.0dp" android:paddingRight="14.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/size_40" android:text="@string/title_group_manager_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/group_recyclerview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/blue_alpha8A" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:text="@string/br_prompt_nothing" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" android:layout_above="@id/text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

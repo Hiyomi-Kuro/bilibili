@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:layout_height="50.0dp" android:elevation="0.0dp" style="@style/BiligameToolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/biligame_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dp" android:singleLine="true" style="@style/Biligame.TextView.16SP.BLACK33" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:id="@id/biligame_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dp" android:lines="1" />
+    </LinearLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:layout_gravity="right" android:id="@id/biligame_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" />
+</androidx.appcompat.widget.Toolbar>

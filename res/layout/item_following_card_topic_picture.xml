@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_root_main" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followingcard.widget.AllDayImageView android:id="@id/iv_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:actualImageScaleType="fitXY" app:placeholderImageScaleType="centerCrop" app:roundBottomLeft="true" app:roundBottomRight="true" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="@dimen/cover_round_radius_big" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ll_desc" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Wh0_u" android:id="@id/tv_desc_is_gif" android:background="@drawable/shape_roundrect_topic_picture_tag" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/following_dongtu" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Wh0_u" android:id="@id/tv_desc_pic_count" android:background="@drawable/shape_roundrect_topic_picture_tag" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

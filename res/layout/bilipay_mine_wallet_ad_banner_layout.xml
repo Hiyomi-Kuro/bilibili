@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bilipay_mine_wallet_ad_banner_container" android:paddingBottom="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/daynight_color_text_body_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="联名卡福利" android:layout_marginStart="5.0dp" />
+        <LinearLayout android:gravity="center" android:id="@id/bilipay_mine_wallet_ad_banner_more" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12.0dp" android:textColor="#9499a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="查看更多" />
+            <ImageView android:background="@drawable/bilipay_mine_wallet_bill_go_icon" android:layout_width="12.0dp" android:layout_height="12.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/bilipay_mine_wallet_ad_banner_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+</LinearLayout>

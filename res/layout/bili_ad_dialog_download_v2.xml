@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/free_dialog_bg" android:layout_width="280.0dp" android:layout_height="160.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="40.0dp" android:layout_marginRight="20.0dp" android:text="@string/ad_being_download" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/tv_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="20.0dp" android:text="@string/ad_mobile_download" android:layout_below="@id/tv_message" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true">
+        <Space android:layout_width="16.0dp" android:layout_height="wrap_content" />
+        <Button android:textSize="16.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/no" android:background="@drawable/shape_round_black_trans_6dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/ad_cancel" android:singleLine="true" android:layout_weight="1.0" />
+        <Space android:layout_width="16.0dp" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/yes" android:background="@drawable/selector_ad_button_v2" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/ad_sure" android:singleLine="true" android:layout_weight="1.0" />
+        <Space android:layout_width="16.0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

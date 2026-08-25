@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="126.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/expand_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:aspectRadioHeight="25" app:aspectRadioWidth="72" app:scaleViewType="fitHeight" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/collapse_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="bottom" android:background="@drawable/shape_text_shadow_bottom_to_top_40" android:layout_width="match_parent" android:layout_height="40.0dp" />
+    <LinearLayout android:layout_gravity="start|bottom" android:orientation="horizontal" android:id="@id/collapse_layout" android:paddingLeft="54.0dp" android:paddingRight="18.0dp" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.pegasus.category.daily.DateNumberView android:id="@id/collapse_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_headline" android:textColor="@color/white_alpha60" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/collapse_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="start|bottom" android:orientation="horizontal" android:id="@id/expand_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/calendar_layout" android:background="@drawable/ic_category_calendar_bg" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_marginLeft="18.0dp" android:layout_marginBottom="7.0dp">
+            <TextView android:textSize="8.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center|top" android:id="@id/header_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:includeFontPadding="false" />
+            <com.bilibili.pegasus.category.daily.DateNumberView android:gravity="center" android:layout_gravity="center" android:id="@id/header_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="top" android:background="@drawable/ic_category_calendar_shadow" android:layout_width="match_parent" android:layout_height="27.0dp" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp">
+            <TextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:maxLines="1" />
+            <TextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/white_alpha60" android:ellipsize="end" android:id="@id/header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

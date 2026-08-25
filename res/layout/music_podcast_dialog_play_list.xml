@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/music_podcast_dialog_back" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:gravity="center_vertical" android:id="@id/desc_title" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="54.0dp" android:text="@string/music_podcast_dialog_play_list_title" android:paddingStart="12.0dp" />
+    <com.bilibili.music.podcast.view.MusicDragLoadView android:id="@id/drag_load_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.music.podcast.view.MusicDragLoadViewHeader android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.bilibili.music.podcast.view.MusicDragLoadView>
+    <TextView android:textSize="16.0sp" android:textColor="@color/Text1" android:gravity="center" android:id="@id/close" android:background="@drawable/music_podcast_shape_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46.0dp" android:text="@string/music_podcast_dialog_cancel" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/media_picker_bottom_container" android:tag="layout/bili_upper_album_picker_fragment_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/media_picker_chosen_container" android:tag="binding_1" android:background="@drawable/bg_upper_material_bottom_shape" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="@dimen/upper_video_picker_bottom_panel_height_new">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/media_picker_chosen_publish_publish" android:background="@drawable/upper_album_publish_btn_shape" android:layout_width="62.0dp" android:layout_height="64.0dp" android:layout_marginTop="1.0dp" android:layout_marginStart="66.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="11.0dp" android:layout_marginRight="12.0dp" app:srcCompat="@drawable/ic_upper_arrow_upload_line_album" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/Brand_pink" android:gravity="center" android:layout_width="26.0dp" android:layout_height="14.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="11.0dp" android:text="@string/upper_publish" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_picker_chosen_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" />
+        <View android:id="@id/media_picker_chosen_publish_click_area" android:layout_width="48.0dp" android:layout_height="64.0dp" android:layout_marginStart="80.0dp" />
+        <include android:id="@id/media_picker_panel" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="80.0dp" layout="@layout/bili_upper_album_current_fragment_panel" />
+    </RelativeLayout>
+</LinearLayout>

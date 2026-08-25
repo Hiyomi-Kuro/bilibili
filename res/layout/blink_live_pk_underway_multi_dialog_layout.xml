@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_blink_pking_panel" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title" android:layout_width="match_parent" android:layout_height="50.0dp" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/title_ic" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="1.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/pk_multi_pk_ing" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/multi_recyclerview" android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="20.0dp" app:layout_constraintTop_toBottomOf="@id/title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/quit" android:background="@drawable/bg_blink_pk_ing_quit_round" android:layout_width="120.0dp" android:layout_height="30.0dp" android:layout_marginTop="20.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/multi_recyclerview">
+        <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_live_pk_quit" android:layout_marginEnd="4.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff6699" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pk_multi_video_quit_pk_tips" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

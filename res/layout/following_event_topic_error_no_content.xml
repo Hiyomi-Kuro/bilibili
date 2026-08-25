@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_following_wrapper" android:paddingBottom="52.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" android:scaleX="@dimen/place_holder_scale" android:scaleY="@dimen/place_holder_scale" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/daynight_event_topic_text_supplementary_dark" android:id="@id/event_no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/tip_no_following" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

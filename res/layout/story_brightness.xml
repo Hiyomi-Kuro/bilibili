@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:background="@drawable/story_shape_roundrect_triple_speed_bg" android:layout_width="160.0dp" android:layout_height="38.0dp" android:paddingStart="10.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:layout_width="24.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/seekbar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/seekbar" android:layout_width="120.0dp" android:layout_height="2.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/image" app:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyleHorizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

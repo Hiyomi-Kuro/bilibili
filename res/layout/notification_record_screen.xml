@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="68.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="13.0dp" android:src="@drawable/ic_notification_top" android:layout_marginStart="23.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/notification_record_screen_title" android:layout_marginStart="45.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:text="@string/notification_record_screen_message" android:layout_below="@id/icon" android:layout_marginStart="23.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:layout_gravity="end|center" android:id="@id/stop_record" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_record_screen_stop" android:layout_centerVertical="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginEnd="24.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

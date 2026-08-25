@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/bg_upper_rounded_bg1_corner_8" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.uppercenter.view.BiliUpperTabLayout android:id="@id/tl_hua_huo_coop" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:layout_marginStart="6.0dp" app:selectedTextAppearance1="@style/UpperBusinessPromotionSelectedTab" app:tabIndicatorColor1="@color/Brand_pink" app:tabIndicatorHeight1="2.0dp" app:tabIndicatorRadius1="4.0dp" app:tabIndicatorWidth1="20.0dp" app:tabWidth1="102.0dp" app:unselectedTextAppearance1="@style/UpperBusinessPromotionUnselectedTab" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp_business_hua_huo" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

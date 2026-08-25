@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dialog_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/dialog_image" android:layout_width="301.0dp" android:layout_height="386.0dp" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close" android:background="@drawable/ic_op_biz_dialog_close" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="24.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/dialog_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/id_mall_half_screen_container_stub_transform_no_event" android:visibility="gone" android:layout="@layout/mall_half_screen_root_no_transform_layout" android:inflatedId="@id/id_mall_half_screen_container_stub_transform_no_event_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/id_mall_half_screen_container_stub_transform_event" android:visibility="gone" android:layout="@layout/mall_half_screen_root_transform_event_layout" android:inflatedId="@id/id_mall_half_screen_container_stub_transform_event_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

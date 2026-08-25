@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="40.0dp" android:maxLines="1" />
+    <View android:layout_gravity="bottom" android:id="@id/under_line" android:background="@drawable/bili_app_list_brand_splash_tab_underline" android:layout_width="wrap_content" android:layout_height="3.0dp" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <com.bilibili.bplus.im.conversation.widget.ColumnImageContainer android:id="@id/image_container" android:layout_width="match_parent" android:layout_height="96.0dp" android:layout_below="@id/title" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:maxLines="2" android:layout_below="@id/image_container" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/Ga11" android:id="@id/tag" android:background="@drawable/shape_im_bg_notify_card_tag" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/im_share_tag_article" android:layout_alignTop="@id/image_container" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

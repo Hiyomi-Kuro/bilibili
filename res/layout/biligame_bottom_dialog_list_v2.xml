@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/biligame_background_corner_ga12_lt_rt10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/tri_v_top" android:background="@drawable/biligame_shape_fill_ga3_8" android:layout_width="30.0dp" android:layout_height="3.0dp" android:layout_marginTop="8.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="15.0dp" />
+</LinearLayout>

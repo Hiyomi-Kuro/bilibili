@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ll_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.widget.LiveAvatarView android:id="@id/face" android:background="@drawable/bili_live_attention_avatar_no_ring" android:layout_width="19.0dp" android:layout_height="19.0dp" fresco:avatarSize="16.0dp" fresco:markFrameOfReference="parent" fresco:officialIconSupportDayNight="true" />
+</LinearLayout>

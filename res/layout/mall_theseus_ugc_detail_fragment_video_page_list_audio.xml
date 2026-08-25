@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingTop="7.0dp" android:paddingRight="12.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/image" android:layout_width="40.0dp" android:layout_height="40.0dp" app:roundedCornerRadius="2.0dp" app:thumbHeight="40.0dp" app:thumbWidth="40.0dp" />
+            <View android:background="@drawable/shape_roundrect_black_trans" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_detail_audio" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/desc_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginRight="@dimen/item_spacing" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+                <TextView android:textAppearance="@style/TextAppearance.App.Body" android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_headset_gray" android:drawablePadding="3.0dp" />
+                <TextView android:textAppearance="@style/TextAppearance.App.Body" android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:drawableLeft="@drawable/ic_comment_gray_fill" android:drawablePadding="3.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/theme_color_secondary" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_video_detail_audio_section_tip" android:maxLines="1" app:drawableRightTint="@color/theme_color_secondary" />
+    </LinearLayout>
+</LinearLayout>

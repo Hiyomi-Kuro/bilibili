@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/home_category_constraint" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/home_category_recycler" android:layout_width="0.0dp" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_scrollFlags="scroll" />
+    <com.mall.ui.widget.MallHorizontalScrollView android:id="@id/home_category_scroll" android:visibility="gone" android:scrollbars="none" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_scrollFlags="scroll">
+        <LinearLayout android:orientation="horizontal" android:id="@id/scroll_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.mall.ui.widget.MallHorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_wiki" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/biligame_wiki_full" android:scaleType="fitCenter" app:tint="#7bceef" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Lb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_wiki" android:includeFontPadding="false" />
+    <com.bilibili.biligame.iconfont.IconFontTextView android:textSize="12.0sp" android:textColor="#00a4de" android:layout_width="14.0dp" android:layout_height="14.0dp" android:scaleType="fitCenter" android:text="@string/ic_gc_arrow_right_light" />
+</LinearLayout>

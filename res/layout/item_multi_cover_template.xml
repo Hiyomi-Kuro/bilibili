@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_cover_template" android:layout_width="match_parent" android:layout_height="67.0dp" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp" app:cardBackgroundColor="@color/tranparent" app:cardCornerRadius="4.0dp" app:cardElevation="0.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/template_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/ic_placeholder" />
+    </androidx.cardview.widget.CardView>
+    <View android:id="@id/select_image" android:background="@drawable/bg_cover_template2" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/template_download_loading" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_imageAssetsFolder="loading/" app:lottie_loop="true" app:lottie_repeatMode="restart" />
+    <ImageView android:id="@id/template_download_statue" android:focusable="true" android:clickable="true" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_caption_download" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

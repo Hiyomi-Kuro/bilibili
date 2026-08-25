@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/check_button" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.mall.ui.widget.MallImageView2 android:id="@id/iv_pay" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="14.0dp" android:src="@drawable/bilipay_icon_ali" />
+        <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="14.0dp" android:textColor="@color/Ga10" android:id="@id/tv_payname" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_channel_jump_info" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_channel_jump_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bilipay_ic_arrow_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="right" android:id="@id/tv_channel_jump_title" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/iv_channel_jump_arrow" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_stages" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

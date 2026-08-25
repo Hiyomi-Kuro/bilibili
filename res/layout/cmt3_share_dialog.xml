@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/buffering_group" android:background="@drawable/bili_share_poster_loading_bg" android:layout_width="88.0dp" android:layout_height="88.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/buffering_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/buffering_tips" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/cmt3_share_dialog_text" android:singleLine="true" android:shadowColor="#4a4a4a" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:marqueeRepeatLimit="0" />
+    </LinearLayout>
+    <ScrollView android:id="@id/fake_view_contanier" android:layout_width="0.0dp" android:layout_height="1.0dp" android:alpha="0.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/buffering_group" />
+</androidx.constraintlayout.widget.ConstraintLayout>

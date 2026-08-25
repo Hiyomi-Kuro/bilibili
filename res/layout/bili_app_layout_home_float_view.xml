@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/float_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="center|bottom" android:background="@drawable/ic_home_float_bg" android:layout_width="331.0dp" android:layout_height="122.0dp">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="top" android:id="@id/float_rv" android:layout_width="match_parent" android:layout_height="72.0dp" android:layout_marginTop="19.0dp" android:overScrollMode="never" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    </FrameLayout>
+</FrameLayout>

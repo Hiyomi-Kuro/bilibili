@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/shape_roundrect_player_black" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="32.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="6.0dp" android:scaleType="center" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

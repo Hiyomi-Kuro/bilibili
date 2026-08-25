@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black_alpha80" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:text="@string/ugc_end_prompt" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/repost" android:background="@drawable/end_page_share_button_roundrect_shape" android:visibility="visible" android:layout_width="70.0dp" android:layout_height="match_parent" android:text="@string/ugc_share" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/replay" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="18.0dp" android:layout_height="18.0dp" app:srcCompat="@drawable/ic_endpage_replay" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/gray_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/ugc_replay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

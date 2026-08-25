@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44.0dp" app:contentInsetStart="0.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/top_close" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/music_podcast_close" android:scaleType="centerInside" android:tint="@color/Graph_icon" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="44.0dp" android:text="@string/music_podcast_song_list_title" android:maxLines="1" android:layout_marginEnd="44.0dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintBottom_toBottomOf="@id/toolbar" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/song_list_fragment" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <com.bilibili.music.podcast.view.mini.MusicBottomPlayView android:id="@id/bottom_play_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

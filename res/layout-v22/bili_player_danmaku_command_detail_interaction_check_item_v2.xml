@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="12.0sp" android:textColor="@color/daynight_color_text_headline" android:gravity="center_vertical" android:id="@id/auto_change" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginBottom="10.0dp" android:checked="false" android:button="@drawable/selector_compound_round" android:text="@string/interact_danmaku_panel_auto_change" android:paddingHorizontal="6.0dp" />
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:textSize="12.0sp" android:textColor="@color/daynight_color_text_headline" android:id="@id/auto_guide" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/selector_compound_round" android:text="@string/interact_danmaku_panel_auto_guide" android:paddingHorizontal="6.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="10.0sp" android:textColor="@color/Text2" android:paddingLeft="28.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interact_danmaku_panel_auto_guide_tips1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/daynight_color_text_headline" android:gravity="center" android:id="@id/time_left" android:background="@drawable/bg_command_detail_time_left_editor_v2" android:layout_width="wrap_content" android:layout_height="26.0dp" android:minWidth="36.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Text2" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interact_danmaku_panel_auto_guide_tips2" />
+    </LinearLayout>
+</LinearLayout>

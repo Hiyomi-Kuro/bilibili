@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.opus.lightpublish.input.LightPublishEdit android:textColor="@color/Text1" android:textColorHint="@color/Text4" android:gravity="top" android:id="@id/edit" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:minLines="2" android:inputType="textCapSentences|textMultiLine" android:imeOptions="flagNoFullscreen|flagNoExtractUi" android:textCursorDrawable="@drawable/ic_cursor_drawable" style="@style/T15_cozy"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

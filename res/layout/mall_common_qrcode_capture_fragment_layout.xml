@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/top_tips_iv" android:layout_width="290.0dp" android:layout_height="90.0dp" android:layout_above="@id/scan_rectangle_iv" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/scan_rectangle_iv" android:layout_width="240.0dp" android:layout_height="240.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:src="@drawable/mall_common_scan_rectangle" android:scaleType="centerCrop" android:layout_above="@id/ar_bottom_tips" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dp" android:textColor="#ffffff" android:id="@id/ar_bottom_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="230.0dp" android:text="@string/mall_common_ar_scan_bottom_tips" android:shadowColor="#40000000" android:shadowDx="0.0" android:shadowDy="4.0" android:shadowRadius="4.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:translationY="4.0dp" android:letterSpacing="-0.02" />
+        <FrameLayout android:id="@id/ar_list_bottom_notice_container" android:background="@drawable/mall_common_ar_scan_bottom_notice_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="#e78b1f" android:gravity="center" android:layout_gravity="center" android:id="@id/ar_list_bottom_notice" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="10.0dp" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ar_list_container" android:background="@drawable/mall_common_ar_scan_bottom_list_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:behavior_peekHeight="200.0dp" app:layout_behavior="@string/bottom_sheet_behavior">
+        <ImageView android:id="@id/ar_list_arrow" android:layout_width="12.0dp" android:layout_height="8.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/mall_common_gray_arrow_up" android:layout_alignTop="@id/ar_list_title" android:layout_alignParentRight="true" android:translationY="5.0dp" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#212121" android:gravity="center" android:id="@id/ar_list_title" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="18.0dp" android:layout_marginTop="14.0dp" android:text="我的特效库" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/list_title_area" android:layout_width="match_parent" android:layout_height="40.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ar_list_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="18.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="18.0dp" android:layout_marginBottom="20.0dp" android:layout_below="@id/ar_list_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar android:id="@id/ar_enter_toolbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="80.0dp">
+        <FrameLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="left|center" android:id="@id/ar_enter_backIV" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mall_icon_back" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

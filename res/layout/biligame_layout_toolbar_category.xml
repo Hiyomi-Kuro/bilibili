@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar style="@style/BiligameToolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/biligame_dip_18" android:ellipsize="end" android:layout_gravity="center" android:id="@id/biligame_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:maxWidth="100.0dp" android:singleLine="true" style="@style/Biligame.TextView.16SP.BLACK33" />
+    <TextView android:textSize="@dimen/biligame_dip_14" android:textColor="@color/biligame_black_66" android:ellipsize="end" android:layout_gravity="right|center" android:id="@id/biligame_category_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/biligame_rank" android:singleLine="true" style="@style/Biligame.TextView.16SP.BLACK33" />
+    <Button android:textColor="@color/Lb5" android:gravity="center" android:layout_gravity="right|center" android:id="@id/biligame_category_add" android:background="@drawable/biligame_background_solid_corner_blue_20" android:layout_width="50.0dp" android:layout_height="26.0dp" android:layout_marginRight="@dimen/biligame_dip_20" android:text="@string/biligame_add" />
+</androidx.appcompat.widget.Toolbar>

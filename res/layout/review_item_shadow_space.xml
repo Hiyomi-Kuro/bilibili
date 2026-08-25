@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/review_index_shadow" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="@dimen/review_item_shadow_spacing" />
+</LinearLayout>

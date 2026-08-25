@@ -1,0 +1,148 @@
+.class final Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt;->j(Landroidx/fragment/app/DialogFragment;)Lsf3/p;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/p<",
+        "Landroidx/fragment/app/DialogFragment;",
+        "Ljava/lang/Integer;",
+        "Landroid/view/View;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\n\u00a2\u0006\u0002\u0008\u0005"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroid/view/View;",
+        "Landroidx/fragment/app/DialogFragment;",
+        "it",
+        "",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;->INSTANCE:Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Landroidx/fragment/app/DialogFragment;I)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Landroidx/fragment/app/DialogFragment;->getDialog()Landroid/app/Dialog;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    :cond_0
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :cond_2
+    :goto_0
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    check-cast p1, Landroidx/fragment/app/DialogFragment;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, p2}, Lcom/bilibili/bililive/infra/util/extension/KotterKnifeKt$viewFinder$4;->invoke(Landroidx/fragment/app/DialogFragment;I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method

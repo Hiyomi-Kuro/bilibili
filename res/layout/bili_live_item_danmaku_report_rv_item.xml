@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/cb_reason" android:layout_width="30.0dp" android:layout_height="30.0dp" app:buttonTint="@color/selector_live_room_danmaku_report_cb_tint" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/live_danmaku_report_reason_txt_color" android:ellipsize="end" android:gravity="start" android:id="@id/tv_reason" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="@id/cb_reason" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/cb_reason" app:layout_constraintTop_toTopOf="@id/cb_reason" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

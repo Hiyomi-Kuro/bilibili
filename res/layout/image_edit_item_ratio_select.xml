@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/image_edit_clip_upper_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/image_edit_clip_rv_item_margin_top" android:layout_marginBottom="@dimen/image_edit_clip_rv_item_vertical_space" />
+    <TextView android:textSize="@dimen/image_edit_clip_rv_item_text_size" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

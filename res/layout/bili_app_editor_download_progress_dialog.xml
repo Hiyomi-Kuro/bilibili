@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_gravity="center" android:background="@drawable/bg_upper_rounded_gray_corner_6" android:layout_width="140.0dp" android:layout_height="115.0dp">
+        <com.bilibili.studio.template.widget.EditorCircleProgressView android:id="@id/cpv_editor_progress" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="20.0dp" android:layout_centerHorizontal="true" app:upper_cpv_flow_progress_color="@color/white" app:upper_cpv_progress_color="@color/white_alpha30" app:upper_cpv_progress_max="100" app:upper_cpv_progress_right_text_size="11.0sp" app:upper_cpv_progress_text_color="@color/white" app:upper_cpv_progress_text_size="11.0sp" app:upper_cpv_radius="24.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_editor_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="正在下载资源" android:layout_below="@id/cpv_editor_progress" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/fl_close" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_alignParentRight="true">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/iv_close" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_upper_guide_close" app:srcCompat="@drawable/ic_upper_guide_close" />
+        </FrameLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</FrameLayout>

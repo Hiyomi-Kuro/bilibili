@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="7.0dp" android:layout_width="212.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/bg_img" android:layout_width="match_parent" android:layout_height="32.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.mall.ui.widget.MallImageView android:id="@id/icon" android:background="@drawable/mall_search_hot_tag" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="11.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="@id/icon" app:layout_constraintLeft_toRightOf="@id/icon" app:layout_constraintTop_toTopOf="@id/icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

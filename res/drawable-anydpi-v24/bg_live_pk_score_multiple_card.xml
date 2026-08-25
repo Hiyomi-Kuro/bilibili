@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="180.0dp" android:width="130.0dp" android:viewportWidth="130.0" android:viewportHeight="180.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#7672c2" android:pathData="M6,0.75L124,0.75A5.25,5.25 0,0 1,129.25 6L129.25,174A5.25,5.25 0,0 1,124 179.25L6,179.25A5.25,5.25 0,0 1,0.75 174L0.75,6A5.25,5.25 0,0 1,6 0.75z" />
+    <path android:fillColor="@drawable/$bg_live_pk_score_multiple_card__0" android:pathData="M6,0.75L124,0.75A5.25,5.25 0,0 1,129.25 6L129.25,174A5.25,5.25 0,0 1,124 179.25L6,179.25A5.25,5.25 0,0 1,0.75 174L0.75,6A5.25,5.25 0,0 1,6 0.75z" />
+    <path android:fillColor="#00000000" android:pathData="M6,0.75L124,0.75A5.25,5.25 0,0 1,129.25 6L129.25,174A5.25,5.25 0,0 1,124 179.25L6,179.25A5.25,5.25 0,0 1,0.75 174L0.75,6A5.25,5.25 0,0 1,6 0.75z" android:strokeColor="@drawable/$bg_live_pk_score_multiple_card__1" android:strokeWidth="1.5" />
+</vector>

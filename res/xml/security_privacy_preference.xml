@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_security_privacy" android:key="@string/pref_key_security_privacy"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.preference.BLPreferenceCategory android:title="@string/pref_title_security_privacy" android:key="@string/pref_key_security_privacy_category">
+        <com.bilibili.app.preferences.custom.BLPreference_AccountSecurity android:persistent="false" android:title="@string/pref_title_account_security_center" android:key="@string/pref_key_account_security_center" />
+        <com.bilibili.app.preferences.custom.BLPreference_RealName android:persistent="false" android:title="@string/pref_title_real_name" android:key="@string/pref_key_real_name" />
+        <com.bilibili.app.preferences.custom.BLPreference_AuthManager android:persistent="false" android:title="@string/pref_title_auth_manager" android:key="@string/pref_key_auth_manager" />
+        <com.bilibili.app.preferences.custom.BLPreference_SpacePrivacySetting android:title="@string/pref_title_space_privacy_setting" />
+        <com.bilibili.app.preferences.custom.BLPreference_BlackList android:persistent="false" android:title="@string/pref_title_black_list" android:key="@string/pref_key_black_list" />
+    </tv.danmaku.bili.widget.preference.BLPreferenceCategory>
+    <tv.danmaku.bili.widget.preference.BLPreferenceCategory android:title="@string/pref_title_category_device_manager" android:key="@string/pref_key_category_device_manager">
+        <com.bilibili.app.preferences.custom.BLPreference_DeviceManager android:persistent="false" android:title="@string/pref_title_pr_device_manager" android:key="@string/pref_key_pr_device_manager" />
+    </tv.danmaku.bili.widget.preference.BLPreferenceCategory>
+    <tv.danmaku.bili.widget.preference.BLPreferenceCategory>
+        <com.bilibili.app.preferences.custom.BLPreference_Teenager android:persistent="false" android:title="@string/pref_title_pr_teenager" android:key="@string/pref_key_pr_teenager" />
+    </tv.danmaku.bili.widget.preference.BLPreferenceCategory>
+</androidx.preference.PreferenceScreen>

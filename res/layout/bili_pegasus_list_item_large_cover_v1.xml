@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:id="@id/content_layout" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/cover_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" layout="@layout/bili_pegasus_single_row_cover_player_component_v2" />
+    <com.bilibili.bililive.biz.uicommon.widget.LiveCardCorner android:id="@id/cover_left_live_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_alignLeft="@id/cover_layout" android:layout_alignParentTop="true" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_below="@id/cover_layout" layout="@layout/bili_pegasus_single_row_desc_component_v2" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

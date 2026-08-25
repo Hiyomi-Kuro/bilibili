@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/quality_dolby_svga" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="match_parent" app:autoPlay="false" app:clearsAfterStop="false" app:fbGroup="true" app:fbStyle="fill" app:fillMode="Forward" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="4:3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:loopCount="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

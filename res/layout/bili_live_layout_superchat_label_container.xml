@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="right|top" android:id="@id/locate_label" android:background="@drawable/bg_super_chat_locate_label" android:paddingLeft="8.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="2.0dp" android:text="@string/super_chat_locate_label" />
+</FrameLayout>

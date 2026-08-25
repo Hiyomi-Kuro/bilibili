@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ic_card_bg_corner_medium" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRadioHeight="4" app:aspectRadioWidth="3" app:placeholderImage="@drawable/bili_default_image_tv_12_16" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" style="@style/Widget.App.StaticImageView.Thumb.BangumiCover" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/shadow" android:layout_width="match_parent" android:layout_height="74.0dp" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingLeft="@dimen/item_half_spacing" android:paddingRight="@dimen/item_half_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Wh0_u" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Small" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/text1" android:paddingBottom="@dimen/item_half_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Small" android:textColor="@color/Wh0_u" android:layout_gravity="right" android:id="@id/badge" android:background="@drawable/shape_roundrect_secondary_alpha" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingRight="6.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_author_bangumi_common_follow" />
+    </FrameLayout>
+</FrameLayout>

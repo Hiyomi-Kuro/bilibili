@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@color/upper_white_bg_2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/llPublishBottomContainer">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="5.0dp" android:layout_marginStart="14.0dp" android:layout_marginEnd="14.0dp">
+                <include android:id="@id/layout_cover" layout="@layout/bili_app_fragment_upper_manuscripts_edit_cover_v5" />
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+            <include android:id="@id/layout_title" layout="@layout/bili_app_fragment_upper_manuscripts_edit_title_v6" />
+            <FrameLayout android:id="@id/manuscript_ai_title_fragment_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="8.0dp" />
+            <View android:background="@color/Line_light" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12.0dp" />
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/layout_partition_tag" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_partition_tag_v5" />
+                    <include android:id="@id/layout_edit_type" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_type_v5" />
+                    <include android:id="@id/layout_edit_p" layout="@layout/bili_app_fragment_upper_manuscripts_edit_p" />
+                    <View android:background="@color/Line_light" android:layout_width="match_parent" android:layout_height="4.0dp" android:alpha="0.4" />
+                    <include android:id="@id/layout_brief" layout="@layout/bili_app_fragment_upper_manuscripts_edit_brief" />
+                    <include android:id="@id/layout_charge" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_charge" />
+                    <include layout="@layout/bili_app_fragment_upper_manuscripts_edit_business_promotion" />
+                    <include android:id="@id/layout_setting" layout="@layout/bili_app_fragment_upper_manuscripts_edit_setting" />
+                    <include android:id="@id/add_to_collection" android:visibility="gone" layout="@layout/bili_app_fragment_upper_manuscripts_edit_setting" />
+                    <View android:background="@color/Line_light" android:layout_width="match_parent" android:layout_height="4.0dp" android:alpha="0.4" />
+                    <include android:id="@id/layout_dynamic" layout="@layout/bili_app_fragment_upper_manuscripts_edit_dynamic" />
+                    <include android:id="@id/layout_coupon" layout="@layout/bili_app_fragment_upper_manuscripts_edit_coupon" />
+                </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                <View android:id="@id/archive_title_input_mask_view" android:background="@color/upper_archive_title_input_mask" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/llPublishBottomContainer" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/layout_convention" layout="@layout/bili_app_fragment_upper_manuscripts_edit_convention" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/upper_txt_color_one" android:gravity="center" android:id="@id/tv_upper_draft" android:background="@drawable/upper_shape_save_draft" android:layout_width="114.0dp" android:layout_height="44.0dp" android:text="@string/upper_save_draft" android:layout_marginEnd="11.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/upper_white" android:gravity="center" android:id="@id/tv_upper_publish" android:background="@drawable/upper_shape_publish" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:text="@string/upper_publish_title" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <include android:id="@id/layout_statement" layout="@layout/bili_app_fragment_upper_manuscripts_edit_statement" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

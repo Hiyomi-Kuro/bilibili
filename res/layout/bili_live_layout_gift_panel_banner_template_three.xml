@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="end" android:id="@id/fr_gift_banner" android:layout_width="126.0dp" android:layout_height="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_banner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="18.5dp" android:layout_marginRight="7.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/ic_default_avatar" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" />
+    <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/tv_banner_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="18.0dp" android:lineSpacingExtra="1.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

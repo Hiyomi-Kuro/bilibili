@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/preloading_cover" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.blps.xplayer.view.GestureView android:id="@id/preloading_overlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/back" android:background="@drawable/xplayer_titlebar_item_bg" android:focusable="true" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/xplayer_ic_gray_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null" />
+</RelativeLayout>

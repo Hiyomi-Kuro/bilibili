@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/mask" android:background="@color/Ba0_u_alpha50" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/playlist_container" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true" app:layout_behavior="@string/bottom_sheet_behavior">
+        <FrameLayout android:id="@id/title_bg" android:background="@drawable/theseus_playlist_rect_top_radius12_wh0" android:layout_width="match_parent" android:layout_height="59.0dp" android:backgroundTint="@color/Wh0">
+            <include android:id="@id/expand_title_layout" layout="@layout/theseus_playlist_title" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_playlist" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.ship.theseus.playlist.uicomponent.PlaylistRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/playlist_recyclerview" android:background="@color/Wh0" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <include android:id="@id/header" layout="@layout/theseus_playlist_action" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

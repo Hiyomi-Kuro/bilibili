@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/desc_layout" android:background="@drawable/shape_roundrect_bottom_daynight_white_corner_4" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="13.0dp" android:layout_marginBottom="13.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/desc_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="8.0dp" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:roundAsCircle="true" app:viewAspectRatio="1.0" />
+        <ImageView android:layout_gravity="end|bottom" android:id="@id/desc_official" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="6.0dp" android:scaleType="centerInside" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/desc_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:maxLines="2" android:layout_marginEnd="8.0dp" />
+        <com.bilibili.app.comm.list.widget.tag.TagView android:id="@id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="4.0dp" android:layout_below="@id/desc_title" style="@style/Widget.App.Tag.Middle.Stroke" />
+        <com.bilibili.app.comm.list.widget.tag.tagtinttext.TagTintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/desc_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="30.0dp" android:maxLines="1" android:layout_toRightOf="@id/badge" android:layout_below="@id/desc_title" android:layout_marginEnd="30.0dp" style="@style/Widget.App.TagTintTextView.Desc.V2" />
+    </RelativeLayout>
+    <tv.danmaku.bili.widget.FixedPopupAnchor android:layout_gravity="bottom" android:id="@id/more" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingRight="4.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="@dimen/pegasus_index_card_more_height" android:layout_height="@dimen/pegasus_index_card_more_height" android:src="@drawable/ic_pegasus_more_v2" android:scaleType="centerInside" app:imageTint="@color/Ga4" />
+    </tv.danmaku.bili.widget.FixedPopupAnchor>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="16.0dp" android:paddingTop="5.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/ll_bottom" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shopping_cart_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/shopping_cart_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:layout_gravity="center" android:id="@id/shopping_cart_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.bilibili.ad.adview.story.panel.widget.CouponButton android:layout_gravity="center_vertical" android:id="@id/coupon_button" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="44.0dp" android:layout_weight="1.0" />
+        <com.bilibili.adcommon.widget.button.AdDownloadButton android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ad_button" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="44.0dp" android:layout_weight="1.0" app:download_btn_backgroundColor="@color/Pi5" app:download_btn_cornerRadius="50.0dp" app:download_btn_isFill="true" app:download_btn_progress_backgroundColor="@color/Ga3_u" app:download_btn_textColor="@color/Wh0_u" app:download_btn_textSize="13.0sp" app:download_btn_textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

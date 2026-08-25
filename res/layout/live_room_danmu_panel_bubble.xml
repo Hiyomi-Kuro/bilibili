@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/danmu_bubble_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_bubble_tip_container" android:background="@drawable/live_room_danmu_bubble_back" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/danmu_bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/danmu_bubble_arrow" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/bili_live_ic_arrow_up" android:rotation="90.0" />
+    </LinearLayout>
+    <View android:id="@id/danmu_bubble_triangle" android:background="@drawable/live_room_danmu_bubble_shape_reverse_triangle" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginStart="1.0dp" />
+</LinearLayout>

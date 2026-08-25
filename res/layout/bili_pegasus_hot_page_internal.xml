@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.pegasus.hot.utils.ViewPagerCompatSwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/background" android:layout_width="match_parent" android:layout_height="130.0dp" app:placeholderImage="@drawable/list_default_image_holder" />
+                <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:elevation="0.0dp" app:iconTintColor="@color/Ga7" app:layout_collapseMode="pin" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="end|center" android:id="@id/top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize">
+                        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_back" android:padding="16.0dp" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_ab_back_mtrl_am_alpha" android:layout_centerVertical="true" app:imageTint="@color/Ga7" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/theme_color_primary_tr_title" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_back" app:layout_constraintRight_toLeftOf="@id/menu" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+                        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/menu" android:padding="16.0dp" android:layout_width="54.0dp" android:layout_height="54.0dp" android:layout_centerVertical="true" app:imageTint="@color/Ga7" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_vector_nav_bar_share" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.bilibili.magicasakura.widgets.TintToolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.bilibili.pegasus.widgets.ReportPagerSlidingTabStrip android:id="@id/tabs" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorWrapContent="true" app:pstsTabMaxWidth="132.0dp" app:pstsTabPaddingLeftRight="16.0dp" style="@style/Widget.App.SlidingTab.Pegasus" />
+            <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.bilibili.pegasus.hot.utils.ViewPagerCompatSwipeRefreshLayout>

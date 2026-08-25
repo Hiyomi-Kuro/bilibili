@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mall.ui.widget.citypicker.WheelView android:id="@id/id_province" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.mall.ui.widget.citypicker.WheelView android:id="@id/id_city" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.mall.ui.widget.citypicker.WheelView android:id="@id/id_district" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

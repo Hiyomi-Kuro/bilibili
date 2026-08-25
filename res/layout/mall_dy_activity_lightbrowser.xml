@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.page.detail.imageviewer.draggableView.DraggableLayout android:id="@id/dy_root" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:draggableBg="@id/dy_background_color" app:draggableContainer="@id/dy_viewpager" app:draggableView="@id/dy_viewpager"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/dy_background_color" android:background="@color/Ba0_u" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0" />
+    <com.mall.ui.page.detail.imageviewer.LightBrowserViewPager android:id="@id/dy_viewpager" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <View android:id="@id/dy_bg_top_bar" android:background="@drawable/mall_bg_light_browser_gradient" android:layout_width="match_parent" android:layout_height="67.0dp" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/dy_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="left" android:id="@id/dy_close" android:paddingLeft="12.0dp" android:paddingTop="35.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" app:imageTint="@color/Wh0_u" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.mall.ui.page.detail.imageviewer.draggableView.DraggableLayout>

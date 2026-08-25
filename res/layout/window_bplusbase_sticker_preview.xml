@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/window_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/imageView" android:layout_width="140.0dp" android:layout_height="140.0dp" android:layout_marginTop="9.0dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true" fresco:actualImageScaleType="fitCenter" fresco:roundWithOverlayColor="@color/white" fresco:roundedCornerRadius="5.0dp" />
+</RelativeLayout>

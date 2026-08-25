@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="left|center" android:id="@id/id_iv_bar_back" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="12.0dp" android:scaleType="centerInside" app:srcCompat="@drawable/mall_icon_back_black" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/Ga10" android:layout_gravity="center" android:id="@id/id_tv_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="找相似" />
+</FrameLayout>

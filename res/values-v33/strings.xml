@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="float_view_msg_request_phone_permission_for_storage">当您在我们的产品中使用动态发布、上传稿件、拍摄视频、缓存、播放页截图、录制GIF、私信、客服、插入直播音乐服务功能时，需要获取有关您设备的相册、视频、音频权限。不授权该权限不影响App其他功能使用。</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.SafeViewPager android:layout_gravity="center_vertical" android:id="@id/pager" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="430.0dp" android:layout_marginLeft="45.0dp" android:layout_marginRight="45.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="5.0dp" android:layout_marginTop="30.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/pager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/party_relate_video_title" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="12.0dp" android:text="@string/video_detail_recommend_word" android:maxLines="1" />
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/party_relate_video_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/story_image_card_icon" android:layout_width="250.0dp" android:layout_height="126.0dp" app:placeholderImage="@color/Ga2" app:roundedCornerRadius="8.0dp" app:scaleViewType="fitWidth" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/story_image_card_close" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_ad_story_img_card_close" android:paddingStart="12.0dp" android:paddingEnd="10.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="end|bottom" android:id="@id/story_image_card_ad_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" app:roundBottomLeft="false" app:roundBottomRight="true" app:roundTopLeft="false" app:roundTopRight="false" app:roundedCornerRadius="8.0dp" app:scaleViewType="fitWidth" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/detail_tv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.ad.adview.widget.AdExpandableActionView android:id="@id/expand_action_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/detail_tv" android:layout_alignBottom="@id/detail_tv" />
+    <com.bilibili.ad.adview.widget.AdExpandableActionView android:id="@id/collapse_action_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

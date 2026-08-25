@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="140.0dp" android:layout_height="88.0dp">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/publish_episode_cover_view" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.App.StaticImageView.Thumb.RankBoardCover" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="right|bottom" android:id="@id/publish_episode_duration_text_view" android:background="@drawable/upper_shape_circle_manuscript_duration" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginBottom="6.0dp" android:text="20:12" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_weight="1.0">
+        <com.bilibili.upper.widget.ClickableSpanTextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_one" android:ellipsize="end" android:id="@id/publish_episode_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="4.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_one" android:gravity="center" android:id="@id/publish_episode_add_view" android:background="@drawable/upper_shape_button_r4_stroke_c0c0c0" android:layout_width="91.0dp" android:layout_height="24.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:text="@string/upper_publish_add_to_collection" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.room.ui.common.user.card.LiveRoundRelativeLayout android:id="@id/live_user_card_layout" android:background="@drawable/shape_room_round_rect_bg_ff_corner_12" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="72.0dp" app:roundRadius="12.0dp" app:roundTopLeftRadius="true" app:roundTopRightRadius="true">
+        <RelativeLayout android:id="@id/captain_bg" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="180.0dp">
+            <FrameLayout android:id="@id/captain_bg_default" android:layout_width="match_parent" android:layout_height="90.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/captain_bg_default_img" android:layout_width="match_parent" android:layout_height="90.0dp" android:scaleType="centerCrop" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="12.0dp" />
+                <View android:layout_gravity="bottom" android:id="@id/captain_bg_default_view" android:background="@drawable/bili_live_feed_user_card_bg" android:layout_width="match_parent" android:layout_height="24.0dp" />
+            </FrameLayout>
+            <com.bilibili.common.spine.SpineView android:id="@id/captain_bg_back" android:layout_width="match_parent" android:layout_height="180.0dp" app:spineViewRenderMode="spineTextureView" />
+            <View android:id="@id/captain_bg_view" android:background="@drawable/bili_live_feed_user_card_bg" android:layout_width="match_parent" android:layout_height="118.0dp" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dp" layout="@layout/bili_app_fragment_live_user_card_parts" />
+    </com.bilibili.bililive.room.ui.common.user.card.LiveRoundRelativeLayout>
+    <com.bilibili.common.spine.SpineView android:layout_gravity="end" android:id="@id/captain_bg_boat" android:layout_width="193.0dp" android:layout_height="172.0dp" android:layout_marginEnd="20.0dp" app:spineViewRenderMode="spineTextureView" />
+</FrameLayout>

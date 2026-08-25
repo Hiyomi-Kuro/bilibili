@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+        <include android:id="@id/nav_top_bar" layout="@layout/bili_app_layout_navigation_top_bar" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

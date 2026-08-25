@@ -1,0 +1,467 @@
+.class public final Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;
+.super Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder<",
+        "Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u0000 +2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001+B\u0007\u00a2\u0006\u0004\u0008)\u0010*J0\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\u00082\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0006H\u0086@\u00a2\u0006\u0004\u0008\n\u0010\u000bJP\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00110\u00082\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u0003H\u0086@\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J,\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0014\u001a\u00020\u00062\u0006\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00062\u000c\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u0016JH\u0010!\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010 0\u00082\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u001b\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001c2\u0006\u0010\u001f\u001a\u00020\u001cH\u0086@\u00a2\u0006\u0004\u0008!\u0010\"J*\u0010\'\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010&0\u00082\u0008\u0010#\u001a\u0004\u0018\u00010\u00032\u0006\u0010%\u001a\u00020$H\u0086@\u00a2\u0006\u0004\u0008\'\u0010(\u00a8\u0006,"
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;",
+        "Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;",
+        "Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;",
+        "",
+        "roomId",
+        "anchorId",
+        "",
+        "type",
+        "Lcom/bilibili/bililive/infra/network/a;",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketPanelInfo;",
+        "f",
+        "(JJILkotlin/coroutines/c;)Ljava/lang/Object;",
+        "redPacketId",
+        "danmuId",
+        "contextId",
+        "parentAreaId",
+        "areaId",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketLotteryInfo;",
+        "i",
+        "(JJJJJJJLkotlin/coroutines/c;)Ljava/lang/Object;",
+        "page",
+        "pageSize",
+        "Lqx1/b;",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketRecords;",
+        "callback",
+        "Lgf3/s;",
+        "g",
+        "lotteryId",
+        "",
+        "spmId",
+        "jumpFrom",
+        "sessionId",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketJoinResult;",
+        "h",
+        "(JJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;",
+        "lotteryID",
+        "",
+        "usedOnly",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLiveGuardPacketUsedRecords;",
+        "e",
+        "(Ljava/lang/Long;ZLkotlin/coroutines/c;)Ljava/lang/Object;",
+        "<init>",
+        "()V",
+        "a",
+        "giftInteractions_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$a;
+
+.field private static final b:Lgf3/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lgf3/h<",
+            "Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;->a:Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$a;
+
+    .line 8
+    .line 9
+    sget-object v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$Companion$instance$2;->INSTANCE:Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi$Companion$instance$2;
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Lkotlin/c;->c(Lsf3/a;)Lgf3/h;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    sput-object v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;->b:Lgf3/h;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic d()Lgf3/h;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApi;->b:Lgf3/h;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final e(Ljava/lang/Long;ZLkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Long;",
+            "Z",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/bililive/infra/network/a<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLiveGuardPacketUsedRecords;",
+            ">;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;->getApiService()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1, p2}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;->getGuardRedPacketResult(Ljava/lang/Long;Z)Lrx1/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1, p3}, Lcom/bilibili/bililive/infra/network/ApiResultKt;->b(Lrx1/a;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public final f(JJILkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(JJI",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/bililive/infra/network/a<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketPanelInfo;",
+            ">;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;->getApiService()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    move-object v1, v0
+
+    .line 6
+    check-cast v1, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;
+
+    .line 7
+    .line 8
+    move-wide v2, p1
+
+    .line 9
+    move-wide v4, p3
+
+    .line 10
+    move v6, p5
+
+    .line 11
+    invoke-interface/range {v1 .. v6}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;->getPopularRedPacketPanelInfo(JJI)Lrx1/a;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    invoke-static {p1, p6}, Lcom/bilibili/bililive/infra/network/ApiResultKt;->b(Lrx1/a;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+.end method
+
+.method public final g(IIILqx1/b;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(III",
+            "Lqx1/b<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketRecords;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;->getApiService()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1, p2, p3}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;->getPopularRedPacketSendRecord(III)Lrx1/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1, p4}, Lrx1/a;->F(Lretrofit2/d;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final h(JJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(JJJ",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/bililive/infra/network/a<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketJoinResult;",
+            ">;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;->getApiService()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    move-object v1, v0
+
+    .line 6
+    check-cast v1, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;
+
+    .line 7
+    .line 8
+    move-wide v2, p1
+
+    .line 9
+    move-wide v4, p3
+
+    .line 10
+    move-wide/from16 v6, p5
+
+    .line 11
+    .line 12
+    move-object/from16 v8, p7
+
+    .line 13
+    .line 14
+    move-object/from16 v9, p8
+
+    .line 15
+    .line 16
+    move-object/from16 v10, p9
+
+    .line 17
+    .line 18
+    invoke-interface/range {v1 .. v10}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;->joinPopularRedPacketInfo(JJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lrx1/a;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    move-object/from16 v1, p10
+
+    .line 23
+    .line 24
+    invoke-static {v0, v1}, Lcom/bilibili/bililive/infra/network/ApiResultKt;->b(Lrx1/a;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    return-object v0
+.end method
+
+.method public final i(JJJJJJJLkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 17
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(JJJJJJJ",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/bililive/infra/network/a<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/lottery/BiliLivePopularRedPacketLotteryInfo;",
+            ">;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    move-wide/from16 v1, p1
+
+    .line 2
+    .line 3
+    move-wide/from16 v3, p3
+
+    .line 4
+    .line 5
+    move-wide/from16 v5, p5
+
+    .line 6
+    .line 7
+    move-wide/from16 v7, p7
+
+    .line 8
+    .line 9
+    move-wide/from16 v11, p9
+
+    .line 10
+    .line 11
+    move-wide/from16 v13, p11
+
+    .line 12
+    .line 13
+    move-wide/from16 v15, p13
+
+    .line 14
+    .line 15
+    invoke-virtual/range {p0 .. p0}, Lcom/bilibili/bililive/infra/network/holder/BaseApiServiceHolder;->getApiService()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    check-cast v0, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;
+
+    .line 20
+    .line 21
+    const-string v9, ""
+
+    .line 22
+    .line 23
+    const/4 v10, 0x1
+
+    .line 24
+    invoke-interface/range {v0 .. v16}, Lcom/bilibili/bililive/biz/interactions/popularredpacket/api/LiveGiftPopularRedPacketApiService;->sendPopularRedPacket(JJJJLjava/lang/String;IJJJ)Lrx1/a;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    move-object/from16 v1, p15
+
+    .line 29
+    .line 30
+    invoke-static {v0, v1}, Lcom/bilibili/bililive/infra/network/ApiResultKt;->c(Lrx1/a;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    return-object v0
+.end method

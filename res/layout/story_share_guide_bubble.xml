@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:elevation="2.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga10_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tips" android:background="@drawable/shape_rounderect_corner17" android:layout_width="wrap_content" android:layout_height="34.0dp" android:maxWidth="224.0dp" android:text="@string/story_share_bubble_text" android:maxLines="1" android:paddingStart="50.0dp" android:paddingEnd="14.0dp" android:elevation="0.0dp" android:backgroundTint="@color/Wh0_u" app:cardCornerRadius="17.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <View android:id="@id/line" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_marginEnd="1.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tips" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:layout_width="6.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_player_bubble_arrow_right" app:layout_constraintBottom_toBottomOf="@id/tips" app:layout_constraintStart_toEndOf="@id/line" app:layout_constraintTop_toTopOf="@id/tips" />
+        <ImageView android:id="@id/icon" android:layout_width="42.0dp" android:layout_height="42.0dp" android:src="@drawable/ic_player_share_bubble" android:layout_marginStart="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/projection_bg_button_thumb_right" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="8.0sp" android:textColor="@color/text_white_kit" android:gravity="center_vertical" android:id="@id/projection_quality_superscript" android:background="@drawable/shape_roundrect_white_alpha50_6dp" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="20.0dp" android:layout_alignParentRight="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/text_white_kit" android:ellipsize="end" android:gravity="center" android:id="@id/projection_quality" android:background="@null" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/player_controller_edit_quality_text" android:singleLine="true" android:layout_centerVertical="true" />
+</RelativeLayout>

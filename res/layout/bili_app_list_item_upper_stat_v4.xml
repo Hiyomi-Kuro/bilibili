@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/upper_center_stat_value" android:id="@id/tv_stat_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/upper_txt_color_one" android:id="@id/tv_stat_value_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="2.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/upper_center_stat_title" android:gravity="center" android:id="@id/tv_stat_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:singleLine="true" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="2.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

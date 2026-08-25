@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/wallet_service_img" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="10.0dp" app:actualImageScaleType="fitCenter" app:failureImage="@drawable/bilipay_mine_wallet_service_icon_cover" app:failureImageScaleType="fitCenter" app:placeholderImage="@drawable/bilipay_mine_wallet_service_icon_cover" app:placeholderImageScaleType="fitCenter" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/wallet_service_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="19.0dp" android:lines="1" />
+</LinearLayout>

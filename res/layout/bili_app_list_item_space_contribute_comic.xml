@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:background="@color/Wh0" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/cover" android:layout_width="78.0dp" android:layout_height="104.0dp" app:placeholderImage="@drawable/bili_default_image_tv_12_16" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/cover">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/styles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

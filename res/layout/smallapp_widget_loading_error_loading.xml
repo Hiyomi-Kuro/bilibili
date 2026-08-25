@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/loading_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56.0dp" android:layout_marginTop="76.0dp" android:layout_marginRight="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/loading_logo" android:layout_width="50.0dp" android:layout_height="50.0dp" app:placeholderImage="@drawable/small_app_bg_default_logo" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" app:thumbHeight="50.0dp" app:thumbWidth="50.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/small_app_color_text_body_primary" android:gravity="center" android:id="@id/loading_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="24.0dp" android:text="@string/small_app_loading_hard" />
+    <ImageView android:id="@id/loading_indicator" android:layout_width="30.0dp" android:layout_height="6.0dp" android:contentDescription="@string/small_app_loading" />
+</LinearLayout>

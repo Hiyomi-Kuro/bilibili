@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/quality_hdr_info_image" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:id="@id/quality_hdr_info_close" android:background="@drawable/ic_player_tips_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="36.0dp" android:layout_marginEnd="36.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:id="@id/quality_hdr_info_switch" android:background="@drawable/player_quality_switch_hdr" android:layout_width="182.0dp" android:layout_height="34.0dp" android:layout_marginBottom="115.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

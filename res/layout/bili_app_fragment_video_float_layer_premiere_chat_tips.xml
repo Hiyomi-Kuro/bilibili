@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bg" android:background="@color/Ba0_alpha20" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content" android:background="@drawable/bili_player_shape_top_round_corner_15_bg1" android:paddingBottom="52.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/close" android:background="@drawable/ic_close_gray_16" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:backgroundTint="@color/Graph_medium" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textColor="@color/Text1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dp" android:text="@string/video_detail_premiere_intro_head_tips" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/T18b" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon" android:layout_width="0.0dp" android:layout_height="280.0dp" android:layout_marginTop="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

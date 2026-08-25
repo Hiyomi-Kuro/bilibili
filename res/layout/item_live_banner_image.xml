@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.RoundRectFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?selectableItemBackground" app:cornerRadius="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.app.comm.list.widget.image.ListPlaceHolderImageView android:id="@id/image" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constrainedHeight="true" app:layout_constrainedWidth="true" app:layout_constraintDimensionRatio="w,9:16" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="centerCrop" app:usingDefaultListPlaceHolder="true" />
+        <ViewStub android:id="@id/error_layout" android:visibility="gone" android:layout="@layout/layout_live_banner_error" android:inflatedId="@id/error_layout_inflate" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constrainedHeight="true" app:layout_constrainedWidth="true" app:layout_constraintDimensionRatio="w,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Bg1" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/image">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:maxLines="1" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</tv.danmaku.bili.widget.RoundRectFrameLayout>

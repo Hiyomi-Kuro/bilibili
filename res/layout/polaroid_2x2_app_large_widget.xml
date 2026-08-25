@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background_color" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_background_color_2x2_1" />
+    <ImageView android:id="@id/image1" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="-7.0" />
+    <FrameLayout android:id="@id/image_state_notice1" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="-7.0">
+        <ImageView android:id="@id/image_state_background1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_state_mask" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/image_state_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/image_background1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_polaroid_yellow_background" android:rotation="-7.0" />
+    <ImageView android:id="@id/image2" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="6.0" />
+    <FrameLayout android:id="@id/image_state_notice2" android:layout_width="match_parent" android:layout_height="match_parent" android:rotation="6.0">
+        <ImageView android:layout_gravity="center" android:id="@id/image_state_background2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_state_mask" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/image_state_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/image_background2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/image_polaroid_blue_background" android:rotation="6.0" />
+</FrameLayout>

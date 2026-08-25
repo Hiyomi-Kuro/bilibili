@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/live_guard_winter_bg_color" android:endColor="@color/live_guard_winter_bg_end_color" android:angle="0.0" android:centerColor="@color/live_guard_winter_bg_mid_color" />
+    <corners android:radius="8.0dp" />
+</shape>

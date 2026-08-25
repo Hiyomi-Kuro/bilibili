@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:padding="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0dp" android:gravity="center" android:id="@id/tri_btn_action" android:padding="0.0dp" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:includeFontPadding="false" />
+    <com.bilibili.biligame.gamenewcard.view.GameNewCardDownloadButton android:layout_gravity="center" android:id="@id/tri_btn_download" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

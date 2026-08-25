@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ad_banner_item_container" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:usingDefaultListPlaceHolder="true" app:viewAspectRatio="1.78" />
+    <FrameLayout android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/error_layout" android:layout="@layout/bili_ad_layout_tm_banner_ad_error" android:inflatedId="@id/error_layout_inflate" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/ad_info_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/shadow" />
+    <View android:id="@id/shadow" android:background="@drawable/shape_shadow_tm_banner_title" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="94.0dp" android:layout_marginBottom="6.0dp" android:maxLines="1" android:shadowColor="@color/black_alpha40" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentBottom="true" android:layout_marginEnd="94.0dp" />
+    <com.bilibili.adcommon.banner.BannerRoundRectFrameLayout android:tag="@string/ad_banner_play_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

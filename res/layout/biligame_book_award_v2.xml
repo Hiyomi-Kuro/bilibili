@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_title" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/biligame_book_award" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar android:id="@id/progress" android:layout_width="3.0dp" android:layout_height="12.0dp" android:layout_marginLeft="20.0dp" android:max="100" android:progress="100" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/biligame_progress_vertical" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="@id/progress" app:layout_constraintTop_toBottomOf="@id/progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

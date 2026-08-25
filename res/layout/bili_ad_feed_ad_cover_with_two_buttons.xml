@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/cover_button_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="20.0dp" />
+    <View android:id="@id/cover_text_shadow" android:layout_width="0.0dp" android:layout_height="70.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/left_container" android:background="@drawable/ad_feed_choose_card_btn_bg" android:layout_width="110.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal" app:layout_constraintLeft_toLeftOf="@id/guideline_left">
+        <TextView android:textSize="12.0sp" android:textColor="#fff" android:ellipsize="none" android:gravity="center" android:id="@id/button_left" android:layout_width="wrap_content" android:layout_height="30.0dp" android:includeFontPadding="false" android:maxLength="6" />
+        <ImageView android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_marginLeft="1.0dp" android:src="@drawable/ic_ad_choose_btn_arrow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/right_container" android:background="@drawable/ad_feed_choose_card_btn_bg" android:layout_width="110.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal" app:layout_constraintRight_toRightOf="@id/guideline_right">
+        <TextView android:textSize="12.0sp" android:textColor="#fff" android:ellipsize="none" android:gravity="center" android:id="@id/button_right" android:layout_width="wrap_content" android:layout_height="30.0dp" android:includeFontPadding="false" android:maxLength="6" />
+        <ImageView android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_marginLeft="1.0dp" android:src="@drawable/ic_ad_choose_btn_arrow" />
+    </LinearLayout>
+</merge>

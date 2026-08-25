@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_view_style" android:tag="layout/bangumi_databinding_info_style_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:id="@id/tv_style_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bangumi_info_data_style" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <com.bilibili.ogv.infra.widget.TagFlowLayout android:id="@id/tag_view_style" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginRight="13.0dp" android:layout_toEndOf="@id/tv_style_name" app:maxLines="2" app:spacing="10.0dp" />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+.class Lh93/a$e;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lx4/f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lh93/a;->f(Lx4/g;Lcom/otaliastudios/cameraview/internal/k;Lh93/a$h;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lx4/f<",
+        "TT;",
+        "Lx4/g<",
+        "TT;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lh93/a$h;
+
+
+# direct methods
+.method constructor <init>(Lh93/a$h;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lh93/a$e;->a:Lh93/a$h;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lx4/g;)Lx4/g;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lx4/g<",
+            "TT;>;)",
+            "Lx4/g<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lh93/a$e;->a:Lh93/a$h;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lh93/a$h;->a(Lx4/g;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 p1, 0x0
+
+    .line 7
+    invoke-static {p1}, Lx4/g;->x(Ljava/lang/Object;)Lx4/g;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public bridge synthetic then(Lx4/g;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Lh93/a$e;->a(Lx4/g;)Lx4/g;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method

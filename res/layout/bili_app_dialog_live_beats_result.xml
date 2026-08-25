@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/theme_color_live_text_major" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/live_beats_title" android:maxLines="1" />
+    <TextView android:textSize="@dimen/text_middle" android:textColor="@color/gray_dark" android:id="@id/result_content" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_beats_default_result" />
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/gift_icon" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/bili_default_image_tv" app:thumbHeight="45.0dp" app:thumbWidth="45.0dp" />
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/gray_dark" android:id="@id/gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/theme_color_primary" android:id="@id/gift_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

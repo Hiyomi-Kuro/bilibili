@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/bilibili/biligame/cloudgame/v2/logic/d;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/biligame/cloudgame/v2/logic/d;->a:Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/biligame/cloudgame/v2/logic/d;->a:Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;->t(Lcom/bilibili/biligame/cloudgame/v2/logic/BaseCloudGame;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

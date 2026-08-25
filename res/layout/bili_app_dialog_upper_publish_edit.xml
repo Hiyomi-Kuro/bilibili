@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/upper_shape_dialog_bottom_r8_bg1_2" android:layout_width="match_parent" android:layout_height="176.0dp">
+        <include android:id="@id/header" android:layout_width="match_parent" android:layout_height="62.0dp" layout="@layout/bili_app_layout_manuscript_bottom_dialog_header" />
+        <com.bilibili.upper.widget.input.MentionEditText android:textSize="12.0sp" android:textColor="@color/Text2" android:textColorHint="@color/Text3" android:gravity="top" android:id="@id/etEditor" android:background="@drawable/bg_upper_rounded_bg2_1_corner_4" android:paddingTop="12.0dp" android:paddingBottom="33.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:layout_below="@id/header" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/tvCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_alignBottom="@id/etEditor" android:layout_marginEnd="12.0dp" android:layout_alignEnd="@id/etEditor" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TheseusCheeseFloorItemBgCenterStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TheseusCheeseFloorItemContentCenterStyle">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/H3" android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_cheese_item_recommend_title" android:singleLine="true" android:layout_marginStart="10.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="@style/T12" android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/course_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dp" app:layout_constraintBottom_toBottomOf="@id/item_title" app:layout_constraintEnd_toStartOf="@id/course_more" app:layout_constraintTop_toTopOf="@id/item_title" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/course_more" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/theseus_cheese_vector_more_gray" android:layout_marginEnd="10.0dp" app:layout_constraintBottom_toBottomOf="@id/item_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/item_title" app:tint="@color/Graph_medium" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.bilibili.ship.theseus.cheese.widget.FixedRecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" app:layout_constraintTop_toBottomOf="@id/item_title" />
+    </LinearLayout>
+</LinearLayout>

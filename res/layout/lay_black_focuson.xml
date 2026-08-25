@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/lay_push_setting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/view_push_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ic_push_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_im_push_off" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/tv_push_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/im_push_off" android:maxLines="1" android:layout_toRightOf="@id/ic_push_off" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/im_push_off_desc" android:maxLines="1" android:layout_toRightOf="@id/ic_push_off" android:layout_below="@id/tv_push_off" android:layout_alignLeft="@id/tv_push_off" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/view_push_on" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_push_on" android:maxLines="1" android:drawableLeft="@drawable/ic_im_push_on" android:drawablePadding="@dimen/margin_10" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/lay_black" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_addblack" android:maxLines="1" android:drawableLeft="@drawable/ic_black" android:drawablePadding="@dimen/margin_10" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_4" android:layout_marginBottom="@dimen/margin_4" />
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/lay_focuson" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_focuson" android:maxLines="1" android:drawableLeft="@drawable/ic_focuson" android:drawablePadding="@dimen/margin_10" android:layout_weight="1.0" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+</LinearLayout>

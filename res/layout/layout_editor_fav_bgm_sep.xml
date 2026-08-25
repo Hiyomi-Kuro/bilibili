@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginBottom="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ff757575" android:layout_gravity="center" android:id="@id/tv_empty_fav_bgm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="10.0dp" android:text="@string/video_editor_bgm_empty_fav_bgm" />
+    <View android:layout_gravity="center|top" android:id="@id/sep_line" android:background="@color/upper_editor_gary_33" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_listened_bgm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="24.0dp" android:text="@string/video_editor_bgm_listened" />
+</LinearLayout>

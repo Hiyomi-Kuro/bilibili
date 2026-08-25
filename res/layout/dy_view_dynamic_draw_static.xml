@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.RoundRectFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="@dimen/following_cover_round_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followingcard.widget.theme.ThemeBiliImageView android:id="@id/dy_image" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="centerCrop" app:placeholderImageScaleType="centerCrop" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/dy_flag" android:background="@drawable/video_time_bg" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:layout_marginBottom="8.0dp" android:minWidth="32.0dp" android:maxEms="6" />
+    <ImageView android:layout_gravity="left|bottom" android:id="@id/dy_tag" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="6.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_following_tag" />
+</tv.danmaku.bili.widget.RoundRectFrameLayout>

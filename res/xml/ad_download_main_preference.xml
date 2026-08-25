@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/ad_download_pref_title" android:key="@string/ad_download_pref_key"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory>
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/ad_download_pref_4G_title" android:key="@string/ad_download_pref_4G_key" android:defaultValue="true" />
+        <androidx.preference.SwitchPreferenceCompat android:persistent="true" android:title="@string/ad_download_pref_delete_title" android:key="@string/ad_download_pref_delete_key" android:defaultValue="true" />
+        <tv.danmaku.bili.widget.preference.BLRadioGroupEntrancePreference android:persistent="true" android:title="@string/ad_download_pref_batch_title" android:key="@string/ad_download_pref_batch_key" android:fragment="com.bilibili.ad.adview.download.setting.ADDownloadSettingFragments$ADDownloadBatchPrefFragment" app:radioDefaultValue="5" app:radioEntrySummaries="@array/ad_download_pref_batch_items" app:radioEntryValues="@array/ad_download_pref_batch_items" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

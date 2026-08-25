@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_horizontal" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:src="@drawable/bili_2233_fail_black_stroke" android:scaleType="centerCrop" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Text3" android:gravity="center" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="60.0dp" android:minHeight="40.0dp" style="@style/T14_cozy" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

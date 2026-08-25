@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_btn" android:background="@drawable/bg_live_more_history_btn" android:layout_width="28.0dp" android:layout_height="62.0dp" android:layout_marginLeft="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="8.0sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@id/more_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_more_history_btn_text" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/live_arrow_right_triangle_fill" />
+</LinearLayout>

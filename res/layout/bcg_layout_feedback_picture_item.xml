@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/bcg_gv_image" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundedCornerRadius="6.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/bcg_iv_close" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/biligame_ad_close" android:layout_marginEnd="8.0dp" app:layout_constraintEnd_toEndOf="@id/bcg_space" app:layout_constraintTop_toTopOf="parent" />
+    <Space android:id="@id/bcg_space" android:layout_width="12.0dp" android:layout_height="12.0dp" app:layout_constraintStart_toEndOf="@id/bcg_gv_image" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

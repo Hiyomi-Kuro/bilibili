@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent_black" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/color_gray" android:ellipsize="end" android:id="@id/tv_remove" android:background="@drawable/mall_white_bubble" android:paddingLeft="14.0dp" android:paddingTop="17.0dp" android:paddingRight="14.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_peek_subscribe_list_popup_remove_from_list" android:maxLines="1" />
+</FrameLayout>

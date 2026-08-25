@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/live_daynight_text_color_white" android:gravity="center" android:id="@id/follow_tv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/live_follow" android:layout_weight="1.0" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/up_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginEnd="4.0dp" app:placeholderImage="@drawable/bili_default_avatar" app:roundAsCircle="true" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_score_multiple" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.view.scoremutiple.LivePKScoreDoubleBgView android:id="@id/pk_score_double_bg" android:layout_width="127.0dp" android:layout_height="24.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/content_layout" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_score_multiple_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3.0dp" android:drawableEnd="@drawable/ic_live_pk_vertical_line" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_pk_score_double_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/tv_score_multiple_name" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

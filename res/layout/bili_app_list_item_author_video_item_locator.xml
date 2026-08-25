@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="37.0dp" android:foreground="?android:selectableItemBackground"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/Ga2" android:layout_width="0.0dp" android:layout_height="1.0px" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Pi5" android:id="@id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="2.1999817dp" android:maxLines="1" android:minLines="1" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="9.599976dp" android:layout_height="match_parent" android:layout_marginRight="6.0dp" android:src="@drawable/ic_br_arrow_down" android:scaleType="centerInside" android:translationY="1.0dp" app:tint="@color/Pi5" />
+    <View android:background="@color/Ga2" android:layout_width="0.0dp" android:layout_height="1.0px" android:layout_weight="1.0" />
+</tv.danmaku.bili.widget.ForegroundLinearLayout>

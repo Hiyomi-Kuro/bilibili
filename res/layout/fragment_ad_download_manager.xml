@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mRoot" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.GarbTintToolBar android:id="@id/mToolbar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:garbMode="true" app:iconTintColor="@color/theme_color_primary_tr_icon" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle" />
+    <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/mTabs" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorWrapContent="true" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="12.0dp" style="@style/ADSlidingTab" />
+    <View android:id="@id/divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <com.bilibili.ad.adview.widget.AdViewPager android:id="@id/mViewPager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.bilibili.ad.adview.download.storage.ADStorageView android:id="@id/mStorageView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

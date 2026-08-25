@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="210.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/r13">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+                <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverCommonView android:id="@id/track_video_cover" android:layout_width="match_parent" android:layout_height="60.0dp" />
+                <include layout="@layout/bili_app_item_editor_play_switch" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="70.0dp" />
+        </LinearLayout>
+        <View android:id="@id/r13" android:background="#333333" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_above="@id/menu_bo2" />
+        <include android:id="@id/menu_bo2" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_alignParentBottom="true" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+    </RelativeLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

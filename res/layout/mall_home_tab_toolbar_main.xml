@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/iv_toolbar_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/iv_atmosphere_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="bottom" android:id="@id/tabs_layout" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="28.0dp" android:layout_marginRight="28.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.page.home.plantseeds.view.MallHomePageTabStrip android:id="@id/mall_plantseeds_tab" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:pstsIndicatorColor="@color/mall_tab_indicator_color" app:pstsIndicatorHeight="4.0dp" app:pstsIndicatorRadius="2.0dp" app:pstsIndicatorWidth="22.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="0.0dp" app:roundImageViewRadius="4.0dp" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</FrameLayout>

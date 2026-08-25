@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/story_comment" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/touch_outside" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.video.story.view.StoryCommentConstraintLayout android:id="@id/bottom_sheet_layout" android:background="@drawable/shape_rect_sold_bg1_12dp" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true" app:layout_behavior="com.bilibili.video.story.view.StoryCommentBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/story_comment_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+            <FrameLayout android:id="@id/story_comment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/story_secondary_comment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.bilibili.video.story.view.StoryCommentConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

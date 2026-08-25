@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_cover" android:background="@drawable/upper_editor_shape_tts_bg" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:layout_centerInParent="true" android:layout_marginStart="2.0dp" android:layout_marginEnd="2.0dp" app:actualImageScaleType="fitCenter" app:roundedCornerRadius="8.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_flag" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_centerInParent="true" app:actualImageScaleType="fitCenter" />
+        <ProgressBar android:id="@id/pgb_loading" android:layout_width="20.0dp" android:layout_height="20.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="17.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+        <com.bilibili.studio.editor.moudle.music.view.AutoMarqueeTextView android:textSize="12.0sp" android:textColor="#a2a7ae" android:id="@id/tv_name" android:layout_width="match_parent" android:layout_height="17.0dp" android:layout_marginTop="0.0dp" android:text="@string/bili_editor_origin_picture" />
+        <View android:background="@drawable/bg_editor_music_top_gradient_left" android:layout_width="5.0dp" android:layout_height="0.0dp" android:layout_alignTop="@id/tv_name" android:layout_alignBottom="@id/tv_name" android:layout_alignStart="@id/tv_name" />
+        <View android:background="@drawable/bg_editor_music_top_gradient" android:layout_width="5.0dp" android:layout_height="0.0dp" android:layout_alignTop="@id/tv_name" android:layout_alignBottom="@id/tv_name" android:layout_alignEnd="@id/tv_name" />
+    </RelativeLayout>
+</LinearLayout>

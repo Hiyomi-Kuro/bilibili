@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.room.ui.widget.BlowViewLayoutV3 android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/player_view_container" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.infra.hierarchy.HierarchyViewContainer android:id="@id/room_player_business_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.infra.hierarchy.HierarchyViewContainer android:id="@id/business_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.bililive.room.ui.widget.BlowViewLayoutV3>

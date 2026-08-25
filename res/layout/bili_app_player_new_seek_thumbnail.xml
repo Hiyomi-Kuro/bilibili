@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_tip" android:background="@drawable/shape_roundrect_player_black" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingRight="16.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dp" android:maxLines="1" android:maxEms="18" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0dp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_energetic_desc" android:background="@drawable/shape_roundrect_player_black" android:paddingLeft="8.0dp" android:paddingTop="5.0dp" android:paddingRight="8.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:maxWidth="144.0dp" android:maxHeight="44.0dp" android:maxLines="2" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_thumb_container" android:background="@drawable/bg_player_thumbnail" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.playerbizcommon.view.AvoidRecycledImageView android:layout_gravity="center_horizontal" android:id="@id/thumb" android:layout_width="144.0dp" android:layout_height="81.0dp" android:scaleType="fitXY" />
+            <View android:background="@drawable/player_shape_shadow_bottom" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_alignBottom="@id/thumb" android:layout_alignStart="@id/thumb" android:layout_alignEnd="@id/thumb" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginBottom="8.0dp" android:layout_alignBottom="@id/thumb" android:layout_alignStart="@id/thumb" android:layout_alignEnd="@id/thumb">
+                <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="bottom" android:id="@id/seek_direction_image" android:layout_width="wrap_content" android:layout_height="match_parent" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/video_play_control_video_title_text" android:gravity="center" android:layout_gravity="bottom" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_marginEnd="4.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

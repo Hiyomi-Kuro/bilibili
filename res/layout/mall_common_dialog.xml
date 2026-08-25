@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mall_common_dialog_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginRight="28.0dp">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/dialog_msg" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mall_common_dialog_sure_text" />
+        <FrameLayout android:id="@id/msg2_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0dp" android:textColor="@color/Ga10" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_msg2" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <View android:background="@color/Ga2" android:layout_width="wrap_content" android:layout_height="0.5dp" android:layout_marginTop="25.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dialog_two_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/mall_common_divider_line_new" android:showDividers="middle">
+            <TextView android:textSize="16.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/dialog_cancel" android:layout_width="0.0dp" android:layout_height="44.0dp" android:text="@string/mall_common_dialog_cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/dialog_ok" android:layout_width="0.0dp" android:layout_height="44.0dp" android:text="@string/mall_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/dialog_one_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textColor="@color/Ga10" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/next_btn" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_ok" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

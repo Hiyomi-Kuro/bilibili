@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@drawable/bg_super_chat" android:layout_width="350.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/super_chat_interaction_head" android:background="@drawable/bg_super_chat_top" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="1.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="1.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/interaction_mystery_icon" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="10.0dp" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_goneMarginLeft="5.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_super_chat_name" android:ellipsize="end" android:id="@id/interaction_name" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:maxLines="1" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintStart_toEndOf="@id/interaction_mystery_icon" fresco:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="132.0dp" fresco:layout_constraintEnd_toEndOf="parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right" android:id="@id/interaction_bg_shadow" android:layout_width="75.0dp" android:layout_height="30.0dp" fresco:roundBottomLeft="false" fresco:roundBottomRight="false" fresco:roundTopLeft="false" fresco:roundTopRight="true" fresco:roundedCornerRadius="6.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_super_chat_price" android:ellipsize="end" android:layout_gravity="right|center" android:id="@id/interaction_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:maxLines="1" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/fl_top" android:background="@drawable/bg_super_chat_top" android:layout_width="match_parent" android:layout_height="51.0dp" android:layout_marginLeft="1.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="1.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="39.0dp" android:layout_height="39.0dp" android:layout_marginLeft="7.0dp">
+                <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/siv_avatar" android:layout_width="34.0dp" android:layout_height="34.0dp" fresco:placeholderImage="@drawable/bili_default_avatar" fresco:thumbHeight="34.0dp" fresco:thumbWidth="34.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+                <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center" android:id="@id/siv_avatar_frame" android:layout_width="39.0dp" android:layout_height="39.0dp" fresco:placeholderImageScaleType="centerInside" fresco:thumbHeight="39.0dp" fresco:thumbWidth="39.0dp" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/biv_mystery_icon" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="2.0dp" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_super_chat_name" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="150.0dp" android:layout_height="wrap_content" android:maxLines="1" />
+                </LinearLayout>
+                <com.bilibili.lib.ui.ImageSpannableTextView android:textSize="14.0sp" android:textColor="@color/text_super_chat_price" android:id="@id/tv_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right" android:id="@id/bg_shadow" android:layout_width="124.0dp" android:layout_height="50.0dp" fresco:roundBottomLeft="false" fresco:roundBottomRight="false" fresco:roundTopLeft="false" fresco:roundTopRight="true" fresco:roundedCornerRadius="6.0dp" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_more" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_super_chat_card_more" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_dark" android:gravity="left|center" android:layout_gravity="right|bottom" android:id="@id/tv_timer" android:layout_width="70.0dp" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:drawableLeft="@drawable/ic_timer" android:drawablePadding="4.0dp" />
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:id="@id/tv_message" android:paddingLeft="5.0dp" android:paddingTop="7.0dp" android:paddingRight="11.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dp" fresco:layout_constraintLeft_toLeftOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/view" android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="14.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="11.0dp" fresco:layout_constraintTop_toBottomOf="@id/tv_message" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_translate_message" android:paddingLeft="5.0dp" android:paddingTop="7.0dp" android:paddingRight="12.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dp" fresco:layout_constraintTop_toBottomOf="@id/view" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|bottom" android:id="@id/siv_decoration" android:layout_width="14.0dp" android:layout_height="14.0dp" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintRight_toRightOf="parent" />
+        <androidx.constraintlayout.widget.Group android:id="@id/group" android:layout_width="wrap_content" android:layout_height="wrap_content" fresco:constraint_referenced_ids="view,tv_translate_message" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

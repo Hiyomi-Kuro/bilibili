@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/tab_layout_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout android:id="@id/vp_picker_tab" android:layout_width="match_parent" android:layout_height="60.0dp" app:tabBackground="@android:color/transparent" app:tabIndicator="@null" app:tabRippleColor="@null" app:tabSelectedTextColor="@color/white" app:tabTextColor="@color/white_alpha60" />
+        <ImageView android:id="@id/iv_ai_material_choose_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_nav_close" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:gravity="center_vertical" android:id="@id/tv_part_privilege_tip" android:padding="8.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_part_privilege_tip" android:layout_below="@id/tab_layout_container" />
+    <RelativeLayout android:id="@id/media_picker_chosen_container" android:background="@color/upper_picker_chosen_container_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="129.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_gray_dark" android:id="@id/media_picker_chosen_notice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:text="@string/upper_picker_chosen_tips" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_picker_chosen_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/vp_picker_page" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/media_picker_chosen_container" android:layout_below="@id/tv_part_privilege_tip" />
+    <FrameLayout android:id="@id/fl_local_dir_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/vs_permission_guide" android:layout="@layout/capture_permission_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

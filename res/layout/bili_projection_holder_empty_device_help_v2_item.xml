@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_empty_device_help_item" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/help_icon" android:layout_width="36.0dp" android:layout_height="36.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/help_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="18.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/help_split_image" android:visibility="gone" android:layout_width="2.0dp" android:layout_height="19.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/bili_projection_official_empty_split_icon" android:layout_marginStart="37.0dp" />
+</LinearLayout>

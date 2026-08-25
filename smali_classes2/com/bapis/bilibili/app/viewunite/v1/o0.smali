@@ -1,0 +1,41 @@
+.class public interface abstract Lcom/bapis/bilibili/app/viewunite/v1/o0;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getButtonSelectedTitle()Ljava/lang/String;
+.end method
+
+.method public abstract getButtonSelectedTitleBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getButtonTitle()Ljava/lang/String;
+.end method
+
+.method public abstract getButtonTitleBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getIcon()Ljava/lang/String;
+.end method
+
+.method public abstract getIconBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getShowSelected()Z
+.end method
+
+.method public abstract getSubtitle()Ljava/lang/String;
+.end method
+
+.method public abstract getSubtitleBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTitle()Ljava/lang/String;
+.end method
+
+.method public abstract getTitleBytes()Lcom/google/protobuf/ByteString;
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.MallSwipeRefreshLayout android:id="@id/mall_newest_goods_swipe" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mall.ui.widget.HomePageTabStrip android:id="@id/mall_newest_goods_tab" android:layout_width="match_parent" android:layout_height="36.0dp" android:paddingStart="12.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:pstsIndicatorColor="@color/Wh0" app:pstsIndicatorHeight="3.0dp" app:pstsIndicatorRadius="1.5dp" app:pstsIndicatorWidth="16.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="0.0dp" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/mall_newest_goods_vp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_newest_goods_tab" />
+        <RelativeLayout android:id="@id/mall_newest_goods_loading_container" android:background="@color/Wh0" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="42.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@id/mall_newest_goods_loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/mall_tips_view" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.mall.ui.widget.MallSwipeRefreshLayout>

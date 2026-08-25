@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.music.podcast.view.MusicCommentCoordinatorLayout android:id="@id/music_podcast_comment" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/touch_outside" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/comment_bottom_sheet" android:background="@drawable/music_podcast_comment_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:layout_behavior="com.bilibili.music.podcast.utils.comment.MusicCommentBehavior">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/theme_color_primary_tr_title" android:id="@id/music_comment_header" android:layout_width="32.0dp" android:layout_height="22.0dp" android:layout_marginLeft="12.0dp" android:text="@string/music_podcast_comment" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_primary_tr_subtitle" android:gravity="center" android:id="@id/music_comment_count" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_marginLeft="6.0dp" android:layout_toRightOf="@id/music_comment_header" />
+            <FrameLayout android:id="@id/music_primary_comment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_below="@id/music_comment_header" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/music_secondary_comment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.bilibili.music.podcast.view.MusicCommentCoordinatorLayout>

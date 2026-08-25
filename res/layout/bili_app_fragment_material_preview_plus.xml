@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperPinchImageView android:layout_gravity="center" android:id="@id/fragment_material_preview_image" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="fitCenter" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/fragment_material_preview_video" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="fitCenter" />
+    <View android:layout_gravity="top" android:background="@drawable/upper_album_material_top_gradient" android:layout_width="match_parent" android:layout_height="175.0dp" />
+    <View android:layout_gravity="bottom" android:background="@drawable/upper_album_material_bottom_gradient" android:layout_width="match_parent" android:layout_height="100.0dp" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_sleep_reminder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory>
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/pref_title_sleep_reminder_title" android:key="@string/pref_key_sleep_category" android:summary="@string/pref_title_sleep_reminder_summary" android:defaultValue="false" />
+    </androidx.preference.PreferenceCategory>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="@string/pref_key_sleep_reminder_setting_category" app:categoryTitle="@string/pref_title_sleep_reminder_setting_category">
+        <androidx.preference.Preference android:title="@string/pref_title_sleep_reminder_time_begin" android:key="@string/pref_key_sleep_reminder_time_begin" android:summary="@string/pref_title_sleep_reminder_time_begin_clock" app:useSimpleSummaryProvider="true" />
+        <androidx.preference.Preference android:title="@string/pref_title_sleep_reminder_time_end" android:key="@string/pref_key_sleep_reminder_time_end" android:summary="@string/pref_title_sleep_reminder_time_end_clock" app:useSimpleSummaryProvider="true" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+</androidx.preference.PreferenceScreen>

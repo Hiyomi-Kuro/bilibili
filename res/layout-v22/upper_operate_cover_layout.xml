@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/upper_editor_cover_gray2" android:paddingTop="2.0dp" android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/imageOptLayout" android:background="@drawable/upper_opt_cover_image_add_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginHorizontal="20.0dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_upper_edit_sync" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:text="@string/opt_image_cover_add" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/videoOptLayout" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/coverAdd" android:background="@drawable/bg_upper_rounded_2e2e2e" android:paddingLeft="4.0dp" android:paddingTop="6.0dp" android:paddingRight="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="46.0dp" android:layout_margin="2.0dp" android:text="@string/upper_cover_add_image" android:drawableTop="@drawable/ic_add" android:drawablePadding="0.0dp" android:drawableTint="@color/white" app:drawableTopCompat="@drawable/ic_add" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/layoutCover" android:clipChildren="false" android:layout_width="50.0dp" android:layout_height="50.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/coverImage" android:layout_width="50.0dp" android:layout_height="50.0dp" android:scaleType="centerCrop" app:roundedCornerRadius="8.0dp" />
+                <View android:id="@id/viewFrame" android:background="@drawable/upper_cover_thumb_selector_frame" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:layout_gravity="right|top" android:id="@id/coverRemove" android:padding="4.0dp" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginTop="-11.0dp" android:layout_marginRight="-12.0dp" android:src="@drawable/upper_multi_cover_remove" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.bilibili.upper.module.cover_v2.widgets.seekbar.MultiCoverSeekBar android:id="@id/coverSeekBar" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="10.0dp" />
+    </LinearLayout>
+</FrameLayout>

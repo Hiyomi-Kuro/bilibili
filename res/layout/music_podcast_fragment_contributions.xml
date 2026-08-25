@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.music.podcast.view.dropdownmenu.DropDownMenuHead android:id="@id/drop_down_menu_head" android:layout_width="0.0dp" android:layout_height="40.0dp" app:bgColor="@color/Wh0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:lineColor="@color/Ga2" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/drop_down_menu_head">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.bilibili.music.podcast.view.LoadingErrorEmptyView android:id="@id/empty_lee" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/drop_down_menu_head" />
+    <com.bilibili.music.podcast.view.dropdownmenu.DropDownMenuContent android:id="@id/drop_down_menu_content" android:layout_width="0.0dp" android:layout_height="0.0dp" app:contentBgColor="@color/Ga1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/drop_down_menu_head" />
+</androidx.constraintlayout.widget.ConstraintLayout>

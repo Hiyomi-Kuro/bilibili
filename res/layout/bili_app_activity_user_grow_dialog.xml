@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/close" android:background="@drawable/ic_user_grow_container_close" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="77.0dp" android:layout_marginRight="20.0dp" />
+</FrameLayout>

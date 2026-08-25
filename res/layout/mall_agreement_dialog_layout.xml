@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mall_order_check_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/mall_agreement_dialog_title_area" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/color_gray" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mall_agreement_dialog_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="right|bottom" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/mall_submit_icon_fold" android:scaleType="centerInside" />
+    </FrameLayout>
+    <com.mall.ui.widget.CommonMaxHeightLineLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:HeightRatio="0.6">
+        <androidx.core.widget.NestedScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:textColor="@color/color_gray" android:id="@id/mall_agreement_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="18.0dp" android:lineSpacingExtra="2.0dp" />
+        </androidx.core.widget.NestedScrollView>
+    </com.mall.ui.widget.CommonMaxHeightLineLayout>
+    <include android:id="@id/mall_agreement_dialog_back_btn" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_next_btn_height" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" layout="@layout/mall_next_btn_layout" />
+</LinearLayout>

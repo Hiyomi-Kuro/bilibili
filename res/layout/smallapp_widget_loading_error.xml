@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/loading_root_stub" android:layout="@layout/smallapp_widget_loading_error_loading" android:inflatedId="@id/loading_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56.0dp" android:layout_marginTop="76.0dp" android:layout_marginRight="56.0dp" />
+    <ViewStub android:id="@id/game_loading_root_stub" android:layout="@layout/smallapp_widget_loading_error_game_loading" android:inflatedId="@id/game_loading_root" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/game_dynamic_loading_root_stub" android:layout="@layout/smallapp_widget_loading_error_game_dynamic_loading" android:inflatedId="@id/dy_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/error_root_stub" android:layout="@layout/smallapp_widget_loading_error_error" android:inflatedId="@id/error_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/small_app_tool_bar_height" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/special_error_root_stub" android:layout="@layout/smallapp_widget_loading_error_sp_error" android:inflatedId="@id/special_error_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="36.0dp" />
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/special_off_shelves_error_root_stub" android:layout="@layout/smallapp_widget_loading_error_sp_offshelves_error" android:inflatedId="@id/special_off_shelves_error_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="36.0dp" />
+</merge>

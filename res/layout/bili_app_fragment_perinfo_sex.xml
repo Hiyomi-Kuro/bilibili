@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:gravity="center" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/person_info_sex_title" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/sex_male" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="110.0dp" android:src="@drawable/bili_sex_male" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/fl_sex_gray" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="15.0dp" android:layout_width="0.0dp" android:layout_height="110.0dp" android:layout_weight="1.0">
+            <View android:layout_gravity="center" android:background="@drawable/selector_sex_gray" android:layout_width="70.0dp" android:layout_height="70.0dp" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/sex_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:srcCompat="@drawable/vector_sex_gray" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/Ga7" android:id="@id/tv_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/person_info_sex_gay" />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/sex_female" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="110.0dp" android:src="@drawable/bili_sex_female" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:gravity="center" android:id="@id/sex_ok" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/br_ensure" />
+</LinearLayout>

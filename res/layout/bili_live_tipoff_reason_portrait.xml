@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/daynight_color_background_card" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_primary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/danmu" android:paddingLeft="20.0dp" android:layout_width="wrap_content" android:layout_height="66.0dp" android:maxWidth="280.0dp" android:lines="2" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/emoticon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginLeft="3.0dp" android:scaleType="centerCrop" android:layout_toRightOf="@id/danmu" android:layout_centerVertical="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/daynight_color_window_background" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/daynight_color_window_background" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0sp" android:textColor="@color/daynight_color_text_title" android:id="@id/cancel" android:background="@color/daynight_color_background_card" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/live_dialog_negative" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

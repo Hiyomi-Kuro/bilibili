@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/theseus_ugc_up_center_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/Wh0" app:cardCornerRadius="8.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dialog_container" android:visibility="visible" android:layout_width="280.0dp" android:layout_height="wrap_content" android:minWidth="280.0dp">
+            <com.bilibili.app.comm.bh.BiliWebView android:layout_gravity="center" android:id="@id/web_view" android:layout_width="280.0dp" android:layout_height="336.0dp" android:layout_marginTop="24.0dp" app:layout_constraintBottom_toTopOf="@id/floating_layer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:layout_gravity="center" android:id="@id/floating_layer" android:background="@drawable/theseus_ugc_help_bottom_mask" android:layout_width="280.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="@id/web_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/text_white_kit" android:gravity="center" android:layout_gravity="center" android:id="@id/agree_total" android:background="@drawable/theseus_ugc_bg_up_center_pink" android:layout_width="248.0dp" android:layout_height="34.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="16.0dp" android:text="@string/Player_danmaku_realname_tips_i_know" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/floating_layer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

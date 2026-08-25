@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/cmt3_selector_pi5_ga7_color" android:ellipsize="end" android:gravity="center" android:id="@id/filter_text" android:background="@drawable/cmt3_selector_filter_tag_background" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="26.0dp" android:maxLines="1" android:singleLine="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" style="@style/T13"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

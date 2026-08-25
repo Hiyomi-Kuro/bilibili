@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@id/icon_play" android:layout_width="14.0dp" android:layout_height="14.0dp" app:lottie_autoPlay="false" app:lottie_fileName="player_playlist_anim_playing.json" app:lottie_loop="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="14.0dp" android:layout_marginStart="14.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_video_list_compound_button" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/page_title_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="36.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@id/divider" android:background="@color/theme_color_text_primary" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dp" />
+</LinearLayout>

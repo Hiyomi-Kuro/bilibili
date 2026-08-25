@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/home_diy_block_2_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_home_diy_block_top_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mall_home_diy_block_scrollview" android:layout_width="match_parent" android:layout_height="164.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/top_group_02_list" android:paddingLeft="2.0dp" android:layout_width="match_parent" android:layout_height="164.0dp" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

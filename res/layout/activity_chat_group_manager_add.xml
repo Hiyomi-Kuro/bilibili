@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_navigation_top_bar" />
+    <RelativeLayout android:background="@color/Ga0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/size_48">
+        <EditText android:textSize="@dimen/text_small" android:id="@id/search" android:background="@drawable/shape_roundrect_white_corner_6" android:paddingLeft="6.0dp" android:nextFocusUp="@id/group_member" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="10.0dp" android:hint="@string/title_search" android:maxLines="1" android:singleLine="true" android:drawableLeft="@drawable/ic_search_bar" android:imeOptions="actionDone" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/group_recyclerview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/theme_color_text_primary" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:text="@string/br_prompt_nothing" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_empty_style2" android:layout_above="@id/text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

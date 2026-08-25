@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.infra.widget.view.InterceptLinearLayout android:orientation="vertical" android:id="@id/sticky_container" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/sticky_tab_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36.0dp" android:paddingEnd="2.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/text_tab_edit" android:padding="3.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/live_home_tab_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:imageTint="@color/Ga7" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/tab_recyclerView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_toLeftOf="@id/text_tab_edit" android:overScrollMode="never" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/live_home_tab_gradient" android:layout_width="12.0dp" android:layout_height="36.0dp" android:layout_alignRight="@id/tab_recyclerView" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.bililive.infra.widget.view.InterceptLinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_search_video_bottom_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:layout_marginHorizontal="4.0dp" android:layout_marginVertical="4.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/up_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/shape_roundrect_grey_solid_radius_4" />
+        <tv.danmaku.bili.widget.PriorityLinearLayout android:orientation="horizontal" android:id="@id/title_container" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="7.0dp" android:layout_marginStart="2.0dp" android:layout_marginEnd="8.0dp" android:layout_marginVertical="7.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/up_icon" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="8.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:priority="1" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:priority="2" />
+        </tv.danmaku.bili.widget.PriorityLinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

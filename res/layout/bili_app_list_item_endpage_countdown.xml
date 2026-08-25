@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_rect_2_black_40" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.playerbizcommon.view.RingProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="41.0dp" android:layout_height="41.0dp" />
+    <ImageView android:layout_gravity="center" android:id="@id/play" android:paddingLeft="1.5dp" android:layout_width="23.5dp" android:layout_height="22.0dp" android:src="@drawable/bili_player_ctrl_play_pause" />
+</FrameLayout>

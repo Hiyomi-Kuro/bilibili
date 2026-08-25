@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="15" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="12.0sp" android:textColor="@color/Ga7_u" android:id="@id/video_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/Ga7_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:text="·" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="12.0sp" android:textColor="@color/Ga7_u" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:enabled="false" android:id="@id/favoured" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_compound_round" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:compoundButtonTint="@drawable/selector_tint_checkbox" style="@style/Widget.App.CheckBox.Native" />
+    <View android:background="@color/Ga9_u" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

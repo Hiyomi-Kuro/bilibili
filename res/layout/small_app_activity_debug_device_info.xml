@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/mid_title" android:layout_width="64.0dp" android:layout_height="48.0dp" android:text="UID" />
+    <TextView android:gravity="center" android:id="@id/buvid_title" android:layout_width="64.0dp" android:layout_height="48.0dp" android:text="设备号" android:layout_below="@id/mid_title" />
+    <TextView android:gravity="center" android:id="@id/mid" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_toRightOf="@id/mid_title" android:layout_alignParentRight="true" />
+    <TextView android:gravity="center" android:id="@id/buvid" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_toRightOf="@id/mid_title" android:layout_below="@id/mid_title" android:layout_alignParentRight="true" />
+    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="长按复制到剪贴板" android:layout_below="@id/buvid" />
+</RelativeLayout>

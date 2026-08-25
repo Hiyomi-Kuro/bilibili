@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:id="@id/camera_layout" android:background="@color/Ga5" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minWidth="100.0dp" android:minHeight="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center" android:id="@id/camera_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picker_fab_label_camera" android:drawableTop="@drawable/ic_bili_camera_white" android:drawablePadding="4.0dp" android:layout_centerInParent="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

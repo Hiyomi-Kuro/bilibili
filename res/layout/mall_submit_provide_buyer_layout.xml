@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/no_buyer_notice" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <TextView android:textColor="@color/Ga10" android:id="@id/no_buyer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:drawablePadding="4.0dp" android:layout_toLeftOf="@id/no_buyer_agree" android:layout_alignParentLeft="true" android:lineSpacingExtra="2.0dp" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/no_buyer_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

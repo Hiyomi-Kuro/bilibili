@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/invest_layout" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/close" android:background="@drawable/bili_app_view_upguardian_shape_circle" android:padding="4.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_vector_general_close" android:scaleType="centerInside" android:layout_alignParentRight="true" app:imageTint="@color/Graph_bold" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/invest_layout" android:background="@color/Wh0" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_loading_layout" android:background="@color/Wh0" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/error_loading_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="br_loading.json" app:lottie_loop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/upguardian_loading_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_retry_layout" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_general_load_failed_tv" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/error_retry_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/upguardian_retry_text" />
+    </LinearLayout>
+</merge>

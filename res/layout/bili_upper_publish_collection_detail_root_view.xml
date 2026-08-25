@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/publish_collection_detail_fragment_container_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

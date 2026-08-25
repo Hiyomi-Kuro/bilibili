@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="195.0dp" android:layout_height="57.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dp" android:textColor="#18191c" android:background="@drawable/pop_bg_white_left_icon" android:paddingTop="17.0dp" android:layout_width="wrap_content" android:layout_height="52.0dp" android:layout_marginTop="4.5dp" android:text="@string/Player_subtitle_pop_hint" android:paddingStart="60.0dp" android:paddingEnd="16.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_tv_pop_white" android:layout_marginStart="13.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

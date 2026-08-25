@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bcg_gv_image" android:background="@drawable/bcg_bkg_corner_6_gray_4dbbb" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/bcg_iv_close" android:layout_width="14.0dp" android:layout_height="14.0dp" app:layout_constraintBottom_toBottomOf="@id/bcg_gv_image" app:layout_constraintEnd_toEndOf="@id/bcg_gv_image" app:layout_constraintStart_toStartOf="@id/bcg_gv_image" app:layout_constraintTop_toTopOf="@id/bcg_gv_image" app:srcCompat="@drawable/biligame_vector_icon_add_inline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

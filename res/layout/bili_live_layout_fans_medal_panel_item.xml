@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/medal_item" android:background="@drawable/live_selector_bg_transparent_border_pink_corner_4_v2" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginBottom="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:layout_marginBottom="18.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="24.0dp">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/medal" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/live_selector_text_color_theme_pink_disable_text_color_black" android:gravity="center" android:id="@id/current_empirical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/live_interaction_uname_color" android:gravity="center" android:id="@id/all_empirical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/live_interaction_uname_color" android:gravity="center" android:id="@id/empirical_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intimacy" />
+            </LinearLayout>
+            <com.bilibili.bililive.infra.widget.view.PercentBarTextView android:id="@id/progress" android:layout_width="237.0dp" android:layout_height="4.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" app:pb_corner_bg="2.0dp" app:pb_corner_fg="0.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/today" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/live_interaction_uname_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_medal_today_limit" android:layout_marginEnd="4.0dp" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/live_selector_text_color_theme_pink_disable_text_color_black" android:gravity="center" android:id="@id/today_current_empirical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/live_interaction_uname_color" android:gravity="center" android:id="@id/today_all_empirical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/up_info" android:layout_width="50.0dp" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:enabled="false" android:layout_gravity="center" android:id="@id/living_logo" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/live_shape_ring_pink" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/up_image" android:layout_width="30.0dp" android:layout_height="30.0dp" app:roundAsCircle="true" app:roundingBorderColor="@android:color/transparent" app:roundingBorderWidth="1.0dp" app:thumbHeight="30.0dp" app:thumbWidth="30.0dp" />
+                    <ImageView android:layout_gravity="end|bottom" android:id="@id/certification_icon" android:visibility="gone" android:layout_width="11.0dp" android:layout_height="11.0dp" android:src="@drawable/live_ic_certification_official" />
+                </FrameLayout>
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/live_daynight_text_color_black" android:ellipsize="end" android:gravity="center" android:id="@id/up_nickname" android:paddingTop="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="5" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="start|top" android:id="@id/tag" android:background="@drawable/live_shape_roundrect_in_wear_theme_corner_4" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dp" android:text="@string/in_wear" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|bottom" android:id="@id/corner" android:background="@drawable/ic_live_medal_selected_corner_4" android:layout_width="24.0dp" android:layout_height="24.0dp" app:backgroundTint="@color/theme_color_secondary" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

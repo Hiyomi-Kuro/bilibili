@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/cover_layout" android:background="@color/Ga0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginTop="14.0dp">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playset_cover" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/cover_preview" android:layout_width="66.0dp" android:layout_height="41.0dp" android:layout_marginRight="12.0dp" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playset_ic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/playset_name_layout" android:background="@color/Ga0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="14.0dp">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:gravity="center_vertical" android:id="@id/playset_name" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <EditText android:textAppearance="@style/TextAppearance.App.Title" android:textColorHint="@color/Ga4_u" android:id="@id/playset_name_edit" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="88.0dp" android:hint="@string/playset_hint_name" android:singleLine="true" android:maxLength="20" android:inputType="text" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/playset_intro_layout" android:background="@color/Ga0" android:padding="12.0dp" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:gravity="center_vertical" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playset_intro" />
+            <EditText android:textAppearance="@style/TextAppearance.App.Title" android:textColorHint="@color/Ga4_u" android:gravity="start" android:id="@id/playset_intro_edit" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="88.0dp" android:hint="@string/playset_hint_summary" android:maxLines="6" android:lines="6" android:maxLength="200" />
+        </RelativeLayout>
+        <tv.danmaku.bili.widget.ForegroundRelativeLayout android:id="@id/playset_public" android:background="@color/Ga0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="14.0dp" android:foreground="?selectableItemBackground">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playset_public" android:layout_centerVertical="true" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/playset_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/tip_img" android:layout_width="280.0dp" android:layout_height="158.0dp" android:scaleType="centerInside" />
+        <TextView android:textAppearance="@style/TextAppearance.App.Title" android:id="@id/tip_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+    </LinearLayout>
+</FrameLayout>

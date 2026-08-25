@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/container" android:background="@drawable/shape_bottom_sheet_dialog_corner" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/indicator_container" android:layout_width="match_parent" android:layout_height="19.0dp">
+        <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="center_horizontal" android:id="@id/indicator" android:background="@drawable/shape_rect_gray_ga3_corner_2" android:layout_width="30.0dp" android:layout_height="3.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="154.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0sp" android:textColor="@color/Text3" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text" android:paddingRight="72.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/video_detail_no_more_recommend_uppers" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center_vertical" android:id="@id/loading" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="12.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleSmall" />
+</FrameLayout>

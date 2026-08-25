@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_primary_tr_subtitle" android:id="@id/hintTv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/bili_pay_expand_hint_text" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/bili_pay_ic_unfold" />
+    </LinearLayout>
+</RelativeLayout>

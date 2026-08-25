@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/recommend_live_layout" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/live_room_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@color/black_alpha40" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/vertical_video_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dp" android:layout_marginBottom="16.0dp">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/user_avatar" android:layout_width="48.0dp" android:layout_height="48.0dp" app:roundAsCircle="true" app:thumbHeight="48.0dp" app:thumbWidth="48.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="210.0dp" android:layout_height="22.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="20.0dp">
+                <androidx.legacy.widget.Space android:id="@id/enter_room_left_space" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/enter_room_btn" android:background="@drawable/live_button_enter_room_corner_12" android:layout_width="96.0dp" android:layout_height="22.0dp" android:text="@string/live_enter_room" />
+                <androidx.legacy.widget.Space android:id="@id/enter_room_center_space" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/selector_text_white_selected_gray_b4" android:gravity="center" android:id="@id/attention_btn" android:background="@drawable/live_selector_button_follow_corner_12" android:layout_width="96.0dp" android:layout_height="22.0dp" />
+            </LinearLayout>
+            <com.bilibili.bililive.room.biz.reverse.view.LiveReserveCardView android:id="@id/liveReserveWidget" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/white_alpha20" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="32.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha80" android:layout_gravity="center_horizontal" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/recommend_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="@color/white_alpha50" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/recommend_other" android:paddingTop="4.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_recommend_other" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/recommend_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_card_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/live_recommend_live_empty" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/close_live_room" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_live_vertical_room_back" android:contentDescription="@null" />
+</RelativeLayout>

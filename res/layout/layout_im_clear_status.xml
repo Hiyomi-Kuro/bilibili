@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/Pi0" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/clearing" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="14.0dp" android:layout_height="14.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Pi5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:text="@string/im_anti_disturb_clearing" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/clear_complete" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_clear_complete" android:layout_width="16.0dp" android:layout_height="16.0dp" app:lottie_fileName="im_clear_complete.json" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Pi5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:text="@string/im_anti_disturb_clear_complete" />
+    </LinearLayout>
+</RelativeLayout>

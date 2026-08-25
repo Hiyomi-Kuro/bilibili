@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_interest_first_class_item_bg" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="45.0dp" android:layout_height="45.0dp" app:placeholderImage="@drawable/bili_app_list_interest_choose_default_icon" app:placeholderImageScaleType="centerCrop" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dp" android:layout_marginEnd="20.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxEms="5" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="2" android:maxEms="5" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

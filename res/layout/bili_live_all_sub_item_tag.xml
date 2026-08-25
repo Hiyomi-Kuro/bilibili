@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="76.0dp" android:layout_marginTop="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/pic" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="6.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImageScaleType="centerInside" app:thumbHeight="48.0dp" app:thumbWidth="48.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="常规图标" android:maxLines="1" android:maxEms="6" android:drawablePadding="4.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/pic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

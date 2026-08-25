@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/playback_speed_text_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/line" android:background="#1a999999" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" />
+</LinearLayout>

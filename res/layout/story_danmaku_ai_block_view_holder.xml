@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/danmaku_shield_root_layout" android:paddingLeft="20.0dp" android:paddingTop="12.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/danmaku_shield_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/danmaku_shield_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_danmaku_shield_title_text" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Text3" android:gravity="start|center" android:id="@id/danmaku_shield_tips" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/story_danmaku_shield_close_text" android:layout_weight="1.0" android:layout_marginStart="6.0dp" />
+        <ImageView android:gravity="start|center" android:id="@id/danmaku_shield_switch_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/bili_story_arrow_up" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <com.bilibili.video.story.danmaku.StoryVerticalExpandableView android:id="@id/danmaku_shield_expand_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="20.0dp" app:layout_constraintTop_toBottomOf="@id/danmaku_shield_title_layout">
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" />
+        <com.bilibili.playerbizcommonv2.danmaku.view.PlayerMinMaxLabelSeekBarBox android:id="@id/danmaku_shield_select" android:visibility="visible" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="5.0dp" app:_lsbLabelColor="@color/Text1" app:_lsbMinLabelText="@string/player_danmaku_shield_level_desc" app:_lsbShowMaxLabel="true" app:_lsbShowMinLabel="true" />
+    </com.bilibili.video.story.danmaku.StoryVerticalExpandableView>
+    <View android:id="@id/line" android:layout_marginTop="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/danmaku_shield_expand_view" style="@style/BPlayer_CommonUnderline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

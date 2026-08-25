@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/Text3" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dp" android:text="@string/video_detail_premiere_comment_tip" />
+    <LinearLayout android:gravity="clip_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/chat" android:background="@drawable/bili_player_shape_round_corner_20_wh0_bg" android:paddingLeft="6.0dp" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginTop="10.0dp" android:paddingEnd="8.0dp" android:backgroundTint="@color/Bg1">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:placeholderImage="@drawable/bili_player_premiere_online" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" />
+        <View android:layout_gravity="center_vertical" android:id="@id/split" android:background="@color/Line_bold" android:layout_width="0.5dp" android:layout_height="8.0dp" android:layout_marginLeft="4.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Brand_pink" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" style="@style/T10b" />
+    </LinearLayout>
+</LinearLayout>

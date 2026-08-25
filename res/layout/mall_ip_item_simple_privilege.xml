@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mall_ip_iv_item_privilege" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/mall_mine_portrait_default" app:placeholderImage="@drawable/mall_mine_portrait_default" />
+    <TextView android:textSize="12.0dp" android:textColor="#212121" android:ellipsize="end" android:id="@id/mall_ip_tv_item_privilege" android:layout_width="48.0dp" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" android:includeFontPadding="false" />
+</LinearLayout>

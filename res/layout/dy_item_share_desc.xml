@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dy_opus_paragraph_desc_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followingcard.widget.FollowingImageSpanTextView android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/dy_opus_share_desc" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:lineSpacingMultiplier="@dimen/card_text_extra_space" style="@style/T17_cozy" />
+</FrameLayout>

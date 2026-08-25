@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mall_blind_guide_view" android:background="@color/black_alpha70" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="top" android:id="@id/layout_placeholder" android:layout_width="match_parent" android:layout_height="100.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/home_guide_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/home_guide_image_area" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <com.mall.ui.widget.MallImageView2 android:layout_gravity="bottom" android:id="@id/home_guide_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="fitCenter" app:viewAspectRatio="0.893" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/home_guide_close_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|top" android:id="@id/home_guide_close_tv" android:background="@drawable/mall_home_guide_count_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:scaleType="centerInside" android:text="关闭" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="100.0dp" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/loading_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</RelativeLayout>

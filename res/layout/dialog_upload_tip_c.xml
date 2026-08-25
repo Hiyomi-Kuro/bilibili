@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/following_dialog_gprs_width_c" android:layout_height="@dimen/following_dialog_gprs_height_c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/tip_image" android:layout_width="280.0dp" android:layout_height="280.0dp" android:layout_marginTop="24.0dp" app:actualImageScaleType="centerInside" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/Lb9_u_alpha55" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/following_top_margin_12_c" android:text="@string/tip_gprs_following_upload_c" />
+</LinearLayout>

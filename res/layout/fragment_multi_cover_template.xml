@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/templates_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/templates_cancel" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_cover_clear" android:alpha="0.5" android:paddingStart="14.0dp" android:paddingEnd="4.0dp" />
+            <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/templates_tab" android:layout_width="wrap_content" android:layout_height="40.0dp" android:paddingStart="0.0dp" android:paddingEnd="4.0dp" app:pstsIndicatorColor="#00000000" app:pstsIndicatorHeight="0.0dp" app:pstsIndicatorWidth="8.0dp" app:pstsTabBackground="@null" app:pstsTabPaddingLeftRight="17.0dp" app:pstsUnderlineHeight="0.0dp" app:selectedTabTextColor="#ffffff" app:tabGravity="center" app:tabIndicatorColor="#00ffffff" app:tabIndicatorHeight="0.0dp" app:tabTextSize="14.0sp" style="@style/Uper_Editor_slidingTab.Category.NoIndicator" />
+        </LinearLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/templates_pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

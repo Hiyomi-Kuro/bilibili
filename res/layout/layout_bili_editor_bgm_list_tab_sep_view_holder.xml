@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="68.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dp" android:layout_alignParentTop="true" layout="@layout/layout_video_edit_sep_line" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/white" android:id="@id/tab_sep_name" android:layout_width="wrap_content" android:layout_height="@dimen/bili_editor_bgm_list_tab_sep_text_height" android:layout_marginTop="@dimen/bili_editor_bgm_list_tab_sep_text_margin_top" android:layout_toLeftOf="@id/ll_more" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_more" android:layout_width="wrap_content" android:layout_height="@dimen/bili_editor_bgm_list_tab_sep_text_height" android:layout_marginTop="@dimen/bili_editor_bgm_list_tab_sep_text_margin_top" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.0dp" android:textColor="#ff999999" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_editor_bgm_list_gallery_view_more" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_upper_arraw_right_gray" />
+    </LinearLayout>
+</RelativeLayout>

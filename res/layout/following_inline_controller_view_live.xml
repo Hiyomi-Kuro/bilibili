@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/shadow" android:background="@drawable/shape_rect_grad_black_alpha_0_to_25_reverse" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/live_img_mute_icon" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_vol_mute" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/live_tv_region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dp" android:layout_alignParentStart="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/live_tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/live_tv_region" />
+</RelativeLayout>

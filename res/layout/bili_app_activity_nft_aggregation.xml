@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/toolbar_mask" android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/nft_list_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="75.0dp" />
+    <androidx.appcompat.widget.AppCompatSpinner android:theme="@style/common_spinner" android:id="@id/compat_spinner" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" android:popupTheme="@style/common_spinner" style="@style/common_spinner" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@id/cancel_button" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="取消" />
+</FrameLayout>

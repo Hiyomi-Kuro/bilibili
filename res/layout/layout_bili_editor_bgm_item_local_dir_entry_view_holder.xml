@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_bgm_list_local_select_from_dir" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="@dimen/bili_editor_bgm_list_padding" android:layout_marginTop="@dimen/bili_editor_bgm_list_item_margin" android:layout_marginRight="@dimen/bili_editor_bgm_list_padding" android:layout_marginBottom="@dimen/bili_editor_bgm_list_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_select_from_dir" />
+    <TextView android:textSize="11.0dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/bili_editor_bgm_list_local_select_from_dir" />
+</LinearLayout>

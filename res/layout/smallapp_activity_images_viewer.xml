@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.fasthybrid.uimodule.imageviewer.StretchViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/top_layout" android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="start|center" android:layout_gravity="center_horizontal" android:id="@id/view_origin" android:background="@drawable/smallapp_shape_roundrect_corner16_semitrans_black" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="129.0dp" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="start|center" android:id="@id/save_image" android:background="@drawable/smallapp_shape_roundrect_corner16_semitrans_black" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="13.0dp" android:src="@drawable/smallapp_image_download" android:layout_marginEnd="13.0dp" fresco:imageTint="@color/white" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp">
+        <com.bilibili.lib.fasthybrid.ability.ui.ScaleTextView android:textColor="@color/white" android:id="@id/pic_desc_line5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.lib.fasthybrid.ability.ui.ScaleTextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/pic_desc_line3" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="3" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/bottom_layout" android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="32.0dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/part1" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.lib.image.drawee.StaticImageView android:id="@id/part1_img" android:layout_width="16.0dp" android:layout_height="16.0dp" fresco:actualImageScaleType="fitCenter" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/part1_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxWidth="56.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/part2" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.lib.image.drawee.StaticImageView android:id="@id/part2_img" android:layout_width="16.0dp" android:layout_height="16.0dp" fresco:actualImageScaleType="fitCenter" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/part2_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxWidth="56.0dp" android:maxLines="1" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/part3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.lib.image.drawee.StaticImageView android:id="@id/part3_img" android:layout_width="16.0dp" android:layout_height="16.0dp" fresco:actualImageScaleType="fitCenter" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/part3_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxWidth="56.0dp" android:maxLines="1" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/part4" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.lib.image.drawee.StaticImageView android:id="@id/part4_img" android:layout_width="16.0dp" android:layout_height="16.0dp" fresco:actualImageScaleType="fitCenter" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/part4_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxWidth="56.0dp" android:maxLines="1" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

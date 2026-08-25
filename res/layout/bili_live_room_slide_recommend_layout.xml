@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/drawer_root" android:background="@color/color_12101A" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.uicommon.playtogether.view.LiveHorizontalScrollRecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_9499A0" android:gravity="center_horizontal" android:id="@id/iv_loading" android:layout_width="wrap_content" android:layout_height="170.0dp" android:text="@string/live_room_topic_page_loading" android:drawableTop="@drawable/bilipay_tv_loading" android:drawablePadding="20.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_9499A0" android:gravity="center_horizontal" android:id="@id/iv_error_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="170.0dp" android:text="@string/live_room_net_loading_error" android:drawableTop="@drawable/live_room_net_load_error_2023" android:drawablePadding="20.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0" android:gravity="center" android:id="@id/iv_error_retry" android:background="@drawable/live_room_retry_circle_bg" android:visibility="gone" android:layout_width="90.0dp" android:layout_height="36.0dp" android:layout_marginTop="2.0dp" android:text="@string/live_room_inner_retry" android:layout_below="@id/iv_error_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

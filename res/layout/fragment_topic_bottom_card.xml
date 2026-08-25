@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.list.widget.MaxHeightLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:background="@drawable/shape_roundrect_8_wh0_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="center_horizontal" android:id="@id/top_bar_view" android:background="@drawable/shape_roundrect_2_ga2" android:layout_width="48.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="13.0dp" android:maxLines="1" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/delimiter" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/frame" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</com.bilibili.app.comm.list.widget.MaxHeightLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/tab_red_point" android:background="@drawable/cp_shape_red_point" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" app:layout_constraintBottom_toTopOf="@id/tv_text" app:layout_constraintStart_toEndOf="@id/tv_text" app:layout_constraintTop_toTopOf="@id/tv_text" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

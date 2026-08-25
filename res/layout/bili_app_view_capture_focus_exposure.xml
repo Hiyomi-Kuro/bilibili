@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/capture_focus_exposure_image" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="right" android:id="@id/capture_focus_exposure_seek_bar_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.studio.videoeditor.capturev3.widget.VerticalSeekBar android:id="@id/capture_focus_exposure_seek_bar" android:layout_width="18.0dp" android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

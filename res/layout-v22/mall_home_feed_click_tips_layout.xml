@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/mall_asyn_loading_bg" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp" android:paddingVertical="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textColor="@color/white_alpha70" android:gravity="center" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请前往" />
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/home_feed_click_tip_route" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员购-我的收藏" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/white_alpha70" android:gravity="center" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看" />
+</LinearLayout>

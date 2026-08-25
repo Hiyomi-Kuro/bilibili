@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/share_float_window_root" android:background="@color/daynight_color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/bili_share_float_window_padding" android:layout_marginTop="@dimen/bili_share_float_window_padding" android:layout_marginRight="@dimen/bili_share_float_window_margin_right" android:layout_marginBottom="@dimen/bili_share_float_window_padding" android:layout_marginStart="@dimen/bili_share_float_window_padding" android:layout_marginEnd="@dimen/bili_share_float_window_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/bili_share_float_window_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/screenshot_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/screenshot_share_button" android:background="@drawable/bili_share_screenshot_float_btn" android:layout_width="match_parent" android:layout_height="30.0dp" android:text="@string/bili_share_float_window_btn_tips" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

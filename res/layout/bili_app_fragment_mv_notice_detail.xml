@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_anchor_notice_detail" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_mv_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/live_room_mv_notice_detail_title" android:layout_centerHorizontal="true" />
+    <com.bilibili.lib.ui.ImageSpannableTextView android:textSize="14.0sp" android:textColor="@color/live_mv_notice_page_text" android:id="@id/tv_mv_notice_detail" android:background="@color/live_mv_notice_page_bg" android:paddingBottom="20.0dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:layout_below="@id/tv_mv_notice_title" android:layout_alignParentLeft="true" android:fadeScrollbars="false" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_room_round_rect_bg_ff_corner_12" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/guard_info_fl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/guard_bg" android:layout_width="match_parent" android:layout_height="90.0dp" android:scaleType="centerCrop" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="12.0dp" />
+        <View android:layout_gravity="bottom" android:id="@id/gurad_bg_view" android:background="@drawable/bili_live_feed_user_card_bg" android:layout_width="match_parent" android:layout_height="24.0dp" />
+    </FrameLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dp" layout="@layout/bili_app_fragment_live_user_card_parts" />
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintButton android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center" android:id="@id/normal_button" android:background="@drawable/selector_button_common_enter" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/pegasus_notify_tunnel_button_default_text" android:maxLength="4"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

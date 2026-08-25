@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/tagRoot" android:tag="layout/bangumi_item_info_style_tag_0" android:background="@drawable/bangumi_gray_radius_13_bg" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Text2" android:gravity="center" android:id="@id/tagTV" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dp" android:maxLines="1" android:singleLine="true" />
+    <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/bangumi_ic_arrow_gray_right" android:layout_marginStart="2.0dp" />
+</LinearLayout>

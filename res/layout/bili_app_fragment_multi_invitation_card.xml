@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_live_multi_voice_invitation_card" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="113.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_avatar" android:layout_width="48.0dp" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/ic_live_default_avatar" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" app:roundingBorderWidth="0.0dp" style="@style/Widget.App.ImageView.Circle.Avatar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ba0" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" app:layout_constraintStart_toEndOf="@id/iv_avatar" app:layout_constraintTop_toTopOf="@id/iv_avatar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ba0" android:gravity="center_vertical" android:id="@id/tv_manager_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_avatar" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_room_inner_text_color" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_marginTop="4.0dp" app:layout_constraintStart_toEndOf="@id/iv_avatar" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/tv_reject" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/reject_invitation" android:layout_weight="1.0" />
+        <View android:background="@color/gray" android:layout_width="1.0px" android:layout_height="20.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/tv_accept" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/accept_invitation" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

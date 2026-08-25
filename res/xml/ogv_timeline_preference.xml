@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory>
+        <com.bilibili.ogv.misc.preference.ReportSwitchPreference android:title="@string/pref_timeline_night_mode_title" android:key="@string/pref_timeline_night_mode_key" android:summary="@string/pref_timeline_night_mode_summary" app:false_value="2" app:report_arg="click_id" app:report_event_id="setting_pgc_timeline_click" app:true_value="1" />
+        <androidx.preference.Preference android:layout="@layout/bangumi_pref_timeline_pic" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

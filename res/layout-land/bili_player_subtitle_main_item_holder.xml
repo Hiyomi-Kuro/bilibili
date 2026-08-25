@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_text_color_compound_button" android:ellipsize="end" android:gravity="left|center" android:background="@color/bili_avatar_color_transparent" android:paddingLeft="36.0dp" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:maxLines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

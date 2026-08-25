@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/touch_outside" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/cheese_shape_solid_bg1_corners_8" android:focusable="true" android:clickable="true" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/T16b" android:textSize="16.0sp" android:textColor="@color/Text1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/cheese_pay_favorite_follow_title" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <TextView android:textAppearance="@style/T13" android:textSize="13.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_attention_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="1" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_attention_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_attention_check" android:background="@drawable/cheese_selector_checkbox_rect_green" android:focusable="true" android:clickable="true" android:layout_width="16.0dp" android:layout_height="16.0dp" android:checked="true" android:button="@null" android:layout_marginEnd="6.0dp" />
+            <TextView android:textAppearance="@style/T12" android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/tv_attention_intro" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="24.0dp" />
+        <TextView android:textAppearance="@style/T16" android:textSize="16.0sp" android:textColor="@color/cheese_theme_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_attention_confirm" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="10.0dp" android:text="@string/know" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    </LinearLayout>
+</FrameLayout>

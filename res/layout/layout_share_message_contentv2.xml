@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverLinearLayout android:orientation="vertical" android:id="@id/inner_layout" android:paddingTop="@dimen/margin_6" android:paddingBottom="@dimen/margin_6" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.ui.ImageSpannableTextViewCompat android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/txt_title" android:layout_width="match_parent" android:layout_marginLeft="@dimen/margin_10" android:layout_marginRight="@dimen/margin_10" android:maxLines="2" android:singleLine="false" style="@style/TextAppearance.AppCompat.FontSmall" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_4" android:layout_marginRight="@dimen/margin_10">
+        <RelativeLayout android:id="@id/thumb_container" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginRight="@dimen/margin_6">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/thumb" android:layout_width="60.0dp" android:layout_height="60.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/msg_img_default" app:roundedCornerRadius="6.0dp" />
+            <ImageView android:id="@id/ic_pic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_pic" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/ic_music" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_music_play" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ic_clip" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_margin="@dimen/margin_10" android:src="@drawable/ic_item_video_play_in_share" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.bilibili.lib.ui.ImageSpannableTextViewCompat android:textColor="@color/Ga5" android:id="@id/txt_desc" android:layout_width="match_parent" android:maxHeight="60.0dp" android:maxLines="2" android:singleLine="false" android:layout_toRightOf="@id/thumb_container" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:id="@id/txt_type" android:layout_toRightOf="@id/thumb_container" android:layout_alignBottom="@id/thumb_container" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+    </RelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/line" android:background="@color/Ga1_s" android:layout_width="match_parent" android:layout_height="0.70000005dp" android:layout_marginTop="@dimen/margin_10" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10" android:layout_marginTop="@dimen/margin_6" android:layout_marginRight="@dimen/margin_10">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/img_up" android:src="@drawable/ic_info_uploader_name" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:id="@id/txt_upname" android:layout_marginLeft="@dimen/padding_4" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+    </LinearLayout>
+</com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverLinearLayout>

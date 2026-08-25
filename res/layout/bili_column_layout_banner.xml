@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.Banner android:id="@id/banner" android:layout_width="match_parent" android:layout_height="98.0dp" android:layerType="hardware" app:aspectRadioHeight="10" app:aspectRadioWidth="32" app:colorId="@color/Pi5" app:cornerRadius="4.0dp" app:layout_spacing="@dimen/item_spacing" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bgm_list_sheet" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/handle" android:background="@drawable/bg_bgm_list_sheet_handle" android:layout_width="48.0dp" android:layout_height="4.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="44.0dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_back" android:paddingLeft="12.0dp" android:paddingRight="0.0dp" android:layout_width="48.0dp" android:layout_height="match_parent">
+            <ImageView android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_upper_back" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dp" android:textColor="#ffffffff" android:id="@id/center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <View android:background="#ff333333" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bili_editor_bgm_list_panel_bottom_margin" />
+</LinearLayout>

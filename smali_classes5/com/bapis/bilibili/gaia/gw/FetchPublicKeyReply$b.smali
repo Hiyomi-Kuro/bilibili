@@ -1,0 +1,368 @@
+.class public final Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/gaia/gw/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;",
+        "Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;",
+        ">;",
+        "Lcom/bapis/bilibili/gaia/gw/b;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$000()Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearDeadline()Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$800(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearPublicKey()Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$500(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearVersion()Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$200(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getDeadline()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->getDeadline()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    return-wide v0
+.end method
+
+.method public getPublicKey()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->getPublicKey()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getPublicKeyBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->getPublicKeyBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getVersion()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->getVersion()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getVersionBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->getVersionBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public setDeadline(J)Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1, p2}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$700(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setPublicKey(Ljava/lang/String;)Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$400(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setPublicKeyBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$600(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setVersion(Ljava/lang/String;)Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$100(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setVersionBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;->access$300(Lcom/bapis/bilibili/gaia/gw/FetchPublicKeyReply;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

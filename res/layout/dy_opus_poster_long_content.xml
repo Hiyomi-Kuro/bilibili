@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followinglist.post.OpusShareScrollContainer android:paddingBottom="45.0dp" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" app:layout_constraintBottom_toBottomOf="@id/tv_share_to" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/poster_container" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="8.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="106.0dp" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <include android:layout_gravity="bottom" android:id="@id/bottom_qr" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dy_opus_share_bottom_qr" />
+    </tv.danmaku.bili.widget.RoundRectFrameLayout>
+</com.bilibili.bplus.followinglist.post.OpusShareScrollContainer>

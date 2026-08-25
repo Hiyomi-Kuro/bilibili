@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:ellipsize="end" android:id="@id/feed_download_progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <View android:layout_gravity="center_vertical" android:id="@id/feed_download_line" android:background="@color/Ga2" android:visibility="gone" android:layout_width="0.5dp" android:layout_height="10.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.5dp" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.5dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:ellipsize="end" android:id="@id/feed_download_tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/feed_download_icon_arrow" android:visibility="gone" android:layout_width="3.0dp" android:layout_height="6.0dp" android:layout_marginLeft="3.0dp" app:scaleViewType="fitWidth" app:srcCompat="@drawable/ic_ad_feed_download_arrow" />
+</merge>

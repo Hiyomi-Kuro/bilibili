@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.room.ui.roomv3.user.honor.LiveRoomHonorTitleLayout android:id="@id/honor_title_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/honor_top_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="143.0dp" android:text="@string/live_honor_top_tips" android:layout_centerHorizontal="true" />
+    <com.bilibili.bililive.room.ui.roomv3.user.honor.LiveRoomHonorEnterLayout android:id="@id/honor_enter_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="280.0dp" />
+    <com.bilibili.bililive.room.ui.roomv3.user.honor.LiveRoomHonorBottomLayout android:id="@id/honor_bottom_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="500.0dp" />
+    <ImageView android:id="@id/honor_close" android:padding="5.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginTop="50.0dp" android:src="@drawable/live_room_honor_close" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" app:tint="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/drawer_root" android:background="@color/color_12101A" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.room.ui.roomv3.multiview.ui.LiveMultiExpendTitleView android:id="@id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/live_mv_expand_close" android:padding="4.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_close" android:layout_marginEnd="12.0dp" />
+</FrameLayout>

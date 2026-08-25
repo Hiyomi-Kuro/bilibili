@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/nav_bar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="56.0dp" app:contentInsetStart="0.0dp" app:contentInsetStartWithNavigation="0.0dp" style="?toolbarStyle">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/toolbar_close" android:background="@drawable/mweb_item_background" android:paddingLeft="11.0dp" android:paddingTop="17.0dp" android:paddingRight="11.0dp" android:paddingBottom="17.0dp" android:clickable="true" android:layout_width="36.0dp" android:layout_height="48.0dp" app:srcCompat="@drawable/ic_vector_mweb_close" />
+            <TextView android:textColor="#212121" android:gravity="center_vertical" android:id="@id/tv_toolbar_title" android:background="?selectableItemBackground" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" android:textAllCaps="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</merge>

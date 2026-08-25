@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.room.ui.roomv3.player.container.LiveRoomPlayerContainerView android:id="@id/player_biz_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

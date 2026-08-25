@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="小游戏id" android:inputType="number" android:imeOptions="actionDone" />
+    <EditText android:id="@id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="游戏gameBaseId (正整数)" android:inputType="number" android:imeOptions="actionDone" />
+    <Button android:id="@id/btn_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="查询小游戏预约信息" />
+    <Button android:id="@id/btn_book" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="预约" />
+    <Button android:id="@id/btn_check_download_counts" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="查询游戏更新及下载的数量" />
+    <Button android:id="@id/btn_add_shortcut" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="添加快捷方式" />
+    <EditText android:id="@id/text3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="channelId" android:inputType="number" android:imeOptions="actionDone" />
+    <Button android:id="@id/btn_channelIdSet" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="按钮设置channelId" />
+    <Button android:id="@id/btn_adfSet" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="按钮设置直播adf" />
+    <Button android:id="@id/btn_pre_res_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="预下载按钮" />
+    <Button android:id="@id/btn_clear_pre_res" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="清除预下载资源" />
+    <Button android:id="@id/btn_pre_download_manager" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="预下载管理页" />
+    <include android:id="@id/test_game_button" layout="@layout/biligame_fragment_test_game_button" />
+    <TextView android:id="@id/tv_pre_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11" />
+    <TextView android:id="@id/tv_cpu_hz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11" />
+</LinearLayout>

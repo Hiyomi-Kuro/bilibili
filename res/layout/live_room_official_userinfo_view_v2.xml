@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.widget.LiveAvatarView android:layout_gravity="center_vertical" android:id="@id/official_avatar" android:layout_width="16.0dp" android:layout_height="16.0dp" app:avatarSize="16.0dp" app:customAvatarFrameSize="16.0dp" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/live_daynight_text_color_white" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/official_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/live_daynight_text_color_white" android:layout_gravity="center_vertical" android:id="@id/official_follow" android:background="@drawable/live_room_official_user_info_bg_no_color" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:layout_marginStart="4.0dp" />
+</LinearLayout>

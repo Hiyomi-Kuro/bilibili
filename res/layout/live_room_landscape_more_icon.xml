@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_entrance_layout_h" android:background="@drawable/bg_live_room_new" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/more_entrance_h" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ImageView android:id="@id/red_dot" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginTop="2.5dp" android:layout_marginRight="2.0dp" android:src="@drawable/ic_red_dot_with_border_v2" android:layout_alignTop="@id/more_entrance_h" android:layout_alignRight="@id/more_entrance_h" android:contentDescription="@null" />
+</RelativeLayout>

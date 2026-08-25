@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/biligame_category_layout" android:paddingLeft="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="@color/biligame_black_AA" android:ellipsize="end" android:id="@id/biligame_count" android:layout_width="wrap_content" android:layout_height="29.0dp" android:layout_marginTop="12.0dp" android:singleLine="true" android:layout_centerVertical="true" />
+        <include android:id="@id/biligame_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="12.0dp" layout="@layout/biligame_list_filter_button" />
+        <com.bilibili.biligame.widget.segmentview.SegmentedControlView android:id="@id/biligame_category_svg_sort" android:layout_width="124.0dp" android:layout_height="29.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/biligame_filter" app:segItemColor="@color/Lb0" app:segMarginLeft="2.0dp" app:segMarginTop="3.0dp" app:segMode="Circle" app:segOuterColor="@color/biligame_gray_EBEFF5" app:segScrollEnable="false" app:segSelectedItem="0" app:segSelectedTextColor="@color/Lb5" app:segTextColor="@color/Ga5" app:segTextSize="@dimen/biligame_dip_12" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/biligame_category_game_containt" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

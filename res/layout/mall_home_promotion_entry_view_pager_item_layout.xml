@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.MallImageView2 android:id="@id/mall_home_promotion_entry_item_image" android:layout_width="match_parent" android:layout_height="match_parent" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/mall_good_info_default_cover" app:roundedCornerRadius="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

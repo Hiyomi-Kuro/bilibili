@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:id="@id/button" android:background="@drawable/shape_rect_solid_grey_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon_button" android:layout_width="16.0dp" android:layout_height="16.0dp" android:translationY="-1.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="7.0dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/divider" android:background="@color/main_Ga1_s" android:layout_width="1.0dp" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Pi5" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/text_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dp" android:singleLine="true" android:includeFontPadding="false" android:maxLength="4" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+</merge>

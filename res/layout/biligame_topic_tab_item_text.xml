@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="10.0sp" android:textColor="@color/biligame_selector_color_black_to_white" android:gravity="center" android:id="@id/tv_topic_tab_title" android:background="@drawable/biligame_selector_topic_item_tab" android:layout_width="36.0dp" android:layout_height="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

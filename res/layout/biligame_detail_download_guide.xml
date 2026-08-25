@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/game_detail_download_guide" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dp" android:layout_marginBottom="5.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Si3_u" android:gravity="center" android:id="@id/tv_guide" android:background="@drawable/biligame_detail_download_guide_bg" android:layout_width="wrap_content" android:layout_height="24.0dp" android:text="@string/biligame_detail_guide" android:translationX="-150.0dp" android:paddingStart="22.0dp" android:paddingEnd="5.0dp" />
+    </FrameLayout>
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_guide" android:layout_width="58.0dp" android:layout_height="58.0dp" app:actualImageScaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

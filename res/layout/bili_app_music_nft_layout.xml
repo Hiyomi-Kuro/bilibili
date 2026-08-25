@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/music_nft_cover_group" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="172.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/music_nft_turntable" android:layout_width="166.0dp" android:layout_height="166.0dp" app:roundedCornerRadius="83.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/music_nft_small_turntable" android:layout_width="110.0dp" android:layout_height="110.0dp" app:roundedCornerRadius="55.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/music_nft_shade_cover" android:visibility="gone" android:layout_width="75.0dp" android:layout_height="179.0dp" android:layout_marginLeft="200.0dp" android:src="@drawable/ic_music_nft_shade_cover" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/music_nft_cover" android:layout_width="172.0dp" android:layout_height="172.0dp" app:roundedCornerRadius="5.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/music_nft_pause_cover" android:background="@drawable/bg_nft_overview_music_pause_cover" android:padding="78.0dp" android:layout_width="172.0dp" android:layout_height="172.0dp" android:src="@drawable/bili_player_ctrl_play_pause" android:alpha="0.0" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/icon_more" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="12.0dp" app:imageTint="@color/Ga7" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_action_more" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/red_dot" android:layout_width="6.0dp" android:layout_height="6.0dp" android:src="@drawable/following_shape_red_dot" app:layout_constraintBottom_toTopOf="@id/icon_more" app:layout_constraintLeft_toRightOf="@id/icon_more" />
+</androidx.constraintlayout.widget.ConstraintLayout>

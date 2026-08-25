@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/navigation_top_bar_size" layout="@layout/bili_column_layout_recyclerview" />
+    <FrameLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="@dimen/navigation_top_bar_size">
+        <tv.danmaku.bili.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="40.0dp" app:nestedScrollingEnabled="false" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/more" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_expand" android:scaleType="centerInside" />
+        <com.bilibili.magicasakura.widgets.TintView android:layout_gravity="bottom" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="0.30000007dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/loading_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include layout="@layout/bili_column_layout_region_order_sort" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_bottom_above_aim" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="60.0dp" android:scaleType="centerCrop" />
+</merge>

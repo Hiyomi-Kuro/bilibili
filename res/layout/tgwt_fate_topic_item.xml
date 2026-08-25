@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_left_mask" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginEnd="10.0dp" android:layout_toStartOf="@id/ll_member_topic_container" app:srcCompat="@drawable/tgwt_left_mask_icon" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_member_topic_container" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dp" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_right_mask" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_alignBottom="@id/ll_member_topic_container" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/ll_member_topic_container" app:srcCompat="@drawable/tgwt_right_mask_icon" />
+</RelativeLayout>

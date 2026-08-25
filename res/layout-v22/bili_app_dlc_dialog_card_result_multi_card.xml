@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/dlc_result_card_top_cancel" android:padding="4.5dp" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="40.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/digital_half_screen_cancel" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/dlc_result_card_scrollview" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:id="@id/dlc_result_card_scrollview" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/dlc_result_card_top_cancel">
+        <LinearLayout android:orientation="vertical" android:id="@id/cl_dlc_card_result_mid" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linNameWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@drawable/ic_nft_card_name_bg_left" android:layout_width="60.0dp" android:layout_height="1.0dp" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#f4e5b1" android:gravity="center" android:id="@id/tvCardsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:text="@string/dlc_draw_card_result_title" android:alpha="0.8" android:layout_marginHorizontal="15.0dp" />
+                <View android:background="@drawable/ic_nft_card_name_bg_right" android:layout_width="60.0dp" android:layout_height="1.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

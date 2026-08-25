@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/game_group_material_container_view" android:background="#1b1b1b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+        <RelativeLayout android:paddingLeft="8.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/game_match_hero_image_view" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:layout_centerVertical="true" app:roundAsCircle="true" />
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/game_match_dec" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_upper_game_factory_cloud_dec" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/game_match_time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/game_match_hero_image_view" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/game_match_state_image_view" android:layout_width="60.0dp" android:layout_height="20.0dp" android:layout_marginLeft="12.0dp" android:scaleType="centerCrop" android:layout_toRightOf="@id/game_match_time_text_view" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#9499a0" android:id="@id/game_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/game_match_time_text_view" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9499a0" android:id="@id/game_match_tag_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排位" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.bilibili.upper.feat.gamefactory.views.InterceptAbleRecyclerView android:id="@id/game_match_material_horizontal_list_view" android:layout_width="wrap_content" android:layout_height="110.0dp" android:layout_marginBottom="12.0dp" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#757a81" android:layout_gravity="center" android:id="@id/game_material_tips_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:layout_marginBottom="35.0dp" android:text="仅拉取最近7天的素材" />
+</FrameLayout>

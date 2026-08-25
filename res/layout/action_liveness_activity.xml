@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextureView android:id="@id/liveness_layout_textureview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.megvii.meglive_sdk.opengl.CameraGLSurfaceView android:id="@id/liveness_layout_cameraView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_bg_color_shade" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.megvii.meglive_sdk.view.CoverView android:id="@id/livess_layout_coverview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:progress_width="@dimen/progress_width" />
+    <TextView android:textSize="14.0sp" android:textColor="#666666" android:gravity="center" android:id="@id/tv_liveness_top_tips" android:visibility="gone" android:layout_width="320.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/image_animation" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="100.0dp" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#808080" android:id="@id/tv_the_countdown" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10s" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/ll_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_megvii_load" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminateDuration="1000" android:layout_centerInParent="true" style="@style/mProgress_circle" />
+    </LinearLayout>
+    <include android:id="@id/title_bar" android:visibility="gone" layout="@layout/megvii_liveness_bar_title" />
+    <include android:id="@id/bottombar" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:layout_alignParentBottom="true" layout="@layout/megvii_liveness_bar_bottom" />
+    <LinearLayout android:id="@id/ll_action_close" android:padding="21.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_liveness_homepage_close" android:layout_width="19.0dp" android:layout_height="19.0dp" android:scaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

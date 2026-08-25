@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_gravity="bottom" android:background="@drawable/bg_card_gradient" android:layout_width="match_parent" android:layout_height="56.0dp" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="12.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Wh0_u" android:id="@id/video_duration" android:background="@drawable/shape_roundrect_black_trans" android:paddingLeft="3.5dp" android:paddingTop="2.0dp" android:paddingRight="3.5dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:shadowColor="@color/black_alpha20" android:shadowDy="1.0" android:shadowRadius="2.0" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/danmu_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:shadowColor="@color/black_alpha20" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="2.0dp" android:indeterminate="false" android:progressDrawable="@drawable/layer_list_tm_inline_player_progress" android:layout_alignParentBottom="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <ImageView android:id="@id/mute_icon" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:src="@drawable/ic_vol_mute" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

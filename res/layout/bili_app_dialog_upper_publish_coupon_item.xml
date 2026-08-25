@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/main_layout" android:background="@drawable/bg_bilib_app_dialog_publish_coupon_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="6.0dp" android:minHeight="100.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="27.0sp" android:textColor="@color/color_coupon_main" android:gravity="center" android:id="@id/tv_coupon_amount" android:layout_width="78.0dp" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="116.0dp" android:layout_marginRight="20.0dp" android:layout_centerVertical="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_coupon_main" android:ellipsize="end" android:id="@id/tv_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:lines="1" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/color_coupon_text_1" android:ellipsize="end" android:id="@id/tv_coupon_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:lines="1" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/color_coupon_text_2" android:ellipsize="end" android:id="@id/tv_coupon_requirement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="12.0dp" android:lines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_coupon_selected_mark" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="-1.0dp" android:src="@drawable/bili_app_dialog_publish_coupon_item_selected_mark" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_coupon_middle" android:layout_width="16.0dp" android:layout_height="wrap_content" android:layout_marginLeft="78.0dp" android:layout_alignLeft="@id/main_layout" android:layout_alignTop="@id/main_layout" android:layout_alignBottom="@id/main_layout">
+        <View android:background="@drawable/bg_bilib_app_dialog_publish_coupon_item_dot" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="-8.0dp" />
+        <View android:background="@drawable/line_dash_gray_vertical_for_coupon" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_weight="1.0" />
+        <View android:background="@drawable/bg_bilib_app_dialog_publish_coupon_item_dot" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginBottom="-8.0dp" />
+    </LinearLayout>
+</RelativeLayout>

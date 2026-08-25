@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/pgc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="8.0dp" android:maxLines="1" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/pgc_cover" android:layout_width="110.0dp" android:layout_height="143.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="4.0dp" app:thumbRatio="ratio_3_4" />
+            <com.bilibili.app.comm.list.widget.tag.TagView android:id="@id/channel_pgc_tags" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_alignRight="@id/pgc_cover" app:tag_ellipsisInMaxLength="true" style="@style/Widget.App.Tags.Small.Fill" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/pgc_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:maxLines="2" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/pgc_types" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:maxLines="1" android:includeFontPadding="false" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/pgc_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:maxLines="1" android:includeFontPadding="false" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/pgc_play_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

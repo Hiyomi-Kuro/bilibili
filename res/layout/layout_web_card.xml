@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/webview_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+</androidx.cardview.widget.CardView>

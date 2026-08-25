@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/Wh0" app:cardCornerRadius="12.0dp" app:cardElevation="0.0dp">
+        <com.bilibili.ad.adview.widget.AdDownloadImageViewPager android:id="@id/ad_download_vp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

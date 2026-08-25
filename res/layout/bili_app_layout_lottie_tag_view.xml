@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/cover_lottie" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="1.0dp" android:layout_marginBottom="1.0dp" android:layout_marginStart="1.0dp" app:lottie_autoPlay="true" app:lottie_fileName="bili_avatar_living_animation.json" app:lottie_loop="true" />
+    <com.bilibili.app.comm.list.widget.tag.TagView android:id="@id/cover_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tag_padding_left="2.0dp" app:tag_textColor="@color/Wh0_u" style="@style/Widget.App.Tag.Small.Fill" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

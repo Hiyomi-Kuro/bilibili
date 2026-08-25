@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.fasthybrid.uimodule.imageviewer.PinchImageView android:id="@id/image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:actualImageScaleType="fitCenter" app:failureImage="@drawable/smallapp_loading_failed" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="26.0dp" android:layout_height="26.0dp" android:indeterminateDrawable="@drawable/smallapp_ic_anim_loading" android:indeterminateDuration="200" android:indeterminateBehavior="repeat" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center" android:layout_gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="4.0dp" android:maxLines="1" android:singleLine="true" android:layout_marginStart="12.0dp" style="@style/T12" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text3" android:gravity="center" android:layout_gravity="end" android:id="@id/sort_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_marginBottom="4.0dp" android:drawableLeft="@drawable/cmt3_ic_sort_button" android:drawablePadding="2.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" style="@style/T12" />
+</FrameLayout>

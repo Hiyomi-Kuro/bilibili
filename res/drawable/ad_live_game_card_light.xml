@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="382.0dp" android:width="357.0dp" android:alpha="0.8" android:viewportWidth="357.0" android:viewportHeight="382.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ad_live_game_card_light__0" android:pathData="M194.71,80.82l81.92,57.36l-114.72,163.83l-81.92,-57.36z" android:fillAlpha="0.24" />
+</vector>

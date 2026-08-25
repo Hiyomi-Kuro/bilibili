@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/share_container" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/share_title_container" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <WebView android:id="@id/share_title_webview" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/color_gray" android:gravity="center" android:id="@id/poster_share_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="已为您生成专属分享图并保存至相册" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/share_top_button" android:background="@drawable/mall_common_share_comment_btn_bg" android:visibility="gone" android:layout_width="215.0dp" android:layout_height="40.0dp" android:layout_marginBottom="32.0dp" android:text="发表评论" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/poster_share_menu" android:paddingLeft="8.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/color_gray" android:gravity="center" android:id="@id/poster_share_cancel" android:paddingTop="24.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消" />
+</LinearLayout>

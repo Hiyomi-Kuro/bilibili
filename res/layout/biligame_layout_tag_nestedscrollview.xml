@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/biligame_strategy_tag" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="56.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@drawable/biligame_tag_text_selector" android:gravity="center" android:id="@id/biligame_strategy_all_tag" android:background="@drawable/biligame_tag_selector" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginLeft="12.0dp" android:minWidth="50.0dp" android:text="@string/biligame_all" android:layout_centerVertical="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/biligame_strategy_recyclerview_tag" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginLeft="7.0dp" android:layout_marginRight="40.0dp" android:layout_toRightOf="@id/biligame_strategy_all_tag" android:overScrollMode="never" />
+            <ImageView android:id="@id/biligame_strategy_cover" android:background="@drawable/biligame_layer_shape_gradient_expand_f5f5f5" android:paddingLeft="24.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/biligame_edit_cover" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</merge>

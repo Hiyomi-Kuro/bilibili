@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/Ga9" android:ellipsize="end" android:gravity="center_vertical" android:background="@color/Wh0" android:paddingLeft="@dimen/biligame_dip_12" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/biligame_dip_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

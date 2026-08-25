@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/submit_addr_edit_name" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <include android:id="@id/submit_addr_edit_phone" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <include android:id="@id/submit_addr_edit_area" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <include android:id="@id/submit_addr_edit_detail" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height" layout="@layout/mall_submit_edittext_item" />
+    <FrameLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height">
+        <CheckBox android:textSize="14.0dp" android:textColor="@color/Ga10" android:layout_gravity="start|center" android:id="@id/submit_addr_set_default" android:paddingLeft="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/mall_addr_edit_default_checkbox_icon" android:text="@string/mall_submit_address_set_default" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/Pi5" android:layout_gravity="end|center" android:id="@id/submit_addr_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_addr_edit_delete_text" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/order_submit_next_btn_height">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Wh0" android:gravity="center" android:layout_gravity="center" android:id="@id/submit_add_edit_ok" android:background="@drawable/mall_btn_light_bg" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/mall_ok" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle" />
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/nav_top_bar" android:overScrollMode="never" />
+    <FrameLayout android:orientation="vertical" android:id="@id/auth_login_scroll_bottom" android:background="@drawable/shape_bg_auth_scroll_to_bottom" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:gravity="center" android:layout_gravity="center" android:background="@drawable/shape_bg_auth_btn_scroll_to_bottom" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/auth_login_scroll_to_bottom" android:drawablePadding="5.0dp" android:paddingStart="16.0dp" android:paddingEnd="10.0dp" app:drawableRightCompat="@drawable/ic_spread" />
+    </FrameLayout>
+</RelativeLayout>

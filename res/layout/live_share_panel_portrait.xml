@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/live_share_container_ll" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.supermenu.core.MenuView android:id="@id/live_share_menu" android:background="@color/live_share_black_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/live_share_divider" android:background="@color/live_share_black_divider" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/live_share_cancel_tv" android:background="@color/live_share_black_bg_color" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/live_share_cancel" />
+</LinearLayout>

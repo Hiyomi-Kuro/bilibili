@@ -1,0 +1,3149 @@
+.class public final Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+.super Lcom/google/protobuf/GeneratedMessageLite;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/app/viewunite/v1/f2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;,
+        Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$c;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite<",
+        "Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;",
+        "Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;",
+        ">;",
+        "Lcom/bapis/bilibili/app/viewunite/v1/f2;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final AD_EXTRA_FIELD_NUMBER:I = 0xd
+
+.field public static final AID_FIELD_NUMBER:I = 0x1
+
+.field public static final BIZ_EXTRA_FIELD_NUMBER:I = 0xc
+
+.field public static final BVID_FIELD_NUMBER:I = 0x2
+
+.field private static final DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+.field public static final EXTRA_CONTENT_FIELD_NUMBER:I = 0x9
+
+.field public static final FROM_FIELD_NUMBER:I = 0x3
+
+.field public static final FROM_SCENE_FIELD_NUMBER:I = 0xe
+
+.field public static final FROM_SPMID_FIELD_NUMBER:I = 0x5
+
+.field private static volatile PARSER:Lcom/google/protobuf/Parser; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final PLAYER_ARGS_FIELD_NUMBER:I = 0x7
+
+.field public static final PLAY_CTRL_FIELD_NUMBER:I = 0xf
+
+.field public static final PLAY_MODE_FIELD_NUMBER:I = 0xa
+
+.field public static final RELATE_FIELD_NUMBER:I = 0xb
+
+.field public static final SESSION_ID_FIELD_NUMBER:I = 0x6
+
+.field public static final SPMID_FIELD_NUMBER:I = 0x4
+
+.field public static final TRACK_ID_FIELD_NUMBER:I = 0x8
+
+
+# instance fields
+.field private adExtra_:Ljava/lang/String;
+
+.field private aid_:J
+
+.field private bizExtra_:Ljava/lang/String;
+
+.field private bvid_:Ljava/lang/String;
+
+.field private extraContent_:Lcom/google/protobuf/MapFieldLite;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/protobuf/MapFieldLite<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fromScene_:Ljava/lang/String;
+
+.field private fromSpmid_:Ljava/lang/String;
+
+.field private from_:Ljava/lang/String;
+
+.field private playCtrl_:I
+
+.field private playMode_:Ljava/lang/String;
+
+.field private playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+.field private relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+.field private sessionId_:Ljava/lang/String;
+
+.field private spmid_:Ljava/lang/String;
+
+.field private trackId_:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 9
+    .line 10
+    invoke-static {v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->registerDefaultInstance(Ljava/lang/Class;Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {}, Lcom/google/protobuf/MapFieldLite;->emptyMapField()Lcom/google/protobuf/MapFieldLite;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 9
+    .line 10
+    const-string v0, ""
+
+    .line 11
+    .line 12
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    return-void
+.end method
+
+.method static synthetic access$000()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method static synthetic access$100(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;J)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setAid(J)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1000(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearSpmid()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1100(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setSpmidBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1200(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFromSpmid(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1300(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearFromSpmid()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1400(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFromSpmidBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1500(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setSessionId(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1600(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearSessionId()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1700(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setSessionIdBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1800(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setPlayerArgs(Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$1900(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->mergePlayerArgs(Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$200(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearAid()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2000(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearPlayerArgs()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2100(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setTrackId(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2200(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearTrackId()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2300(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setTrackIdBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2400(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)Ljava/util/Map;
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getMutableExtraContentMap()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method static synthetic access$2500(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setPlayMode(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2600(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearPlayMode()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2700(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setPlayModeBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2800(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setRelate(Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$2900(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->mergeRelate(Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$300(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setBvid(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3000(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearRelate()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3100(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setBizExtra(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3200(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearBizExtra()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3300(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setBizExtraBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3400(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setAdExtra(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3500(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearAdExtra()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3600(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setAdExtraBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3700(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFromScene(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3800(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearFromScene()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$3900(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFromSceneBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$400(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearBvid()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$4000(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setPlayCtrlValue(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$4100(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/bapis/bilibili/playershared/PlayCtrl;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setPlayCtrl(Lcom/bapis/bilibili/playershared/PlayCtrl;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$4200(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearPlayCtrl()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$500(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setBvidBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$600(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFrom(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$700(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->clearFrom()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$800(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setFromBytes(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic access$900(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->setSpmid(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearAdExtra()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getAdExtra()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearAid()V
+    .locals 2
+
+    .line 1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    .line 3
+    iput-wide v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->aid_:J
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method private clearBizExtra()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getBizExtra()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearBvid()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getBvid()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearFrom()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getFrom()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearFromScene()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getFromScene()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearFromSpmid()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getFromSpmid()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearPlayCtrl()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playCtrl_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearPlayMode()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getPlayMode()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearPlayerArgs()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearRelate()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearSessionId()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getSessionId()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearSpmid()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getSpmid()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method private clearTrackId()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getTrackId()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private getMutableExtraContentMap()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetMutableExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method private internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/MapFieldLite<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private internalGetMutableExtraContent()Lcom/google/protobuf/MapFieldLite;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/MapFieldLite<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/google/protobuf/MapFieldLite;->isMutable()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lcom/google/protobuf/MapFieldLite;->mutableCopy()Lcom/google/protobuf/MapFieldLite;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->extraContent_:Lcom/google/protobuf/MapFieldLite;
+
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method private mergePlayerArgs(Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;->getDefaultInstance()Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;->newBuilder(Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->mergeFrom(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->buildPartial()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 36
+    .line 37
+    :goto_0
+    return-void
+.end method
+
+.method private mergeRelate(Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/Relate;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/bapis/bilibili/app/viewunite/v1/Relate;->newBuilder(Lcom/bapis/bilibili/app/viewunite/v1/Relate;)Lcom/bapis/bilibili/app/viewunite/v1/Relate$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->mergeFrom(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/bapis/bilibili/app/viewunite/v1/Relate$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->buildPartial()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 36
+    .line 37
+    :goto_0
+    return-void
+.end method
+
+.method public static newBuilder()Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;
+    .locals 1
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 1
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;
+    .locals 1
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 1
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 3
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 4
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 9
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 10
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 7
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 8
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 1
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 5
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[B)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 6
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    return-object p0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser<",
+            "Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lcom/google/protobuf/Parser;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method private setAdExtra(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setAdExtraBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setAid(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->aid_:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setBizExtra(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setBizExtraBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setBvid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setBvidBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setFrom(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setFromBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setFromScene(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setFromSceneBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setFromSpmid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setFromSpmidBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setPlayCtrl(Lcom/bapis/bilibili/playershared/PlayCtrl;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lcom/bapis/bilibili/playershared/PlayCtrl;->getNumber()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    iput p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playCtrl_:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private setPlayCtrlValue(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playCtrl_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setPlayMode(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setPlayModeBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setPlayerArgs(Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setRelate(Lcom/bapis/bilibili/app/viewunite/v1/Relate;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setSessionId(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setSessionIdBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setSpmid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setSpmidBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setTrackId(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method private setTrackIdBytes(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lcom/google/protobuf/AbstractMessageLite;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iput-object p1, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public containsExtraContent(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    return p1
+.end method
+
+.method protected final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$MethodToInvoke;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    sget-object p2, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$a;->$SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke:[I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    aget p1, p2, p1
+
+    .line 8
+    .line 9
+    const/4 p2, 0x1
+
+    .line 10
+    const/4 p3, 0x0
+
+    .line 11
+    packed-switch p1, :pswitch_data_0
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 15
+    .line 16
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    throw p1
+
+    .line 20
+    :pswitch_0
+    return-object p3
+
+    .line 21
+    :pswitch_1
+    invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    return-object p1
+
+    .line 26
+    :pswitch_2
+    sget-object p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 27
+    .line 28
+    if-nez p1, :cond_1
+
+    .line 29
+    .line 30
+    const-class p2, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 31
+    .line 32
+    monitor-enter p2
+
+    .line 33
+    :try_start_0
+    sget-object p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 34
+    .line 35
+    if-nez p1, :cond_0
+
+    .line 36
+    .line 37
+    new-instance p1, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;
+
+    .line 38
+    .line 39
+    sget-object p3, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 40
+    .line 41
+    invoke-direct {p1, p3}, Lcom/google/protobuf/GeneratedMessageLite$DefaultInstanceBasedParser;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :catchall_0
+    move-exception p1
+
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_0
+    :goto_0
+    monitor-exit p2
+
+    .line 50
+    goto :goto_2
+
+    .line 51
+    :goto_1
+    monitor-exit p2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 52
+    throw p1
+
+    .line 53
+    :cond_1
+    :goto_2
+    return-object p1
+
+    .line 54
+    :pswitch_3
+    sget-object p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 55
+    .line 56
+    return-object p1
+
+    .line 57
+    :pswitch_4
+    const/16 p1, 0x10
+
+    .line 58
+    .line 59
+    new-array p1, p1, [Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    const/4 p3, 0x0
+
+    .line 62
+    const-string v0, "aid_"
+
+    .line 63
+    .line 64
+    aput-object v0, p1, p3
+
+    .line 65
+    .line 66
+    const-string p3, "bvid_"
+
+    .line 67
+    .line 68
+    aput-object p3, p1, p2
+
+    .line 69
+    .line 70
+    const/4 p2, 0x2
+
+    .line 71
+    const-string p3, "from_"
+
+    .line 72
+    .line 73
+    aput-object p3, p1, p2
+
+    .line 74
+    .line 75
+    const/4 p2, 0x3
+
+    .line 76
+    const-string p3, "spmid_"
+
+    .line 77
+    .line 78
+    aput-object p3, p1, p2
+
+    .line 79
+    .line 80
+    const/4 p2, 0x4
+
+    .line 81
+    const-string p3, "fromSpmid_"
+
+    .line 82
+    .line 83
+    aput-object p3, p1, p2
+
+    .line 84
+    .line 85
+    const/4 p2, 0x5
+
+    .line 86
+    const-string p3, "sessionId_"
+
+    .line 87
+    .line 88
+    aput-object p3, p1, p2
+
+    .line 89
+    .line 90
+    const/4 p2, 0x6
+
+    .line 91
+    const-string p3, "playerArgs_"
+
+    .line 92
+    .line 93
+    aput-object p3, p1, p2
+
+    .line 94
+    .line 95
+    const/4 p2, 0x7
+
+    .line 96
+    const-string p3, "trackId_"
+
+    .line 97
+    .line 98
+    aput-object p3, p1, p2
+
+    .line 99
+    .line 100
+    const/16 p2, 0x8
+
+    .line 101
+    .line 102
+    const-string p3, "extraContent_"
+
+    .line 103
+    .line 104
+    aput-object p3, p1, p2
+
+    .line 105
+    .line 106
+    const/16 p2, 0x9
+
+    .line 107
+    .line 108
+    sget-object p3, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$c;->defaultEntry:Lcom/google/protobuf/MapEntryLite;
+
+    .line 109
+    .line 110
+    aput-object p3, p1, p2
+
+    .line 111
+    .line 112
+    const/16 p2, 0xa
+
+    .line 113
+    .line 114
+    const-string p3, "playMode_"
+
+    .line 115
+    .line 116
+    aput-object p3, p1, p2
+
+    .line 117
+    .line 118
+    const/16 p2, 0xb
+
+    .line 119
+    .line 120
+    const-string p3, "relate_"
+
+    .line 121
+    .line 122
+    aput-object p3, p1, p2
+
+    .line 123
+    .line 124
+    const/16 p2, 0xc
+
+    .line 125
+    .line 126
+    const-string p3, "bizExtra_"
+
+    .line 127
+    .line 128
+    aput-object p3, p1, p2
+
+    .line 129
+    .line 130
+    const/16 p2, 0xd
+
+    .line 131
+    .line 132
+    const-string p3, "adExtra_"
+
+    .line 133
+    .line 134
+    aput-object p3, p1, p2
+
+    .line 135
+    .line 136
+    const/16 p2, 0xe
+
+    .line 137
+    .line 138
+    const-string p3, "fromScene_"
+
+    .line 139
+    .line 140
+    aput-object p3, p1, p2
+
+    .line 141
+    .line 142
+    const/16 p2, 0xf
+
+    .line 143
+    .line 144
+    const-string p3, "playCtrl_"
+
+    .line 145
+    .line 146
+    aput-object p3, p1, p2
+
+    .line 147
+    .line 148
+    const-string p2, "\u0000\u000f\u0000\u0000\u0001\u000f\u000f\u0001\u0000\u0000\u0001\u0002\u0002\u0208\u0003\u0208\u0004\u0208\u0005\u0208\u0006\u0208\u0007\t\u0008\u0208\t2\n\u0208\u000b\t\u000c\u0208\r\u0208\u000e\u0208\u000f\u000c"
+
+    .line 149
+    .line 150
+    sget-object p3, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->DEFAULT_INSTANCE:Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 151
+    .line 152
+    invoke-static {p3, p2, p1}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/MessageLite;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object p1
+
+    .line 156
+    return-object p1
+
+    .line 157
+    :pswitch_5
+    new-instance p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;
+
+    .line 158
+    .line 159
+    invoke-direct {p1, p3}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$b;-><init>(Lcom/bapis/bilibili/app/viewunite/v1/ViewReq$a;)V
+
+    .line 160
+    .line 161
+    .line 162
+    return-object p1
+
+    .line 163
+    :pswitch_6
+    new-instance p1, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;
+
+    .line 164
+    .line 165
+    invoke-direct {p1}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;-><init>()V
+
+    .line 166
+    .line 167
+    .line 168
+    return-object p1
+
+    .line 169
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public getAdExtra()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getAdExtraBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->adExtra_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getAid()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->aid_:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public getBizExtra()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getBizExtraBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bizExtra_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getBvid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getBvidBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->bvid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getExtraContent()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->getExtraContentMap()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public getExtraContentCount()I
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->size()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getExtraContentMap()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getExtraContentOrDefault(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v1
+
+    .line 12
+    if-eqz v1, :cond_0
+
+    .line 13
+    .line 14
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    move-object p2, p1
+
+    .line 19
+    check-cast p2, Ljava/lang/String;
+
+    .line 20
+    .line 21
+    :cond_0
+    return-object p2
+.end method
+
+.method public getExtraContentOrThrow(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->internalGetExtraContent()Lcom/google/protobuf/MapFieldLite;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v1
+
+    .line 12
+    if-eqz v1, :cond_0
+
+    .line 13
+    .line 14
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    check-cast p1, Ljava/lang/String;
+
+    .line 19
+    .line 20
+    return-object p1
+
+    .line 21
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 22
+    .line 23
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    .line 24
+    .line 25
+    .line 26
+    throw p1
+.end method
+
+.method public getFrom()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getFromBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->from_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getFromScene()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getFromSceneBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromScene_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getFromSpmid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getFromSpmidBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->fromSpmid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getPlayCtrl()Lcom/bapis/bilibili/playershared/PlayCtrl;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playCtrl_:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bapis/bilibili/playershared/PlayCtrl;->forNumber(I)Lcom/bapis/bilibili/playershared/PlayCtrl;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Lcom/bapis/bilibili/playershared/PlayCtrl;->UNRECOGNIZED:Lcom/bapis/bilibili/playershared/PlayCtrl;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-object v0
+.end method
+
+.method public getPlayCtrlValue()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playCtrl_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getPlayMode()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getPlayModeBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playMode_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getPlayerArgs()Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;->getDefaultInstance()Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getRelate()Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/bapis/bilibili/app/viewunite/v1/Relate;->getDefaultInstance()Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getSessionId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSessionIdBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->sessionId_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getSpmid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSpmidBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->spmid_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getTrackId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getTrackIdBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->trackId_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public hasPlayerArgs()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->playerArgs_:Lcom/bapis/bilibili/app/archive/middleware/v1/PlayerArgs;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 8
+    :goto_0
+    return v0
+.end method
+
+.method public hasRelate()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bapis/bilibili/app/viewunite/v1/ViewReq;->relate_:Lcom/bapis/bilibili/app/viewunite/v1/Relate;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 8
+    :goto_0
+    return v0
+.end method

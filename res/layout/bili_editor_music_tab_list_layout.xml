@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="#80ffffff" android:gravity="center" android:id="@id/editor_music_export_local_btn" android:background="@drawable/bg_editor_music_export_course" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="12.0sp" android:layout_marginRight="12.0dp" android:text="@string/video_editor_music_select_from_file" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/editor_music_tab_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#757a81" android:gravity="center" android:id="@id/editor_music_no_music_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/video_editor_music_no_fav" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/editor_music_empty_layout" android:background="#1b1b1b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0sp" android:textColor="#757a81" android:gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="@string/video_editor_music_no_local_info" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/editor_music_refresh" android:background="@drawable/bg_editor_music_list_refresh" android:layout_width="114.0dp" android:layout_height="30.0dp" android:layout_marginTop="16.0dp" android:text="@string/video_editor_music_select_from_file" />
+    </LinearLayout>
+</LinearLayout>

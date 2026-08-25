@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Ga0_s" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="49.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="16.0dp" android:layout_marginEnd="16.0dp" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/dy_text" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

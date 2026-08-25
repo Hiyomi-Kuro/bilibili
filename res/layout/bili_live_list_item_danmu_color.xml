@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="32.0dp" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.room.ui.common.input.danmusetting.DanmuColorView android:id="@id/color_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_centerInParent="true" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/check_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_centerInParent="true" />
+</RelativeLayout>

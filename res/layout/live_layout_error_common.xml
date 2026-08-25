@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="174.0dp" android:layout_height="107.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/live_bg_h5_tab_error" android:layout_above="@id/errorTip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_white_kit" android:id="@id/errorTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_load_failed_tip" android:layout_centerInParent="true" android:alpha="0.4" />
+    <TextView android:textColor="@color/live_s10_blue" android:gravity="center" android:id="@id/refreshText" android:background="@drawable/bg_rect_gold" android:paddingLeft="14.0dp" android:paddingTop="4.0dp" android:paddingRight="14.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/live_card_retry" android:layout_below="@id/errorTip" android:layout_centerInParent="true" />
+</RelativeLayout>

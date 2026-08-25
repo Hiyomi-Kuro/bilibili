@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/scroll_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <tv.danmaku.bili.widget.Banner android:id="@id/tag_banner" android:layout_width="match_parent" android:layout_height="98.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layerType="hardware" app:aspectRadioHeight="10" app:aspectRadioWidth="32" app:colorId="@color/theme_color_primary" app:cornerRadius="4.0dp" app:layout_spacing="@dimen/item_spacing" />
+        <com.bilibili.bililive.videoliveplayer.ui.widget.LiveActivityCardViewFlipper android:id="@id/flipper" android:background="@drawable/live_shape_home_activity_card_bg_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:inAnimation="@anim/live_home_activity_card_anim_in" android:outAnimation="@anim/live_home_activity_card_anim_out" android:flipInterval="4000" android:autoStart="false" />
+        <include android:id="@id/recommend_head" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_live_layout_home_recom_head" />
+        <LinearLayout android:id="@id/layout_rec" android:paddingLeft="12.0dp" android:paddingRight="11.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.bililive.videoliveplayer.ui.widget.LiveAreaRecView android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:layout_weight="1.0" />
+            <com.bilibili.bililive.videoliveplayer.ui.widget.LiveAreaRecView android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:layout_weight="1.0" />
+            <com.bilibili.bililive.videoliveplayer.ui.widget.LiveAreaRecView android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/v_placeholder" android:layout_width="match_parent" android:layout_height="1.0px" />
+</LinearLayout>

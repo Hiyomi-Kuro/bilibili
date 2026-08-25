@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/capture_permission_back" android:background="@drawable/ic_nav_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="32.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/capture_permission_msg" android:layout_width="241.0dp" android:layout_height="wrap_content" android:text="@string/fragment_capture_permission_msg" android:layout_centerInParent="true" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/capture_permission_title" android:layout_width="120.0dp" android:layout_height="28.0dp" android:layout_marginBottom="48.0dp" android:text="@string/fragment_capture_permission_tip2" android:layout_above="@id/capture_permission_msg" android:layout_centerHorizontal="true" />
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/capture_permission_button" android:background="@drawable/capture_dialog_4radio_background_ping" android:layout_width="141.0dp" android:layout_height="44.0dp" android:layout_marginTop="72.0dp" android:text="@string/fragment_capture_permission_tip" android:layout_below="@id/capture_permission_msg" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/bilibili/ship/theseus/united/page/popupwindow/c;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnScrollChangedListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/bilibili/ship/theseus/united/page/popupwindow/e;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/bilibili/ship/theseus/united/page/popupwindow/e;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/ship/theseus/united/page/popupwindow/c;->a:Lcom/bilibili/ship/theseus/united/page/popupwindow/e;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onScrollChanged()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/ship/theseus/united/page/popupwindow/c;->a:Lcom/bilibili/ship/theseus/united/page/popupwindow/e;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/bilibili/ship/theseus/united/page/popupwindow/e;->b(Lcom/bilibili/ship/theseus/united/page/popupwindow/e;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

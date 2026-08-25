@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_result_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/pager_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/top_appbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <FrameLayout android:id="@id/container_strip" android:layout_width="match_parent" android:layout_height="?filterTabBarSize" app:layout_scrollFlags="scroll|enterAlways">
+                <com.bilibili.search2.result.AppBarTextGradientOverlay android:id="@id/tabs_container" android:layout_width="match_parent" android:layout_height="?filterTabBarSize">
+                    <com.bilibili.search2.widget.AlignLeftAndRightPagerSlidingTabStrip android:id="@id/tabs" android:background="@null" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?filterTabBarSize" app:elevation="0.0dp" app:pstsIndicatorMarginBottom="4.0dp" app:pstsIndicatorRound="2.0dp" app:pstsMaxWidth="430.0dp" app:pstsMinWidth="320.0dp" app:pstsTabLayoutPaddingLeftAndRight="12.0dp" app:pstsTabPaddingLeftRight="14.0dp" style="@style/Widget.App.SlidingTab.Top" />
+                </com.bilibili.search2.result.AppBarTextGradientOverlay>
+                <FrameLayout android:layout_gravity="end|center" android:id="@id/filter_icon_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/filter_icon" android:background="@drawable/bg_search_filter_gradient" android:paddingLeft="28.0dp" android:paddingRight="16.0dp" android:layout_width="64.0dp" android:layout_height="?filterTabBarSize" android:src="@drawable/bili_search_ic_filter" android:tint="@color/Ga9" />
+                </FrameLayout>
+            </FrameLayout>
+            <View android:id="@id/line" android:background="@color/search_result_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+        <com.bilibili.search2.widget.SearchViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="top" android:id="@id/loading_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.app.comm.list.widget.SearchLoadingImageView android:id="@id/loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.5dp" android:layout_marginRight="47.5dp" android:animateLayoutChanges="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0dp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/retry" android:background="@drawable/shape_button_solid_pink_corner_40" android:visibility="gone" android:layout_width="96.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:text="@string/search_try_again" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/loading" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

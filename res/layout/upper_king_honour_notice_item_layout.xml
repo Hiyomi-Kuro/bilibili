@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/upper_king_honour_battle_notice_layout" android:background="#072748" android:layout_width="match_parent" android:layout_height="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ic_upper_king_honour_generate_notice" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="12.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/upper_king_honour_battle_notice" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginLeft="6.0dp" />
+</LinearLayout>

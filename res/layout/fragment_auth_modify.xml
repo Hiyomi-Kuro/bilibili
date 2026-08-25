@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:background="@drawable/drawable_info_real" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/modify_list" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_room_roundrect_solid_white_8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="260.0dp" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/theme_color_secondary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:text="@string/live_room_lottery_win_tips" />
+        <ImageView android:layout_gravity="end" android:id="@id/action_close" android:padding="4.0dp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/ic_close_gray" android:layout_marginEnd="6.0dp" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dp">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/bili_live_bg_starlight_v" android:layout_width="203.0dp" android:layout_height="51.0dp" android:layout_marginTop="16.0dp" />
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/bili_live_bg_starlight_bottom" android:layout_width="186.0dp" android:layout_height="40.0dp" android:layout_marginTop="73.0dp" />
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center_horizontal" android:id="@id/award_icon" android:layout_width="92.0dp" android:layout_height="92.0dp" android:scaleType="centerCrop" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/live_daynight_text_color_gray" android:layout_gravity="center_horizontal" android:id="@id/leading_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:maxLines="1" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/live_daynight_text_color_black_light_1" android:layout_gravity="center_horizontal" android:id="@id/award_name_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/live_daynight_text_color_gray" android:layout_gravity="center_horizontal" android:id="@id/interactive_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:layout_marginBottom="10.0dp" android:maxLines="1" />
+</LinearLayout>

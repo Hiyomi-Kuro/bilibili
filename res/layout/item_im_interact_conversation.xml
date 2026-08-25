@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout android:layout_width="match_parent" android:layout_height="68.0dp" app:foreground="@drawable/selectable_item_fg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/layout_root" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="68.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverLinearLayout android:id="@id/report_show_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/layout_avatar" android:layout_width="60.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/avatar_layout" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_centerHorizontal="true">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_im_reply_me" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/Ga9" android:id="@id/name" android:layout_width="240.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/im_reply_me" android:singleLine="true" android:layout_toRightOf="@id/layout_avatar" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_tiny" android:textColor="@color/gray_dark" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_not_notify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/ic_not_notify" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.bilibili.bplus.im.widget.ImRedDotView android:id="@id/dot" android:background="@drawable/shape_color_red_oval" android:visibility="gone" android:layout_width="7.0dp" android:layout_height="7.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="16.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="72.0dp" android:layout_alignParentBottom="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout>

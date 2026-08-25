@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_layout" android:tag="layout/bangumi_player_switch_dubbing_dialog_0" android:background="@color/Ga0_s" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/player_dubbing_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/line_cancel" layout="@layout/bangumi_player_switch_dubbing_layout" />
+    <View android:id="@id/line_cancel" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintTop_toTopOf="@id/tv_dubbing_cancel" />
+    <TextView android:textAppearance="@style/TextAppearance.App.Headline" android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/tv_dubbing_cancel" android:background="@color/Ga0_s" android:layout_width="match_parent" android:layout_height="48.0dp" android:text="@string/ogv_cancel" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

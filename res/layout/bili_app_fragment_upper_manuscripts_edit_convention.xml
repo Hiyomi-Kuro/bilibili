@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_upper_convention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <CheckBox android:id="@id/cb_upper_convention" android:background="@drawable/upper_selector_square_checked_v4" android:layout_width="16.0dp" android:layout_height="16.0dp" android:button="@null" />
+        <TextView android:textSize="@dimen/upper_text_13" android:textColor="@color/upper_txt_color_one" android:id="@id/tv_upper_convention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:includeFontPadding="false" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

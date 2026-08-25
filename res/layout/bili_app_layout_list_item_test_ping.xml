@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.Medium" android:id="@id/host_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.App.Medium" android:id="@id/host_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/host_name" />
+    <TextView android:textAppearance="@style/TextAppearance.App.Medium" android:id="@id/resolved_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/spent_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/host_ip" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/speed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/spent_time" android:layout_alignParentLeft="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/container" android:tag="layout/bangumi_databind_collection_cards_fragment_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" app:cardBackgroundColor="@color/Wh0" app:cardCornerRadius="4.0dp" app:cardElevation="1.0dp" app:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/coverIV" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="150.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" app:scaleViewType="fitNone" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="8.0dp" android:maxLines="2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/coverIV" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

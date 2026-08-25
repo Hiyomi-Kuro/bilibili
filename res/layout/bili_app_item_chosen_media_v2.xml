@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/chosen_item_root" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.ui.SquareSimpleDraweeView android:id="@id/sdv_cover" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_centerInParent="true" app:fadeDuration="0" app:failureImage="@drawable/ic_editor_placeholder_default" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="4.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/chosen_item_duration_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dp" android:layout_alignParentStart="true" />
+    <View android:id="@id/chosen_item_delete_scope_view" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/chosen_item_delete_iv" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_uper_close" android:layout_alignParentStart="true" />
+    <View android:id="@id/view_overlay" android:background="@color/upper_picker_chosen_container_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

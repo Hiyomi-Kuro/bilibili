@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/id_feeds_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/mall_home_v3_recycler_view_horizontal_margin" android:layout_marginRight="@dimen/mall_home_v3_recycler_view_horizontal_margin" />
+    <include android:id="@id/id_feeds_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/mall_tips_view_v2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/bili_app_layout_comment2_primary_comment_reply_region_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.comm.comment2.widget.FakeRecyclerView android:orientation="vertical" android:id="@id/replies_recycle_view" android:background="@drawable/comment_shape_roundrect_secondary_solid_gray" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="none" />
+</FrameLayout>

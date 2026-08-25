@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/id_vs_config_view_layout" android:layout="@layout/mall_web_config_view_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tips_default_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mall.ui.widget.MallImageView android:layout_gravity="center_horizontal" android:id="@id/tips_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:src="@drawable/img_holder_error_style1" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:layout_gravity="center_horizontal" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/mall_server_error" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga5" android:layout_gravity="center_horizontal" android:id="@id/tips_extend_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/mall_server_error" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tips_btn" android:background="@drawable/mall_tips_btn_bg" android:layout_width="150.0dp" android:layout_height="40.0dp" android:layout_marginTop="40.0dp" android:text="@string/mall_tipsview_retry" />
+    </LinearLayout>
+</FrameLayout>

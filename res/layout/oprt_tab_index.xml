@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:contentInsetStart="0.0dp" app:elevation="0.0dp" style="?toolbarStyle" />
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:textAppearance="@style/TextAppearance.App.SubTab" android:id="@id/tabs" android:background="@null" android:layout_width="wrap_content" android:layout_height="36.0dp" app:elevation="0.0dp" app:pstsIndicatorColor="@color/theme_color_secondary" app:pstsIndicatorHeight="2.0dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="1.0dp" app:pstsTabPaddingLeftRight="16.0dp" app:pstsTextAllCaps="false" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="center" android:id="@id/empty_state_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

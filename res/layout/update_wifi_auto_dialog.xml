@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/update_dialog_background" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/update_dialog_title_color" android:gravity="center" android:id="@id/update_tv_title" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="@string/update_available_apk_title" />
+        <ScrollView android:paddingBottom="7.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/update_dialog_text_color" android:id="@id/update_tv_wifi_available_apk_hint" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/update_available_apk_hint" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/update_dialog_text_color" android:id="@id/update_tv_content_hint" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/update_content_title" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/update_dialog_text_color" android:id="@id/update_tv_content_text" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+            </LinearLayout>
+        </ScrollView>
+        <tv.danmaku.bili.update.weiget.TintCheckBox android:textSize="15.0sp" android:textColor="@color/update_dialog_text_color" android:id="@id/update_cbx_close_wifi_download" android:layout_width="match_parent" android:layout_height="36.0dp" android:text="@string/update_not_use_wifi_auto" android:layout_marginStart="-5.0dp" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="7.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/update_confirm_btn_text" android:gravity="center" android:id="@id/update_btn_confirm" android:background="@color/update_pink" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="34.0dp" android:text="@string/update_install_now" android:singleLine="true" style="?android:borderlessButtonStyle" />
+            <Button android:textColor="@color/update_cancel_btn_text" android:gravity="center" android:id="@id/update_btn_cancel" android:background="@drawable/update_dialog_cancel_button" android:padding="8.0dp" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="34.0dp" android:layout_marginTop="12.0dp" android:text="@string/update_not_install_now" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

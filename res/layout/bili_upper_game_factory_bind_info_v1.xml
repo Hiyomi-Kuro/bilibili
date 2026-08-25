@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/game_bind_info_container_view" android:layout_width="match_parent" android:layout_height="148.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/game_picture_image_view" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginTop="10.0dp" android:scaleType="centerCrop" app:roundedCornerRadius="8.0dp" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/game_role_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/game_account_bind_text_view" android:background="@drawable/bg_upper_game_factory_account_bind" android:paddingLeft="10.0dp" android:paddingTop="4.0dp" android:paddingRight="10.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    </LinearLayout>
+</FrameLayout>

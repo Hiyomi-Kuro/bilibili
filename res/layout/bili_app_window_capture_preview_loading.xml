@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/capture_pop_window_black_r8" android:layout_width="172.0dp" android:layout_height="146.0dp" android:layout_centerInParent="true" android:alpha="0.8">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="29.0dp" android:layout_height="26.0dp" android:layout_marginTop="18.5dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_text_99FFFFFF" android:gravity="center_horizontal" android:id="@id/capture_loading_tip" android:layout_width="120.0dp" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_white" android:gravity="center" android:id="@id/capture_loading_confirm_delete_text" android:background="@drawable/upper_editor_shape_round_white" android:layout_width="56.0dp" android:layout_height="28.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="16.0dp" android:text="@string/upper_cancel" />
+    </LinearLayout>
+</RelativeLayout>

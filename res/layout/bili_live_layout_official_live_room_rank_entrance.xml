@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher android:id="@id/function_view_switcher" android:layout_width="wrap_content" android:layout_height="22.0dp" android:inAnimation="@anim/anim_rank_switcher_in" android:outAnimation="@anim/anim_rank_switcher_out" android:autoStart="false" />
+</merge>

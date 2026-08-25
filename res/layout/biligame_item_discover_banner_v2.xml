@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.biligame.widget.Banner android:layout_width="match_parent" android:layout_height="wrap_content" android:layerType="hardware" app:aspectRadioHeight="140" app:aspectRadioWidth="320" app:biligame_banner_indicator_colorId="@color/Wh0_u" app:biligame_banner_indicator_colorNoSelectId="@color/biligame_gray_F2F4F6_60" app:biligame_banner_indicator_line_width="12.0dp" app:biligame_banner_indicator_offset="8.0dp" app:biligame_banner_indicator_radius="3.0dp" app:layout_spacing="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

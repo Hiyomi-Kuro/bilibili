@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/biligame_dip_9" android:text="@string/biligame_guess_like" app:layout_constraintEnd_toStartOf="@id/change" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Biligame.TextView.DownloadMgr.ItemTitle.v2" />
+    <TextView android:id="@id/change" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/biligame_change_it" android:drawablePadding="@dimen/biligame_dip_4" app:drawableLeftCompat="@drawable/biligame_refresh" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/title" style="@style/Biligame.TextView.DownloadMgr.ItemSub" />
+</androidx.constraintlayout.widget.ConstraintLayout>

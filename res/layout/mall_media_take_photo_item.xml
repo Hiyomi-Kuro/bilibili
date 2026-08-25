@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.opd.app.bizcommon.imageselector.widget.SquareRelativeLayout android:gravity="center" android:id="@id/media_layout" android:background="#212121" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="100.0dp" android:minHeight="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/media_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_media_ic_camera" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</com.bilibili.opd.app.bizcommon.imageselector.widget.SquareRelativeLayout>

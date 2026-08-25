@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_live_room_official_program_list_shadow" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="22.0dp" android:paddingStart="8.0dp" android:paddingEnd="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="36.0dp" android:layout_height="12.0dp" android:src="@drawable/bili_live_ic_official_playlist" />
+    <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/bili_live_ic_official_arrow" android:layout_marginStart="2.0dp" />
+</LinearLayout>

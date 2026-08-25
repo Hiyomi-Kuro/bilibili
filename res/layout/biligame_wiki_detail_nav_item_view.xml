@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/biligame_wiki_nav_bg" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/tv_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/biligame_dip_20" android:layout_weight="1.0" />
+    <com.bilibili.biligame.iconfont.IconFontTextView android:textSize="16.0sp" android:textColor="@color/Ga3" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/biligame_dip_10" android:text="@string/ic_gc_arrow_right_light" />
+</LinearLayout>

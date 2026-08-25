@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.column.ui.manager.ColumnManagerFilterView android:id="@id/manager_top" android:layout_width="match_parent" android:layout_height="40.0dp" />
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_notice" android:background="@color/Pay_yellow_thin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:src="@drawable/column_icon_notice" app:imageTint="@color/Text_notice" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text_notice" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_notice" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/T14" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_notify_close" android:paddingLeft="10.0dp" android:paddingTop="14.0dp" android:paddingRight="16.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_cancel_icon" app:imageTint="@color/Text_notice" />
+        </LinearLayout>
+        <include android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bili_column_layout_recyclerview" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:background="@drawable/biligame_custom_category_empty" android:layout_width="match_parent" android:layout_height="74.0dp" android:text="@string/biligame_custom_category_add"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inner_layout" android:background="@drawable/bg_share_message_inner" android:layout_width="wrap_content" android:layout_height="92.0dp" android:layout_margin="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/thumb" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="10.0dp" android:layout_centerVertical="true" app:actualImageScaleType="centerCrop" />
+    <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/live_label" android:background="@drawable/shape_roundrect_corner7_theme" android:layout_width="30.0dp" android:layout_height="15.0dp" android:layout_marginRight="2.0dp" android:layout_marginBottom="2.0dp" android:text="·live" android:layout_alignRight="@id/thumb" android:layout_alignBottom="@id/thumb" />
+    <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="12.0dp" android:maxLines="3" android:layout_toRightOf="@id/thumb" android:layout_alignTop="@id/thumb" />
+</RelativeLayout>

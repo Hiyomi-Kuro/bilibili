@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="true" android:key="@string/pref_key_group_like" android:defaultValue="0" app:radioDefaultValue="0" app:radioEntries="@array/pref_messages_like_entries" app:radioEntryValues="@array/pref_messages_like_entryValues" />
+</PreferenceScreen>

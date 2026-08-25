@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/main_content" android:paddingLeft="12.0dp" android:paddingTop="16.0dp" android:paddingRight="12.0dp" android:paddingBottom="16.0dp" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/column_appeal_fmt_title" style="@style/TextAppearance.App.Medium" />
+                <tv.danmaku.bili.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:id="@id/title1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/column_appeal_desc" style="@style/TextAppearance.App.Medium" />
+                <com.bilibili.column.ui.widget.ScrollableEditText android:enabled="true" android:textSize="13.0sp" android:gravity="start|top" android:id="@id/edit" android:background="@drawable/shape_rect_gray_with_stroke" android:paddingLeft="16.0dp" android:paddingTop="8.0dp" android:paddingRight="16.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxHeight="90.0dp" android:minHeight="56.0dp" android:hint="@string/column_edit_hint" android:maxLength="400" />
+                <FrameLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+                <com.bilibili.magicasakura.widgets.TintButton android:enabled="false" android:textSize="@dimen/text_size_xlarge" android:textColor="@android:color/white" android:id="@id/submit" android:background="@drawable/selector_button_solid_pink_disable_gray_lighter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:minHeight="40.0dp" android:text="@string/column_appeal_submit" />
+            </LinearLayout>
+            <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

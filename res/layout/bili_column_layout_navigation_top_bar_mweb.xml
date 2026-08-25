@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.column.ui.upper.MWebToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?actionBarSize">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/toolbar_close" android:background="@drawable/column_mweb_item_background" android:paddingLeft="11.0dp" android:paddingTop="17.0dp" android:paddingRight="11.0dp" android:paddingBottom="17.0dp" android:layout_width="36.0dp" android:layout_height="48.0dp" app:imageTint="@color/theme_color_primary_tr_icon" app:srcCompat="@drawable/column_vector_mweb_close" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/theme_color_primary_tr_title" android:gravity="center_vertical" android:id="@id/tv_toolbar_title" android:background="?selectableItemBackground" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:textAllCaps="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_primary_tr_title" android:gravity="center_vertical" android:id="@id/tv_toolbar_draft" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12.0dp" android:text="@string/column_edit_toolbar_draft" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/share" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:src="@drawable/ic_webview_share" app:imageTint="@color/theme_color_primary_tr_icon" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:background="?android:selectableItemBackground" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:src="@drawable/ic_overflow" app:imageTint="@color/theme_color_primary_tr_icon" />
+        </LinearLayout>
+    </com.bilibili.column.ui.upper.MWebToolbar>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_avatar_img" android:layout_width="wrap_content" android:layout_height="wrap_content" app:placeholderImage="@drawable/ic_live_no_face" app:roundAsCircle="true" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_avatar_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/mark_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_nft_img" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:roundAsCircle="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/live_official_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

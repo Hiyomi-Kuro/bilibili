@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_ai_material" android:layout_width="67.0dp" android:layout_height="50.0dp" android:layout_marginTop="6.0dp" android:scaleType="centerCrop" app:placeholderImage="@drawable/ic_upper_ai_story_material_default" app:roundedCornerRadius="8.0dp" />
+    <ImageView android:id="@id/iv_del" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="-12.0dp" android:layout_marginTop="-6.0dp" android:src="@drawable/ic_ai_story_material_del" android:layout_toRightOf="@id/iv_ai_material" android:layout_alignTop="@id/iv_ai_material" />
+</RelativeLayout>

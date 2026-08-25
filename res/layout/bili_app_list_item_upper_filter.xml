@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="5.0dp" android:paddingTop="8.0dp" android:paddingRight="5.0dp" android:layout_width="@dimen/edit_filter_list_item_width" android:layout_height="@dimen/edit_filter_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/upper_shape_caption_item_selector" android:padding="2.0dp" android:layout_width="72.0dp" android:layout_height="72.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:actualImageScaleType="fitCenter" app:roundedCornerRadius="2.5dp" />
+        <ImageView android:id="@id/imv_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:focusable="true" android:clickable="true" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ProgressBar android:id="@id/pgb_loading" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center" android:id="@id/filter_item_select_mask" android:background="@drawable/upper_editor_shape_round_rect_gray_50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="24.0dp" android:layout_height="match_parent" android:src="@drawable/ic_upper_editor_filter_set" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="18.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:text="@string/bili_editor_origin_picture" />
+</LinearLayout>

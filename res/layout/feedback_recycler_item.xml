@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_button_pressed" android:layout_width="82.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/feedback_item_icon" android:background="@drawable/bili_rect_r4_ga2" android:padding="2.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginTop="8.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#505050" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/feedback_item_title" android:layout_width="60.0dp" android:layout_height="16.0dp" android:layout_marginBottom="9.0dp" android:singleLine="true" />
+</LinearLayout>

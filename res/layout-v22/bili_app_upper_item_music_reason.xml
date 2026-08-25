@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/bg_upper_rounded_bg1_corner_8" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:gravity="center_vertical" android:id="@id/tv_index" android:layout_width="match_parent" android:layout_height="20.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Text1" android:id="@id/tv_reason" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_upper_rounded_bg2_corner_8" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="20.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/tv_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:lineHeight="24.0dp" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:layout_gravity="center_horizontal" android:id="@id/tv_promise" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="12.0dp" android:text="@string/upper_problem_promise" android:drawableRight="@drawable/ic_problem_promise_right_arrow" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

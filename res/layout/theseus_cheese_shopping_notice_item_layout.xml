@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TheseusCheeseFloorItemBgCenterStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TheseusCheeseFloorItemContentCenterStyle">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/H3" android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center_vertical" android:id="@id/title" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/more_arrow" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" app:layout_constraintBottom_toBottomOf="@id/more_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/more_text" app:srcCompat="@drawable/theseus_cheese_vector_more_gray" app:tint="@color/Graph_medium" />
+        <TextView android:textColor="@color/Text3" android:layout_gravity="center_horizontal" android:id="@id/more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_cheese_info_more" app:layout_constraintEnd_toStartOf="@id/more_arrow" app:layout_constraintTop_toTopOf="parent" style="@style/T12" />
+        <androidx.constraintlayout.helper.widget.Layer android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="more_text,more_arrow" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

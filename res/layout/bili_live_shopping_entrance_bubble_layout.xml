@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout android:id="@id/motion_layout" android:layout_width="50.0dp" android:layout_height="19.0dp" app:layoutDescription="@xml/bili_live_room_shopping_entrance_bubble_layout_scene"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout android:id="@id/shimmer_layout" android:layout_width="42.0dp" android:layout_height="16.0dp" app:shimmer_angle="0" app:shimmer_animation_duration="2000" app:shimmer_color="#a0ffffff">
+        <LinearLayout android:gravity="center" android:id="@id/linear_layout" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iv_num_ten" android:layout_width="8.0dp" android:layout_height="10.0dp" android:adjustViewBounds="true" />
+            <ImageView android:id="@id/iv_num_one" android:layout_width="8.0dp" android:layout_height="10.0dp" android:adjustViewBounds="true" />
+            <ImageView android:id="@id/iv_bubble_view" android:layout_width="wrap_content" android:layout_height="9.0dp" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

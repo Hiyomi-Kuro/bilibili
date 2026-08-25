@@ -1,0 +1,52 @@
+version: 3.0.2
+apkFileName: 哔哩哔哩_3.20.4_antisplit.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 34
+versionInfo:
+  versionCode: 8230800
+  versionName: 3.20.4
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- jpg
+- m4a
+- png
+- webp
+- META-INF/services/io.grpc.j0
+- META-INF/services/io.grpc.p0
+- META-INF/services/io.ktor.serialization.kotlinx.e
+- META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler
+- assets/bangumi_current_watching_ep.svga
+- assets/bili_player_guide_tip_dark.svga
+- assets/bili_player_guide_tip_fullscreen_landscape.svga
+- assets/bili_player_guide_tip_fullscreen_vertical.svga
+- assets/bili_player_guide_tip_normal.svga
+- assets/bilingsp.bs
+- assets/caption/template/77EEDD24-9A06-4D4D-9510-05CC0A16552B.1.captioncontext
+- assets/caption/template/D6CF564E-040A-460B-83BA-2CEF62E6F8CD.lic
+- assets/caption/template/ECA8E84A-EAAB-4335-8CC7-46BA31FDA7D3.captionstyle
+- assets/caption/template/ECA8E84A-EAAB-4335-8CC7-46BA31FDA7D3.lic
+- assets/cron_package
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/dumixar.license
+- assets/faceidmodel.bin
+- assets/filter/AURORA-C9393534-8568-4528-BEF9-E6F9F6513E73.1.videofx
+- assets/ic_live_media_link_speak.svga
+- assets/live_feed_guide_ani.svga
+- assets/space_header_pull_down_tips.svga
+- assets/sticker/26ADF2EC-9D9C-4F69-8CCD-7981715B7EB2.lic
+- assets/sticker/AURORA-26ADF2EC-9D9C-4F69-8CCD-7981715B7EB2.1.animatedsticker
+- assets/sticker/AURORA-F37EA59A-95FF-479A-A5E3-C447A7FFC1EB.3.animatedsticker
+- assets/sticker/F37EA59A-95FF-479A-A5E3-C447A7FFC1EB.lic
+- assets/toyger.face.dat
+- assets/transition/AURORA-0F241EB7-BD8C-491F-BC46-8776FEDA4C97.3.videotransition
+- okhttp3/internal/publicsuffix/publicsuffixes.gz
+- res/raw/com_android_billingclient_heterodyne_info
+- res/raw/com_android_billingclient_registration_info.binarypb

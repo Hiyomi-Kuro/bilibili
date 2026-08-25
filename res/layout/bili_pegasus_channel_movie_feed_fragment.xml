@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/refresh" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.pegasus.channelv3.utils.NestedScrollableHost android:id="@id/scroll_host" android:layout_width="match_parent" android:layout_height="match_parent" app:sameDirectionWithParent="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_feed" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <tv.danmaku.bili.widget.LoadingImageViewWButtonV2 android:gravity="center" android:id="@id/empty_view" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.bilibili.pegasus.channelv3.utils.NestedScrollableHost>
+</tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>

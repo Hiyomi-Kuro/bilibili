@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/root" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.topix.inline.TopicInlinePlayerContainer android:id="@id/player_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/video_cover_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/video_cover" android:tag="@string/clip_video_cover_tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:backgroundImage="@color/tp_bg_color_inline_cover" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitNone" app:viewAspectRatio="1.6" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        <View android:layout_gravity="bottom" android:background="@drawable/shape_rect_grad_black_alpha_0_to_25_reverse" android:layout_width="match_parent" android:layout_height="56.0dp" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_marginStart="8.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Wh0_u" android:id="@id/cover_left_text1" android:background="@drawable/shape_roundrect_black_trans" android:paddingLeft="3.5dp" android:paddingTop="2.0dp" android:paddingRight="3.5dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/cover_left_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black_alpha20" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_marginStart="8.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/cover_left_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black_alpha20" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_marginStart="8.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <include android:id="@id/biv_play_icon" layout="@layout/tp_inline_play_icon" />
+        <tv.danmaku.bili.widget.RoundRectFrameLayout android:tag="@string/video_auto_play_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" />
+    </com.bilibili.topix.inline.TopicInlinePlayerContainer>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

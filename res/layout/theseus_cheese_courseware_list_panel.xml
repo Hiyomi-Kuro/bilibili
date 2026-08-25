@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="@color/theme_color_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cheese_item_medium_spacing" android:text="@string/theseus_cheese_courseware_preview_download" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="@dimen/item_spacing" android:src="@drawable/bili_player_close_gray_22" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/courseware_list" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,594 @@
+.class public final Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;
+.super Lbq/b;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0086\u0004\u0018\u00002\u00020\u0001:\u0001/B%\u0012\u000c\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0015\u0012\u0006\u0010\u0013\u001a\u00020\u0012\u0012\u0006\u0010#\u001a\u00020 \u00a2\u0006\u0004\u0008-\u0010.J\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0016J \u0010\r\u001a\u00020\u000c2\u0006\u0010\u0008\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\u000b\u001a\u00020\nH\u0016J\u0010\u0010\u0010\u001a\u00020\u000c2\u0006\u0010\u000f\u001a\u00020\u000eH\u0014J\u0016\u0010\u0014\u001a\u00020\u000c2\u0006\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0012R\u001d\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u00158\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0017\u0010\u0018\u001a\u0004\u0008\u0019\u0010\u001aR\u0017\u0010\u0013\u001a\u00020\u00128\u0006\u00a2\u0006\u000c\n\u0004\u0008\u001c\u0010\u001d\u001a\u0004\u0008\u001e\u0010\u001fR\u0017\u0010#\u001a\u00020 8\u0006\u00a2\u0006\u000c\n\u0004\u0008!\u0010\"\u001a\u0004\u0008#\u0010$R$\u0010,\u001a\u0004\u0018\u00010%8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008&\u0010\'\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010+\u00a8\u00060"
+    }
+    d2 = {
+        "Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;",
+        "Lbq/b;",
+        "Landroid/view/ViewGroup;",
+        "parent",
+        "",
+        "viewType",
+        "Lot3/a;",
+        "T0",
+        "holder",
+        "position",
+        "Landroid/view/View;",
+        "itemView",
+        "Lgf3/s;",
+        "S0",
+        "Lnt3/b$b;",
+        "sectionManager",
+        "Z0",
+        "type",
+        "Lcom/bilibili/biligame/api/BiligameSearchGame;",
+        "game",
+        "n1",
+        "",
+        "Lcom/bilibili/biligame/api/BiligameSearchGame$Entrance;",
+        "f",
+        "Ljava/util/List;",
+        "getList",
+        "()Ljava/util/List;",
+        "list",
+        "g",
+        "Lcom/bilibili/biligame/api/BiligameSearchGame;",
+        "getGame",
+        "()Lcom/bilibili/biligame/api/BiligameSearchGame;",
+        "",
+        "h",
+        "Z",
+        "isFirst",
+        "()Z",
+        "Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;",
+        "i",
+        "Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;",
+        "m1",
+        "()Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;",
+        "o1",
+        "(Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;)V",
+        "onItemClickListener",
+        "<init>",
+        "(Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;Ljava/util/List;Lcom/bilibili/biligame/api/BiligameSearchGame;Z)V",
+        "a",
+        "gamecenter_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final f:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/bilibili/biligame/api/BiligameSearchGame$Entrance;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final g:Lcom/bilibili/biligame/api/BiligameSearchGame;
+
+.field private final h:Z
+
+.field private i:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;
+
+.field final synthetic j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+
+# direct methods
+.method public constructor <init>(Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;Ljava/util/List;Lcom/bilibili/biligame/api/BiligameSearchGame;Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/bilibili/biligame/api/BiligameSearchGame$Entrance;",
+            ">;",
+            "Lcom/bilibili/biligame/api/BiligameSearchGame;",
+            "Z)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lbq/b;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->f:Ljava/util/List;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->g:Lcom/bilibili/biligame/api/BiligameSearchGame;
+
+    .line 9
+    .line 10
+    iput-boolean p4, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->h:Z
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public S0(Lot3/a;ILandroid/view/View;)V
+    .locals 2
+
+    .line 1
+    check-cast p1, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a$a;
+
+    .line 2
+    .line 3
+    iget-object p3, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->f:Ljava/util/List;
+
+    .line 4
+    .line 5
+    invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p3
+
+    .line 9
+    check-cast p3, Lcom/bilibili/biligame/api/BiligameSearchGame$Entrance;
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->g:Lcom/bilibili/biligame/api/BiligameSearchGame;
+
+    .line 12
+    .line 13
+    iget-boolean v1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->h:Z
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, p3, v0, v1, p2}, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a$a;->c4(Lcom/bilibili/biligame/api/BiligameSearchGame$Entrance;Lcom/bilibili/biligame/api/BiligameSearchGame;ZI)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public T0(Landroid/view/ViewGroup;I)Lot3/a;
+    .locals 0
+
+    .line 1
+    new-instance p2, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a$a;
+
+    .line 2
+    .line 3
+    invoke-direct {p2, p0, p1, p0}, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a$a;-><init>(Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;Landroid/view/ViewGroup;Lnt3/a;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p2
+.end method
+
+.method protected Z0(Lnt3/b$b;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->f:Ljava/util/List;
+
+    .line 2
+    .line 3
+    check-cast v0, Ljava/util/Collection;
+
+    .line 4
+    .line 5
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->f:Ljava/util/List;
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    invoke-virtual {p1, v0, v1}, Lnt3/b$b;->f(II)V
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_0
+    return-void
+.end method
+
+.method public final m1()Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->i:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final n1(ILcom/bilibili/biligame/api/BiligameSearchGame;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p2, Lcom/bilibili/biligame/api/BiligameSearchGame;->bigCardUrl:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
+
+    .line 4
+    .line 5
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-nez v0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    new-instance p1, Lcom/bilibili/lib/blrouter/RouteRequest$a;
+
+    .line 13
+    .line 14
+    iget-object p2, p2, Lcom/bilibili/biligame/api/BiligameSearchGame;->bigCardUrl:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    invoke-direct {p1, p2}, Lcom/bilibili/lib/blrouter/RouteRequest$a;-><init>(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Lcom/bilibili/lib/blrouter/RouteRequest$a;->l()Lcom/bilibili/lib/blrouter/RouteRequest;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    iget-object p2, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 24
+    .line 25
+    iget-object p2, p2, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 26
+    .line 27
+    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p2
+
+    .line 31
+    invoke-static {p1, p2}, Lcom/bilibili/lib/blrouter/c;->n(Lcom/bilibili/lib/blrouter/RouteRequest;Landroid/content/Context;)Lcom/bilibili/lib/blrouter/RouteResponse;
+
+    .line 32
+    .line 33
+    .line 34
+    return-void
+
+    .line 35
+    :cond_1
+    :goto_0
+    packed-switch p1, :pswitch_data_0
+
+    .line 36
+    .line 37
+    .line 38
+    goto :goto_1
+
+    .line 39
+    :pswitch_0
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 40
+    .line 41
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 42
+    .line 43
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    iget-object p2, p2, Lcom/bilibili/biligame/api/BiligameSearchGame;->website:Ljava/lang/String;
+
+    .line 48
+    .line 49
+    invoke-static {p1, p2}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->y1(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    goto :goto_1
+
+    .line 53
+    :pswitch_1
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 54
+    .line 55
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 56
+    .line 57
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    iget p2, p2, Lcom/bilibili/biligame/api/BiligameHotGame;->gameBaseId:I
+
+    .line 62
+    .line 63
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p2
+
+    .line 67
+    invoke-static {p1, p2}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->Q0(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 68
+    .line 69
+    .line 70
+    goto :goto_1
+
+    .line 71
+    :pswitch_2
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 72
+    .line 73
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 74
+    .line 75
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object p1
+
+    .line 79
+    invoke-static {p1, p2}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->K1(Landroid/content/Context;Lcom/bilibili/biligame/api/BiligameMainGame;)V
+
+    .line 80
+    .line 81
+    .line 82
+    goto :goto_1
+
+    .line 83
+    :pswitch_3
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 84
+    .line 85
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 86
+    .line 87
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object p1
+
+    .line 91
+    iget p2, p2, Lcom/bilibili/biligame/api/BiligameHotGame;->gameBaseId:I
+
+    .line 92
+    .line 93
+    const/4 v0, 0x1
+
+    .line 94
+    invoke-static {p1, p2, v0}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->q0(Landroid/content/Context;II)V
+
+    .line 95
+    .line 96
+    .line 97
+    goto :goto_1
+
+    .line 98
+    :pswitch_4
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 99
+    .line 100
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 101
+    .line 102
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object p1
+
+    .line 106
+    iget p2, p2, Lcom/bilibili/biligame/api/BiligameHotGame;->gameBaseId:I
+
+    .line 107
+    .line 108
+    const/4 v0, 0x5
+
+    .line 109
+    invoke-static {p1, p2, v0}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->q0(Landroid/content/Context;II)V
+
+    .line 110
+    .line 111
+    .line 112
+    goto :goto_1
+
+    .line 113
+    :pswitch_5
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 114
+    .line 115
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 116
+    .line 117
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object p1
+
+    .line 121
+    iget-wide v0, p2, Lcom/bilibili/biligame/api/BiligameSearchGame;->officialAccount:J
+
+    .line 122
+    .line 123
+    const-string p2, "dynamic"
+
+    .line 124
+    .line 125
+    invoke-static {p1, v0, v1, p2}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->E0(Landroid/content/Context;JLjava/lang/String;)V
+
+    .line 126
+    .line 127
+    .line 128
+    goto :goto_1
+
+    .line 129
+    :pswitch_6
+    iget-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->j:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder;
+
+    .line 130
+    .line 131
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$c0;->itemView:Landroid/view/View;
+
+    .line 132
+    .line 133
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 134
+    .line 135
+    .line 136
+    move-result-object p1
+
+    .line 137
+    iget p2, p2, Lcom/bilibili/biligame/api/BiligameHotGame;->gameBaseId:I
+
+    .line 138
+    .line 139
+    const/4 v0, 0x0
+
+    .line 140
+    invoke-static {p1, p2, v0}, Lcom/bilibili/biligame/router/BiligameRouterHelper;->q0(Landroid/content/Context;II)V
+
+    .line 141
+    .line 142
+    .line 143
+    :goto_1
+    return-void
+
+    .line 144
+    nop
+
+    .line 145
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final o1(Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/biligame/ui/search/SearchAdapterV2$SearchGameDetailViewHolder$a;->i:Lcom/bilibili/biligame/ui/search/SearchAdapterV2$c;
+
+    .line 2
+    .line 3
+    return-void
+.end method

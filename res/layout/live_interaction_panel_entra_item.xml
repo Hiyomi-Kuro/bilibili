@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginRight="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/biz_enter" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:roundAsCircle="false" app:thumbHeight="32.0dp" app:thumbWidth="32.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="9.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/notify" android:background="@drawable/live_interaction_panel_notify3_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="end" android:id="@id/notify_img" android:layout_width="15.0dp" android:layout_height="15.0dp" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|top" android:id="@id/iv_red_dot" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginTop="1.0dp" android:src="@drawable/live_interaction_red_dot_bg" android:contentDescription="@null" android:layout_marginEnd="1.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="8.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|top" android:id="@id/tv_num" android:background="@drawable/live_interaction_red_num_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13.0dp" android:minWidth="13.0dp" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dy_likes" layout="@layout/dy_item_inner_interaction_likes" />
+    <include android:id="@id/dy_reveals" layout="@layout/dy_item_inner_interaction_reveals" />
+    <include android:id="@id/dy_icon_cover" layout="@layout/dy_item_inner_interaction_icon_cover" />
+</LinearLayout>

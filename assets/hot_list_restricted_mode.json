@@ -1,0 +1,92 @@
+{
+  "layout_width": "match_parent",
+  "layout_height": "match_parent",
+  "package": "tv.danmaku.bili",
+  "background": "@color/bili_oppo_card_background",
+  "id": "container",
+  "type": "constraint",
+  "child": [
+    {
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_width": "0dp",
+      "layout_height": "wrap_content",
+      "layout_marginEnd": "12dp",
+      "layout_constraintTop_toBottomOf": "brand",
+      "layout_marginStart": "12dp",
+      "id": "video_container",
+      "type": "constraint",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_marginTop": "10dp",
+      "child": [
+        {
+          "layout_constraintEnd_toStartOf": "restricted_cover_2",
+          "layout_width": "0dp",
+          "layout_height": "0dp",
+          "layout_marginEnd": "4dp",
+          "background": "@color/bili_oppo_card_grey_background",
+          "layout_marginStart": "4dp",
+          "id": "restricted_cover_1",
+          "layout_constraintTop_toTopOf": "parent",
+          "type": "image",
+          "layout_constraintDimensionRatio": "1.78",
+          "layout_constraintStart_toStartOf": "parent",
+          "cornerRadius": "6dp"
+        },
+        {
+          "layout_constraintEnd_toStartOf": "restricted_cover_3",
+          "layout_constraintStart_toEndOf": "restricted_cover_1",
+          "layout_width": "0dp",
+          "layout_height": "0dp",
+          "layout_marginEnd": "4dp",
+          "background": "@color/bili_oppo_card_grey_background",
+          "layout_marginStart": "4dp",
+          "id": "restricted_cover_2",
+          "layout_constraintTop_toTopOf": "parent",
+          "type": "image",
+          "layout_constraintDimensionRatio": "1.78",
+          "cornerRadius": "6dp"
+        },
+        {
+          "layout_constraintEnd_toEndOf": "parent",
+          "layout_constraintStart_toEndOf": "restricted_cover_2",
+          "layout_width": "0dp",
+          "layout_height": "0dp",
+          "layout_marginEnd": "4dp",
+          "background": "@color/bili_oppo_card_grey_background",
+          "layout_marginStart": "4dp",
+          "id": "restricted_cover_3",
+          "layout_constraintTop_toTopOf": "parent",
+          "type": "image",
+          "layout_constraintDimensionRatio": "1.78",
+          "cornerRadius": "6dp"
+        }
+      ]
+    },
+    {
+      "ellipsize": "end",
+      "layout_constraintEnd_toEndOf": "parent",
+      "layout_width": "wrap_content",
+      "layout_height": "wrap_content",
+      "textSize": "12sp",
+      "type": "text",
+      "textColor": "@color/Text3",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_marginTop": "12dp",
+      "layout_constraintTop_toBottomOf": "video_container",
+      "maxLines": "1",
+      "id": "tv_restricted_text",
+      "text": "@string/widget_hot_list_teenager_mode"
+    },
+    {
+      "layout_width": "38dp",
+      "layout_height": "wrap_content",
+      "src": "@drawable/ic_widget_brand",
+      "layout_marginStart": "16dp",
+      "id": "brand",
+      "layout_constraintTop_toTopOf": "parent",
+      "type": "image",
+      "layout_constraintStart_toStartOf": "parent",
+      "layout_marginTop": "17dp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:layout_scrollFlags="scroll|enterAlways|snap" app:titleTintColor="@color/theme_color_primary_tr_title" style="?toolbarStyle">
+            <LinearLayout android:layout_gravity="right" android:id="@id/filter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/BangumiTextAppearance.App.Topbar.Title" android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_primary_tr_title" android:id="@id/filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:text="@string/bangumi_timeline_all" />
+                <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/iv_filter" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_filter_gray_light" app:imageTint="@color/theme_color_primary_tr_icon" />
+            </LinearLayout>
+        </com.bilibili.magicasakura.widgets.TintToolbar>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/date_recycler" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="60.0dp" android:overScrollMode="never" />
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <FrameLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="tv.danmaku.bili.widget.PinnedBottomScrollingBehavior">
+        <androidx.viewpager.widget.ViewPager android:id="@id/ptr_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.compose.ui.platform.ComposeView android:layout_gravity="center_horizontal" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

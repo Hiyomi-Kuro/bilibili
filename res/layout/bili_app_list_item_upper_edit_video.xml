@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_layout" android:layout_width="match_parent" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/upper_theme_text_two_one" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="6" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/upper_selector_enable_gary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:text="为什么我的照片没有层次感？为什么我的照片没有层次感？" android:maxLines="1" android:layout_toLeftOf="@id/iv_pop" android:layout_toRightOf="@id/tv_num" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_pop" android:paddingLeft="13.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6.0dp" android:src="@drawable/upper_selector_pop" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/upper_data_gray" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

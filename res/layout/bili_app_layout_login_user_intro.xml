@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/log_reg_checkbox_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <CheckBox android:id="@id/log_reg_checkbox" android:layout_marginTop="2.0dp" android:layout_marginBottom="20.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="5.0dp" style="@style/LoginRegCheckbox" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5" android:layout_gravity="center_horizontal" android:id="@id/tv_login_agreement" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_agreement_tips" android:layout_marginEnd="12.0dp" app:layout_constraintLeft_toRightOf="@id/log_reg_checkbox_container" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="12.0dp" />
+    <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/Ga5" android:id="@id/tv_check_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginTop="20.0dp" android:layout_marginRight="@dimen/item_spacing" android:text="@string/check_help_tips" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_login_agreement" />
+</androidx.constraintlayout.widget.ConstraintLayout>

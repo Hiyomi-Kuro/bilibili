@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintEditText android:textSize="@dimen/text_size_check_edit" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/edit_card1" android:background="@drawable/auth_check_edit" android:layout_width="@dimen/check_edit_width" android:layout_height="@dimen/check_edit_height" android:layout_marginLeft="5.0dp" android:singleLine="true" android:digits="Xx0123456789" android:layout_weight="1.0" android:inputType="text" android:textCursorDrawable="@drawable/auth_shape_edittext_cursor" android="http://schemas.android.com/apk/res/android"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

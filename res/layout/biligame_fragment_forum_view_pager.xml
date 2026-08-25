@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/background_image" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="240.0dp" android:scaleType="centerCrop" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@color/Ga0" />
+        <View android:id="@id/shadow" android:background="@drawable/biligame_gradient_attention_top_bg" android:layout_width="match_parent" android:layout_height="80.0dp" app:layout_constraintBottom_toBottomOf="@id/background_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="48.0dp" app:elevation="0.0dp" app:layout_collapseMode="pin" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:navigationIcon="@null">
+        <include android:id="@id/actionbar" layout="@layout/biligame_community_actionbar" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.viewpager.widget.ViewPager android:id="@id/biligame_forum_view_pager" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bilipay_bg_recharge_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3.0dp">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center" android:id="@id/item_container_recharge_denomination" android:background="@drawable/bilipay_recharge_denomination_bg" android:layout_width="match_parent" android:layout_height="76.0dp" android:layout_margin="1.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="24.0sp" android:textColor="@drawable/bilipay_recharge_denomination_bcoin_style" android:id="@id/item_bcoin_amount" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="14.0sp" android:textColor="@drawable/bilipay_recharge_denomination_bcoin_style" android:id="@id/item_bcoin_suffix" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="@string/pay_bcoin_suffix" android:layout_toRightOf="@id/item_bcoin_amount" android:layout_alignBaseline="@id/item_bcoin_amount" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="14.0sp" android:textColor="@drawable/bilipay_recharge_denomination_vaule_desc_style" android:id="@id/item_bcoin_value_desc" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥988.00" android:layout_below="@id/item_bcoin_amount" android:layout_alignLeft="@id/item_bcoin_amount" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </FrameLayout>
+</FrameLayout>

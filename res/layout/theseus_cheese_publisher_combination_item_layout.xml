@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/theseus_cheese_series_date_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:background="@drawable/theseus_cheese_selector_series_date_bg" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="37.0dp" style="@style/T13"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

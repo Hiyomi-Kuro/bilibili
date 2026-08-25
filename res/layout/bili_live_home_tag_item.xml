@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="88.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="centerInside" app:aspectRadioHeight="1" app:aspectRadioWidth="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="center" android:id="@id/icon_name" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="17.0dp" android:maxLines="1" android:maxEms="5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/icon" app:layout_constraintRight_toRightOf="@id/icon" app:layout_constraintTop_toBottomOf="@id/icon" app:layout_constraintVertical_bias="0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

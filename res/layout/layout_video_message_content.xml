@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.RoundCropFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" app:radius1="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover_view" android:background="@color/im_bg_invalid_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_default_view" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/default_view" android:background="@drawable/bg_customer_video_card" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="66.0dp" android:layout_height="66.0dp" android:src="@drawable/video_circle_line" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Wh0" android:layout_gravity="end|bottom" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_5" android:text="00:20" />
+</com.bilibili.bplus.im.conversation.widget.RoundCropFrameLayout>

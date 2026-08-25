@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@drawable/biligame_selector_tab_update_new" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/view_dot" android:background="@drawable/biligame_circle_tip" android:visibility="invisible" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginTop="-25.0dp" android:scaleType="center" android:layout_toRightOf="@id/tv_name" android:layout_below="@id/tv_name" />
+</RelativeLayout>

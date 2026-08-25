@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="24.0dp" android:width="92.0dp" />
+    <corners android:radius="15.0dp" />
+    <solid android:color="@color/Brand_pink_thin" />
+</shape>

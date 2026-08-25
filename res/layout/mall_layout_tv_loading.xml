@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/mViewRoot" android:layout_width="280.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/mImageViewContainer" android:layout_width="match_parent" android:layout_height="124.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/mImagePlaceHolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_asyn_loading_anim" />
+    </FrameLayout>
+    <TextView android:textSize="15.0dp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/tv_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxLines="1" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/mSubTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:maxLines="2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mActionViewGroup" android:layout_width="wrap_content" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" />
+</LinearLayout>

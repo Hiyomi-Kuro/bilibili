@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.GarbTintToolBar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:garbMode="false" style="?toolbarStyle">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="44.0dp" app:tabGravity="fill" app:tabIndicatorColor="@color/white" app:tabIndicatorHeight="3.0dp" app:tabMinWidth="66.0dp" app:tabMode="fixed" app:tabSelectedTextColor="@color/white" app:tabTextAppearance="@style/ComicHomeTabTextAppearance" />
+        </com.bilibili.magicasakura.widgets.GarbTintToolBar>
+        <View android:background="@color/divider_line_for_white" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:background="@color/daynight_color_background_window" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/bilicomic_home_loading" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</FrameLayout>

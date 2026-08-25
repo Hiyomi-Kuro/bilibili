@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/edit_filter_list_tab_Item_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:id="@id/tv_music_tab_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    <View android:id="@id/music_tab_underline" android:background="@drawable/music_subtab_underline_background" android:layout_width="12.0dp" android:layout_height="3.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

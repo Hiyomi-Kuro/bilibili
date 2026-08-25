@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="80.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/reservation_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/reservation_button" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintLeft_toLeftOf="@id/reservation_title" app:layout_constraintRight_toLeftOf="@id/reservation_button" app:layout_constraintTop_toBottomOf="@id/reservation_title">
+            <TextView android:textSize="10.0sp" android:textColor="@color/Pi5" android:id="@id/reservation_badge" android:background="@drawable/shape_author_space_up_reservation_badge_background" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/reservation_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reservation_lottery" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/reservation_lottery_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginRight="4.0dp" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Pi5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/reservation_lottery_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" android:maxLines="1" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:translationX="-20.0dp" android:translationY="1.0dp" app:srcCompat="@drawable/ic_vector_arrow_right" app:tint="@color/Pi5" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="24.0dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/reservation_share_button" android:layout_width="74.0dp" android:layout_height="match_parent">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/reservation_share_button_icon" android:background="@drawable/shape_author_space_up_reservation_button_already_submit_background2" android:paddingLeft="3.0dp" android:paddingTop="3.5dp" android:paddingBottom="3.5dp" android:layout_width="32.0dp" android:layout_height="match_parent" android:src="@drawable/ic_author_space_bell_black_for_icon_with_tick" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/reservation_share_button_text" android:background="@drawable/shape_author_space_up_reservation_button_already_submit_background3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="1.0dp" android:text="@string/bili_space_share" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/reservation_button" android:visibility="gone" android:layout_width="66.0dp" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/reservation_button_image" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="2.0dp" android:src="@drawable/ic_author_space_bell_white_for_button" android:scaleType="fitXY" app:tint="@color/Wh0_u" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:gravity="left" android:id="@id/reservation_button_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

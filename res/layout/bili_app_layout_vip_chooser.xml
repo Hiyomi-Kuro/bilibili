@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/gray_dark" android:gravity="center" android:id="@id/dialog_minus_txt" android:background="@drawable/selector_vip_disable_gray_left" android:layout_width="36.0dp" android:layout_height="36.0dp" android:foreground="?selectableItemBackground" android:text="-" />
+    <EditText android:textColor="@color/theme_color_text_primary" android:gravity="right" android:id="@id/dialog_chooser_edit" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="1" android:singleLine="true" android:maxLength="5" android:digits="1234567890" android:layout_weight="1.0" android:inputType="numberSigned" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_text_primary" android:id="@id/dialog_chooser_type_txt" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/vip_charge_dialog_month_to_buy" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/theme_color_primary" android:gravity="center" android:id="@id/dialog_plus_txt" android:background="@drawable/selector_vip_disable_gray_right" android:layout_width="36.0dp" android:layout_height="36.0dp" android:foreground="?selectableItemBackground" android:text="+" />
+</merge>

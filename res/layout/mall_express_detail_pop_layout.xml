@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/loading_view" android:background="@color/mall_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/express_detial_view" android:background="@drawable/mall_shape_rect_corner_medium_white" android:padding="4.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mall_express_detail_height" android:layout_alignParentBottom="true">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_order_detail_delivery_tracking" />
+        </ScrollView>
+    </FrameLayout>
+    <ImageView android:id="@id/express_close" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="-20.0dp" android:src="@drawable/ic_close_solid_white" android:layout_above="@id/express_detial_view" android:layout_alignParentRight="true" />
+</RelativeLayout>

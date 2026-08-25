@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@drawable/projection_bg_fullscreen_2" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.projection.internal.widget.fullscreen.newui.ProjectionNewUiTopBarWidget android:id="@id/newui_topbar_widget" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.2" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <com.bilibili.lib.projection.internal.widget.fullscreen.newui.ProjectionNewUiDeviceInfoWidget android:id="@id/newui_deviceinfo_widget" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="32.0dp" android:layout_weight="1.0" />
+    <com.bilibili.lib.projection.internal.widget.fullscreen.newui.ProjectionNewUiTvControlWidget android:layout_gravity="center_horizontal" android:id="@id/newui_tv_control_widget" android:layout_width="343.0dp" android:layout_height="wrap_content" />
+    <com.bilibili.lib.projection.internal.widget.fullscreen.newui.ProjectionNewUiPlayControlWidget android:id="@id/newui_play_control_widget" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="48.0dp" android:layout_weight="1.0" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    <com.bilibili.lib.projection.internal.widget.fullscreen.newui.ProjectionNewUiSelectionWidget android:layout_gravity="bottom" android:id="@id/newui_selection_widget" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.4" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.statefulbutton.StatefulButton android:id="@id/btn_subscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" style="@style/StatefulButton.ChannelSubscribeButton.Stroke"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

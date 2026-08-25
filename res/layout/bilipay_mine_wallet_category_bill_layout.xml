@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category_bill_container" android:background="@drawable/bilipay_mine_wallet_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/wallet_v2_category_recycler" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintButton android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/bilipay_mine_wallet_recharge_btn" android:background="@drawable/bilipay_mine_wallet_bg_recharge_button" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_marginTop="12.0dp" android:text="@string/recharge_bcoin_title" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fail_wrapper" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dp" android:src="@drawable/img_holder_error_style1" android:scaleX="0.9" android:scaleY="0.9" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_middle" android:textColor="@color/Ga5" android:id="@id/error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:layout_marginBottom="42.0dp" android:text="@string/lbs_load_error" />
+    <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_middle" android:textColor="@color/Wh0_u" android:id="@id/try_again" android:background="@drawable/bg_button_round_corner" android:layout_width="141.0dp" android:layout_height="44.0dp" android:text="@string/lbs_try_again" style="?android:borderlessButtonStyle" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

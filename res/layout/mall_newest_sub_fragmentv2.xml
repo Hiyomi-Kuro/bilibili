@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Wh0" android:paddingTop="13.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mall_newest_sub_filter_rec" android:paddingLeft="12.0dp" android:paddingBottom="12.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_alignParentTop="true" />
+    <FrameLayout android:paddingTop="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/mall_newest_sub_filter_rec">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="top" android:id="@id/mall_newest_sub_goods_rec" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/mall_newest_sub_tips_container" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/mall_newest_sub_filter_rec">
+        <include android:id="@id/mall_newest_sub_tips_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/mall_tips_view" />
+    </RelativeLayout>
+</RelativeLayout>

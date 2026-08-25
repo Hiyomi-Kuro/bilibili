@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mAddLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <TextView android:textColor="@color/gray_light_3" android:id="@id/tv_exp_key" android:layout_width="50.0dp" android:layout_height="wrap_content" android:text="key   :" android:layout_centerVertical="true" />
+            <EditText android:textSize="11.0sp" android:id="@id/mKeyEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/tv_exp_key" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <TextView android:textColor="@color/gray_light_3" android:id="@id/mValueTextView" android:layout_width="50.0dp" android:layout_height="wrap_content" android:text="value:" android:layout_centerVertical="true" />
+            <EditText android:textSize="11.0sp" android:id="@id/mValueEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/mValueTextView" />
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText android:id="@id/expValueEditText" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入实验值" />
+</LinearLayout>

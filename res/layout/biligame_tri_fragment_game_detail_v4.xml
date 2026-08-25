@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tri_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.NestedScrollCoordinatorLayout android:id="@id/tri_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48.0dp">
+        <com.bilibili.biligame.widget.SizeObservableAppBarLayout android:id="@id/app_bar" android:background="@null" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.biligame.ui.gamedetail.widget.BounceAppBarBehavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/tri_collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/tri_game_detail_toolbar">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tri_view_pager_header_parent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax">
+                    <com.bilibili.biligame.detail.widget.DetailVideoContainerV4 android:id="@id/tri_detail_video_container" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="h,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.bilibili.biligame.detail.widget.GameDetailHeaderV4 android:id="@id/tri_game_detail_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" />
+                <com.bilibili.biligame.detail.widget.GameDetailToolbarV4 android:id="@id/tri_game_detail_toolbar" android:layout_width="match_parent" android:layout_height="40.0dp" android:minHeight="40.0dp" app:elevation="0.0dp" app:layout_collapseMode="pin" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.bilibili.biligame.detail.widget.DetailTabLayoutV4 android:id="@id/tri_tab_layout" android:layout_width="match_parent" android:layout_height="44.0dp" app:layout_constraintTop_toTopOf="parent" app:tabGravity="fill" app:tabIndicatorHeight="2.0dp" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" style="@style/BiliGameDetailTabLayout" />
+        </com.bilibili.biligame.widget.SizeObservableAppBarLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.bilibili.biligame.widget.GameViewPager android:id="@id/tri_detail_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <include android:id="@id/tri_il_view" android:visibility="gone" layout="@layout/biligame_detail_strategy_guide" />
+        </FrameLayout>
+    </com.bilibili.biligame.widget.NestedScrollCoordinatorLayout>
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:layout_gravity="right|bottom" android:id="@id/tri_publish_comment" android:visibility="gone" android:layout_width="63.0dp" android:layout_height="63.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="66.0dp" app:placeholderImage="@drawable/biligame_default_image_tv" app:placeholderImageScaleType="center" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/tri_game_comment_guide" android:layout="@layout/biligame_tri_guide_comment_view" android:layout_width="match_parent" android:layout_height="72.0dp" android:layout_marginBottom="67.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/tri_game_install_guide" android:layout="@layout/biligame_detail_download_install_guide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" />
+    <com.bilibili.biligame.detail.widget.BottomBarV4 android:layout_gravity="bottom" android:id="@id/tri_bottom_bar" android:background="@drawable/biligame_bg_detail_bottom" android:paddingTop="2.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" />
+</FrameLayout>

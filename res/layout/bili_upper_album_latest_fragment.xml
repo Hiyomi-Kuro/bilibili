@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/bili_upper_album_latest_fragment_0" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.widget.BiliTabLayout android:id="@id/choose_tab_layout" android:layout_width="match_parent" android:layout_height="44.0dp" app:maxTitleWidth="100.0dp" app:tabIndicatorHeight="0.0dp" app:titleSelectedTextColor="@color/white" app:titleSelectedTextSize="15.0sp" app:titleTextSelectedBold="true" app:titleTextUnSelectedBold="false" app:titleUnSelectedTextColor="@color/white_alpha60" app:titleUnSelectedTextSize="15.0sp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_tip_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/choose_tab_layout">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_submission_tip" android:background="@drawable/ic_upper_notice_smart_pic_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#a2a7ae" android:gravity="center_vertical" android:id="@id/tv_submission_tip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/upper_submission_tip" android:drawableLeft="@drawable/ic_upper_notice_horn_v3" android:drawablePadding="6.0dp" android:layout_weight="1.0" />
+            <ImageView android:id="@id/imv_close_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_upper_center_guide_close" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:gravity="center_vertical" android:id="@id/tv_part_privilege_tip" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_part_privilege_tip" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ll_tip_container">
+        <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/choose_viewpager" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <ViewStub android:id="@id/vs_permission_guide" android:layout="@layout/capture_permission_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

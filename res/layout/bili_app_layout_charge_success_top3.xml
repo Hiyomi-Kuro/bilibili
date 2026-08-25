@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_alpha70" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/anim" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:layout_centerInParent="true" app:actualImageScaleType="fitCenter" app:viewAspectRatio="1.0" />
+    <ImageView android:id="@id/title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/anim" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/white_alpha80" android:gravity="center" android:id="@id/rank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:layout_marginBottom="@dimen/item_large_spacing" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/close2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_close" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/full_container" layout="@layout/upper_main_section_user_info_new_upper_full" />
+    <include android:id="@id/empty_container" layout="@layout/upper_main_section_user_info_new_upper_empty" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

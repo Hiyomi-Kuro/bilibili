@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.up.web.UperWebToolBar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:iconTintColor="@color/theme_color_primary_tr_icon" app:titleTextColor="@color/theme_color_primary_tr_title">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?actionBarSize">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/toolbar_close" android:paddingLeft="11.0dp" android:paddingTop="17.0dp" android:paddingRight="11.0dp" android:paddingBottom="17.0dp" android:visibility="gone" android:clickable="true" android:layout_width="36.0dp" android:layout_height="48.0dp" app:imageTint="@color/theme_color_primary_tr_icon" />
+            <TextView android:gravity="center_vertical" android:id="@id/view_titletext" android:background="?selectableItemBackground" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:textAllCaps="true" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/share" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:src="@drawable/ic_webview_share" app:imageTint="@color/theme_color_primary_tr_icon" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/overflow" android:background="?android:selectableItemBackground" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:src="@drawable/ic_overflow" app:imageTint="@color/theme_color_primary_tr_icon" />
+        </LinearLayout>
+    </com.bilibili.upper.module.contribute.up.web.UperWebToolBar>
+</merge>

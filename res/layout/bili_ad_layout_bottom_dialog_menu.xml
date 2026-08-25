@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.list.widget.OutlineRoundRectFrameLayout android:id="@id/root_layout" android:background="@color/Ga0_s" android:layout_width="match_parent" android:layout_height="wrap_content" app:roundType="round_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/menu_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/shadow" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="5.0dp" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/close" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/bottom_dialog_menu_cancel" />
+    </LinearLayout>
+</com.bilibili.app.comm.list.widget.OutlineRoundRectFrameLayout>

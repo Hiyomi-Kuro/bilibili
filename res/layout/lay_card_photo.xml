@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/live_root" android:background="@color/Ga0" android:layout_width="match_parent" android:layout_height="@dimen/size_126"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.im.conversation.widget.MuxerImageView android:id="@id/cover" android:layout_width="@dimen/size_160" android:layout_height="@dimen/size_90" android:layout_marginLeft="@dimen/margin_14" android:src="@drawable/ic_default_view" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/size_90" android:layout_marginLeft="@dimen/margin_16" android:layout_marginRight="@dimen/margin_14" android:layout_toRightOf="@id/cover" android:layout_centerVertical="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Ga9" android:ellipsize="end" android:id="@id/introduce" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/tag_lay" android:layout_below="@id/introduce">
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/view_count" android:layout_marginRight="8.0dp" android:drawableLeft="@drawable/ic_eye_dack" style="@style/TextAppearance.AppCompat.FontVerySmall.ViewCount" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:id="@id/comment_count" android:drawableLeft="@drawable/ic_comments_dack" style="@style/TextAppearance.AppCompat.FontVerySmall.ViewCount" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_lay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Pi5" android:background="@drawable/corner_border_primary_2dp" android:text="@string/card_photo_type" style="@style/TextAppearance.AppCompat.FontVerySmall.PushcardTag" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/tag" android:layout_marginLeft="@dimen/margin_6" style="@style/TextAppearance.AppCompat.FontVerySmall" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

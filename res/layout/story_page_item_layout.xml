@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bili_story_page_bg" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/page_item_wave" android:visibility="gone" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginTop="5.0dp" app:layout_constraintStart_toStartOf="@id/page_item_title" app:layout_constraintTop_toTopOf="@id/page_item_title" app:lottie_fileName="player_wave_light_pink.json" app:lottie_repeatCount="-1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/page_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

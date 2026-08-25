@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/Ga1" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="centerInside" app:viewAspectRatio="2.09" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_large_spacing" android:text="@string/charge_commit_success" android:layout_below="@id/icon" />
+        <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="@dimen/item_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:text="@string/charge_commit_success_msg" android:layout_below="@id/title" android:lineSpacingMultiplier="1.2" />
+        <com.bilibili.app.comm.supermenu.core.MenuGrid android:id="@id/share_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/item_large_spacing" android:layout_marginTop="32.0dp" android:layout_below="@id/desc" app:menuGrid_iconHeight="42.0dp" app:menuGrid_iconTextSpace="2.0dp" app:menuGrid_iconWidth="42.0dp" app:menuGrid_itemTextColor="@color/Ga9" app:menuGrid_itemTextSize="12.0sp" app:menuGrid_lineSpan="3" />
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_close" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</ScrollView>

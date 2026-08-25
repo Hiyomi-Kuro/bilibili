@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="bottom" android:id="@id/layout_footer" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="@dimen/text_size_small" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/played" android:layout_width="67.0dp" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="2.0dp" app:priority="2" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_small" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/danmakus" android:layout_width="67.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:lines="1" android:drawableLeft="@drawable/ic_info_danmaku_counts" android:drawablePadding="2.0dp" android:drawableStart="@drawable/ic_info_danmaku_counts" app:drawableLeftTint="@color/Ga5" app:priority="1" />
+</tv.danmaku.bili.widget.PriorityLinearLayout>

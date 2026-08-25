@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="25.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.biligame.widget.user.MineHeadBarViewV3 android:id="@id/cl_toolbar" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="54.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/status_bar" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/colorTransparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_enter" android:paddingBottom="8.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+                <com.bilibili.biligame.widget.user.MineDownloadView android:id="@id/v_mine_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+            </LinearLayout>
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8.0dp" />
+            <com.google.android.material.tabs.TabLayout android:id="@id/tab_info" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="4.0dp" android:layout_marginEnd="6.0dp" app:tabIndicator="@drawable/biligame_tab_pink_indicator_bg" app:tabIndicatorColor="@color/Pi5" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2.0dp" app:tabMode="fixed" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" app:tabSelectedTextColor="@color/Pi5" app:tabTextAppearance="@style/BiligameMineGameTabTextAppearance" app:tabTextColor="@color/Ga7" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_guess" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_list" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+{
+  "FilterID": "SceneSource",
+  "FilterName": "LiveMediaLinkBaseSelfTemplate",
+  "FilterConfig": {
+    "SceneWidth": 1080,
+    "SceneHeight": 1920,
+    "SceneItems": [
+      {
+        "ItemLeft": 0, "ItemTop": 0, "ItemWidth": 1080, "ItemHeight": 1920, "FitMode": "FitOuter", "IsShow": true,
+        "Filter": {
+          "FilterID": "CommonSource",
+          "FilterName": "selfScene",
+          "FilterConfig": {
+            "source_id": 3
+          }
+        }
+      }
+    ]
+  }
+}

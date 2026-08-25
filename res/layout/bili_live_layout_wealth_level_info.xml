@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_wealth" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_level" android:layout_width="wrap_content" android:layout_height="16.0dp" android:layout_marginTop="13.0dp" android:scaleType="fitXY" android:layout_marginStart="12.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_marginStart="10.0dp">
+        <ProgressBar android:id="@id/pb_wealth" android:layout_width="match_parent" android:layout_height="4.0dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/layer_list_live_gift_panel_top_wealth_level_pb" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <TextView android:textSize="10.0sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

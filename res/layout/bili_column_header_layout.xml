@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/head_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.column.ui.widget.PendantAvatarLayout android:id="@id/avatar_layout" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="84.0dp" android:singleLine="true" android:layout_toRightOf="@id/avatar_layout" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/plate_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/header_name" android:layout_centerVertical="true" android:layout_toEndOf="@id/header_name">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/name_plate" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/vip_plate" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga7" android:id="@id/list_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:text="@string/column_category_feed_card_from_article_list" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/Ga4" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:singleLine="true" android:layout_toRightOf="@id/plate_parent" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/header_name" />
+</RelativeLayout>

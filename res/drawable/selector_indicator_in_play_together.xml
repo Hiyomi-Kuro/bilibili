@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape>
+            <solid android:color="@color/live_play_together_search_key_color" />
+            <corners android:radius="99.0dp" />
+            <size android:height="3.0dp" android:width="18.0dp" />
+        </shape>
+    </item>
+</layer-list>

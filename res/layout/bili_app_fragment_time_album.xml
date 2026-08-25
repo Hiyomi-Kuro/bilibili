@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_theme_graph_medium" android:id="@id/text_time_album_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:text="@string/upper_time_albums_tip" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/recycler_time_album" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintLayout_loading_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/ta_loading_icon" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginBottom="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_alpha60" android:gravity="center_vertical" android:id="@id/ta_loading_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_time_albums_loading" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ta_loading_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_time_album_permission" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_time_albums_permission_tip1" />
+        <TextView android:textSize="14.0sp" android:textColor="#9499a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp" android:text="@string/upper_time_albums_permission_tip2" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff6699" android:id="@id/text_to_open_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_time_albums_permission_tip3" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#c9ccd0" android:gravity="center" android:id="@id/text_time_album_enough_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/upper_time_albums_enough_tip" />
+</LinearLayout>

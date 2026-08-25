@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/home_ip_category_lt" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.page.home.view.TransformViewPager android:id="@id/id_vs_home_category_new" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ip_cate_indictor" android:layout_width="wrap_content" android:layout_height="3.0dp" android:layout_marginTop="4.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/id_vs_home_category_new">
+        <ImageView android:id="@id/ip_cate_indictor_1" android:background="@drawable/mall_home_ip_cate_indicator_left_pink" android:layout_width="11.0dp" android:layout_height="3.0dp" />
+        <ImageView android:id="@id/ip_cate_indictor_2" android:background="@drawable/mall_home_ip_cate_indicator_right_white" android:layout_width="11.0dp" android:layout_height="3.0dp" android:layout_marginLeft="2.0dp" />
+    </LinearLayout>
+    <com.mall.ui.widget.MallImageView android:id="@id/ip_tips_bubble" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_marginEnd="3.0dp" app:layout_constrainedHeight="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="@id/id_vs_home_category_new" app:layout_constraintEnd_toEndOf="@id/id_vs_home_category_new" />
+</androidx.constraintlayout.widget.ConstraintLayout>

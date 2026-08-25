@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:id="@id/ag_tv_game_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dp" android:maxLines="1" android:singleLine="true" app:layout_constraintBottom_toTopOf="@id/guideline" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <com.bilibili.adcommon.widget.AdReviewRatingBar android:id="@id/ag_rating_bar_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/guideline" style="@style/AdGame.RatingBar_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

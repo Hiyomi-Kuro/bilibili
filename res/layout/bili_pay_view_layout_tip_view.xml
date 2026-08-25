@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_centerHorizontal="true" style="?android:progressBarStyle"
+      xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="154.0dp" android:layout_marginTop="28.0dp" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Pay.Subtitle" android:textSize="14.0sp" android:textColor="@color/bili_pay_daynight_color_text_supplementary_dark" android:gravity="center" android:id="@id/text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" android:text="@string/bili_pay_tips_no_data" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+</merge>

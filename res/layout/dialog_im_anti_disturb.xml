@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_roundrect_dialog_bg" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/Text1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:maxWidth="240.0dp" android:text="@string/im_setting_anti_disturb_title" style="@style/H2" />
+        <TextView android:textColor="@color/Text1" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:text="@string/im_anti_disturb_setting_tip" style="@style/T13" />
+        <TextView android:textColor="@color/Text3" android:id="@id/tv_hint_limit_range" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:text="@string/im_interaction_range" style="@style/T13" />
+        <RadioGroup android:id="@id/rg_option_limit" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/rg1_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" layout="@layout/item_im_anti_disturb_option" />
+            <Space android:layout_width="match_parent" android:layout_height="16.0dp" />
+            <include android:id="@id/rg2_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" layout="@layout/item_im_anti_disturb_option" />
+        </RadioGroup>
+        <TextView android:textColor="@color/Text3" android:id="@id/tv_hint_expire_time" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:text="@string/im_anti_disturb_expired_time" style="@style/T13" />
+        <RadioGroup android:id="@id/rg_option_expire_time" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/rg1_expire_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" layout="@layout/item_im_anti_disturb_option" />
+            <Space android:layout_width="match_parent" android:layout_height="16.0dp" />
+            <include android:id="@id/rg2_expire_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" layout="@layout/item_im_anti_disturb_option" />
+        </RadioGroup>
+        <View android:background="@color/Line_regular" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="24.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+            <TextView android:textColor="@color/Text1" android:gravity="center" android:id="@id/btn_cancel" android:layout_width="116.0dp" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/cancel" style="@style/T16" />
+            <TextView android:textColor="@color/selector_anti_disturb_confirm_button" android:gravity="center" android:id="@id/btn_confirm" android:layout_width="116.0dp" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/im_notice_accept" style="@style/T16" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

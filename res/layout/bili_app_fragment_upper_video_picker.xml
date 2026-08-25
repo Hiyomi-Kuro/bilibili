@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/upper_bg_FF0C0C0C" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_media_pick_tab" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <com.google.android.material.tabs.TabLayout android:id="@id/vp_picker_tab" android:layout_width="128.0dp" android:layout_height="38.0dp" app:tabIndicatorColor="@color/white" />
+        <ViewStub android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@id/tv_add_video" android:layout_toRightOf="@id/vp_picker_tab" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff757575" android:gravity="center_vertical" android:id="@id/tv_add_video" android:layout_width="wrap_content" android:layout_height="38.0dp" android:layout_marginRight="12.0dp" android:text="@string/upper_choose_material_from_folder" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_submission_tip" android:background="@color/upper_theme_notice_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_below="@id/rl_media_pick_tab">
+        <TextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_theme_notice_text" android:gravity="center_vertical" android:id="@id/tv_submission_tip" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/upper_submission_tip" android:drawableLeft="@drawable/ic_upper_notice_horn" android:drawablePadding="6.0dp" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imv_close_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_upper_notice_close" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:gravity="center_vertical" android:id="@id/tv_part_privilege_tip" android:padding="8.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_part_privilege_tip" android:layout_below="@id/ll_submission_tip" />
+    <RelativeLayout android:id="@id/media_picker_chosen_container" android:background="@color/upper_picker_chosen_container_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="129.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/upper_gray_dark" android:id="@id/media_picker_chosen_notice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:text="@string/upper_picker_chosen_tips" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_picker_chosen_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/vp_picker_page" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/media_picker_chosen_container" android:layout_below="@id/tv_part_privilege_tip" />
+    <FrameLayout android:id="@id/fl_local_dir_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/vs_permission_guide" android:layout="@layout/capture_permission_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

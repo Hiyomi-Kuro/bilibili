@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/double_click_guide_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guide_line" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.6" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center_horizontal" android:id="@id/svga_intro" android:layout_width="100.0dp" android:layout_height="100.0dp" android:layout_marginTop="140.0dp" android:scaleType="fitXY" app:autoPlay="true" app:layout_constraintEnd_toEndOf="@id/guide_line" app:layout_constraintStart_toStartOf="@id/guide_line" app:layout_constraintTop_toTopOf="parent" app:loopCount="-1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

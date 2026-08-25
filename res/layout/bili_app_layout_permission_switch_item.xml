@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:minHeight="@dimen/preference_regulable_wrap_height_default" app:fc_foreground="?selectableItemBackground">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/switcher_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="10.0dp" android:singleLine="true" android:layout_toLeftOf="@id/switcher" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="10.0dp" android:layout_alignParentStart="true" />
+        <com.bilibili.app.preferences.PlayerSwitch android:id="@id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    <TextView android:textColor="@color/Lb6" android:id="@id/switcher_desc" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

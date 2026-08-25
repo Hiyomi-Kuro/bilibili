@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/theme_color_view_background" android:paddingLeft="16.0dp" android:paddingTop="18.0dp" android:paddingRight="16.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/user_icon" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="fitCenter" app:placeholderImage="@color/gray_light_1" app:roundAsCircle="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/Live.TextAppearance.App.XXLarge" />
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="?android:textColorSecondary" android:id="@id/room_code_num" android:paddingTop="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_center_user_room_info_default" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_level_layout" android:paddingTop="4.0dp" android:layout_width="match_parent" android:layout_height="24.0dp">
+            <TextView android:textSize="@dimen/text_size_small" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/up_level" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UL --" android:includeFontPadding="false" />
+            <com.bilibili.bililive.infra.widget.view.PercentBarTextView android:textSize="@dimen/text_size_small" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/update_ratio" android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="--" android:maxLines="1" android:includeFontPadding="false" app:pb_corner_bg="2.0dp" app:pb_corner_fg="0.0dp" />
+            <androidx.legacy.widget.Space android:layout_width="2.0dp" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/hint_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_live_room_setting_hint" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

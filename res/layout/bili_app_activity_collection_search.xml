@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_input_layout" layout="@layout/bili_app_view_search_input" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/content_container" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/search_input_layout" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

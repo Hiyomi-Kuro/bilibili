@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/following_card_root" android:background="@drawable/bg_card_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/bg_card_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/view_following_card_header" />
+            <com.bilibili.bplus.followingcard.widget.EllipsizingTextView android:textSize="@dimen/text_middle" android:textColor="@color/main_Ga10" android:id="@id/card_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="12.0dp" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:max_lines="4" />
+            <include android:visibility="gone" layout="@layout/view_following_card_event_vote" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <com.bilibili.adcommon.widget.AdTintFrameLayout android:id="@id/ad_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/view_following_card_footer" />
+    <include layout="@layout/layout_following_card_divider_thick" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

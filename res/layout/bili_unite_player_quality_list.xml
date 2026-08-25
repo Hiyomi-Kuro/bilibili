@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/black_alpha84" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="start" android:id="@id/vip_quality_trial" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text_white" android:id="@id/tv_trial_times_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toTopOf="@id/tv_buy_vip_tip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Pi5_u" android:gravity="center_vertical" android:id="@id/tv_buy_vip_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="4.0dp" android:text="@string/bili_buy_vip_to_use_all_quality" android:includeFontPadding="false" app:drawableRightCompat="@drawable/bili_unite_player_vector_more_12dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_trial_times_tip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/Text3" android:id="@id/iv_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_buy_vip_to_use_all_close" android:layout_marginEnd="1.0dp" app:layout_constraintBaseline_toBaselineOf="@id/tv_buy_vip_tip" app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:weightSum="1.0">
+                <TextView android:textSize="10.0sp" android:textColor="@color/Text_white" android:ellipsize="end" android:layout_gravity="left" android:id="@id/qn_tip" android:paddingTop="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:maxLines="1" android:layout_marginStart="32.0dp" app:layout_scrollFlags="scroll" />
+                <RelativeLayout android:id="@id/recycler_view_container" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layoutManager="LinearLayoutManager" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

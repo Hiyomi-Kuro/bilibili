@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text3" android:id="@id/dy_card_tag" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" style="@style/T12"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

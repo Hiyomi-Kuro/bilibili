@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="bottom" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/upper_right_badge" />
+    <com.bilibili.bililive.blps.core.ui.view.CanBeCircleBgTextView android:textSize="9.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/upper_right_badge" android:background="@drawable/shape_round_rect_pink_12" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

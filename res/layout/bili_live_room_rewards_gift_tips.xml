@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/gift_rewards_tips_bubble_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.infra.widget.view.BubbleLayout android:layout_gravity="right" android:id="@id/gift_rewards_tips_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_marginRight="9.0dp" app:bl_arrowDirection="bottom" app:bl_arrowHeight="11.0dp" app:bl_arrowPosition="332.0dp" app:bl_arrowWidth="22.0dp" app:bl_bubbleColor="@color/live_room_rewards_gift_tips_bg" app:bl_cornersRadius="7.0dp">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="4.0dp" android:paddingTop="8.0dp" android:paddingRight="4.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/live_room_time_gift" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_tips" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/live_room_rewards_gift_details_text_color" android:gravity="center_vertical" android:id="@id/tv_details" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5.0dp" />
+        </LinearLayout>
+    </com.bilibili.bililive.infra.widget.view.BubbleLayout>
+</FrameLayout>

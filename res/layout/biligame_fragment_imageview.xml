@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.imageviewer.widget.PinchBiliImageView android:id="@id/image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:actualImageScaleType="fitCenter" app:failureImage="@drawable/ic_tips_error" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/progress_bar_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyle" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="center|top" android:id="@id/view_origin" android:background="@drawable/shape_roundrect_over_origin_corner5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/list_image_viewer_view_origin" />
+</FrameLayout>

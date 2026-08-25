@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_ai_story_main_topic_item" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="27.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="#c4bae8" android:gravity="center" android:id="@id/topic_name" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_centerVertical="true" />
+    <ImageView android:background="@drawable/ic_ai_story_main_page_right_arrow" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="4.0dp" android:layout_toRightOf="@id/topic_name" android:layout_centerVertical="true" />
+</RelativeLayout>

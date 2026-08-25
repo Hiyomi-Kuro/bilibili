@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/theme_color_view_background" android:paddingBottom="14.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="@dimen/live_center_divider_height" android:foreground="?selectableItemBackgroundBorderless" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.legacy.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="49.0dp" android:layout_height="36.0dp">
+        <FrameLayout android:layout_gravity="center|bottom" android:layout_width="38.0dp" android:layout_height="34.0dp">
+            <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center|bottom" android:id="@id/icon" android:layout_width="@dimen/live_center_category" android:layout_height="@dimen/live_center_category" app:actualImageScaleType="centerInside" app:thumbHeight="32.0dp" app:thumbWidth="32.0dp" />
+            <TextView android:layout_gravity="right|top" android:id="@id/red_point" android:background="@drawable/shape_roundrect_pink_corner_10" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="right|top" android:id="@id/corner" android:background="@drawable/shape_roundrect_pink_corner_10" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.legacy.widget.Space android:layout_width="wrap_content" android:layout_height="13.0dp" />
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/theme_color_live_text_minor_dark" android:layout_gravity="center_horizontal" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

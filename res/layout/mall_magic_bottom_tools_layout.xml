@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/take_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_icon_magic_take_pic" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:weightSum="2.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/take_pic" app:layout_constraintTop_toTopOf="@id/take_pic">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/partner_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.mall.ui.widget.MallImageView2 android:id="@id/img_partner" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" style="@style/MallImgPlaceHolderStyle" />
+                <TextView android:textColor="@color/mall_white" android:id="@id/tv_partner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/location_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.mall.ui.widget.MallImageView2 android:id="@id/img_location" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" style="@style/MallImgPlaceHolderStyle" />
+                <TextView android:textColor="@color/mall_white" android:id="@id/tv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:weightSum="2.0" app:layout_constraintLeft_toRightOf="@id/take_pic" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tag_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.mall.ui.widget.MallImageView2 android:id="@id/img_tag" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" style="@style/MallImgPlaceHolderStyle" />
+                <TextView android:textColor="@color/mall_white" android:id="@id/tv_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/album_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.mall.ui.widget.MallImageView2 android:id="@id/img_album" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" style="@style/MallImgPlaceHolderStyle" />
+                <TextView android:textColor="@color/mall_white" android:id="@id/tv_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="相册" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+{
+  "wallet": [
+    {
+      "id": 8,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/50727cfb5d7d458593a30fc806352f7c.png",
+      "link": "",
+      "title": "B币",
+      "title2": "-",
+      "notLoginType": 0
+    },
+    {
+      "id": 9,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/3610c452a9284a748725a2b143b8b131.png",
+      "link": "bilibili://mall/web?url=https%3A%2F%2Fpay.bilibili.com%2Fbpay-h5%2Fshell_balance.html%3FnoTitleBar%3D1",
+      "title": "贝壳",
+      "title2": "-",
+      "notLoginType": 1
+    },
+    {
+      "id": 10,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/d571f3eef73843a5aa0bb50c79b2673f.png",
+      "link": "https://big.bilibili.com/mobile/coin",
+      "title": "积分",
+      "title2": "-",
+      "notLoginType": 0
+    },
+    {
+      "id": 11,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/787f44050838485988fc0c6a461c1570.png",
+      "link": "bilibili://mall/web?url=https%3A%2F%2Fmall.bilibili.com%2Fcouponlist.html%3FnoTitleBar%3D1%23noReffer%3Dtrue",
+      "title": "优惠券",
+      "notLoginType": 0
+    }
+  ],
+  "banner": [
+    {
+      "id": 29,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201909/270f388881ab47489be0c436fb308d4b.png",
+      "link": "https://big.bilibili.com/mobile/cardBag?from=purse",
+      "title": "",
+      "notLoginType": 0
+    }
+  ],
+  "service": [
+    {
+      "id": 36,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202004/f21a588c91f54dc395735b51cfd61017.png",
+      "link": "https://pay.bilibili.com/pay-v2/redbag/index?navhide=1&withdrawActivityId=7695ba72f7d1ca25a51252e0b732ff8d",
+      "title": "福利红包",
+      "notLoginType": 1
+    },
+    {
+      "id": 26,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/f745d6d5ab664979a49fb7e17f0d2c58.png",
+      "link": "bilibili://mall/web?url=https%3a%2f%2fwww.bilibili.com%2fblackboard%2factivity-new-freedata.html",
+      "title": "免流卡",
+      "notLoginType": 0
+    },
+    {
+      "id": 38,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202004/4e989c46ec284e1f8498868fc4f0f4f7.png",
+      "link": "https://manga.bilibili.com/eden/app-wallet.html",
+      "title": "漫画卡券包",
+      "notLoginType": 0
+    },
+    {
+      "id": 43,
+      "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202007/93fde06663664f259182a0df63504177.png",
+      "link": "https://m.bilibili.com/bangumi/coupon/mine",
+      "title": "观影券",
+      "notLoginType": 0
+    }
+  ],
+  "serviceNew":[
+    {
+      "serviceTitle": "钱包服务",
+      "service": [
+        {
+          "id": 36,
+          "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202004/f21a588c91f54dc395735b51cfd61017.png",
+          "link": "https://pay.bilibili.com/pay-v2/redbag/index?navhide=1&withdrawActivityId=7695ba72f7d1ca25a51252e0b732ff8d",
+          "title": "福利红包",
+          "notLoginType": 1
+        },
+        {
+          "id": 26,
+          "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/f745d6d5ab664979a49fb7e17f0d2c58.png",
+          "link": "bilibili://mall/web?url=https%3a%2f%2fwww.bilibili.com%2fblackboard%2factivity-new-freedata.html",
+          "title": "免流卡",
+          "notLoginType": 0
+        },
+        {
+          "id": 38,
+          "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202004/4e989c46ec284e1f8498868fc4f0f4f7.png",
+          "link": "https://manga.bilibili.com/eden/app-wallet.html",
+          "title": "漫画卡券包",
+          "notLoginType": 0
+        },
+        {
+          "id": 43,
+          "logo": "https://i0.hdslb.com/bfs/openpay/file/mng/202007/93fde06663664f259182a0df63504177.png",
+          "link": "https://m.bilibili.com/bangumi/coupon/mine",
+          "title": "观影券",
+          "notLoginType": 0
+        }
+      ]
+    }],
+  "bcoinRechargeBtn": {
+    "link": "bilibili://bilipay/bcoin/recharge",
+    "title": "B币充值"
+  },
+  "moreServiceNews": [
+    {
+      "userBillRecordName": "全部账单明细",
+      "userBillRecordUrl": "bilibili://mall/web?url=https%3a%2f%2fpay.bilibili.com%2fbpay-h5%2fall_bill.html%3fnoTitleBar%3d1",
+      "notLoginType": 0
+    },
+    {
+      "userBillRecordName": "B币账单明细",
+      "userBillRecordUrl": "bilibili://bilipay/bcoin/record",
+      "notLoginType": 0
+    }
+  ],
+
+  "moreService": null,
+  "moreServiceNotLoginType": null,
+  "walletRowSize": 4,
+  "userBillRecordVO": {
+    "userBillRecordName": "账单记录",
+    "userBillRecordUrl": "bilibili://mall/web?url=https%3a%2f%2fpay.bilibili.com%2fbpay-h5%2fall_bill.html%3fnoTitleBar%3d1",
+    "userBillRecordLogo": "https://i0.hdslb.com/bfs/openpay/file/mng/201906/9835cbae53764356b8a3b43270f6afc9.png",
+    "notLoginType": 2
+  }
+}

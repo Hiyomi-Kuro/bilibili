@@ -1,0 +1,430 @@
+.class final Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/dynamicview2/internal/ImageColorUtil;->g(Landroid/content/Context;Landroidx/lifecycle/Lifecycle;Ljava/lang/String;FFFLjava/lang/Integer;Lkotlin/coroutines/c;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lsf3/p<",
+        "Lkotlinx/coroutines/h0;",
+        "Lkotlin/coroutines/c<",
+        "-",
+        "Ljava/lang/Integer;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0000\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\u008a@"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/h0;",
+        "",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x4,
+        0x3
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.bilibili.dynamicview2.internal.ImageColorUtil$getHsbColorFromImage$3"
+    f = "ImageColorUtil.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $alpha:F
+
+.field final synthetic $brightness:F
+
+.field final synthetic $context:Landroid/content/Context;
+
+.field final synthetic $defaultColor:Ljava/lang/Integer;
+
+.field final synthetic $imageUrl:Ljava/lang/String;
+
+.field final synthetic $key:Ljava/lang/String;
+
+.field final synthetic $lifecycle:Landroidx/lifecycle/Lifecycle;
+
+.field final synthetic $saturation:F
+
+.field label:I
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;Landroidx/lifecycle/Lifecycle;Ljava/lang/String;Ljava/lang/Integer;FFFLjava/lang/String;Lkotlin/coroutines/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Landroidx/lifecycle/Lifecycle;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Integer;",
+            "FFF",
+            "Ljava/lang/String;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$context:Landroid/content/Context;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$lifecycle:Landroidx/lifecycle/Lifecycle;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$imageUrl:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$defaultColor:Ljava/lang/Integer;
+
+    .line 8
+    .line 9
+    iput p5, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$saturation:F
+
+    .line 10
+    .line 11
+    iput p6, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$brightness:F
+
+    .line 12
+    .line 13
+    iput p7, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$alpha:F
+
+    .line 14
+    .line 15
+    iput-object p8, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$key:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    const/4 p1, 0x2
+
+    .line 18
+    invoke-direct {p0, p1, p9}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/c;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/c<",
+            "*>;)",
+            "Lkotlin/coroutines/c<",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance p1, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$context:Landroid/content/Context;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$lifecycle:Landroidx/lifecycle/Lifecycle;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$imageUrl:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iget-object v4, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$defaultColor:Ljava/lang/Integer;
+
+    .line 10
+    .line 11
+    iget v5, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$saturation:F
+
+    .line 12
+    .line 13
+    iget v6, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$brightness:F
+
+    .line 14
+    .line 15
+    iget v7, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$alpha:F
+
+    .line 16
+    .line 17
+    iget-object v8, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$key:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    move-object v0, p1
+
+    .line 20
+    move-object v9, p2
+
+    .line 21
+    invoke-direct/range {v0 .. v9}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;-><init>(Landroid/content/Context;Landroidx/lifecycle/Lifecycle;Ljava/lang/String;Ljava/lang/Integer;FFFLjava/lang/String;Lkotlin/coroutines/c;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/h0;
+
+    check-cast p2, Lkotlin/coroutines/c;
+
+    invoke-virtual {p0, p1, p2}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->invoke(Lkotlinx/coroutines/h0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/h0;Lkotlin/coroutines/c;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/h0;",
+            "Lkotlin/coroutines/c<",
+            "-",
+            "Ljava/lang/Integer;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->create(Ljava/lang/Object;Lkotlin/coroutines/c;)Lkotlin/coroutines/c;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;
+
+    sget-object p2, Lgf3/s;->a:Lgf3/s;
+
+    invoke-virtual {p1, p2}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    iget v0, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->label:I
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_4
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lkotlin/f;->b(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    :try_start_0
+    sget-object p1, Lh01/g;->a:Lh01/g;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Lh01/g;->a()Lu01/b;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    .line 19
+    iget-object v1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$context:Landroid/content/Context;
+
+    .line 20
+    .line 21
+    iget-object v2, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$lifecycle:Landroidx/lifecycle/Lifecycle;
+
+    .line 22
+    .line 23
+    iget-object v3, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$imageUrl:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    const/16 v4, 0x3c
+
+    .line 26
+    .line 27
+    const/16 v5, 0x3c
+
+    .line 28
+    .line 29
+    const/4 v6, 0x4
+
+    .line 30
+    const/4 v7, 0x4
+
+    .line 31
+    invoke-interface/range {v0 .. v7}, Lu01/b;->a(Landroid/content/Context;Landroidx/lifecycle/Lifecycle;Ljava/lang/String;IIII)Landroid/graphics/Bitmap;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 37
+    :goto_0
+    if-nez p1, :cond_1
+
+    .line 38
+    .line 39
+    iget-object p1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$defaultColor:Ljava/lang/Integer;
+
+    .line 40
+    .line 41
+    goto :goto_1
+
+    .line 42
+    :cond_1
+    sget-object v0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil;->a:Lcom/bilibili/dynamicview2/internal/ImageColorUtil;
+
+    .line 43
+    .line 44
+    iget v1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$saturation:F
+
+    .line 45
+    .line 46
+    iget v2, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$brightness:F
+
+    .line 47
+    .line 48
+    iget v3, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$alpha:F
+
+    .line 49
+    .line 50
+    invoke-static {v0, p1, v1, v2, v3}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil;->b(Lcom/bilibili/dynamicview2/internal/ImageColorUtil;Landroid/graphics/Bitmap;FFF)Ljava/lang/Integer;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    if-eqz p1, :cond_2
+
+    .line 55
+    .line 56
+    invoke-static {}, Lcom/bilibili/dynamicview2/internal/ImageColorUtil;->a()Landroidx/collection/x;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v0
+
+    .line 60
+    iget-object v1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$key:Ljava/lang/String;
+
+    .line 61
+    .line 62
+    invoke-virtual {v0, v1, p1}, Landroidx/collection/x;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    .line 65
+    :cond_2
+    if-nez p1, :cond_3
+
+    .line 66
+    .line 67
+    iget-object p1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$defaultColor:Ljava/lang/Integer;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 68
+    .line 69
+    goto :goto_1
+
+    .line 70
+    :catch_0
+    iget-object p1, p0, Lcom/bilibili/dynamicview2/internal/ImageColorUtil$getHsbColorFromImage$3;->$defaultColor:Ljava/lang/Integer;
+
+    .line 71
+    .line 72
+    :cond_3
+    :goto_1
+    return-object p1
+
+    .line 73
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 74
+    .line 75
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 76
+    .line 77
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
+    throw p1
+.end method

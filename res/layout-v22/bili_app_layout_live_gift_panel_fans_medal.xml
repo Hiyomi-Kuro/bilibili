@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/fans_medal_component" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bilibili.giftPanel.biz.fansmedal.view.LiveGiftMedalExperienceBar android:id="@id/fans_medal_bar" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4.0dp" android:maxHeight="4.0dp" android:minHeight="4.0dp" android:thumb="@drawable/bg_live_seekbar_transparent_thumb" android:paddingHorizontal="6.0dp" />
+        <com.bilibili.bilibili.giftPanel.biz.fansmedal.view.LiveGiftTextSwitcher android:textSize="@dimen/text_size_medium" android:id="@id/fans_medal_switcher" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:paddingHorizontal="6.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="6.0dp" />
+</LinearLayout>

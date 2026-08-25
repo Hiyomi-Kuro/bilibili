@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_enhancement_container" android:layout_width="match_parent" android:layout_height="28.0dp" android:layout_marginBottom="16.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_video_enhancement_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_vide_enhancement_title" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="#999999" android:id="@id/tv_video_enhancement_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_vide_enhancement_desc" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/tv_video_enhancement_title" app:layout_constraintTop_toTopOf="parent" />
+        <Switch android:id="@id/switch_video_enhancement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/video_enhancement_switch_thumb" android:track="@drawable/video_enhancement_switch_track" android:layout_marginEnd="12.0dp" android:showText="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#999999" android:id="@id/tv_quality_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_quality_title" android:layout_marginStart="12.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginStart="12.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="#999999" android:id="@id/tv_line_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/live_line_title" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="16.0dp">
+            <TextView android:id="@id/tv_line_main" android:text="@string/live_line_main" android:layout_marginStart="12.0dp" style="@style/LivePlayerQualityLinePortraitTextView" />
+            <TextView android:id="@id/tv_line_backup_one" android:text="@string/live_line_backup_one" style="@style/LivePlayerQualityLinePortraitTextView" />
+            <TextView android:id="@id/tv_line_backup_two" android:text="@string/live_line_backup_two" style="@style/LivePlayerQualityLinePortraitTextView" />
+            <TextView android:id="@id/tv_line_backup_three" android:text="@string/live_line_backup_three" android:layout_marginEnd="12.0dp" style="@style/LivePlayerQualityLinePortraitTextView" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_light_alpha90" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/endpage_author_layout" layout="@layout/gemini_endpage_interact_horizontal_author" />
+        <include android:id="@id/action_layout" layout="@layout/gemini_endpage_interact_action" />
+        <View android:id="@id/recommend_divider" android:background="@color/white_alpha20" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/Wh0_u" android:id="@id/recommend_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dp" android:text="@string/endpage_recommend_videos" />
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/related_countdown_cancel" android:background="@drawable/shape_roundrect_white_alpha20" android:visibility="gone" android:layout_width="78.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:text="@string/endpage_play_auto_cancel" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/bottom_layout" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.app.gemini.ugc.feature.endpage.GeminiEndPageLandscapeRelativeWidget android:id="@id/relative_widget" android:paddingRight="8.0dp" android:paddingBottom="8.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/foreground_view" android:background="@color/black_alpha50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

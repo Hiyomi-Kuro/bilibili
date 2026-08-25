@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="4.0dp" />
+    <solid android:color="@color/small_app_color_divider_line_for_white" />
+</shape>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="105.0dp" android:scaleType="fitXY" android:layout_alignParentTop="true" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_bg_player_screen_cast_mask" />
+    <com.bilibili.lib.projection.internal.widget.ProjectionTitleWidget android:id="@id/projection_title_widget" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="20.0">
+        <View android:id="@id/projection_placeholder_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="11.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="71.0dp">
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionDeviceSwitchWidget android:gravity="center" android:id="@id/projection_device_switch" android:layout_width="97.0dp" android:layout_height="71.0dp" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionQualityWidget android:gravity="center" android:id="@id/projection_quality_widget" android:visibility="gone" android:layout_width="97.0dp" android:layout_height="71.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/shape_toolbar_gradient_shadow_reverse" android:layout_width="match_parent" android:layout_height="44.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+    <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionPlayPauseWidget android:id="@id/projection_portrait_ctrl_play_pause_replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:src="@drawable/projection_portrait_ctrl_play_pause_replay" android:layout_alignParentLeft="true" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.bilibili.lib.projection.internal.widget.fullscreen.ProjectionDanmakuToggleWidget android:id="@id/player_widget_danmaku_toggle" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="14.0dp" android:src="@drawable/bili_player_ctrl_toggle_danmaku" app:from="controller_vertical" app:layout_constraintBottom_toBottomOf="@id/projection_portrait_ctrl_play_pause_replay" app:layout_constraintStart_toEndOf="@id/projection_portrait_ctrl_play_pause_replay" app:layout_constraintTop_toTopOf="@id/projection_portrait_ctrl_play_pause_replay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

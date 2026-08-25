@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.Banner android:id="@id/tri_banner" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/biligame_dip_12" android:layout_marginRight="@dimen/biligame_dip_12" android:layerType="hardware" app:aspectRadioHeight="60" app:aspectRadioWidth="336" app:biligame_banner_indicator_colorId="@color/Wh0_u" app:biligame_banner_indicator_colorNoSelectId="@color/biligame_gray_F2F4F6_60" app:biligame_banner_indicator_line_width="12.0dp" app:biligame_banner_indicator_offset="8.0dp" app:biligame_banner_indicator_radius="3.0dp" app:layout_constraintDimensionRatio="5.6" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_spacing="0.0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

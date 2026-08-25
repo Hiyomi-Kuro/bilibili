@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/user_name_layout" android:layout_width="match_parent" android:layout_height="@dimen/preference_regulable_wrap_height_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/clear_captcha_layout" android:layout_width="20.0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/item_spacing" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/clear_captcha" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_account_et_clear" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <EditText android:textSize="@dimen/text_size_large" android:textColorHint="@color/Ga4" android:gravity="center_vertical" android:id="@id/et_capture" android:background="@android:color/transparent" android:paddingLeft="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="88.0dp" android:hint="@string/please_input_captcha" android:singleLine="true" android:maxLength="8" android:drawablePadding="20.0dp" android:completionThreshold="1" android:layout_toLeftOf="@id/clear_captcha_layout" android:inputType="number" android:textCursorDrawable="@drawable/shape_edittext_cursor_pink" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga10" android:id="@id/account_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_medium_spacing" android:text="@string/verify_code" android:layout_centerVertical="true" />
+</RelativeLayout>

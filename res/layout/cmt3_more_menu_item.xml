@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="52.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginStart="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:id="@id/text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/image" app:layout_constraintTop_toTopOf="parent" style="@style/T14" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/arrow" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/cmt3_arrow_forward_pink" android:tint="@color/Text3" android:layout_marginEnd="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

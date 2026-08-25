@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/operation_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.room.ui.widget.LiveDanmakuContentView android:id="@id/content_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv_operation" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/content_layout" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/blank_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <View android:id="@id/back_bt" android:layout_width="56.0dp" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_layout_full_screen" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="56.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/projection_search_title_full_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_title" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:id="@id/projection_search_sub_title_full_screen" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginLeft="6.0dp" android:layout_marginTop="3.0dp" android:text="@string/projection_search_list_sub_title" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/projection_search_sub_title_icon_full_screen" android:focusable="true" android:clickable="true" android:layout_width="11.0dp" android:layout_height="12.0dp" android:layout_marginTop="3.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_projection_search_list_sub_title_icon" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/new_top_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/projection_search_title_new_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/remote_title" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/new_projection_search_refresh" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitXY" android:layout_marginEnd="12.0dp" app:srcCompat="@drawable/proj_refresh" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/new_projection_search_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="12.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/bili_projection_official_new_ui_topbar_close_icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_layout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/projection_search_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/remote_title" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:id="@id/projection_search_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginLeft="6.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="1.0dp" android:text="@string/projection_search_list_sub_title" />
+        <ImageView android:id="@id/projection_search_sub_title_icon" android:visibility="gone" android:layout_width="11.0dp" android:layout_height="12.0dp" android:layout_marginTop="3.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/ic_projection_search_list_sub_title_icon" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/projection_search_close" android:padding="4.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="12.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/projection_icon_nav_close" />
+    </LinearLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <FrameLayout android:id="@id/root_new_ui" android:background="@color/Bg3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="34.0dp">
+            <LinearLayout android:orientation="vertical" android:id="@id/root_new_content_linearlayout" android:background="@color/Bg3" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/root_old_ui" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/projection_search_normal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/projection_search_bili_top_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/vehicle_devices_top_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp">
+                            <com.bilibili.lib.projection.internal.search.view.ProjectionCircleImageView android:id="@id/vehicle_devices_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/projection_vehicle_banner" android:scaleType="centerCrop" app:placeholderImage="@drawable/ic_tv_placeholder" />
+                        </FrameLayout>
+                        <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/vehicle_devices_rv" android:background="@drawable/projection_device_list_bg" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp">
+                            <com.bilibili.lib.projection.internal.search.view.ProjectionCircleImageView android:id="@id/bili_title_type_b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:scaleType="centerCrop" app:placeholderImage="@drawable/ic_tv_placeholder" />
+                        </FrameLayout>
+                        <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/bili_device_recycler" android:background="@drawable/projection_device_list_bg" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+                            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5_u" android:id="@id/third_party_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/projection_search_thirdparty_device_tip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/projection_search_device_view" android:layout_width="match_parent" android:layout_height="44.0dp">
+                        <com.airbnb.lottie.LottieAnimationView android:id="@id/buffering_view" android:layout_width="16.0dp" android:layout_height="16.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/ic_search_loading" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/player_projection_screen_searching" />
+                    </LinearLayout>
+                    <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/other_device_recycle" android:background="@color/Ga1" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginTop="9.0dp" android:layout_marginRight="12.0dp" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/projection_search_help_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+                        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/projection_search_help1" />
+                        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/projection_search_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/projection_search_help2" />
+                        <ImageView android:layout_width="5.0dp" android:layout_height="10.0dp" android:layout_marginLeft="4.0dp" app:srcCompat="@drawable/projection_search_array" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <include layout="@layout/bili_projection_search_how_to_projection" />
+        <include layout="@layout/bili_projection_search_no_wifi" />
+        <include layout="@layout/bili_projection_search_no_device" />
+        <include layout="@layout/bili_projection_search_other" />
+    </RelativeLayout>
+</LinearLayout>

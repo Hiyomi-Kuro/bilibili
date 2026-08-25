@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_multi_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/bg_hor_multi_view_divider" android:showDividers="middle" android:dividerPadding="5.0dp" />
+    <LinearLayout android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="#33ffffff" android:layout_width="0.5dp" android:layout_height="10.0dp" android:layout_marginLeft="10.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="更多" android:drawableRight="@drawable/ic_live_arrow_right_white" android:drawablePadding="3.0dp" />
+    </LinearLayout>
+</merge>

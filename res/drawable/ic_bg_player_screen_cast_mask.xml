@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="10.0dp" android:width="0.05405402dp" android:autoMirrored="true" android:viewportWidth="1.0" android:viewportHeight="185.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_bg_player_screen_cast_mask__0" android:pathData="M0,0h1v185h-1z" />
+</vector>

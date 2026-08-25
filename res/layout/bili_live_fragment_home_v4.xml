@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:refreshStyle="equip_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.videoliveplayer.ui.widget.PreDetectedRecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recyclerView" android:paddingBottom="@dimen/homepage_bottom_navigation_garb_height" android:visibility="invisible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.bililive.videoliveplayer.ui.home.v4.widgets.LiveEntranceButton android:layout_gravity="right|bottom" android:id="@id/liveEntrance" android:paddingBottom="@dimen/homepage_bottom_navigation_garb_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dp" style="@style/bili_live_entrance_visibility" />
+        <include layout="@layout/bili_live_home_sub_tab_content" />
+        <include layout="@layout/bili_live_home_tab_content" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>

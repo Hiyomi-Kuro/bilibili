@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/audio_play_view" android:visibility="visible" android:layout="@layout/xplayer_live_room_player_vertical_audio_play" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.room.ui.roomv3.player.container.LiveRoomPlayerDynamicView android:id="@id/fl_dynamic_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_player_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/buffering_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/live_sdk_ACD_BufferingView">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/buffering_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_sdk_video_play_control_video_title_text" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/buffering_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_sdk_VideoView_buffering" android:singleLine="true" android:shadowColor="@color/live_sdk_black_light_2" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:marqueeRepeatLimit="0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/svga_dolby_atmos_loading_container" android:background="#000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_dolby_atmos_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:autoPlay="true" app:loopCount="1" />
+    </LinearLayout>
+    <ViewStub android:id="@id/vs_sleep_layout" android:visibility="visible" android:layout="@layout/bili_app_clip_layout_player_sleep_mode" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

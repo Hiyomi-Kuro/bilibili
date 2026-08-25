@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/cover_avatar_shadow" android:background="@drawable/shape_rect_grad_black_alpha_0_to_40_corner_4" android:layout_width="match_parent" android:layout_height="45.0dp" />
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:paddingTop="8.0dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <tv.danmaku.bili.widget.PendantAvatarFrameLayout android:id="@id/avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:importantForAccessibility="no" android:layout_marginStart="8.0dp" style="@style/PendantAvatarStyleInlineOld" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/up_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="no" android:layout_marginStart="8.0dp" android:layout_marginEnd="72.0dp" />
+    </LinearLayout>
+</merge>

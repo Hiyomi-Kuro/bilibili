@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/live_emoticon_guide_big_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/live_emoticon_guide_small_tips_color" android:gravity="center" android:id="@id/live_big_guide_tips_line1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="24.0dp" android:text="@string/live_free_tips_big" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/live_big_guide_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_free_tips_icon" android:layout_above="@id/live_big_guide_tips_line1_1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_middle" android:textColor="@color/live_emoticon_guide_small_btn_text_color" android:id="@id/live_small_guide_btn" android:background="@drawable/live_emoticon_guide_btn_bg" android:paddingLeft="50.0dp" android:paddingTop="5.0dp" android:paddingRight="50.0dp" android:paddingBottom="5.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_free_tips_big_btn" android:includeFontPadding="false" android:layout_below="@id/live_big_guide_tips_line1_1" android:layout_centerHorizontal="true" />
+</RelativeLayout>

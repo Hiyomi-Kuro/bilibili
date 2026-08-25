@@ -1,0 +1,333 @@
+.class public final Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/app/playurl/v1/r;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;",
+        "Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;",
+        ">;",
+        "Lcom/bapis/bilibili/app/playurl/v1/r;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$000()Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearAudio()Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$500(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearIsLosslessAudio()Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$200(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearNeedVip()Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$700(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getAudio()Lcom/bapis/bilibili/app/playurl/v1/DashItem;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->getAudio()Lcom/bapis/bilibili/app/playurl/v1/DashItem;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getIsLosslessAudio()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->getIsLosslessAudio()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getNeedVip()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->getNeedVip()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public hasAudio()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->hasAudio()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public mergeAudio(Lcom/bapis/bilibili/app/playurl/v1/DashItem;)Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$400(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;Lcom/bapis/bilibili/app/playurl/v1/DashItem;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setAudio(Lcom/bapis/bilibili/app/playurl/v1/DashItem$b;)Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 3
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 4
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->build()Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/bapis/bilibili/app/playurl/v1/DashItem;
+
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$300(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;Lcom/bapis/bilibili/app/playurl/v1/DashItem;)V
+
+    return-object p0
+.end method
+
+.method public setAudio(Lcom/bapis/bilibili/app/playurl/v1/DashItem;)Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$300(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;Lcom/bapis/bilibili/app/playurl/v1/DashItem;)V
+
+    return-object p0
+.end method
+
+.method public setIsLosslessAudio(Z)Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$100(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setNeedVip(Z)Lcom/bapis/bilibili/app/playurl/v1/LossLessItem$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;->access$600(Lcom/bapis/bilibili/app/playurl/v1/LossLessItem;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

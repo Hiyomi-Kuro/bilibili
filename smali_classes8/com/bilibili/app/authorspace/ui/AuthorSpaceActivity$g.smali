@@ -1,0 +1,98 @@
+.class Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity$g;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity;->onActivityResult(IILandroid/content/Intent;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity$g;->a:Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/Void;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/bilibili/lib/accountinfo/c;->l()Lcom/bilibili/lib/accountinfo/c;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/bilibili/lib/accountinfo/c;->e()Lcom/bilibili/lib/accountinfo/model/AccountInfo;
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public bridge synthetic call()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/bilibili/app/authorspace/ui/AuthorSpaceActivity$g;->a()Ljava/lang/Void;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

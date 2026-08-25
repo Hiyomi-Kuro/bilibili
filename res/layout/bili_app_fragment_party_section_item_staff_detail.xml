@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bg_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="12.0dp" android:paddingTop="9.0dp" android:paddingRight="12.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_detail_staff" android:lines="1" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/bitmap_ic_video_detail_arrow_close" android:contentDescription="@null" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/shadow_dig" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="8.0dp" android:src="@drawable/shape_gradient_shadow_drak_light" />
+        <tv.danmaku.bili.widget.RecyclerView android:id="@id/rv_staff_list" android:background="@color/Wh0" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

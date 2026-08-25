@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="left|center" android:id="@id/tri_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/biligame_game_desc" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.biligame.widget.BiligameExpandableTextView android:textSize="14.0sp" android:textColor="@color/Wh0_u_alpha60" android:id="@id/tri_expandable_layout_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginHorizontal="12.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tri_tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

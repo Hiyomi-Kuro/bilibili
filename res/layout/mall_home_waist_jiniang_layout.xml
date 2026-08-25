@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.MallImageView2 android:id="@id/waist_jiniang_bubble" android:visibility="gone" android:layout_width="127.0dp" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

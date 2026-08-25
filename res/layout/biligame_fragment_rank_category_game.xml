@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.dropdownmenu.DropDownMenu android:id="@id/biligame_drop_down_menu" android:layout_width="match_parent" android:layout_height="40.0dp" app:bgColor="@color/Wh0" app:layout_constraintTop_toTopOf="parent" app:lineColor="@color/Ga1_s" />
+    <FrameLayout android:id="@id/biligame_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/biligame_drop_down_menu" />
+    <com.bilibili.biligame.widget.dropdownmenu.DropDownMenuContent android:id="@id/biligame_drop_down_menu_content" android:layout_width="match_parent" android:layout_height="0.0dp" app:contentBgColor="@color/Wh0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/biligame_drop_down_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

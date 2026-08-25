@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/editor_caption_gray" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/daynight_color_text_body_primary" android:gravity="center" android:id="@id/caption_input_cancel" android:background="@color/upper_transparent" android:layout_width="40.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:text="@string/upper_cancel" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" />
+        <RelativeLayout android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/caption_input_ok" android:layout_toRightOf="@id/caption_input_cancel">
+            <EditText android:textSize="15.0sp" android:textColor="@color/upper_black" android:id="@id/captionEditText" android:background="@drawable/upper_editor_shape_roundrect_cap" android:paddingLeft="5.0dp" android:paddingRight="40.0dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp" android:maxLines="2" android:maxLength="60" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/upper_gray_dark" android:gravity="end|center" android:id="@id/word_count_text_view" android:layout_width="40.0dp" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:text="@string/upper_l_60_60" android:layout_alignRight="@id/captionEditText" android:layout_alignBottom="@id/captionEditText" />
+        </RelativeLayout>
+        <Button android:textColor="@color/pink" android:gravity="center" android:id="@id/caption_input_ok" android:background="@color/upper_transparent" android:layout_width="40.0dp" android:layout_height="30.0dp" android:layout_marginRight="10.0dp" android:text="@string/upper_sure" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

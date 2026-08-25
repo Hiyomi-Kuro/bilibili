@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:paddingRight="10.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv" android:layout_width="30.0dp" android:layout_height="25.0dp" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_toLeftOf="@id/cb" android:layout_toRightOf="@id/iv">
+        <TextView android:textSize="@dimen/upper_text_middle" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hah" android:maxLines="3" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_small" android:textColor="@color/daynight_color_text_supplementary_dark" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="hah" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <ImageView android:id="@id/imv_choose" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:src="@drawable/ic_upper_select" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

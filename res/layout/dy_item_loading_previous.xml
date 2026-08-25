@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/dy_loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dy_loading_previous" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/dy_holder_loading_failed" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dy_loading_failed" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/dy_reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dy_loading_retry" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

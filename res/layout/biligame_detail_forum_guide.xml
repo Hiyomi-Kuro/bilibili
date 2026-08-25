@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/biligame_dip_12" android:layout_marginStart="@dimen/biligame_dip_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_forum_guide_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:background="@drawable/biligame_detail_forum_guide_bg" android:paddingTop="@dimen/biligame_dip_12" android:paddingBottom="@dimen/biligame_dip_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:id="@id/tv_forum_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82.0dp" android:text="@string/biligame_detail_forum_guide" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/btn_forum_guide" android:background="@drawable/biligame_background_corner_blue_33" android:layout_width="60.0dp" android:layout_height="30.0dp" android:layout_marginRight="@dimen/biligame_dip_12" android:text="@string/biligame_detail_forum_guide_btn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_forum_guide" android:layout_width="64.0dp" android:layout_height="110.0dp" android:layout_marginLeft="@dimen/biligame_dip_10" />
+    </FrameLayout>
+</FrameLayout>

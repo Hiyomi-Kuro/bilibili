@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.gemini.ugc.feature.endpage.GeminiEndPageVerticalTopLayout android:paddingTop="30.0dp" android:layout_width="match_parent" android:layout_height="180.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.app.gemini.ugc.feature.author.GeminiAuthorFaceWidget android:id="@id/avatar" android:layout_width="60.0dp" android:layout_height="60.0dp" fresco:actualImageScaleType="fitCenter" fresco:from="endpage_vertical" fresco:placeholderImage="@drawable/bili_default_avatar" fresco:placeholderImageScaleType="fitCenter" fresco:roundAsCircle="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/author_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/author_op_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_below="@id/name">
+                <com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerChargeBgWidget android:id="@id/charge_container" android:background="@drawable/shape_rect_stroke_pink_20dp" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="88.0dp" android:layout_height="30.0dp" android:layout_marginRight="8.0dp">
+                    <com.bilibili.app.gemini.ugc.feature.GeminiPlayerChargeWidget android:textSize="14.0dp" android:textColor="@color/Pi5_u" android:gravity="center" android:layout_gravity="center" android:id="@id/charge" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/endpage_charge_for" android:maxLines="1" android:drawablePadding="2.0dp" fresco:drawableLeftHeight="16.0dp" fresco:drawableLeftWidth="16.0dp" fresco:from="endpage_vertical" />
+                </com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerChargeBgWidget>
+                <com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerFollowButton android:id="@id/follow" android:layout_width="88.0dp" android:layout_height="30.0dp" fresco:fbFollowFalseBg="@drawable/shape_rect_solid_pink_20dp" fresco:fbFollowTrueBg="@drawable/shape_rect_solid_wh0_u_alpha20_20dp" fresco:fbFollowTrueTextColor="@color/Wh0_u" fresco:fbStyle="fill" fresco:fbTextSize="14.0dp" fresco:from="endpage_vertical" />
+            </LinearLayout>
+            <com.bilibili.app.gemini.ugc.feature.author.GeminiAuthorNameWidget android:textSize="16.0dp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:maxEms="20" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/op_layout" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="80.0dp">
+        <RelativeLayout android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerReplayWidget android:layout_gravity="center_horizontal" android:id="@id/replay" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginTop="4.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_replay_bold" android:drawablePadding="20.0dp" fresco:drawableTopHeight="22.0dp" fresco:drawableTopWidth="22.0dp" fresco:from="endpage_vertical" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/white_alpha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_replay" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/frame_like" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.player.widget.like.GeminiPlayerLikeWidget android:layout_gravity="center" android:id="@id/gemini_like_widget" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_like_bold" android:drawablePadding="20.0dp" fresco:drawableTopHeight="24.0dp" fresco:drawableTopWidth="24.0dp" fresco:from="endpage_vertical" fresco:hideLikeCount="true" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/white_alpha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_recommend" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/frame_coin" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.player.widget.coin.GeminiPlayerCoinWidget android:layout_gravity="center" android:id="@id/coin_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_coin_bold" fresco:drawableTopHeight="22.0dp" fresco:drawableTopWidth="22.0dp" fresco:from="endpage_vertical" />
+                <com.bilibili.playerbizcommon.view.RingProgressBar android:layout_gravity="center" android:id="@id/coin_progress" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/white_alpha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_pay_coin" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/frame_favorite" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerFavoriteWidget android:layout_gravity="center" android:id="@id/favorite_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" android:drawableTop="@drawable/biliplayer_selector_topbar_favorite_bold" fresco:drawableTopHeight="22.0dp" fresco:drawableTopWidth="22.0dp" fresco:from="endpage_vertical" />
+                <com.bilibili.playerbizcommon.view.RingProgressBar android:layout_gravity="center" android:id="@id/favorite_progress" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/white_alpha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collect" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/share" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="0.0dp" android:layout_height="54.0dp" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <com.bilibili.app.gemini.ugc.feature.share.GeminiShareBeatIconWidget android:layout_gravity="center" android:id="@id/share_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:scaleType="fitStart" fresco:from="endpage_vertical" fresco:srcCompat="@drawable/biliplayer_ic_topbar_share_bold" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/white_alpha60" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_alignParentBottom="true" android:layout_centerInParent="true" fresco:drawableTopHeight="22.0dp" fresco:drawableTopWidth="22.0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.bilibili.app.gemini.ugc.feature.endpage.GeminiEndPageVerticalTopLayout>

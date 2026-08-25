@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/living_border_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <tv.danmaku.bili.widget.avatar.LivingAvatarAnimationView android:layout_gravity="center" android:id="@id/first_animation" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <tv.danmaku.bili.widget.avatar.LivingAvatarAnimationView android:layout_gravity="center" android:id="@id/second_animation" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:id="@id/living_view_container" android:background="@drawable/bili_shape_avatar_bg_text_living" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/animation" android:layout_width="12.0dp" android:layout_height="12.0dp" app:lottie_autoPlay="true" app:lottie_fileName="bili_avatar_living_animation.json" app:lottie_loop="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:text="@string/bili_app_avatar_living_tips" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</merge>

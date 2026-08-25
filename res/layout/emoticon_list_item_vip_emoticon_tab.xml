@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/emoticon_panel_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="50.0dp" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/icon" android:layout_width="30.0dp" android:layout_height="30.0dp" app:actualImageScaleType="centerInside" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/badge" android:background="@drawable/emoticon_shape_emoticon_badge" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="right|top" android:id="@id/emoticon_tag" android:background="@drawable/shape_roundrect_pink" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="2.0dp" android:maxLength="3" />
+</FrameLayout>

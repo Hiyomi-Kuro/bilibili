@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_cons_avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" app:placeholderImage="@drawable/bili_default_avatar" app:roundAsCircle="true" app:viewAspectRatio="1.0" style="@style/biligame_style_user_avatar" />
+</FrameLayout>

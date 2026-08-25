@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/bg_live_homepage_feed_full_shape" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.videoliveplayer.ui.widget.LiveActivityCardViewFlipper android:id="@id/flipper" android:layout_width="match_parent" android:layout_height="wrap_content" android:inAnimation="@anim/live_home_activity_card_anim_in" android:outAnimation="@anim/live_home_activity_card_anim_out" android:flipInterval="4000" android:autoStart="false" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

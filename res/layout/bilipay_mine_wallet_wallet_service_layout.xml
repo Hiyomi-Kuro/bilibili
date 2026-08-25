@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wallet_service_container" android:background="@drawable/bilipay_mine_wallet_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/daynight_color_text_body_primary" android:id="@id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="14.0dp" android:text="@string/pay_new_wallet_wallet_service" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/wallet_service_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</LinearLayout>

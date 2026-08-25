@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="6.0dp" android:paddingTop="3.0dp" android:paddingRight="6.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/label_icon" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="10.0sp" android:id="@id/label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:lines="1" android:layout_centerVertical="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/label_icon" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="0.0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

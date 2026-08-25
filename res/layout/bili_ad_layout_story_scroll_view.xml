@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/story_scroll_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34.0dp">
+        <com.bilibili.ad.adview.story.card.widget.scrollwidget.AdNoBottomFadingEdgeRecyclerView android:id="@id/story_scroll_rv" android:fadingEdgeLength="18.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:requiresFadingEdge="vertical" />
+        <View android:id="@id/story_scroll_touch_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/story_button_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="6.0dp" />
+</LinearLayout>

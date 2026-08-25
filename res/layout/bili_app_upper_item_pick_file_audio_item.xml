@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="13.0dp">
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="13.0dp">
+            <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_width="match_parent" android:layout_height="match_parent" app:roundedCornerRadius="5.0dp" app:scaleViewType="fitWidth" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/upper_text_small" android:textColor="#b6b6b6" android:id="@id/tv_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <TextView android:textSize="@dimen/upper_text_middle" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dp" android:layout_marginRight="90.0dp" android:maxLines="2" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/upper_text_small" android:textColor="#757575" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:textSize="@dimen/bili_editor_bgm_list_item_confirm_text_size" android:textColor="#ffffff" android:id="@id/submit" android:background="@drawable/upper_selector_button_pink_bgm" android:visibility="invisible" android:layout_width="@dimen/bili_editor_bgm_list_item_confirm_width" android:layout_height="@dimen/bili_editor_bgm_list_item_confirm_height" android:text="@string/bili_editor_use" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/layout_editor_bgm_list_item_extra_track" />
+</LinearLayout>

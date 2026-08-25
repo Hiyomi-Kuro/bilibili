@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rv_root" android:background="#0c0c0c" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperPinchImageView android:layout_gravity="center" android:id="@id/iv_pic" android:layout_width="match_parent" android:layout_height="match_parent" fresco:actualImageScaleType="fitCenter" />
+</FrameLayout>

@@ -1,0 +1,26 @@
+.class public Lcom/bilibili/biligame/api/BiligameGiftGee;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+
+# instance fields
+.field public giftInfo:Lcom/bilibili/biligame/api/BiligameGiftDetail;
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "gift_info"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_roundrect_solid_white_radius_8" android:paddingLeft="12.0dp" android:paddingTop="17.0dp" android:paddingRight="12.0dp" android:paddingBottom="17.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_super_menu_correct" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/word_share_title" android:layout_marginStart="10.0dp" />
+        </LinearLayout>
+        <ScrollView android:background="@drawable/super_menu_word_text_bg" android:layout_width="match_parent" android:layout_height="113.0dp" android:layout_marginTop="18.0dp" android:overScrollMode="never">
+            <LinearLayout android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:id="@id/word_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:textIsSelectable="true" />
+            </LinearLayout>
+        </ScrollView>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/word_share_word_to" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:overScrollMode="never" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/close_iv" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="30.0dp" android:src="@drawable/ic_word_share_dialog_close" />
+</LinearLayout>

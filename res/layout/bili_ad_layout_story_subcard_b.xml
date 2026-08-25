@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.ad.adview.story.card.widget.AdStoryLikeCardWidget android:layout_gravity="bottom" android:id="@id/story_subcard_b_like" android:visibility="gone" android:layout_width="270.0dp" android:layout_height="157.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/story_subcard_b_first" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.ad.adview.story.card.widget.AdStoryTopInfoWidget android:id="@id/story_top_info" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" />
+        <com.bilibili.ad.adview.story.card.widget.AdStoryTitleWidget android:textSize="14.0dp" android:textColor="@color/Wh0_u" android:id="@id/story_title" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:shadowColor="@color/Ba0_u_alpha15" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_marginStart="12.0dp" />
+        <com.bilibili.ad.adview.story.card.widget.AdStoryArgueWidget android:textSize="12.0dp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/story_argue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="12.0dp" android:drawablePadding="3.0dp" android:layout_marginStart="12.0dp" />
+    </LinearLayout>
+</FrameLayout>

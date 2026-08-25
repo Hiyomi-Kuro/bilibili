@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/Wh0_alpha90" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tri_tv_same_server_tips" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:maxLines="1" android:drawablePadding="6.0dp" android:paddingHorizontal="8.0dp" app:drawableLeftCompat="@drawable/biligame_vector_ic_i"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

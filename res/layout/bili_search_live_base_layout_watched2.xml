@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/watched_icon" android:layout_width="14.5dp" android:layout_height="14.5dp" android:layout_marginRight="2.0dp" android:scaleType="centerInside" />
+    <com.bilibili.search2.result.vertical.live.widget.LiveMarqueeTintTextView android:ellipsize="none" android:id="@id/watched_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/content_area" android:background="@color/Graph_bg_thin" android:layout_width="375.0dp" android:layout_height="wrap_content" app:cardBackgroundColor="@color/Graph_bg_thin" app:cardCornerRadius="12.0dp" app:cardElevation="0.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_menus" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+    </androidx.cardview.widget.CardView>
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/arrow_down" android:background="@drawable/bili_app_list_float_popup_dialog_arrow_down" android:layout_width="15.0dp" android:layout_height="12.0dp" android:layout_marginTop="-12.0dp" android:layout_marginStart="-15.0dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/arrow_left" android:background="@drawable/bili_app_list_float_popup_dialog_arrow_left" android:layout_width="12.0dp" android:layout_height="15.0dp" android:layout_marginTop="-15.0dp" android:layout_marginStart="-12.0dp" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

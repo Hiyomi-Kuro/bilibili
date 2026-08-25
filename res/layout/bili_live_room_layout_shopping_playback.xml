@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_container" android:background="@drawable/ic_live_pk_room_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container_player_root" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/live_shopping_player_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_buffering" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/live_sdk_ACD_BufferingView">
+            <com.airbnb.lottie.LottieAnimationView android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/live_sdk_video_play_control_video_title_text" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_sdk_VideoView_buffering" android:singleLine="true" android:shadowColor="@color/live_sdk_black_light_2" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_shift_time" android:background="@drawable/bg_live_timeshift_touchview" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginTop="4.0dp" android:src="@drawable/live_room_arrow_back_white" android:contentDescription="@null" android:paddingStart="17.0dp" android:paddingEnd="17.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_room_shopping_play_back_title_bar" app:layout_constraintBottom_toBottomOf="@id/iv_back" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/iv_back" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="27.0dp" app:layout_constraintBottom_toTopOf="@id/seek_bar">
+        <FrameLayout android:id="@id/shopping_container" android:background="@drawable/bg_live_shopping_card" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="80.0dp" android:layout_marginStart="12.0dp" android:layout_toStartOf="@id/container_back_to_live" android:layout_alignParentStart="true">
+            <FrameLayout android:id="@id/shopping_type_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ImageView android:layout_gravity="end|top" android:id="@id/iv_card_close" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_live_shopping_card_close" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_back_to_live" android:background="@drawable/bg_live_room_shopping_playback_back" android:layout_width="56.0dp" android:layout_height="60.0dp" android:layout_alignBottom="@id/shopping_container" android:layout_alignParentRight="true" android:layout_marginStart="30.0dp" android:layout_marginEnd="12.0dp">
+            <FrameLayout android:background="@drawable/bg_live_room_shopping_back_to_live_btn" android:layout_width="28.0dp" android:layout_height="28.0dp">
+                <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/iv_back_to_live" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_live_goods_explain" />
+            </FrameLayout>
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/live_room_shopping_back_to_live" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.bilibili.bililive.room.biz.shopping.view.LiveShoppingPlayerSeekBar android:id="@id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="38.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

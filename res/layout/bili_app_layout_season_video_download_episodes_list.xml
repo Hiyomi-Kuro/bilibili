@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="48.0dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="1.0dp" app:pstsShouldExpand="false" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Widget.App.SlidingTab.VideoDetail" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/tv_delay_not_worry_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="0.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#2f8efd" android:ellipsize="end" android:id="@id/tv_delay_not_worry_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="5.0dp" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/tv_delay_not_worry_time" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="0.0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

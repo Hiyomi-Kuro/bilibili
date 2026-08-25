@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/float_bar" android:layout_width="30.0dp" android:layout_height="3.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/shape_float_bar_roundrect_2dp" android:layout_marginVertical="8.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/subtitle_large_background" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/shape_rect_solid_wh0_8dp" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Text1" android:gravity="center_vertical" android:id="@id/subtitle_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/Player_large_subtitle_switch" app:layout_constraintBottom_toBottomOf="@id/subtitle_large_background" app:layout_constraintLeft_toLeftOf="@id/subtitle_large_background" app:layout_constraintTop_toTopOf="@id/subtitle_large_background" />
+        <TextView android:id="@id/subtitle_large_switch" android:background="@drawable/ic_btn_player_options_switch_233" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" app:layout_constraintBottom_toBottomOf="@id/subtitle_large_background" app:layout_constraintRight_toRightOf="@id/subtitle_large_background" app:layout_constraintTop_toTopOf="@id/subtitle_large_background" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/subtitle_main_list" android:background="@drawable/shape_rect_solid_wh0_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="16.0dp" />
+</LinearLayout>

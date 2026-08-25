@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/im_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.core.widget.NestedScrollView>
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="vertical" android:id="@id/ptrContent" android:background="@color/Ga1" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.core.widget.NestedScrollView>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_messages" android:visibility="visible" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.core.widget.NestedScrollView android:id="@id/view_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60.0dp" android:layout_below="@id/rv_messages">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.bilibili.bplus.im.communication.widget.HomeLoadingView android:id="@id/loading_view_compose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/vs_reply_more_tips" android:layout="@layout/layout_im_auto_reply_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginRight="9.0dp" android:layout_alignParentRight="true" android:layout_marginEnd="9.0dp" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/vs_im_clear_status" android:layout="@layout/layout_im_clear_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

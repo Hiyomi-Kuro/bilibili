@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="85.0dp" android:layout_height="55.0dp" android:layout_marginRight="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_pic" android:background="@drawable/bg_upper_violation_pic_coner_4" android:layout_width="85.0dp" android:layout_height="55.0dp" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundedCornerRadius="4.0dp" />
+    <TextView android:textSize="9.0sp" android:textColor="#f85a54" android:id="@id/tv_duration" android:background="@drawable/bg_upper_violation_time_coner_2" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" android:text="00:00:00" app:layout_constraintBottom_toBottomOf="@id/iv_pic" app:layout_constraintRight_toRightOf="@id/iv_pic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

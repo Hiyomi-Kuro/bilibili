@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/person_info_avatar_title" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_take" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_camera_pink" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga9" android:gravity="center_horizontal" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/person_info_avatar_take" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_choose" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_gallery" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga9" android:gravity="center_horizontal" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/person_info_avatar_choose" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_random" android:background="@drawable/item_background" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/ic_photo_random" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga9" android:gravity="center_horizontal" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/person_info_avatar_random" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/photo_cancel" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/cancel" />
+</LinearLayout>

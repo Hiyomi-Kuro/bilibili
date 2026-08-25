@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/poster_base" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/poster_img_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_marginLeft="33.0dp" android:layout_marginTop="215.0dp" android:layout_marginRight="33.0dp" android:layout_marginBottom="20.0dp" android:elevation="10.0dp">
+            <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/poster_share_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="200.0dp" android:layout_marginBottom="5.0dp" android:layout_above="@id/poster_menu_container" android:layout_centerHorizontal="true" app:actualImageScaleType="centerInside" app:placeholderImage="@android:color/transparent" app:viewAspectRadioHeight="200" app:viewAspectRadioWidth="200" />
+            <ImageView android:layout_gravity="right" android:id="@id/poster_share_cancel" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginBottom="40.0dp" android:scaleType="centerInside" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_share_screenshot_close" />
+            <FrameLayout android:id="@id/poster_menu_container" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_alignParentBottom="true">
+                <com.bilibili.app.comm.supermenu.share.pic.ui.PosterShareContainerView android:layout_gravity="top" android:id="@id/poster_share_menu" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/poster_share_loading" android:visibility="gone" layout="@layout/bili_share_player_poster_loading" />
+</FrameLayout>

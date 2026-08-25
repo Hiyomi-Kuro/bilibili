@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_cover" android:layout_width="56.0dp" android:layout_height="56.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundedCornerRadius="12.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="56.0dp" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_game" app:layout_constraintStart_toEndOf="@id/iv_cover" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dp" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tv_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="18.0dp" android:maxLines="1" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="18.0dp" android:maxLines="1" />
+    </LinearLayout>
+    <com.bilibili.app.comm.list.common.widget.ListGameCardButton android:id="@id/btn_game" android:layout_width="66.0dp" android:layout_height="24.0dp" app:game_button_borderWidth="66.0dp" app:game_button_height="24.0dp" app:game_button_width="66.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

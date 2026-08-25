@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="20.0dp" android:layout_width="303.0dp" android:layout_height="301.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/title_container" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:paddingHorizontal="16.0dp">
+        <ImageView android:layout_gravity="start|center" android:id="@id/image_question" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_live_medal_alert_question" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/image_close" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/ic_live_medal_alert_close" />
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_left_line" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/live_medal_alert_btn_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_right_line" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:id="@id/content_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/title_container" android:layout_marginHorizontal="12.0dp" />
+    <RelativeLayout android:id="@id/medal_change_content" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="17.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/content_tv" android:layout_marginHorizontal="12.0dp">
+        <FrameLayout android:id="@id/medal_change_bg" android:layout_width="match_parent" android:layout_height="83.0dp" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/medal_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/medal_change_bg" android:layout_alignBottom="@id/medal_change_bg">
+            <TextView android:textSize="10.0sp" android:layout_gravity="center_vertical" android:id="@id/old_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14.0dp" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/transition_arrow" android:layout_width="35.0dp" android:layout_height="15.0dp" android:layout_marginLeft="7.0dp" android:layout_marginRight="7.0dp" android:src="@drawable/icon_left_to_right_arrow" android:layout_marginHorizontal="7.0dp" />
+            <TextView android:textSize="13.0sp" android:layout_gravity="center_vertical" android:id="@id/new_medal" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="4.0dp" />
+        </LinearLayout>
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/medal_change_bg_image" android:layout_width="72.0dp" android:layout_height="90.0dp" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:thumbHeight="90.0dp" app:thumbWidth="72.0dp" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/live_medal_alert_btn_text" android:gravity="center" android:id="@id/button" android:layout_width="230.0dp" android:layout_height="38.0dp" android:layout_marginTop="20.0dp" android:layout_below="@id/medal_change_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/live_guard_open_guide_dialog_describe" android:id="@id/describe_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/button" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/coverContainer" android:layout_width="128.0dp" android:layout_height="72.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/cover" android:layout_width="128.0dp" android:layout_height="72.0dp" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="@dimen/cheese_corner_card" style="@style/Widget.App.StaticImageView.Thumb.CheeseRecommendCover" />
+        <View android:layout_gravity="bottom" android:id="@id/shader" android:background="@drawable/theseus_cheese_shape_grad_cooperator" android:layout_width="128.0dp" android:layout_height="30.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/ic_white_kit" android:layout_gravity="right|bottom" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginBottom="4.0dp" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" android:lineSpacingExtra="1.5dp" app:layout_constraintLeft_toLeftOf="@id/coverContainer" app:layout_constraintRight_toRightOf="@id/coverContainer" app:layout_constraintTop_toBottomOf="@id/coverContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

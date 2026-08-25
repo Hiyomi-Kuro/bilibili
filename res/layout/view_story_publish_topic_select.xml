@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/Ga3_u" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_recommend_topic" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.app.comm.list.widget.scroll.ScrollAwareHorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintLeft_toRightOf="@id/title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/title">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/ll_recommend_topics" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.bilibili.app.comm.list.widget.scroll.ScrollAwareHorizontalScrollView>
+    <View android:background="@color/Ga9_u" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/bottom_line" android:background="@color/Ga9_u" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_linear" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/item_dyna" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/column_detail_dynamic" android:drawableLeft="@drawable/ic_column_detail_menu_dynamic" android:drawablePadding="16.0dp" />
+        <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/item_repo" android:paddingTop="18.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/column_detail_report_forward" android:drawableLeft="@drawable/ic_column_detail_menu_report" android:drawablePadding="16.0dp" />
+    </LinearLayout>
+    <View android:id="@id/view" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="5.0dp" android:layout_below="@id/bottom_linear" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/menu_cancel" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:text="@string/column_mananger_bottom_cancle" android:layout_below="@id/view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

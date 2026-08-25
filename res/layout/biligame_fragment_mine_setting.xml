@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_notify" android:background="@color/Wh0" android:paddingRight="@dimen/biligame_dip_12" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="@dimen/biligame_dip_12" android:text="@string/biligame_setting_label_notify" android:drawableRight="@drawable/biligame_selector_header_arrow" style="@style/SettingTitleTextViewStyle" />
+    <TextView android:id="@id/tv_feedback" android:background="@color/Wh0" android:paddingRight="@dimen/biligame_dip_12" android:layout_width="match_parent" android:layout_marginTop="@dimen/biligame_dip_12" android:text="@string/biligame_setting_label_feedback" android:drawableRight="@drawable/biligame_selector_header_arrow" style="@style/SettingTitleTextViewStyle" />
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="-0.5dp" />
+    <LinearLayout android:id="@id/ll_group_qq" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:text="@string/biligame_setting_label_qq_group" style="@style/SettingTitleTextViewStyle" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Lb5" android:gravity="right|center" android:id="@id/tv_group_qq" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/biligame_setting_qq_group" />
+    </LinearLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="-0.5dp" />
+    <RelativeLayout android:id="@id/rl_service_qq" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_service_qq_title" android:layout_marginLeft="20.0dp" android:layout_marginTop="11.0dp" android:text="@string/biligame_setting_label_service_qq" style="@style/Biligame.TextView.14SP.BLACK33" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:id="@id/tv_service_qq_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="11.0dp" android:text="@string/biligame_setting_service_qq_info" android:layout_below="@id/tv_service_qq_title" android:layout_alignLeft="@id/tv_service_qq_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Lb5" android:id="@id/tv_service_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/biligame_setting_service_qq" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="-0.5dp" />
+    <RelativeLayout android:id="@id/rl_service_phone" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_service_phone_title" android:layout_marginLeft="20.0dp" android:layout_marginTop="11.0dp" android:text="@string/biligame_setting_label_service_phone" style="@style/Biligame.TextView.14SP.BLACK33" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:id="@id/tv_service_phone_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="11.0dp" android:text="@string/biligame_setting_service_phone_info" android:layout_below="@id/tv_service_phone_title" android:layout_alignLeft="@id/tv_service_phone_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Lb5" android:id="@id/tv_service_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/biligame_setting_service_phone" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="-0.5dp" />
+    <LinearLayout android:id="@id/ll_service_email" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:text="@string/biligame_setting_label_service_email" style="@style/SettingTitleTextViewStyle" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Lb5" android:gravity="right|center" android:id="@id/tv_service_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/biligame_setting_service_email" />
+    </LinearLayout>
+</LinearLayout>

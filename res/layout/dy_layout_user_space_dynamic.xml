@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout android:id="@id/dy_refresh" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/dy_fl_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.RecyclerView android:id="@id/dy_list" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.core.widget.NestedScrollView android:id="@id/dy_fail_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.compose.ui.platform.ComposeView android:id="@id/dy_place_holder_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include layout="@layout/view_share_reminder" />
+    </FrameLayout>
+</com.bilibili.bplus.followingcard.widget.FollowingSwipeRefreshLayout>

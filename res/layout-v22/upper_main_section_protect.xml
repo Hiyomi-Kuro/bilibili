@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginBottom="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginHorizontal="12.0dp" app:cardBackgroundColor="@color/transparent_white" app:cardCornerRadius="12.0dp" app:cardElevation="0.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ivProtectImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@id/tvProtectTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:singleLine="true" android:layout_marginStart="16.0dp" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tvProtectDescContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_marginStart="16.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:id="@id/tvProtectDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="16" android:singleLine="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#0cb6f2" android:id="@id/tvProtectButton" android:background="@drawable/bg_upper_rounded_white_corner_10" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="2.0dp" android:drawableEnd="@drawable/ic_upper_center_protect_right" android:paddingStart="6.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="4.0dp" android:paddingVertical="2.0dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

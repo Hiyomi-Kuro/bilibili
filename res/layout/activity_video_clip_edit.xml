@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@android:id/content" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@id/texture" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bplus.baseplus.widget.LabelSeekbar android:orientation="horizontal" android:id="@id/time_bar" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:nextFocusUp="@id/btn_set_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp" android:layout_above="@id/btn_set_cover" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u_alpha85" android:id="@id/current_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_below="@id/time_bar" android:layout_alignLeft="@id/time_bar" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u_alpha85" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/time_bar" android:layout_alignRight="@id/time_bar" />
+        <Button android:textSize="18.0sp" android:textColor="@color/Wh0_u" android:id="@id/btn_set_cover" android:background="@drawable/shape_round_rect_blue_corner10" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="12.0dp" android:text="@string/set_cover" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="@drawable/shape_rect_gradient_t2b_26black_trans" android:layout_width="match_parent" android:layout_height="?actionBarSize" />
+</RelativeLayout>

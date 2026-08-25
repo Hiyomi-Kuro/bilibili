@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pay_coins_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/close" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="14.0dp" android:src="@drawable/ic_pay_coins_close" android:layout_centerInParent="true" />
+        <CheckBox android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/checkbox" android:background="@null" android:paddingLeft="5.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dp" android:button="@drawable/selector_checkbox_paycoin_like" android:text="@string/pay_coins_like" android:layout_toLeftOf="@id/close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:paddingStart="5.0dp" android:paddingEnd="0.0dp" android:layout_marginStart="19.0dp" android:layout_toStartOf="@id/close" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="end" android:id="@id/coin_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dp" android:text="@string/pay_coins_how_to_get_coins" android:layout_toRightOf="@id/close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="24.0dp" android:layout_toEndOf="@id/close" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/TextAppearance.App.Medium" android:textColor="@color/white_alpha60" android:gravity="center" android:id="@id/prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pay_coins_prompt" android:layout_above="@id/layout_bottom" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.App.Medium" android:textColor="@color/white_alpha60" android:gravity="center" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_coins_balance" android:layout_below="@id/prompt" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/pay_coins" android:layout_width="@dimen/pay_coins_module_box" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:src="@drawable/ic_22_mario" android:adjustViewBounds="true" android:layout_above="@id/prompt" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layout_coin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/prompt">
+        <FrameLayout android:id="@id/layout_one" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="450.0dp" android:layout_centerHorizontal="true">
+            <View android:layout_gravity="center" android:id="@id/box_one" android:background="@drawable/ic_pay_coins_box" android:layout_width="@dimen/pay_coins_module_box" android:layout_height="@dimen/pay_coins_module_box" />
+            <ImageView android:layout_gravity="center" android:id="@id/coin_one" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_coins_one" />
+            <View android:layout_gravity="center" android:id="@id/mask_one" android:background="@drawable/ic_mask" android:visibility="gone" android:layout_width="@dimen/pay_coins_module_box" android:layout_height="@dimen/pay_coins_module_box" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_two" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="450.0dp" android:layout_marginRight="46.0dp" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center" android:id="@id/box_two" android:background="@drawable/ic_pay_coins_box" android:layout_width="@dimen/pay_coins_module_box" android:layout_height="@dimen/pay_coins_module_box" />
+            <ImageView android:layout_gravity="center" android:id="@id/coin_two" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_coins_two" />
+            <View android:layout_gravity="center" android:id="@id/mask_two" android:background="@drawable/ic_mask" android:visibility="gone" android:layout_width="@dimen/pay_coins_module_box" android:layout_height="@dimen/pay_coins_module_box" />
+        </FrameLayout>
+        <ImageView android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:src="@drawable/ic_left" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:src="@drawable/ic_right_disable" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/anchor" android:layout_width="1.0dp" android:layout_height="@dimen/pay_coins_module_box" android:layout_centerInParent="true" />
+    <TextView android:id="@id/thunder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <View android:id="@id/cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-100.0dp" android:layout_above="@id/layout_coin" />
+</RelativeLayout>

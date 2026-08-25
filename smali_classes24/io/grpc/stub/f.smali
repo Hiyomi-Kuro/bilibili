@@ -1,0 +1,29 @@
+.class public abstract Lio/grpc/stub/f;
+.super Lio/grpc/stub/e;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/grpc/stub/e<",
+        "TV;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lio/grpc/stub/e;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

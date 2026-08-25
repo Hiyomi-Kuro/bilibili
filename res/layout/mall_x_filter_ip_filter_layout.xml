@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mall_ip_filter_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mall_ip_filter_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/mall_ip_filter_rv_ll" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.mall.ui.widget.MallClickRecyclerView android:id="@id/mall_ip_filter_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="76.0dp" android:overScrollMode="never" android:paddingStart="11.5dp" android:paddingEnd="11.5dp" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mall_ip_filter_reset_confirm_cl" android:background="@color/white" android:paddingTop="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/mall_ip_filter_rv_ll" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+            <FrameLayout android:id="@id/mall_ip_filter_reset_fl" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/mall_ip_filter_confirm_fl" app:layout_constraintHorizontal_weight="0.25" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="14.0dp" android:textColor="@color/Pi5_u" android:gravity="center" android:layout_gravity="center" android:id="@id/mall_ip_filter_reset_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重置" android:includeFontPadding="false" android:textAlignment="center" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/mall_ip_filter_confirm_fl" android:background="@drawable/mall_blind_box_confirm_btn_bg" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="0.72" app:layout_constraintStart_toEndOf="@id/mall_ip_filter_reset_fl" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="14.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/mall_ip_filter_confirm_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:includeFontPadding="false" android:textAlignment="center" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</LinearLayout>

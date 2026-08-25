@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#ff282828" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/upper_shape_caption_item_selector" android:layout_width="68.0dp" android:layout_height="40.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/upper_white" android:gravity="center" android:id="@id/fx_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" android:text="@string/bili_editor_origin_picture" />
+    </RelativeLayout>
+</LinearLayout>

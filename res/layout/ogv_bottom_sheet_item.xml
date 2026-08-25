@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_icon" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="20.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" app:imageTint="@color/Pi5" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_pink_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:imageTint="@color/Pi5" app:srcCompat="@drawable/ogv_bottom_sheet_pink_check" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/tv_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:lines="1" android:layout_toLeftOf="@id/iv_pink_check" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" android:layout_marginStart="20.0dp" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.100000024dp" android:layout_marginLeft="20.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="20.0dp" />
+</RelativeLayout>

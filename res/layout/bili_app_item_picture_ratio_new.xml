@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="53.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center|bottom" android:id="@id/fl_content" android:layout_width="match_parent" android:layout_height="30.0dp">
+        <View android:layout_gravity="center" android:background="@drawable/bg_template_ratio_item_shape" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/Text_white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/view_cover" android:background="@drawable/shape_pink_select_cover_6_radius" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

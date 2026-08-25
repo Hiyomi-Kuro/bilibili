@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bili_share_loading_bg" android:layout_width="88.0dp" android:layout_height="88.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/share_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:scaleType="centerInside" app:lottie_autoPlay="true" app:lottie_fileName="share_img_loading.json" app:lottie_loop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="9.0dp" android:layout_marginBottom="14.0dp" android:text="@string/bili_socialize_share_processing" />
+</LinearLayout>

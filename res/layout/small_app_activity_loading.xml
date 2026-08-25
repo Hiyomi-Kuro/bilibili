@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/loading_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.fasthybrid.uimodule.widget.LoadingErrorView android:id="@id/loading_error" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.modal.ModalLayout android:id="@id/modal_layer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.more.MoreView android:layout_gravity="end|top" android:id="@id/more_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/small_app_more_view_margin_end" android:layout_marginEnd="@dimen/small_app_more_view_margin_end" />
+    <FrameLayout android:id="@id/back_frame" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="@dimen/small_app_tool_bar_height">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/back_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/smallapp_toolbar_back" app:imageTint="@color/black" />
+    </FrameLayout>
+</FrameLayout>

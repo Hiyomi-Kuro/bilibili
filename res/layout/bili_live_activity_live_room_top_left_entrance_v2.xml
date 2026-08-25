@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54.0dp" android:layout_marginStart="18.0dp">
+        <com.bilibili.bililive.room.ui.official.views.LiveRoomOfficialProgrammeContainer android:gravity="center_vertical" android:id="@id/official_programme_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="6.0dp" />
+        <com.bilibili.bililive.biz.rank.poprank.ui.LivePopRankEntranceView android:id="@id/pop_rank_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="6.0dp" />
+        <com.bilibili.bililive.biz.rank.function.LiveFunctionRankEntranceView android:id="@id/function_rank_entrance_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="6.0dp" />
+        <com.bilibili.bililive.biz.rank.officialliveroomrank.view.LiveOfficialRoomRankEntranceView android:id="@id/official_rank_entrance_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="6.0dp" />
+        <include layout="@layout/bili_live_room_reverse_entrance_layout" />
+    </LinearLayout>
+</RelativeLayout>

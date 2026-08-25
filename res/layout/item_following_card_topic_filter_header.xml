@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_bg" android:background="@color/black_alpha50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/rl_filters" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="@dimen/topic_filter_height">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_12sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/tv_filter_name_header" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/following_card_margin" />
+        <LinearLayout android:id="@id/ll_filter_click" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_12sp" android:textColor="@color/Ga7" android:gravity="center" android:id="@id/tv_filter" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/following_topic_header_filter" />
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_filter" android:paddingLeft="4.0dp" android:paddingRight="14.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_list_filter_topic" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/ll_show_tags" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/topic_filter_height" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

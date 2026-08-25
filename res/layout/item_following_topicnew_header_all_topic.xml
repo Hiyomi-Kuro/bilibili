@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/Wh0" android:paddingLeft="@dimen/following_card_margin" android:paddingTop="17.0dp" android:paddingRight="@dimen/following_card_margin" android:paddingBottom="17.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_14sp" android:textStyle="bold" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_hometab_topic_new_title" android:includeFontPadding="false" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/tv_all_topic" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_drama_more" android:includeFontPadding="false" android:drawableRight="@drawable/ic_arrow_right" android:drawablePadding="8.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_arrow_right" android:layout_alignParentEnd="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <FrameLayout android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_below="@id/tv_title" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

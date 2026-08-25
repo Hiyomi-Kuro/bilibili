@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/id_swipe_view" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mall_wallpaper_list_view" android:paddingBottom="8.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" />
+        <include android:id="@id/mall_wallpaper_tips_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/mall_tips_view" />
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

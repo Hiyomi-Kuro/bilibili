@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/root_view" android:background="@color/daynight_event_topic_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/title_iv" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="centerCrop" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/loading_failed_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/loading_failed_iv" android:layout_width="140.0dp" android:layout_height="80.0dp" android:src="@drawable/topic_img_load_failed" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/day_event_topic_text_body_secondary_light" android:id="@id/loading_failed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_img_loading_failed" app:layout_constraintBottom_toTopOf="@id/loading_retry_btn" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/loading_failed_iv" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintButton android:textColor="@color/white" android:gravity="center" android:id="@id/loading_retry_btn" android:background="@drawable/shape_event_daynight_solid_pink_r2" android:layout_width="50.0dp" android:layout_height="24.0dp" android:text="@string/retry" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/loading_failed_iv" app:layout_constraintTop_toBottomOf="@id/loading_failed_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/loading_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/loading_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_following_default_image_tv" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

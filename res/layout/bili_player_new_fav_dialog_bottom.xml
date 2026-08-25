@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/bottom_bar" android:background="@color/Bg1_float" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <View android:layout_gravity="top" android:background="@color/Line_regular" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textColor="@color/Text1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/download_finish" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/T16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

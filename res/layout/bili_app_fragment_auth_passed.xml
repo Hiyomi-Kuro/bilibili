@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_gravity="center_horizontal" android:id="@id/iv_bg" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auth_image_margin_top" />
+    <TextView android:textSize="@dimen/text_size_headline" android:textColor="@color/daynight_color_text_body_primary" android:layout_gravity="center_horizontal" android:id="@id/tv_auth_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_spacing" android:text="@string/auth_passed_tips" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+        <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/daynight_color_text_hint" android:id="@id/tv_realname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_passed_real_name" />
+        <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/daynight_color_text_hint" android:id="@id/tv_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passed_card_marge_top" android:text="@string/auth_passed_card" />
+    </LinearLayout>
+</LinearLayout>

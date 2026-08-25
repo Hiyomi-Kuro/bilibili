@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/live_feed_error_area" android:background="@drawable/bg_live_vertical_gradient" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_feed_error_back" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_vertical_room_back" android:contentDescription="@null" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dp" android:src="@drawable/bili_2233_fail" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/text_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/txt_feed_room_error" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/img_error" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

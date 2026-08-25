@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_menu_submission" android:id="@id/searchable_rank" android:title="@string/column_submission" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/column_vector_action_menu_search" android:id="@id/searchable_search" android:title="@string/column_search" app:showAsAction="always" />
+</menu>

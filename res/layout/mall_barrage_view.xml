@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_avatar_and_info" android:paddingRight="80.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/mall_home_hot_comment_good_barrage_height" android:paddingEnd="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/img_user_avatar" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="1.0dp" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/mall_home_commend_default_avater" style="@style/mallGoodsCommentAvatar" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/Wh0" android:gravity="center" android:id="@id/tv_barrage_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:scrollHorizontally="true" android:singleLine="true" android:layout_marginStart="4.0dp" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_text_x" android:layout_width="10.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_live_shopping_hot_sale_text_x" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageSwitcher android:id="@id/image_switch_thousand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/live_shopping_hot_sale_text_slide_in_bottom" android:outAnimation="@anim/live_shopping_hot_sale_text_slide_out_top" />
+    <ImageSwitcher android:id="@id/image_switch_hundred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/live_shopping_hot_sale_text_slide_in_bottom" android:outAnimation="@anim/live_shopping_hot_sale_text_slide_out_top" />
+    <ImageSwitcher android:id="@id/image_switch_ten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/live_shopping_hot_sale_text_slide_in_bottom" android:outAnimation="@anim/live_shopping_hot_sale_text_slide_out_top" />
+    <ImageView android:id="@id/iv_dot" android:visibility="gone" android:layout_width="4.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_live_shopping_hot_sale_num_dot" />
+    <ImageSwitcher android:id="@id/image_switch_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/live_shopping_hot_sale_text_slide_in_bottom" android:outAnimation="@anim/live_shopping_hot_sale_text_slide_out_top" />
+    <ImageView android:id="@id/iv_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxHeight="15.0dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container_real_fragment" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/target" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" app:progressTint="@color/theme_color_secondary" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_secondary" android:id="@id/bundle_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="组件加载中" />
+        <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_secondary" android:id="@id/tip" android:background="@color/daynight_color_background" android:paddingLeft="@dimen/padding_normal" android:paddingRight="@dimen/padding_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重试" />
+    </LinearLayout>
+</FrameLayout>

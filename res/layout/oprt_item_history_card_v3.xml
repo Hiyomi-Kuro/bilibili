@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/cover_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="2.0dp">
+        <tv.danmaku.bili.widget.ForegroundRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+            <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="centerCrop" app:aspectRadioHeight="4" app:aspectRadioWidth="3" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" style="@style/Widget.App.StaticImageView.Thumb.BangumiCover" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_alignBottom="@id/cover">
+                <View android:id="@id/view_history_progress" android:background="@color/Pi5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <View android:id="@id/view_history_progress_back" android:background="@color/Ga4" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="3.0" />
+            </LinearLayout>
+        </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    </tv.danmaku.bili.widget.RoundRectFrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:maxLines="2" />
+</LinearLayout>

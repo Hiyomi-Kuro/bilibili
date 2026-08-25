@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:key="GroupSetting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.im.setting.preference.IMSettingSwitch android:persistent="false" android:title="@string/im_setting_should_receive_group_msg" android:key="should_receive_group" />
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="group_msg_category" app:categoryTitle="@string/im_setting_group_notify_title">
+        <com.bilibili.bplus.im.setting.preference.IMSettingSwitch android:persistent="false" android:title="@string/im_setting_title_group_fold" android:key="is_group_fold" android:summary="@string/im_setting_summary_group_fold" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+    <tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle android:key="group_guide_category" app:categoryTitle="@string/im_setting_group_guide_title">
+        <androidx.preference.Preference android:persistent="false" android:title="@string/im_create_my_group" android:key="create_my_group" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/im_stop_my_group" android:key="stop_my_group" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/im_join_group_guid" android:key="join_group_guide" />
+    </tv.danmaku.bili.widget.preference.PreferenceCategoryWithTitle>
+</androidx.preference.PreferenceScreen>

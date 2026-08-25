@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/share_group" android:background="@drawable/shape_share_out_dialog_bg" android:layout_width="80.0dp" android:layout_height="80.0dp" android:alpha="0.8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.videopage.common.widget.view.VisibilityLottieAnimationView android:id="@id/share_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+    <tv.danmaku.bili.videopage.common.widget.view.FixedWidthTextView android:textSize="14.0sp" android:textColor="#999999" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/share_tips" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/video_jumping" android:singleLine="true" android:shadowColor="@color/black_light_2" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:marqueeRepeatLimit="0" style="@style/BPlayer_PlayerControlBarButton" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/qr_background" android:background="@drawable/person_info_qr_bg" android:layout_width="316.0dp" android:layout_height="449.0dp" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="23.0dp" android:layout_alignParentTop="true">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:roundAsCircle="true" style="@style/Widget.App.StaticImageView.Thumb.Avatar48dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="45.0dp" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/avatar">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="10.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="#4b4b4b" android:id="@id/uid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/qr_code" android:layout_width="145.0dp" android:layout_height="145.0dp" android:layout_centerInParent="true" />
+        <RelativeLayout android:background="@drawable/bili_person_info_round_bg" android:layout_width="37.0dp" android:layout_height="37.0dp" android:layout_centerInParent="true">
+            <ImageView android:layout_width="18.0dp" android:layout_height="20.0dp" android:src="@drawable/person_info_qr_logo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

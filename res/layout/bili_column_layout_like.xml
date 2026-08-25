@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="60.0dp" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.column.ui.widget.ColumnShadowCircleView android:layout_gravity="center|bottom" android:id="@id/column_cscv_view" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginBottom="4.0dp" app:scv_circleBg="@color/Ga1_s" app:scv_shadowBg="@color/Wh0" app:scv_shadowColor="@color/column_black_alpha6" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/fake_like_layout" android:paddingTop="3.0dp" android:visibility="visible" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginTop="6.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/fake_like" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_column_detail_unlike" android:scaleType="centerInside" android:cropToPadding="true" />
+        <com.bilibili.column.ui.widget.BadgeTextView android:textSize="8.0sp" android:textColor="@color/Ga7" android:id="@id/fake_like_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</FrameLayout>

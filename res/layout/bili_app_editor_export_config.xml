@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/upper_editor_gray" android:paddingTop="21.0dp" android:paddingBottom="23.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="18.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp">
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/export_config_resolution" android:layout_width="42.0dp" android:layout_height="wrap_content" android:text="清晰度" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/export_config_help" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/editor_top_bar_export_config_help" android:layout_toRightOf="@id/export_config_resolution" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#61666d" android:gravity="center" android:id="@id/export_config_tips" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="高清画质,最佳体验" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.bilibili.studio.editor.moudle.home.ui.ResolutionSeekBar android:id="@id/seekbar_resolution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" app:xsb_section_text_color="#9499a0" app:xsb_section_texts="@array/labels_resolution" app:xsb_thumb_color="#ff6699" app:xsb_thumb_index="2" app:xsb_thumb_radius="8.0dp" app:xsb_track_first_color="#61666d" app:xsb_track_height="4.0dp" app:xsb_track_second_color="#ff6699" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_hdr_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="28.0dp" android:layout_marginRight="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/Text_white" android:id="@id/tv_hdr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_editor_export_hdr_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="12.0sp" android:textColor="#9499a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_editor_export_hdr_desc" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_hdr_title" />
+            <androidx.appcompat.widget.SwitchCompat android:theme="@style/EditorPublishSwitch" android:id="@id/sc_hdr_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <View android:id="@id/bottom_area" android:background="#32000000" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llDialog" android:background="@drawable/smallapp_bg_modal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlTitle" android:layout_width="match_parent" android:layout_height="78.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/tivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:src="@drawable/smallapp_toolbar_back" android:layout_centerVertical="true" android:layout_marginStart="13.0dp" app:imageTint="@color/gray_dark_2" />
+        <TextView android:textSize="@dimen/text_size_xlarge" android:textStyle="bold" android:textColor="@color/small_app_color_text_body_primary" android:gravity="center" android:id="@id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="消息模板" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlHeader" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="@dimen/padding_normal" android:layout_centerVertical="true" android:layout_marginStart="@dimen/padding_normal" app:placeholderImage="@drawable/small_app_bg_default_logo" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" app:thumbHeight="32.0dp" app:thumbWidth="32.0dp" />
+        <TextView android:textSize="@dimen/text_size_large" android:textStyle="bold" android:textColor="@color/small_app_color_text_body_primary" android:ellipsize="end" android:id="@id/tvGameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_app_more_view_margin_top" android:maxWidth="220.0dp" android:singleLine="true" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" android:layout_marginStart="@dimen/small_app_more_view_margin_top" android:layout_toEndOf="@id/avatar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dp" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_dark" android:id="@id/tvValue" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="体力值" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/small_app_color_text_body_primary" android:id="@id/tvValueContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dp" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/gray_dark" android:id="@id/tvInfo" android:layout_width="100.0dp" android:layout_height="wrap_content" android:text="温馨提示" />
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/small_app_color_text_body_primary" android:id="@id/tvInfoContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" />
+    </LinearLayout>
+    <View android:id="@id/bottomView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

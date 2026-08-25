@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_room_cleared" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginTop="4.0dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/room_close_cleared" android:paddingLeft="12.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/live_room_arrow_back_white" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/live_shape_roundrect_black_alpha50_corner_15_right" android:paddingRight="7.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.bilibili.bililive.biz.uicommon.widget.LiveAvatarView android:id="@id/lav_anchor_cleared" android:layout_width="36.0dp" android:layout_height="36.0dp" app:avatarSize="30.0dp" app:customAvatarFrameSize="36.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/live_daynight_text_color_white" android:ellipsize="end" android:gravity="left" android:id="@id/anchor_nickname_cleared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:maxLines="1" android:singleLine="true" android:layout_marginStart="3.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/iv_restored_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="44.0dp" android:src="@drawable/icon_restored_screen" />
+</FrameLayout>

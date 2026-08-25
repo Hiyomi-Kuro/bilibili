@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="109.0dp" android:layout_height="159.19998dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/nft_bg" android:background="@drawable/shape_rect_white_seven_4" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/nft_card" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="fitCenter" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|top" android:id="@id/nft_verify_label" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="16.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" app:roundedCornerRadius="2.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/nft_mask" android:background="@drawable/shape_rect_black_alpha_sixty_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/nft_card_invalid" />
+</FrameLayout>

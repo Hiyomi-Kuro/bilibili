@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/daynight_color_background" android:paddingLeft="24.0dp" android:paddingTop="19.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="20.0sp" android:textColor="@color/daynight_color_text_headline" android:id="@id/title_tv" android:paddingRight="24.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/daynight_color_text_subtitle" android:id="@id/content_tv" android:paddingRight="24.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/daynight_color_theme_pink" android:gravity="center" android:id="@id/setting_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:minWidth="74.0dp" android:minHeight="36.0dp" android:text="@string/dialog_msg_permission_btn_setting" android:layout_alignParentRight="true" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_supplementary_dark" android:gravity="center" android:id="@id/cancel_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="74.0dp" android:minHeight="36.0dp" android:text="@string/dialog_msg_permission_btn_cancel" android:layout_toLeftOf="@id/setting_tv" android:layout_toStartOf="@id/setting_tv" />
+    </RelativeLayout>
+</LinearLayout>

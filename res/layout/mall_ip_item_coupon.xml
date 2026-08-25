@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/mall_ip_item_coupon_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintDimensionRatio="172:54" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/mall_ip_coupon" />
+    <View android:id="@id/anchor1" android:layout_width="0.0dp" android:layout_height="6.0dp" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_ip_item_coupon_1" app:layout_constraintWidth_percent="0.06896" />
+    <include android:id="@id/mall_ip_item_coupon_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintDimensionRatio="172:54" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/anchor1" layout="@layout/mall_ip_coupon" />
+    <View android:id="@id/anchor2" android:layout_width="0.0dp" android:layout_height="6.0dp" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/mall_ip_item_coupon_2" app:layout_constraintWidth_percent="0.06896" />
+    <include android:id="@id/mall_ip_item_coupon_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintDimensionRatio="172:54" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/anchor2" layout="@layout/mall_ip_coupon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#7f030303" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_logo" android:layout_width="48.0dp" android:layout_height="48.0dp" app:roundAsCircle="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:singleLine="true" android:includeFontPadding="false" android:maxLength="16" />
+    <com.bilibili.adcommon.widget.button.AdDownloadButton android:id="@id/game_button" android:layout_width="124.0dp" android:layout_height="34.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="12.0dp" app:download_btn_backgroundColor="@color/ad_imax_game_center_download_bg" app:download_btn_cornerRadius="4.0dp" app:download_btn_install_backgroundColor="@color/ad_imax_game_center_download_bg" app:download_btn_progress_forwardColor="@color/ad_imax_game_center_download_bg" app:download_btn_strokeColor="@color/ad_imax_game_center_download_bg" style="@style/AdButton_Compat_Game_Fill_Blue" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/replay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dp" android:layout_height="16.0dp" app:srcCompat="@drawable/biliplayer_selector_topbar_replay_bold" app:tint="#efefef" />
+        <TextView android:textSize="14.0sp" android:textColor="#efefef" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/bi_ad_replay" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

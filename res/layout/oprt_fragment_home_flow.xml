@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/vaGuideWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/vBg" android:background="@drawable/bangumi_inline_play_bottom_background_shape" android:layout_width="match_parent" android:layout_height="268.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svgView" android:layout_width="130.0dp" android:layout_height="130.0dp" app:layout_constraintBottom_toTopOf="@id/tvContent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="72.0dp" android:text="@string/bangumi_home_feed_scroll_guide_title" android:maxLines="1" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="@id/vBg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

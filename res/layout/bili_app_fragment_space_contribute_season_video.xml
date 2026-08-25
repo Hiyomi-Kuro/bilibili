@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/season_recycler" android:background="@color/Wh0" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_gravity="center|top" android:id="@id/season_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" layout="@layout/bili_app_layout_author_video_loading_view" />
+    <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center|top" android:id="@id/season_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dp" />
+</FrameLayout>

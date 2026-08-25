@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bili_pay_daynight_color_background" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintRadioButton android:id="@id/check_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:compoundButtonTint="@color/selector_compoundbutton_normal" />
+        <com.bilibili.bilipay.ui.widget.BilipayImageView android:id="@id/ivDecp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Pay.Title" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:id="@id/tvDecp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/bili_pay_theme_color_secondary" android:ellipsize="end" android:id="@id/tv_channel_jump_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

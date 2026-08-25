@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pegasus_pref_recommend" android:summary="@string/pegasus_pref_recommend"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:danmaku="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory android:key="@string/pegasus_video_mode_setting" danmaku:allowDividerAbove="false">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_video_mode" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pegasus_inline_auto_play_title" android:key="@string/pegasus_pref_key_auto_play">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_title_auto_play" android:key="inline_title" />
+        <androidx.preference.Preference android:persistent="true" android:layout="@layout/bili_pegasus_pref_item_auto_inline" android:key="@string/pref_key_pegasus_v2_inline" danmaku:allowDividerAbove="false" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="@string/pegasus_pref_key_inline_volume_setting">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_inline_volume_mode" android:key="@string/pref_key_inline_volume_enable_v2" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="@string/pegasus_pref_key_auto_refresh_setting">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_auto_refresh" android:key="@string/pref_key_auto_refresh" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="pegasus_pref_key_keyword_blocker_entry">
+        <com.bilibili.pegasus.promo.setting.CustomTitlePreference android:layout="@layout/bili_pegasus_pref_item_keyword_blocker_entry" android:key="pegasus_pref_key_keyword_blocker" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="pegasus_pref_key_recommend_label_entry">
+        <com.bilibili.pegasus.promo.setting.CustomTitlePreference android:layout="@layout/bili_pegasus_pref_item_recommend_label_entry" android:key="pegasus_pref_key_recommend_label" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="pegasus_pref_key_column_switch_entry">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_column_entry" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pegasus_pref_title_recommend_mode_category" android:key="@string/pegasus_pref_key_recommend_mode_category">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_title_recommend_mode" />
+        <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="true" android:entries="@array/RecommendSettingEntries" android:key="@string/pegasus_pref_key_recommend_setting" android:defaultValue="1" android:entryValues="@array/RecommendSettingValues" danmaku:radioDefaultValue="1" danmaku:radioEntries="@array/RecommendSettingEntries" danmaku:radioEntryValues="@array/RecommendSettingValues" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pegasus_pref_title_home_campus" android:key="@string/pegasus_pref_key_home_campus_setting">
+        <androidx.preference.Preference android:layout="@layout/bili_pegasus_pref_item_title_home_campus" />
+        <tv.danmaku.bili.widget.preference.BLKVSwitchPreference android:persistent="true" android:title="@string/pegasus_pref_home_campus_title" android:key="@string/pref_key_home_campus_enable" android:summary="@string/pegasus_pref_home_campus_summary" android:defaultValue="true" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

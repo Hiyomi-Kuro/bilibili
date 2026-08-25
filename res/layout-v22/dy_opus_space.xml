@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Bg3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/statement" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingLeft="7.5dp" android:paddingRight="7.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="7.5dp" />
+        </FrameLayout>
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+</FrameLayout>

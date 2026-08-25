@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/blink_multivideolink_pkgroup_item_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="12.0dp" android:layout_width="80.0dp" android:layout_height="88.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/blink_multivideolink_pkgroup_item_avatar" android:layout_width="48.0dp" android:layout_height="48.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/ic_live_multi_voice_entering_avatar" app:thumbHeight="48.0dp" app:thumbWidth="48.0dp" app:viewAspectRatio="1.0" style="@style/Widget.App.ImageView.Circle" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/blink_multivideolink_pkgroup_item_uname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/blink_multivideolink_pkgroup_item_avatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

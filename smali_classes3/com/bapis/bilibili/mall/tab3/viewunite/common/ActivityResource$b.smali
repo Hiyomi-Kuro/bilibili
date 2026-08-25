@@ -1,0 +1,295 @@
+.class public final Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/mall/tab3/viewunite/common/g;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;",
+        "Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;",
+        ">;",
+        "Lcom/bapis/bilibili/mall/tab3/viewunite/common/g;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$000()Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearModPoolName()Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$200(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearModResourceName()Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$500(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getModPoolName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->getModPoolName()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getModPoolNameBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->getModPoolNameBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getModResourceName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->getModResourceName()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getModResourceNameBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->getModResourceNameBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public setModPoolName(Ljava/lang/String;)Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$100(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setModPoolNameBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$300(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setModResourceName(Ljava/lang/String;)Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$400(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setModResourceNameBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource$b;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;->access$600(Lcom/bapis/bilibili/mall/tab3/viewunite/common/ActivityResource;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

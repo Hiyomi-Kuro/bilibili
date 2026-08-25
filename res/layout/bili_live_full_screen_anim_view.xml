@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.uam.view.UAMView android:id="@id/mp4PlayerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.biz.revenueApi.animation.view.LiveAnimMuteBtnComponent android:layout_gravity="right" android:id="@id/anim_mute_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

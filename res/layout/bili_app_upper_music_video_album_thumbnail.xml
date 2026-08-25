@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="80.0dp" android:layout_height="76.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/sdv_cover" android:layout_width="60.0dp" android:layout_height="60.0dp" app:fadeDuration="0" app:failureImage="@drawable/ic_editor_placeholder_default" app:roundedCornerRadius="4.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/view_overlay" android:background="@drawable/ic_upper_album_thumbnail_black_bg" android:visibility="invisible" android:layout_width="60.0dp" android:layout_height="60.0dp" app:roundedCornerRadius="4.0dp" />
+    <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="right" android:id="@id/imv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:src="@drawable/ic_uper_close" />
+</FrameLayout>

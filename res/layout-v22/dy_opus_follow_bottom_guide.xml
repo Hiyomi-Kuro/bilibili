@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_alpha80" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="61.0dp" android:translationY="61.0dp" android:paddingHorizontal="12.0dp" android:paddingVertical="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Brand_pink" android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dy_follow_up_guide_title" style="@style/T15b" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text2" android:layout_gravity="start|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dy_follow_up_guide_desc" style="@style/T13" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Graph_white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/opus_follow_guide_btn" android:background="@drawable/dy_shape_rect_pink_radius_20" android:layout_width="72.0dp" android:layout_height="30.0dp" android:text="@string/dy_follow_ta" style="T14" />
+</FrameLayout>

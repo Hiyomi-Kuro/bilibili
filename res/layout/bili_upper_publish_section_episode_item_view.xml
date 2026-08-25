@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="right" android:id="@id/publish_section_episode_more_view" android:visibility="gone" android:layout_width="108.0dp" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/section_episode_drag_view" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/upper_drag" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/section_episode_delete_view" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginLeft="16.0dp" android:src="@drawable/upper_pink_delete" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/publish_section_episode_item_view" android:background="@drawable/bg_shape_upper_pink_r6_color_f6f7f8" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="118.0dp" android:layout_height="74.0dp">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/publish_episode_cover_view" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.App.StaticImageView.Thumb.RankBoardCover" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="right|bottom" android:id="@id/publish_episode_duration_text_view" android:background="@drawable/upper_shape_circle_manuscript_duration" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:layout_marginBottom="6.0dp" android:text="20:12" />
+        </FrameLayout>
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+            <com.bilibili.upper.widget.ClickableSpanTextView android:textSize="12.0sp" android:textColor="@color/upper_txt_color_one" android:ellipsize="end" android:id="@id/publish_episode_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是本上传视频的题目:为什么把一只小萌萌的小养..." android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="4.0dp" />
+            <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/publish_episode_stat_container_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_center_stat_title" android:id="@id/publish_episode_view_number_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100w" android:drawableLeft="@drawable/ic_upper_info_views" android:drawablePadding="3.0dp" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_center_stat_title" android:id="@id/publish_episode_like_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:text="10w" android:drawableLeft="@drawable/ic_upper_info_likes" android:drawablePadding="3.0dp" />
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/upper_pink" android:id="@id/publish_episode_state_desc_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

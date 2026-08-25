@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/mall_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="16.0dp" android:textColorHint="#c0c0c0" android:gravity="top" android:id="@id/et_story" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="230.0dp" android:hint="@string/mall_ip_story_publish_hint" android:textCursorDrawable="@null" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0dp" android:textColor="#c0c0c0" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" app:layout_constraintBottom_toBottomOf="@id/et_story" app:layout_constraintLeft_toLeftOf="@id/et_story" />
+    <TextView android:textSize="12.0dp" android:textColor="#ff5687" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginStart="8.0dp" app:layout_constraintBaseline_toBaselineOf="@id/tv_count" app:layout_constraintLeft_toRightOf="@id/tv_count" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/et_story">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_color" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_weight="1.0" />
+        <Button android:textSize="14.0dp" android:textColor="@color/mall_white" android:id="@id/btn_publish" android:background="@drawable/mall_ip_story_publish_fragment_btn_bg" android:layout_width="68.0dp" android:layout_height="30.0dp" android:layout_marginRight="12.0dp" android:text="发布" android:layout_marginEnd="12.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

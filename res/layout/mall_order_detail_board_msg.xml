@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/mall_module_bg" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_detaili_board_msg_order" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:id="@id/tv_board_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" />
+</LinearLayout>

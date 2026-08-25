@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="49.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_medium" android:textStyle="bold" android:textColor="@drawable/editor_selector_beauty_tab_text_white" android:gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="17.0dp" android:text="@string/video_editor_beauty_tab_skin" android:maxLines="1" android:maxLength="5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

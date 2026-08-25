@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_stick" android:title="@string/action_sticky" app:showAsAction="never" />
+    <item android:id="@id/menu_blacklist" android:title="@string/action_block" app:showAsAction="never" />
+    <item android:id="@id/menu_report" android:title="@string/action_report" app:showAsAction="never" />
+    <item android:id="@id/menu_delete" android:title="@string/action_delete" app:showAsAction="never" />
+</menu>

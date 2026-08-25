@@ -1,0 +1,146 @@
+.class public Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;
+.super Lcom/bili/card/b;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Lcom/bilibili/pegasus/api/model/BasicIndexItem;",
+        "VB::",
+        "Lq3/a;",
+        ">",
+        "Lcom/bili/card/b<",
+        "TT;TVB;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0017\u0018\u0000*\u0008\u0008\u0000\u0010\u0002*\u00020\u0001*\u0008\u0008\u0001\u0010\u0004*\u00020\u00032\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0005B\u000f\u0012\u0006\u0010\u001a\u001a\u00028\u0001\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u0010\u0010\t\u001a\u00020\u00082\u0006\u0010\u0007\u001a\u00020\u0006H\u0016R$\u0010\u0011\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000b\u0010\u000c\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R$\u0010\u0019\u001a\u0004\u0018\u00010\u00128\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010\u0014\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018\u00a8\u0006\u001d"
+    }
+    d2 = {
+        "Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;",
+        "Lcom/bilibili/pegasus/api/model/BasicIndexItem;",
+        "T",
+        "Lq3/a;",
+        "VB",
+        "Lcom/bili/card/b;",
+        "",
+        "isVisible",
+        "Lgf3/s;",
+        "r2",
+        "Landroidx/fragment/app/Fragment;",
+        "d",
+        "Landroidx/fragment/app/Fragment;",
+        "getFragment",
+        "()Landroidx/fragment/app/Fragment;",
+        "S0",
+        "(Landroidx/fragment/app/Fragment;)V",
+        "fragment",
+        "Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;",
+        "e",
+        "Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;",
+        "X3",
+        "()Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;",
+        "Y3",
+        "(Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;)V",
+        "viewModel",
+        "binding",
+        "<init>",
+        "(Lq3/a;)V",
+        "pegasus_intlRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private d:Landroidx/fragment/app/Fragment;
+
+.field private e:Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Lq3/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TVB;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/bili/card/b;-><init>(Lq3/a;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final S0(Landroidx/fragment/app/Fragment;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;->d:Landroidx/fragment/app/Fragment;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final X3()Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;->e:Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final Y3(Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;->e:Lcom/bilibili/pegasus/channelv2/detail/tab/baike/ChannelBaikeViewModel;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final getFragment()Landroidx/fragment/app/Fragment;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/pegasus/channelv2/detail/tab/baike/adapter/holder/k;->d:Landroidx/fragment/app/Fragment;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public r2(Z)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

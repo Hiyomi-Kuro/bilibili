@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/template_list_parent" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_app_fragment_editor_template_main_ui" />
+    <include android:id="@id/template_bottom_parent" android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

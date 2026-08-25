@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/following_card_root" android:background="@drawable/bg_card_selector" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/vs_top" android:layout="@layout/view_following_top_header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/view_following_card_header" />
+    <ViewStub android:id="@id/vs_warn_content" android:layout="@layout/layout_following_warn_content" android:inflatedId="@id/warn_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_s" android:layout_marginRight="12.0dp" />
+    <com.bilibili.bplus.followingcard.widget.EllipsizingTextView android:textSize="@dimen/following_card_content_text_size" android:textColor="@color/main_Ga10" android:id="@id/card_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_s" android:layout_marginRight="12.0dp" android:lineSpacingMultiplier="@dimen/card_text_extra_space" app:max_lines="4" />
+    <ViewStub android:id="@id/vs_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/following_card_margin_m" />
+    <com.bilibili.bplus.followingcard.widget.vote.VoteView android:id="@id/vote_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_m" android:layout_marginRight="12.0dp" />
+    <ViewStub android:id="@id/vs_attach_card" android:layout="@layout/item_following_card_attached" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/vs_pk_attach_card" android:layout="@layout/item_pick_attach_view" android:inflatedId="@id/pk_attach_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/vs_attach_goods" android:layout="@layout/item_following_card_goods_attached" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.bplus.followingcard.widget.FollowingAttachedUgcCard android:id="@id/ugc_attach" android:paddingTop="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+    <com.bilibili.bplus.followingcard.widget.FollowingAttachReserveCard android:id="@id/reserve_attach" android:paddingTop="14.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:fixHeight="false" />
+    <com.bilibili.bplus.followingcard.widget.DynamicRevealedCommentsView android:id="@id/view_revealed_comments" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DynamicRevealedCommentsView" />
+    <include layout="@layout/following_reply_guide_item" />
+    <include layout="@layout/view_following_card_footer" />
+    <include android:visibility="gone" layout="@layout/view_following_card_event_vote" />
+    <ViewStub android:id="@id/vs_card_more" android:layout="@layout/view_following_card_more" android:layout_width="match_parent" android:layout_height="36.0dp" />
+    <ViewStub android:id="@id/vs_card_deal" android:layout="@layout/view_following_card_deal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="13.0dp" />
+    <include layout="@layout/layout_following_card_divider_thick" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dy_opus_paragraph_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followinglist.widget.span.ObserveTintImageSpanTextView android:textColor="@color/Ga9" android:id="@id/dy_opus_paragraph_title" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/card_text_extra_space" style="@style/T17_cozy" />
+</FrameLayout>

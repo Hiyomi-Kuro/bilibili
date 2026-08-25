@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_one" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="@dimen/im_image_alpha" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/ic_mini_app_loading" app:placeholderImageScaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/image_three_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_three_0" android:layout_width="0.0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="@dimen/im_image_alpha" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/msg_img_default" app:placeholderImageScaleType="centerCrop" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_three_1" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="1.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="@dimen/im_image_alpha" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/msg_img_default" app:placeholderImageScaleType="centerCrop" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_three_2" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="1.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="@dimen/im_image_alpha" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/msg_img_default" app:placeholderImageScaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

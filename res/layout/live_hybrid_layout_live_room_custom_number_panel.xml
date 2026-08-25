@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color_view_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/input_layout" android:background="@color/theme_color_view_background" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintEditText android:textSize="13.0sp" android:textColorHint="@color/theme_color_text_assist_light" android:gravity="center_vertical" android:id="@id/input" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginBottom="1.0dp" android:inputType="number" android:imeOptions="actionDone|flagNoFullscreen|flagNoExtractUi" android:textCursorDrawable="@drawable/live_hybrid_shape_rect_theme_color_size_1" style="@style/Live.Widget.EditText.Common.Normal" />
+            <TextView android:textSize="13.0sp" android:textColor="#e40c0c" android:layout_gravity="end|center" android:id="@id/hint_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dp" android:layout_marginEnd="13.0dp" />
+        </FrameLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/sure" android:layout_width="56.0dp" android:layout_height="30.0dp" android:layout_marginLeft="8.0dp" android:text="@string/live_sure" android:layout_marginStart="8.0dp" style="@style/LiveHybridInputPanelDoneBtn" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_labels" android:background="@color/theme_color_view_background" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+</LinearLayout>

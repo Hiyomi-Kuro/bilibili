@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="10.0dp" android:textColor="#ffa800" android:id="@id/mall_ip_item_sign_tv_extra" android:background="@drawable/mall_ip_shape_sign_extra" android:paddingLeft="1.0dp" android:paddingTop="1.5dp" android:paddingRight="1.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/upper_theme_text_five_zero" android:gravity="center" android:id="@id/text_tag_name" android:background="@drawable/upper_shape_gray_tag" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_marginRight="6.0dp" android:text="hello" />
+</merge>

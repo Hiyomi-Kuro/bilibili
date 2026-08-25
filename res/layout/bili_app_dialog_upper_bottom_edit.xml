@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="40.0dp">
+        <EditText android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/edit" android:background="@drawable/upper_shape_video_edit" android:paddingLeft="10.0dp" android:paddingTop="3.0dp" android:paddingRight="10.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:maxLines="1" android:maxLength="80" android:layout_centerVertical="true" android:inputType="text" android:textCursorDrawable="@color/pink" />
+    </RelativeLayout>
+</ScrollView>

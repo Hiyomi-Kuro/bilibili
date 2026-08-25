@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/upper_shape_dialog_bottom_r8_bg1_3" android:layout_width="match_parent" android:layout_height="440.0dp">
+        <include android:id="@id/header" android:layout_width="match_parent" android:layout_height="62.0dp" layout="@layout/bili_app_layout_manuscript_bottom_dialog_coupon_header" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvCoupon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="70.0dp" android:layout_below="@id/header" />
+        <LinearLayout android:id="@id/UpperConvention" android:paddingBottom="4.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="310.0dp" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="12.0dp" android:paddingEnd="13.0dp">
+            <CheckBox android:id="@id/cbUpperConvention" android:background="@drawable/upper_selector_square_checked_v4" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="1.0dp" android:button="@null" />
+            <TextView android:textSize="@dimen/upper_text_13" android:textColor="@color/upper_txt_color_one" android:id="@id/tvUpperConvention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:includeFontPadding="false" />
+        </LinearLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

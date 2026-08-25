@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adgame.widget.AdGameExpandableTextView android:textSize="13.0sp" android:textColor="@color/white_alpha70" android:id="@id/ag_expandable_textview" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

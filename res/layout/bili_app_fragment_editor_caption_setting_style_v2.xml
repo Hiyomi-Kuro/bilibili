@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/bili_editor_text_panel_height_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="22.0dp" android:layout_marginTop="16.0dp">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:text="@string/bili_editor_font_size" android:layout_centerVertical="true" android:layout_marginStart="17.0dp" />
+        <SeekBar android:id="@id/font_size_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/upper_shape_filter_seekbar_blackandpink" android:thumb="@drawable/upper_shape_filter_seekbar_thumb_v2" android:layout_toRightOf="@id/tv_font_size" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_color" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_outline" android:layout_width="match_parent" android:layout_height="22.0dp" android:layout_marginTop="24.0dp">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_outline_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:text="@string/bili_editor_stroke" android:layout_centerVertical="true" android:layout_marginStart="17.0dp" />
+        <SeekBar android:id="@id/outline_size_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/upper_shape_filter_seekbar_blackandpink" android:thumb="@drawable/upper_shape_filter_seekbar_thumb_v2" android:layout_toRightOf="@id/tv_outline_size" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_outline" android:layout_width="match_parent" android:layout_height="24.0dp" android:layout_marginTop="16.0dp" />
+</LinearLayout>

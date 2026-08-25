@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/shape_round_rect_blue_corner10" android:layout_width="92.0dp" android:layout_height="78.0dp" android:layout_marginEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_treasure_tool_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginStart="12.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/text_treasure_tool_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:lines="1" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

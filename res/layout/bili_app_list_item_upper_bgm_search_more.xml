@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/upper_gray_dark" android:layout_width="wrap_content" android:layout_height="@dimen/edit_bgm_search_result_tip_height" android:layout_marginTop="15.0dp" android:text="@string/edit_bgm_search_result_not_match_tips" />
+    <TextView android:textSize="14.0sp" android:textColor="#fb7299" android:id="@id/tv_entry_search_feedback" android:layout_width="wrap_content" android:layout_height="@dimen/edit_bgm_search_result_tip_height" android:text="@string/edit_bgm_search_result_empty_user_recommend_entry" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="32.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dp" android:textColor="@color/biligame_selector_color_666_to_blue" android:gravity="center" android:id="@id/tv_tab_title" android:background="@drawable/biligame_selector_search_result_tab" android:paddingLeft="9.5dp" android:paddingRight="9.5dp" android:layout_width="wrap_content" android:layout_height="28.0dp" android:text="@string/biligame_game_forum" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

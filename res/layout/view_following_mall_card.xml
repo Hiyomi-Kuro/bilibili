@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/following_mall_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginTop="@dimen/following_card_margin_m" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga8_u" android:id="@id/following_mall_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_mall_text" android:drawableLeft="@drawable/ic_small_bag" android:drawablePadding="4.0dp" app:drawableLeftTint="@color/Ga8_u" />
+    <com.bilibili.bplus.followingcard.widget.FollowingMallViewV2 android:id="@id/following_mall_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+</LinearLayout>

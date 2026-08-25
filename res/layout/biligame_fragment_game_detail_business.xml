@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="48.0dp">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.biligame.ui.gamedetail.widget.BounceAppBarBehavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <com.bilibili.biligame.business.detail.widget.GameDetailHeader android:id="@id/game_detail_header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.bilibili.biligame.business.detail.widget.GameDetailToolbar android:id="@id/game_detail_toolbar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_collapseMode="pin" app:navigationIcon="@null" style="@style/BiliGameDetailToolbar" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.bilibili.biligame.business.detail.widget.DetailTabLayout android:id="@id/tab_layout" android:layout_width="match_parent" android:layout_height="44.0dp" app:tabGravity="fill" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" style="@style/BiliGameDetailTabLayout" />
+            <View android:id="@id/tab_layout_divider" android:background="@color/Wh0_u_alpha20" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/biligame_dip_0_33" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.bilibili.biligame.widget.GameViewPager android:id="@id/detail_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.bilibili.biligame.business.detail.widget.BottomBarV3 android:layout_gravity="bottom" android:id="@id/bottom_bar" android:background="@drawable/biligame_bg_detail_bottom" android:paddingTop="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" />
+</FrameLayout>

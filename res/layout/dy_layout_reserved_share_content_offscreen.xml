@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingPosterPreviewView android:layout_gravity="top" android:orientation="vertical" android:id="@id/dy_poster_container" android:background="@color/Wh0_u" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.bplus.followinglist.widget.draw.DrawItemLongPicContainerOffscreen android:id="@id/dy_draw_long" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="@id/space" />
+        <include android:id="@id/dy_content_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/dy_layout_reserved_share_content_bottom" />
+        <Space android:id="@id/space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/dy_content_bottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.bilibili.bplus.followingcard.widget.FollowingPosterPreviewView>

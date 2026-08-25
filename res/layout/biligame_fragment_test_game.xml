@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/package_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="游戏包名" />
+    <EditText android:id="@id/activity_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="首页activity名" />
+    <Button android:id="@id/btn_to_activity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="跳转游戏" />
+    <Button android:id="@id/tv_receive_gift" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="礼包" />
+</LinearLayout>

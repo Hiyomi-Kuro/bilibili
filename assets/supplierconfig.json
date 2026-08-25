@@ -1,0 +1,32 @@
+{
+  "supplier":{
+    "vivo":{
+      "appid":"100028210"
+    },
+    "xiaomi":{
+      "appid":"2882303761517136414"
+    },
+    "huawei":{
+      "appid":"10125085"
+    },
+    "oppo":{
+      "appid":"189522"
+    },
+    "lenovo":{
+      "appid":"1606301446152.app.ln"
+    },
+    "meizu":{
+      "appid":"610019"
+    },
+    "samsung":{
+      "appid":"000001535619"
+    },
+    "nubia":{
+      "appid":"64530"
+    },
+    "zte":{
+      "appid":"45303"
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.studio.videoeditor.widgets.track.timeaxis.TimeAxisZoomView android:id="@id/time_axis_view" android:layout_width="match_parent" android:layout_height="20.0dp" />
+        <com.bilibili.studio.videoeditor.widgets.track.timeaxis.RhythmPointZoomView android:id="@id/stick_axis_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="90.0dp">
+            <com.bilibili.studio.videoeditor.widgets.track.cover.BiliEditorTrackCoverEditView android:id="@id/track_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <include android:layout_width="48.0dp" android:layout_height="54.0dp" android:layout_centerVertical="true" layout="@layout/bili_app_item_editor_play_switch" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.bilibili.studio.videoeditor.widgets.EditorScrollFunctionListView android:id="@id/slv_clip_functions" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginLeft="1.0dp" android:layout_marginRight="1.0dp" />
+    <include android:layout_width="match_parent" android:layout_height="40.0dp" layout="@layout/bili_app_upper_item_editor_bottom_navigation_bar" />
+</LinearLayout>

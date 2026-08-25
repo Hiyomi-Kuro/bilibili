@@ -1,0 +1,174 @@
+.class public final Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;
+.super Lcom/google/protobuf/GeneratedMessageLite$Builder;
+.source "BL"
+
+# interfaces
+.implements Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$Builder<",
+        "Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;",
+        "Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;",
+        ">;",
+        "Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$c;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 2
+    invoke-static {}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->access$000()Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clearVVoucher()Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->access$200(Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public getVVoucher()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->getVVoucher()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getVVoucherBytes()Lcom/google/protobuf/ByteString;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 2
+    .line 3
+    check-cast v0, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->getVVoucherBytes()Lcom/google/protobuf/ByteString;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public setVVoucher(Ljava/lang/String;)Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->access$100(Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public setVVoucherBytes(Lcom/google/protobuf/ByteString;)Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context$a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->copyOnWrite()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->instance:Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;->access$300(Lcom/bapis/bilibili/api/ticket/v1/GetTicketResponse$Context;Lcom/google/protobuf/ByteString;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

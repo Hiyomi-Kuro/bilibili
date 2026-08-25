@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <View android:background="#e6ebf0" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <WebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

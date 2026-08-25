@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30.0dp" />
+    <include layout="@layout/kfc_layout_navigation_top_bar_mweb" />
+    <FrameLayout android:id="@id/content_frame" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/webview_container" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginTop="-3.0dp" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.App.ProgressBar.Horizontal" />
+        <ViewStub android:id="@id/web_tips_st" android:layout="@layout/kfc_activity_tips" android:inflatedId="@id/view_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

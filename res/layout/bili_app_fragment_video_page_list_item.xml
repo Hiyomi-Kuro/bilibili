@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Body" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title" android:background="@drawable/selector_videopage_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="46.0dp" android:maxLines="3" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="right|bottom" android:id="@id/status_badge" android:background="@drawable/shape_circle_white_size_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

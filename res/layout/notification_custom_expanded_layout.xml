@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="114.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="#fb7299" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/notification_icon" android:layout_width="114.0dp" android:layout_height="114.0dp" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Theme.AppCompat.DayNight.BackPlay.Notification.ImageView" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="?android:listDivider" android:layout_toRightOf="@id/notification_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:showDividers="middle" android:dividerPadding="12.0dp">
+        <ImageButton android:id="@id/notification_action1" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/notification_action2" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/notification_action3" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/notification_action4" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:background="?android:dividerHorizontal" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_toRightOf="@id/notification_icon" android:layout_above="@id/notification_panel" android:layout_alignParentRight="true" />
+    <ImageButton android:id="@id/notification_stop" android:background="?android:selectableItemBackground" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notification_action_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dp" android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notification_stop" android:layout_toRightOf="@id/notification_icon" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/notification_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_notification_top" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="@string/notification_logo_text" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/notification_text1" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/notification_text2" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/buyer_edit_root" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/buyer_edit_submit" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/buyer_edit_layout" android:background="@color/Wh0" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mall_buyer_edit_layout" />
+            </FrameLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/protocol_container" android:background="@color/Ga1" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp">
+                <CheckBox android:textColor="@color/color_gray" android:id="@id/protocol_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/mall_addr_edit_default_checkbox_icon" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="3.0dp" android:text="@string/mall_buyer_edit_protocol_check" android:includeFontPadding="false" android:layout_toRightOf="@id/protocol_check" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/Ga7" android:id="@id/tv_protocol" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="@string/mall_submit_buyer_edit_protocol" android:layout_below="@id/protocol_check" android:lineSpacingExtra="6.0dp" />
+                <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:id="@id/tv_delete" android:paddingTop="4.0dp" android:paddingRight="4.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/mall_buyer_edit_delete_buyer" android:drawableLeft="@drawable/mall_buyer_edit_delete" android:drawablePadding="6.0dp" android:layout_below="@id/tv_protocol" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/buyer_edit_submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" layout="@layout/mall_buyer_footer_layout" />
+    <FrameLayout android:id="@id/loading_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/Pi5" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

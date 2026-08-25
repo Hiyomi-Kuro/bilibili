@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.biz.uicommon.widget.LiveRoundRectFrameLayout android:id="@id/fl_goods_order" android:layout_width="match_parent" android:layout_height="match_parent" app:leftTopCorner="12.0dp" app:rightTopCorner="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

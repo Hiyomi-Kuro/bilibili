@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bgm_search_content" android:background="@color/bili_editor_bgm_list_sheet_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/layout_video_editor_bgm_search_result_success" />
+    <include android:visibility="gone" layout="@layout/layout_video_editor_bgm_search_result_empty" />
+    <include layout="@layout/layout_video_editor_bgm_search_section_recommend" />
+</FrameLayout>

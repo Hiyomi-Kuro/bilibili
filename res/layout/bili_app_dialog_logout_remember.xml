@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_common_dialog_bg" android:layout_width="@dimen/dialog_account_switch_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/dialog_logout_title_v2" style="@style/T16b" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/check_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="24.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp">
+        <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/check" android:padding="1.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" style="@style/Widget.App.CheckBox.Native" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text3" android:id="@id/desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/dialog_logout_fast_login_check" android:lines="1" android:layout_weight="1.0" android:layout_marginStart="8.0dp" style="@style/T13" />
+    </LinearLayout>
+    <include layout="@layout/bili_app_dialog_logout_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dp" android:layout_height="44.0dp" android:text="@string/dialog_logout_cancel" android:layout_weight="1.0" style="@style/T16b" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Pi5" android:gravity="center" android:id="@id/confirm" android:layout_width="0.0dp" android:layout_height="44.0dp" android:text="@string/dialog_logout_message_normal_ok" android:layout_weight="1.0" style="@style/T16b" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

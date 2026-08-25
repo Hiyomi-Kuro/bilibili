@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="55.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/tv_quality_icon" android:background="@drawable/shape_roundrect_pink_roundrect_12" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_vip_name" android:layout_alignRight="@id/tv_quality" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_selector_panel_text_pink" android:gravity="center" android:id="@id/tv_quality" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_quality_icon" />
+</RelativeLayout>

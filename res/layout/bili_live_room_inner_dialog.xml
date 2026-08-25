@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/inner_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/inner_back" android:padding="10.0dp" android:layout_width="45.0dp" android:layout_height="45.0dp" android:src="@drawable/live_ic_player_back_gray" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:text="@string/live_room_inner_room" />
+    </LinearLayout>
+    <ViewStub android:id="@id/stub_inner_verify" android:layout="@layout/bili_live_room_inner_verify" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ViewStub android:id="@id/stub_inner_limit" android:layout="@layout/bili_live_room_inner_limit" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

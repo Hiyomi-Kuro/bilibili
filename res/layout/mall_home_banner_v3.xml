@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_banner_v2" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.banner.AutoScrollBannerV2 android:id="@id/home_banner_v2" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRadioHeight="13" app:aspectRadioWidth="17" app:colorId="@color/mall_home_picture_tag_color" app:flipInterval="4000" app:indicatorRadius="2.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:offset="6.0dp" app:radius="7.0dp" />
+        <com.mall.ui.widget.banner.MallBannerIndicator android:id="@id/indicator_v1" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_banner_v3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.bannerv3.FlashBanner android:id="@id/banner_v3" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/one_banner_night_cover_v2" android:background="@drawable/mall_home_banner_night_img_cover_v2" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

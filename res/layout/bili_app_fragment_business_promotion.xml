@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/upper_shape_dialog_bottom_r8_bg2" android:layout_width="match_parent" android:layout_height="631.0dp">
+        <include android:id="@id/header" android:layout_width="match_parent" android:layout_height="72.0dp" layout="@layout/bili_app_layout_manuscript_bottom_dialog_header" />
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/ll_business_promotion_coops" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:gravity="center" android:id="@id/tv_hua_huo_coop" android:background="@drawable/upper_selector_business_promotion_coop_tv" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="4.5dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:gravity="center" android:id="@id/tv_other_coop" android:background="@drawable/upper_selector_business_promotion_coop_tv" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_weight="1.0" android:layout_marginStart="4.5dp" android:layout_marginEnd="12.0dp" />
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_coops" android:visibility="gone" android:layout_width="match_parent" android:layout_height="423.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" />
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_status_page" android:background="@drawable/bg_upper_rounded_bg1_corner_8" android:layout_width="match_parent" android:layout_height="423.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_page" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="24.0dp" android:layout_height="24.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/upper_try_hard_loading" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.0dp" android:src="@drawable/ic_empty22" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text3" android:layout_width="264.0dp" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/upper_commercial_declare_empty_tip" />
+            </LinearLayout>
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

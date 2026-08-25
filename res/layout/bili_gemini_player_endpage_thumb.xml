@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Ga10_endpage_alpha90" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_already_rating_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.app.gemini.ugc.feature.endpage.GeminiEndPageThumbRelativeWidget android:id="@id/video_center_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_centerInParent="true" />
+        <RelativeLayout android:layout_gravity="center|bottom" android:id="@id/end_action_container" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/video_center_container" android:layout_centerHorizontal="true">
+            <com.bilibili.app.gemini.ugc.feature.actions.GeminiPlayerReplayWidget android:textSize="14.0dp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/replay" android:paddingTop="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/endpage_replay" android:drawableLeft="@drawable/biliplayer_selector_topbar_replay_bold" android:drawablePadding="6.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.bilibili.app.gemini.ugc.feature.share.GeminiShareIconWidget android:textSize="14.0dp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/share" android:paddingTop="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/share" android:drawableLeft="@drawable/biliplayer_selector_topbar_share_bold" android:drawablePadding="6.0dp" android:layout_toRightOf="@id/replay" android:layout_centerVertical="true" app:from="endpage_thumb" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/fl_progress_tracking_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

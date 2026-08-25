@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="58.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="left" android:id="@id/img_pk_battle_bar_left" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" />
+    <ImageView android:layout_gravity="right" android:id="@id/img_pk_battle_bar_right" android:visibility="gone" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginHorizontal="10.0dp" />
+    <com.bilibili.bililive.biz.view.progressbar.PKBattleProgressBar android:id="@id/new_style_pk_battle_progress_bar" android:layout_width="match_parent" android:layout_height="16.0dp" android:layout_marginLeft="9.0dp" android:layout_marginTop="26.0dp" android:layout_marginRight="9.0dp" android:layout_marginHorizontal="9.0dp" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/txt_pk_battle_bar_timer" android:background="@drawable/bg_live_pk_battle_timer" android:layout_width="80.0dp" android:layout_height="17.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/img_pk_battle_bar_mid_anim" android:layout_width="42.0dp" android:layout_height="19.0dp" android:layout_marginTop="24.5dp" />
+</FrameLayout>

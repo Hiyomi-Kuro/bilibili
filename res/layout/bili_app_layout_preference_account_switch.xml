@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_title_account_switch" android:layout_centerInParent="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

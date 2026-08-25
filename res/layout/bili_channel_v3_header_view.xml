@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/header_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="centerCrop" />
+    <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/header_content" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

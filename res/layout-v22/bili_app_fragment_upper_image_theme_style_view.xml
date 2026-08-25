@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/theme_style_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" app:layout_constraintHeight_max="368.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:id="@id/ai_style_failed_container_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="370.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="14.0dp" android:textColor="#ff9499a0" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，请重试" android:drawableTop="@drawable/ic_ai_net_failed" android:layout_centerInParent="true" android:lineHeight="20.0dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

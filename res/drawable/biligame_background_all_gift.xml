@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/Wh0" />
+    <corners android:radius="24.0dp" />
+    <stroke android:width="3.0dp" android:color="@color/biligame_white_alpha45" />
+</shape>

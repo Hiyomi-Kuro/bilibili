@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/live_prop_stream" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bililive.biz.uicommon.combo.LiveComboLayout android:orientation="vertical" android:id="@id/combo" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="156.0dp" />
+    <FrameLayout android:id="@id/fl_entry_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/fl_entry_container_image" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/fl_entry_container_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="bottom" android:id="@id/switcher_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bililive.room.ui.widget.enter.LiveEnterRoomLayout android:id="@id/enter_room_layout" android:visibility="gone" android:layout_width="360.0dp" android:layout_height="80.0dp" android:layout_alignParentBottom="true" />
+        <TextSwitcher android:textSize="@dimen/text_size_medium" android:layout_gravity="bottom" android:id="@id/switcher" android:background="@drawable/shape_rect_black_alpha20_corner10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginRight="@dimen/item_spacing" android:measureAllChildren="false" android:minHeight="20.0dp" android:inAnimation="@anim/live_slide_in_from_bottom" android:outAnimation="@anim/live_slide_out_to_top" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

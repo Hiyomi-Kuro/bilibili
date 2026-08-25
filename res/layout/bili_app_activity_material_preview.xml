@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.upper.module.contribute.picker.widget.UpperViewPager android:id="@id/activity_material_preview_vp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <SurfaceView android:id="@id/activity_material_preview_sv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/activity_material_video_play_ctrl" android:visibility="gone" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_upper_video_play" android:layout_centerInParent="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/lv_seek" android:background="@drawable/upper_shape_label_seekbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.studio.videoeditor.widgets.PlayerSeekBar android:id="@id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="10.0dp" android:maxHeight="2.0dp" android:progressDrawable="@drawable/bplayer_seek_pink__scrubber_horizontal" android:minHeight="2.0dp" android:layout_toLeftOf="@id/tv_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/upper_preview_default_time" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/activity_material_preview_title_bar" android:background="@color/black_alpha30" android:layout_width="match_parent" android:layout_height="52.0dp">
+        <ImageView android:id="@id/uper_material_preview_back" android:background="?selectableItemBackground" android:layout_width="48.0dp" android:layout_height="match_parent" android:src="@drawable/ic_upper_arrow_white_back" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/uper_material_preview_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:src="@drawable/ic_editor_album_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="right" android:id="@id/fl_single_container" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <View android:background="@drawable/editor_circle_with_border" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_single" android:background="@drawable/ic_upper_choose" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</RelativeLayout>

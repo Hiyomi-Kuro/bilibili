@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?navigationTopBarSize">
+            <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="8.0dp" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.App.ProgressBar.Horizontal" />
+        </FrameLayout>
+        <include layout="@layout/layout_web_toolbar" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:behavior_draggable="false" app:behavior_hideable="true" app:behavior_skipCollapsed="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <com.bilibili.vip.web.CashierShadowView android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/vip_panel" app:layout_constraintTop_toTopOf="@id/vip_panel" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/vip_panel" android:background="@drawable/vip_bg_cashier" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/composeView" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/search_top_layout" android:background="@color/Ga0" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/back" android:background="?selectableItemBackground" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_black" />
+    <ImageButton android:id="@id/scan" android:background="?selectableItemBackground" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_scan" />
+    <com.bilibili.column.ui.widget.ColumnSearchView android:id="@id/search_bar" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:closeIcon="@drawable/ic_close_black" app:queryHint="@string/column_search_hint" app:searchIcon="@drawable/ic_hint_search" />
+    <ImageButton android:id="@id/search" android:background="?selectableItemBackground" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_query" />
+</LinearLayout>

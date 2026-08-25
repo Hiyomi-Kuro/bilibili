@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/modify_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga10" android:id="@id/modify_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_modify_name" />
+        <TextView android:textSize="@dimen/text_size_body_primary" android:id="@id/item_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_modify_name_tips" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:id="@id/arrow" android:layout_width="@dimen/fail_back_button_margin_top" android:layout_height="@dimen/fail_back_button_margin_top" android:layout_marginRight="12.0dp" app:srcCompat="@drawable/ic_vector_arrow_right" />
+</FrameLayout>

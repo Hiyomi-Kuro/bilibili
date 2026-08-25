@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_download_text" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/biligame_download_ver" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/Wh0_u" android:id="@id/biligame_download_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" app:layout_constraintBottom_toTopOf="@id/biligame_download_size" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/text" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/Wh0_u" android:id="@id/biligame_download_size" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@id/biligame_download_ver" app:layout_constraintTop_toBottomOf="@id/biligame_download_ver" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

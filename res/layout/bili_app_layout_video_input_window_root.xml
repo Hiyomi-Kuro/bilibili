@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/placeholder_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.bilibili.playerbizcommon.input.InputPanelContainer android:orientation="horizontal" android:id="@id/inputbar_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.playerbizcommon.input.InputPanelContainer android:id="@id/inputpanel_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

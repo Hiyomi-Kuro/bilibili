@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/upper_king_honour_background_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/upper_king_honour_preview_header_layout" android:layout_width="match_parent" android:layout_height="44.0dp" layout="@layout/upper_king_honour_header_layout" />
+    <include android:layout_width="match_parent" android:layout_height="210.0dp" android:layout_marginTop="47.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/upper_king_honour_preview_header_layout" layout="@layout/upper_king_honour_media_play_layout" />
+    <FrameLayout android:id="@id/king_honour_preview_fragment" android:background="#17181a" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/upper_king_honour_preview_clip_layout" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

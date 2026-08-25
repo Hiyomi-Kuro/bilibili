@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/bili_main_video_transfer_tips_title" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:layout_gravity="center" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/bili_main_video_transfer_tips_desc" />
+    <Button android:textColor="@color/Wh0_u" android:id="@id/start_transfer" android:background="@drawable/bili_app_download_transfer_btn" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="47.0dp" android:layout_marginTop="39.0dp" android:layout_marginRight="47.0dp" android:layout_marginBottom="58.0dp" android:text="@string/bili_main_video_transfer_tips_btn" />
+</LinearLayout>

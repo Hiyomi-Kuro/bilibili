@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.opd.app.bizcommon.ui.MallStateTextView android:gravity="center" android:layout_gravity="center" android:id="@id/next_btn" android:text="@string/mall_back" style="@style/MallStateButton_Size_Large.Pink" />
+</FrameLayout>

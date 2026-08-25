@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/bili_app_view_upguardian_layout_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/round_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="20.0dp">
+        <com.bilibili.upguardian.sign.UpGuardianSignView android:id="@id/sing_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.RoundRectFrameLayout>
+</FrameLayout>

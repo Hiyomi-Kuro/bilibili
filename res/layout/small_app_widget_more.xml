@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/game_center_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/game_center_btn_img" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/small_app_icon_global_game_center" />
+    </FrameLayout>
+    <View android:id="@id/dividerLeft" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" />
+    <FrameLayout android:id="@id/more_center_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/more_btn_img" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/small_app_ic_global_more" />
+    </FrameLayout>
+    <View android:id="@id/divider" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" />
+    <FrameLayout android:id="@id/more_right_btn" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/right_btn_img" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/small_app_ic_global_close" />
+    </FrameLayout>
+</LinearLayout>

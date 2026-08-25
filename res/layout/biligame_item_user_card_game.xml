@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_game_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" app:placeholderImage="@drawable/biligame_default_background_image_tv" app:roundedCornerRadius="8.0dp" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/Ga7" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_grade" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:drawablePadding="2.0dp" app:drawableStartCompat="@drawable/biligame_vector_star_fill" />
+</LinearLayout>

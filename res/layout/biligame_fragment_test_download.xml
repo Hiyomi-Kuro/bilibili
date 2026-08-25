@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/text_game_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="游戏gameBaseId (正整数)" android:inputType="number" android:imeOptions="actionDone" />
+    <Button android:id="@id/btn_delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="删除下载任务" />
+    <Button android:id="@id/btn_kill" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="杀进程" />
+    <Button android:id="@id/btn_kill_restart" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="杀进程并重启" />
+    <Button android:id="@id/btn_kill_download" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="只杀下载进程（会自动重启）" />
+    <include android:id="@id/test_game_button" layout="@layout/biligame_fragment_test_game_download" />
+    <EditText android:id="@id/text_delta_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="增量更新大小" android:inputType="number" android:imeOptions="actionDone" />
+    <Button android:id="@id/btn_delta_commit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="提交增量更新大小设置" />
+    <Button android:id="@id/btn_query" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="查询游戏id的下载状态" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+</LinearLayout>

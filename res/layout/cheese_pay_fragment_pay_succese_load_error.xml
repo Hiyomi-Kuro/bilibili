@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/cheese_bg_white_solid_corners_20dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/T16" android:textColor="@color/Text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dp" android:text="@string/cheese_pay_guide_load_error" />
+    <Button android:textAppearance="@style/T16" android:textColor="@color/Wh0_u" android:id="@id/btn_retry" android:background="@drawable/cheese_selector_bg_green_solid_corners_45dp" android:layout_width="170.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:text="@string/cheese_pay_guide_retry" />
+</LinearLayout>

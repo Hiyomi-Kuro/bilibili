@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/ugc_shape_download_share_rect_background" android:layout_width="match_parent" android:layout_height="76.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.downloadeshare.view.RectangleProgressView android:id="@id/rectangle_progress" android:layout_width="match_parent" android:layout_height="match_parent" app:rectangleProgressColor="@color/Si1" />
+    <ImageView android:layout_gravity="right|top" android:id="@id/close" android:padding="9.5dp" android:layout_width="31.5dp" android:layout_height="31.5dp" android:src="@drawable/ic_close_gray" app:tint="@color/Ga7" />
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="25.0dp">
+        <tv.danmaku.bili.downloadeshare.view.LightCircleProgressView android:layout_gravity="center_vertical" android:id="@id/light_progress" android:layout_width="25.0dp" android:layout_height="25.0dp" app:lightCircleColor="@color/Ga3" app:lightCircleRadius="8.0dp" app:lightProgressColor="@color/Ga7" app:lightProgressRadius="8.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/downloading" android:layout_width="wrap_content" android:layout_height="25.0dp" android:text="@string/share_download_downloading_hint" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Ba0_alpha80" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:maxWidth="273.0dp" android:maxLines="1" app:layout_constraintBottom_toTopOf="@id/recycler_view" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/close_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/recycler_view">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/close_bg" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_circle_white" android:tint="#323232" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/close" android:layout_width="13.0dp" android:layout_height="13.0dp" android:src="@drawable/biliplayer_ic_close_round_corner" android:tint="@color/Wh0_u" android:alpha="0.7" />
+        <com.bilibili.playerbizcommon.view.RingProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="23.0dp" android:layout_height="23.0dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

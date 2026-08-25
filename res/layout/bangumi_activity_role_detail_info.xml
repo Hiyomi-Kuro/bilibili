@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar_layout" android:background="#0000" android:layout_width="match_parent" android:layout_height="234.0dp" app:elevation="0.0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+            <include layout="@layout/bangumi_role_info_detail" />
+            <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="44.0dp" app:elevation="0.0dp" app:iconTintColor="@null" app:layout_collapseMode="pin" app:titleTintColor="@null" style="?toolbarStyle">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_back" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/bangumi_ic_role_back_grey" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" app:imageTint="@color/Wh0_u" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/theme_color_primary_tr_title" android:gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </com.bilibili.magicasakura.widgets.TintToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <RelativeLayout android:id="@id/rl_person_works" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <tv.danmaku.bili.widget.LoadingImageView android:id="@id/loading_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout android:id="@id/cp_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:refreshStyle="equip_style">
+        <com.bilibili.campus.widget.nestedscroll.NestedScrollLinearLayout android:id="@id/nested_scroll" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_childScrollView="false">
+                <androidx.compose.ui.platform.ComposeView android:id="@id/campus_head_compose" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+            <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/index_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_childScrollView="true" />
+        </com.bilibili.campus.widget.nestedscroll.NestedScrollLinearLayout>
+    </com.bilibili.campus.widget.refresh.ClipSwipeRefreshLayout>
+    <include android:layout_gravity="bottom" android:id="@id/bottom_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/cp_layout_index_bottom_bar" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.ui.favorite.TabMarginSlidingTabStrip android:textAppearance="@style/TextAppearance.App.TopTab.Title.SpecialTopic" android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" app:elevation="0.5dp" app:pstsIndicatorHeight="0.0dp" app:pstsTabBackground="@drawable/selector_tab_special_topic" app:pstsTabPaddingLeftRight="9.0dp" />
+    <tv.danmaku.bili.widget.DisableScrollViewpager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.app.comm.supermenu.core.MenuItemView android:textSize="12.0sp" android:textColor="@color/daynight_color_text_button_white" android:gravity="center_horizontal" android:id="@id/share_qq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:drawablePadding="6.0dp" android:layout_weight="1.0" app:icon_height="44.0dp" app:icon_width="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

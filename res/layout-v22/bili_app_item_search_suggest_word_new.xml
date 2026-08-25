@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/full_container" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.ForegroundRelativeLayout android:id="@id/old_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="1.0dp" app:srcCompat="@drawable/ic_vector_search_tips_new" app:tint="@color/Graph_medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Text1" android:gravity="center_vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="12.0dp" android:layout_toRightOf="@id/icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Text3" android:gravity="center_vertical" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="12.0dp" android:layout_toRightOf="@id/icon" android:layout_below="@id/content" />
+    </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:id="@id/new_style_tv" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="1.0dp" android:paddingHorizontal="12.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

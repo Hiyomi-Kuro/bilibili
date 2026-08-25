@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="90.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/content_view" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="90.0dp">
+        <com.bilibili.bililive.room.ui.roomv3.gift.view.selector.base.LiveVerticalGiftSelectorABTestB android:id="@id/selector" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <ViewStub android:layout_gravity="center" android:id="@id/error_tips_layout_stub" android:layout="@layout/bili_app_layout_send_prop_panel_horizontal_error_tips" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/loading_parent" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="90.0dp">
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/item_spacing" android:paddingTop="16.0dp" android:paddingRight="@dimen/item_spacing" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+        <TextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/progress" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/action" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:id="@id/following" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" app:layout_constraintLeft_toLeftOf="@id/progress" app:layout_constraintRight_toRightOf="@id/progress" app:layout_constraintTop_toBottomOf="@id/progress" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/theme_color_secondary" android:id="@id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_review_play" android:layout_alignParentRight="true" app:drawableLeftTint="@color/theme_color_secondary" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

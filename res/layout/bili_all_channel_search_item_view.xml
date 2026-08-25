@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/search_bar_input" android:background="@drawable/channel_search_roundrect_shape" android:layout_width="match_parent" android:layout_height="@dimen/channel_search_input_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_search_action" app:imageTint="@color/Ga4" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga4" android:gravity="left|center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" android:text="@string/channel_home_search_entrance_text" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

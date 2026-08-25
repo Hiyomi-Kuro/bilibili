@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/submit_addr_edit" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:paddingRight="0.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_addr_edit_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/submit_addr_default" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_addr_list_item_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/submit_addr_edit" android:layout_toRightOf="@id/submit_addr_default" app:layout_constraintRight_toRightOf="parent">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/submit_addr_city_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/mall_address_default" android:drawablePadding="7.0dp" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/submit_addr_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="2" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/submit_addr_name_iphone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/submit_addr_head_split" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_roundrect_solid_ga0_radius_12" android:clipChildren="false" android:layout_width="64.0dp" android:layout_height="90.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="50.0dp" android:layout_height="50.0dp">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center" android:id="@id/image" android:background="@drawable/super_menu_user_shape_circle" android:layout_width="44.0dp" android:layout_height="44.0dp" app:placeholderImage="@android:color/transparent" app:placeholderImageScaleType="fitCenter" app:roundAsCircle="true" app:scaleViewType="fitWidth" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/overlay" android:background="@drawable/super_menu_user_selected_shape" android:padding="3.0dp" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/ic_super_menu_user_selected" />
+        <ImageView android:layout_gravity="end|bottom" android:id="@id/official_mark" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:id="@id/username" android:layout_width="56.0dp" android:layout_height="30.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="6.0dp" app:drawableTopTint="@color/auto_night_shade" />
+</LinearLayout>

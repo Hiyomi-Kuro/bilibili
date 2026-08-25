@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/bg_upper_rounded_bg1_corner_12" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/section_template_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dp" android:layout_marginEnd="12.0dp" layout="@layout/bili_app_layout_include_upper_center_section_header_v3" />
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/template_section_rv" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/back_search" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_br_clip_back_white" android:tint="@color/Ga7" android:layout_centerVertical="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="7.1">
+        <com.bilibili.magicasakura.widgets.TintEditText android:textSize="14.0sp" android:textColorHint="@color/Ga4" android:gravity="center_vertical" android:id="@id/search_edit" android:background="@drawable/shape_roundrect_search_bar2" android:paddingLeft="8.0dp" android:paddingRight="26.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="12.0dp" android:hint="@string/following_topic_search" android:maxLines="1" android:singleLine="true" android:maxLength="32" android:drawableLeft="@drawable/ic_topic_search" android:drawablePadding="4.0dp" android:layout_centerVertical="true" android:transitionName="transition_search" app:drawableLeftTint="@color/Ga4" />
+        <ImageView android:id="@id/search_clear" android:paddingLeft="12.0dp" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_topic_clear" android:scaleType="centerInside" android:layout_alignRight="@id/search_edit" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center_vertical" android:id="@id/cancel_search" android:background="?selectableItemBackground" android:paddingLeft="2.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="1.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="1.0dp" android:text="@string/cancel" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

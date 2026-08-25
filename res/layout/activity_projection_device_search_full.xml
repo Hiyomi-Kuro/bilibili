@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:gravity="center_vertical" android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="right|center" android:id="@id/feedback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:text="@string/player_projection_screen_help" />
+    </com.bilibili.magicasakura.widgets.TintToolbar>
+    <FrameLayout android:id="@id/search_full_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

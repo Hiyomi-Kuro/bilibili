@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="64.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_notification_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/Wh0" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/live_notification_icon" android:layout_width="64.0dp" android:layout_height="64.0dp" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <ImageButton android:id="@id/live_notification_stop" android:background="?android:selectableItemBackground" android:padding="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notification_action_delete_gray" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_toStartOf="@id/live_notification_stop" android:layout_toEndOf="@id/live_notification_icon">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_notification_top" android:scaleType="center" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/live_notification_title_color" android:ellipsize="end" android:id="@id/live_notification_title" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="2.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/live_notification_subtitle_color" android:ellipsize="end" android:id="@id/live_notification_subtitle" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

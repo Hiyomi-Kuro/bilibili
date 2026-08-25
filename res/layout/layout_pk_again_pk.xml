@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_again" android:background="@drawable/bg_live_pk_again" android:layout_width="61.0dp" android:layout_height="22.0dp" android:text="@string/pk_again_text_str" />
+</FrameLayout>

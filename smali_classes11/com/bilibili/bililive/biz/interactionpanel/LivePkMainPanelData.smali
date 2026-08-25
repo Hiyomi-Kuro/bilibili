@@ -1,0 +1,144 @@
+.class public final Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\u0018\u0000 \u00122\u00020\u0001:\u0001\tB\u0007\u00a2\u0006\u0004\u0008\u000f\u0010\u0010B\u0011\u0008\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u000f\u0010\u0011J\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0016J\u0008\u0010\u0008\u001a\u00020\u0004H\u0016R\"\u0010\u000e\u001a\u00020\u00048\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\n\u001a\u0004\u0008\t\u0010\u000b\"\u0004\u0008\u000c\u0010\r\u00a8\u0006\u0013"
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;",
+        "Landroid/os/Parcelable;",
+        "Landroid/os/Parcel;",
+        "parcel",
+        "",
+        "flags",
+        "Lgf3/s;",
+        "writeToParcel",
+        "describeContents",
+        "a",
+        "I",
+        "()I",
+        "setTabIndex",
+        "(I)V",
+        "tabIndex",
+        "<init>",
+        "()V",
+        "(Landroid/os/Parcel;)V",
+        "CREATOR",
+        "pkWidget_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final CREATOR:Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData$a;
+
+
+# instance fields
+.field private a:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;->CREATOR:Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;-><init>()V
+
+    .line 2
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public describeContents()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    .line 1
+    iget p2, p0, Lcom/bilibili/bililive/biz/interactionpanel/LivePkMainPanelData;->a:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

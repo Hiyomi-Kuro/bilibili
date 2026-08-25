@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/mall_home_feeds_negative_feedback_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content_container" android:paddingLeft="4.0dp" android:paddingTop="10.0dp" android:paddingRight="4.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/icon" android:layout_width="22.0dp" android:layout_height="22.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0dp" android:textColor="@color/Wh0" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:maxLines="1" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

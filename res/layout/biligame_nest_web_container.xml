@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/nested_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8.0dp" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.App.ProgressBar.Horizontal" />
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/nested_progress_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.AppCompat.ProgressBar" />
+</merge>

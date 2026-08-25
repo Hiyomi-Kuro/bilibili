@@ -1,0 +1,32 @@
+.class public Lcom/bilibili/bplus/followingcard/api/entity/ExtraFlag;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+
+# instance fields
+.field public greatDynamic:I
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "great_dynamic"
+    .end annotation
+.end field
+
+.field public unloginDynamics:I
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "unlogin_dynamics"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

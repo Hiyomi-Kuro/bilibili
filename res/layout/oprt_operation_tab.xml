@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/bangumi_pinned_bottom_scrolling_behavior" />
+        <com.bilibili.magicasakura.widgets.TintAppBarLayout android:id="@id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:contentInsetStart="0.0dp" app:elevation="0.0dp" app:layout_scrollFlags="scroll|enterAlways|snap" style="?toolbarStyle" />
+            <com.bilibili.ogv.operation.entrance.standalone.OpTabBangumiOperationPagerSlidingTabStrip android:textAppearance="@style/TextAppearance.App.SubTab.BangumiOperation" android:id="@id/tabs" android:background="@null" android:layout_width="wrap_content" android:layout_height="36.0dp" app:elevation="0.0dp" app:pstsIndicatorColor="@color/theme_color_secondary" app:pstsIndicatorHeight="3.0dp" app:pstsIndicatorRadius="1.5dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="1.0dp" app:pstsTabBackground="?selectableItemBackground" app:pstsTabPaddingLeftRight="14.0dp" app:pstsTabSelectedTitleSize="18.0sp" app:pstsTabSparseCount="2" app:pstsTabSparseSpacing="@dimen/bangumi_tab_sparse_spacing" app:pstsTextAllCaps="false" app:pstsTextDynamicUpdate="true" />
+        </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="center" android:id="@id/empty_state_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

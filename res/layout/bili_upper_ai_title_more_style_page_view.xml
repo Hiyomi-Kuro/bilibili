@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/style_page_container_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.upper.feat.gamefactory.views.InternalViewPager2Container android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/style_page_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.bilibili.upper.feat.gamefactory.views.InternalViewPager2Container>
+        <com.bilibili.upper.widget.circleindicator.CircleIndicator3 android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/style_page_circle_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="12.0dp" app:ci_drawable="@drawable/bg_upper_ai_title_indicator_selected" app:ci_drawable_unselected="@drawable/bg_upper_ai_title_indicator_unselected" app:ci_height="6.0dp" app:ci_width="6.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/style_page_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="24.0dp" android:layout_height="24.0dp" app:lottie_autoPlay="true" app:lottie_fileName="upper_material_loading_animation.json" app:lottie_loop="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/upper_loading_text" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/style_page_retry_container_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_three" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upper_load_failed_and_retry" android:drawableTop="@drawable/upper_common_failed" android:drawablePadding="8.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/style_page_retry_view" android:background="@drawable/upper_shape_rect_r15_pink_fill" android:layout_width="74.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:text="@string/upper_retry" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

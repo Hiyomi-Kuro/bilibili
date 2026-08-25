@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.ad.adview.videodetail.upper.AdUpperRootFrameLayout android:layout_gravity="bottom" android:id="@id/ad_tint_frame" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:selectableItemBackground" android:paddingStart="8.0dp" android:paddingEnd="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/ad_fragment_video_page_list_style5_bg_shape" android:layout_width="match_parent" android:layout_height="54.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="wrap_content" android:layout_height="36.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" app:viewAspectRadioHeight="1" app:viewAspectRadioWidth="1" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/cover" app:layout_constraintRight_toLeftOf="@id/button_layout" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Text1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/title">
+                <com.bilibili.ad.adview.videodetail.upper.common.expr.view.AdTagWithDotLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ad_tag_with_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Text3" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/more_layout" app:layout_constraintStart_toEndOf="@id/content_layout" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.adcommon.widget.button.AdDownloadButton android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/download_label" android:visibility="gone" style="@style/AdButton_UnderPlayer_Circle_v2" />
+        </FrameLayout>
+        <com.bilibili.ad.adview.widget.FixedPopupAnchor android:id="@id/more_layout" android:layout_width="26.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="right|center" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_more_gray_v3" app:imageTint="@color/Ga5" />
+        </com.bilibili.ad.adview.widget.FixedPopupAnchor>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View style="@style/ad_line" />
+</com.bilibili.ad.adview.videodetail.upper.AdUpperRootFrameLayout>

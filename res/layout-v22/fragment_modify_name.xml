@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/drawable_info_real" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/passed_test_height">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:gravity="center_vertical" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auth_modify_name_check_tips" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="@dimen/passed_list_height">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_real_name" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_text_padding_left" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <View android:id="@id/name_line" android:background="@drawable/auth_selector_edittext_line" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="@dimen/passed_test_margin_left" android:layout_width="match_parent" android:layout_height="@dimen/passed_list_height">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_real_card" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:id="@id/card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_text_padding_left" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Brand_pink" android:gravity="right" android:id="@id/check" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/passed_test_margin_left" android:text="@string/auth_check" android:layout_weight="1.0" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingBottom="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintButton android:enabled="true" android:textSize="@dimen/text_size_headline" android:textColor="@color/Wh0" android:id="@id/btn_modify_next" android:background="@drawable/auth_selector_button" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/modify_button_height" android:layout_marginLeft="@dimen/passed_test_margin_left" android:layout_marginRight="@dimen/passed_test_margin_left" android:text="@string/btn_modify_text" android:layout_marginHorizontal="@dimen/passed_test_margin_left" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

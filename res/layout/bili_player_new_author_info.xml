@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.videopage.common.widget.view.VerifyAvatarFrameLayout android:id="@id/avatar_verify" android:layout_width="30.0dp" android:layout_height="30.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/desc_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginRight="@dimen/item_spacing" android:layout_weight="1.0">
+        <tv.danmaku.bili.widget.PriorityLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:shadowColor="@color/black_alpha20" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" app:priority="0" />
+            <TextView android:textAppearance="@style/TextAppearance.App.Body" android:textColor="@color/theme_color_secondary" android:ellipsize="end" android:id="@id/online_status" android:background="@drawable/ugcvideo_shape_transparent_pink" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="@string/br_live_status_online" android:singleLine="true" android:layout_marginStart="6.0dp" app:priority="1" />
+        </tv.danmaku.bili.widget.PriorityLinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.App.Body" android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" android:shadowColor="@color/black_alpha20" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+</merge>

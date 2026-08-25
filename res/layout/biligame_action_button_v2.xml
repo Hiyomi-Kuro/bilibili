@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center" android:id="@id/normal_btn" android:background="@drawable/biligame_background_corner_24_lb5" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="30.0dp" style="@style/Widget.AppCompat.Button.Borderless" />
+    <ViewStub android:layout_gravity="center" android:id="@id/pay_btn" android:layout="@layout/biligame_view_pay_btn_vs" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.biligame.widget.DownloadActionButton android:gravity="center" android:layout_gravity="center" android:id="@id/download_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="30.0dp" />
+</merge>

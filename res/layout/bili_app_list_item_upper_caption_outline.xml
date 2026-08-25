@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="17.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.studio.editor.moudle.caption.setting.widget.OutlineColorView android:id="@id/outline_color_select" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" android:src="@drawable/upper_editor_empty" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+</RelativeLayout>

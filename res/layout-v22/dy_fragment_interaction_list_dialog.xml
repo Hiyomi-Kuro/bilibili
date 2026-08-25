@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/dy_bg_interaction_list_head" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dy_pull_bar" android:background="@drawable/dy_floating_pull_bar" android:layout_width="40.0dp" android:layout_height="4.0dp" android:layout_marginTop="12.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dy_header_linear" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="0.0dp" android:layout_height="40.0dp" android:paddingHorizontal="12.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dy_pull_bar">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/dy_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="20.0dp" style="@style/H2" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/dy_close_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="12.0dp" app:imageTint="@color/Graph_icon" app:srcCompat="@drawable/ic_vector_general_close" />
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/dy_fragment_container" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dy_header_linear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

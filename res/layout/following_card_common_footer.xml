@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center" android:id="@id/loading_view" android:background="@drawable/divider_home" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="@dimen/text_12sp" android:textColor="@color/Ga5_u" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/br_no_data_tips" android:layout_toRightOf="@id/loading" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

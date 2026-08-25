@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.rank.contribution.LiveRoomContributionBottomPanel android:id="@id/rl_bottom_panel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_middle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="-3.0dp" android:layout_above="@id/rl_bottom_panel">
+        <com.bilibili.bililive.biz.uicommon.rank.contribution.LiveContributionSubTabView android:id="@id/sub_tab" android:layout_width="wrap_content" android:layout_height="41.0dp" />
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fr_rank_online_title" android:background="@color/main_Ga1" android:layout_width="match_parent" android:layout_height="25.0dp">
+            <ViewSwitcher android:id="@id/rank_view_switcher" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/main_Ga5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_rank_by_order" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="14.0dp" android:text="@string/live_msg_rank_online_order" android:lines="1" android:drawableRight="@drawable/ic_live_room_setting_hint" android:drawablePadding="4.0dp" android:drawableEnd="@drawable/ic_live_room_setting_hint" android:layout_marginStart="14.0dp" android:layout_marginEnd="55.0dp" app:drawableRightTint="@color/main_Ga5" />
+            </ViewSwitcher>
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0sp" android:textColor="@color/main_Ga5" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/tv_rank_value" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="14.0dp" android:text="@string/live_msg_rank_online_contribution_value_title" android:drawableRight="@drawable/ic_live_contribution_exhange" android:drawablePadding="2.0dp" android:layout_marginEnd="14.0dp" />
+        </com.bilibili.magicasakura.widgets.TintFrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:id="@id/rank_special_container_scroll" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rank_special_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp">
+                    <ImageView android:id="@id/ic_rank_special" android:layout_width="140.0dp" android:layout_height="140.0dp" android:src="@drawable/ic_live_rank_empty_v2" />
+                    <TextView android:textSize="14.0sp" android:textColor="#9499a0" android:gravity="center" android:id="@id/tv_rank_special" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/live_room_msg_rank_empty_tip_v2" />
+                    <TextView android:textSize="16.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_rank_share" android:background="@drawable/bg_live_ff6699_22_round" android:layout_width="152.0dp" android:layout_height="44.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/live_room_msg_rank_empty_invite_txt" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <FrameLayout android:layout_gravity="right|bottom" android:id="@id/fr_rank_bg" android:visibility="gone" android:layout_width="219.0dp" android:layout_height="227.0dp" />
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bili_live_layout_recyclerview" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

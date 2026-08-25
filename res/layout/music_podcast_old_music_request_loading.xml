@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/music_podcast_dialog_old_music_request" android:layout_width="110.0dp" android:layout_height="110.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="50.0dp" android:layout_height="50.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Wh0_u" android:gravity="center_horizontal" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:text="@string/music_podcast_old_music_request" />
+</LinearLayout>

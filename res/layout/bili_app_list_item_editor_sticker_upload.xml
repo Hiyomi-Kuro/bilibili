@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/iv_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerVertical="true">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp" android:layout_centerInParent="true" fresco:actualImageScaleType="centerCrop" fresco:placeholderImage="@drawable/ic_editor_placeholder_default" fresco:roundedCornerRadius="4.0dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_duration" android:layout_width="match_parent" android:layout_height="15.0dp" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" />
+        <View android:id="@id/v_out" android:background="@drawable/upper_shape_sticker_item_selector" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

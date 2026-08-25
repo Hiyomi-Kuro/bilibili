@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/mall_home_feed_text_recommend_chip_bg_shape" android:paddingLeft="10.0dp" android:paddingTop="7.0dp" android:paddingRight="10.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0dp" android:textColor="@color/Ga7" android:ellipsize="none" android:gravity="center" android:id="@id/mall_home_feed_text_recommend_item_chip_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

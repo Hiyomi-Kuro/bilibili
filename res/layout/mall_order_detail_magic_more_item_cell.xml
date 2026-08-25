@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/mall_order_detail_magic_more_item_bg" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0dp" android:textColor="@color/mall_small_gray_757575" android:gravity="center" android:id="@id/id_mall_order_detail_more_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:ems="1" android:includeFontPadding="false" app:autoSizeTextType="uniform" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

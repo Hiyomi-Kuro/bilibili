@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.NestedScrollableHost android:id="@id/actor_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.biligame.widget.GameRoundRectRecyclerView android:id="@id/rv_image" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:bLeftRadius="12.0dp" app:bRightRadius="12.0dp" app:tLeftRadius="12.0dp" app:tRightRadius="12.0dp" />
+    </com.bilibili.biligame.widget.NestedScrollableHost>
+    <TextView android:textSize="9.0sp" android:textColor="@color/Wh0_u" android:layout_gravity="end|bottom" android:id="@id/tv_image_page_in" android:background="@drawable/biligame_bg_topic_tab" android:paddingLeft="7.0dp" android:paddingTop="3.0dp" android:paddingRight="7.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_marginEnd="8.0dp" android:paddingHorizontal="7.0dp" android:paddingVertical="3.0dp" />
+</FrameLayout>

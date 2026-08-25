@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/biv_tip" android:layout_width="24.0dp" android:layout_height="24.0dp" app:actualImageScaleType="fitCenter" app:failureImage="@drawable/bili_default_image_tv" app:placeholderImage="@drawable/bili_default_image_tv" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text2" android:id="@id/tv_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/biv_tip" style="@style/T14" />
+</RelativeLayout>

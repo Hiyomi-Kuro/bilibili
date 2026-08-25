@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:paddingBottom="44.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.bilibili.playset.playlist.edit.FooterBatchEditView android:layout_gravity="bottom" android:id="@id/footer" android:layout_width="match_parent" android:layout_height="44.0dp" />
+    <com.bilibili.playset.playlist.ui.LoadingErrorEmptyView android:id="@id/leeView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.bilibili.playset.playlist.ui.FixAppBarLayoutBehavior">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin" style="@style/Widget.App.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followingcard.widget.LightBrowserViewPager android:id="@id/dy_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/dy_gallery_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Topbar.Title" android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="right" android:id="@id/dy_counter" android:layout_width="wrap_content" android:layout_height="32.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="40.0dp" android:shadowColor="@color/black_alpha50" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </FrameLayout>
+</FrameLayout>

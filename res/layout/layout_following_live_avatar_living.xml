@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:background="@drawable/following_shape_roundrect_living_tag" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="18.0dp" android:minWidth="54.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lav_living" android:visibility="visible" android:layout_width="12.0dp" android:layout_height="12.0dp" app:lottie_autoPlay="false" app:lottie_fileName="bili_avatar_living_animation.json" app:lottie_repeatMode="restart" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_up_list_badge_icon" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_following_up_list_badge_bell" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0dp" android:textColor="@color/Wh0_u" android:gravity="center_vertical" android:id="@id/tv_badge_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/living_status_living" android:maxLines="1" android:maxEms="4" android:layout_marginStart="2.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

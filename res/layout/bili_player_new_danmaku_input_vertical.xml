@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/background" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_bar" android:background="@color/black_alpha84" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="54.0dp">
+        <com.bilibili.playerbizcommon.view.DanmakuEditText android:textSize="13.0sp" android:textColor="@color/black" android:id="@id/edit" android:background="@drawable/shape_player_roundrect_white" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="@string/PlayerController_tips_send_danmaku" android:maxLines="1" android:maxEms="101" android:singleLine="true" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="flagNoFullscreen|flagNoExtractUi" android:imeActionLabel="@string/send" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/send" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_danmaku_send" />
+    </LinearLayout>
+</LinearLayout>

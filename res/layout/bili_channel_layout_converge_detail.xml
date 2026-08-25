@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.pegasus.widgets.CenteredPagerSlidingTabStrip android:id="@id/tabs" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorColor="@color/Wh0" app:pstsIndicatorWrapContent="true" app:pstsTabMaxWidth="130.0dp" app:pstsTabPaddingLeftRight="20.0dp" style="@style/Widget.App.SlidingTab.Pegasus" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <com.bilibili.pegasus.channel.detail.ChannelConvergeViewPager android:id="@id/pager" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

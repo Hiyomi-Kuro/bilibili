@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:fitsSystemWindows="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:background="@color/projection_control_panel_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="105.0dp" android:scaleType="fitXY" android:layout_alignParentTop="true" app:srcCompat="@drawable/ic_bg_player_screen_cast_mask" />
+    <com.bilibili.lib.projection.internal.widget.ProjectionTitleWidget android:id="@id/projection_title_widget" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/projection_device_buttons" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="20.0">
+        <View android:id="@id/projection_placeholder_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="11.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="71.0dp">
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionDeviceSwitchWidget android:gravity="center" android:id="@id/projection_device_switch" android:visibility="gone" android:layout_width="97.0dp" android:layout_height="71.0dp" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionSpeedWidget android:id="@id/projection_speed_widget" android:visibility="gone" android:layout_width="97.0dp" android:layout_height="71.0dp" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionQualityWidget android:gravity="center" android:id="@id/projection_quality_widget" android:layout_width="97.0dp" android:layout_height="71.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/bili_app_projection_disconnect" />
+    <include layout="@layout/bili_app_projection_loading" />
+    <FrameLayout android:id="@id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center|bottom" android:orientation="horizontal" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionPlayPauseWidget android:id="@id/projection_play_pause_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:src="@drawable/projection_portrait_ctrl_play_pause_replay" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionHalScreenSeekWidget android:id="@id/projection_seekbar" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="2.0dp" android:progressDrawable="@drawable/bplayer_seek_pink__scrubber_horizontal" android:minHeight="2.0dp" android:layout_weight="1.0" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionSeekTextWidget android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center" android:id="@id/projection_seekbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.lib.projection.internal.widget.halfscreen.ProjectionFullScreenWidget android:id="@id/bbplayer_halfscreen_expand" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:scaleType="centerInside" android:layout_marginEnd="4.0dp" app:srcCompat="@drawable/ic_player_portrait_ver_fullscreen" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/frame_like" android:paddingTop="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="30.0dp" android:layout_height="30.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:id="@id/like_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/ic_video_action_like" />
+    </FrameLayout>
+    <com.bilibili.playerbizcommon.view.TextSwitcherWithOptionAnimation android:id="@id/like_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateFirstView="false" />
+</LinearLayout>

@@ -1,0 +1,167 @@
+.class final Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;
+.super Lkotlin/jvm/internal/Lambda;
+.source "BL"
+
+# interfaces
+.implements Lsf3/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;-><init>(Lbb0/a;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lsf3/l<",
+        "Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;",
+        "Lgf3/s;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0001\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;",
+        "it",
+        "Lgf3/s;",
+        "invoke",
+        "(Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;)V",
+        "<anonymous>"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;
+
+
+# direct methods
+.method constructor <init>(Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;->this$0:Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;
+
+    invoke-virtual {p0, p1}, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;->invoke(Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;)V
+
+    sget-object p1, Lgf3/s;->a:Lgf3/s;
+
+    return-object p1
+.end method
+
+.method public final invoke(Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;)V
+    .locals 3
+
+    .line 2
+    invoke-static {}, Lcom/bilibili/base/BiliContext;->e()Landroid/app/Application;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/bilibili/base/BiliContext;->e()Landroid/app/Application;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p1}, Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;->a()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    sget v2, Lbb0/i;->Z4:I
+
+    goto :goto_0
+
+    :cond_0
+    sget v2, Lbb0/i;->y3:I
+
+    :goto_0
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_1
+    invoke-static {v0, v1}, Lzz0/o0;->i(Landroid/content/Context;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;->this$0:Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;
+
+    .line 3
+    invoke-virtual {v0}, Lcom/bilibili/bililive/room/ui/roomv3/base/viewmodel/LiveRoomBaseViewModel;->n5()Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/b;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$Key;->LIVE_AUDIO_RECORD_SWITCH_OPEN:Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$Key;
+
+    invoke-virtual {p1}, Lcom/bilibili/bililive/room/ui/roomv3/base/events/bussiness/a;->a()Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    invoke-interface {v0, v1, p1}, Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/b;->a1(Lcom/bilibili/bililive/room/ui/roomv3/base/roomdatastore/LiveRoomDataStore$Key;Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;->this$0:Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;
+
+    .line 4
+    invoke-static {p1}, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;->d0(Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;)Lmb0/a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    iget-object v0, p0, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel$1;->this$0:Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;
+
+    invoke-static {v0}, Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;->e0(Lcom/bilibili/bililive/room/ui/danmaku/audio/LiveRoomRecordAudioViewModel;)Z
+
+    move-result v0
+
+    invoke-interface {p1, v0}, Lmb0/a;->X8(Z)V
+
+    :cond_2
+    return-void
+.end method

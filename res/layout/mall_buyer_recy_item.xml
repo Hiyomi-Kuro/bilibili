@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/buyer_item_edit" android:paddingLeft="5.0dp" android:paddingTop="5.0dp" android:paddingRight="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dp" android:src="@drawable/mall_addr_edit_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="30.0dp" android:layout_toLeftOf="@id/buyer_item_edit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:layout_gravity="center_vertical" android:id="@id/buyer_item_default_icon" android:background="@drawable/mall_item_rec_bg_white_pink" android:paddingLeft="4.0dp" android:paddingTop="1.0dp" android:paddingRight="4.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/mall_mine_buyer_list_default_tag_text" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/buyer_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/buyer_item_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:id="@id/buyer_item_card_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/buyer_item_card_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/submit_addr_head_split" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_margin="12.0dp" android:layout_marginLeft="12.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

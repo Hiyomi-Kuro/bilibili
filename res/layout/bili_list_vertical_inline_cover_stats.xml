@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/cover_left_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableLeft="@drawable/ic_info_views" android:drawablePadding="2.0dp" app:drawableLeftTint="@color/Wh0_u" />
+    <tv.danmaku.bili.widget.VectorTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/cover_left_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:maxLines="1" android:drawableLeft="@drawable/ic_info_danmakus" android:drawablePadding="2.0dp" android:layout_marginStart="12.0dp" app:drawableLeftTint="@color/Wh0_u" />
+</LinearLayout>

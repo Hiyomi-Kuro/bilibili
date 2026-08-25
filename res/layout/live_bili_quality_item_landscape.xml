@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/live_panel_list_item_tv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/selector_quality_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_quality" android:paddingLeft="36.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_quality_super_high" android:height="44.0dp" android:width="208.0dp" />
+</LinearLayout>

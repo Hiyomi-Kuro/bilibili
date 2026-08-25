@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/head" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="centerInside" app:viewAspectRatio="2.09" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_large_spacing" android:text="@string/charge_success" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="@dimen/item_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:lineSpacingMultiplier="1.2" />
+            </LinearLayout>
+            <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_close" android:layout_alignParentRight="true" />
+            <FrameLayout android:id="@id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="@dimen/item_large_spacing" android:layout_marginRight="@dimen/item_large_spacing" android:layout_below="@id/head">
+                <com.bilibili.magicasakura.widgets.TintEditText android:textSize="@dimen/text_size_large" android:gravity="start|top" android:id="@id/edit" android:background="@drawable/shape_rect_gray_with_stroke" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="90.0dp" android:hint="@string/charge_commit_hint" android:maxLines="10" android:maxLength="25" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:layout_gravity="right|bottom" android:id="@id/text_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginBottom="6.0dp" />
+            </FrameLayout>
+            <com.bilibili.magicasakura.widgets.TintButton android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Wh0_u" android:id="@id/submit" android:background="@drawable/selector_button_solid_pink" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="@dimen/item_large_spacing" android:layout_marginTop="32.0dp" android:layout_marginRight="@dimen/item_large_spacing" android:layout_marginBottom="4.0dp" android:text="@string/charge_wanna_commit" android:layout_below="@id/input_layout" />
+            <com.bilibili.app.comm.supermenu.core.MenuGrid android:id="@id/share_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/item_large_spacing" android:layout_below="@id/submit" app:menuGrid_iconHeight="42.0dp" app:menuGrid_iconTextSpace="2.0dp" app:menuGrid_iconWidth="42.0dp" app:menuGrid_itemTextColor="@color/Ga9" app:menuGrid_itemTextSize="12.0sp" app:menuGrid_lineSpan="3" />
+        </RelativeLayout>
+    </ScrollView>
+    <ViewStub android:id="@id/rank_layout" android:layout="@layout/bili_app_layout_charge_success_top3" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

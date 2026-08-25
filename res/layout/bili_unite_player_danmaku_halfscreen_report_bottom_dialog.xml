@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/daynight_color_background_card" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="400.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:id="@id/report_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="13.0dp" android:text="@string/Player_danmaku_report_select_reason" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="end|center" android:id="@id/report_close" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_player_close" android:tint="@color/daynight_color_icon_tint_for_gray_bg" />
+    </FrameLayout>
+    <View android:layout_gravity="end" android:id="@id/report_line" android:background="@color/daynight_color_divider_line_for_white" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/daynight_color_text_body_primary" android:ellipsize="end" android:gravity="start" android:id="@id/danmaku_text" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:lines="1" app:layout_constraintTop_toBottomOf="@id/report_line" />
+    <androidx.core.widget.NestedScrollView android:id="@id/report_group" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:layout_weight="1.0" app:layout_constraintTop_toBottomOf="@id/danmaku_text">
+        <tv.danmaku.biliplayerv2.service.interact.biz.widget.PlayerRadioGridGroup android:id="@id/radio_group" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/Ga8" android:gravity="center_vertical" android:id="@id/cb_shield_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox_player" android:text="@string/player_shield_user_and_same_danmaku" />
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/danmaku_report_commit_button_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/confirm" android:background="@drawable/player_halfscreen_danmaku_report_comfirm_bg" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="@string/commit" />
+</LinearLayout>

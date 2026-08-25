@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:gravity="center_vertical" android:background="@color/daynight_color_background_card" android:padding="19.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_layout" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="14.0dp" android:src="@drawable/ic_attention_tag" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/icon_layout" android:layout_centerVertical="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

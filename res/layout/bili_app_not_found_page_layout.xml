@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/error_not_found_root" android:background="@color/background_white_kit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/error_not_found_back" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="40.0dp" app:srcCompat="@drawable/ic_app_activity_404_nav_bar_back" />
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/error_not_found_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_primary_kit" android:id="@id/error_not_found_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_core_video_not_found" android:layout_below="@id/error_not_found_img" android:layout_centerInParent="true" />
+</RelativeLayout>

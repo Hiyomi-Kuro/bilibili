@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/header_icon_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dp" android:layout_marginEnd="3.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/header_icon_1" android:layout_width="15.0dp" android:layout_height="15.0dp" app:placeholderImage="@drawable/ic_ad_story_comment_avatar_default" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="7.5dp" app:scaleViewType="fitWidth" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/header_icon_2" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="6.0dp" android:layout_marginStart="6.0dp" app:placeholderImage="@drawable/ic_ad_story_comment_avatar_default" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="7.5dp" app:scaleViewType="fitWidth" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/header_icon_3" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" app:placeholderImage="@drawable/ic_ad_story_comment_avatar_default" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="7.5dp" app:scaleViewType="fitWidth" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</merge>

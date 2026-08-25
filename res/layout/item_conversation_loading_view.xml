@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:id="@id/loading_view" android:paddingTop="@dimen/item_ex_large_spacing" android:paddingBottom="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:progressIndeterminateTint="@color/Pi5" style="?android:progressBarStyleSmall" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/text_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga7" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_load_error" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Pi5" android:id="@id/retry_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_load_retry" />
+    </LinearLayout>
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

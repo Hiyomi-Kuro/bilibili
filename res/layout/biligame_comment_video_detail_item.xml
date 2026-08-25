@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_pic" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,16:9" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_video_play" android:visibility="invisible" android:layout_width="48.0dp" android:layout_height="48.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_pic" app:layout_constraintLeft_toLeftOf="@id/iv_pic" app:layout_constraintRight_toRightOf="@id/iv_pic" app:layout_constraintTop_toTopOf="@id/iv_pic" app:srcCompat="@drawable/biligame_vector_play" />
+    <FrameLayout android:tag="@string/biligame_view_auto_play_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,16:9" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Group android:id="@id/video_cover_group" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="iv_pic,iv_video_play" />
+</androidx.constraintlayout.widget.ConstraintLayout>

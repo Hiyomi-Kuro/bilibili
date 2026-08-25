@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/video_play_control_panel_background" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="300.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="@color/selector_bplayer_text_color_white_gray" android:id="@id/nested_report_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/Player_danmaku_report_select_reason" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_report_group" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/danmaku_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingStart="8.0dp" />
+            <tv.danmaku.biliplayerv2.service.interact.biz.widget.PlayerRadioGridGroup android:id="@id/radio_group" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-5.0dp" android:minWidth="380.0dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/gray_dark" android:gravity="center_vertical" android:id="@id/danmaku_report_cb_shield_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox_player" android:text="@string/player_shield_user_and_same_danmaku" android:paddingStart="4.0dp" android:layout_marginStart="8.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white_alpha20" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/confirm" android:background="@drawable/selector_button_fill_white_20" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:text="@string/sure" />
+</LinearLayout>

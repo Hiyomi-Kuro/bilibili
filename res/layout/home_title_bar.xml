@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="left|center" android:id="@id/title" android:visibility="gone" android:layout_marginLeft="15.0dp" style="@style/Console.TitleBig" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/icon" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="15.0dp" android:scaleType="centerInside" />
+</merge>

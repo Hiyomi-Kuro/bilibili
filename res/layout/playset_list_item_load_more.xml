@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="12.0dp" app:fc_foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/playset_click_to_load_more" android:drawableRight="@drawable/playset_ic_arrow_down" android:layout_centerInParent="true" app:drawableRightTint="@color/theme_color_secondary" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/tv_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:text="@string/playset_loading" android:layout_centerInParent="true" app:drawableRightTint="@color/theme_color_secondary" />
+    <View android:id="@id/load_more_place_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_centerInParent="true" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

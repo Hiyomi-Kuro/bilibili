@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.music.podcast.view.MusicMenuItemView android:textSize="12.0sp" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:id="@id/item" android:layout_width="66.0dp" android:layout_height="wrap_content" android:drawablePadding="6.0dp" app:drawableTopTint="@color/auto_night_shade" app:icon_height="44.0dp" app:icon_width="44.0dp" />
+</RelativeLayout>

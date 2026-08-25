@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="50.0dp" android:layout_height="44.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/tab_icon" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/live_emotion_tab_place_ic" android:layout_centerInParent="true" app:actualImageScaleType="fitCenter" app:roundedCornerRadius="4.0dp" />
+</RelativeLayout>

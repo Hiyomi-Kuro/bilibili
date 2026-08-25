@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.image2.view.BiliImageView android:id="@id/bubble_image" android:layout_width="26.0dp" android:layout_height="26.0dp" app:backgroundImage="@color/Pi4" app:failureImage="@drawable/ic_default_avatar" app:placeholderImage="@drawable/ic_default_avatar" app:roundAsCircle="true" app:roundingBorderColor="@color/Brand_pink" app:roundingBorderWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

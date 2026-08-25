@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/audio_only_rootview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/audio_only_cover_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/audio_only_to_play_video_btn" android:background="@drawable/bg_live_audio_only_to_play_video_btn_small" android:layout_width="150.0dp" android:layout_height="wrap_content" android:text="@string/live_menu_audio_only_to_play_video" />
+        <com.opensource.svgaplayer.SVGAImageView android:id="@id/audio_only_wave_line" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="25.0dp" android:scaleType="centerCrop" app:autoPlay="false" app:loopCount="-1" />
+    </LinearLayout>
+</RelativeLayout>

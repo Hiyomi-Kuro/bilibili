@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" style="?toolbarStyle" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:id="@id/search_bar" android:background="@drawable/shape_border_tag_search" android:padding="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_half_spacing" android:src="@drawable/ic_topic_search" app:imageTint="@color/Ga5_u" />
+        <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga5_u" android:gravity="center_vertical" android:id="@id/edit_text" android:paddingLeft="@dimen/item_half_spacing" android:paddingRight="@dimen/item_half_spacing" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/hint_search_topic" android:layout_weight="1.0" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center" android:id="@id/following_error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:isScrollContainer="true">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/following_topic_empty_img" android:layout_width="115.0dp" android:layout_height="122.0dp" android:src="@drawable/img_holder_empty_style2" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dp" android:text="@string/following_topic_list_error" android:layout_below="@id/following_topic_empty_img" android:layout_centerHorizontal="true" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</LinearLayout>

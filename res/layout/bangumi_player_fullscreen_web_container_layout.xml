@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/bangumi_player_fullscreen_web_container_layout_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bangumi_player_fullscreen_webview_widget" />
+    <ImageView android:tag="binding_1" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="6.0dp" android:layout_marginTop="20.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/bangumi_recommend_ic_back" app:tint="@color/Ga0_u" />
+</androidx.constraintlayout.widget.ConstraintLayout>

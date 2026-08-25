@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <view android:id="@id/video_cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" class="com.bilibili.ad.adview.search.widget.AdSearchVideoContainerLayout$AdSearchVideoItemLayout$AdSearchVideoCover" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:lines="2" app:layout_constraintLeft_toLeftOf="@id/video_cover" app:layout_constraintRight_toRightOf="@id/video_cover" app:layout_constraintTop_toBottomOf="@id/video_cover" />
+</merge>

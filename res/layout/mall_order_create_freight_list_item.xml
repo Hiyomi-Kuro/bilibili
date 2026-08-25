@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/coupon_item_select_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/mall_radiobutton_control_default" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mall_presale_freight_coupon_item_left" android:layout_width="90.0dp" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Wh0" android:layout_gravity="center" android:id="@id/coupnon_item_salecount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Wh0" android:ellipsize="end" android:layout_gravity="center" android:id="@id/coupnon_item_sale_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/mall_presale_freight_coupon_item_right_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/coupnon_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/coupnon_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:singleLine="true" android:lineSpacingExtra="0.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/coupnon_item_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingExtra="0.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

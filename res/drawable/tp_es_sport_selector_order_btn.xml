@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/tp_es_sport_round_corner_15_color_theme_white" />
+    <item android:drawable="@drawable/tp_es_sport_shape_roundrect_15_pink_stroke_button" />
+</selector>

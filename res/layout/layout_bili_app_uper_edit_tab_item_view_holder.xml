@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/edit_func_tab_item_height" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" android:minWidth="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_icon" android:layout_width="19.0dp" android:layout_height="19.0dp" android:layout_marginTop="6.0dp" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_layer_name" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="1.0dp" app:lottie_fileName="editor_tab_template_anim.json" app:lottie_repeatCount="0" app:lottie_repeatMode="restart" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="18.0dp" android:alpha="0.7" />
+</LinearLayout>

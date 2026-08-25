@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/cp_result_container" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/cp_container_no_result" android:paddingTop="100.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:id="@id/cp_tv_no_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cp_search_o_result_hint_1" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/cp_tv_no_result_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/cp_search_o_result_hint_2" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/cp_tv_no_result_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/cp_list_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="true" android:overScrollMode="never" />
+    <com.bilibili.campus.widget.loading.LoadingView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_settings" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="centerInside" app:imageTint="@color/Text2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/vc_mine_login_settings" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_teen" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="centerInside" app:imageTint="@color/Text2" app:layout_constraintEnd_toStartOf="@id/iv_settings" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/vc_mine_login_teen" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_customer" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="centerInside" app:imageTint="@color/Text2" app:layout_constraintEnd_toStartOf="@id/iv_teen" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/vc_mine_login_customer" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_login_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_settings" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/live_player_wapper" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="260.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout" android:background="#123312" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <Button android:id="@id/btn_start" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="start" />
+            <Button android:id="@id/btn_stop" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="暂停" />
+            <Button android:id="@id/btn_replace_surfaceview" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="替换" />
+            <Button android:id="@id/btn_release" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="release" />
+        </LinearLayout>
+        <SurfaceView android:id="@id/surfaceview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="250.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout2" android:background="#772244" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <EditText android:id="@id/et_roomid" android:layout_width="100.0dp" android:layout_height="match_parent" android:text="55" android:hint="roomid" android:inputType="number" />
+            <Button android:id="@id/btn_play" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="play" />
+            <EditText android:id="@id/e_w" android:layout_width="50.0dp" android:layout_height="match_parent" android:text="1080" android:hint="w" android:inputType="number" />
+            <EditText android:id="@id/e_h" android:layout_width="50.0dp" android:layout_height="match_parent" android:text="610" android:hint="h" android:inputType="number" />
+            <Button android:id="@id/btn_e" android:layout_width="80.0dp" android:layout_height="44.0dp" android:text="容器" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout3" android:background="#443322" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <Button android:id="@id/btn_cq" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="裁切" />
+            <Button android:id="@id/btn_zsy" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="自适应" />
+            <Button android:id="@id/btn_ls" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="拉伸" />
+            <Button android:id="@id/btn43" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="4：3" />
+            <Button android:id="@id/btn169" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="16：9" />
+            <Button android:id="@id/btn_qp" android:layout_width="70.0dp" android:layout_height="44.0dp" android:text="全屏" />
+        </LinearLayout>
+    </LinearLayout>
+    <SurfaceView android:id="@id/surfaceview2" android:layout_width="match_parent" android:layout_height="250.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

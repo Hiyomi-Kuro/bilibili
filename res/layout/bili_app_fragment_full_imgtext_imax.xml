@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.adcommon.widget.CrashCatchViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.ad.adview.imax.impl.widget.ImaxToolBarWithClose android:id="@id/imax_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/ad_imax_tool_bar_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/guide" android:background="@drawable/shape_rect_grad_black_alpha_imax_guide" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/imax_slide_guide" android:drawableBottom="@drawable/ic_imax_left_slide_arrow" android:drawablePadding="4.0dp" android:paddingStart="10.0dp" />
+        <include android:layout_width="match_parent" android:layout_height="52.0dp" layout="@layout/bili_ad_imax_extra_layout_short" />
+    </LinearLayout>
+</RelativeLayout>

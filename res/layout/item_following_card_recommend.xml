@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga5" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="12.0dp" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/following_recommend_user" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/card_divider" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="10.0dp" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

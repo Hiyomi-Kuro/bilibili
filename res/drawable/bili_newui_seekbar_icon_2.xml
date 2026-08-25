@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="22.0dp" android:width="22.0dp" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h22v22h-22z" />
+        <path android:fillColor="#fb7299" android:pathData="M4.583,2.078L17.417,2.078A4.583,4.583 0,0 1,22 6.661L22,15.502A4.583,4.583 0,0 1,17.417 20.085L4.583,20.085A4.583,4.583 0,0 1,0 15.502L0,6.661A4.583,4.583 0,0 1,4.583 2.078z" android:fillAlpha="0.14" />
+        <path android:fillColor="#fb7299" android:pathData="M5.011,2.77L16.989,2.77A4.278,4.278 0,0 1,21.267 7.048L21.267,15.115A4.278,4.278 0,0 1,16.989 19.392L5.011,19.392A4.278,4.278 0,0 1,0.733 15.115L0.733,7.048A4.278,4.278 0,0 1,5.011 2.77z" android:fillAlpha="0.28" />
+        <path android:fillColor="#ffffff" android:pathData="M5.5,4.431L16.5,4.431A2.903,2.903 0,0 1,19.403 7.333L19.403,14.667A2.903,2.903 0,0 1,16.5 17.57L5.5,17.57A2.903,2.903 0,0 1,2.597 14.667L2.597,7.333A2.903,2.903 0,0 1,5.5 4.431z" android:strokeColor="#333333" android:strokeWidth="1.52778" />
+        <path android:fillColor="#333333" android:pathData="M6.967,8.556L6.967,8.556A1.1,1.1 0,0 1,8.067 9.656L8.067,12.345A1.1,1.1 0,0 1,6.967 13.445L6.967,13.445A1.1,1.1 0,0 1,5.867 12.345L5.867,9.656A1.1,1.1 0,0 1,6.967 8.556z" />
+        <path android:fillColor="#333333" android:pathData="M15.033,8.556L15.033,8.556A1.1,1.1 0,0 1,16.133 9.656L16.133,12.345A1.1,1.1 0,0 1,15.033 13.445L15.033,13.445A1.1,1.1 0,0 1,13.933 12.345L13.933,9.656A1.1,1.1 0,0 1,15.033 8.556z" />
+        <group>
+            <clip-path android:pathData="M4.4,0h13.2v4.156h-13.2z" />
+            <path android:fillColor="#333333" android:pathData="M5.353,0.55L5.353,0.55A1.1,1.1 105,0 1,6.855 0.953L8.526,3.846A1.1,1.1 105,0 1,8.123 5.348L8.123,5.348A1.1,1.1 105,0 1,6.62 4.946L4.95,2.053A1.1,1.1 105,0 1,5.353 0.55z" />
+            <path android:fillColor="#333333" android:pathData="M16.648,0.55L16.648,0.55A1.1,1.1 75,0 0,15.145 0.953L13.475,3.846A1.1,1.1 75,0 0,13.877 5.349L13.877,5.349A1.1,1.1 75,0 0,15.38 4.946L17.05,2.053A1.1,1.1 75,0 0,16.648 0.55z" />
+        </group>
+    </group>
+</vector>

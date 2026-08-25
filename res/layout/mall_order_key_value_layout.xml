@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga8" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/right_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <View android:id="@id/order_num_devider" android:background="@color/Ga2" android:visibility="gone" android:layout_width="1.0dp" android:layout_height="16.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:id="@id/order_num_copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_text_copy" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:id="@id/value" android:paddingLeft="6.0dp" android:paddingRight="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_label" android:layout_alignBaseline="@id/right_label" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga8" android:id="@id/left_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/value" android:layout_alignBaseline="@id/value" android:layout_toStartOf="@id/value" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga8" android:id="@id/below_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/value" android:layout_alignRight="@id/value" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/up_more_contain" android:background="@drawable/shape_roundrect_gray_day_black_night" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginLeft="11.0dp" android:layout_marginRight="11.0dp" android:layout_marginBottom="10.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5_u" android:id="@id/up_more_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_hide_all_videos" />
+        <ImageView android:id="@id/up_more_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rank_up_more" android:layout_marginStart="7.0dp" />
+    </LinearLayout>
+</merge>

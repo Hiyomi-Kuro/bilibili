@@ -1,0 +1,184 @@
+.class public final Ldh0/g;
+.super Ldh0/i;
+.source "BL"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0008\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u0008\u0010\u0003\u001a\u00020\u0002H\u0016J\u0010\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0016R\"\u0010\t\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0008\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\"\u0010\u0014\u001a\u00020\r8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000e\u0010\u000f\u001a\u0004\u0008\u0010\u0010\u0011\"\u0004\u0008\u0012\u0010\u0013R\u001a\u0010\u001a\u001a\u00020\u00158\u0016X\u0096D\u00a2\u0006\u000c\n\u0004\u0008\u0016\u0010\u0017\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006\u001d"
+    }
+    d2 = {
+        "Ldh0/g;",
+        "Ldh0/i;",
+        "",
+        "e",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/SettingInteractionData;",
+        "data",
+        "Lgf3/s;",
+        "j",
+        "Z",
+        "isVerticalStreaming",
+        "()Z",
+        "l",
+        "(Z)V",
+        "Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "f",
+        "Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "getScreenMode",
+        "()Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "k",
+        "(Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;)V",
+        "screenMode",
+        "",
+        "g",
+        "I",
+        "a",
+        "()I",
+        "bizId",
+        "<init>",
+        "()V",
+        "room_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private e:Z
+
+.field private f:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+.field private final g:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ldh0/i;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;->VERTICAL_FULLSCREEN:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, Ldh0/g;->f:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 7
+    .line 8
+    const/16 v0, 0x3ec
+
+    .line 9
+    .line 10
+    iput v0, p0, Ldh0/g;->g:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Ldh0/g;->g:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public e()Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ldh0/g;->f:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;->VERTICAL_FULLSCREEN:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_1
+
+    .line 6
+    .line 7
+    iget-boolean v0, p0, Ldh0/g;->e:Z
+
+    .line 8
+    .line 9
+    if-nez v0, :cond_0
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 13
+    goto :goto_1
+
+    .line 14
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    .line 15
+    :goto_1
+    return v0
+.end method
+
+.method public j(Lcom/bilibili/bililive/videoliveplayer/net/beans/SettingInteractionData;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Ldh0/i;->j(Lcom/bilibili/bililive/videoliveplayer/net/beans/SettingInteractionData;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final k(Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Ldh0/g;->f:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final l(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Ldh0/g;->e:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method

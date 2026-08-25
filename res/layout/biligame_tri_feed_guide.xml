@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/Ba0_u_alpha50" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/tri_game_feed_guide" android:layout_width="176.0dp" android:layout_height="280.0dp" app:lottie_autoPlay="true" app:lottie_fileName="feed_pull_up_guide.json" app:lottie_repeatCount="2" app:lottie_repeatMode="restart" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上滑查看更多" />
+</LinearLayout>

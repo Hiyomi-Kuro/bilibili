@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="157.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_primary" android:gravity="center_vertical" android:id="@id/capture_pop_action_save_exit" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="49.0dp" android:text="@string/fragment_capture_message_draft_exit_save_tip" />
+        <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/daynight_color_text_body_primary" android:gravity="center_vertical" android:id="@id/capture_pop_action_exit" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="49.0dp" android:text="@string/fragment_capture_message_draft_exit_tip" />
+        <View android:background="@color/daynight_color_stroke_line" android:layout_width="match_parent" android:layout_height="5.0dp" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/daynight_color_text_body_primary" android:gravity="center" android:id="@id/capture_pop_action_exit_cancel" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/upper_cancel" />
+    </LinearLayout>
+</LinearLayout>

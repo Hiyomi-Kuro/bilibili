@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dm_panel_web_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.ad.adview.widget.PanelToolbar android:id="@id/toolbar" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="44.0dp" />
+</FrameLayout>

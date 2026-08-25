@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/content_layout" android:background="@drawable/shape_rect_solid_bg2_float_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior" style="@style/Widget.Design.BottomSheet.Modal">
+            <include layout="@layout/bili_player_half_ai_subtitle_single_select2_content" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

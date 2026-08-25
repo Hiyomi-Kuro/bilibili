@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/videoview_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_gravity="bottom" android:id="@id/cardview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="49.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" layout="@layout/bili_ad_layout_game_detail" />
+    <include android:layout_gravity="bottom" android:id="@id/cardview_click" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="49.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" layout="@layout/bili_ad_layout_game_detail_click" />
+    <com.bilibili.adcommon.sdk.rewardvideo.view.EndPageGameAdFrameLayout android:id="@id/endpage" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/control" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" layout="@layout/bili_ad_layout_game_control" />
+</FrameLayout>

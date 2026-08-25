@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:background="@drawable/shape_rect_white_teenagers_mode_dialog_v2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:text="@string/teenagers_title" android:includeFontPadding="false" style="@style/T16" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/Text2" android:layout_gravity="center" android:id="@id/text1" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/teenagers_dialog_title" android:includeFontPadding="false" style="@style/T13" />
+        <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Pi5" android:layout_gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/teenagers_dialog_enter_teenagers_mode" style="@style/T13" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Text2" android:gravity="center" android:id="@id/button" android:background="@drawable/shape_rect_gray_border_round_corner" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginLeft="32.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="16.0dp" android:text="@string/teenagers_dialog_know" style="@style/T13" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

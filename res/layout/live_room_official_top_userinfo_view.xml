@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bililive.biz.uicommon.widget.LiveAvatarView android:layout_gravity="center_vertical" android:id="@id/official_avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" app:avatarSize="30.0dp" app:customAvatarFrameSize="36.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dp" android:layout_marginEnd="3.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/live_daynight_text_color_white" android:ellipsize="end" android:gravity="left" android:id="@id/official_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/live_daynight_text_color_white" android:ellipsize="end" android:gravity="left" android:id="@id/official_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <com.bilibili.bililive.biz.uicommon.watched.LiveWatchedView android:orientation="horizontal" android:id="@id/online_num_official" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textColor="@color/live_daynight_text_color_white" app:textSize="10.0sp" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/live_daynight_text_color_white" android:layout_gravity="center_vertical" android:id="@id/official_follow" android:background="@drawable/live_selector_button_follow_corner_20_dark_pink" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_follow" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" />
+</LinearLayout>

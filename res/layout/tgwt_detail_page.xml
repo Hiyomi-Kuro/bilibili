@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bangumi.ui.widget.OGVVideoDetailAncestorLayout android:id="@id/coordinatorLayout" android:tag="layout/tgwt_detail_page_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/bangumi_activity_detail_video_wrapper" />
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appbar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.bilibili.bangumi.ui.page.detail.BangumiAppBarScrollObserverBehavior">
+        <com.bilibili.bangumi.ui.widget.BangumiLockableCollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:scrimAnimationDuration="100" app:titleEnabled="false">
+            <com.bilibili.ogv.infra.widget.RatioLayout android:id="@id/videoview_container_space" android:layout_width="match_parent" android:layout_height="wrap_content" app:ratioHeightOverWidth="0.5625" />
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bangumi_layout_detail_player_cover" />
+            <View android:id="@id/shadow" android:background="@drawable/bangumi_shape_toolbar_gradient_shadow" android:layout_width="match_parent" android:layout_height="65.0dp" app:layout_collapseMode="pin" />
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin" layout="@layout/bangumi_view_detail_navigate_toolbar" />
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bangumi_layout_detail_player_error" />
+        </com.bilibili.bangumi.ui.widget.BangumiLockableCollapsingToolbarLayout>
+        <include android:id="@id/view_vip_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" layout="@layout/bangumi_detail_page_vip_bar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:id="@id/container_FL" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/bangumi_pinned_bottom_scrolling_behavior">
+        <FrameLayout android:id="@id/fl_chat_page_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bangumi_layout_detail_page_error" />
+        <FrameLayout android:id="@id/container_layer_page" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</com.bilibili.bangumi.ui.widget.OGVVideoDetailAncestorLayout>

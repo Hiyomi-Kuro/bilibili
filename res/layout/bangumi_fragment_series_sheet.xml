@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/bangumi_follow_manager_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintConstraintLayout android:background="@drawable/bangumi_follow_manager_bg" android:layout_width="match_parent" android:layout_height="56.0dp">
+        <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/bangumi_follow_group_manager_top_bar_bg" android:layout_width="48.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="25.0dp" android:layout_marginStart="12.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textColor="@color/Ga8" android:gravity="bottom" android:id="@id/tv_cancel" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="13.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/confirm" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/view" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+    </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="56.0dp">
+        <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/place_holder" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/live_daynigt_voice_join_list_fragment_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:text="@string/live_voice_connect" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/theme_color_live_text_assist_dark" android:id="@id/tv_voice_state_detail" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/live_voice_up_not_open" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/bili_live_item_waiting_count" />
+            </LinearLayout>
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_join_list" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <tv.danmaku.bili.widget.LoadingImageView android:id="@id/loading_img_view" android:paddingTop="130.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </RelativeLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <RelativeLayout android:id="@id/apply_layout" android:paddingLeft="12.0dp" android:paddingTop="9.0dp" android:paddingRight="12.0dp" android:paddingBottom="15.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/apply_button" android:layout_width="match_parent" android:layout_height="34.0dp" />
+            </RelativeLayout>
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        <ImageView android:id="@id/iv_close" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_marginTop="14.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/ic_close" android:tint="@color/theme_color_live_horizontal_card_gray_text" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

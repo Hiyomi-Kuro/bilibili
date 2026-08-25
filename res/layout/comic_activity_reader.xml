@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.app.comm.bh.BiliWebView android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+</LinearLayout>

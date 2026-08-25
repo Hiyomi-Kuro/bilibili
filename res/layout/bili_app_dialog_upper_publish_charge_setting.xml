@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_charge_setting" android:background="@drawable/upper_shape_dialog_bottom_r8_bg2" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_width="match_parent" android:layout_height="70.0dp">
+            <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bg_upper_at_user_page_slider" android:layout_width="36.0dp" android:layout_height="4.0dp" android:layout_marginTop="10.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/upper_txt_color_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:text="@string/upper_charge_setting" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_one" android:id="@id/tvChargeSettingComplete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/upper_confirm_2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text2" android:id="@id/tvChargeSettingCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/cancel" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+        <include android:id="@id/include_charge_content" android:layout_width="match_parent" android:layout_height="400.0dp" layout="@layout/bili_app_dialog_upper_publish_charge_setting_content" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

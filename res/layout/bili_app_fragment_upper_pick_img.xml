@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="#393a3f" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#c9ccd0" android:gravity="center_vertical" android:id="@id/tv_part_privilege_tip" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_part_privilege_tip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="18.0sp" android:textColor="@color/upper_text_gray" android:gravity="center" android:id="@id/tv_load" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/upper_loading_data" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

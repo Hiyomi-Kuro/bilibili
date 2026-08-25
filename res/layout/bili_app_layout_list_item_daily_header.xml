@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.pegasus.category.daily.DateNumberView android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="12.0dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/white_alpha60" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="-2.0dp" android:maxLines="1" android:layout_toRightOf="@id/date" android:layout_alignBottom="@id/date" />
+</RelativeLayout>

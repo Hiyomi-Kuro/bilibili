@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/Ga0" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/error_view" android:layout_width="213.0dp" android:layout_height="147.0dp" android:src="@drawable/bili_2233_fail" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp">
+        <TextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/column_banner_error" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/retry" android:background="@drawable/column_selector_button_solid_gray_column" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/column_reload" android:height="36.0dp" android:width="100.0dp" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

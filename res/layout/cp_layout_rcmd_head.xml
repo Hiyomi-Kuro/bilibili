@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/campus_rcmd_head" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/background" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:viewAspectRadioHeight="235" app:viewAspectRadioWidth="360" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guide_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.17" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guide_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.066" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guide_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.934" />
+    <include android:id="@id/no_added" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/guide_end" app:layout_constraintStart_toStartOf="@id/guide_start" app:layout_constraintTop_toTopOf="@id/guide_top" layout="@layout/cp_layout_rcmd_head_no_added" />
+    <include android:id="@id/school" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/guide_end" app:layout_constraintStart_toStartOf="@id/guide_start" app:layout_constraintTop_toTopOf="@id/guide_top" layout="@layout/cp_layout_rcmd_head_school" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="@string/author_space_header_behavior">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+            <fragment android:name="com.bilibili.app.authorspace.ui.SpaceHeaderFragment2" android:id="@id/space_header_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:elevation="0.0dp" app:iconTintColor="@null" app:layout_collapseMode="pin" app:titleTintColor="@null" style="?toolbarStyle">
+                <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="start|center" android:id="@id/back_icon" android:background="@drawable/bili_space_bg_toolbar_icon" android:layout_width="@dimen/bili_auth_space_toolbar_icon_size" android:layout_height="@dimen/bili_auth_space_toolbar_icon_size" android:layout_marginLeft="7.0dp" android:src="@drawable/ic_br_app_back" android:scaleType="centerInside" android:layout_marginStart="7.0dp" app:imageTint="@color/theme_color_primary_tr_icon" />
+                <include android:layout_gravity="center" android:id="@id/top_title_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/bili_app_layout_author_space_title" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/search_icon" android:background="@drawable/bili_space_bg_toolbar_icon" android:layout_width="@dimen/bili_auth_space_toolbar_icon_size" android:layout_height="@dimen/bili_auth_space_toolbar_icon_size" android:layout_marginRight="12.0dp" android:scaleType="centerInside" android:layout_marginEnd="12.0dp" app:imageTint="@color/theme_color_primary_tr_icon" app:srcCompat="@drawable/ic_vector_action_menu_search" />
+                    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/overflow" android:background="@drawable/bili_space_bg_toolbar_icon" android:layout_width="@dimen/bili_auth_space_toolbar_icon_size" android:layout_height="@dimen/bili_auth_space_toolbar_icon_size" android:layout_marginRight="8.0dp" android:src="@drawable/ic_overflow" android:scaleType="centerInside" />
+                </LinearLayout>
+            </com.bilibili.magicasakura.widgets.TintToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.bilibili.app.authorspace.ui.widget.SpaceLoadingView android:layout_gravity="center_horizontal" android:id="@id/space_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="160.0dp" />
+    <RelativeLayout android:id="@id/space_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/space_scrolling_view_behavior">
+        <View android:id="@id/tab_top_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_below="@id/tab_top_divider" app:elevation="0.5dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="2.0dp" app:pstsShouldExpand="false" app:pstsTabPaddingLeftRight="14.0dp" style="@style/Widget.App.SubTab.AuthorSpace" />
+        <View android:id="@id/tab_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/tabs" />
+        <tv.danmaku.bili.widget.SafeViewPager android:id="@id/pager" android:background="@color/Ga1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tab_divider" />
+        <androidx.core.widget.NestedScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <tv.danmaku.bili.widget.LoadingImageView android:id="@id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:layout_centerHorizontal="true" />
+        </androidx.core.widget.NestedScrollView>
+        <androidx.core.widget.NestedScrollView android:id="@id/hidden_layout" android:background="@color/Ga2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <tv.danmaku.bili.widget.LoadingImageView android:layout_gravity="center_horizontal" android:id="@id/hidden_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:layout_centerHorizontal="true" />
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+    <include android:id="@id/lead_download" android:visibility="gone" android:layout_width="match_parent" android:layout_height="66.0dp" app:layout_behavior="@string/bottom_sheet_behavior" layout="@layout/bili_app_layout_space_bottom_lead_download" />
+    <include android:layout_gravity="bottom" android:id="@id/follow_guide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp" layout="@layout/bili_app_layout_space_bottom_follow_guide" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

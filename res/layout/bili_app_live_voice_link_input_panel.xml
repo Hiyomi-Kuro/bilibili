@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color_bg_white" android:paddingLeft="15.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_marginBottom="5.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_voice_apply_reason" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_close" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_close" android:tint="@color/theme_color_live_horizontal_card_gray_text" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/input_layout" android:background="@drawable/bili_live_bg_voice_link_input" android:paddingLeft="14.0dp" android:paddingRight="14.0dp" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="35.0dp">
+            <com.bilibili.magicasakura.widgets.TintEditText android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/input" android:background="@null" android:layout_width="0.0dp" android:layout_height="32.0dp" android:hint="@string/live_voice_please_input_apply_reason" android:singleLine="true" android:maxLength="20" android:layout_weight="1.0" android:imeOptions="actionDone|flagNoFullscreen|flagNoExtractUi" android:textCursorDrawable="@drawable/live_hybrid_shape_rect_theme_color_size_1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_text_assist_dark" android:id="@id/tv_input_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/live_hybrid_selector_text_color_theme_disabled_gray" android:gravity="right|center" android:id="@id/sure" android:paddingTop="8.0dp" android:layout_width="35.0dp" android:layout_height="wrap_content" android:text="@string/live_voice_voice_link_input_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/theme_color_text_assist_dark" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/live_voice_voice_link_input_apply_tips" />
+</LinearLayout>

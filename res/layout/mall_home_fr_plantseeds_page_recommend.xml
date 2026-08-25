@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.MallSwipeRefreshLayout android:id="@id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@id/id_recommend__appbar_listener" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_behavior="com.mall.ui.page.home.MallHomeAppbarTopBehavior" />
+        <include layout="@layout/mall_home_tab_atmosphere_layout" />
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/id_recommend__app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp" app:layout_behavior="com.mall.ui.page.home.MallHomeBehavior" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.mall.ui.page.home.plantseeds.pageview.recommend.operation.MallRecommendWidgetRender android:id="@id/id_recommend_opt_widget" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/id_feeds_list_recommend_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <ViewStub android:layout_gravity="left|bottom" android:orientation="vertical" android:id="@id/id_recommend_floating_entry" android:layout="@layout/mall_home_vs_float_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <include android:id="@id/id_recommend_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/mall_tips_view_v2" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.mall.ui.widget.MallSwipeRefreshLayout>

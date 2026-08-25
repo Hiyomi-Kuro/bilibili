@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:foreground="@drawable/selectable_item_fg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.following.widget.SquareRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.bplus.followingcard.widget.TextGifView android:id="@id/image_item" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/image_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:src="@drawable/ic_delete_pic" android:layout_alignParentRight="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/image_edit" android:background="@drawable/video_time_bg" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_margin="@dimen/publishing_image_edit_icon_margin" android:text="@string/following_edit" android:layout_alignParentBottom="true" />
+        <ImageView android:gravity="center" android:id="@id/image_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_margin="3.0dp" android:src="@drawable/ic_following_publish_image_tag" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </com.bilibili.bplus.following.widget.SquareRelativeLayout>
+</com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_loading" android:background="@color/Wh0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_loading" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/anim_phone_common_pull_loading" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/br_prompt_busy_loading" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_load_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biligame_network_error" android:drawablePadding="20.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_load_retry" android:background="@drawable/biligame_shape_solid_color_theme_corner_15" android:layout_width="96.0dp" android:layout_height="30.0dp" android:layout_marginTop="12.0dp" android:text="@string/biligame_tip_retry" />
+</merge>

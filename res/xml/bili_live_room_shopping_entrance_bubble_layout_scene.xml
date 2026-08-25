@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:id="@id/shimmer_layout" android:layout_width="42.0dp" android:layout_height="16.0dp" android:scaleX="0.0" android:scaleY="0.0" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/shimmer_layout" android:layout_width="42.0dp" android:layout_height="16.0dp" android:scaleX="1.0" android:scaleY="1.0" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <Transition android:id="@id/transition_appear" motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="1600">
+        <KeyFrameSet>
+            <KeyAttribute android:scaleX="0.0" android:scaleY="0.0" motion:framePosition="0" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:scaleX="1.2" android:scaleY="1.2" motion:framePosition="16" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:scaleX="1.0" android:scaleY="1.0" motion:framePosition="25" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="25" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="-5.0" motion:framePosition="31" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="37" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="5.0" motion:framePosition="43" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="49" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="-5.0" motion:framePosition="55" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="61" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="5.0" motion:framePosition="67" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="73" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="-5.0" motion:framePosition="79" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="85" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="5.0" motion:framePosition="91" motion:motionTarget="@id/shimmer_layout" />
+            <KeyAttribute android:rotation="0.0" motion:framePosition="97" motion:motionTarget="@id/shimmer_layout" />
+        </KeyFrameSet>
+    </Transition>
+    <Transition android:id="@id/transition_disappear" motion:constraintSetEnd="@id/start" motion:constraintSetStart="@id/end" motion:duration="200" />
+</MotionScene>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/partner_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="25.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/img_partner" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" />
+        <TextView android:textColor="@color/mall_white" android:id="@id/tv_partner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="选择伙伴" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/location_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tag_container" app:layout_constraintStart_toEndOf="@id/partner_container" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/img_location" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" />
+        <TextView android:textColor="@color/mall_white" android:id="@id/tv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="选择地点" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="25.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/img_tag" android:layout_width="26.0dp" android:layout_height="26.0dp" app:actualImageScaleType="centerInside" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" />
+        <TextView android:textColor="@color/mall_white" android:id="@id/tv_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="加点字" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

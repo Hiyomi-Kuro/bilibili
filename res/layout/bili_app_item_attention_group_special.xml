@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/relation_daynight_color_text_headline" android:ellipsize="end" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:id="@id/group_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" app:compoundButtonTint="@color/selector_tint_checkbox" style="@style/Widget.App.CheckBox.Native" />
+</LinearLayout>

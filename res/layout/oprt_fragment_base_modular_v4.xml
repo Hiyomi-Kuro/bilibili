@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootFL" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.ogv.operation.legacy.FocusInterpretableRecycleView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.compose.ui.platform.ComposeView android:layout_gravity="center" android:id="@id/livLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="right|bottom" android:id="@id/activityPendant" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginBottom="65.0dp" android:layout_marginEnd="12.0dp" />
+            <include android:layout_gravity="right|bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="65.0dp" android:layout_marginEnd="12.0dp" layout="@layout/oprt_home_vip_task_float" />
+            <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" layout="@layout/oprt_home_ugc_guide" />
+        </FrameLayout>
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+</FrameLayout>

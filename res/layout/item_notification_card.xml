@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:background="@color/Wh0" android:paddingLeft="12.0dp" android:paddingTop="14.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar_iv" android:layout_width="40.0dp" android:layout_height="40.0dp" android:scaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_fl" android:layout_toRightOf="@id/avatar_iv">
+        <tv.danmaku.bili.widget.text.ClickableSpanTextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:id="@id/notice_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <tv.danmaku.bili.widget.text.ClickableSpanTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:textColorLink="@color/comment2_high_light_1" android:ellipsize="end" android:id="@id/content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reference_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp">
+            <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="2.0dp" android:layout_height="17.0dp" android:src="@drawable/shape_rounrect_corner_1_reference" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/reference_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/time_tv" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/reply_tv" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_reply" android:drawableLeft="@drawable/ic_notice_comment" android:drawablePadding="3.0dp" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/like_tv" android:paddingLeft="10.0dp" android:paddingTop="8.0dp" android:paddingRight="10.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_like" android:drawableLeft="@drawable/ic_info_like" android:drawablePadding="3.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/right_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/cover_iv" android:layout_width="45.0dp" android:layout_height="45.0dp" app:actualImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/origin_content_tv" android:layout_width="45.0dp" android:layout_height="wrap_content" android:minHeight="45.0dp" android:maxLines="3" android:lineSpacingExtra="1.0dp" />
+    </FrameLayout>
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

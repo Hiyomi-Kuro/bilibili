@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_vertical_mode_setting" android:key="@string/pref_key_vertical_mode_setting">
+        <com.bilibili.app.preferences.settings2.Settings2SwitchPreference android:persistent="true" android:title="@string/pref_title_auto_story" android:key="@string/pref_key_auto_story" android:summary="@string/pref_title_auto_story_summary" android:defaultValue="true" app:migration_settings_type="play" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

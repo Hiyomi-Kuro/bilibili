@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/bcg_iv_splash_logo" android:visibility="gone" android:layout_width="240.0dp" android:layout_height="60.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@color/black" />
+    <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/bcg_iv_splash_logo_port" android:visibility="gone" android:layout_width="193.0dp" android:layout_height="48.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholderImage="@color/black" />
+</merge>

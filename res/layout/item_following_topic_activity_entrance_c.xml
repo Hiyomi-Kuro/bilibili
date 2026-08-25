@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/Ga7_u" android:gravity="center_vertical" android:id="@id/label" android:background="@drawable/shape_publish_location_bg" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following_activity" android:drawableLeft="@drawable/ic_vector_follow_topic_v2" android:drawablePadding="3.0dp" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="21.0dp" android:layout_marginBottom="21.0dp" android:singleLine="true" android:layout_toRightOf="@id/label" android:layout_centerVertical="true" />
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

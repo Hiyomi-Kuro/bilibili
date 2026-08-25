@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:gravity="center_vertical" android:id="@id/story_tag_stub" android:layout="@layout/ad_goto_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp" />
+    <tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp">
+        <com.bilibili.adcommon.basic.marker.AdMarkLayout android:id="@id/ad_tag" android:visibility="gone" android:layout_marginEnd="4.0dp" app:mode="double_row" app:priority="5" style="@style/Marker" />
+        <com.bilibili.app.comm.list.widget.tag.tagtinttext.TagSpanTextView android:id="@id/tag_rcmd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dp" app:priority="4" style="@style/AdRcmd_Tag" />
+        <include android:id="@id/include_download" android:layout_width="wrap_content" android:layout_height="wrap_content" app:priority="3" layout="@layout/bili_ad_download_text_wrapper_adav" />
+        <com.bilibili.adcommon.widget.NakedSingleTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/desc_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:includeFontPadding="false" app:priority="1" />
+        <com.bilibili.adcommon.widget.NakedSingleTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:includeFontPadding="false" app:priority="2" />
+    </tv.danmaku.bili.widget.PriorityLinearLayout>
+</merge>

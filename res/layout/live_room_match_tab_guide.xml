@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/live_intro_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_match_tab_guide" android:background="@drawable/live_match_tab_guide_icon" android:layout_width="95.0dp" android:layout_height="53.0dp" android:layout_marginRight="13.0dp" android:layout_marginBottom="20.0dp" />
+        <ImageView android:layout_gravity="right" android:background="@drawable/live_match_tab_guide_arrow_icon" android:layout_width="60.0dp" android:layout_height="95.0dp" android:layout_marginRight="60.0dp" android:layout_marginBottom="-12.0dp" />
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/bili_2233_heart" android:layout_width="134.0dp" android:layout_height="108.0dp" android:layout_marginBottom="7.0dp" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="67.0dp" android:text="@string/live_match_tab_guide_tips" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_i_know" android:background="@drawable/bg_live_white_stroke_r4" android:paddingLeft="22.0dp" android:paddingTop="4.0dp" android:paddingRight="22.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/live_i_know" />
+    </LinearLayout>
+</FrameLayout>

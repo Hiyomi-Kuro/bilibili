@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shop_notice_container" android:background="@color/mall_base_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="start|center" android:id="@id/shop_notice_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:button="@drawable/mall_addr_edit_default_checkbox_icon" android:text="@string/mall_shop_notice_shop" android:drawablePadding="5.0dp" android:layout_centerVertical="true" />
+</RelativeLayout>

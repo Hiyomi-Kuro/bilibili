@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0dp" android:textColor="@color/Text2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/space_footer" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/story_space_cannot_down"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/tv_quality_root" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="57.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_selector_panel_text_pink" android:gravity="center" android:id="@id/tv_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:minWidth="101.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/pink" android:id="@id/tv_quality_icon" android:background="@drawable/shape_roundrect_pink_roundrect_12" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:text="@string/player_login" android:layout_marginStart="4.0dp" app:layout_constraintLeft_toRightOf="@id/tv_quality" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_container" android:paddingLeft="1.0dp" android:paddingRight="1.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="17.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="11.0dp" android:ellipsize="none" android:gravity="center" android:id="@id/id_block_tv_benefit_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0dp" android:textStyle="bold" android:ellipsize="none" android:gravity="center" android:id="@id/id_block_tv_benefit_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

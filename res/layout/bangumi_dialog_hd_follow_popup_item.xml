@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="34.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga8" android:ellipsize="end" android:id="@id/tv_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_pink_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:imageTint="@color/Pi5" app:srcCompat="@drawable/ogv_bottom_sheet_pink_check" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="right" android:id="@id/decorate_container" android:layout_width="@dimen/following_decorate_card_width_fans" android:layout_height="@dimen/following_decorate_card_height_fans" android:layout_marginTop="8.0dp" android:layout_marginRight="@dimen/following_decorate_margin_with_recommend" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/image_decorate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="fitCenter" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/following_decorate_card_fans_number_size" android:layout_gravity="right" android:id="@id/tv_fans_no" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/following_decorate_card_fans_margin_top" android:layout_marginRight="81.0dp" android:includeFontPadding="false" />
+    <com.bilibili.relation.widget.FollowButton android:layout_gravity="end" android:id="@id/follow_button" android:visibility="gone" android:layout_width="66.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="1.0dp" android:layout_marginBottom="4.0dp" app:fbFollowFalseBg="@drawable/shape_recommenduser_txt_unfollow_bg_not_transparent" app:fbGroup="false" app:fbStyle="border" style="@style/FollowButton" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/video_link__animation" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <Space android:id="@id/video_link_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/video_link_about" android:background="@drawable/live_shape_round_rect_bg_black_alpha60_corner_20" android:paddingLeft="8.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:text="@string/live_video_link_about_her" android:layout_toRightOf="@id/video_link_space" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/video_link_count" android:background="@drawable/live_shape_round_rect_bg_black_alpha60_corner_20" android:paddingLeft="8.0dp" android:paddingTop="3.0dp" android:paddingRight="8.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

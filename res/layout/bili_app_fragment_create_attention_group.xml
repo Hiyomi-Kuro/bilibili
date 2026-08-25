@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:background="@color/Ga0" android:paddingLeft="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="14.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:gravity="center_vertical" android:paddingTop="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attention_group_name" />
+        <com.bilibili.magicasakura.widgets.TintEditText android:textSize="14.0sp" android:textColor="@color/Ga10" android:textColorHint="@color/Ga4" android:id="@id/name" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:hint="@string/attention_group_name_hint" android:singleLine="true" android:maxLength="16" android:inputType="text" android:imeOptions="actionDone" android:imeActionLabel="完成" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</LinearLayout>

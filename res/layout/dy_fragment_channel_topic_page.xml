@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/dy_topic_page" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/dy_list" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+            <androidx.core.widget.NestedScrollView android:id="@id/dy_state_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="66.0dp" android:paddingBottom="@dimen/item_spacing" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/dy_status_image" android:layout_width="280.0dp" android:layout_height="158.0dp" android:src="@drawable/bili_2233_fail" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/dy_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/tip_no_following" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+    <include layout="@layout/view_share_reminder" />
+    <com.bilibili.bplus.baseplus.widget.TintFloatingActionButton android:layout_gravity="right|bottom" android:id="@id/publishTopic" android:visibility="gone" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_margin="@dimen/fab_margin" android:src="@drawable/dy_ic_following_topic_publish" android:scaleType="center" app:borderWidth="0.0dp" app:fabSize="auto" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

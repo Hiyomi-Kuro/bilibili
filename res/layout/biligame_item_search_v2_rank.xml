@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="26.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.biligame.widget.TabLayout android:textSize="12.0sp" android:id="@id/rank_tab_layout" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="26.0dp" android:layout_marginBottom="12.0dp" app:tabGravity="fill" app:tabIndicatorColor="@color/Lb5" app:tabIndicatorHeight="2.0dp" app:tabMinWidth="0.0dp" app:tabMode="scrollable" app:tabPaddingEnd="10.0dp" app:tabPaddingStart="10.0dp" app:tabSelectedTextColor="@color/Ga10" app:tabTextAppearance="@style/TextAppearance.Biligame.BookCenter.Tab" app:tabTextColor="@color/Ga4" />
+    <com.bilibili.biligame.widget.AutoAdaptationViewPager android:id="@id/rank_view_pager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

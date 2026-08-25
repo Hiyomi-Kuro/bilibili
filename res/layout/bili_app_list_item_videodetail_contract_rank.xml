@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/main" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/rank_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:minWidth="30.0dp">
+            <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textStyle="bold" android:textColor="@color/Ga5" android:gravity="center_horizontal" android:id="@id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/avatar" android:layout_width="48.0dp" android:layout_height="@dimen/avatar_size" android:layout_marginLeft="5.0dp" fresco:placeholderImage="@drawable/bili_default_avatar" fresco:roundAsCircle="true" fresco:roundingBorderColor="@color/Ga5" fresco:roundingBorderWidth="0.30000007dp" style="@style/Widget.App.StaticImageView.Thumb.SmallAvatar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/nick_layout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/name" android:layout_width="150.0dp" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge_rank_message_default" />
+        </LinearLayout>
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textColor="@color/theme_color_secondary" android:id="@id/bbtxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" />
+    </LinearLayout>
+    <TextView android:id="@id/reply" android:background="@color/Ga3" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/charge_rank_left_margin" android:layout_marginTop="4.0dp" android:layout_marginRight="14.0dp" android:layout_below="@id/main" android:lineSpacingMultiplier="1.2" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

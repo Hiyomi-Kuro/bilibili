@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="@id/close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/close" style="@style/T14b" />
+    <ImageView android:id="@id/close" android:padding="15.0dp" android:layout_width="42.0dp" android:layout_height="42.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/bangumi_vector_close" app:tint="@color/Graph_medium" />
+    <View android:background="@drawable/bangumi_compilation_fragment_shadow" android:layout_width="match_parent" android:layout_height="8.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/close" />
+    <FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/close" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_help_preferences" android:key="@string/pref_key_help_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_check_update" android:key="@string/pref_key_check_update" android:widgetLayout="@null" android:defaultValue="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_cpu_info" android:key="@string/pref_key_cpu_info" android:defaultValue="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_diagnostics" android:key="@string/pref_key_diagnostics" android:defaultValue="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_resetPreferences" android:key="@string/pref_key_resetPreferences" android:widgetLayout="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_license" android:key="@string/pref_key_license" android:defaultValue="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_joinus" android:key="@string/pref_key_joinus" android:defaultValue="@null" />
+    <com.bilibili.app.preferences.custom.CustomPreference android:persistent="false" android:title="@string/pref_title_icp" android:key="@string/pref_key_icp" android:defaultValue="@null" />
+    <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_qualifications" android:key="@string/pref_key_qualifications" android:defaultValue="@null" />
+</androidx.preference.PreferenceScreen>

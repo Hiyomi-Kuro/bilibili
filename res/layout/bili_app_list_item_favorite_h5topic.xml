@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:background="@drawable/shape_roundrect_favorite_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/cover" android:layout_width="match_parent" android:layout_height="wrap_content" app:aspectRadioHeight="10" app:aspectRadioWidth="34" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundedCornerRadius="2.0dp" style="@style/Widget.App.StaticImageView.Thumb.Banner" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:maxLines="2" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:layout_gravity="center_vertical" android:id="@id/fav_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" />
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="right|center" android:id="@id/menu_more" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_gray_v2" app:imageTint="@color/Ga4" />
+    </FrameLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

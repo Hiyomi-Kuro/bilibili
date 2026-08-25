@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/right_slide_guide" android:layout="@layout/bili_live_room_right_slide_guide_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.bililive.room.ui.topic.widget.LiveDrawerLayout android:id="@id/drawer_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="right" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/slide_view_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="200.0dp">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_back" android:background="@drawable/bg_live_room_topic_list_back" android:layout_width="18.0dp" android:layout_height="20.0dp" android:layout_marginTop="70.0dp">
+                <View android:background="@drawable/ic_white_arrow_right" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginRight="-5.0dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.bilibili.bililive.room.ui.topic.widget.LiveDrawerLayout>
+</RelativeLayout>

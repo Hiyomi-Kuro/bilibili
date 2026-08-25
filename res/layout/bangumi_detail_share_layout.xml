@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:gravity="center" android:layout_gravity="right" android:id="@id/tvContent" android:background="@drawable/bangumi_detail_share_bubble_background" android:paddingLeft="18.0dp" android:paddingTop="3.0dp" android:layout_width="148.0dp" android:layout_height="51.0dp" android:layout_marginRight="10.0dp" android:text="@string/bangumi_let_us_watch_together" android:maxLines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

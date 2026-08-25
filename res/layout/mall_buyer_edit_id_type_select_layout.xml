@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@drawable/mall_buyer_id_select_bottom_sheet_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="34.0dp" android:paddingRight="34.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dp" android:textColor="@color/Ga5" android:id="@id/tv_cancel" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/Ga10" android:id="@id/tv_title" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证件类型" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/Pi5" android:id="@id/tv_confirm" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <com.mall.ui.widget.citypicker.WheelView android:id="@id/id_type_wheel_view" android:layout_width="match_parent" android:layout_height="156.0dp" />
+</LinearLayout>

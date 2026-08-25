@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="@string/pref_title_play_setting" android:key="@string/pref_key_play_setting" android:summary="@string/pref_summary_play_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory android:title="@string/pref_title_play_setting" android:key="@string/pref_key_play_setting">
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_auto_play_setting" android:key="@string/pref_key_auto_play_setting" android:defaultValue="@null" android:fragment="com.bilibili.app.preferences.fragment.PlayerAutoPlaySettingFragment" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_vertical_mode_setting" android:key="@string/pref_key_vertical_mode_setting" android:defaultValue="@null" android:fragment="com.bilibili.app.preferences.fragment.PlayerVerticalModeSettingFragment" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_float_background_setting" android:key="@string/pref_key_float_background_setting" android:defaultValue="@null" android:fragment="com.bilibili.app.preferences.fragment.PlayerFloatAndBackgroundSettingFragment" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_danmaku_setting" android:key="@string/pref_key_danmaku_setting" android:defaultValue="@null" android:fragment="com.bilibili.app.preferences.fragment.PlayerDmSettingFragment" />
+        <androidx.preference.Preference android:persistent="false" android:title="@string/pref_title_player_other_setting" android:key="@string/pref_key_player_other_setting" android:defaultValue="@null" android:fragment="com.bilibili.app.preferences.fragment.PlayerOtherSettingFragment" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mall_module_bg" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_detail_invoice_type" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:gravity="right|center" android:id="@id/tv_invoice_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_detail_invoice_title" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:gravity="right|center" android:id="@id/tv_invoice_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_invoice_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_detail_invoice" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:gravity="right|center" android:id="@id/tv_invoice_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" />
+    </LinearLayout>
+</LinearLayout>

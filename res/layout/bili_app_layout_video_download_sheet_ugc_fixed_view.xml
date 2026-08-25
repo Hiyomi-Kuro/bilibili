@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/divider_bottom" android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="44.0dp">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="16.0sp" android:textColor="@color/selector_text_enable_primary_disable_grey" android:gravity="center" android:id="@id/download_all" android:background="?selectableItemBackground" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/video_download_download_all" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:id="@id/divider_middle" android:background="@color/Ga4" android:layout_width="1.0dp" android:layout_height="18.0dp" />
+            <RelativeLayout android:id="@id/download_manager_layout" android:background="?selectableItemBackground" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="16.0sp" android:textColor="@color/theme_color_text_primary" android:gravity="center" android:id="@id/download_manager" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6.0dp" android:text="@string/video_download_go_to_manager" android:layout_centerInParent="true" android:layout_marginEnd="6.0dp" />
+                <com.bilibili.lib.homepage.widget.badge.NumberBadgeView android:id="@id/badge" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/download_manager" android:layout_centerInParent="true" android:layout_toEndOf="@id/download_manager" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/Ga8" android:gravity="center" android:id="@id/storage" android:background="@color/Ga1" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

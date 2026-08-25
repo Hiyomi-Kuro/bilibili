@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/smallapp_bg_loading_modal" android:padding="8.0dp" android:layout_width="240.0dp" android:layout_height="wrap_content" android:layout_marginTop="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="性能数据" />
+    <View android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" />
+    <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="基础" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/basic_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CPU:-%\n内存:---m" />
+    <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="启动和切换" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/launch_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="页面切换耗时:---ms\n启动耗时:----ms" />
+    <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="渲染" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/render_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="帧率:--fps" />
+    <TextView android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="其他" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/other_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="数据缓存:---KB" />
+</LinearLayout>

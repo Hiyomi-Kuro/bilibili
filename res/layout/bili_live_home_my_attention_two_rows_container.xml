@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.infra.widget.view.AttentionCardInterceptLinearLayout android:orientation="vertical" android:background="@drawable/bg_live_homepage_feed_bottom_shape" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.bililive.infra.widget.view.WrapContentHeightViewPager android:id="@id/view_pager_two_rows" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/indicator_two_rows" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginBottom="5.0dp" />
+        <tv.danmaku.bili.widget.BannerIndicator android:layout_gravity="center" android:id="@id/indicator_two_rows" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginBottom="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/view_pager_two_rows" app:layout_constraintStart_toStartOf="@id/view_pager_two_rows" app:layout_constraintTop_toBottomOf="@id/view_pager_two_rows" app:offset="8.0dp" app:radius="2.0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.bilibili.bililive.infra.widget.view.AttentionCardInterceptLinearLayout>

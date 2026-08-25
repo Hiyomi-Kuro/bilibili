@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/presale_protocol_view" android:background="@color/Wh0" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/presale_protocol_click_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:id="@id/presale_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="@string/mall_presale_protocol_v2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MallTextStyle1" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/presale_protocol" android:layout_alignTop="@id/presale_protocol" android:layout_alignBottom="@id/presale_protocol">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/mall_ic_general_go" />
+        </FrameLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:id="@id/presale_protocol_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="18.0dp" android:text="@string/mall_presale_protocol_sub_no_agree" android:layout_below="@id/presale_protocol" android:layout_alignLeft="@id/presale_protocol" app:fontFamily="sans-serif-light" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/presale_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/presale_protocol_divide_line" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.playerbizcommon.features.seekbar.WatchpointTextWidget android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginBottom="48.0dp" android:drawablePadding="4.0dp" android:drawableEnd="@drawable/bili_player_ctrl_right" android:layout_marginStart="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

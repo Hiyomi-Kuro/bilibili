@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/bili_app_layout_quick_login" />
+    </ScrollView>
+    <include android:id="@id/layout_answer" android:visibility="gone" layout="@layout/bili_app_layout_quick_answer" />
+    <include android:layout_gravity="center" android:id="@id/eula_group" android:visibility="gone" android:layout_width="280.0dp" android:layout_height="wrap_content" layout="@layout/bili_app_dialog_login_eula" />
+</FrameLayout>

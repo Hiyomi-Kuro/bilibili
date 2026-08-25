@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="1.0dp" app:thumbHeight="30.0dp" app:thumbWidth="30.0dp" style="@style/Widget.App.ImageView.Circle" />
+    <com.bilibili.bililive.biz.rank.highenergy.LiveHighEnergyEntranceRankAvatarCircle android:id="@id/avatar_circle" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+    <ImageView android:id="@id/guard_border" android:visibility="gone" android:layout_width="33.0dp" android:layout_height="33.0dp" />
+    <ImageView android:id="@id/rank_icon" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="22.0dp" android:scaleType="centerInside" android:layout_marginStart="10.0dp" />
+</FrameLayout>

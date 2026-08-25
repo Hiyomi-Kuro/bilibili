@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/live_common_generic_dialog_bg" android:layout_width="270.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.GenericDraweeView android:layout_gravity="center_horizontal" android:id="@id/live_common_image" android:layout_width="wrap_content" android:layout_height="82.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/bg_live_streaming_load_placeholder" android:scaleType="centerInside" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_common_tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+    <View android:background="#eeeeee" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/live_common_tv_left" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <View android:background="#eeeeee" android:layout_width="1.0dp" android:layout_height="match_parent" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/theme_color_primary" android:gravity="center" android:id="@id/live_common_tv_right" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

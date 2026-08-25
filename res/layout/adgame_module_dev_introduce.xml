@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="left|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/adgame_dev_introduction" />
+    <com.bilibili.adgame.widget.AdGameExpandableTextView android:textSize="13.0sp" android:textColor="@color/white_alpha70" android:id="@id/ag_expandable_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:lineSpacingExtra="2.0dp" />
+</LinearLayout>

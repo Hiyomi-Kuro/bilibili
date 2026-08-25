@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_alpha80" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" style="@style/Widget.App.ImageView.Circle.Avatar.Pegasus" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Wh0_u" android:ellipsize="end" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:maxWidth="104.0dp" android:maxLines="1" android:lines="1" />
+        <com.bilibili.relation.widget.FollowButton android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" app:fbGroup="false" app:fbStyle="fill" style="@style/FollowButton" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</FrameLayout>

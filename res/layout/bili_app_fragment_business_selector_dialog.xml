@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_gravity="bottom" android:id="@id/rl_content" android:background="@drawable/upper_shape_dialog_bottom_r8_bg1_2" android:layout_width="match_parent" android:layout_height="332.0dp">
+        <include android:id="@id/header" android:layout_width="match_parent" android:layout_height="52.0dp" layout="@layout/bili_app_layout_manuscript_bottom_dialog_header" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_business_selector" android:background="@color/upper_white_black" android:paddingTop="96.0dp" android:paddingBottom="96.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="240.0dp" android:layout_below="@id/header" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bg_upper_manuscript_business_selector_mask" android:layout_width="match_parent" android:layout_height="240.0dp" android:layout_below="@id/header" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

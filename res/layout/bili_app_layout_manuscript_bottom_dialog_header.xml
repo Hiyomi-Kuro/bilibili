@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_horizontal" android:id="@id/ll_dialog_top_slider" android:layout_width="match_parent" android:layout_height="24.0dp">
+        <com.bilibili.magicasakura.widgets.TintView android:background="@drawable/bg_upper_at_user_page_slider" android:layout_width="36.0dp" android:layout_height="4.0dp" android:layout_marginTop="10.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/fl_dialog_top" android:layout_width="match_parent" android:layout_height="26.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="15.0sp" android:textColor="@color/upper_txt_color_two" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_dialog_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_marginStart="12.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/upper_txt_color_one" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="22.0dp" android:layout_margin="2.0dp" android:text="@string/upper_partition_tag_page_title_text_new" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_txt_color_one" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/tv_dialog_confirm" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/upper_partition_tag_page_btn_confirm_text" android:layout_marginEnd="12.0dp" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

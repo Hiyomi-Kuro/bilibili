@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followingpublish.widget.GragRecyclerView android:id="@id/publish_image_list" android:paddingLeft="9.0dp" android:paddingRight="9.0dp" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingHorizontal="9.0dp" />
+    <ViewStub android:id="@id/following_viewstub_video" android:layout="@layout/layout_following_publish_video_c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp" />
+</RelativeLayout>

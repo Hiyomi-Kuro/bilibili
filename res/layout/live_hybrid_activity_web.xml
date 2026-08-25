@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?navigationTopBarSize">
+        <com.bilibili.bililive.infra.web.ui.view.WebViewContainer android:id="@id/webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/native_view_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/error_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_error_style2" android:scaleType="centerCrop" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/live_daynight_text_color_gray" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/live_hybrid_network_error_tip" />
+                <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/retry_btn" android:layout_width="120.0dp" android:layout_height="36.0dp" android:layout_marginTop="24.0dp" android:text="@string/live_hybrid_try_again" style="@style/Live.Widget.Button.Common.Solid.ThemeColor.Normal.Long" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_horizontal" android:layout_width="match_parent" android:layout_height="6.0dp" android:max="100" app:progressTint="@color/theme_color_secondary" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <include layout="@layout/live_layout_navigation_top_bar_web" />
+</FrameLayout>

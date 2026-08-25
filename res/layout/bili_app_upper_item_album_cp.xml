@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.upper.widget.AutoSquareFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="1.0dp" android:layout_marginBottom="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:fadeDuration="0" app:failureImage="@drawable/ic_editor_placeholder_default" app:placeholderImage="@drawable/ic_editor_placeholder_default" app:placeholderImageScaleType="fitXY" />
+    <View android:id="@id/view_overlay" android:background="@color/black_alpha30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/view_preview_rect" android:background="@drawable/upper_shape_album_preview_selected_cp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:layout_gravity="right" android:id="@id/view_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp" />
+    <ImageView android:layout_gravity="right" android:id="@id/iv_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/ic_upper_cp_album_add" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:layout_gravity="right" android:id="@id/fl_single_container" android:visibility="gone" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="2.0dp" android:layout_alignParentRight="true">
+        <View android:background="@drawable/editor_circle_with_border" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_single" android:background="@drawable/ic_upper_choose" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_selected_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <androidx.cardview.widget.CardView android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/cv_duration_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:layout_marginBottom="4.0dp" app:cardBackgroundColor="@color/transparent_white" app:cardCornerRadius="2.0dp" app:cardElevation="0.0px" app:cardMaxElevation="1.0dp" app:cardUseCompatPadding="false">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/white_alpha30" android:shadowRadius="2.0" />
+    </androidx.cardview.widget.CardView>
+</com.bilibili.upper.widget.AutoSquareFrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.ui.video.section.staff.PartyVerifyAvatarWithStaffName android:id="@id/vfl_avatar" android:layout_width="72.0dp" android:layout_height="84.0dp" app:partyAvatar_height="48.0dp" app:partyAvatar_width="48.0dp" app:partyFollowButtonHeight="22.0dp" app:partyFollowButtonWidth="22.0dp" app:partyTopLabelBackground="@drawable/avatar_label_b_test_background" app:partyTopLabelColor="@color/theme_color_secondary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/editor_shape_translucent_radius_rectangle" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginLeft="7.0dp" android:layout_marginRight="7.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" fresco:placeholderImage="@drawable/ic_editor_placeholder_default" fresco:roundedCornerRadius="5.5dp" />
+        <View android:id="@id/v_select_rectangle" android:background="@drawable/editor_shape_pink_radius_rectangle" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:id="@id/imv_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:focusable="true" android:clickable="true" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ProgressBar android:id="@id/pgb_loading" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/upper_text_small" android:textStyle="bold" android:textColor="@drawable/editor_selector_text_white_pink" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/bili_editor_origin_picture" android:maxLines="1" android:includeFontPadding="false" android:maxLength="5" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.ui.main2.mine.widgets.MultipleThemeImageView android:id="@id/mine_link_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/projection_globallink_normal_icon" style="@style/Mine_Multiple_GlobalLink_Icon_Style" />
+    <tv.danmaku.bili.ui.main2.mine.widgets.MultipleThemeImageView android:id="@id/mine_link_selected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/projection_globallink_highlight_icon" style="@style/Mine_Multiple_GlobalLink_Icon_Selected_Style" />
+</androidx.constraintlayout.widget.ConstraintLayout>

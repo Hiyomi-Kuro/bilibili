@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/daynight_color_background_card" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/delete" android:paddingLeft="20.0dp" android:paddingTop="19.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bili_editor_delete" />
+    <View android:id="@id/diver" android:background="@color/upper_data_gray" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/upper_theme_text_two_one" android:gravity="center" android:id="@id/cancel" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upper_cancel" />
+</LinearLayout>

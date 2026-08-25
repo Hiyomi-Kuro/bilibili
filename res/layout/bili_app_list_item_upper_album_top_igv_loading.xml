@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="114.0dp" android:layout_height="110.0dp" app:cardBackgroundColor="#2d3643" app:cardCornerRadius="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_upper_album_igv_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12.0sp" android:textColor="#9499a0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dp" android:text="@string/upper_album_intelligence_analysis_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:background="@drawable/shape_white_corners_4" android:layout_width="84.0dp" android:layout_height="8.0dp" android:layout_marginBottom="30.0dp" android:alpha="0.1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <View android:background="@drawable/shape_white_corners_4" android:layout_width="50.0dp" android:layout_height="8.0dp" android:layout_marginBottom="16.0dp" android:alpha="0.1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

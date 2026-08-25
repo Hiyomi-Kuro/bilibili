@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@drawable/column_sheet_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <View android:id="@id/view" android:background="@color/Bg2" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginTop="-0.5dp" android:layout_below="@id/recycler_view" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:id="@id/menu_cancel" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" android:text="@string/column_mananger_bottom_cancle" android:layout_below="@id/view" android:layout_centerHorizontal="true" style="@style/T16" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.biz.uicommon.widget.LiveAvatarView android:id="@id/face" android:background="@drawable/bg_live_multi_view_gather_face_bg" android:layout_width="18.0dp" android:layout_height="18.0dp" app:avatarSize="16.0dp" app:markFrameOfReference="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

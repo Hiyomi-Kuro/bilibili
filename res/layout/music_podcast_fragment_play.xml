@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="@color/br_black_light_3" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.music.podcast.view.MusicViewPager2LoadView android:id="@id/viewpager_load" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="vertical" android:id="@id/feed_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bilibili.music.podcast.view.MusicViewPager2LoadViewFooter android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.bilibili.music.podcast.view.MusicViewPager2LoadView>
+    <include android:id="@id/music_podcast_comment" layout="@layout/music_podcast_comment" />
+    <com.bilibili.music.podcast.view.MusicNormalLoadView android:id="@id/load_view" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="@android:color/transparent" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:danmaku="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.preference.RadioGroupPreference android:persistent="true" android:key="@string/pref_key_pegasus_v2_inline_auto_play" danmaku:radioEntries="@array/pref_pegasus_inline_setting_entries" danmaku:radioEntryValues="@array/pref_pegasus_inline_setting_entryValues" />
+</PreferenceScreen>

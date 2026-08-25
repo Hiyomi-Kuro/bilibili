@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.fasthybrid.uimodule.widget.SASwipeRefreshLayout android:id="@id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.PatchWidgetLayout android:id="@id/patch_widget_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.text.InputWidgetLayout android:id="@id/input_root" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.webview.WebViewLayout android:id="@id/webview_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/game_ad_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.dev.VConsoleButton android:layout_gravity="end|bottom" android:id="@id/v_console_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dp" android:layout_marginBottom="32.0dp" android:layout_marginEnd="32.0dp" />
+    <FrameLayout android:id="@id/app_dev_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

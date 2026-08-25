@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="230.0dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@android:id/background" android:background="@drawable/bili_app_up_widget_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="6.0dp">
+                <TextView android:textSize="14.0dp" android:textColor="@color/Text1" android:id="@id/up_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注UP主更新" />
+                <ImageView android:id="@id/brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_widget_brand" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:layout_marginBottom="4.0dp">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/container_entrances" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

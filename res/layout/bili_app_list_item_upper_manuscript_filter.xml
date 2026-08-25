@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:orientation="vertical" android:paddingLeft="@dimen/upper_archive_filter_item_padding_left" android:paddingRight="@dimen/upper_archive_filter_item_padding_right" android:layout_width="wrap_content" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/upper_theme_text_five_zero" android:id="@id/upper_manuscript_filter_item_tv" android:paddingLeft="8.0dp" android:paddingTop="5.0dp" android:paddingRight="8.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

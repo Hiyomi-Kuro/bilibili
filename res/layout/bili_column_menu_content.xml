@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Medium" android:textColor="@color/column_selector_search_menu" android:gravity="center" android:id="@id/item" android:background="@drawable/bg_search_column_menu" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/upper_shape_dialog_bottom_r8_bg1_2" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bili_icon_edit_cover" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_theme_text_two_one" android:gravity="center_vertical" android:id="@id/tv_edit_cover" android:background="?selectableItemBackground" android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:text="@string/upper_edit_cover_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <View android:background="@color/upper_data_gray" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/bilibi_icon_reupload" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_theme_text_two_one" android:gravity="center_vertical" android:id="@id/tv_reselect_cover" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginLeft="12.0dp" android:text="@string/upper_reselect_cover" android:includeFontPadding="false" />
+    </LinearLayout>
+    <View android:background="@color/upper_theme_pure_lbs_bg" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_large" android:textColor="@color/upper_theme_text_five_zero" android:gravity="center" android:id="@id/tv_cancel" android:background="?selectableItemBackground" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/upper_cancel" />
+</LinearLayout>

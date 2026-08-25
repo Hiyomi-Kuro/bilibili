@@ -1,0 +1,71 @@
+.class public interface abstract Lcom/bapis/bilibili/app/dynamic/v2/nu;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getBgAlpha()I
+.end method
+
+.method public abstract getBgAlphaNight()I
+.end method
+
+.method public abstract getBgColor()Ljava/lang/String;
+.end method
+
+.method public abstract getBgColorBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getBgColorNight()Ljava/lang/String;
+.end method
+
+.method public abstract getBgColorNightBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getBgStyle()I
+.end method
+
+.method public abstract getBorderColor()Ljava/lang/String;
+.end method
+
+.method public abstract getBorderColorBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getBorderColorNight()Ljava/lang/String;
+.end method
+
+.method public abstract getBorderColorNightBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getHeadIcon()Ljava/lang/String;
+.end method
+
+.method public abstract getHeadIconBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getHeadIconLocal()Lcom/bapis/bilibili/app/dynamic/v2/IconResLocal;
+.end method
+
+.method public abstract getHeadIconLocalValue()I
+.end method
+
+.method public abstract getText()Ljava/lang/String;
+.end method
+
+.method public abstract getTextBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTextColor()Ljava/lang/String;
+.end method
+
+.method public abstract getTextColorBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTextColorNight()Ljava/lang/String;
+.end method
+
+.method public abstract getTextColorNightBytes()Lcom/google/protobuf/ByteString;
+.end method

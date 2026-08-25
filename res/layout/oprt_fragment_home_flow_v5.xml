@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootFL" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/cvContainer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_gravity="right|bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="65.0dp" android:layout_marginEnd="12.0dp" layout="@layout/oprt_home_vip_task_float" />
+</FrameLayout>

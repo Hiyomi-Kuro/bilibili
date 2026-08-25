@@ -1,0 +1,50 @@
+.class public final Lcom/bilibili/ogvcommon/kmmsupport/e;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Leb3/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Leb3/d<",
+        "Lpu1/f;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a()Lpu1/f;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/bilibili/ogvcommon/kmmsupport/d;->a:Lcom/bilibili/ogvcommon/kmmsupport/d;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/bilibili/ogvcommon/kmmsupport/d;->b()Lpu1/f;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Leb3/g;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    check-cast v0, Lpu1/f;
+
+    .line 12
+    .line 13
+    return-object v0
+.end method

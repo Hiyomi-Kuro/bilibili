@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.column.ui.widget.FollowPopView android:layout_gravity="bottom" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/follow_action_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:id="@id/btn_follow" android:background="@drawable/shape_corner_follow_btn_in_pop" android:paddingLeft="8.0dp" android:paddingTop="6.0dp" android:paddingRight="8.0dp" android:paddingBottom="6.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:text="@string/column_attention_ta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Pi5_u" android:id="@id/tip_action_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="10.0dp" android:text="@string/column_favorite_success_s" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/column_attention_ta_description" android:layout_toLeftOf="@id/btn_follow" android:layout_below="@id/tip_action_title" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/follow_success_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/Pi5_u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/column_attention_follow_up_success" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</com.bilibili.column.ui.widget.FollowPopView>

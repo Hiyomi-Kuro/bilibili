@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/bili_editor_bgm_list_padding" android:paddingRight="@dimen/bili_editor_bgm_list_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bili_editor_bgm_list_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+        <FrameLayout android:id="@id/cover_container" android:layout_width="60.0dp" android:layout_height="match_parent">
+            <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/image_cover" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/ic_editor_placeholder_default" app:roundedCornerRadius="5.0dp" />
+            <ImageView android:layout_gravity="center" android:id="@id/imv_play_status" android:visibility="invisible" android:layout_width="@dimen/bili_editor_bgm_list_play_icon_size" android:layout_height="@dimen/bili_editor_bgm_list_play_icon_size" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/bili_editor_bgm_list_item_margin" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_toLeftOf="@id/submit_container" android:layout_toRightOf="@id/cover_container">
+            <TextView android:textSize="@dimen/upper_text_middle" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bili_editor_bgm_list_item_margin" android:maxLines="1" />
+            <TextView android:textSize="@dimen/upper_text_small" android:textColor="#757575" android:ellipsize="end" android:id="@id/tv_music_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/submit_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/upper_text_small" android:textColor="#757575" android:layout_gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/bili_editor_bgm_list_item_confirm_text_size" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@id/submit" android:background="@drawable/upper_selector_button_pink_bgm" android:visibility="invisible" android:layout_width="@dimen/bili_editor_bgm_list_item_confirm_width" android:layout_height="@dimen/bili_editor_bgm_list_item_confirm_height" android:text="@string/bili_editor_use" />
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_editor_bgm_list_item_extra_track" />
+</LinearLayout>

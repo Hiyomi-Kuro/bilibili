@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.ad.adview.search.widget.AdSearchButtonListLayout android:gravity="center_vertical" android:id="@id/search_bottom_button_list" android:layout_width="match_parent" android:layout_height="30.0dp" />
+</merge>

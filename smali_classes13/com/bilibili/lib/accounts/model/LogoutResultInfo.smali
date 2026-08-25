@@ -1,0 +1,51 @@
+.class public Lcom/bilibili/lib/accounts/model/LogoutResultInfo;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+.annotation runtime Lcom/bilibili/bson/common/Bson;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/lib/accounts/model/LogoutResultInfo$LogoutResultItem;
+    }
+.end annotation
+
+
+# instance fields
+.field public allFailed:Ljava/lang/Boolean;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "all_failed"
+    .end annotation
+.end field
+
+.field public allSucceed:Ljava/lang/Boolean;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "all_succeed"
+    .end annotation
+.end field
+
+.field public items:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/bilibili/lib/accounts/model/LogoutResultInfo$LogoutResultItem;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

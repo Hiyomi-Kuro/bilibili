@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/live_daynigt_voice_join_list_reason" android:id="@id/tv_waiting_num" android:background="@color/live_daynigt_voice_join_list_fragment_background_color" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/bottom_line" android:background="@color/live_daynigt_voice_join_list_line" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

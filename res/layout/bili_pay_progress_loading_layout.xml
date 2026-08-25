@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bili_pay_center_loading_bg" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:indeterminate="true" android:indeterminateDrawable="@anim/bili_pay_progress_loading_big" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Pay.Title" android:textColor="@color/bili_pay_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/progress" android:layout_centerHorizontal="true" />
+</RelativeLayout>

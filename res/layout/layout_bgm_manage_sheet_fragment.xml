@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_video_edit_bgm_search_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <tv.danmaku.bili.widget.PagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@id/tabs" android:background="@null" android:layout_width="wrap_content" android:layout_height="40.0dp" app:pstsScrollOffset="104.0dp" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Uper_Editor_slidingTab.Top.NoBackground" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/pages" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/bgm_search_content" android:background="@color/bili_editor_bgm_list_sheet_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

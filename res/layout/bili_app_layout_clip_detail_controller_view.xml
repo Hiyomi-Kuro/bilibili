@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/status_layout" android:background="@drawable/shape_toolbar_gradient_shadow_reverse" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/statue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clip_video_replay" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:id="@id/statue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/ugc_replay" android:layout_below="@id/statue_button" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/expand" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp" android:src="@drawable/ic_clip_expand" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

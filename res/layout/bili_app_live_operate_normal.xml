@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/group_top" android:visibility="visible" android:layout_width="60.0dp" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="center_horizontal" android:id="@id/img_top" android:layout_width="60.0dp" android:layout_height="72.0dp" android:scaleType="centerCrop" app:aspectRadioHeight="19" app:aspectRadioWidth="16" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" />
+    <TextView android:layout_gravity="right" android:id="@id/icon_top_close" android:background="@android:color/transparent" android:layout_width="15.0dp" android:layout_height="15.0dp" />
+    <FrameLayout android:layout_width="60.0dp" android:layout_height="72.0dp">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/text_top_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="64.0dp" android:maxLines="1" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/text_top_rank" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="64.0dp" android:maxLines="1" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

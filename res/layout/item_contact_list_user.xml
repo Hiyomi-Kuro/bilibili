@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout android:id="@id/lay_root" android:layout_width="match_parent" android:layout_height="wrap_content" app:foreground="@drawable/selectable_item_fg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/Wh0" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="36.0dp" android:layout_height="36.0dp" app:roundAsCircle="true" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga9" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:drawableLeft="@drawable/ic_vip_year" android:drawablePadding="6.0dp" />
+    </LinearLayout>
+    <View android:background="@color/theme_color_dividing_line" android:layout_width="match_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</com.bilibili.bplus.baseplus.widget.ForegroundRelativeLayout>

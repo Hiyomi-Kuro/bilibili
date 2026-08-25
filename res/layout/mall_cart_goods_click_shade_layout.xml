@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mall_cart_goods_long_click_fore_ground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/id_mall_cart_long_click_func" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:id="@id/id_mall_cart_item_move_collection" android:background="@drawable/mall_cart_mvoe_to_collect_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dp">
+            <TextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_cart_move_to_collection" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/id_mall_cart_item_move_delete" android:background="@drawable/mall_cart_mvoe_to_delete_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dp" android:textColor="@color/Wh0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_cart_delete" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@color/Wh0" android:id="@id/id_mall_cart_final_goods_delete_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_cart_final_goods_delete_msg" android:layout_centerInParent="true" />
+</RelativeLayout>

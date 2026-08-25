@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="43.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/live_room_pannel_danmu_setting_text_color" android:id="@id/tv_opt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/LivePlayerOptionsPannelItemText.Description" />
+    <com.bilibili.bililive.room.utils.ClipMinMaxLabelSeekbar android:orientation="horizontal" android:id="@id/opt_seek_bar" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:minHeight="2.0dp" android:layout_weight="1.0" app:liveRoomLsbChangeTheme="false" app:liveRoomLsbShowMaxLabel="false" app:liveRoomLsbShowMinLabel="false" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_value" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="wrap_content" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

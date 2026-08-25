@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0dp" android:textColor="@color/biligame_white_96" android:id="@id/video_info" android:background="@drawable/biligame_background_corner_black_tran_4" android:paddingLeft="4.0dp" android:paddingTop="2.0dp" android:paddingRight="4.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginBottom="10.0dp" android:text="视频详情" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <ImageView android:id="@id/mute" android:background="@drawable/ic_vol_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="2.0dp" android:indeterminate="false" android:progressDrawable="@drawable/layer_list_inline_player_progress_default_mute_widget" app:layout_constraintBottom_toBottomOf="parent" style="@android:style/Widget.ProgressBar.Horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_person_info" android:layout_width="match_parent" android:layout_height="234.0dp" app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/iv_back_image" android:background="#e7e7e7" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="centerCrop" app:overlayImage="@drawable/bangumi_mock_up_down" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="fitXY" />
+    <RelativeLayout android:id="@id/rl_role_detail" android:layout_width="wrap_content" android:layout_height="120.0dp" android:layout_marginLeft="12.0dp" android:layout_marginBottom="13.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/iv_role_header" android:layout_width="90.0dp" android:layout_height="120.0dp" android:layout_alignParentBottom="true" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="2.0dp" style="@style/Widget.App.StaticImageView.Thumb.BangumiRoleHeader" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/iv_role_header" android:layout_alignParentBottom="true">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="18.0sp" android:textColor="@color/Ga10" android:id="@id/tv_role_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga10" android:id="@id/tv_origin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

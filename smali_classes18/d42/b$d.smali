@@ -1,0 +1,266 @@
+.class public final Ld42/b$d;
+.super Landroidx/recyclerview/widget/RecyclerView$c0;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ld42/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "d"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ld42/b$d$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0005\u0018\u0000 \u000e2\u00020\u0001:\u0001\u0007B\u0019\u0008\u0002\u0012\u0006\u0010\t\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\n\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0012\u0010\u0005\u001a\u00020\u00042\u0008\u0010\u0003\u001a\u0004\u0018\u00010\u0002H\u0007R\u0014\u0010\t\u001a\u00020\u00068\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u000f"
+    }
+    d2 = {
+        "Ld42/b$d;",
+        "Landroidx/recyclerview/widget/RecyclerView$c0;",
+        "Ld42/b$c;",
+        "speedItem",
+        "Lgf3/s;",
+        "I3",
+        "Landroid/widget/TextView;",
+        "a",
+        "Landroid/widget/TextView;",
+        "mTextView",
+        "",
+        "theme",
+        "<init>",
+        "(Landroid/widget/TextView;I)V",
+        "b",
+        "playerbizcommon_intlRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Ld42/b$d$a;
+
+
+# instance fields
+.field private final a:Landroid/widget/TextView;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ld42/b$d$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Ld42/b$d$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Ld42/b$d;->b:Ld42/b$d$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method private constructor <init>(Landroid/widget/TextView;I)V
+    .locals 1
+
+    .line 2
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$c0;-><init>(Landroid/view/View;)V
+
+    iput-object p1, p0, Ld42/b$d;->a:Landroid/widget/TextView;
+
+    const/4 v0, 0x2
+
+    if-ne p2, v0, :cond_0
+
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    sget v0, Lqt3/c;->W:I
+
+    invoke-static {p2, v0}, Lgp1/m;->k(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+
+    move-result-object p2
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    sget v0, Lqt3/c;->X:I
+
+    invoke-static {p2, v0}, Lgp1/m;->k(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
+
+    move-result-object p2
+
+    .line 5
+    :goto_0
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/widget/TextView;ILkotlin/jvm/internal/i;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ld42/b$d;-><init>(Landroid/widget/TextView;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final I3(Ld42/b$c;)V
+    .locals 7
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-virtual {p1}, Ld42/b$c;->a()F
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    invoke-static {v0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    iget-object v1, p0, Ld42/b$d;->a:Landroid/widget/TextView;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v2
+
+    .line 18
+    sget v3, Lqt3/g;->j5:I
+
+    .line 19
+    .line 20
+    const/4 v4, 0x1
+
+    .line 21
+    new-array v5, v4, [Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    const/4 v6, 0x0
+
+    .line 24
+    aput-object v0, v5, v6
+
+    .line 25
+    .line 26
+    invoke-virtual {v2, v3, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 31
+    .line 32
+    .line 33
+    iget-object v1, p0, Ld42/b$d;->a:Landroid/widget/TextView;
+
+    .line 34
+    .line 35
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v2
+
+    .line 39
+    sget v3, Lqt3/g;->s2:I
+
+    .line 40
+    .line 41
+    new-array v4, v4, [Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    aput-object v0, v4, v6
+
+    .line 44
+    .line 45
+    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-virtual {v1, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 50
+    .line 51
+    .line 52
+    iget-object v0, p0, Ld42/b$d;->a:Landroid/widget/TextView;
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Ld42/b$c;->b()Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result p1
+
+    .line 58
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setSelected(Z)V
+
+    .line 59
+    .line 60
+    .line 61
+    return-void
+.end method

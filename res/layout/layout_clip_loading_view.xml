@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:id="@id/loading_view2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_spacing" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:progressIndeterminateTint="@color/theme_color_secondary" app:progressTint="@color/theme_color_secondary" style="?android:progressBarStyle" />
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:scaleViewType="fitNone" app:thumbHeight="200.0dp" app:thumbWidth="200.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga5_u" android:gravity="center" android:id="@id/text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dp" android:text="@string/tips_load_error" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+</merge>

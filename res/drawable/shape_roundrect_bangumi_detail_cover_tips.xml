@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bangumi_pay_1" />
+    <corners android:topRightRadius="@dimen/corner_radius" android:bottomLeftRadius="@dimen/corner_radius" />
+    <padding android:left="4.0dp" android:top="1.0dp" android:right="4.0dp" android:bottom="1.0dp" />
+</shape>

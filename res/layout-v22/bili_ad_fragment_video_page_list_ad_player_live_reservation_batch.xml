@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintFrameLayout android:layout_gravity="bottom" android:id="@id/ad_tint_frame" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/ad_under_view_height_live_reservation">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:id="@id/left_content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/reservation_layout">
+            <com.bilibili.app.comm.list.widget.image.AutoTintBiliImageView android:id="@id/cover" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_centerVertical="true" android:layout_marginHorizontal="12.0dp" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="4.0dp" app:scaleViewType="fitWidth" />
+            <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:id="@id/text_content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@id/cover">
+                <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                </com.bilibili.magicasakura.widgets.TintLinearLayout>
+                <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout">
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Pi5" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/live_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/Pi5" android:ellipsize="end" android:id="@id/live_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:maxLines="1" />
+                    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/arrow_img" android:layout_width="10.0dp" android:layout_height="10.0dp" app:imageTint="@color/Brand_pink" app:srcCompat="@drawable/ic_ad_video_upper_right_arrow" />
+                </com.bilibili.magicasakura.widgets.TintLinearLayout>
+            </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/reservation_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <com.bilibili.adcommon.widget.button.AdDownloadButton android:textColor="@color/Brand_pink" android:gravity="center_vertical" android:id="@id/download_label" android:layout_width="72.0dp" android:layout_height="24.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="12.0dp" android:layout_centerVertical="true" android:layout_toStartOf="@id/more" app:download_btn_backgroundColor="@color/Bg1" app:download_btn_cornerRadius="12.0dp" app:download_btn_isFill="true" app:download_btn_reservation_backgroundColor="@color/Graph_bg_thick" app:download_btn_reversed_strokeColor="@color/Graph_bg_thick" app:download_btn_reversed_textColor="@color/Text3" app:download_btn_strokeColor="@color/Brand_pink" app:download_btn_textSize="13.0sp" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <View style="@style/ad_line" />
+</com.bilibili.adcommon.widget.AdTintFrameLayout>

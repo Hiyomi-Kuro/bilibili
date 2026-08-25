@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/bili_app_layout_navigation_top_bar" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:minHeight="@dimen/preference_regulable_wrap_height_default" app:fc_foreground="?selectableItemBackground">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/switcher_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="12.0dp" android:singleLine="true" android:layout_toLeftOf="@id/switcher" android:layout_marginStart="12.0dp" android:layout_marginEnd="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/switcher" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.magicasakura.widgets.TintSwitchCompat android:id="@id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:thumbTint="@color/selector_switch_thumb" app:trackTint="@color/selector_switch_track" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/content_text" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

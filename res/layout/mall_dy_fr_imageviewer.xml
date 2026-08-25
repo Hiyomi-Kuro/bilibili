@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mall.ui.page.detail.imageviewer.MallGalleryView android:id="@id/dy_painting_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/mall_dy_layout_browser_buffer" />
+</FrameLayout>

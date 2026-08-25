@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout android:id="@id/publish_section_swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/publish_section_episode_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </tv.danmaku.bili.widget.swiperefresh.TintSwipeRefreshLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

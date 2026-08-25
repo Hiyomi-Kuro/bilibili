@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.video.story.view.StoryDialogConstraintLayout android:id="@id/root" android:background="@drawable/shape_rect_sold_bg1_12dp" android:layout_width="match_parent" android:layout_height="match_parent" app:maxScreenHeightWeight="@dimen/story_dialog_default_max_height" app:minScreenHeightWeight="@dimen/story_dialog_default_max_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.bh.BiliWebView android:layout_gravity="center_horizontal" android:id="@id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/error_loading_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="player_loading_tv.json" app:lottie_loop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/player_url_loading_web_view" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_retry_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_general_load_failed_tv" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/error_retry_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/player_url_error_web_view" />
+    </LinearLayout>
+</com.bilibili.video.story.view.StoryDialogConstraintLayout>

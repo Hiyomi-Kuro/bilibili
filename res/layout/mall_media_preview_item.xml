@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.opd.app.bizcommon.imageselector.widget.video.MallMediaVideoView android:id="@id/video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp" />
+    <com.bilibili.opd.app.bizcommon.imageselector.widget.PhotoView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp" android:scaleType="fitCenter" app:actualImageScaleType="fitCenter" />
+    <com.bilibili.opd.app.bizcommon.imageselector.widget.MallMediaImageView android:id="@id/video_play" android:background="@drawable/mall_media_ic_play_button" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_centerInParent="true" />
+</RelativeLayout>

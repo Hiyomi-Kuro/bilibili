@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="#ff18191c" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:background="@drawable/theseus_ugc_qoe_text_button_bg_first_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="30.0dp" android:maxLines="1" app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mv="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/mall_common_tab_selector" android:gravity="center" android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+    <com.mall.ui.widget.tab.MsgView android:textSize="10.0dp" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/rtv_msg_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" mv:mv_backgroundColor="@color/Wh0" mv:mv_isRadiusHalfHeight="true" mv:mv_strokeColor="@color/Pi5" mv:mv_strokeWidth="1.0dp" />
+</RelativeLayout>

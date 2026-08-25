@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/following_guide_root_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/repost_tip_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon_recommend_2233" android:layout_width="110.0dp" android:layout_height="93.19998dp" android:layout_marginTop="230.0dp" android:layout_centerHorizontal="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/recommend_tip_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/following_deal_repost_tip" android:layout_below="@id/icon_recommend_2233" android:layout_centerHorizontal="true" android:lineSpacingExtra="9.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/recommend_confirm" android:background="@drawable/following_bg_rect_white" android:layout_width="80.0dp" android:layout_height="36.0dp" android:layout_marginTop="20.0dp" android:text="@string/following_got_it" android:layout_below="@id/recommend_tip_txt" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/following_tab_tip_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/icon_tab_2233" android:layout_width="172.0dp" android:layout_height="108.0dp" android:layout_marginTop="249.0dp" android:layout_centerHorizontal="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="16.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/tap_tip_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/following_deal_publish_tip" android:layout_below="@id/icon_tab_2233" android:layout_centerHorizontal="true" android:lineSpacingExtra="9.0dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/tap_confirm" android:background="@drawable/following_bg_rect_white" android:layout_width="80.0dp" android:layout_height="36.0dp" android:layout_marginTop="20.0dp" android:text="@string/following_got_it" android:layout_below="@id/tap_tip_txt" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

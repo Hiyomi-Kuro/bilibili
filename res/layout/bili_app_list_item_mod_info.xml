@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/item_half_spacing" android:paddingBottom="@dimen/item_half_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_title" android:id="@id/tv_mod_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_size_title" android:id="@id/tv_mod_size" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/guideline2" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.7" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

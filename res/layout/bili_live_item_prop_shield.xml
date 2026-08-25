@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingRight="10.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:layout_gravity="center" android:id="@id/rb_selector" android:background="@drawable/live_ic_selector_prop_shield" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="18.0dp" android:layout_height="18.0dp" android:button="@null" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginStart="4.0dp" />
+</LinearLayout>

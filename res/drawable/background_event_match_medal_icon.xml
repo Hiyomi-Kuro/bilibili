@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/event_topic_match_medal_icon_background" />
+    <size android:height="10.669983dp" android:width="18.0dp" />
+</shape>

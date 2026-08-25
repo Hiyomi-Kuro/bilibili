@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/following_card_header" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followingcard.widget.FollowingBorderImageView android:id="@id/card_user_avatar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:scaleType="centerInside" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundAsCircle="true" app:roundingBorderColor="@color/Ga3_u" app:roundingBorderWidth="0.5dp" />
+    <com.bilibili.bplus.followingcard.widget.CardNameLinearLayout android:gravity="center_vertical" android:id="@id/card_user" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="8.0dp" android:layout_toRightOf="@id/card_user_avatar" android:layout_marginEnd="8.0dp" app:layout_constraintLeft_toRightOf="@id/card_user_avatar" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="11.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:id="@id/card_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:layout_constraintLeft_toLeftOf="@id/card_user" app:layout_constraintTop_toBottomOf="@id/card_user">
+        <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:id="@id/card_publish_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

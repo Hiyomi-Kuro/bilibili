@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/biligame_dip_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingRight="@dimen/biligame_dip_12" android:layout_width="wrap_content" android:text="@string/biligame_setting_notify_label" style="@style/SettingTitleTextViewStyle" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/tv_notify_status" android:paddingRight="@dimen/biligame_dip_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/biligame_setting_notify_close" android:drawableRight="@drawable/biligame_selector_header_arrow" android:drawablePadding="5.0dp" />
+</LinearLayout>

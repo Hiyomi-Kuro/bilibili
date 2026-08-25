@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_layout" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/following_media_bottom" android:background="@color/Ga10_u_alpha80" android:layout_width="match_parent" android:layout_height="50.0dp" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/following_camera_tab" android:background="?android:selectableItemBackground" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/following_camera_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="@string/following_camera" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/following_video_tab" android:background="?android:selectableItemBackground" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/following_video_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="@string/following_shoot" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

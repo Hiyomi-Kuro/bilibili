@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/live_mv_application_recycler" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/live_mv_application_empty_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="144.0dp" android:layout_height="82.0dp" android:src="@drawable/ic_live_room_mv_empty" />
+        <TextView android:textSize="14.0sp" android:textColor="#6f6f6f" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="86.0dp" android:text="@string/live_room_mv_apply_empty_desc" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_mv_application_empty_button" android:background="@drawable/bg_live_ff6699_4_round" android:layout_width="88.0dp" android:layout_height="30.0dp" android:layout_marginTop="122.0dp" android:text="@string/live_room_mv_empty_button" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/live_mv_application_error_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="90.0dp" android:layout_height="90.0dp" android:src="@drawable/ic_live_virtual_list_failed" />
+        <TextView android:textSize="14.0sp" android:textColor="#9499a0" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="106.0dp" android:text="@string/live_room_mv_error_desc" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_mv_application_error_button" android:background="@drawable/bg_live_ff6699_4_round" android:layout_width="88.0dp" android:layout_height="30.0dp" android:layout_marginTop="142.0dp" android:text="@string/live_room_mv_error_button" />
+    </FrameLayout>
+</FrameLayout>

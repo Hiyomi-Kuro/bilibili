@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeLinerLayout android:orientation="vertical" android:background="@drawable/smallapp_bg_modal" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rlHeader" android:layout_width="match_parent" android:layout_height="51.0dp">
+        <TextView android:textSize="@dimen/text_size_xlarge" android:textStyle="bold" android:textColor="@color/small_app_color_text_body_primary" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/small_app_game_recommend" />
+        <TextView android:id="@id/tvCancel" android:background="@drawable/small_app_game_cancel" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginRight="9.0dp" android:layout_alignParentRight="true" android:layout_marginEnd="9.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.bilibili.lib.fasthybrid.uimodule.widget.ConfigurationChangeLinerLayout>

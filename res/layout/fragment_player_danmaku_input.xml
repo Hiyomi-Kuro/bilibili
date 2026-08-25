@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.playerbizcommon.playerinput.widget.PlayerInputPlaceholderView android:id="@id/input_outside_placeholder" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/player_input_danmaku_location_view" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.playerbizcommon.playerinput.widget.PlayerInputSelectableView android:id="@id/player_input_danmaku_location_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/input_container" />
+    <com.bilibili.playerbizcommon.input.InputPanelContainer android:orientation="horizontal" android:id="@id/input_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/panel_container" />
+    <com.bilibili.playerbizcommon.input.InputPanelContainer android:id="@id/panel_container" android:layout_width="match_parent" android:layout_height="0.0dp" android:minHeight="300.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+    <View android:id="@id/panel_empty_placeholder" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/panel_container" app:layout_constraintTop_toTopOf="@id/panel_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_white_kit" android:id="@id/guide_text" android:background="@drawable/comment_shape_roundrect_pink_4_radius" android:paddingLeft="12.0dp" android:paddingTop="8.0dp" android:paddingRight="12.0dp" android:paddingBottom="8.0dp" android:layout_width="200.0dp" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/guide_arrow" android:layout_width="8.0dp" android:layout_height="6.0dp" android:layout_marginTop="-1.0dp" android:src="@drawable/ic_menu_arrow" android:tint="@color/pink_kit" android:rotation="180.0" />
+</LinearLayout>

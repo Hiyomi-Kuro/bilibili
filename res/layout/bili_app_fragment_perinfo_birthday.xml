@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/person_info_birthday_title" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <DatePicker android:id="@id/datePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnersShown="true" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/birthday_ok" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/br_ensure" />
+</LinearLayout>

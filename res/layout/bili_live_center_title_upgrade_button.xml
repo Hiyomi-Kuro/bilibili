@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/upgrade_button" android:background="@drawable/ic_live_center_title_my_item" android:layout_width="56.0dp" android:layout_height="24.0dp" android:layout_marginLeft="0.0dp" android:layout_marginRight="8.0dp" android:text="@string/live_center_title_upgrade"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

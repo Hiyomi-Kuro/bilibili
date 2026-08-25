@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/item_following_card_search_head" />
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center_vertical" android:id="@id/rl_topic" android:background="@color/Wh0" android:layout_width="wrap_content" android:layout_height="60.0dp">
+        <com.bilibili.magicasakura.widgets.TintRelativeLayout android:paddingLeft="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/iv_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="12.0dp" android:src="@drawable/ic_topic_title_sharp" app:imageTint="@color/Text1" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Text1" android:id="@id/tv_topicName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="10.0dp" android:layout_toRightOf="@id/iv_icon" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/tv_dycnamicNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:id="@id/tv_attentionNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_toRightOf="@id/tv_dycnamicNum" android:layout_alignBaseline="@id/tv_dycnamicNum" />
+        </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/vs_ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerInParent="true" app:imageTint="@color/Text3" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+    <include layout="@layout/layout_following_card_divider_thick" />
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

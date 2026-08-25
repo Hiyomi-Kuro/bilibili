@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/check_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintCheckBox android:id="@id/checkbox" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="8.0dp" android:button="@drawable/selector_bangumi_compound_round" app:compoundButtonTint="@color/selector_tint_checkbox" style="@style/Widget.App.CheckBox.Native" />
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga8" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bangumi_all_select" />
+        </LinearLayout>
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:id="@id/delete" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dp" android:layout_marginRight="24.0dp" />
+    </LinearLayout>
+</merge>

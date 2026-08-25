@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <DatePicker android:id="@id/datePicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnersShown="true" />
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/cancel" android:background="@drawable/item_background" android:layout_width="wrap_content" android:layout_height="55.0dp" android:text="@string/br_cancel" android:layout_weight="1.0" />
+        <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga4" android:layout_width="1.0px" android:layout_height="match_parent" />
+        <TextView android:textAppearance="@style/TextAppearance.App.XLarge" android:textColor="@color/Ga9" android:gravity="center" android:id="@id/ok" android:background="@drawable/item_background" android:layout_width="wrap_content" android:layout_height="55.0dp" android:text="@string/br_ensure" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

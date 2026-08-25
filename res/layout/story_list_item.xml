@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.video.story.view.StoryVideoFrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.video.story.view.CoverImageView android:id="@id/video_cover" android:background="@color/Ba0_u" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImageScaleType="centerCrop" />
+        <com.bilibili.video.story.view.CoverImageView android:id="@id/video_capture" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="bottom" android:layout_width="8.0dp" android:layout_height="8.0dp" android:rotation="180.0" app:srcCompat="@drawable/bili_story_black_corner" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|bottom" android:layout_width="8.0dp" android:layout_height="8.0dp" android:rotation="90.0" app:srcCompat="@drawable/bili_story_black_corner" />
+    </com.bilibili.video.story.view.StoryVideoFrameLayout>
+    <com.bilibili.video.story.action.StoryController android:id="@id/video_controller" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

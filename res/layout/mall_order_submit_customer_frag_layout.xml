@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/MallCommonDialog" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/submit_custome_outside_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/submit_custome_container" />
+    <com.mall.ui.widget.CommonMaxHeightRelativeLayout android:layout_gravity="bottom" android:id="@id/submit_custome_container" android:background="@drawable/mall_shape_rect_head_corner_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:HeightRatio="1.0">
+        <RelativeLayout android:id="@id/submit_customer_head" android:paddingLeft="@dimen/order_submit_item_padding_left" android:paddingTop="10.0dp" android:paddingRight="@dimen/order_submit_item_padding_right" android:layout_width="match_parent" android:layout_height="@dimen/order_submit_item_height">
+            <ImageView android:id="@id/submit_customer_arrow" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/mall_submit_icon_fold" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/mall_edit_text_selector_color" android:id="@id/submit_customer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_submit_customer_title" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/submit_customer_content" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/submit_customer_head">
+            <ViewStub android:id="@id/submit_customer_list_area_stub" android:layout="@layout/mall_submit_customer_stub_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_submit_item_padding_left" android:layout_marginRight="@dimen/order_submit_item_padding_right" />
+            <ViewStub android:id="@id/submit_customer_edit_layout_stub" android:layout="@layout/mall_submit_buyer_edit_layout" android:inflatedId="@id/submit_customer_edit_layout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.mall.ui.widget.CommonMaxHeightRelativeLayout>
+    <FrameLayout android:id="@id/loading_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="center" android:layout_width="80.0dp" android:layout_height="80.0dp" app:progressIndeterminateTint="@color/theme_color_secondary" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</RelativeLayout>

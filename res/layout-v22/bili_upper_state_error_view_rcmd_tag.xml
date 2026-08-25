@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/error_view" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/upper_text_small" android:textColor="@color/upper_at_user_page_gray_dark_2" android:gravity="center" android:id="@id/custom_tag" android:background="@drawable/bg_upper_pub_custom_tag_corner" android:layout_width="wrap_content" android:layout_height="30.0dp" android:text="@string/upper_partiton_custom_tag" android:drawableLeft="@drawable/ic_pub_custom_rcmd" android:drawablePadding="2.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="12.0dp" android:paddingEnd="14.0dp" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/custom_tag" android:layout_centerHorizontal="true">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/upper_gray_dark_2" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/upper_text_middle" android:textColor="@color/video_editor_theme_pink" android:id="@id/error_retry_view" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重试" android:paddingVertical="10.0dp" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

@@ -1,0 +1,55 @@
+.class public final Lob3/ea;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Leb3/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Leb3/d<",
+        "Lcom/bilibili/bplus/followinglist/page/opus/components/e;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a(Lcom/bilibili/lib/gripper/api/m;)Lcom/bilibili/bplus/followinglist/page/opus/components/e;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bilibili/lib/gripper/api/m<",
+            "Lcom/bilibili/bplus/followinglist/page/opus/components/e;",
+            ">;)",
+            "Lcom/bilibili/bplus/followinglist/page/opus/components/e;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lob3/z9;->l(Lcom/bilibili/lib/gripper/api/m;)Lcom/bilibili/bplus/followinglist/page/opus/components/e;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Leb3/g;->d(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    check-cast p0, Lcom/bilibili/bplus/followinglist/page/opus/components/e;
+
+    .line 10
+    .line 11
+    return-object p0
+.end method

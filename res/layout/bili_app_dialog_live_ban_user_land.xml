@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/live_select_ban_duration_click_area" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/live_select_ban_duration_content_container" android:background="#201f2a" android:layout_width="340.0dp" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="52.0dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/live_ban_user_btn_return" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="14.0dp" android:src="@drawable/icon_live_ban_user_dialog_arrow_left" android:layout_marginStart="14.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/live_ban_user_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_ban_user_dialog_title" />
+        </FrameLayout>
+        <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:maxWidth="280.0dp" android:text="@string/live_ban_user_dialog_tips" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_ban_user_tips" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxWidth="280.0dp" />
+        <FrameLayout android:id="@id/live_ban_user_selected_duration_container" android:background="@drawable/bg_live_ban_user_duration" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="16.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/live_ban_user_dialog_duration_text" android:layout_marginStart="16.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="end|center" android:id="@id/live_ban_user_selected_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dp" android:layout_marginEnd="40.0dp" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/live_ban_user_selected_duration_arrow" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_live_arrow_right_white" android:layout_marginEnd="16.0dp" />
+        </FrameLayout>
+        <View android:visibility="invisible" android:layout_width="1.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_ban_user_btn_submit" android:background="@drawable/bg_live_ban_user_submit" android:layout_width="308.0dp" android:layout_height="44.0dp" android:layout_marginBottom="30.0dp" android:text="@string/live_ban_user_dialog_submit" />
+    </LinearLayout>
+</FrameLayout>

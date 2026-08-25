@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.topix.widget.TopicEllipsizingTextView android:textColor="@color/Text1" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" app:max_lines="2" app:span_color="@color/Text_link" style="@style/T14" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Text3" android:id="@id/tv_expand_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tp_timeline_expand_all" android:drawablePadding="6.0dp" app:drawableRightCompat="@drawable/ic_arrow_right" app:drawableRightTint="@color/Text3" />
+</LinearLayout>

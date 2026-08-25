@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/mall_trade_dialog_edit_dialog_ok_btn_bg_enable" />
+    <item android:drawable="@drawable/mall_trade_dialog_edit_dialog_ok_btn_bg_no_enable" />
+</selector>

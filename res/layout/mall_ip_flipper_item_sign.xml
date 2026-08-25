@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="#212121" android:gravity="center_vertical" android:id="@id/mall_ip_sign_tv_hint1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="9.0dp" android:text="连续签到" />
+    <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="#212121" android:gravity="center_vertical" android:id="@id/mall_ip_tv_sign_days" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#212121" android:gravity="center_vertical" android:id="@id/mall_ip_sign_tv_hint2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="天" />
+    <com.mall.ui.widget.MallImageView2 android:id="@id/mall_ip_sign_iv_award_sp" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="5.0dp" />
+    <TextView android:textSize="12.0dp" android:textColor="#212121" android:gravity="center_vertical" android:id="@id/mall_ip_sign_tv_hint3" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" />
+</LinearLayout>

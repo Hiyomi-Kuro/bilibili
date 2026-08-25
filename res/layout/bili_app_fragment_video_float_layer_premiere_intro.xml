@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg" android:background="@color/black_alpha50" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <tv.danmaku.bili.ui.video.widget.PremiereTopBarWidget android:id="@id/intro_head" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/intro_group" android:background="@color/Bg1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="@id/bottom_line" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/intro_head" app:layout_constraintVertical_bias="0.0" />
+    <View android:id="@id/bottom_line" android:layout_width="match_parent" android:layout_height="0.100000024dp" android:layout_marginBottom="80.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

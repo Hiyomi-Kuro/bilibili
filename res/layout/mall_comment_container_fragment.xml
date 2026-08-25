@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.videodetail.vd.united.widget.UnitedTabLayout android:id="@id/tab_layout" android:background="@null" android:layout_width="0.0dp" android:layout_height="45.0dp" app:elevation="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tabGravity="start" app:tabIndicator="@null" app:tabMinWidth="0.0dp" app:tabMode="scrollable" app:tabRippleColor="@null" />
+    <com.mall.videodetail.vd.united.widget.UnitedViewPager android:id="@id/view_pager" android:paddingBottom="40.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+    <include android:id="@id/sort_button_layout" android:layout_width="wrap_content" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="@id/tab_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tab_layout" layout="@layout/mall_comment_sort_button_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

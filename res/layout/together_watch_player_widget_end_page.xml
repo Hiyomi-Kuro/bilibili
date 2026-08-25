@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/back" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="21.0dp" android:paddingBottom="16.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BPlayer_PlayerControlBarButton.Compat">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bili_player_back_button" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/new_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/together_watch_end_page_hint_text" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/new_text_color" android:gravity="center" android:id="@id/replayTV" android:background="@drawable/bangumi_end_page_play_btn_background" android:layout_width="142.0dp" android:layout_height="30.0dp" android:layout_marginTop="23.0dp" android:text="@string/together_watch_end_page_replay_text" />
+    </LinearLayout>
+</FrameLayout>

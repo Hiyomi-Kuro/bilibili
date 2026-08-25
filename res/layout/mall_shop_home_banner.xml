@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mall_shop_home_adv_marginleft" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/mall_shop_home_adv_marginright" android:layout_marginBottom="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.AutoScrollBanner android:id="@id/shop_banner" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="4.0dp" app:flipInterval="5000" />
+    <FrameLayout android:id="@id/one_banner_view" android:background="@drawable/mall_shop_home_ad_card_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mall.ui.widget.MallImageView2 android:id="@id/shop_banner_one" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:failureImage="@drawable/mall_img_load_fail_place_holder" app:failureImageScaleType="centerInside" app:placeholderImage="@drawable/mall_good_info_default_cover" app:roundedCornerRadius="4.0dp" style="@style/mallHomeFeedAdv" />
+    </FrameLayout>
+    <View android:id="@id/one_banner_night_cover" android:background="@drawable/mall_night_img_cover_radio_4_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

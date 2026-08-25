@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="centerCrop" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gv_action" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never" />
+</FrameLayout>

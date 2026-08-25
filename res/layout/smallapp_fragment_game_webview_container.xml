@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.fasthybrid.uimodule.widget.video.VideoLayout android:id="@id/game_video_under" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/game_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/game_ad_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.ability.ui.game.GameButtonLayout android:id="@id/button_root" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/game_desktop_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.video.VideoLayout android:id="@id/game_video" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.camera.game.GameCameraLayer android:id="@id/game_camera_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.ability.ui.game.GameInputLayout android:id="@id/game_input_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.lib.fasthybrid.uimodule.widget.dev.VConsoleButton android:layout_gravity="end|bottom" android:id="@id/v_console_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dp" android:layout_marginBottom="32.0dp" />
+    <FrameLayout android:id="@id/game_dev_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

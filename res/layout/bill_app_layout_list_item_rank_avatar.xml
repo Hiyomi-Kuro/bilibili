@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.lib.image2.view.legacy.StaticImageView2 android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Widget.App.StaticImageView.Thumb.Custom.RankCircleAvatar"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

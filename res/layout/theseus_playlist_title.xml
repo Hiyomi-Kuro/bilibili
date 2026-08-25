@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layout_top_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="19.0dp">
+        <View android:layout_gravity="center" android:background="@drawable/theseus_shape_rect_radius2_ga3_fill" android:layout_width="30.0dp" android:layout_height="3.0dp" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dp" android:maxLines="1" style="@style/T16b" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Text3" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/T12" />
+        <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_layout" android:paddingLeft="20.0dp" android:paddingRight="28.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@id/order_sort_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" app:srcCompat="@drawable/ref_list_sort_positive_line" app:tint="@color/Text3" />
+            <TextView android:textColor="@color/Text3" android:id="@id/order_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theseus_playlist_default_order" android:layout_marginStart="4.0dp" style="@style/T12" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow" android:background="@drawable/theseus_shape_arrow_button_bg" android:padding="4.0dp" android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/ref_arrow_expand_line_500" app:tint="@color/Text3" />
+        <FrameLayout android:id="@id/offline_danmaku_input_parent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

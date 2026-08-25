@@ -1,0 +1,56 @@
+.class public final synthetic Lcom/bilibili/campus/manage/b;
+.super Ljava/lang/Object;
+.source "BL"
+
+# interfaces
+.implements Landroidx/lifecycle/t;
+
+
+# instance fields
+.field public final synthetic a:Lcom/google/accompanist/systemuicontroller/c;
+
+.field public final synthetic b:J
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/google/accompanist/systemuicontroller/c;J)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/campus/manage/b;->a:Lcom/google/accompanist/systemuicontroller/c;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, Lcom/bilibili/campus/manage/b;->b:J
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onStateChanged(Landroidx/lifecycle/w;Landroidx/lifecycle/Lifecycle$Event;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/campus/manage/b;->a:Lcom/google/accompanist/systemuicontroller/c;
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, Lcom/bilibili/campus/manage/b;->b:J
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1, v2, p1, p2}, Lcom/bilibili/campus/manage/CampusManageFragment$onCreateView$1$1$1$3;->a(Lcom/google/accompanist/systemuicontroller/c;JLandroidx/lifecycle/w;Landroidx/lifecycle/Lifecycle$Event;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

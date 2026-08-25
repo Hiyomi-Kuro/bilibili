@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressTint="@color/theme_color_secondary" />
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_secondary" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <com.bilibili.magicasakura.widgets.TintButton android:textSize="@dimen/text_size_large" android:textColor="@color/theme_color_secondary" android:id="@id/retry" android:background="@color/daynight_color_background" android:paddingLeft="@dimen/padding_normal" android:paddingRight="@dimen/padding_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重试" />
+</LinearLayout>

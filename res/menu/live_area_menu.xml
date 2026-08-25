@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_live_hour_rank" android:id="@id/menu_rank" android:title="@string/tops" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_toolbar_menu_search" android:id="@id/searchable_search" android:title="@string/menu_top_search_tips" app:showAsAction="always" />
+</menu>

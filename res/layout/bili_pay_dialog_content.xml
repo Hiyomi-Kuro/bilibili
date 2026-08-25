@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dialog" android:background="@drawable/bili_pay_common_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+        <TextView android:textSize="18.0sp" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:gravity="center" android:id="@id/dialog_msg" android:paddingLeft="45.0dp" android:paddingTop="15.0dp" android:paddingRight="45.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dp" android:minWidth="400.0dp" android:text="" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bili_pay_daynight_color_text_body_primary" android:gravity="center" android:id="@id/dialog_sub_msg" android:paddingLeft="15.0dp" android:paddingTop="8.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:gravity="center" android:id="@id/dialog_btn_cancel_layout" android:background="@drawable/bili_pay_common_dialog_btn_bg" android:layout_width="130.0dp" android:layout_height="40.0dp" android:layout_marginLeft="3.0dp">
+                <TextView android:textSize="15.0sp" android:textColor="@drawable/bili_pay_pay_selector_text_second_color" android:layout_gravity="center" android:id="@id/dialog_btn_cancel" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_pay_cancel" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:id="@id/dialog_btn_ok_layout" android:background="@drawable/bili_pay_common_dialog_btn_bg" android:layout_width="130.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp">
+                <TextView android:textSize="15.0sp" android:textColor="@drawable/bili_pay_pay_selector_text_second_color" android:layout_gravity="center" android:id="@id/dialog_btn_ok" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_pay_ensure" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|top" android:id="@id/dialog_img" android:layout_width="136.0dp" android:layout_height="115.0dp" android:src="@drawable/bili_pay_common_dialog_icon" />
+</FrameLayout>

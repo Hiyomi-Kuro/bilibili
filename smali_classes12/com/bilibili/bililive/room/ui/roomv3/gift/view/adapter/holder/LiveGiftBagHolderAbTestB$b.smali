@@ -1,0 +1,364 @@
+.class public final Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;
+.super Ln50/e;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ln50/e<",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/BiliLivePackage;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001Bo\u0012\u0006\u0010\u000b\u001a\u00020\u0007\u0012\u0006\u0010\u000f\u001a\u00020\u000c\u0012\u001e\u0010\u0019\u001a\u001a\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\u00140\u0011\u0012\u0012\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00140\u001a\u0012\u0008\u0010!\u001a\u0004\u0018\u00010\u001e\u0012\u0018\u0010&\u001a\u0014\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020\u00140\"\u00a2\u0006\u0004\u0008\'\u0010(J\u0016\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0003H\u0016R\u0017\u0010\u000b\u001a\u00020\u00078\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0006\u0010\u0008\u001a\u0004\u0008\t\u0010\nR\u0017\u0010\u000f\u001a\u00020\u000c8\u0006\u00a2\u0006\u000c\n\u0004\u0008\r\u0010\u000e\u001a\u0004\u0008\u000f\u0010\u0010R/\u0010\u0019\u001a\u001a\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\u00140\u00118\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0015\u0010\u0016\u001a\u0004\u0008\u0017\u0010\u0018R \u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00140\u001a8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u001b\u0010\u001cR\u0016\u0010!\u001a\u0004\u0018\u00010\u001e8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u001f\u0010 R&\u0010&\u001a\u0014\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020\u00140\"8\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008$\u0010%\u00a8\u0006)"
+    }
+    d2 = {
+        "Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;",
+        "Ln50/e;",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/BiliLivePackage;",
+        "Landroid/view/ViewGroup;",
+        "parent",
+        "Ln50/d;",
+        "a",
+        "Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "getCurrentScreenMode",
+        "()Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+        "currentScreenMode",
+        "",
+        "b",
+        "Z",
+        "isNightMode",
+        "()Z",
+        "Lkotlin/Function3;",
+        "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+        "Landroid/view/View;",
+        "Lgf3/s;",
+        "c",
+        "Lsf3/q;",
+        "getClick",
+        "()Lsf3/q;",
+        "click",
+        "Lkotlin/Function1;",
+        "d",
+        "Lsf3/l;",
+        "itemLongClick",
+        "Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;",
+        "e",
+        "Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;",
+        "comboSendBtnListener",
+        "Lkotlin/Function2;",
+        "",
+        "f",
+        "Lsf3/p;",
+        "onGiftShowReport",
+        "<init>",
+        "(Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;ZLsf3/q;Lsf3/l;Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;Lsf3/p;)V",
+        "room_apinkRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+.field private final b:Z
+
+.field private final c:Lsf3/q;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lsf3/q<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "Landroid/view/View;",
+            "Ljava/lang/Boolean;",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final d:Lsf3/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lsf3/l<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final e:Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;
+
+.field private final f:Lsf3/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lsf3/p<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "Ljava/lang/Integer;",
+            "Lgf3/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;ZLsf3/q;Lsf3/l;Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;Lsf3/p;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;",
+            "Z",
+            "Lsf3/q<",
+            "-",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "-",
+            "Landroid/view/View;",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lgf3/s;",
+            ">;",
+            "Lsf3/l<",
+            "-",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "Lgf3/s;",
+            ">;",
+            "Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;",
+            "Lsf3/p<",
+            "-",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/LiveRoomBaseGift;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lgf3/s;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ln50/e;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->a:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 5
+    .line 6
+    iput-boolean p2, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->b:Z
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->c:Lsf3/q;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->d:Lsf3/l;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->e:Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->f:Lsf3/p;
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/ViewGroup;)Ln50/d;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/ViewGroup;",
+            ")",
+            "Ln50/d<",
+            "Lcom/bilibili/bililive/videoliveplayer/net/beans/gift/BiliLivePackage;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->a:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b$a;->a:[I
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    aget v0, v1, v0
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    if-ne v0, v1, :cond_1
+
+    .line 13
+    .line 14
+    sget-object v0, Lgb3/a;->c:Lgb3/a$a;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Lgb3/a$a;->a()Lgb3/a;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Lgb3/a;->c()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    if-ne v0, v1, :cond_0
+
+    .line 27
+    .line 28
+    sget v0, Lbb0/h;->O3:I
+
+    .line 29
+    .line 30
+    invoke-static {p1, v0}, Ln50/b;->a(Landroid/view/ViewGroup;I)Landroid/view/View;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    :goto_0
+    move-object v1, p1
+
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_0
+    sget v0, Lbb0/h;->P3:I
+
+    .line 37
+    .line 38
+    invoke-static {p1, v0}, Ln50/b;->a(Landroid/view/ViewGroup;I)Landroid/view/View;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_1
+    sget v0, Lbb0/h;->O3:I
+
+    .line 44
+    .line 45
+    invoke-static {p1, v0}, Ln50/b;->a(Landroid/view/ViewGroup;I)Landroid/view/View;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :goto_1
+    new-instance p1, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB;
+
+    .line 51
+    .line 52
+    iget-object v2, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->a:Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;
+
+    .line 53
+    .line 54
+    iget-boolean v3, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->b:Z
+
+    .line 55
+    .line 56
+    iget-object v4, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->c:Lsf3/q;
+
+    .line 57
+    .line 58
+    iget-object v5, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->d:Lsf3/l;
+
+    .line 59
+    .line 60
+    iget-object v6, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->e:Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;
+
+    .line 61
+    .line 62
+    iget-object v7, p0, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB$b;->f:Lsf3/p;
+
+    .line 63
+    .line 64
+    move-object v0, p1
+
+    .line 65
+    invoke-direct/range {v0 .. v7}, Lcom/bilibili/bililive/room/ui/roomv3/gift/view/adapter/holder/LiveGiftBagHolderAbTestB;-><init>(Landroid/view/View;Lcom/bilibili/bililive/blps/playerwrapper/adapter/PlayerScreenMode;ZLsf3/q;Lsf3/l;Lcom/bilibili/bililive/room/ui/widget/LiveSpeedySendGiftButton$b;Lsf3/p;)V
+
+    .line 66
+    .line 67
+    .line 68
+    return-object p1
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/container" android:paddingTop="58.0dp" android:paddingBottom="@dimen/item_spacing" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/item_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/error_image" android:src="@drawable/bili_2233_fail" app:actualImageScaleType="centerInside" style="@style/ImageViewStateStyle" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_headline" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/load_error_hint1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_inline_round_rect_pink" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:text="@string/pegasus_refresh" />
+</LinearLayout>

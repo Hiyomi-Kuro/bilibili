@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?navigationTopBarSize">
+        <com.bilibili.ad.adview.web.layout.AdWebLayout android:id="@id/web_content" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <include layout="@layout/bili_ad_layout_navigation_top_bar_adweb" />
+    <com.bilibili.ad.adview.web.AdWebTransBar android:id="@id/trans_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

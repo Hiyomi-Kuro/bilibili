@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.ogv.infra.widget.RatioLayout android:id="@id/video_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:ratioHeightOverWidth="0.5625"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/video_container" android:background="@color/black" android:layout_width="0.0dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/switchViewMaskView" android:background="@color/black" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/video_container" app:layout_constraintEnd_toEndOf="@id/video_container" app:layout_constraintStart_toStartOf="@id/video_container" app:layout_constraintTop_toTopOf="@id/video_container" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/switchViewAnimationView" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="@id/video_container" app:layout_constraintEnd_toEndOf="@id/video_container" app:layout_constraintStart_toStartOf="@id/video_container" app:layout_constraintTop_toTopOf="@id/video_container" />
+        <FrameLayout android:id="@id/limit_layer_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/together_layer_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.bilibili.ogv.infra.widget.RatioLayout>

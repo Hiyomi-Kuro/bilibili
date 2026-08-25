@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_bgm_search_success" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:paddingBottom="@dimen/bili_editor_bgm_list_panel_bottom_margin" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

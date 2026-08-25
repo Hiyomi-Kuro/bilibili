@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.FollowingBorderImageView android:id="@id/iv_pic" android:layout_width="30.0dp" android:layout_height="30.0dp" android:scaleType="centerInside" app:roundAsCircle="true" app:roundingBorderColor="@color/Ga3" app:roundingBorderWidth="0.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

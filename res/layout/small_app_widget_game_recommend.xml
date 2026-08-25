@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/root_layout" android:padding="3.0dp" android:layout_width="75.0dp" android:layout_height="75.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/ivRecommend" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_centerInParent="true" app:actualImageScaleType="centerInside" app:roundAsCircle="true" app:roundingBorderColor="@color/pink" app:roundingBorderWidth="2.0dp" app:thumbHeight="64.0dp" app:thumbWidth="64.0dp" />
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/white" android:gravity="center" android:id="@id/tvMoreGame" android:background="@drawable/smallapp_bg_btn3" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="wrap_content" android:text="游戏名称" android:maxLines="1" android:layout_alignParentBottom="true" />
+</RelativeLayout>

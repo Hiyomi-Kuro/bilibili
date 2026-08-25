@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dy_opus_paragraph_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.bplus.followinglist.weight.OpusSpanTextView android:textSize="17.0sp" android:textColor="@color/Ga9" android:ellipsize="end" android:id="@id/dy_opus_paragraph_text" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingMultiplier="1.35" android:fallbackLineSpacing="false" />
+</FrameLayout>

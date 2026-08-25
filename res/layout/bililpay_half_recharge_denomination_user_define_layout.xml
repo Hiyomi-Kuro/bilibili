@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@drawable/bilipay_recharge_denomination_show_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout android:gravity="center" android:id="@id/item_container_recharge_denomination" android:background="@drawable/bilipay_recharge_denomination_bg" android:layout_width="match_parent" android:layout_height="64.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textSize="16.0sp" android:textColor="@drawable/bilipay_recharge_denomination_bcoin_style" android:id="@id/item_bcoin_amount" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_half_recharge_denomination_user_define_desc" android:layout_centerHorizontal="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Subtitle" android:textSize="14.0sp" android:textColor="@drawable/bilipay_recharge_denomination_vaule_desc_style" android:id="@id/item_bcoin_value_desc" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_bcoin_amount" android:layout_centerHorizontal="true" />
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

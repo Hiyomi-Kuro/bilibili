@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/gift_top_fans_medal_component" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/gift_top_guard_component" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

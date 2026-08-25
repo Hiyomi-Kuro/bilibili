@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.84"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/upper_shape_sticker_item_selector" android:padding="2.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="50.0dp" android:layout_height="50.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sticker_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" fresco:placeholderImage="@drawable/ic_upper_edit_sticker" fresco:roundedCornerRadius="4.0dp" />
+        <ImageView android:id="@id/sticker_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ProgressBar android:id="@id/download_sticker_progressbar" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/sticker_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/bili_editor_origin_picture" />
+</LinearLayout>

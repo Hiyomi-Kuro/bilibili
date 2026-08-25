@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/swipe" android:layout_width="match_parent" android:layout_height="match_parent" app:refreshStyle="equip_style">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/status_img" app:actualImageScaleType="centerInside" style="@style/ImageViewStateStyle" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/index_feed_empty_hint" />
+    </LinearLayout>
+</FrameLayout>

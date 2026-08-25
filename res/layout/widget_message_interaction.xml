@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/interaction_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/interact_like" android:background="@drawable/bg_circle_white" android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_like" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/interact_dislike" android:background="@drawable/bg_circle_white" android:layout_width="@dimen/size_30" android:layout_height="@dimen/size_30" android:layout_marginTop="@dimen/margin_14">
+        <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_dislike" />
+    </FrameLayout>
+</LinearLayout>

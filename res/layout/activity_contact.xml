@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/activity_conversation" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintAppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="2.0dp">
+        <com.bilibili.magicasakura.widgets.TintToolbar android:id="@id/nav_top_bar" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize" app:layout_scrollFlags="scroll|enterAlways" style="?toolbarStyle" />
+        <tv.danmaku.bili.widget.ForegroundRelativeLayout android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsDividerColor="@color/white" app:pstsDividerPadding="0.0dp" app:pstsIndicatorColor="@color/Pi5" app:pstsIndicatorHeight="2.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="20.0dp" app:pstsUnderlineColor="@color/Pi5" app:pstsUnderlineHeight="2.0dp" app:selectedTabTextColor="@color/Pi5" app:tabTextSize="16.0sp" app:underlineMarginTop="0.0dp" style="@style/Widget.App.ContactTab.Top" />
+            <View android:background="@color/gray_trans" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@id/tabs" />
+        </tv.danmaku.bili.widget.ForegroundRelativeLayout>
+    </com.bilibili.magicasakura.widgets.TintAppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

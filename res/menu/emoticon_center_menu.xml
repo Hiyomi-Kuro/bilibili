@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/emoji_center_dress">
+        <item android:icon="@drawable/emoticon_ic_suit_mall_center" android:id="@id/dress" android:visible="false" android:title="@null" app:showAsAction="ifRoom" />
+    </group>
+</menu>

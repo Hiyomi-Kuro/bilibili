@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/desc_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/desc_avatar" android:layout_width="36.0dp" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:roundAsCircle="true" app:viewAspectRatio="1.0" />
+        <ImageView android:layout_gravity="end|bottom" android:id="@id/desc_official" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginRight="6.0dp" android:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.bilibili.app.comm.list.widget.tag.tagtinttext.TagSpanTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/desc_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:maxLines="2" style="@style/Widget.App.TagTintTextView.Title.Fill" />
+        <com.bilibili.app.comm.list.widget.tag.tagtinttext.TagTintTextView android:textSize="11.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/desc_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Widget.App.TagTintTextView.Title.Fill" />
+        <com.bilibili.pegasus.card.components.RecommendBar android:id="@id/recommend_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    </LinearLayout>
+    <ViewStub android:id="@id/stub_channel_tag" android:layout="@layout/bili_pegasus_widget_channel_tag" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" />
+    <ViewStub android:id="@id/stub_btn_follow" android:layout="@layout/bili_pegasus_widget_btn_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="8.0dp" />
+    <ViewStub android:id="@id/stub_channel_subscribe" android:layout="@layout/bili_pegasus_widget_btn_channel_subscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" />
+    <ViewStub android:id="@id/stub_normal_button" android:layout="@layout/bili_pegasus_widget_btn_normal" android:layout_width="60.0dp" android:layout_height="24.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" />
+    <tv.danmaku.bili.widget.FixedPopupAnchor android:id="@id/more" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pegasus_more" />
+    </tv.danmaku.bili.widget.FixedPopupAnchor>
+</LinearLayout>

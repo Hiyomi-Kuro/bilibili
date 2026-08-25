@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:background="@color/Wh0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.banner.Banner android:id="@id/banner" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.bilibili.banner.CircleIndicator android:gravity="center_vertical" android:layout_gravity="center|bottom" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="@dimen/ad_under_view_bottom_height_heighten" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" app:activeColor="@color/Pi5" app:boarderWidth="0.0dp" app:color="@color/Ga1" app:gapSize="4.0dp" app:size="4.0dp" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="@color/Ga7" android:gravity="center_vertical" android:id="@id/edit_id_type" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/order_submit_item_height" android:layout_marginRight="17.0dp" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" android:inputType="text" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="end|center" android:id="@id/edit_right_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dp" android:maxWidth="280.0dp" android:maxLines="1" android:layout_toLeftOf="@id/icon_more" android:layout_toRightOf="@id/edit_id_type" />
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/icon_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:src="@drawable/mall_buyer_edit_id_type_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/submit_edit_clear" android:padding="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_icon_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/bottom_line" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

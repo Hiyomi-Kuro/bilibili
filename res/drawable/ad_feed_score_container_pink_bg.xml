@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ad_feed_score_pink_alpha40" />
+    <corners android:topLeftRadius="@dimen/ad_feed_score_container_corner" android:bottomLeftRadius="@dimen/ad_feed_score_container_corner" />
+    <stroke android:width="1.0dp" android:color="@color/ad_feed_score_pink" />
+</shape>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/setting_item" android:paddingBottom="20.0dp" android:layout_width="64.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginBottom="8.0dp">
+        <ImageView android:id="@id/iv_red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_setting_panel_red_dot" android:layout_marginStart="50.0dp" />
+        <ImageView android:id="@id/bg_setting" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shape_live_round_white" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="44.0dp" android:layout_height="match_parent" app:thumbHeight="44.0dp" app:thumbWidth="44.0dp" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

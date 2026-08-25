@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/bangumi_download_tab_text_pink" android:id="@id/quality" android:tag="layout/bili_app_layout_video_download_sheet_quality_item_0" android:paddingTop="@dimen/item_half_spacing" android:paddingBottom="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3.0dp" android:paddingStart="0.0dp" android:paddingEnd="24.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

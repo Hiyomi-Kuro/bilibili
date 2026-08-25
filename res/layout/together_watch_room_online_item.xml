@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/together_watch_room_online_item_0" android:background="@drawable/tgwt_online_room" android:layout_width="match_parent" android:layout_height="89.0dp" android:layout_marginTop="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.RoundRectFrameLayout android:id="@id/rootFL" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="89.0dp" app:cornerRadius="6.0dp">
+        <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:layout_gravity="end" android:tag="binding_2" android:layout_width="@dimen/tgwt_168" android:layout_height="match_parent" app:placeholderImage="@drawable/bangumi_recommend_ic_placeholder" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:tag="binding_3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <View android:tag="binding_4" android:layout_width="@dimen/tgwt_168" android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:ellipsize="end" android:id="@id/tv_online_item_title" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="224.0dp" android:singleLine="true" />
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_online_item_play_state" android:tag="binding_6" android:layout_width="46.0dp" android:layout_height="13.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:layout_below="@id/tv_online_item_title" android:layout_alignStart="@id/tv_online_item_title" />
+            <TextView android:textSize="12.0sp" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_toRightOf="@id/iv_online_item_play_state" android:layout_below="@id/tv_online_item_title" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/siv_avatar" android:tag="binding_8" android:layout_width="18.0dp" android:layout_height="18.0dp" app:overlayImage="@drawable/bangumi_portrait" app:placeholderImage="@drawable/ic_default_avatar" app:roundAsCircle="true" />
+                <TextView android:textSize="10.0sp" android:ellipsize="end" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxEms="10" android:singleLine="true" />
+                <View android:tag="binding_10" android:layout_width="0.5dp" android:layout_height="9.0dp" android:layout_marginLeft="6.0dp" />
+                <TextView android:textSize="10.0sp" android:ellipsize="end" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:maxEms="8" android:singleLine="true" />
+                <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/arrow" android:tag="binding_12" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginLeft="3.0dp" app:imageTint="@color/tgwt_vip_pink" app:srcCompat="@drawable/tgwt_more" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.bilibili.magicasakura.widgets.TintProgressBar android:layout_gravity="bottom" android:id="@id/progress" android:tag="binding_13" android:layout_width="match_parent" android:layout_height="2.0dp" android:max="100" android:secondaryProgress="0" android:progressDrawable="@drawable/tgwt_progress_horizontal" app:progressTint="@color/theme_color_secondary" style="?android:progressBarStyleHorizontal" />
+    </tv.danmaku.bili.widget.RoundRectFrameLayout>
+</FrameLayout>

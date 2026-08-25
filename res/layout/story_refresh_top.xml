@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0dp" android:textColor="@color/Wh0_u" android:gravity="center_horizontal" android:paddingTop="7.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/story_refresh_view_tips" app:layout_constraintBottom_toBottomOf="parent" />
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:layout_gravity="center_vertical" android:id="@id/animation" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="11.0dp" android:layout_marginBottom="14.0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:lottie_cacheStrategy="weak" app:lottie_fileName="white_tv_loadding.json" />
+</androidx.constraintlayout.widget.ConstraintLayout>

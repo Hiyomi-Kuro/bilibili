@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="游戏来源" android:inputType="text" />
+    <EditText android:id="@id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="游戏id" android:inputType="text" />
+    <EditText android:id="@id/text3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="云游戏id" android:inputType="text" />
+    <EditText android:id="@id/text4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="屏幕方向，1为竖屏，2为横屏" android:maxLength="1" android:digits="12" android:inputType="number" />
+    <Button android:id="@id/btn_to_activity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="跳转游戏" />
+    <EditText android:id="@id/text_access" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:hint="用户accesskey" />
+    <CheckBox android:id="@id/cb_access" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用上面输入的accessKey" />
+    <Button android:id="@id/btn_to_outurl" android:background="@color/colorTransparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+    <Button android:id="@id/router_web1" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:text="管道穿梭" />
+    <Button android:id="@id/router_web2" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:text="变形蘑菇" />
+    <Button android:id="@id/router_web3" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:text="加速冲浪" />
+    <Button android:id="@id/router_web4" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:text="飞弹冲击" />
+    <Button android:id="@id/router_web5" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:text="巨墙遗迹" />
+    <Button android:id="@id/router_web6" android:background="@color/pink" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="5.0dp" android:text="探路先锋" />
+</LinearLayout>

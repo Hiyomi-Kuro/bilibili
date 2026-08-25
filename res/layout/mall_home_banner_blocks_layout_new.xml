@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mall.ui.widget.RoundFrameLayoutNew android:layout_width="match_parent" android:layout_height="wrap_content" app:radius="7.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:orientation="horizontal" android:background="@color/Bg2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@id/banner_block_gradient_view" android:background="@drawable/mall_home_banner_block_gradient_bg" android:layout_width="match_parent" android:layout_height="80.0dp" />
+        <ViewStub android:id="@id/id_vs_mall_home_banner_v3_container" android:layout="@layout/mall_home_banner_v3" android:inflatedId="@id/mall_home_banner_v3_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+</com.mall.ui.widget.RoundFrameLayoutNew>

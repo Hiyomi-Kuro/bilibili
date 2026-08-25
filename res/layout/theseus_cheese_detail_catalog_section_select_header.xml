@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/theseus_cheese_color_section_selection" android:id="@id/select_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" />
+    <ImageView android:id="@id/select_arrow" android:background="@drawable/theseus_cheese_selector_section_selection_arrow" android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="4.0dp" />
+</LinearLayout>

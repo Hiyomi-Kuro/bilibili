@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/nav_top_bar" app:contentInsetRight="40.0dp" style="@style/BiligameToolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/toolbar_close" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/biligame_close" app:tint="@color/Ga5" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga9" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_toolbar_title" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:maxWidth="200.0dp" android:maxLines="1" android:textAllCaps="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.bilibili.biligame.ui.image.GameImageViewV2 android:id="@id/iv_game_icon" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginRight="@dimen/biligame_dip_12" app:roundAsCircle="true" app:roundingBorderColor="#19000000" app:roundingBorderWidth="0.33000004dp" app:viewAspectRatio="1.0" style="@style/Biligame.App.StaticImageView.Thumb.Icon30" />
+        <com.bilibili.biligame.iconfont.IconFontTextView android:textSize="24.0sp" android:textColor="@color/Ga5" android:id="@id/iv_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:text="@string/ic_gc_comment_more" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

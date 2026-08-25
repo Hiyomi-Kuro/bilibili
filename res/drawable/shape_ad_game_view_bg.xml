@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="28.0dp" />
+    <corners android:radius="14.0dp" />
+    <stroke android:width="0.5dp" android:color="@color/ad_game_rect_button_stroke" />
+    <solid android:color="@color/ad_game_rect_button_solid" />
+</shape>

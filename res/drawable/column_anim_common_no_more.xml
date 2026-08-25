@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_01" />
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_03" />
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_01" />
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_03" />
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_01" />
+    <item android:duration="100" android:drawable="@drawable/img_column_anim_no_more_03" />
+</animation-list>

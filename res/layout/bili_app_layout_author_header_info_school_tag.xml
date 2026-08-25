@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bili_space_header_info_school_tag_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="9.0dp" android:layout_height="9.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="1.0dp" android:scaleType="fitXY" app:srcCompat="@drawable/bili_space_header_info_school_tag_add_icon" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/Ga7" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:paddingLeft="3.0dp" android:paddingTop="0.8000001dp" android:paddingRight="6.0dp" android:paddingBottom="1.1999817dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bili_space_add_school" android:maxLines="1" />
+</LinearLayout>

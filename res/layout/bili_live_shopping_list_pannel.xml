@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rl_goods_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <tv.danmaku.bili.widget.LoadingImageView android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.bilibili.bililive.room.biz.shopping.view.LiveRoomShoppingUndertakingStripView android:id="@id/undertaking_strip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

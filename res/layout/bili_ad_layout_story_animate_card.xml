@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="@dimen/ad_story_player_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/ad_cover_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="@dimen/ad_story_player_corner_radius" app:scaleViewType="fitWidth" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/ad_story_animate_card_close" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="12.0dp" android:layout_width="@dimen/ad_story_player_close_width" android:layout_height="@dimen/ad_story_player_close_height" android:src="@drawable/ic_ad_story_img_card_close" android:paddingStart="12.0dp" android:paddingEnd="10.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="end|bottom" android:id="@id/ad_story_cover_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dp" app:roundBottomLeft="false" app:roundBottomRight="true" app:roundTopLeft="false" app:roundTopRight="false" app:roundedCornerRadius="@dimen/ad_story_player_corner_radius" app:scaleViewType="fitWidth" />
+</merge>

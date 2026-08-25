@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_layout" android:background="@drawable/bg_round_bottom_bubble" android:paddingLeft="3.0dp" android:paddingTop="3.0dp" android:paddingRight="3.0dp" android:paddingBottom="3.0dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/daynight_color_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="30.0dp" android:maxWidth="115.0dp" android:lines="1" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+    <com.bilibili.magicasakura.widgets.TintImageView android:id="@id/triangle" android:layout_width="12.0dp" android:layout_height="8.0dp" android:layout_marginTop="-1.0dp" android:src="@drawable/ic_triangle" android:rotationX="180.0" app:imageTint="@color/theme_color_secondary" />
+</LinearLayout>

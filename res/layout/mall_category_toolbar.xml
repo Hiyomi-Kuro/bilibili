@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="?navigationTopBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/layout_search" android:background="@drawable/mall_category_search_bg" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginRight="12.0dp">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga5" android:textColorHint="@color/Ga5" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_category_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:hint="搜索" android:lines="1" android:drawableLeft="@drawable/mall_ic_search_grey" android:drawablePadding="6.0dp" />
+    </FrameLayout>
+</FrameLayout>

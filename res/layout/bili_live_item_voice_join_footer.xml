@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/theme_color_live_text_assist_dark" android:gravity="center" android:id="@id/tv_waiting_num" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/live_voice_join_list_footer"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

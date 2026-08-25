@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="44.0dp" app:layout_collapseMode="pin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ic_back" android:background="@drawable/music_podcast_ic_back_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_podcast_fav" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingBottom="@dimen/music_podcast_bottom_mini_player_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44.0dp" />
+    <com.bilibili.music.podcast.view.MusicNormalLoadView android:id="@id/load_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

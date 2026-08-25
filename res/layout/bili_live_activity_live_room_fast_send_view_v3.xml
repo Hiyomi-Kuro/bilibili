@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|bottom" android:id="@id/tv_fast_send_guide" android:background="@drawable/bili_live_popup_pink_bg_right_v2" android:paddingLeft="13.0dp" android:paddingRight="13.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="55.0dp" android:text="@string/live_fast_send_gift_view_guide" android:layout_marginEnd="20.0dp" />
+    <com.bilibili.bililive.biz.interactions.fastgift.ui.LiveSpeedySendGiftButtonV3 android:layout_gravity="end|bottom" android:id="@id/btn_fast_send_gift" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="14.0dp" app:speedy_icon_text_color="@color/white" app:speedy_icon_text_size="10.0sp" app:support_long_press="false" app:support_show_icon="true" />
+</LinearLayout>

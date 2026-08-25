@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mall_module_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/express_title" android:paddingLeft="10.0dp" android:paddingTop="12.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga7" android:layout_gravity="center_vertical" android:id="@id/express_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_detail_delivery_track_company_text" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:id="@id/tv_delivery_src" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_toRightOf="@id/express_name" />
+        <ImageView android:id="@id/express_fold_icon" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:src="@drawable/mall_detail_icon_unfold" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingTop="6.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga7" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_detaili_delivery_num" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:id="@id/tv_delivery_tracingnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_express_num_func_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:id="@id/order_num_devider" android:background="@color/Ga2" android:visibility="visible" android:layout_width="1.0dp" android:layout_height="16.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/Pi5" android:layout_gravity="center_vertical" android:id="@id/order_num_copy" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_text_copy" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/Ga4" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginLeft="14.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="14.0dp" />
+    <RelativeLayout android:id="@id/delivery_tracing_area_view" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/delivery_tracing_view" android:paddingBottom="30.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/order_detail_module_margin" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/express_empty_view" android:paddingBottom="60.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60.0dp" android:fillViewport="true">
+        <TextView android:textSize="14.0dp" android:textColor="@color/Ga10" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mall_order_express_empty" />
+    </LinearLayout>
+</LinearLayout>

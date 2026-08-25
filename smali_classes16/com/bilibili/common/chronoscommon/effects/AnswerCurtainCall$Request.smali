@@ -1,0 +1,84 @@
+.class public final Lcom/bilibili/common/chronoscommon/effects/AnswerCurtainCall$Request;
+.super Lcom/bilibili/common/chronoscommon/effects/EffectsMessage;
+.source "BL"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+.annotation runtime Lcom/bilibili/common/chronoscommon/message/RequestDefine;
+    method = "AnswerCurtainCall"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\t\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\t\u0010\nR$\u0010\u0003\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u000b"
+    }
+    d2 = {
+        "com/bilibili/common/chronoscommon/effects/AnswerCurtainCall$Request",
+        "Lcom/bilibili/common/chronoscommon/effects/EffectsMessage;",
+        "",
+        "effectsFinishArgs",
+        "Ljava/lang/String;",
+        "getEffectsFinishArgs",
+        "()Ljava/lang/String;",
+        "setEffectsFinishArgs",
+        "(Ljava/lang/String;)V",
+        "<init>",
+        "()V",
+        "chronoscommon_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field private effectsFinishArgs:Ljava/lang/String;
+    .annotation runtime Lcom/alibaba/fastjson/annotation/JSONField;
+        name = "effects_finish_args"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/bilibili/common/chronoscommon/effects/EffectsMessage;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getEffectsFinishArgs()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bilibili/common/chronoscommon/effects/AnswerCurtainCall$Request;->effectsFinishArgs:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final setEffectsFinishArgs(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/bilibili/common/chronoscommon/effects/AnswerCurtainCall$Request;->effectsFinishArgs:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method

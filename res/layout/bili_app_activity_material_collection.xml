@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center" android:id="@id/btn_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="暂停" />
+    <Button android:layout_gravity="center" android:id="@id/btn_resume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="恢复" />
+    <Button android:layout_gravity="center" android:id="@id/btn_resume_db" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="从数据库恢复" />
+    <Button android:layout_gravity="center" android:id="@id/btn_query_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="查询所有" />
+    <Button android:layout_gravity="center" android:id="@id/btn_delete_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="清空数据库" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/red_dark_kit" android:layout_gravity="center" android:id="@id/tv_total_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+</LinearLayout>

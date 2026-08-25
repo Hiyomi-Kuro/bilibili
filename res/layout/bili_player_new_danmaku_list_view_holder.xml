@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="false" android:textSize="14.0sp" android:id="@id/block_list_title" android:layout_width="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/Player_danmaku_options_pannel_options_title_danmaku_list" style="@style/BPlayer_PlayerOptionsPannelItemTitle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:baselineAligned="false">
+        <FrameLayout android:layout_gravity="center" android:id="@id/check_danmaku_list" android:background="@drawable/shape_roundrect_white_alpha20" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="10.0" android:contentDescription="bbplayer_dmsetting_dmlist" android:layout_marginEnd="6.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_video_play_control_video_title_text" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Player_danmaku_options_pannel_options_text_check_danmaku_list" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/check_command_danmaku_list" android:background="@drawable/shape_roundrect_white_alpha20" android:layout_width="0.0dp" android:layout_height="30.0dp" android:layout_weight="10.0" android:layout_marginStart="6.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/selector_bplayer_video_play_control_video_title_text" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Player_danmaku_options_pannel_options_text_check_command_danmaku_list" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

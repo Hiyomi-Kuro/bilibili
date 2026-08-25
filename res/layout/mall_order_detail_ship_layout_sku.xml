@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mall_order_detail_ship_layout_sku_bg" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="22.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_submit_delivery" />
+    <TextView android:textSize="12.0dp" android:textColor="@color/Ga10" android:gravity="right" android:layout_gravity="end|center" android:id="@id/order_detail_ship_time_sku" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dp" />
+</FrameLayout>

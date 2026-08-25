@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="69.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/live_player_size_autio_title" android:paddingLeft="13.0dp" android:paddingTop="8.0dp" android:paddingRight="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_settings_player_size_autio_title" android:paddingStart="13.0dp" android:paddingEnd="13.0dp" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/live_play_size_autio_rg" android:layout_width="match_parent" android:layout_height="45.0dp" android:layout_below="@id/live_player_size_autio_title">
+        <RadioButton android:textSize="13.0sp" android:textColor="@drawable/live_network_alert_full_text_color_selector" android:id="@id/live_player_size_autio_ajust" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="@string/live_settings_player_size_autio_adjust" android:layout_marginStart="13.0dp" />
+        <RadioButton android:textSize="13.0sp" android:textColor="@drawable/live_network_alert_full_text_color_selector" android:gravity="center" android:id="@id/live_player_size_autio_stretch" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="@string/live_settings_player_size_autio_stretch" android:layout_marginStart="56.0dp" />
+        <RadioButton android:textSize="13.0sp" android:textColor="@drawable/live_network_alert_full_text_color_selector" android:gravity="right|center" android:id="@id/live_player_size_autio_full" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="@string/live_settings_player_size_autio_full" android:layout_marginStart="56.0dp" />
+    </RadioGroup>
+</RelativeLayout>

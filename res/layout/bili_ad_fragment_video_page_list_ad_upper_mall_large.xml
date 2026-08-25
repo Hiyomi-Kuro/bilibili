@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintFrameLayout android:layout_gravity="bottom" android:id="@id/ad_tint_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:layout_gravity="right" android:id="@id/stub_badge" android:layout="@layout/bili_ad_videodetail_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing" android:layout_marginStart="@dimen/item_spacing">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/cover" android:layout_width="72.0dp" android:layout_height="40.0dp" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="2.0dp" app:scaleViewType="fitWidth" app:viewAspectRadioHeight="9" app:viewAspectRadioWidth="16" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:singleLine="true" android:layout_marginStart="8.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp" android:layout_marginStart="8.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/extra_container" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:textColor="@color/Pi5" android:gravity="center_vertical" android:id="@id/cur_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:maxLines="1" />
+                </LinearLayout>
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_small" android:textColor="@color/Ye4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.bilibili.adcommon.widget.button.AdDownloadButton android:textSize="@dimen/ad_upper_download_button_text_size" android:textColor="@color/theme_color_secondary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/download_label" android:visibility="gone" android:layout_width="@dimen/ad_button_width" android:layout_height="@dimen/ad_button_height" android:layout_marginLeft="6.0dp" android:layout_marginRight="2.0dp" android:maxLength="1" android:layout_marginStart="6.0dp" android:layout_marginEnd="2.0dp" style="@style/AdButton_Compat_Game_Stroke" />
+        <com.bilibili.ad.adview.widget.FixedPopupAnchor android:layout_gravity="center_vertical" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bilibili.magicasakura.widgets.TintImageView android:paddingLeft="@dimen/item_spacing" android:paddingTop="@dimen/item_spacing" android:paddingRight="@dimen/item_spacing" android:paddingBottom="@dimen/item_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_gray_v3" android:paddingStart="@dimen/item_spacing" android:paddingEnd="@dimen/item_spacing" app:imageTint="@color/Ga4" />
+        </com.bilibili.ad.adview.widget.FixedPopupAnchor>
+    </LinearLayout>
+    <View style="@style/ad_line" />
+</com.bilibili.adcommon.widget.AdTintFrameLayout>

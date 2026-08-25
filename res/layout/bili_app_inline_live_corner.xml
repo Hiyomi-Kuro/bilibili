@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/theme_color_live_text_white" android:gravity="start|center" android:layout_gravity="start|bottom" android:id="@id/corner_name" android:background="@drawable/bg_live_dynamic_live_corner" android:layout_width="wrap_content" android:layout_height="18.0sp" android:maxLines="1" android:paddingStart="14.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="10.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_corner" android:layout_width="20.0dp" android:layout_height="20.0dp" app:roundedCornerRadius="4.0dp" />
+</merge>

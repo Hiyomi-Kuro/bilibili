@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="mall_downloader_efp" path="./mall" />
+    <external-path name="mall_downloader_ep" path="./mall" />
+    <files-path name="mall_downloader_fp" path="./mall" />
+    <cache-path name="mall_downloader_cp" path="./mall" />
+    <root-path name="mall_downloader_root" path="./mall" />
+</paths>

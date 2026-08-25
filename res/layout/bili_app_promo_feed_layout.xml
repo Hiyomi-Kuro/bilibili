@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/alert_bar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:orientation="vertical" android:id="@id/header" android:background="@color/Ga1" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/alert_bar" />
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:id="@id/notice_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header" />
+    <tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout android:id="@id/swipe_layout" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/notice_bar">
+        <FrameLayout android:id="@id/recycler_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view" android:scrollbars="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.core.widget.NestedScrollView android:id="@id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/empty_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.4" />
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline">
+                            <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center" android:id="@id/error_image" android:layout_width="140.0dp" android:layout_height="140.0dp" android:src="@drawable/ic_tips_error" app:actualImageScaleType="centerInside" />
+                            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Ga5" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/load_error_hint1" />
+                            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_subtitle" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/refresh" android:background="@drawable/shape_roundrect_pink_r_15" android:paddingLeft="34.0dp" android:paddingTop="5.0dp" android:paddingRight="34.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/br_retry" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </tv.danmaku.bili.widget.swiperefresh.SwipeRefreshLayout>
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

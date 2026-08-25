@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_blink_1f2022_12_round" android:layout_width="match_parent" android:layout_height="65.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/blink_play_func_icon" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerVertical="true" android:layout_marginStart="16.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/blink_play_func_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="1" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/blink_play_func_icon" />
+    <TextView android:textSize="12.0sp" android:textColor="#61666d" android:layout_gravity="center_horizontal" android:id="@id/blink_play_func_desp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/blink_play_func_title" android:layout_alignStart="@id/blink_play_func_title" />
+</RelativeLayout>

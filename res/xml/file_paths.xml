@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path name="game_apk" path="apks" />
+    <external-files-path name="app_update" path="update" />
+    <root-path name="root" path="" />
+    <cache-path name="internal" path="boxing" />
+    <external-path name="external" path="DCIM/bili/boxing" />
+    <cache-path name="op_cover_image" path="op_cover_image" />
+    <external-files-path name="opensdk_external" path="Images/tmp" />
+    <root-path name="opensdk_root" path="" />
+    <external-files-path name="shareData" path="gif" />
+    <external-files-path name="share_files" path="." />
+</paths>

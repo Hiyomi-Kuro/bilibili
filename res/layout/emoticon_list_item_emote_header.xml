@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga10" android:id="@id/recent_use_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="10.0dp" android:text="@string/emoticon_recent_use" />
+    <tv.danmaku.bili.widget.RecyclerView android:id="@id/ru_emotes" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/Ga10" android:id="@id/all_emote_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="11.0dp" android:text="@string/emoticon_all_emote" />
+</LinearLayout>

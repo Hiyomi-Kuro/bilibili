@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/bangumi_layout_item_info_actors_0" android:layout_width="78.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/iv_actor_avatar" android:tag="binding_1" android:layout_width="78.0dp" android:layout_height="104.0dp" app:actualImageScaleType="fitCenter" app:placeholderImage="@drawable/bili_default_image_tv" app:roundedCornerRadius="4.0dp" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/tv_real_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lines="1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Ga5" android:ellipsize="end" android:id="@id/tv_actor_name" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+</LinearLayout>

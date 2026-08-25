@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.app.comm.supermenu.core.MenuItemView android:textSize="12.0sp" android:textColor="@color/Wh0_u" android:gravity="center_horizontal" android:id="@id/item" android:layout_width="66.0dp" android:layout_height="wrap_content" android:drawablePadding="6.0dp" app:icon_height="44.0dp" app:icon_width="44.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:paddingBottom="10.0dp" android:layout_width="@dimen/pegasus_index_card_entrance_card_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_horizontal" android:id="@id/cover" android:layout_width="32.0dp" android:layout_height="32.0dp" app:placeholderImage="@drawable/list_default_image_holder" app:placeholderImageScaleType="fitXY" app:roundWithOverlayColor="@android:color/transparent" app:roundedCornerRadius="8.0dp" app:viewAspectRatio="1.0" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_medium" android:textColor="@color/Ga7" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:lines="1" />
+</LinearLayout>

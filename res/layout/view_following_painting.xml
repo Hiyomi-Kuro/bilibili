@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.bplus.followingcard.widget.painting.PaintingCardGridView android:id="@id/painting_image_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_larger_30sp" android:textColor="@color/Wh0_u" android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/more_num" android:background="@drawable/bg_last_painting_cover" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:tag="@string/clip_tag_auto_play_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

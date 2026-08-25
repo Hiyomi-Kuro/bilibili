@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="120.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewFlipper android:layout_gravity="end" android:id="@id/blink_high_energy_view_switcher" android:layout_width="120.0dp" android:layout_height="wrap_content" android:inAnimation="@anim/anim_rank_switcher_in" android:outAnimation="@anim/anim_rank_switcher_out" android:flipInterval="10000" android:autoStart="false">
+        <FrameLayout android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="10.0dp" app:is_stream="true" layout="@layout/bili_live_layout_high_energy_entrance_rank_v2" />
+        </FrameLayout>
+        <com.bilibili.bililive.biz.rank.commander.LiveCommanderTopWidget android:layout_gravity="end|bottom" android:id="@id/guard_commander_top" android:layout_width="120.0dp" android:layout_height="36.0dp" />
+    </ViewFlipper>
+</merge>

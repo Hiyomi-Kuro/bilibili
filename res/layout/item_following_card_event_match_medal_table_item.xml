@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/biv_image" android:layout_width="wrap_content" android:layout_height="match_parent" app:actualImageScaleType="fitCenter" />
+    <Space android:id="@id/v_space" android:visibility="gone" android:layout_width="7.0dp" android:layout_height="match_parent" />
+    <com.bilibili.bplus.followingcard.widget.ObserveTextSizeTextView android:textStyle="bold" android:textColor="@color/event_topic_match_medal_text" android:gravity="center_vertical" android:id="@id/tv_text" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

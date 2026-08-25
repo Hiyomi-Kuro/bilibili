@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintFrameLayout android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <tv.danmaku.bili.widget.PagerSlidingTabStrip android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="40.0dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="5.0dp" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="12.0dp" style="@style/Widget.App.SlidingTab.Top.NoBackground" />
+    </com.bilibili.magicasakura.widgets.TintFrameLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

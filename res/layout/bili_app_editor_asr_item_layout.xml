@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/upper_editor_shape_roundrect_cap_8dp" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/asr_item_title" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginTop="16.0dp" />
+    <CheckBox android:id="@id/asr_item_select" android:background="@drawable/bili_app_editor_asr_item_select_bg" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginTop="12.0dp" android:button="@null" />
+</LinearLayout>

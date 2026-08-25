@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintConstraintLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dy_more_wrapper" android:background="@drawable/bg_card_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintView android:id="@id/dy_divider" android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="2.0px" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/dy_avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/dy_more_text" app:layout_constraintTop_toTopOf="parent">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_avatar_3" android:layout_marginLeft="60.0dp" style="@style/dy_BiliImageView_Fold_Avatars" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_avatar_2" android:layout_marginLeft="40.0dp" style="@style/dy_BiliImageView_Fold_Avatars" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_avatar_1" android:layout_marginLeft="20.0dp" style="@style/dy_BiliImageView_Fold_Avatars" />
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/dy_avatar_0" style="@style/dy_BiliImageView_Fold_Avatars" />
+    </FrameLayout>
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_very_small" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/dy_more_text" android:paddingLeft="4.0dp" android:paddingRight="4.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/dy_avatar_layout" app:layout_constraintRight_toLeftOf="@id/dy_arrow" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="center_vertical" android:id="@id/dy_arrow" android:layout_width="10.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_pull_down_more" app:imageTint="@color/Ga5" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/dy_more_text" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.bilibili.magicasakura.widgets.TintConstraintLayout>

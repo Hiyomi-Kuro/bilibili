@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:tag="layout/bangumi_detail_page_tab_item_view_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/bangumi_tab_text_pink2" android:ellipsize="end" android:gravity="center" android:id="@id/tab_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/bangumi_tab_text_pink2" android:layout_gravity="bottom" android:id="@id/tab_sub_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dp" />
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/tab_image" android:tag="binding_3" android:layout_width="34.0dp" android:layout_height="14.0dp" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.ad.adview.story.card.widget.AdStoryBigCardWidget android:layout_gravity="bottom" android:id="@id/story_subcard_d_second" android:background="@drawable/ad_story_big_card_bg" android:visibility="gone" android:layout_width="250.0dp" android:layout_height="128.0dp" android:layout_marginLeft="12.0dp" android:layout_marginStart="12.0dp" />
+    <include android:layout_gravity="bottom" android:id="@id/story_subcard_d_first" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bili_ad_layout_story_subcard_first" />
+</FrameLayout>

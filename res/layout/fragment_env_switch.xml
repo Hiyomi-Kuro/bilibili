@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_top_bar" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/item_spacing" android:paddingLeft="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:id="@id/env_switch_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:text="@string/mod_env_switch_desc" android:layout_weight="4.0" android:layout_marginStart="@dimen/item_large_spacing" style="@style/ModTextAppearance.App.Topbar.Subtitle" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/env_switcher" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_large_spacing" android:layout_weight="1.0" android:layout_marginEnd="@dimen/item_large_spacing" app:thumbTint="@color/selector_switch_thumb" app:trackTint="@color/selector_switch_track" />
+    </LinearLayout>
+    <View android:background="@color/mod_br_gray_light" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/item_spacing" android:paddingLeft="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:id="@id/clear_api_cache_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:text="@string/mod_ignore_api_cache_desc" android:layout_weight="4.0" android:layout_marginStart="@dimen/item_large_spacing" style="@style/ModTextAppearance.App.Topbar.Subtitle" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/ignore_api_cache_switcher" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_large_spacing" android:layout_weight="1.0" android:layout_marginEnd="@dimen/item_large_spacing" app:thumbTint="@color/selector_switch_thumb" app:trackTint="@color/selector_switch_track" />
+    </LinearLayout>
+    <View android:background="@color/br_gray_light" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/item_spacing" android:paddingLeft="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:id="@id/file_browser_desc" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:text="@string/mod_file_browser_desc" android:layout_weight="4.0" android:layout_marginStart="@dimen/item_large_spacing" style="@style/ModTextAppearance.App.Topbar.Subtitle" />
+    </LinearLayout>
+    <View android:background="@color/br_gray_light" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/item_spacing" android:paddingLeft="@dimen/item_ex_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:id="@id/modify_mod" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_large_spacing" android:text="@string/mod_file_modify_mod_desc" android:layout_weight="4.0" android:layout_marginStart="@dimen/item_large_spacing" style="@style/ModTextAppearance.App.Topbar.Subtitle" />
+    </LinearLayout>
+    <TextView android:id="@id/prompt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" style="@style/ModTextAppearance.App.Topbar.Subtitle" />
+</LinearLayout>

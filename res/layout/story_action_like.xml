@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="vertical" android:id="@id/like_layout" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="56.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/like_icon" android:layout_width="match_parent" android:layout_height="46.0dp" android:src="@drawable/bili_story_like_selector" android:alpha="0.9" app:layout_constraintTop_toTopOf="parent" />
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/like_lottie" android:layout_width="match_parent" android:layout_height="46.0dp" android:alpha="0.9" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="false" app:lottie_fileName="story_like_lottie.json" app:lottie_loop="false" />
+    <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/like_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dp" android:singleLine="true" android:shadowColor="@color/Ba0_u_alpha20" android:shadowDy="2.0" android:shadowRadius="3.0" app:layout_constraintTop_toTopOf="parent" />
+</merge>

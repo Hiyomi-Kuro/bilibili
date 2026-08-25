@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/meishe/cafconvertor/webpcoder/FrameSequenceDrawable$OnCallback;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/meishe/cafconvertor/webpcoder/FrameSequenceDrawable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnCallback"
+.end annotation
+
+
+# virtual methods
+.method public abstract callback(ILandroid/graphics/Bitmap;J)V
+.end method

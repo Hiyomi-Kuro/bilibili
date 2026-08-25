@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp" android:lines="1" android:singleLine="true" app:layout_constraintBottom_toBottomOf="@id/guideline" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintLeft_toLeftOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" app:layout_constraintLeft_toLeftOf="@id/name" app:layout_constraintTop_toTopOf="@id/guideline">
+        <com.bilibili.adcommon.basic.marker.AdMarkLayout android:id="@id/tag_style" android:layout_marginRight="6.0dp" app:mode="double_row" style="@style/Marker" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintImageView android:textColor="@color/Ga5" android:layout_gravity="top" android:id="@id/dy_icon" android:visibility="visible" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="@dimen/dy_standard_margin" android:layout_marginTop="2.0dp" app:imageTint="@color/Ga7" app:layout_constraintLeft_toLeftOf="parent" />
+    <com.bilibili.bplus.followingcard.widget.RevealedCommentsTextView android:textSize="@dimen/text_13sp" android:textColor="@color/Ga8" android:id="@id/dy_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DynamicRevealedCommentsView_CommentText" />
+</LinearLayout>

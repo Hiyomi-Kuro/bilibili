@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.studio.editor.moudle.sticker.v1.SquareSimpleDraweeView android:id="@id/sdv_image" android:layout_width="match_parent" android:layout_height="match_parent" fresco:placeholderImage="@drawable/ic_editor_placeholder_default" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_label" android:background="@drawable/editor_shape_gif_label_bg" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:layout_marginBottom="2.0dp" android:text="@string/bili_editor_image_picker_gif_label" android:layout_alignBottom="@id/sdv_image" android:layout_alignParentRight="true" />
+</RelativeLayout>

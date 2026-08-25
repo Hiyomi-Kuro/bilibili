@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bililive.infra.widget.view.PreImeLayout android:id="@id/super_chat_layout_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.magicasakura.widgets.TintConstraintLayout android:layout_gravity="bottom" android:background="@color/theme_color_view_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/scroll_view" android:background="@drawable/bg_live_superchat_input_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="52.0dp" android:layout_marginBottom="12.0dp" android:maxHeight="150.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <EditText android:textSize="11.0sp" android:textColor="#666666" android:id="@id/edit" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:hint="@string/live_super_chat_input_hint" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone|flagNoFullscreen|flagNoExtractUi" android:imeActionLabel="@string/live_done" />
+                    <TextView android:textSize="11.0sp" android:textColor="#333333" android:gravity="right" android:layout_gravity="bottom" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dp" android:minWidth="36.0dp" />
+                </LinearLayout>
+                <View android:id="@id/divider" android:background="#979797" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_margin="7.0dp" />
+                <TextView android:textSize="11.0sp" android:textColor="#333333" android:id="@id/translation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_marginRight="7.0dp" />
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:id="@id/translate_layout" android:padding="4.0dp" android:layout_width="42.0dp" android:layout_height="24.0dp" android:layout_marginRight="7.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/translate_btn" android:background="@drawable/bg_live_superchat_input_translate" android:layout_width="34.0dp" android:layout_height="16.0dp" android:text="@string/live_super_chat_translate_to_japanese" />
+        </FrameLayout>
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/loading_img_view" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="4.0dp" app:layout_constraintLeft_toLeftOf="@id/translate_layout" app:layout_constraintRight_toRightOf="@id/translate_layout" app:layout_constraintTop_toBottomOf="@id/translate_layout" />
+    </com.bilibili.magicasakura.widgets.TintConstraintLayout>
+</com.bilibili.bililive.infra.widget.view.PreImeLayout>

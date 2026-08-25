@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/live_room_rank_divider_line_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

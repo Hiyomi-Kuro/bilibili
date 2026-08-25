@@ -1,0 +1,86 @@
+.class public Lc/t/m/g/q0$a;
+.super Landroid/location/GnssMeasurementsEvent$Callback;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lc/t/m/g/q0;->a(Landroid/os/Looper;)I
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lc/t/m/g/q0;
+
+
+# direct methods
+.method public constructor <init>(Lc/t/m/g/q0;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lc/t/m/g/q0$a;->a:Lc/t/m/g/q0;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroid/location/GnssMeasurementsEvent$Callback;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onGnssMeasurementsReceived(Landroid/location/GnssMeasurementsEvent;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lc/t/m/g/q0$a;->a:Lc/t/m/g/q0;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lc/t/m/g/q0;->a(Lc/t/m/g/q0;)Lc/t/m/g/q0$g;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0, p1}, Lc/t/m/g/q0$g;->a(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public onStatusChanged(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lc/t/m/g/q0$a;->a:Lc/t/m/g/q0;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lc/t/m/g/q0;->a(Lc/t/m/g/q0;)Lc/t/m/g/q0$g;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0, p1}, Lc/t/m/g/q0$g;->a(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method

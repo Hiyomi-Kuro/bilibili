@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverFrameLayout android:background="@drawable/bg_im_notify_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/notifier_container" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <com.bilibili.lib.image2.view.BiliImageView android:id="@id/avatar" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="15.0dp" android:layout_centerVertical="true" android:alpha="@dimen/im_image_alpha" app:actualImageScaleType="centerCrop" app:placeholderImage="@drawable/ic_default_avatar" app:roundAsCircle="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:singleLine="true" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" />
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="@dimen/divider_line_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp">
+            <com.bilibili.bplus.im.widget.RemindCardPicView android:id="@id/pic_layout" android:layout_width="114.0dp" android:layout_height="64.0dp" android:layout_marginTop="16.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/Ga10" android:id="@id/title" android:paddingLeft="15.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="2.0dp" android:layout_toLeftOf="@id/pic_layout" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga8" android:id="@id/content" android:paddingLeft="15.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/pic_layout" android:layout_below="@id/title" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bilibili.bplus.im.widget.RemindCardPicView android:id="@id/module_pic" android:layout_width="114.0dp" android:layout_height="64.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="16.0dp" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/module_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="16.0dp" android:layout_toLeftOf="@id/module_pic" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <com.bilibili.bplus.im.conversation.widget.NotifyGameButton android:id="@id/game_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="16.0dp" />
+        <ViewStub android:id="@id/vs_game_panel" android:layout="@layout/item_game_panel" android:inflatedId="@id/game_panel" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/jump_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/jump_text" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginBottom="9.0dp" android:maxLines="1" android:drawableRight="@drawable/ic_arrow_right_gray" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jump_view_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/jump_text_2" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginBottom="9.0dp" android:maxLines="1" android:drawableRight="@drawable/ic_arrow_right_gray" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jump_view_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="0.5dp" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/jump_text_3" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginBottom="9.0dp" android:maxLines="1" android:drawableRight="@drawable/ic_arrow_right_gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/iv_menu" android:paddingTop="2.0dp" android:paddingBottom="3.0dp" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" app:srcCompat="@drawable/ref_more_vertical_fill_500" app:tint="@color/Graph_medium" />
+</com.bilibili.bplus.im.conversation.widget.visibleobserver.VisibleObserverFrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.bplus.followingcard.widget.EventTopicNavigationLayout android:textAppearance="@style/TextAppearance.App.SubTab" android:id="@id/navigation" android:layout_width="match_parent" android:layout_height="@dimen/following_event_top_tab" app:locationAnchorDrawable="@drawable/ic_vector_follow_location" app:pstsIndicatorColor="@color/Ga1_u" app:pstsIndicatorHeight="28.0dp" app:pstsIndicatorWrapContent="true" app:pstsIndicatorWrapOffset="8.0dp" app:pstsTabMaxWidth="80.0dp" app:pstsTextAllCaps="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:hint="请输入网址" android:imeOptions="actionDone" />
+    <FrameLayout android:id="@id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

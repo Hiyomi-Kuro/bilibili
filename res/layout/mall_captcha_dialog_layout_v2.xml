@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/mall_captcha_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/webview_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loadingview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/mall_captcha_waitting_progressbar_anim" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_holder_error_style1" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tips_btn" android:background="@drawable/mall_captcha_tips_btn_bg" android:layout_width="150.0dp" android:layout_height="40.0dp" android:layout_marginTop="40.0dp" android:text="点击重试" />
+    </LinearLayout>
+</FrameLayout>

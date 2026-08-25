@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/recycler" android:tag="layout/theseus_ogv_season_list_0" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

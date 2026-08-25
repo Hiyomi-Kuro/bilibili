@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout android:id="@id/deal_wrapper" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.magicasakura.widgets.TintView android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="13.0sp" android:textColor="@color/Ga5" android:id="@id/reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_centerVertical="true" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Ga5" android:gravity="center" android:id="@id/refused" android:background="@drawable/following_bg_round_card_refused_button" android:visibility="gone" android:layout_width="87.0dp" android:layout_height="32.0dp" android:layout_marginRight="6.0dp" android:text="@string/following_elect_refused" android:layout_toLeftOf="@id/to_deal_repost" android:layout_centerVertical="true" android:layout_toStartOf="@id/to_deal_repost" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_small" android:textColor="@color/Wh0_u" android:gravity="center" android:id="@id/to_deal_repost" android:background="@drawable/following_bg_round_card_type" android:layout_width="87.0dp" android:layout_height="32.0dp" android:layout_marginRight="12.0dp" android:text="@string/following_to_deal_repost" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

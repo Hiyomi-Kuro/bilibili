@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/live_card_shadow_black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/shape_white_corners_8" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/shape_white_corners_4_stroke_1" android:paddingBottom="16.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_head" android:background="@drawable/live_room_new_title_head" android:layout_width="172.0dp" android:layout_height="18.0dp" android:layout_marginTop="11.0dp" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_close" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="4.0dp" android:src="@drawable/live_room_new_title_close" android:layout_alignParentRight="true" />
+            <FrameLayout android:id="@id/iv_title_bg" android:layout_width="200.0dp" android:layout_height="60.0dp" android:layout_marginTop="28.0dp" android:layout_below="@id/iv_head" android:layout_centerHorizontal="true">
+                <ImageView android:background="@drawable/live_room_new_title_backgroud" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout android:layout_gravity="center" android:id="@id/sl_shimmer" android:layout_width="92.0dp" android:layout_height="22.0dp" app:shimmer_angle="20" app:shimmer_animation_duration="500" app:shimmer_color="#a0ffffff" app:shimmer_gradient_center_color_width="0.5">
+                    <com.bilibili.lib.image2.view.legacy.StaticImageView2 android:id="@id/iv_title_pic" android:layout_width="92.0dp" android:layout_height="22.0dp" app:placeholderImageScaleType="centerInside" app:thumbHeight="22.0dp" app:thumbWidth="92.0dp" />
+                </com.bilibili.bililive.biz.uicommon.widget.ShimmerLayout>
+            </FrameLayout>
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/live_card_new_title_title" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" android:layout_below="@id/iv_title_bg" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/live_card_new_title_text" android:ellipsize="end" android:gravity="center" android:id="@id/tv_source" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:maxEms="18" android:singleLine="true" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/live_card_new_title_text" android:ellipsize="end" android:gravity="center" android:id="@id/tv_validity_period" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:singleLine="true" android:layout_below="@id/tv_source" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/live_card_new_title_wear" android:gravity="center" android:id="@id/tv_wear" android:background="@drawable/bg_live_new_title_wear" android:layout_width="200.0dp" android:layout_height="32.0dp" android:layout_marginTop="26.0dp" android:text="@string/live_room_new_title_wear_immediately" android:layout_below="@id/tv_validity_period" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

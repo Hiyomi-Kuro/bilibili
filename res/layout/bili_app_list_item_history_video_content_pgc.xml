@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <tv.danmaku.bili.widget.text.TintFixedLineSpacingTextView android:textAppearance="@style/TextAppearance.App.Title" android:textColor="@color/Ga10" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:lines="1" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text2" android:ellipsize="end" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" android:lines="1" android:layout_below="@id/title" />
+    <TextView android:id="@id/placeholder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:layout_below="@id/sub_title" />
+    <com.bilibili.magicasakura.widgets.TintLinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_alignParentBottom="true">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/device" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="2.0dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_marginEnd="2.0dp" android:layout_alignParentStart="true" />
+        <com.bilibili.magicasakura.widgets.TintTextView android:textAppearance="@style/TextAppearance.App.Body" android:textSize="@dimen/text_size_body_secondary" android:textColor="@color/Ga5" android:id="@id/play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

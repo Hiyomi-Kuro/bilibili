@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.danmaku.bili.widget.ForegroundRelativeLayout android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <com.bilibili.search2.widget.VerifyAvatarFrameLayout android:id="@id/avatar_layout" android:layout_width="72.0dp" android:layout_height="72.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="72.0dp" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0">
+            <tv.danmaku.bili.widget.PriorityLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="@dimen/text_size_large" android:textColor="@color/Pi5" android:ellipsize="end" android:id="@id/up_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:priority="0" />
+                <com.bilibili.lib.image2.view.BiliImageView android:id="@id/vip_label" android:layout_width="40.0dp" android:layout_height="16.0dp" android:layout_marginLeft="6.0dp" app:priority="3" />
+                <ImageView android:id="@id/user_level" android:layout_width="20.0dp" android:layout_height="10.0dp" android:layout_marginLeft="6.0dp" android:scaleType="fitXY" app:priority="1" />
+                <com.bilibili.magicasakura.widgets.TintTextView android:textSize="10.0sp" android:textColor="@color/theme_color_secondary" android:gravity="center" android:id="@id/live_status" android:background="@drawable/shape_roundrect_half_trans_stroke_pink" android:layout_width="45.0dp" android:layout_height="14.0dp" android:layout_marginLeft="8.0dp" android:text="@string/search_living" app:priority="2" />
+            </tv.danmaku.bili.widget.PriorityLinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_half_spacing">
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/Ga5_u" android:id="@id/fan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/Ga5_u" android:id="@id/video_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:maxLines="1" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_half_spacing" android:maxLines="1" />
+        </LinearLayout>
+        <com.bilibili.relation.widget.FollowButton android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fbGroup="true" app:fbStyle="fill" style="@style/FollowButton" />
+    </LinearLayout>
+    <include android:id="@id/video_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_below="@id/user_info" layout="@layout/bili_app_item_search_result_video_special" />
+    <TextView android:textSize="@dimen/text_size_body_primary" android:textColor="@color/Pi5" android:gravity="center" android:id="@id/more_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_below="@id/video_info" />
+</tv.danmaku.bili.widget.ForegroundRelativeLayout>

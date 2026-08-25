@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/upper_shape_caption_item_selector" android:padding="2.0dp" android:layout_width="72.0dp" android:layout_height="72.0dp">
+        <com.bilibili.lib.image2.view.BiliImageView android:id="@id/sdv_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" fresco:actualImageScaleType="fitCenter" fresco:roundedCornerRadius="2.5dp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tv_tag" android:background="@drawable/upper_editor_shape_roundrect_orange_1" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="14.0sp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:maxLength="3" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/iv_download" android:background="@drawable/ic_upper_video_edit_caption_download" android:focusable="true" android:clickable="true" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ProgressBar android:id="@id/download_progressbar" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateDrawable="@drawable/upper_shape_caption_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center" android:id="@id/iv_default" android:background="@drawable/bili_app_upper_editor_item_bg_gray_round" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/upper_editor_empty" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/upper_white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/bili_editor_origin_picture" />
+</LinearLayout>

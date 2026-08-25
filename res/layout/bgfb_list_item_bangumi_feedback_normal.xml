@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bilibili.lib.image2.view.legacy.ScalableImageView2 android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:aspectRadioHeight="1" app:aspectRadioWidth="1" app:placeholderImage="@drawable/bili_default_image_tv" app:placeholderImageScaleType="centerInside" app:pressedStateOverlayImage="@color/gray_dark_alpha26" app:scaleViewType="fitWidth" />
+    <com.bilibili.magicasakura.widgets.TintImageView android:layout_gravity="right|top" android:id="@id/delete" android:background="#80000000" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/story_entrance_text" android:layout_width="202.0dp" android:layout_height="42.0dp" android:text="@string/story_click_goto_live" app:layout_constraintBottom_toBottomOf="@id/story_live_anim" app:layout_constraintLeft_toLeftOf="@id/story_live_anim" app:layout_constraintRight_toRightOf="@id/story_live_anim" app:layout_constraintTop_toTopOf="@id/story_live_anim" />
+    <com.bilibili.video.story.view.SafeLottieAnimationView android:id="@id/story_live_anim" android:layout_width="230.0dp" android:layout_height="70.0dp" android:layout_marginBottom="17.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:lottie_cacheStrategy="weak" app:lottie_loop="true" />
+</merge>

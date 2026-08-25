@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tv.danmaku.bili.widget.PriorityLinearLayout android:orientation="horizontal" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="4.0dp">
+        <com.bilibili.magicasakura.widgets.TintTextView android:textColor="@color/Ga10" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/T14" />
+        <com.bilibili.lib.image2.view.BiliImageView android:layout_gravity="center_vertical" android:id="@id/image_cover" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginStart="4.0dp" app:fadeDuration="0" app:layout_priority="1" app:placeholderImage="@drawable/hot_tab_hot_topic_default_image_holder" />
+    </tv.danmaku.bili.widget.PriorityLinearLayout>
+</LinearLayout>

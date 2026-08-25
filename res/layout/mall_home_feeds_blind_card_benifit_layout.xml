@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintFrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mall.ui.widget.MallImageView2 android:id="@id/benefit_bg" android:layout_width="match_parent" android:layout_height="26.0dp" app:actualImageScaleType="fitXY" />
+    <ViewFlipper android:id="@id/viewFlipper" android:layout_width="match_parent" android:layout_height="wrap_content" android:inAnimation="@anim/mall_slide_bottom_in" android:outAnimation="@anim/mall_slide_top_out" android:flipInterval="2000" />
+</com.bilibili.magicasakura.widgets.TintFrameLayout>

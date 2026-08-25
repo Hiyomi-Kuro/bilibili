@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.adcommon.widget.AdTintLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.app.comm.list.widget.tag.TagView android:layout_gravity="center_vertical" android:id="@id/tag_view" style="@style/Marker.Content.Text" />
+    <com.bilibili.magicasakura.widgets.TintTextView android:textSize="12.0sp" android:textColor="@color/Text3" android:gravity="center" android:id="@id/ad_dot_view" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="wrap_content" android:layout_marginLeft="1.0dp" android:text="·" />
+</com.bilibili.adcommon.widget.AdTintLinearLayout>

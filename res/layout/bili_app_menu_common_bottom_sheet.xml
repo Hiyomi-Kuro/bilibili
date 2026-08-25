@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color_primary_tr_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/Ga2" android:layout_width="match_parent" android:layout_height="5.0dp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/Ga10" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="match_parent" android:layout_height="55.0dp" android:text="@string/cancel" />
+</LinearLayout>

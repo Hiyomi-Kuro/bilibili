@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_live_danmu_vertical_full_v2" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="24.0dp" android:layout_marginLeft="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bilibili.lib.image2.view.BiliImageView android:id="@id/live_combo_icon" android:layout_width="20.0dp" android:layout_height="16.0dp" android:layout_marginRight="3.0dp" />
+    <com.bilibili.bililive.biz.uicommon.widget.LiveComboDmWidget android:id="@id/live_combo_pb_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+.class public abstract Lao1/a;
+.super Ljava/lang/Object;
+.source "BL"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<DESC:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field protected a:Landroid/content/Context;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lao1/a;->a:Landroid/content/Context;
+
+    .line 5
+    .line 6
+    return-void
+.end method

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/update_dialog_background" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="240.0dp" android:layout_height="wrap_content" android:minHeight="50.0dp">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/update_dialog_title_color" android:ellipsize="end" android:gravity="center" android:id="@id/update_tv_title" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dp" android:text="@string/update_available" android:maxLines="5" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/update_iv_wifi_indicator" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/update_wifi_off" android:layout_toLeftOf="@id/update_tv_title" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ScrollView android:paddingBottom="7.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/update_dialog_text_color" android:id="@id/update_tv_content_text" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <tv.danmaku.bili.update.weiget.TintCheckBox android:textSize="19.0sp" android:textColor="@color/update_dialog_text_color" android:gravity="center_vertical" android:id="@id/update_cbx_ignore_version" android:paddingLeft="3.0dp" android:layout_width="match_parent" android:layout_height="36.0dp" android:text="@string/update_ignore_current_version" android:scaleX="0.75" android:scaleY="0.75" android:layout_marginStart="-38.0dp" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="7.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/update_confirm_btn_text" android:gravity="center" android:id="@id/update_btn_confirm" android:background="@color/update_pink" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="34.0dp" android:text="@string/update_confirm" android:singleLine="true" style="?android:borderlessButtonStyle" />
+            <Button android:textColor="@color/update_cancel_btn_text" android:gravity="center" android:id="@id/update_btn_cancel" android:background="@drawable/update_dialog_cancel_button" android:padding="8.0dp" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="34.0dp" android:layout_marginTop="12.0dp" android:text="@string/update_not_now" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>
