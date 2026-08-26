@@ -427,7 +427,7 @@
 
     .line 116
     .line 117
-    if-eqz p1, :cond_7
+    goto :cond_7
 
     .line 118
     .line 119

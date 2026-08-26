@@ -80,6 +80,9 @@ try {
             $Before[$_.Name] = $_.LastWriteTimeUtc.Ticks
         }
 
+    $BeforeResStamp = 0L
+    Get-ChildItem (Join-Path $BuildApk "res") -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { if ($_.LastWriteTimeUtc.Ticks -gt $BeforeResStamp) { $BeforeResStamp = $_.LastWriteTimeUtc.Ticks } }
+
     Write-Host "[FAST 1/3] Apktool incremental compile..."
     & $Java -jar $ApktoolJar b -j ([Environment]::ProcessorCount) --no-apk $Decoded
     if ($LASTEXITCODE -ne 0) { throw "Apktool incremental build failed" }
@@ -97,6 +100,10 @@ try {
             }
         }
     }
+
+    $AfterResStamp = 0L
+    Get-ChildItem (Join-Path $BuildApk "res") -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { if ($_.LastWriteTimeUtc.Ticks -gt $AfterResStamp) { $AfterResStamp = $_.LastWriteTimeUtc.Ticks } }
+    if ($AfterResStamp -ne $BeforeResStamp) { $ResourceChanged = $true }
 
     if ($ResourceChanged) {
         Write-Host "Resources/Manifest changed -> switching to FULL build."
@@ -146,3 +153,5 @@ finally {
     Remove-Item $TempDir -Recurse -Force -ErrorAction SilentlyContinue
     Remove-Item "$Output.idsig" -Force -ErrorAction SilentlyContinue
 }
+
+
