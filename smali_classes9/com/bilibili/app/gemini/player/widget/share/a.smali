@@ -636,12 +636,12 @@
 
     .line 120
     :cond_7
-    invoke-virtual {v1, v2}, Lcom/bilibili/app/gemini/share/GeminiShare;->n(Lgi/d;)V
+    const-string v2, "GENERIC"
 
     .line 121
     .line 122
     .line 123
-    invoke-virtual {v1}, Lcom/bilibili/app/gemini/share/GeminiShare;->q()V
+    invoke-static {v1, v2}, Lcom/bilibili/app/gemini/share/GeminiShare;->g(Lcom/bilibili/app/gemini/share/GeminiShare;Ljava/lang/String;)V
 
     .line 124
     .line 125

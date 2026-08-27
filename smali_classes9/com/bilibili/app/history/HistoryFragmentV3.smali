@@ -2120,22 +2120,8 @@
 
     .line 6
     :cond_0
-    if-eqz p1, :cond_1
-
-    .line 7
-    .line 8
-    const/4 p1, 0x0
-
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_1
     const/16 p1, 0x8
 
-    .line 11
-    .line 12
-    :goto_0
     invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
 
     .line 13
