@@ -7330,242 +7330,146 @@
 .end method
 
 .method private final r1()V
-    .locals 18
+    .locals 8
 
-    .line 1
-    move-object/from16 v0, p0
+    sget-object v0, Ltv/danmaku/bili/videopage/common/helper/e;->a:Ltv/danmaku/bili/videopage/common/helper/e;
 
-    .line 2
-    .line 3
-    sget-object v1, Ltv/danmaku/bili/videopage/common/helper/e;->a:Ltv/danmaku/bili/videopage/common/helper/e;
-
-    .line 4
-    .line 5
     invoke-virtual/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/l;->j()Ljs3/e;
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v2
+    move-result-object v1
 
-    .line 9
-    invoke-virtual {v1, v2}, Ltv/danmaku/bili/videopage/common/helper/e;->b(Ljs3/e;)Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {v0, v1}, Ltv/danmaku/bili/videopage/common/helper/e;->b(Ljs3/e;)Landroidx/fragment/app/FragmentActivity;
 
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v4
+    move-result-object v0
 
-    .line 13
-    if-nez v4, :cond_0
+    if-nez v0, :system_share_activity_ready
 
-    .line 14
-    .line 15
     return-void
 
-    .line 16
-    :cond_0
+    :system_share_activity_ready
     invoke-direct/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->a0()Z
 
-    .line 17
-    .line 18
-    .line 19
     move-result v1
 
-    .line 20
-    if-nez v1, :cond_1
+    if-nez v1, :system_share_page_ready
 
-    .line 21
-    .line 22
     return-void
 
-    .line 23
-    :cond_1
-    invoke-direct/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->l0()Lcom/bilibili/playerbizcommon/share/UgcSharePanel$e;
+    :system_share_page_ready
+    invoke-virtual/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/l;->k()Lhp3/a;
 
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v6
+    move-result-object v1
 
-    .line 27
-    invoke-direct {v0, v6}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->b0(Lcom/bilibili/playerbizcommon/share/UgcSharePanel$e;)Lcom/bilibili/playerbizcommon/share/j;
+    invoke-virtual {v1}, Lhp3/a;->h3()Ltv/danmaku/bili/ui/video/data/network/a;
 
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v7
+    move-result-object v1
 
-    .line 31
-    if-nez v7, :cond_2
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/video/data/network/a;->l1()Ljava/lang/String;
 
-    .line 32
-    .line 33
-    return-void
+    move-result-object v2
 
-    .line 34
-    :cond_2
-    invoke-direct/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->h0()Ljava/util/ArrayList;
+    if-nez v2, :system_share_title_ready
 
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v10
+    const-string v2, ""
 
-    .line 38
-    invoke-direct/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->k0()Lcom/bilibili/playerbizcommon/share/UgcSharePanel$c;
+    :system_share_title_ready
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/video/data/network/a;->w()Ljava/lang/String;
 
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v5
+    move-result-object v3
 
-    .line 42
-    new-instance v1, Lcom/bilibili/playerbizcommon/share/UgcSharePanel;
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    .line 43
-    .line 44
-    iget-object v8, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->x:Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment$mShareMenuItemClickListener$1;
+    move-result v4
 
-    .line 45
-    .line 46
-    const/4 v9, 0x0
+    if-nez v4, :system_share_use_aid
 
-    .line 47
-    const/4 v11, 0x0
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    .line 48
-    const/4 v12, 0x0
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 49
-    invoke-direct/range {p0 .. p0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->e0()Lgi/h;
+    const-string v4, "https://www.bilibili.com/video/"
 
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v13
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 53
-    const/4 v14, 0x0
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 54
-    new-instance v15, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment$showSuperMenu$1;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 55
-    .line 56
-    invoke-direct {v15, v0}, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment$showSuperMenu$1;-><init>(Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;)V
+    move-result-object v3
 
-    .line 57
-    .line 58
-    .line 59
-    const/16 v16, 0x580
+    goto :system_share_url_ready
 
-    .line 60
-    .line 61
-    const/16 v17, 0x0
+    :system_share_use_aid
+    invoke-virtual {v1}, Ltv/danmaku/bili/ui/video/data/network/a;->f()Ljava/lang/String;
 
-    .line 62
-    .line 63
-    move-object v3, v1
+    move-result-object v3
 
-    .line 64
-    invoke-direct/range {v3 .. v17}, Lcom/bilibili/playerbizcommon/share/UgcSharePanel;-><init>(Landroidx/fragment/app/FragmentActivity;Lcom/bilibili/playerbizcommon/share/UgcSharePanel$c;Lcom/bilibili/playerbizcommon/share/UgcSharePanel$e;Lcom/bilibili/playerbizcommon/share/a;Lcom/bilibili/playerbizcommon/share/e;Lgi/d;Ljava/util/ArrayList;Ljava/lang/String;Lgi/h;Lgi/h;Ljava/lang/String;Lsf3/l;ILkotlin/jvm/internal/i;)V
+    if-nez v3, :system_share_aid_ready
 
-    .line 65
-    .line 66
-    .line 67
-    iput-object v1, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->l:Lcom/bilibili/playerbizcommon/share/UgcSharePanel;
+    const-string v3, ""
 
-    .line 68
-    .line 69
-    iget-object v1, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->m:Lcom/bilibili/base/y;
+    :system_share_aid_ready
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    .line 70
-    .line 71
-    if-eqz v1, :cond_4
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 72
-    .line 73
-    const-string v2, "pref_key_share_listen_show_new"
+    const-string v4, "https://www.bilibili.com/video/av"
 
-    .line 74
-    .line 75
-    const/4 v3, 0x1
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 76
-    invoke-virtual {v1, v2, v3}, Lcom/bilibili/base/y;->d(Ljava/lang/String;Z)Z
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 77
-    .line 78
-    .line 79
-    move-result v1
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 80
-    if-ne v1, v3, :cond_4
+    move-result-object v3
 
-    .line 81
-    .line 82
-    iget-object v1, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->m:Lcom/bilibili/base/y;
+    :system_share_url_ready
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    .line 83
-    .line 84
-    if-eqz v1, :cond_3
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 85
-    .line 86
-    invoke-virtual {v1, v2, v3}, Lcom/bilibili/base/y;->k(Ljava/lang/String;Z)V
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 87
-    .line 88
-    .line 89
-    :cond_3
-    iget-object v1, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->l:Lcom/bilibili/playerbizcommon/share/UgcSharePanel;
+    const-string v5, "\n"
 
-    .line 90
-    .line 91
-    if-eqz v1, :cond_4
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 92
-    .line 93
-    iget-object v3, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->m:Lcom/bilibili/base/y;
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 94
-    .line 95
-    const/4 v4, 0x0
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 96
-    invoke-virtual {v3, v2, v4}, Lcom/bilibili/base/y;->d(Ljava/lang/String;Z)Z
+    move-result-object v3
 
-    .line 97
-    .line 98
-    .line 99
-    move-result v2
+    new-instance v4, Landroid/content/Intent;
 
-    .line 100
-    invoke-virtual {v1, v2}, Lcom/bilibili/playerbizcommon/share/UgcSharePanel;->C(Z)V
+    const-string v5, "android.intent.action.SEND"
 
-    .line 101
-    .line 102
-    .line 103
-    :cond_4
-    iget-object v1, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->l:Lcom/bilibili/playerbizcommon/share/UgcSharePanel;
+    invoke-direct {v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 104
-    .line 105
-    if-eqz v1, :cond_5
+    const-string v5, "text/plain"
 
-    .line 106
-    .line 107
-    iget-object v2, v0, Ltv/danmaku/bili/ui/video/videodetail/function/MenuFuncSegment;->w:Lsf3/p;
+    invoke-virtual {v4, v5}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 108
-    .line 109
-    invoke-virtual {v1, v2}, Lcom/bilibili/playerbizcommon/share/UgcSharePanel;->J(Lsf3/p;)V
+    const-string v5, "android.intent.extra.TEXT"
 
-    .line 110
-    .line 111
-    .line 112
-    :cond_5
+    invoke-virtual {v4, v5, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v5, "android.intent.extra.TITLE"
+
+    invoke-virtual {v4, v5, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v5, "android.intent.extra.SUBJECT"
+
+    invoke-virtual {v4, v5, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const/4 v5, 0x0
+
+    invoke-static {v4, v5}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v4}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
     return-void
 .end method
 
